@@ -1,0 +1,95 @@
+/* =========================================================================
+   Design tokens — Porsche 911 showcase (unofficial fan project)
+   Palette: deep black, Guards Red, Gulf blue/orange, brushed-metal greys.
+   Typography: one display face (Anton) + one mono (JetBrains Mono).
+   Import from app/globals.css:  @import "../styles/tokens.css";
+   ========================================================================= */
+
+@theme {
+  /* ---- Color ---- */
+  --color-ink: #050506; /* deep black, page base */
+  --color-ink-2: #0b0b0d; /* raised surfaces */
+  --color-ink-3: #131317; /* cards */
+  --color-ink-4: #1c1c22; /* borders / rails */
+
+  --color-guards: #d5001c; /* Guards Red — primary accent */
+  --color-guards-deep: #8f0014;
+  --color-guards-glow: #ff2036;
+
+  --color-gulf-blue: #3fa9d6; /* Gulf blue — secondary accent */
+  --color-gulf-blue-deep: #1c6f96;
+  --color-gulf-orange: #f47b20; /* Gulf orange — tertiary accent */
+  --color-gulf-orange-deep: #c85a08;
+
+  --color-metal-100: #f4f4f5; /* brushed metal, lightest */
+  --color-metal-300: #c9c9cf;
+  --color-metal-500: #8b8b95;
+  --color-metal-700: #55555e;
+  --color-metal-900: #26262d;
+
+  --color-signal: #ffd400; /* warning/indicator yellow */
+  --color-ok: #37d67a;
+
+  /* ---- Type ---- */
+  /* next/font injects --font-anton / --font-jetbrains / --font-inter on <html> */
+  --font-display: var(--font-anton, "Anton"), "Arial Narrow", sans-serif;
+  --font-mono: var(--font-jetbrains, "JetBrains Mono"), ui-monospace, monospace;
+  --font-sans: var(--font-inter, "Inter"), "Helvetica Neue", Arial, sans-serif;
+
+  --text-display-1: clamp(3.5rem, 12vw, 11rem);
+  --text-display-2: clamp(2.75rem, 7vw, 6.5rem);
+  --text-display-3: clamp(2rem, 4.5vw, 3.75rem);
+  --text-body-1: clamp(1rem, 1.1vw, 1.125rem);
+  --text-body-2: 0.9375rem;
+  --text-mono-xs: 0.6875rem;
+  --text-mono-sm: 0.8125rem;
+  --text-mono-md: 1rem;
+
+  --tracking-display: -0.02em;
+  --tracking-mono: 0.08em;
+  --tracking-label: 0.22em;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --gutter: clamp(1rem, 4vw, 4rem);
+  --maxw: 1440px;
+  --maxw-prose: 68ch;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* ---- Motion ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --dur-fast: 150ms;
+  --dur-base: 320ms;
+  --dur-slow: 700ms;
+  --dur-cinema: 1400ms;
+
+  /* ---- z-layers ---- */
+  --z-bg: 0;
+  --z-content: 10;
+  --z-sticky: 100;
+  --z-nav: 200;
+  --z-overlay: 300;
+  --z-cursor: 400;
+  --z-loader: 500;
+}
+
+:root {
+  color-scheme: dark;
+}

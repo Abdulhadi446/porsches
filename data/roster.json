@@ -1,0 +1,567 @@
+{
+  "note": "Canonical variant ids (lead-owned). Data agents MUST reuse these ids for matching variants and may APPEND new ones. Asset agents key storage paths by variant id.",
+  "generations": {
+    "901": [
+      {
+        "id": "911-2.0",
+        "name": "911 2.0"
+      },
+      {
+        "id": "911-t-2.0",
+        "name": "911 T 2.0"
+      },
+      {
+        "id": "911-l-2.0",
+        "name": "911 L 2.0"
+      },
+      {
+        "id": "911-e-2.0",
+        "name": "911 E 2.0"
+      },
+      {
+        "id": "911-s-2.0",
+        "name": "911 S 2.0"
+      },
+      {
+        "id": "911-2.2",
+        "name": "911 2.2"
+      },
+      {
+        "id": "911-e-2.2",
+        "name": "911 E 2.2"
+      },
+      {
+        "id": "911-t-2.2",
+        "name": "911 T 2.2"
+      },
+      {
+        "id": "911-s-2.2",
+        "name": "911 S 2.2"
+      },
+      {
+        "id": "911-2.4",
+        "name": "911 2.4"
+      },
+      {
+        "id": "911-e-2.4",
+        "name": "911 E 2.4"
+      },
+      {
+        "id": "911-t-2.4",
+        "name": "911 T 2.4"
+      },
+      {
+        "id": "911-s-2.4",
+        "name": "911 S 2.4"
+      },
+      {
+        "id": "targa",
+        "name": "911 Targa"
+      },
+      {
+        "id": "cabriolet-hebmuller",
+        "name": "911 Cabriolet (Hebmüller)"
+      },
+      {
+        "id": "st",
+        "name": "911 ST"
+      },
+      {
+        "id": "carrera-rs-2.7",
+        "name": "911 Carrera RS 2.7"
+      },
+      {
+        "id": "s-t",
+        "name": "911 S/T"
+      }
+    ],
+    "gseries": [
+      {
+        "id": "911-2.7",
+        "name": "911 2.7"
+      },
+      {
+        "id": "911-s-2.7",
+        "name": "911 S 2.7"
+      },
+      {
+        "id": "carrera-2.7",
+        "name": "911 Carrera 2.7"
+      },
+      {
+        "id": "carrera-rs-3.0",
+        "name": "911 Carrera RS 3.0"
+      },
+      {
+        "id": "carrera-rsr-3.0",
+        "name": "911 Carrera RSR 3.0"
+      },
+      {
+        "id": "turbo-3.0-930",
+        "name": "911 Turbo 3.0 (930)"
+      },
+      {
+        "id": "turbo-3.3-930",
+        "name": "911 Turbo 3.3 (930)"
+      },
+      {
+        "id": "turbo-flachbau",
+        "name": "911 Turbo Flachbau"
+      },
+      {
+        "id": "turbo-s-3.3",
+        "name": "911 Turbo S 3.3"
+      },
+      {
+        "id": "turbo-le-1989",
+        "name": "911 Turbo LE"
+      },
+      {
+        "id": "carrera-3.0",
+        "name": "911 Carrera 3.0"
+      },
+      {
+        "id": "sc",
+        "name": "911 SC"
+      },
+      {
+        "id": "sc-rs",
+        "name": "911 SC RS"
+      },
+      {
+        "id": "carrera-3.2",
+        "name": "911 Carrera 3.2"
+      },
+      {
+        "id": "carrera-3.2-turbo-look",
+        "name": "911 Carrera 3.2 Turbo Look"
+      },
+      {
+        "id": "carrera-club-sport",
+        "name": "911 Carrera Club Sport"
+      },
+      {
+        "id": "speedster-1989",
+        "name": "911 Speedster"
+      }
+    ],
+    "964": [
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-2",
+        "name": "911 Carrera 2"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "carrera-2s",
+        "name": "911 Carrera 2S"
+      },
+      {
+        "id": "turbo-3.3",
+        "name": "911 Turbo 3.3"
+      },
+      {
+        "id": "turbo-3.6",
+        "name": "911 Turbo 3.6"
+      },
+      {
+        "id": "turbo-s-3.6",
+        "name": "911 Turbo S 3.6 Flachbau"
+      },
+      {
+        "id": "rs-3.8",
+        "name": "911 Carrera RS 3.8"
+      },
+      {
+        "id": "rsr-3.8",
+        "name": "911 Carrera RSR 3.8"
+      },
+      {
+        "id": "speedster",
+        "name": "911 Speedster"
+      },
+      {
+        "id": "america-roadster",
+        "name": "911 America Roadster"
+      },
+      {
+        "id": "targa",
+        "name": "911 Targa"
+      },
+      {
+        "id": "30th-anniversary",
+        "name": "911 Carrera 4 30th Anniversary"
+      },
+      {
+        "id": "cup",
+        "name": "911 Carrera Cup"
+      }
+    ],
+    "993": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "targa",
+        "name": "911 Targa"
+      },
+      {
+        "id": "cabriolet",
+        "name": "911 Cabriolet"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "carrera-rs",
+        "name": "911 Carrera RS"
+      },
+      {
+        "id": "gt2",
+        "name": "911 GT2"
+      },
+      {
+        "id": "gt2-evo",
+        "name": "911 GT2 Evo"
+      },
+      {
+        "id": "speedster",
+        "name": "911 Speedster"
+      },
+      {
+        "id": "club-sport",
+        "name": "911 Carrera RS Clubsport"
+      }
+    ],
+    "996": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "targa",
+        "name": "911 Targa"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "gt2",
+        "name": "911 GT2"
+      },
+      {
+        "id": "america-roadster",
+        "name": "911 America Roadster"
+      },
+      {
+        "id": "millennium-edition",
+        "name": "911 Millennium Edition"
+      }
+    ],
+    "997": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "targa-4",
+        "name": "911 Targa 4"
+      },
+      {
+        "id": "targa-4s",
+        "name": "911 Targa 4S"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "gt3-rs-4.0",
+        "name": "911 GT3 RS 4.0"
+      },
+      {
+        "id": "gt2",
+        "name": "911 GT2"
+      },
+      {
+        "id": "gt2-rs",
+        "name": "911 GT2 RS"
+      },
+      {
+        "id": "gts",
+        "name": "911 Carrera GTS"
+      },
+      {
+        "id": "speedster",
+        "name": "911 Speedster"
+      },
+      {
+        "id": "sport-classic",
+        "name": "911 Sport Classic"
+      }
+    ],
+    "991": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "carrera-t",
+        "name": "911 Carrera T"
+      },
+      {
+        "id": "targa-4",
+        "name": "911 Targa 4"
+      },
+      {
+        "id": "targa-4s",
+        "name": "911 Targa 4S"
+      },
+      {
+        "id": "gts",
+        "name": "911 Carrera GTS"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-touring",
+        "name": "911 GT3 Touring"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "gt2-rs",
+        "name": "911 GT2 RS"
+      },
+      {
+        "id": "r",
+        "name": "911 R"
+      },
+      {
+        "id": "speedster",
+        "name": "911 Speedster"
+      },
+      {
+        "id": "50th-anniversary",
+        "name": "911 50th Anniversary Edition"
+      }
+    ],
+    "992-1": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "targa-4s",
+        "name": "911 Targa 4S"
+      },
+      {
+        "id": "gts",
+        "name": "911 Carrera GTS"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "turbo-gt",
+        "name": "911 Turbo GT"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-touring",
+        "name": "911 GT3 Touring"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "s-t",
+        "name": "911 S/T"
+      },
+      {
+        "id": "dakar",
+        "name": "911 Dakar"
+      },
+      {
+        "id": "sport-classic",
+        "name": "911 Sport Classic"
+      },
+      {
+        "id": "targa-4s-heritage",
+        "name": "911 Targa 4S Heritage Design Edition"
+      }
+    ],
+    "992-2": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-t",
+        "name": "911 Carrera T"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "targa-4s",
+        "name": "911 Targa 4S"
+      },
+      {
+        "id": "carrera-gts",
+        "name": "911 Carrera GTS T-Hybrid"
+      },
+      {
+        "id": "carrera-4-gts",
+        "name": "911 Carrera 4 GTS T-Hybrid"
+      },
+      {
+        "id": "targa-4-gts",
+        "name": "911 Targa 4 GTS T-Hybrid"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S T-Hybrid"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-touring",
+        "name": "911 GT3 Touring"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "gt3-s-c",
+        "name": "911 GT3 S/C"
+      },
+      {
+        "id": "spirit-70",
+        "name": "911 Spirit 70"
+      }
+    ]
+  }
+}

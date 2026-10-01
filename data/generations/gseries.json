@@ -1,0 +1,21 @@
+{
+  "id": "gseries",
+  "index": 2,
+  "code": "G-SERIES",
+  "name": "G-Model & 930 Turbo",
+  "yearsStart": 1973,
+  "yearsEnd": 1989,
+  "tagline": "",
+  "description": "",
+  "accent": "#f47b20",
+  "eraType": "display",
+  "stats": [],
+  "heroImage": null,
+  "timelineImage": null,
+  "model3d": null,
+  "videos": [],
+  "variants": [],
+  "credits": [],
+  "sources": [],
+  "missing": []
+}

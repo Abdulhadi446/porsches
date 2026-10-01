@@ -1,0 +1,21 @@
+{
+  "id": "991",
+  "index": 7,
+  "code": "991",
+  "name": "Long-Wheelbase Era",
+  "yearsStart": 2011,
+  "yearsEnd": 2019,
+  "tagline": "",
+  "description": "",
+  "accent": "#ffd400",
+  "eraType": "display",
+  "stats": [],
+  "heroImage": null,
+  "timelineImage": null,
+  "model3d": null,
+  "videos": [],
+  "variants": [],
+  "credits": [],
+  "sources": [],
+  "missing": []
+}

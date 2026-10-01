@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+dist/
+*.log
+.DS_Store
+.env*.local
+.vercel
+.tsbuildinfo
+public/images/**/*
+!public/images/.gitkeep
+public/models/**/*
+!public/models/.gitkeep
+.cache/
