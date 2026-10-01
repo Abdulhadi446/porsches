@@ -5,17 +5,1360 @@
   "name": "Original 911 / F-Body",
   "yearsStart": 1963,
   "yearsEnd": 1973,
-  "tagline": "",
-  "description": "",
+  "tagline": "From 901 to Carrera RS: the legend begins",
+  "description": "On 12 September 1963, at the Frankfurt IAA, a two-seat-plus-two coupé with a flat-six behind the rear axle was presented as the successor to the 356 — but under the name 901. At the Paris Salon that October, Peugeot objected: it held the French trademark on three-digit model numbers with a zero in the middle. Porsche renamed the car 911 for all markets rather than sell a different name in France alone, keeping the 901 prefix on engine and parts numbers for years. Series production began in September 1964. Porsche's own model history states that 82 units were built as 901 before the switch, though Porsche Museum collection manager Alexander Klein has argued that number is a long-repeated error inherited from a misread record.\n\nThe first-generation 911 arrived with something the 356 never had: two fold-down rear seats, a large luggage compartment and a 1,991 cc air-cooled SOHC flat-six making 130 PS and a stated 210 km/h. Porsche kept the rear-engined layout and the cooling-less boxer, and both became trademarks of the line. Over ten years the range grew from the plain 911 to the 911 S (160 PS, 1967), 911 T, 911 L and 911 E, the Targa safety cabriolet (1967), the semi-automatic Sportomatic four-speed (1967), the 57 mm longer wheelbase (from MY1969), Kugelfischer/Bosch mechanical fuel injection (1969), the 2.2-litre engines (1970), the 2.4-litre engines with the new Type 915 gearbox (1972) and the 2.7-litre Carrera RS that closed the era. With the T, E and S, Porsche became the first German manufacturer to meet US EPA emissions standards, and the Carrera RS 2.7 carried the first rear spoiler fitted as standard to a production car. Total first-generation production was 81,100 cars. The generation also proved itself in competition: a class-winning debut at the 1965 Monte Carlo Rally, three 911 S 2.2 (ST) cars finishing 1st, 2nd and 4th there in January 1970, and a production Carrera RS winning the 1972 Targa Florio against prototypes from Ferrari and Alfa Romeo.\n\nPorsche organised these cars into model-year \"series\", and those letters are still how specialists talk about them: O (to July 1967), A (MY1968), B (MY1969, the 57 mm wheelbase stretch), C and D (the 2.2-litre cars, 1970–71), then E and F for the 2.4-litre cars of 1972–73. The run ended in the summer of 1973, when a facelift produced the internally designated G-series with plastic impact bumpers, a wider rear and a 2.7-litre base engine — a different generation, but the same car in the eyes of most owners.",
   "accent": "#d5001c",
   "eraType": "display",
-  "stats": [],
+  "stats": [
+    {
+      "label": "Production",
+      "value": "81,100 units (1963–1973)"
+    },
+    {
+      "label": "Debut",
+      "value": "12 September 1963, IAA Frankfurt — presented as the 901"
+    },
+    {
+      "label": "Engine family",
+      "value": "2.0 / 2.2 / 2.4 / 2.7 L air-cooled flat-six, 110–210 PS"
+    },
+    {
+      "label": "Power range",
+      "value": "110 PS (2.0 T) → 210 PS (154 kW; 207 hp) Carrera RS 2.7"
+    },
+    {
+      "label": "Body styles",
+      "value": "Coupé, Targa from 1967 — no factory Cabriolet until 1982"
+    },
+    {
+      "label": "Homologation specials",
+      "value": "911 R 20 · 911 T/R 35 · 911 S/T ≈33 · Carrera RS 2.7 1,580"
+    }
+  ],
   "heroImage": null,
   "timelineImage": null,
   "model3d": null,
   "videos": [],
-  "variants": [],
+  "variants": [
+    {
+      "id": "911-2.0",
+      "name": "911 2.0",
+      "generation": "901",
+      "years": "1964–1967",
+      "yearsStart": 1964,
+      "yearsEnd": 1967,
+      "engine": "1,991 cc (2.0 L) air-cooled SOHC flat-six, dry-sump, Typ 901/01 (Solex 40 PI carburettors, Typ 901/05 with Weber 40 IDA3C from mid-1966)",
+      "power": "130 PS (96 kW; 128 hp)",
+      "powerPs": 130,
+      "powerKw": 96,
+      "torque": "≈146 N·m (108 ft-lb) — stuttcars lists 128 ft-lb",
+      "acceleration": "0–97 km/h (0–60 mph) 8.3 s — Porsche factory figure quoted by stuttcars; no official 0–100 km/h figure exists",
+      "topSpeed": "210 km/h (130 mph)",
+      "weight": "1,030 kg (Porsche quoted dry weight)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Typ 901), optional 4-speed Sportomatic semi-automatic from 1967/68",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The car that started it all. Series production of the 130 PS 2.0-litre began in September 1964, and the first 82 cars carried 901 badges before Peugeot's objection forced the rename; part numbers kept the 901 prefix for years. Engine, transaxle, rack-and-pinion steering, MacPherson front struts and semi-trailing-arm rear suspension were all new, and Erwin Komenda fused them into a self-supporting shell drawn by Butzi Porsche — headlight tunnels, flat bonnet between them, hatchback with a large rear window. Coupe only until the Targa arrived in 1967. Porsche quoted 1,030 kg, 210 km/h and 0–60 mph in 8.3 s; the 2.0 stayed the constant throughout its run while trim, instruments and details changed constantly.",
+      "special": false,
+      "production": "82 cars built as 901 before the rename; 4,636 coupés and 986 Targas built as short-wheelbase 2.0 (stuttcars)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911 2.0 (1965–1968) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-1964-1968"
+        },
+        {
+          "title": "60 years of the Porsche 911 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/60-years-of-the-Porsche-911.html"
+        }
+      ],
+      "missing": [
+        "Official 0–100 km/h acceleration figure — Porsche never published one for this era; only the 0–60 mph factory figure exists",
+        "Official kerb weight (1,030 kg is the quoted dry weight)",
+        "Exact torque figure in N·m from a primary source"
+      ]
+    },
+    {
+      "id": "911-t-2.0",
+      "name": "911 T 2.0",
+      "generation": "901",
+      "years": "1967–1969",
+      "yearsStart": 1967,
+      "yearsEnd": 1969,
+      "engine": "1,991 cc air-cooled flat-six, Typ 901/03 (Weber 40 IDA3C), four-speed only",
+      "power": "110 PS (81 kW; 108 hp)",
+      "powerPs": 110,
+      "powerKw": 81,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "4-speed manual (the T and later E kept four gears; the L and S got five)",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "\"Touring\": the new entry-level 911, launched in October 1967 with the 901/03 — the only engine in 911 history built without crankshaft counterweights. It effectively replaced the four-cylinder 912 and was deliberately stripped: four-speed manual, steel wheels and cheaper equipment, with silver instead of gold badging to mark it as the base car. For MY1968 the T switched to the 901/13, which regained counterweights and the same 110 PS output, and became available with the Sportomatic. In Europe the 911 T was the cheapest 911 by a wide margin, and because its homologated weight was lower than the S, it became the basis for the factory's rally-homologation special, the 911 T/R.",
+      "special": false,
+      "production": null,
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche Targa 2.4 / 911 T 2.0 trim differences — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911 T/R (1968) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-r-1968"
+        }
+      ],
+      "missing": [
+        "Production count for the 2.0-litre 911 T — no reliable figure found (secondary compilations vary)",
+        "Torque, weight, 0–100 km/h and top speed — none published by Porsche for this model",
+        "Exact first delivery year (October 1967 launch vs MY1968 sales start)"
+      ]
+    },
+    {
+      "id": "911-l-2.0",
+      "name": "911 L 2.0",
+      "generation": "901",
+      "years": "1968",
+      "yearsStart": 1968,
+      "yearsEnd": 1968,
+      "engine": "1,991 cc air-cooled flat-six, Typ 901/06 (901/07 with Sportomatic; 901/14/901/17 in North America)",
+      "power": "130 PS (96 kW; 128 hp)",
+      "powerPs": 130,
+      "powerKw": 96,
+      "torque": "≈146 N·m (128 ft-lb, stuttcars)",
+      "acceleration": "0–97 km/h (0–60 mph) 8.3 s (same 130 PS drivetrain as the 2.0 base car, stuttcars)",
+      "topSpeed": "≈210 km/h (130 mph)",
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "\"Luxus\": for one model year only, the 130 PS staple 911 was given a more upmarket specification — ventilated brake discs, heated rear window glass, brushed-aluminium dash, new door handles — and renamed 911 L. In North America it was the top of the range, because tightening US emissions rules excluded the 160 PS 911 S from the market; the US cars used the same 130 PS engine as the base model. The L was replaced by the fuel-injected 911 E for MY1969, and the middle rung of the range was vacated until then. Among early 911s the L is now the scarcest of the four 1968 A-series variants, and it is the only one-year-only 911 of the 2.0 era.",
+      "special": false,
+      "production": "≈1,610 total: 1,169 coupés and 441 Targas (stuttcars; one stuttcars paragraph says 575 Targas)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 L 2.0 (1968) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-l-1968"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911L – The Forgotten Midrange Gem of 1968 — Renn Driver",
+          "url": "https://renndriver.com/guides/porsche-911-l"
+        }
+      ],
+      "missing": [
+        "Official weight for the 1968 911 L",
+        "stuttcars' own figures conflict on Targa count (441 vs 575) for the 911 L"
+      ]
+    },
+    {
+      "id": "911-e-2.0",
+      "name": "911 E 2.0",
+      "generation": "901",
+      "years": "1969",
+      "yearsStart": 1969,
+      "yearsEnd": 1969,
+      "engine": "1,991 cc air-cooled flat-six with Kugelfischer/Bosch mechanical fuel injection, Typ 901/09 manual, 901/11 Sportomatic",
+      "power": "140 PS (103 kW; 138 hp)",
+      "powerPs": 140,
+      "powerKw": 103,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The middle model that replaced the 911 L for one model year. For MY1969 the B-series line-up was simplified: the plain 911 and the 911 L were dropped and a new 911 E slotted in, distinguished by the arrival of Kugelfischer (later Bosch) mechanical fuel injection — a plunger-type fuel pump/distributor driven off the left camshaft by toothed belt, six injectors and six throttle butterflies. At 140 PS the E sat between the 110 PS T and the 170 PS S, and it was the first of the 911 T/E/S trio to satisfy the US EPA emissions standards, which is why Porsche calls them the first German cars to do so. Wider tyres on 6J-15 wheels came with the E.",
+      "special": false,
+      "production": null,
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 — Wikipedia (full lineage)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Early 911 Buyers' Guide — Porsche Club Great Britain",
+          "url": "https://www.porscheclubgb.com/regions-registers/registers/classic/early-911/early-911-buyers-guide"
+        }
+      ],
+      "missing": [
+        "Production count for the MY1969 911 E (2.0) — stuttcars per-model page not verified this session",
+        "Torque, weight, 0–100 km/h and top speed — none published by Porsche for this model"
+      ]
+    },
+    {
+      "id": "911-s-2.0",
+      "name": "911 S 2.0",
+      "generation": "901",
+      "years": "1967–1969",
+      "yearsStart": 1967,
+      "yearsEnd": 1969,
+      "engine": "1,991 cc air-cooled flat-six, Typ 901/02 (Weber 40 IDA3C); 1969 long-wheelbase car used MFI engine 901/10",
+      "power": "160 PS (118 kW; 158 hp) at 6,600 rpm (1967–68); 170 PS (125 kW; 168 hp) with MFI (1969)",
+      "powerPs": 170,
+      "powerKw": 125,
+      "torque": null,
+      "acceleration": "0–97 km/h (0–60 mph) ≈8.1 s in the 180 PS 1966/67-era S per stuttcars' performance table — no official 0–100 km/h figure for the 2.0 S",
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Typ 901/08 with Sportomatic from 1968)",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The first engine derivative of the 911 and the top of the range for the whole 2.0 era. Compression rose to 9.8:1 for 160 PS at 6,600 rpm, and the S introduced the five-spoke forged Fuchs alloy wheel — designed for the 911 R — which became a 911 signature. In 1969 the S gained the 57 mm longer wheelbase and Bosch mechanical fuel injection for 170 PS. Not sold in North America in 1968, when the 911 L covered that market instead. The 2.0 S also carried the factory's rally-homologation special, the 911 S/R, and its own race version, the 911 S/R. 1968 was the final short-wheelbase 911 model year.",
+      "special": false,
+      "production": "4,582 coupés and 1,539 Targas across 1967–1969 (stuttcars); stuttcars separately quotes 2,106 cars (1,492 coupés, 614 Targa) for the 1969 long-wheelbase year",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 S 2.0 (1967–1969) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-s-1966"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "From zero to 1,000,000: Seven generations of the Porsche 911 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/products/porsche-one-millionth-911-milestone-seven-generations-13735.html"
+        }
+      ],
+      "missing": [
+        "Torque, weight and top speed for the 2.0 S — not published by Porsche; stuttcars' spec box leaves torque blank",
+        "Official 0–100 km/h figure",
+        "Reconciliation of stuttcars' two production figures (4,582+1,539 cumulative vs 2,106 for 1969)"
+      ]
+    },
+    {
+      "id": "911-2.2",
+      "name": "911 2.2",
+      "generation": "901",
+      "years": "1970–1971",
+      "yearsStart": 1970,
+      "yearsEnd": 1971,
+      "engine": "2,195 cc (2.2 L) air-cooled flat-six, 84 mm bore × 66 mm stroke; carburetted (T) or Bosch MFI (E, S)",
+      "power": "125 PS (92 kW; 123 hp) to 180 PS (132 kW; 178 hp) across T, E and S",
+      "powerPs": 180,
+      "powerKw": 132,
+      "torque": "125 PS T: ≈177 N·m; E: ≈191 N·m; S: ≈199 N·m",
+      "acceleration": null,
+      "topSpeed": "≈210–220 km/h (130–137 mph) depending on version",
+      "weight": "1,020 kg (coupé, 911evolution); Targas about 50 kg more",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Typ 911) in E and S; 4-speed manual in the T; 4-speed Sportomatic optional",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "For MY1970 every 911 engine grew by 4 mm of bore to 2,195 cc, and the internal code switched from 901 to 911 — the transaxle, parts prefixes and engravings all changed. There was no plain base 911 in this era: the range was the carburetted 911 T, the fuel-injected 911 E and the 180 PS 911 S. Larger valves, new head gaskets and more cooling fins came with the extra displacement, and the C-series moved the front suspension mounting points 14 mm forward for lighter steering. In MY1971 the D-series added hot-dip zinc rust proofing, door side-impact beams, three-speed intermittent wipers and piston oil squirters, and production continued with the 2.2 units until July 1971.",
+      "special": false,
+      "production": null,
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 (F-Series) Ultimate Model Guide — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-f-series-1st-generation-research-hub"
+        },
+        {
+          "title": "Porsche 911 2.2 technical specifications — 911evolution",
+          "url": "https://911evolution.com/porsche/911-22"
+        },
+        {
+          "title": "Porsche 911 E 2.2 (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-e-2-2-1970-1971"
+        }
+      ],
+      "missing": [
+        "No official acceleration or single top-speed figure for the 2.2 family — only per-variant magazine figures",
+        "Total production for the 2.2-litre range as a single number (per-variant counts are given on the T, E and S entries)"
+      ]
+    },
+    {
+      "id": "911-t-2.2",
+      "name": "911 T 2.2",
+      "generation": "901",
+      "years": "1970–1971",
+      "yearsStart": 1970,
+      "yearsEnd": 1971,
+      "engine": "2,195 cc air-cooled flat-six, Typ 911/03, twin Zenith 40 TIN carburettors, 8.6:1",
+      "power": "125 PS (92 kW; 123 hp) at 5,800 rpm",
+      "powerPs": 125,
+      "powerKw": 92,
+      "torque": "≈177 N·m (131 ft-lb) at 4,200 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 9.5 s, quarter mile ≈16.5 s (stuttcars); no official 0–100 km/h figure",
+      "topSpeed": "≈204 km/h (127 mph)",
+      "weight": "1,020 kg (coupé)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "4-speed manual only, plus optional 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The entry-level 2.2, and the only 2.2 derivative with a US-specific version, because the E and S could be exported to North America unmodified. Its own engine, the 911/03, ran softer cam timing and two Zenith 40 TIN carburettors for a broad torque curve rather than peak power, and the T kept the four-speed manual gearbox where the E and S got five. The Fuchs forged alloy wheels fitted across the range in 1970 became standard, and ventilated discs were now fitted everywhere — a significant step over the 2.0 cars. With the lower homologated weight, the 2.2 T was also the basis of the 911 ST homologation package.",
+      "special": false,
+      "production": "6,544 coupés and 2,545 Targas (stuttcars)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 T 2.2 (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-2-2-1970-1971"
+        },
+        {
+          "title": "Porsche 911 2.2 technical specifications — 911evolution",
+          "url": "https://911evolution.com/porsche/911-22"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 (F-Series) Ultimate Model Guide — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-f-series-1st-generation-research-hub"
+        }
+      ],
+      "missing": [
+        "Official 0–100 km/h figure and Porsche-stated top speed (204 km/h / 127 mph is a magazine figure from stuttcars)"
+      ]
+    },
+    {
+      "id": "911-e-2.2",
+      "name": "911 E 2.2",
+      "generation": "901",
+      "years": "1970–1971",
+      "yearsStart": 1970,
+      "yearsEnd": 1971,
+      "engine": "2,195 cc air-cooled flat-six, Typ 911/01 with Bosch mechanical fuel injection, 9.1:1, softer cams",
+      "power": "155 PS (114 kW; 153 hp) at 6,200 rpm",
+      "powerPs": 155,
+      "powerKw": 114,
+      "torque": "≈191 N·m (141 ft-lb) at 4,500 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 7.6 s, quarter mile ≈15.5 s (stuttcars); no official 0–100 km/h figure",
+      "topSpeed": "≈220 km/h (137 mph)",
+      "weight": "1,020 kg (coupé)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The refined middle car of the C and D series. Although it made 25 PS less than the 911 S, the E's softer camshafts and injection delivered more torque low down, which made it quicker than the S up to 160 km/h — and Porsche's own rally team preferred exactly that broad power band, which is why private rally entrants nicknamed it the \"secret weapon from Zuffenhausen\" while buying S models for the road. The E kept the hydro-pneumatic front struts for ride comfort, added an aluminium engine lid and aluminium front bumper section for weight saving, and carried gold anodised rear badging. It was the least popular of the three 2.2 variants.",
+      "special": false,
+      "production": "1,971 coupés and 933 Targas per stuttcars' spec box; stuttcars' text elsewhere gives 1,088 coupés and 935 Targas for 1970 — figures conflict",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 E 2.2 (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-e-2-2-1970-1971"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 2.2 technical specifications — 911evolution",
+          "url": "https://911evolution.com/porsche/911-22"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        }
+      ],
+      "missing": [
+        "Reconciliation of stuttcars' conflicting 2.2 E production figures (1,971+933 vs 1,088+935)",
+        "Official Porsche-stated top speed and 0–100 km/h figure"
+      ]
+    },
+    {
+      "id": "911-s-2.2",
+      "name": "911 S 2.2",
+      "generation": "901",
+      "years": "1970–1971",
+      "yearsStart": 1970,
+      "yearsEnd": 1971,
+      "engine": "2,195 cc air-cooled flat-six, Typ 911/02 with Bosch mechanical fuel injection, 9.8:1",
+      "power": "180 PS (132 kW; 178 hp) at 6,500 rpm",
+      "powerPs": 180,
+      "powerKw": 132,
+      "torque": "≈199 N·m (146 ft-lb) at 5,200 rpm (911evolution; other outlets quote ≈130 lb-ft)",
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": "1,050 kg",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The sharpest car in the 2.2 range: 180 PS at 6,500 rpm on 9.8:1 compression, the highest output of the fuel-injected sixes before the 2.4 arrived. Its magnesium-alloy crankcase, larger valves and ports and stronger conrods were inherited from the racing development work, and Porsche's factory team used the S — with a lower-geared final drive — for circuit work. The 911 S 2.2 also became the homologation basis for the 911 S/T: combining the S engine with the T's reduced interior equipment gave Porsche a car that swept the 1970 Monte Carlo Rally. The long-wheelbase 2.2 S is widely regarded as the finest all-round early 911.",
+      "special": false,
+      "production": "1,744 coupés and 729 Targas (stuttcars, 1970 model year)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 S 2.2 (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-s-2-2-1970-1971"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 2.2 technical specifications — 911evolution",
+          "url": "https://911evolution.com/porsche/911-22"
+        },
+        {
+          "title": "Porsche 911S - 2.2 Liter 1970 to 1971 — Classic.com",
+          "url": "https://www.classic.com/m/porsche/911/f-body/lwb/911s/22"
+        }
+      ],
+      "missing": [
+        "Top speed and 0–100 km/h for the 2.2 S — no reliable figure found (stuttcars' 0–60 table lists no 2.2 S entry)",
+        "Torque — sources disagree (199 N·m vs ≈172 N·m)"
+      ]
+    },
+    {
+      "id": "911-2.4",
+      "name": "911 2.4",
+      "generation": "901",
+      "years": "1972–1973",
+      "yearsStart": 1972,
+      "yearsEnd": 1973,
+      "engine": "2,341 cc air-cooled flat-six, 84 mm bore × 70.4 mm stroke — the stroke, not the capacity, grew from the 2.2",
+      "power": "130 PS (96 kW; 128 hp) to 190 PS (140 kW; 187 hp) across T, E and S",
+      "powerPs": 190,
+      "powerKw": 140,
+      "torque": "T ≈209 N·m; E ≈204 N·m; S ≈229 N·m (converted from stuttcars' ft-lb figures)",
+      "acceleration": null,
+      "topSpeed": "≈204–232 km/h (127–144 mph) depending on version",
+      "weight": "1,050 kg (dry weight quoted for the 2.4 cars)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (new Type 915) or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "Porsche marketed 2,341 cc as the \"2.4\", even though it is closer to 2.3 litres — the bore stayed at 84 mm and the stroke stretched from 66 to 70.4 mm. New camshafts, shorter conrods, lower piston crowns fed by individual oil squirters, better porting and a fully counterbalanced forged crank made the 2.4 cleaner and stronger than the 2.2. The big change was the Type 915 transaxle, developed from the 908 race unit: a conventional H-pattern gate replacing the 901's dog-leg first, and a differential moved forward so the driveshafts met the rear wheels square after the 57 mm wheelbase stretch. In MY1972 the dry-sump oil tank moved from behind the right rear wheel to inside the wheelbase, with the famous \"Olklappe\" filler flap on the right rear quarter — scrapped for 1973 after fuel-station confusion.",
+      "special": false,
+      "production": null,
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "First generation – Engines — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/1.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche 911 T 2.4 (1972–1973) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-2-4-1972-1973"
+        },
+        {
+          "title": "Technical Data for Type 911 Vehicles, 1972–1973 (PDF)",
+          "url": "https://porschecarshistory.com/wp-content/old/Techspec/01/911-all-72-73.pdf"
+        }
+      ],
+      "missing": [
+        "Combined production total for the 2.4 range (per-variant counts are on the T, E and S entries)",
+        "Official 0–100 km/h figures across the range"
+      ]
+    },
+    {
+      "id": "911-t-2.4",
+      "name": "911 T 2.4",
+      "generation": "901",
+      "years": "1972–1973",
+      "yearsStart": 1972,
+      "yearsEnd": 1973,
+      "engine": "2,341 cc air-cooled flat-six, Typ 911/57 with Zenith 40 TIN carburettors (911/67 Sportomatic); 911/61 with MFI for US and Japanese cars",
+      "power": "130 PS (96 kW; 128 hp) carburetted; 140 PS (103 kW; 138 hp) with MFI in the US and Japan",
+      "powerPs": 130,
+      "powerKw": 96,
+      "torque": "≈209 N·m (145 ft-lb) at 4,000 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 8.1–8.8 s (stuttcars lists 8.8 s for the car, 8.1 s in its performance table); no official 0–100 km/h figure",
+      "topSpeed": "≈204 km/h (127 mph)",
+      "weight": "1,050 kg (dry weight)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Type 915) or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "Entry level again, and the last 911 T. The carburetted 2.4 T made 130 PS against the 140 PS of the fuel-injected US and Japanese versions — the injection units were worth 10 PS, and it is why late 2.4 T cars remain sought after. January 1973 US cars switched to Bosch K-Jetronic CIS, 140 PS, single throttle butterfly and slower revving than the six-butterfly MFI sets; collectors call these \"1973.5\" cars. Only 1972 cars carry the external oil filler flap on the right rear wing. MY1973 brought black horn grilles, blacked-out indicator surrounds, black engine-lid lettering and the first rectangular door mirrors — all proposed for the 1969 Pininfarina B17 concept.",
+      "special": false,
+      "production": "2,517 coupés and 3,476 Targas, 1972 through 1973.5 (stuttcars)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 T 2.4 (1972–1973) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-2-4-1972-1973"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911 T 2.4 — Simon Furlonger",
+          "url": "https://simonfurlonger.co.uk/car/911-t-2-4"
+        }
+      ],
+      "missing": [
+        "Official 0–100 km/h figure; stuttcars' own two figures for 0–60 mph differ (8.1 s vs 8.8 s)"
+      ]
+    },
+    {
+      "id": "911-e-2.4",
+      "name": "911 E 2.4",
+      "generation": "901",
+      "years": "1972–1973",
+      "yearsStart": 1972,
+      "yearsEnd": 1973,
+      "engine": "2,341 cc air-cooled flat-six, Typ 911/52 with Bosch mechanical fuel injection, 8.0:1",
+      "power": "165 PS (121 kW; 163 hp) at 6,200 rpm",
+      "powerPs": 165,
+      "powerKw": 121,
+      "torque": "≈204 N·m (151 ft-lb) at 4,500 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 7.5–8.4 s depending on body (stuttcars); no official 0–100 km/h figure",
+      "topSpeed": "≈216–220 km/h (134–137 mph) depending on body",
+      "weight": "1,050 kg (dry weight)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Type 915) or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The 165 PS mid-range E, up 10 PS and 10 lb-ft on the 2.2 E, always fuel-injected and always with the five-speed manual available. Steel wheels gave way to new six-inch ATS \"cookie-cutter\" alloys in 1973. Because the E was the least popular of the three 2.4 variants, and because the 1972-only oil filler flap and 1973-only black trim split the model year, 2.4 E survivors are increasingly rare. It is also the version that carries the famous 1972 oil-tank relocation most visibly — the tank moved forward from behind the right rear wheel to inside the wheelbase for better weight distribution, at the cost of a hot right rear seat, and was moved back for 1973.",
+      "special": false,
+      "production": "1,366 coupés and 1,055 Targas (stuttcars text for the full 1972–73 run); stuttcars' spec box instead lists 1,088 coupés and 935 Targas",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 E 2.4 (1972–1973) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-e-2-4-1972-1973"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Early 911 Buyers' Guide — Porsche Club Great Britain",
+          "url": "https://www.porscheclubgb.com/regions-registers/registers/classic/early-911/early-911-buyers-guide"
+        }
+      ],
+      "missing": [
+        "Reconciliation of stuttcars' conflicting production figures for the 2.4 E",
+        "Official 0–100 km/h and Porsche-stated top speed"
+      ]
+    },
+    {
+      "id": "911-s-2.4",
+      "name": "911 S 2.4",
+      "generation": "901",
+      "years": "1972–1973",
+      "yearsStart": 1972,
+      "yearsEnd": 1973,
+      "engine": "2,341 cc air-cooled flat-six, Typ 911/53 with Bosch mechanical fuel injection, 8.5:1",
+      "power": "190 PS (140 kW; 187 hp) at 6,500 rpm",
+      "powerPs": 190,
+      "powerKw": 140,
+      "torque": "≈229 N·m (159–160 ft-lb) at 5,200 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 6.5–7.8 s depending on body (stuttcars); no official 0–100 km/h figure",
+      "topSpeed": "≈232 km/h (144 mph)",
+      "weight": "1,050 kg (dry weight)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Type 915) or 4-speed Sportomatic",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "Top of the range and the most powerful naturally aspirated production 911 before the Carrera RS: 190 PS from 2,341 cc in a car weighing about 1,050 kg, which still counted as genuine supercar performance in 1972. The 2.4 S also gained a discreet spoiler under the front bumper to calm high-speed front-end lift. Unlike the E and T, the S kept the Type 915 five-speed as standard equipment, and its 1,050 kg dry weight meant it was the heaviest of the three. Many period racers were built from this car, and its long-wheelbase chassis plus 57 mm stretch is what enthusiasts usually mean when they call the F-body the best-handling early 911.",
+      "special": false,
+      "production": "1,430 coupés and 788 Targas (stuttcars)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 S 2.4 (1972–1973) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-s-2-4-1972-1973"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911 (F-Series) Ultimate Model Guide — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-f-series-1st-generation-research-hub"
+        }
+      ],
+      "missing": [
+        "Official 0–100 km/h figure; stuttcars' 0–60 mph figures vary by body (6.5 s vs 7.8 s)"
+      ]
+    },
+    {
+      "id": "targa",
+      "name": "911 Targa",
+      "generation": "901",
+      "years": "1966–1973",
+      "yearsStart": 1966,
+      "yearsEnd": 1973,
+      "engine": "As per model: 1,991 / 2,195 / 2,341 cc air-cooled flat-six",
+      "power": "130 PS (2.0) to 190 PS (140 kW; 187 hp) (2.4 S)",
+      "powerPs": 190,
+      "powerKw": 140,
+      "torque": null,
+      "acceleration": "As per model — see the individual T, E and S entries",
+      "topSpeed": "≈204–232 km/h (127–144 mph) depending on version",
+      "weight": "Roughly 50 kg more than the equivalent coupé (911evolution, 2.2 era)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "As per model: 4- or 5-speed manual, optional 4-speed Sportomatic",
+      "bodyStyles": [
+        "targa"
+      ],
+      "description": "The world's first production safety cabriolet, patented by Porsche in August 1965 and sold from late 1966 / model year 1967 as a \"safety-conscious cabriolet\": a fixed brushed-stainless-steel roll-over bar over the rear seats, a removable folding roof panel and a fold-back plastic rear window, with fixed glass available from MY1968. Porsche's concern was the US NHTSA, which was rumoured to be moving against fully open convertibles — and the Targa answered the safety objection without giving up the open-air driving experience. The name honours the Targa Florio road race in Sicily, which Porsche had won seven times since 1956. The Targa became the most-used open 911 body of the era and continued in the line-up for the next generation.",
+      "special": false,
+      "production": "986 short-wheelbase 2.0 Targas (stuttcars); per-model counts on the 2.2 and 2.4 entries",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Ten memorable milestones: Porsche at the IAA since 1950 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2025/history/porsche-iaa-since-1950-ten-milestones-40407.html"
+        },
+        {
+          "title": "Model 911 (F-model) — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "60 years of the Porsche 911 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/60-years-of-the-Porsche-911.html"
+        }
+      ],
+      "missing": [
+        "Targa introduction date is reported inconsistently: Porsche's own model pages say model year 1967, the Newsroom IAA milestone page says 1965 (patent filed August 1965) and Newsroom's own history text says late 1966 deliveries",
+        "No total production figure for Targas across the whole 1964–1973 run could be verified"
+      ]
+    },
+    {
+      "id": "cabriolet-hebmuller",
+      "name": "911 Cabriolet (Hebmüller)",
+      "generation": "901",
+      "years": "1965",
+      "yearsStart": 1965,
+      "yearsEnd": 1965,
+      "engine": "1,991 cc (2.0 L) air-cooled flat-six (as per standard 1965 911 — not independently verified for this coachbuilt body)",
+      "power": "130 PS (96 kW; 128 hp) — standard 2.0 output for 1965",
+      "powerPs": 130,
+      "powerKw": 96,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Typ 901)",
+      "bodyStyles": [
+        "cabriolet"
+      ],
+      "description": "Porsche's own soft-top Cabriolet did not arrive until 1982, so the very few genuine open 911s of this era were coachbuilt conversions. The best known is the 1965 911 Cabriolet bodied by Karosseriewerk Hebmüller of Wülfrath — the firm that built the Volkswagen Hebmüller Cabriolet — as a commission under the works option M472, using 911 mechanicals with a full folding hood and a proper windscreen instead of the Targa's removable roof and roll bar. It is a road car, not a racing special, and it predates the Targa by two years. Beyond its 1965 build year and its coachbuilder, no factory specification, price or production tally could be confirmed from the sources consulted, so nothing further is claimed here.",
+      "special": true,
+      "production": null,
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "G1 research note — docs/research.md (project research)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 — Wikipedia (full lineage, first 911 Cabriolet only from 1982)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911"
+        },
+        {
+          "title": "Hebmüller — Wikipedia (coachbuilder history)",
+          "url": "https://de.wikipedia.org/wiki/Hebm%C3%BCller"
+        }
+      ],
+      "missing": [
+        "PRODUCTION COUNT UNVERIFIED — no Porsche, auction-house or registry source for the Hebmüller 911 Cabriolet total was found in this session; the frequently quoted \"130\" figure could not be confirmed and must not be published",
+        "Weight, 0–100 km/h and top speed — no published figures found",
+        "Engine/drivetrain specification for the Hebmüller-bodied cars specifically — assumed to be the standard 1965 2.0 drivetrain, not independently verified",
+        "Hood mechanism, chassis modifications and price — unverified"
+      ]
+    },
+    {
+      "id": "st",
+      "name": "911 ST",
+      "generation": "901",
+      "years": "1969–1972",
+      "yearsStart": 1969,
+      "yearsEnd": 1972,
+      "engine": "2.0–2.5 L air-cooled flat-six racing versions of the 2.2 unit; final 2.5-litre twin-plug engine with 270 PS",
+      "power": "up to 270 PS (199 kW; 265 hp) at 8,000 rpm",
+      "powerPs": 270,
+      "powerKw": 199,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": "960 kg (2,120 lb)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "Homologation special rather than a road model. Porsche combined the 911 S engine with the 911 T's stripped interior to satisfy FIA Group 3, and the cars kept the 911 S name in official documentation while being called 911 ST internally. Weight reduction was radical: Plexiglas windows, aluminium and GFRP body parts, deleted heater ducts, glove-box lid, ashtray, sun visors and under-seal. The defining visual change was the flared fender, which widened the track to take seven-inch front and nine-inch rear tyres — hence the mismatched Fuchs front and Minilite rear wheels. From October 1970 it was orderable as a road-legal \"Sport Standard Version\" with the Mehr-Minder M471 package; M491 was the circuit car and M494 the rally car.",
+      "special": true,
+      "production": "≈33 units (1970–1971 per stuttcars); an alternative year-by-year tally on the same page gives 50 (6 in 1969, 15 in 1970, 6 in 1971, 23 in 1972) — Wikipedia cites both 50 (1969–1972) and 33 (1970–1971)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "History: 911 S (ST) (1969 to 1972) — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/History-911-S-ST--1969-to-1972.html"
+        },
+        {
+          "title": "Porsche 911 S/T (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-st-1970-1971"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Everything you need to know about the Porsche 911 S/T — porsche.com",
+          "url": "https://www.porsche.com/stories/mobility/what-is-the-porsche-911-st"
+        }
+      ],
+      "missing": [
+        "Definitive production total — sources conflict (≈33 vs ≈50); Porsche Newsroom says only \"after about three years\"",
+        "0–100 km/h and top speed — never published",
+        "Torque — not published",
+        "Delivery dates per engine variant (1,987 / 2,195 / 2,380 / 2,494 / 2,494 cc options are listed inconsistently across sources)"
+      ]
+    },
+    {
+      "id": "carrera-rs-2.7",
+      "name": "911 Carrera RS 2.7",
+      "generation": "901",
+      "years": "1972–1973",
+      "yearsStart": 1972,
+      "yearsEnd": 1973,
+      "engine": "2,687 cc (2.7 L) air-cooled twin-ignition flat-six, Typ 911/83, 90 mm bore × 70.4 mm stroke, NIKASIL-coated bores, Bosch mechanical fuel injection",
+      "power": "210 PS (154 kW; 207 hp) at 6,300 rpm",
+      "powerPs": 210,
+      "powerKw": 154,
+      "torque": "255 N·m (188 lb-ft) at 5,100 rpm",
+      "acceleration": "0–97 km/h (0–60 mph) 5.2 s Touring / 5.5 s Lightweight (stuttcars performance data); Porsche published no 0–100 km/h figure",
+      "topSpeed": "240 km/h (149 mph) per RM Sotheby's; fastestlaps.com measured 245 km/h (152 mph)",
+      "weight": "1,075 kg (2,370 lb) Touring; Sport version about 100 kg less — Porsche quotes 960 kg kerb weight for the Sport car",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Type 915)",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "Built to clear the FIA's 500-car minimum for Group 4 GT, and in practice the reason the Carrera RSR 2.8 could race at all. The bore grew from the 2.0's 80 mm to 90 mm, made possible by thin NIKASIL cylinder walls that kept room for cooling air between the cylinders. Mechanically it added a stiffened suspension, larger brakes, wider rear wheels and tyres, wider rear wings and the aluminium-framed ducktail — the first rear spoiler fitted as standard to a production car, and still the 911's most copied design cue. In November 1972 the first 500 had sold; Porsche tripled the run by July 1973 and passed 1,000 cars, earning Group 3 homologation as well. Three versions: Touring M472, Sport lightweight M471 and the RSR.",
+      "special": true,
+      "production": "1,580 total per Porsche Newsroom and Wikipedia (1,308 Touring M472, 200 Sport lightweight M471, 55 RSR, 17 homologation base cars); two secondary compilations quote 1,590",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Fifty years of the Porsche 911 Carrera RS 2.7 – 'Germany's fastest sports car' — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2022/history/porsche-50-years-911-carrera-rs-2-7-germanys-fastest-sports-car-28486.html"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "First generation – Engines — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/1.-Generation---Motoren.html"
+        },
+        {
+          "title": "First generation – Design and model variants — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/1.-Generation-Design-und-Modellvarianten.html"
+        },
+        {
+          "title": "Porsche Carrera RS 2.7 test data — fastestlaps.com",
+          "url": "https://fastestlaps.com/models/porsche-carrera-rs-2-7"
+        },
+        {
+          "title": "1972 Porsche 911 'Carrera RS 2.7 Factory Development Car' — RM Sotheby's",
+          "url": "https://rmsothebys.com/auctions/mo23/lots/r0137-1972-porsche-911-carrera-rs-27-factory-development-car"
+        }
+      ],
+      "missing": [
+        "The 1,592-unit figure referenced in the project brief could not be confirmed in any source consulted — Porsche states 1,580 and two secondary sources state 1,590; do not publish 1,592",
+        "Official Porsche 0–100 km/h acceleration and top-speed figures — none published; magazine/test figures quoted instead",
+        "Split between the three RS versions where Porsche states 1,580 total but per-version counts elsewhere differ slightly"
+      ]
+    },
+    {
+      "id": "s-t",
+      "name": "911 S/T",
+      "generation": "901",
+      "years": "1969–1972",
+      "yearsStart": 1969,
+      "yearsEnd": 1972,
+      "engine": "Race-tuned 2.2-litre flat-six in 2,195 / 2,380 / 2,494 / 2,404 cc forms (Typ 907, 911/21, 911/70); FIA allowed +0.1 litre over the series engine",
+      "power": "up to 270 PS (199 kW; 265 hp) at 8,000 rpm",
+      "powerPs": 270,
+      "powerKw": 199,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": "960 kg (2,120 lb)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The works endurance-racing S — the customer-facing sibling of the 911 ST, and the direct ancestor of the 60th-anniversary 911 S/T. No two were alike, because they were built to order: some had thinner-gauge steel, some aluminium or fibreglass panels, different fuel capacities and, where FIA rules permitted, no under-seal and minimal paint. The flared arches that debuted here became standard on later 911s. Engines grew through 2.2, 2.3, 2.4 and finally 2.5 litres as the rules allowed, the last 2.5-litre unit making 270 PS with a counter-pressure-optimised exhaust, modified heads and an extra oil cooler. Koni or Bilstein dampers and a stiffened shell completed the package. Victories came at Daytona, Sebring, the 1,000 km Nürburgring and the 1972 Targa Florio.",
+      "special": true,
+      "production": "33 units (1970–1971 per stuttcars); alternative tallies give ≈50 across 1969–1972 — Wikipedia explicitly flags the uncertainty",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 S/T (1970–1971) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-st-1970-1971"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "History: 911 S (ST) (1969 to 1972) — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/History-911-S-ST--1969-to-1972.html"
+        },
+        {
+          "title": "The Porsche 911 S/T: Return of the legend — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2025/products/porsche-911-st-old-and-new-light-yellow-40554.html"
+        }
+      ],
+      "missing": [
+        "Definitive production total (33 vs 50 — sources disagree)",
+        "Torque, 0–100 km/h and top speed — never published",
+        "Exact production split across the 2,195 / 2,380 / 2,494 cc engine variants"
+      ]
+    },
+    {
+      "id": "porsche-901",
+      "name": "Porsche 901",
+      "generation": "901",
+      "years": "1963–1964",
+      "yearsStart": 1963,
+      "yearsEnd": 1964,
+      "engine": "1,991 cc air-cooled SOHC flat-six, Typ 901/01, dry-sump — the production engine of the first 911s",
+      "power": "130 PS (96 kW; 128 hp)",
+      "powerPs": 130,
+      "powerKw": 96,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": "210 km/h (130 mph)",
+      "weight": "1,030 kg (quoted dry weight for the 2.0-litre car)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual (Typ 901)",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The debut car, shown at the Frankfurt IAA on 12 September 1963 as \"Porsche 901\" — 2+2 seating, a 130 PS dry-sump flat-six, rack-and-pinion steering, MacPherson struts and semi-trailing arms, all wrapped in a body 120 mm longer and 70 mm narrower than the 356B, with a 111 mm longer wheelbase. At the Paris Salon in October 1964 Peugeot objected to the three-digit-with-zero-middle designation it held in France, and Porsche renamed the car 911 everywhere rather than run two names. Porsche USA's model history records that 82 units were built as 901, though Porsche Museum collection manager Alexander Klein has said that figure is a long-standing error carried over from a misread early record, and that far fewer cars actually wore 901 badges.",
+      "special": true,
+      "production": "82 units per Porsche's own model history; Porsche Museum's Alexander Klein disputes this figure (see description)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Model 901 — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-901/"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "901: Inside Porsche's three-year effort to resurrect its oldest 911 — Hagerty",
+          "url": "https://www.hagerty.com/media/automotive-history/901-inside-porsches-three-year-effort-to-resurrect-its-oldest-911"
+        },
+        {
+          "title": "60 years of the Porsche 911 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/60-years-of-the-Porsche-911.html"
+        }
+      ],
+      "missing": [
+        "True count of 901-badged cars — Porsche's official 82 is disputed by its own museum (Hagerty interview with Alexander Klein)",
+        "Which chassis numbers carried 901 badges — not established"
+      ]
+    },
+    {
+      "id": "912",
+      "name": "Porsche 912",
+      "generation": "901",
+      "years": "1965–1969",
+      "yearsStart": 1965,
+      "yearsEnd": 1969,
+      "engine": "1,582 cc (1.6 L) air-cooled pushrod flat-four, Typ 616/36, detuned 356 SC unit",
+      "power": "90 PS (66 kW; 89 hp)",
+      "powerPs": 90,
+      "powerKw": 66,
+      "torque": null,
+      "acceleration": "0–100 km/h 13.5 s (porsche.com)",
+      "topSpeed": "183 km/h (114 mph) (porsche.com)",
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "4-speed manual, 5-speed optional",
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
+      "description": "The 911's cheap little brother: 911 body and chassis with the 356 SC's four-cylinder engine, launched in April 1965 when 356 production ended. It was a deliberate price weapon — Porsche's 100,000th car was a 912 Targa built for a German police force — and for its first couple of years it outsold the six-cylinder 911 roughly two to one before 911 supply caught up. Visual differences were minimal: silver rather than gold script, a three-dial instrument cluster instead of five, and a plastic steering-wheel rim on base cars. A short run of 2,562 Targas is recorded by the 912 Registry. The 912 was replaced by the mid-engined 914; a 912E with the 2.0-litre Volkswagen four returned for the US market only in 1975–76 (2,092 built), which falls in the next generation's era.",
+      "special": false,
+      "production": "More than 32,000 built April 1965 – July 1969 (Wikipedia); porsche.com states around 30,745",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 912 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_912"
+        },
+        {
+          "title": "What is the Porsche 912? — porsche.com",
+          "url": "https://www.porsche.com/stories/mobility/what-is-the-porsche-912"
+        },
+        {
+          "title": "Model 912 — Porsche USA Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-912"
+        },
+        {
+          "title": "1968 Porsche 912 — Hemmings",
+          "url": "https://www.hemmings.com/stories/1968-porsche-912"
+        }
+      ],
+      "missing": [
+        "Weight for the 912 — no verified figure found",
+        "Exact production total — sources differ (Wikipedia \"more than 32,000\" vs porsche.com \"around 30,745\")",
+        "Whether the 912 belongs in a 911 showcase at all — flagged for the lead; it shares the 911 body and chassis"
+      ]
+    },
+    {
+      "id": "911-r",
+      "name": "911 R",
+      "generation": "901",
+      "years": "1967",
+      "yearsStart": 1967,
+      "yearsEnd": 1967,
+      "engine": "1,991 cc air-cooled flat-six, Typ 901/20 twin-plug racing engine with twin ignition, 12-terminal distributor, Weber 46 IDA3C, magnesium crankcase",
+      "power": "210 PS (154 kW; 208 hp)",
+      "powerPs": 210,
+      "powerKw": 154,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": "810 kg (1,786 lb)",
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "4-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "Developed under Ferdinand Piëch — the first time Porsche built a 911 purely to go racing. Twenty were made in 1967, and because that fell short of the FIA's GT-class production requirement, they were campaigned against purpose-built prototypes. Weight was attacked from every angle: thin aluminium doors, plastic door handles, smaller front and rear indicators, a magnesium-alloy crankcase, twin-spark cylinder heads, a fibreglass fuel tank and a single bucket seat. The magnesium crankcase went into series production on later cars, as did the hydraulic chain tensioners. The six-inch 15-inch forged Fuchs wheels developed for the 911 R were then offered as an option on production 911s — the origin of the wheel that became the marque's trademark five-spoke design.",
+      "special": true,
+      "production": "20 cars in 1967 (Wikipedia); one dealer production list gives 19",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 T/R (1968) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-r-1968"
+        },
+        {
+          "title": "Porsche 911 S 2.0 (1967–1969) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-s-1966"
+        }
+      ],
+      "missing": [
+        "0–100 km/h, top speed and torque — not published",
+        "Reconciliation of the 19 vs 20 build counts"
+      ]
+    },
+    {
+      "id": "911-t-r",
+      "name": "911 T/R",
+      "generation": "901",
+      "years": "1968",
+      "yearsStart": 1968,
+      "yearsEnd": 1968,
+      "engine": "1,991 cc (2.0 L) air-cooled flat-six, race-prepared",
+      "power": "210 bhp (154 kW)",
+      "powerPs": 210,
+      "powerKw": 154,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The first homologation special built on the 911, and the reason the T/R exists at all. When the FIA reclassified the 911 T into the same class as the 911 S in 1968, Porsche could no longer supply rally customers with a homologation car, because the T road car weighed 54 kg more than the S — the wrong way round for competition. The answer was the T/R: the light 911 T chassis carrying the S/R's more powerful racing engine, built in 1968 for privateers who wanted to do both road and rally. It also foreshadowed the shape of everything that followed — a stripped, homologated 911 as the basis for a factory race programme.",
+      "special": true,
+      "production": "35 units (stuttcars)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 T/R (1968) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-t-r-1968"
+        },
+        {
+          "title": "Porsche 911 (classic) — Wikipedia (911S/R, 911T/R)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        }
+      ],
+      "missing": [
+        "Weight, torque, 0–60 mph and top speed — stuttcars lists these as N/A for the T/R",
+        "Exact engine type number used in the T/R"
+      ]
+    },
+    {
+      "id": "carrera-rsr-2.8",
+      "name": "911 Carrera RSR 2.8 (M491)",
+      "generation": "901",
+      "years": "1973",
+      "yearsStart": 1973,
+      "yearsEnd": 1973,
+      "engine": "2,808 cc air-cooled flat-six, Typ 911/72, 92 mm bore × 70.4 mm stroke",
+      "power": "312 PS (229 kW; 308 hp)",
+      "powerPs": 312,
+      "powerKw": 229,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-engine, rear-wheel drive",
+      "transmission": "5-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The race car the whole Carrera RS existed to legitimise: with production of the RS above 500 units, the 911 qualified for FIA Group 4 Special GT, and 55 of the 1,580 RS cars were converted under code M491 into RSR 2.8 competition machines. They carried wider front and rear arches, wheels and tyres than the road RS, and the 2,808 cc engine with 92 mm bores — about 48 PS more than the road car's 2.7. Peter Gregg took one to a class win at Daytona in 1973, the season the RSR was homologated. It is the last factory race derivative built before the F-body ended and the impact-bumper G-series began.",
+      "special": true,
+      "production": "55 of the 1,580 Carrera RS cars were converted to RSR 2.8 under M491 (Wikipedia)",
+      "heroImage": null,
+      "gallery": [],
+      "videos": [],
+      "model3d": null,
+      "credits": [],
+      "sources": [
+        {
+          "title": "Porsche 911 (classic) — Wikipedia (Carrera RS 2.7 & RSR 2.8)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        {
+          "title": "Porsche 911 Carrera RSR 2.8 (1973) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rsr-2-8-1973/"
+        },
+        {
+          "title": "A brief history of the Porsche 911 — porsche.com",
+          "url": "https://www.porsche.com/stories/innovation/a-brief-history-of-the-porsche-911"
+        }
+      ],
+      "missing": [
+        "Race weight, torque and gearing figures — not published",
+        "Confirmation of the exact model year (1973) at which the RSR 2.8 ran, as homologation straddled the 1973/74 season"
+      ]
+    }
+  ],
   "credits": [],
-  "sources": [],
-  "missing": []
+  "sources": [
+    {
+      "title": "Porsche 911 (classic) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+    },
+    {
+      "title": "Porsche 911 — Wikipedia (full lineage)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911"
+    },
+    {
+      "title": "60 years of the Porsche 911 — Porsche Newsroom press kit",
+      "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/60-years-of-the-Porsche-911.html"
+    },
+    {
+      "title": "60 Years of Porsche 911 press kit (first-generation chapters) — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911.html"
+    },
+    {
+      "title": "Model 911 (F-model) — Porsche USA Classic",
+      "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-911"
+    },
+    {
+      "title": "Model 901 — Porsche USA Classic",
+      "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/911-f/911-f-901/"
+    },
+    {
+      "title": "Fifty years of the Porsche 911 Carrera RS 2.7 — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/2022/history/porsche-50-years-911-carrera-rs-2-7-germanys-fastest-sports-car-28486.html"
+    },
+    {
+      "title": "History: 911 S (ST) (1969 to 1972) — Porsche Newsroom press kit",
+      "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/History-911-S-ST--1969-to-1972.html"
+    },
+    {
+      "title": "A brief history of the Porsche 911 — porsche.com",
+      "url": "https://www.porsche.com/stories/innovation/a-brief-history-of-the-porsche-911"
+    },
+    {
+      "title": "Everything you need to know about the Porsche 911 S/T — porsche.com",
+      "url": "https://www.porsche.com/stories/mobility/what-is-the-porsche-911-st"
+    },
+    {
+      "title": "What is the Porsche 912? — porsche.com",
+      "url": "https://www.porsche.com/stories/mobility/what-is-the-porsche-912"
+    },
+    {
+      "title": "Ten memorable milestones: Porsche at the IAA since 1950 — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/2025/history/porsche-iaa-since-1950-ten-milestones-40407.html"
+    },
+    {
+      "title": "Porsche 911 (F-Series) Ultimate Model Guide — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-f-series-1st-generation-research-hub"
+    },
+    {
+      "title": "Porsche 911 2.0 (1965–1968) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-1964-1968"
+    },
+    {
+      "title": "Porsche 911 S/T (1970–1971) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-st-1970-1971"
+    },
+    {
+      "title": "Porsche 911 T/R (1968) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-t-r-1968"
+    },
+    {
+      "title": "Porsche 911 E 2.4 (1972–1973) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-e-2-4-1972-1973"
+    },
+    {
+      "title": "Porsche 911 S 2.4 (1972–1973) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-s-2-4-1972-1973"
+    },
+    {
+      "title": "Porsche 911 T 2.4 (1972–1973) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-t-2-4-1972-1973"
+    },
+    {
+      "title": "Porsche 911 E 2.2 (1970–1971) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-e-2-2-1970-1971"
+    },
+    {
+      "title": "Porsche 911 T 2.2 (1970–1971) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-t-2-2-1970-1971"
+    },
+    {
+      "title": "Porsche 911 S 2.2 (1970–1971) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-s-2-2-1970-1971"
+    },
+    {
+      "title": "Porsche 911 S 2.0 (1967–1969) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-s-1966"
+    },
+    {
+      "title": "Porsche 911 L 2.0 (1968) — Stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-l-1968"
+    },
+    {
+      "title": "Porsche 911 2.2 technical specifications — 911evolution",
+      "url": "https://911evolution.com/porsche/911-22"
+    },
+    {
+      "title": "Model Guide: The first Porsche 911s — Porsche Club of America",
+      "url": "https://www.pca.org/news/model-guide-the-first-porsche-911s"
+    },
+    {
+      "title": "Early 911 Buyers' Guide — Porsche Club Great Britain",
+      "url": "https://www.porscheclubgb.com/regions-registers/registers/classic/early-911/early-911-buyers-guide"
+    },
+    {
+      "title": "901: Inside Porsche's three-year effort to resurrect its oldest 911 — Hagerty",
+      "url": "https://www.hagerty.com/media/automotive-history/901-inside-porsches-three-year-effort-to-resurrect-its-oldest-911"
+    },
+    {
+      "title": "Porsche Carrera RS 2.7 performance data — fastestlaps.com",
+      "url": "https://fastestlaps.com/models/porsche-carrera-rs-2-7"
+    },
+    {
+      "title": "1972 Porsche 911 'Carrera RS 2.7 Factory Development Car' — RM Sotheby's",
+      "url": "https://rmsothebys.com/auctions/mo23/lots/r0137-1972-porsche-911-carrera-rs-27-factory-development-car"
+    },
+    {
+      "title": "1968 Porsche 912 — Hemmings",
+      "url": "https://www.hemmings.com/stories/1968-porsche-912"
+    }
+  ],
+  "missing": [
+    "Official 0–100 km/h acceleration and Porsche-published kerb weights for most 2.0 / 2.2 / 2.4 variants — Porsche never published them; only magazine and test figures (mostly 0–60 mph) exist, so acceleration is null or 0–97 km/h where no 0–100 figure could be found",
+    "911 Cabriolet (Hebmüller), 1965: production count and all specifications unverified — no Porsche, auction or registry source found; the widely quoted \"130\" figure must not be published",
+    "911 ST and 911 S/T production totals conflict across sources (≈33 per stuttcars vs ≈50 per an alternative year-by-year tally; Wikipedia flags the uncertainty). Porsche Newsroom only says production ran \"after about three years\"",
+    "Carrera RS 2.7 total: Porsche Newsroom and Wikipedia state 1,580 (1,308 Touring / 200 Sport lightweight / 55 RSR / 17 base); two secondary compilations state 1,590; the 1,592 figure mentioned in the brief could not be sourced",
+    "Targa debut year is reported inconsistently: MY1967 on Porsche's model pages, 1965 in the Newsroom IAA milestone list (patent August 1965), late 1966 for first deliveries",
+    "Number of cars actually badged \"901\": Porsche states 82, Porsche Museum's Alexander Klein says that figure is a long-repeated error",
+    "Per-variant production counts for the 911 T 2.0 and 911 E 2.0 could not be verified; stuttcars' own 2.2 E and 2.4 E figures conflict internally",
+    "Media fields intentionally left empty: heroImage / timelineImage / model3d / videos / gallery / credits are owned by ASSET-IMAGES, ASSET-3D and ASSET-VIDEO",
+    "Decision needed from the lead: appended variants outside the canonical roster — porsche-901, 912, 911-r, 911-t-r, carrera-rsr-2.8. The 912 in particular is a four-cylinder 911-bodied car, not a 911 six-cylinder model"
+  ]
 }

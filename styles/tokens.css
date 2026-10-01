@@ -93,3 +93,28 @@
 :root {
   color-scheme: dark;
 }
+
+/* Tailwind v4 has no z-index theme namespace: expose the --z-* tokens as
+   real utilities (z-bg, z-content, z-sticky, z-nav, z-overlay, z-cursor,
+   z-loader) so `z-nav` works like every other utility. */
+@utility z-bg {
+  z-index: var(--z-bg);
+}
+@utility z-content {
+  z-index: var(--z-content);
+}
+@utility z-sticky {
+  z-index: var(--z-sticky);
+}
+@utility z-nav {
+  z-index: var(--z-nav);
+}
+@utility z-overlay {
+  z-index: var(--z-overlay);
+}
+@utility z-cursor {
+  z-index: var(--z-cursor);
+}
+@utility z-loader {
+  z-index: var(--z-loader);
+}

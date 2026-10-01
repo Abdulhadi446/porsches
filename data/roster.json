@@ -75,76 +75,6 @@
         "name": "911 S/T"
       }
     ],
-    "gseries": [
-      {
-        "id": "911-2.7",
-        "name": "911 2.7"
-      },
-      {
-        "id": "911-s-2.7",
-        "name": "911 S 2.7"
-      },
-      {
-        "id": "carrera-2.7",
-        "name": "911 Carrera 2.7"
-      },
-      {
-        "id": "carrera-rs-3.0",
-        "name": "911 Carrera RS 3.0"
-      },
-      {
-        "id": "carrera-rsr-3.0",
-        "name": "911 Carrera RSR 3.0"
-      },
-      {
-        "id": "turbo-3.0-930",
-        "name": "911 Turbo 3.0 (930)"
-      },
-      {
-        "id": "turbo-3.3-930",
-        "name": "911 Turbo 3.3 (930)"
-      },
-      {
-        "id": "turbo-flachbau",
-        "name": "911 Turbo Flachbau"
-      },
-      {
-        "id": "turbo-s-3.3",
-        "name": "911 Turbo S 3.3"
-      },
-      {
-        "id": "turbo-le-1989",
-        "name": "911 Turbo LE"
-      },
-      {
-        "id": "carrera-3.0",
-        "name": "911 Carrera 3.0"
-      },
-      {
-        "id": "sc",
-        "name": "911 SC"
-      },
-      {
-        "id": "sc-rs",
-        "name": "911 SC RS"
-      },
-      {
-        "id": "carrera-3.2",
-        "name": "911 Carrera 3.2"
-      },
-      {
-        "id": "carrera-3.2-turbo-look",
-        "name": "911 Carrera 3.2 Turbo Look"
-      },
-      {
-        "id": "carrera-club-sport",
-        "name": "911 Carrera Club Sport"
-      },
-      {
-        "id": "speedster-1989",
-        "name": "911 Speedster"
-      }
-    ],
     "964": [
       {
         "id": "carrera-4",
@@ -156,11 +86,11 @@
       },
       {
         "id": "carrera-4s",
-        "name": "911 Carrera 4S"
+        "name": "911 Carrera 4 Turbo-Look"
       },
       {
         "id": "carrera-2s",
-        "name": "911 Carrera 2S"
+        "name": "911 Carrera 2 Turbo-Look"
       },
       {
         "id": "turbo-3.3",
@@ -192,7 +122,7 @@
       },
       {
         "id": "targa",
-        "name": "911 Targa"
+        "name": "911 Targa (steel panel)"
       },
       {
         "id": "30th-anniversary",
@@ -201,6 +131,76 @@
       {
         "id": "cup",
         "name": "911 Carrera Cup"
+      }
+    ],
+    "991": [
+      {
+        "id": "carrera",
+        "name": "911 Carrera"
+      },
+      {
+        "id": "carrera-s",
+        "name": "911 Carrera S"
+      },
+      {
+        "id": "carrera-4",
+        "name": "911 Carrera 4"
+      },
+      {
+        "id": "carrera-4s",
+        "name": "911 Carrera 4S"
+      },
+      {
+        "id": "carrera-t",
+        "name": "911 Carrera T"
+      },
+      {
+        "id": "targa-4",
+        "name": "911 Targa 4"
+      },
+      {
+        "id": "targa-4s",
+        "name": "911 Targa 4S"
+      },
+      {
+        "id": "gts",
+        "name": "911 Carrera GTS"
+      },
+      {
+        "id": "turbo",
+        "name": "911 Turbo"
+      },
+      {
+        "id": "turbo-s",
+        "name": "911 Turbo S"
+      },
+      {
+        "id": "gt3",
+        "name": "911 GT3"
+      },
+      {
+        "id": "gt3-touring",
+        "name": "911 GT3 Touring"
+      },
+      {
+        "id": "gt3-rs",
+        "name": "911 GT3 RS"
+      },
+      {
+        "id": "gt2-rs",
+        "name": "911 GT2 RS"
+      },
+      {
+        "id": "r",
+        "name": "911 R"
+      },
+      {
+        "id": "speedster",
+        "name": "911 Speedster"
+      },
+      {
+        "id": "50th-anniversary",
+        "name": "911 50th Anniversary Edition"
       }
     ],
     "993": [
@@ -369,74 +369,74 @@
         "name": "911 Sport Classic"
       }
     ],
-    "991": [
+    "gseries": [
       {
-        "id": "carrera",
-        "name": "911 Carrera"
+        "id": "911-2.7",
+        "name": "911 2.7"
       },
       {
-        "id": "carrera-s",
-        "name": "911 Carrera S"
+        "id": "911-s-2.7",
+        "name": "911 S 2.7"
       },
       {
-        "id": "carrera-4",
-        "name": "911 Carrera 4"
+        "id": "carrera-2.7",
+        "name": "911 Carrera 2.7"
       },
       {
-        "id": "carrera-4s",
-        "name": "911 Carrera 4S"
+        "id": "carrera-rs-3.0",
+        "name": "911 Carrera RS 3.0"
       },
       {
-        "id": "carrera-t",
-        "name": "911 Carrera T"
+        "id": "carrera-rsr-3.0",
+        "name": "911 Carrera RSR 3.0"
       },
       {
-        "id": "targa-4",
-        "name": "911 Targa 4"
+        "id": "turbo-3.0-930",
+        "name": "911 Turbo 3.0 (930)"
       },
       {
-        "id": "targa-4s",
-        "name": "911 Targa 4S"
+        "id": "turbo-3.3-930",
+        "name": "911 Turbo 3.3 (930)"
       },
       {
-        "id": "gts",
-        "name": "911 Carrera GTS"
+        "id": "turbo-flachbau",
+        "name": "911 Turbo Flachbau"
       },
       {
-        "id": "turbo",
-        "name": "911 Turbo"
+        "id": "turbo-s-3.3",
+        "name": "911 Turbo S 3.3"
       },
       {
-        "id": "turbo-s",
-        "name": "911 Turbo S"
+        "id": "turbo-le-1989",
+        "name": "911 Turbo LE"
       },
       {
-        "id": "gt3",
-        "name": "911 GT3"
+        "id": "carrera-3.0",
+        "name": "911 Carrera 3.0"
       },
       {
-        "id": "gt3-touring",
-        "name": "911 GT3 Touring"
+        "id": "sc",
+        "name": "911 SC"
       },
       {
-        "id": "gt3-rs",
-        "name": "911 GT3 RS"
+        "id": "sc-rs",
+        "name": "911 SC RS"
       },
       {
-        "id": "gt2-rs",
-        "name": "911 GT2 RS"
+        "id": "carrera-3.2",
+        "name": "911 Carrera 3.2"
       },
       {
-        "id": "r",
-        "name": "911 R"
+        "id": "carrera-3.2-turbo-look",
+        "name": "911 Carrera 3.2 Turbo Look"
       },
       {
-        "id": "speedster",
+        "id": "carrera-club-sport",
+        "name": "911 Carrera Club Sport"
+      },
+      {
+        "id": "speedster-1989",
         "name": "911 Speedster"
-      },
-      {
-        "id": "50th-anniversary",
-        "name": "911 50th Anniversary Edition"
       }
     ],
     "992-1": [

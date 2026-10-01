@@ -1,4 +1,752 @@
 {
   "updatedAt": "2026-10-01",
-  "entries": {}
+  "verifiedAt": "2026-10-01",
+  "entries": {
+    "901": [
+      {
+        "id": "21FWn800IpA",
+        "title": "Porsche Historic Footage – Porsche 911 Prototype and Premiere at the 1963 Frankfurt Motor Show",
+        "channel": "The Wheel Network",
+        "poster": null,
+        "note": "archival footage of the 901 Frankfurt debut that created the 911"
+      },
+      {
+        "id": "VGmd2rZQ1CY",
+        "title": "Porsche 901 prototype: the second-oldest surviving 911 of all time!",
+        "channel": "9WERKS TV",
+        "poster": null,
+        "note": "factory-original 901 prototype, the car Peugeot nearly stopped"
+      },
+      {
+        "id": "i32rihrkHSE",
+        "title": "This 1968 Porsche 911L Was Just A Dream",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "series-two longhood 911L, the best of the very early 911s"
+      }
+    ],
+    "964": [
+      {
+        "id": "2kKsOGTk1Bg",
+        "title": "1989 Porsche 911 Carrera 4 | Retro Review",
+        "channel": "MotorWeek",
+        "poster": null,
+        "note": "Jay Leno-era retrospective drive of the first AWD 911"
+      },
+      {
+        "id": "EIsx0B_stRs",
+        "title": "From Most Hated to Most Loved, Is Porsche's 964 Now Overhyped?",
+        "channel": "Number 27",
+        "poster": null,
+        "note": "balanced verdict on whether the 964 deserved its reputation"
+      },
+      {
+        "id": "c1EnY7YW9ao",
+        "title": "1992 Porsche 964 Carrera RS: Rituals of Rennsport",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "92 RS 3.8 in period trim, and what 'Rennsport' meant"
+      },
+      {
+        "id": "NdylNq55D64",
+        "title": "1994 Porsche 911 Turbo 3.6 | Retro Review",
+        "channel": "MotorWeek",
+        "poster": null,
+        "note": "the 3.6 turbo that made air-cooled Porsches mainstream"
+      }
+    ],
+    "991": [
+      {
+        "id": "CSrvsc3KRjY",
+        "title": "How the Porsche 911 GT3 (991.2) came close to perfection | PistonHeads",
+        "channel": "PistonHeads",
+        "poster": null,
+        "note": "991.2 GT3, the moment the modern lightweight 911 arrived"
+      },
+      {
+        "id": "X7aDv6YhCdM",
+        "title": "2018 Porsche 911 Carrera T Manual vs PDK Review - The Purist Porsche",
+        "channel": "TheStraightPipes",
+        "poster": null,
+        "note": "manual-versus-PDK verdict on the de-contented Carrera T"
+      },
+      {
+        "id": "kdwMI8NArAo",
+        "title": "Porsche 911R | Top Gear",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "Top Gear drives the 991-unit 911 R in anger"
+      },
+      {
+        "id": "L8Sdk5DH3og",
+        "title": "Is The 991.2 Porsche 911 GT3 RS Simply Too Hard & Fast To Enjoy On The Road?",
+        "channel": "JayEmm on Cars",
+        "poster": null,
+        "note": "520 PS RS weighed as a road car, not a lap time"
+      }
+    ],
+    "993": [
+      {
+        "id": "EUAX-pIHrDk",
+        "title": "Porsche 993 Carrera buyer's guide: full story on the last air-cooled 911",
+        "channel": "9WERKS TV",
+        "poster": null,
+        "note": "best single summary of the last air-cooled generation"
+      },
+      {
+        "id": "bqez5xkW4jE",
+        "title": "Retro Review: 1996 Porsche 911 Turbo (993)",
+        "channel": "MotorWeek",
+        "poster": null,
+        "note": "the 400 PS twin-turbo that made the 993 turbo standard"
+      },
+      {
+        "id": "Z-g-QeFVr0E",
+        "title": "1995 Porsche 993 Speedster: Unicorn Conversion",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "factory Speedster conversion, one of a handful"
+      },
+      {
+        "id": "s6bttkQ5RdI",
+        "title": "Driving the 1995 Porsche 911 Carrera RS - 300hp 3.8L Air Cooled Lightweight (POV Review)",
+        "channel": "Tedward",
+        "poster": null,
+        "note": "binaural POV of the 3.8 RS, the driver's 911 of the era"
+      }
+    ],
+    "996": [
+      {
+        "id": "ct30rm78cEA",
+        "title": "Porsche 911 996 in-depth review - see why it's the ultimate sports car bargain!",
+        "channel": "Mat Watson Cars",
+        "poster": null,
+        "note": "thorough first-water-cooled 911 assessment, warts included"
+      },
+      {
+        "id": "w6jCiB9dt0A",
+        "title": "DRIVETRIBE GARAGE: Jethro's Porsche 911",
+        "channel": "DRIVETRIBE",
+        "poster": null,
+        "note": "Carbon-era garage episode built around a 996 911"
+      },
+      {
+        "id": "2OFuYRe1NLQ",
+        "title": "Here's Why the Porsche 911 Turbo (996) Is a Crazy Bargain",
+        "channel": "Doug DeMuro",
+        "poster": null,
+        "note": "996 turbo ownership reality check, prices and caveats"
+      },
+      {
+        "id": "5TfqLjRV8q4",
+        "title": "Porsche 911 (996) GT3 RS - The Best Drivers Porsche?",
+        "channel": "Collecting Cars",
+        "poster": null,
+        "note": "first water-cooled 911 GT3 RS, Chris Harris on lightness"
+      }
+    ],
+    "997": [
+      {
+        "id": "ANmQyLI70-g",
+        "title": "Porsche 911 CSR: Transforming a 997 | Carfection 4K",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "blueprint-driven 997, a clean portrait of the generation"
+      },
+      {
+        "id": "L6vlVdY2Fr8",
+        "title": "2006 Porsche 997 Carrera S - One Take",
+        "channel": "TheSmokingTire",
+        "poster": null,
+        "note": "997.1 Carrera S single-take drive and impressions"
+      },
+      {
+        "id": "AhbtKNHZTJo",
+        "title": "Porsche 911 GT3 RS (997.2) | Anniversary Rise & Drive | PistonHeads",
+        "channel": "PistonHeads",
+        "poster": null,
+        "note": "997.2 GT3 RS as a proper anniversary event car"
+      },
+      {
+        "id": "_AFKEMaS330",
+        "title": "Porsche 911 Sport Classic: 997 vs 992",
+        "channel": "9WERKS TV",
+        "poster": null,
+        "note": "the two back-to-back homologation special stories"
+      }
+    ],
+    "901/911-2.0": [
+      {
+        "id": "s_Ae_cmUAHk",
+        "title": "1965 911 SWB by Sports Purpose. Is this £350,000 Porsche the purest driving 911 of them all?",
+        "channel": "Harry's garage",
+        "poster": null,
+        "note": "restored short-wheelbase 2.0, argued as the purest 911"
+      },
+      {
+        "id": "LiZUK9vKg64",
+        "title": "THIS CAR MATTERS - 1965 Porsche 911",
+        "channel": "Historic Vehicle Association",
+        "poster": null,
+        "note": "short, non-narrated look at why the original 2.0 matters"
+      }
+    ],
+    "901/targa": [
+      {
+        "id": "_Vc8d6UIc30",
+        "title": "1972 Porsche 911S Targa: Preserved, Not Pristine",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "honest, unrestored 2.4 Targa — exactly how survivors wear"
+      }
+    ],
+    "901/carrera-rs-2.7": [
+      {
+        "id": "K7OxHnCjtb0",
+        "title": "1973 Porsche 911 2.7 Carrera RS: Rennsport Royalty",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "definitive RS 2.7 feature, Weber carbs and ducktail explained"
+      },
+      {
+        "id": "oR-l7e4kEkI",
+        "title": "This 1973 Porsche 2.7 Carrera RS Is a Race Car for the Street",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "why the 1973 RS became the homologation-special template"
+      },
+      {
+        "id": "lMkRGjqEwZ8",
+        "title": "Classic 911 2.7 RS - Porsche Experience TV",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's own factory film on the 2.7 Carrera RS"
+      }
+    ],
+    "gseries": [
+      {
+        "id": "-WmO6Pn5Tqg",
+        "title": "This Porsche 930 Turbo Is A Widowmaker",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "period-correct 930 launch era, and the nickname explained"
+      },
+      {
+        "id": "mqVwMQMAEEY",
+        "title": "Porsche 930 Turbo | The Big Thing with Magnus Walker - Ep. 03",
+        "channel": "Hagerty",
+        "poster": null,
+        "note": "Magnus Walker on what the 930 did for Porsche and the badge"
+      },
+      {
+        "id": "cDo67maiZDo",
+        "title": "Porsche 911 turbo drive and review. The legendary '80s Porsche 930",
+        "channel": "Harry's garage",
+        "poster": null,
+        "note": "long road-and-track appraisal of the '80s 930"
+      },
+      {
+        "id": "zCTeWbpCCMM",
+        "title": "The End Of An Era: 1984 - 1989 Porsche 911 Carrera 3.2",
+        "channel": "Roadster Life",
+        "poster": null,
+        "note": "the final air-cooled G-series run out to 1989"
+      }
+    ],
+    "gseries/turbo-3.3-930": [
+      {
+        "id": "x00O3wHIP0Q",
+        "title": "This Porsche 930 Has Been Unleashed",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "3.3-litre Kreasel turbo car at full boost, valves included"
+      },
+      {
+        "id": "n_XlcTBjVgY",
+        "title": "The Original Porsche 911 930 Turbo Is Awesome and Fast",
+        "channel": "Doug DeMuro",
+        "poster": null,
+        "note": "high-strung 930, driving impressions with real-world caveats"
+      }
+    ],
+    "gseries/turbo-flachbau": [
+      {
+        "id": "DGhSB8DfEwI",
+        "title": "Porsche 911 930 Slantnose | Porsche Targa: Part Two | Road Review I survived the Widowmaker",
+        "channel": "Chasing The Apex",
+        "poster": null,
+        "note": "slantnose Carrera 3.2 Turbo road review, the '84–89 slant nose"
+      }
+    ],
+    "gseries/sc": [
+      {
+        "id": "_F_p085RC2M",
+        "title": "The Best 911 We Ever Had? 1979 Porsche 911 SC | Sound, Test Drive and Review",
+        "channel": "Invictus Porsche",
+        "poster": null,
+        "note": "3.0-litre impact-bumper SC, full sound and test drive"
+      }
+    ],
+    "gseries/carrera-3.2": [
+      {
+        "id": "28wjrayxJzk",
+        "title": "The Story of the Porsche 911 3.2 Carrera (G Model)",
+        "channel": "Brightside Media",
+        "poster": null,
+        "note": "fast history of the wide-arch 3.2 G-model run"
+      }
+    ],
+    "964/carrera-4": [
+      {
+        "id": "4MrZVZsAjm8",
+        "title": "1989 Porsche 911 964 Carrera 4 // 0-100 100-200 POV & SOUND",
+        "channel": "AutoTopNL",
+        "poster": null,
+        "note": "launch-era C4 with acceleration runs and induction noise"
+      },
+      {
+        "id": "yl8dnexW1x8",
+        "title": "1992 Porsche 911 C4 - Why This AWD 964 Is The Perfect Air Cooled Daily (POV Binaural Audio)",
+        "channel": "Tedward",
+        "poster": null,
+        "note": "long-form POV on why the C4 works as an air-cooled daily"
+      }
+    ],
+    "964/turbo-3.6": [
+      {
+        "id": "Zz7GhctEepI",
+        "title": "Chris Harris introduces Jenson Button's Porsche 964 Turbo 3.6, now live for bids on Collecting Cars!",
+        "channel": "Collecting Cars",
+        "poster": null,
+        "note": "Jenson Button's own 3.6 turbo, presented by Chris Harris"
+      },
+      {
+        "id": "Jj3nVoRlzfw",
+        "title": "Porsche 964 Turbo Bad Boys - First time drive and Impressions - Episode 2",
+        "channel": "CAS TV",
+        "poster": null,
+        "note": "extended first-drive impressions on the 3.6 turbo"
+      }
+    ],
+    "964/turbo-s-3.6": [
+      {
+        "id": "2up_skJ4xYk",
+        "title": "Porsche 964 911 Turbo Flatnose: Ultra Rare, Ultra Cool - Carfection",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "Flachbau Turbo S, roughly 76 built, in Catchpole's hands"
+      },
+      {
+        "id": "MURJ8Q2VrTs",
+        "title": "Driving A $1,000,000 Porsche 964 Turbo S Flachbau!",
+        "channel": "Seen Through Glass",
+        "poster": null,
+        "note": "seven-figure slantnose driven on a public road"
+      }
+    ],
+    "964/rs-3.8": [
+      {
+        "id": "QFx9DTFz0hs",
+        "title": "Ultimate 964 test: Carrera RS 3.6 v UNICORN 3.8!",
+        "channel": "9WERKS TV",
+        "poster": null,
+        "note": "3.6 versus the unicorn 3.8 RS, same day, same driver"
+      }
+    ],
+    "993/turbo": [
+      {
+        "id": "Foksr3pG58c",
+        "title": "1996 Porsche 911 Turbo : The Twin-Turbo 911 That Saved Porsche",
+        "channel": "Oh Shift",
+        "poster": null,
+        "note": "why the Variocam-plus twin turbo rescued the 911 line"
+      }
+    ],
+    "993/turbo-s": [
+      {
+        "id": "TClTFuIdT8A",
+        "title": "1997 Porsche 911 Turbo S (993) Review: The Final and ULTIMATE Air-Cooled 911 [Kennan]",
+        "channel": "Cars & Bids",
+        "poster": null,
+        "note": "450 PS final air-cooled 911, treated as the true summit"
+      }
+    ],
+    "993/gt2": [
+      {
+        "id": "9jUM-OWGLhA",
+        "title": "Porsche 993 GT2 review. Is this road racer special the ultimate air-cooled 911 turbo?",
+        "channel": "Harry's garage",
+        "poster": null,
+        "note": "road-legal race 911 GT2, long-form review"
+      },
+      {
+        "id": "Rf34n2rxzUI",
+        "title": "Porsche 911 (993) GT2: Charles Morgan's Classics - Carfection",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "GT2 in Carfection's classics format, period detail intact"
+      }
+    ],
+    "993/carrera-rs": [
+      {
+        "id": "PKAxENMn6qg",
+        "title": "Porsche 993 Carrera RS review",
+        "channel": "Autoblog",
+        "poster": null,
+        "note": "short, well-judged drive of the 993 RS"
+      }
+    ],
+    "996/gt2": [
+      {
+        "id": "cFov3RZD16s",
+        "title": "The Beauty of Brutality: Porsche 996 GT2",
+        "channel": "Petrolicious",
+        "poster": null,
+        "note": "the 996 GT2 stripped of wings and driven hard"
+      },
+      {
+        "id": "2_v5CBv-3CM",
+        "title": "Driving the WIDOWMAKER: What's The Fearsome Porsche 911 996 GT2 Really Like?",
+        "channel": "JayEmm on Cars",
+        "poster": null,
+        "note": "long road-and-track GT2 test in early 996 form"
+      }
+    ],
+    "996/gt3-rs": [
+      {
+        "id": "DVvCr8gBzY4",
+        "title": "Class of 2003 MEGA TEST | 996 GT3 RS vs 360 Challenge Stradale vs M3 CSL | Supercar Driver | 4K",
+        "channel": "Supercar Driver",
+        "poster": null,
+        "note": "996 GT3 RS benchmarked against its 2003 rivals"
+      }
+    ],
+    "997/gt2-rs": [
+      {
+        "id": "vQcwqCt4JE8",
+        "title": "Porsche 911 GT2 RS review and drift - Auto Express",
+        "channel": "Auto Express",
+        "poster": null,
+        "note": "620 PS GT2 RS review, road plus the inevitable slide"
+      },
+      {
+        "id": "7V1xfgpUWyM",
+        "title": "Porsche 911 GT2 RS #TBT - Fifth Gear",
+        "channel": "Fifth Gear",
+        "poster": null,
+        "note": "Tiff-era GT2 RS road test from the original #TBT"
+      }
+    ],
+    "997/gt3-rs-4.0": [
+      {
+        "id": "cL_gUsaMmFc",
+        "title": "Is This Porsche's Best Engine? | Porsche 997.1 GT3 RS | Naturally Aspirated Heroes Ep 4 | 4K",
+        "channel": "Supercar Driver",
+        "poster": null,
+        "note": "the 3.8 as a standalone subject, not just a car review"
+      }
+    ],
+    "997/sport-classic": [
+      {
+        "id": "ww7izAkZ_oQ",
+        "title": "Porsche 911 Sport Classic 997 // REVIEW on AUTOBAHN",
+        "channel": "AutoTopNL",
+        "poster": null,
+        "note": "250-built Sport Classic flat-out, with sound"
+      }
+    ],
+    "991/r": [
+      {
+        "id": "FCbsubFEUxQ",
+        "title": "The Porsche 911R Isn't Worth $500,000 (But It's Amazing)",
+        "channel": "Doug DeMuro",
+        "poster": null,
+        "note": "991-unit 911 R with the price objection answered head-on"
+      },
+      {
+        "id": "NlVI9ngCo5Q",
+        "title": "Porsche 911 R: Screw The Stats, This Is An Experience - Carfection",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "Catchpole on why the R matters beyond its 991 units"
+      }
+    ],
+    "991/carrera-t": [
+      {
+        "id": "sEQB5uo7oaM",
+        "title": "Porsche 911 Carrera T vs Porsche GT3 Touring | Top Gear",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "where the lightweight, manual Carrera T actually sits"
+      }
+    ],
+    "991/gt3-rs": [
+      {
+        "id": "7NGZY7MARms",
+        "title": "2017 Porsche 911 GT3 REVIEW POV Test Drive AUTOBAHN & FOREST ROADS by AutoTopNL",
+        "channel": "AutoTopNL",
+        "poster": null,
+        "note": "991.2 GT3 POV, autobahn to forest roads"
+      }
+    ],
+    "991/gt2-rs": [
+      {
+        "id": "WFHbnglmeUA",
+        "title": "Nürburgring Lap Record: On Board the 911 GT2 RS",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's own on-board of the 6:47 GT2 RS record lap"
+      },
+      {
+        "id": "0WZ-eZZXi-g",
+        "title": "The Porsche 911 GT2 RS MR | Chris Harris Drives | Top Gear",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "GT2 RS MR, the homologation apex of the 991 line"
+      }
+    ],
+    "992-1": [
+      {
+        "id": "DLLN7f-a8xk",
+        "title": "NEW Porsche 911 (992 Generation): In-Depth First Look - Carfection (4K)",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "full first look at the all-new 992 architecture"
+      },
+      {
+        "id": "EDm58UgBUxk",
+        "title": "Livestream reveal: Presenting the new Porsche 911 GT3 RS",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's official GT3 RS world premiere stream"
+      },
+      {
+        "id": "wXyNe-UX15Y",
+        "title": "New PORSCHE 911 S/T BREAKS COVER! First Look at the GREATEST 911 EVER",
+        "channel": "Shmee150",
+        "poster": null,
+        "note": "unveiled 60th-anniversary S/T, 1,963 built, manual only"
+      },
+      {
+        "id": "xdAsI1WlmIg",
+        "title": "2023 Porsche 911 Sport Classic: First Drive Review | Catchpole on Carfection",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "992 Sport Classic judged on road, not against the GT3"
+      }
+    ],
+    "992-1/gt3-rs": [
+      {
+        "id": "CE-ZCQdpqeg",
+        "title": "FIRST LOOK: New Porsche 911 GT3 RS (992) - 518bhp, £195k and DRS! | Top Gear",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "992 GT3 RS with active aero and the DRS debut"
+      },
+      {
+        "id": "7eAv3lsb0Xc",
+        "title": "NEW Porsche 911 GT3 RS: In-Depth First Look with Andreas Preuninger | Catchpole on Carfection",
+        "channel": "Carfection",
+        "poster": null,
+        "note": "Preuninger explains why the aero is manual-first"
+      }
+    ],
+    "992-1/dakar": [
+      {
+        "id": "FyNVlxA2ySk",
+        "title": "2023 Porsche 911 Dakar Revealed",
+        "channel": "DPCcars",
+        "poster": null,
+        "note": "2,500 Dakar, raised ride height and three-door body"
+      },
+      {
+        "id": "c1OVVBsjLnA",
+        "title": "Porsche 911 Dakar First Drive Review | Can we break it?",
+        "channel": "CAR magazine",
+        "poster": null,
+        "note": "first proper road test of the safari-spec 911"
+      }
+    ],
+    "992-1/s-t": [
+      {
+        "id": "xsQ2xdtli2k",
+        "title": "Porsche 911 S/T: The Greatest Road Car Porsche Has EVER Built?",
+        "channel": "carwow",
+        "poster": null,
+        "note": "GT3 RS engine, GT3 Touring body, new lightweight clutch"
+      },
+      {
+        "id": "yDpABJHzxT0",
+        "title": "FIRST DRIVE: Porsche 911 S/T – 518bhp GT3 RS Engine + Manual = Ultimate 911 | Top Gear",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "Top Gear on the 1,380 kg manual-only anniversary car"
+      }
+    ],
+    "992-1/gt3-touring": [
+      {
+        "id": "hP7LDAnofBM",
+        "title": "Chris Harris Drives The New Porsche 992 GT3 Touring",
+        "channel": "Collecting Cars",
+        "poster": null,
+        "note": "aero deleted, rear wing gone, driving intact"
+      }
+    ],
+    "992-1/sport-classic": [
+      {
+        "id": "sUV1C_kNiAY",
+        "title": "Porsche 911 Sport Classic. Fantastic looks, 550bhp, 2WD but is it better than the GT3 Touring?",
+        "channel": "Harry's garage",
+        "poster": null,
+        "note": "the GT3 Touring comparison every Sport Classic review makes"
+      },
+      {
+        "id": "G-MqQ3MUHSQ",
+        "title": "Porsche 911 Sport Classic takes on the Goodwood Hillclimb",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's own hillclimb run of the 1,250-built car"
+      }
+    ],
+    "992-1/targa-4s-heritage": [
+      {
+        "id": "Giz_bOBEgQs",
+        "title": "The Heritage Design Edition of the 911 Targa",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's own film on the 992-built Heritage Design Targa"
+      },
+      {
+        "id": "_5v2FMk5HXU",
+        "title": "2020 Porsche 911 Targa 4S Heritage Design Edition | Cherrymetallic | Driving, Interior, Exterior",
+        "channel": "The Wheel Network",
+        "poster": null,
+        "note": "Lava Grey / Cherrymetallic, six-speed manual, full walkthrough"
+      }
+    ],
+    "992-2": [
+      {
+        "id": "eP5V0Z6_CXw",
+        "title": "Digital World Premiere for the youngest member of the 911 GT family",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's official digital premiere of the 992.2 GT3"
+      },
+      {
+        "id": "tlr-bMikSw4",
+        "title": "FIRST LOOK: Porsche 911 GT3 — What's New?",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "what actually changed for the 992.2 GT3"
+      },
+      {
+        "id": "Wk7GQnZ5dYg",
+        "title": "The New Porsche 911 is a HYBRID? Driving the 992.2 GTS | Henry Catchpole - The Driver's Seat",
+        "channel": "Hagerty",
+        "poster": null,
+        "note": "the 541 PS T-Hybrid GTS, the first electrified 911"
+      },
+      {
+        "id": "EJsf0tTiISI",
+        "title": "2026 Porsche 911 Turbo S | Track Test",
+        "channel": "MotorWeek",
+        "poster": null,
+        "note": "T-Hybrid Turbo S put through its timing loops"
+      }
+    ],
+    "992-2/carrera-gts": [
+      {
+        "id": "it8xrIIC1cI",
+        "title": "FIRST LOOK: Hybrid Porsche 911 GTS – 534bhp, Bigger Engine, Trick Turbo, E-Boost!",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "3.6 flat-six, e-turbo and the 400 V battery explained"
+      },
+      {
+        "id": "-k1RijhaggU",
+        "title": "Chris Harris on Cars: Porsche 992 Carrera GTS Hybrid Review",
+        "channel": "Chris Harris on Cars",
+        "poster": null,
+        "note": "independent verdict on the electrified Carrera GTS"
+      },
+      {
+        "id": "NPRUclJzmtg",
+        "title": "992.2 Carrera S: Nearly GTS performance — no electric motor or e-turbos | Model Review",
+        "channel": "Porsche Club of America",
+        "poster": null,
+        "note": "useful contrast: the non-hybrid 2026 Carrera S against GTS"
+      }
+    ],
+    "992-2/turbo-s": [
+      {
+        "id": "eOcYjvHOivI",
+        "title": "2026 Porsche 911 Turbo S Reveal – New 711 hp 992.2 Top Model Unveiled!",
+        "channel": "The Wheel Network",
+        "poster": null,
+        "note": "the 711 hp T-Hybrid Turbo S, unveiled for 2026"
+      },
+      {
+        "id": "RS-7_Helv60",
+        "title": "2026 Porsche 911 Turbo S Review",
+        "channel": "Throttle House",
+        "poster": null,
+        "note": "long-form review of the hybrid top-spec 911"
+      }
+    ],
+    "992-2/gt3": [
+      {
+        "id": "lTxbdRlSnww",
+        "title": "Listen To The New 2025 Porsche GT3",
+        "channel": "Carscoops",
+        "poster": null,
+        "note": "the 9,000 rpm four-cylinder given a proper listen"
+      }
+    ],
+    "992-2/gt3-s-c": [
+      {
+        "id": "zhD7i6xH3f0",
+        "title": "2027 Porsche 911 GT3 S/C Reveal",
+        "channel": "The Wheel Network",
+        "poster": null,
+        "note": "world premiere of the first open-top GT3"
+      },
+      {
+        "id": "EmKZCi4QZZA",
+        "title": "911 GT3 S/C: Walkaround mit Andreas Preuninger",
+        "channel": "Porsche Deutschland",
+        "poster": null,
+        "note": "Porsche's own walkaround with GT chief Preuninger"
+      },
+      {
+        "id": "TUU-hgMDUWg",
+        "title": "Porsche 911 S/C exclusive first drive! | Chris Harris on Cars",
+        "channel": "Chris Harris on Cars",
+        "poster": null,
+        "note": "first drive of the manual-only, two-seat GT3 S/C"
+      },
+      {
+        "id": "1a0f-dFqZh0",
+        "title": "New Porsche 911 GT3 S/C: Worst GT3 Ever! | 4K",
+        "channel": "Top Gear",
+        "poster": null,
+        "note": "deliberately sceptical first verdict on the S/C"
+      }
+    ],
+    "992-2/spirit-70": [
+      {
+        "id": "C8CCYbCHL0g",
+        "title": "Bringing back the disco decade | The new 911 Spirit 70",
+        "channel": "Porsche",
+        "poster": null,
+        "note": "Porsche's official film on the 1,500-built Spirit 70"
+      },
+      {
+        "id": "c1GZl8GbgrU",
+        "title": "New Porsche 911 Spirit 70: in-depth first look with designer Thorsten Klein!",
+        "channel": "9WERKS TV",
+        "poster": null,
+        "note": "designer explains Olive Neo and the Pasha interior"
+      }
+    ]
+  }
 }
