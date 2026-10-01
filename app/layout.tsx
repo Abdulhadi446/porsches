@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteNav } from "#components/nav/site-nav";
+import { SmoothScrollProvider } from "#components/timeline/lenis-provider";
 import { PageTransition } from "#components/nav/page-transition";
 import { Footer } from "#components/nav/footer";
 
@@ -56,11 +57,13 @@ export default function RootLayout({
       className={`${anton.variable} ${jetbrains.variable} ${inter.variable}`}
     >
       <body className="grain min-h-dvh bg-ink text-metal-100 antialiased">
-        <PageTransition>
+        <SmoothScrollProvider>
+          <PageTransition>
           <SiteNav />
           <main id="main">{children}</main>
           <Footer />
         </PageTransition>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
