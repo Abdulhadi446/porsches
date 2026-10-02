@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GENERATIONS, getGeneration } from "#lib/generations";
+import { getImage } from "#lib/assets";
+import { GenerationHero } from "#components/variant/generation-hero";
+import { StatCounters } from "#components/variant/spec-counters";
+import { VariantGrid } from "#components/variant/variant-grid";
+import { VideoSection } from "#components/variant/video-section";
+import { GenerationPager } from "#components/variant/generation-pager";
+import { DataNotes } from "#components/variant/data-notes";
+import { generationVideos } from "#components/variant/lib/videos";
+import { yearRange } from "#components/variant/lib/format";
+
+/**
+ * `/911/[generation]` — the generation landing page.
+ *
+ * Server component (deliverable 1): full-bleed hero with the generation hero
+ * image, giant outlined year numerals, tagline + description, animated stat
+ * counters, every variant in a linked grid, the curated generation videos, a
+ * previous/next pager and a jump back to the timeline.
+ *
+ * Work per page is O(variants in this generation) — 13..23 entries — plus two
+ * O(1) key lookups. Nothing scans the filesystem and no media is fetched here.
+ */
 
 export function generateStaticParams() {
-  return GENERATIONS.map((g) => ({ generation: g.id }));
+  return GENERATIONS.map((generation) => ({ generation: generation.id }));
 }
 
 export async function generateMetadata({
@@ -14,10 +34,25 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { generation } = await params;
   const gen = getGeneration(generation);
-  return { title: gen ? `${gen.code} — ${gen.name}` : "Generation" };
+  if (!gen) return { title: "Generation not found" };
+
+  const years = yearRange(gen.yearsStart, gen.yearsEnd);
+  const description =
+    gen.tagline ||
+    `${gen.name} (${years}) — ${gen.variants.length} catalogued variants, specifications and archive media.`;
+
+  return {
+    title: `${gen.code} — ${gen.name}`,
+    description,
+    alternates: { canonical: `/911/${gen.id}` },
+    openGraph: {
+      title: `${gen.code} ${gen.name} · ${years}`,
+      description,
+      type: "website",
+    },
+  };
 }
 
-/** STUB — owned by VARIANT-PAGES subagent. */
 export default async function GenerationPage({
   params,
 }: {
@@ -27,35 +62,52 @@ export default async function GenerationPage({
   const gen = getGeneration(generation);
   if (!gen) notFound();
 
+  const position = GENERATIONS.findIndex((entry) => entry.id === gen.id);
+  const previous = position > 0 ? GENERATIONS[position - 1] : null;
+  const next = position >= 0 && position < GENERATIONS.length - 1 ? GENERATIONS[position + 1] : null;
+
+  const hero = getImage(gen.heroImage ?? gen.timelineImage, {
+    alt: `${gen.code} ${gen.name} — ${yearRange(gen.yearsStart, gen.yearsEnd)}`,
+  });
+  const stats = (gen.stats ?? []).slice(0, 6);
+  const videos = generationVideos(gen);
+
   return (
-    <div className="px-[--gutter] pb-[--space-32] pt-[--space-32]">
-      <div className="mx-auto max-w-[--maxw]">
-        <p className="label mb-4">
-          {gen.yearsStart}–{gen.yearsEnd ?? "today"}
-        </p>
-        <h1 className="text-display-2 mb-8">{gen.code}</h1>
-        <p className="mb-12 max-w-[--maxw-prose] text-metal-500">
-          {gen.description || "Generation overview — content pending."}
-        </p>
-        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {gen.variants.map((v) => (
-            <li key={v.id}>
-              <Link
-                href={`/911/${gen.id}/${v.id}`}
-                className="block border border-ink-4 bg-ink-2 p-6 transition-colors hover:border-guards"
-              >
-                <span className="font-display text-xl">{v.name}</span>
-                <span className="mt-1 block font-mono text-mono-xs text-metal-500">
-                  {v.years}
-                </span>
-              </Link>
-            </li>
-          ))}
-          {gen.variants.length === 0 && (
-            <li className="label">Variants pending data agents.</li>
-          )}
-        </ul>
-      </div>
+    <div data-owner="variant-pages">
+      <GenerationHero
+        code={gen.code}
+        name={gen.name}
+        tagline={gen.tagline}
+        description={gen.description}
+        yearsStart={gen.yearsStart}
+        yearsEnd={gen.yearsEnd}
+        ordinal={position + 1}
+        total={GENERATIONS.length}
+        variantCount={gen.variants.length}
+        hero={hero}
+        accent={gen.accent}
+        generationId={gen.id}
+      />
+
+      {stats.length > 0 ? (
+        <StatCounters stats={stats} accent={gen.accent} headingId={`gen-${gen.id}-stats`} />
+      ) : null}
+
+      <VariantGrid generation={gen} accent={gen.accent} headingId={`gen-${gen.id}-variants`} />
+
+      {videos.length > 0 ? (
+        <VideoSection
+          videos={videos}
+          carName={gen.code}
+          accent={gen.accent}
+          headingId={`gen-${gen.id}-videos`}
+          lede={`Curated from the ${gen.variants.length} variants of the ${gen.code}. Nothing is downloaded from YouTube — each player is an embed that only loads when you press play.`}
+        />
+      ) : null}
+
+      <DataNotes notes={gen.missing} heading="What the sources do not settle" accent={gen.accent} />
+
+      <GenerationPager generation={gen} previous={previous} next={next} />
     </div>
   );
 }

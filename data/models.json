@@ -1,0 +1,390 @@
+{
+  "updatedAt": "2026-10-01T18:51:54.281Z",
+  "generations": {
+    "901": {
+      "embedUrl": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+      "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+      "license": "CC Attribution",
+      "author": "tonielpro520",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "964": {
+      "embedUrl": "https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf?embed=1",
+      "sourceId": "d01b254483794de3819786d93e0e1ebf",
+      "license": "CC Attribution-ShareAlike",
+      "author": "Lionsharp Studios",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "991": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-carrera-s-991-97785983d3a949cf87e9ee6bf49f4032?embed=1",
+      "sourceId": "97785983d3a949cf87e9ee6bf49f4032",
+      "license": "CC Attribution",
+      "author": "Mona x Supercars",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "993": {
+      "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+      "sourceId": "b711966542e143e2829a21e0230fa30e",
+      "license": "CC Attribution",
+      "author": "Ai 3D Designs",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "996": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-996-bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
+      "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
+      "license": "CC Attribution",
+      "author": "MattDoesBlender",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "997": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-9972-11-7e25beb0e2c841f0bf51f94fde651fd4?embed=1",
+      "sourceId": "7e25beb0e2c841f0bf51f94fde651fd4",
+      "license": "CC Attribution",
+      "author": "Mona x Supercars",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gseries": {
+      "embedUrl": "https://sketchfab.com/3d-models/free-1975-porsche-911-930-turbo-8568d9d14a994b9cae59499f0dbed21e?embed=1",
+      "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+      "license": "MIT",
+      "author": "Utkarsh Pathrabe",
+      "glb": "/models/930-turbo-1975/model.glb",
+      "turntable": null,
+      "bytes": 2206432
+    },
+    "992-1": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-992-carrera-s-318cfb7279a94e8f96095ec0236f02ad?embed=1",
+      "sourceId": "318cfb7279a94e8f96095ec0236f02ad",
+      "license": "CC Attribution",
+      "author": "Nieve5677",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "992-2": {
+      "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-9922-b668f8a336b54954b04fa0dade507300?embed=1",
+      "sourceId": "b668f8a336b54954b04fa0dade507300",
+      "license": "CC Attribution",
+      "author": "BMW'S Lost Proxy",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    }
+  },
+  "variants": {
+    "911-2.0": {
+      "embedUrl": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+      "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+      "license": "CC Attribution",
+      "author": "tonielpro520",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "911-t-2.0": null,
+    "911-l-2.0": null,
+    "911-e-2.0": null,
+    "911-s-2.0": null,
+    "911-2.2": null,
+    "911-e-2.2": null,
+    "911-t-2.2": null,
+    "911-s-2.2": null,
+    "911-2.4": null,
+    "911-e-2.4": null,
+    "911-t-2.4": null,
+    "911-s-2.4": null,
+    "targa": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-targa-low-poly-7e2018a0bccf48d6b26cd2285d544f19?embed=1",
+      "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
+      "license": "CC Attribution",
+      "author": "GhostMan",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "cabriolet-hebmuller": null,
+    "st": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-st-1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
+      "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
+      "license": "CC Attribution",
+      "author": "CriMoreScum",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-rs-2.7": null,
+    "s-t": {
+      "embedUrl": "https://sketchfab.com/3d-models/2024-porsche-911-st-f39f7c539a3440428c22a3da2f52af43?embed=1",
+      "sourceId": "f39f7c539a3440428c22a3da2f52af43",
+      "license": "CC Attribution",
+      "author": "Ddiaz Design",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-4": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-964-cae366648d134fa3a3ee810ba1f6c2fc?embed=1",
+      "sourceId": "cae366648d134fa3a3ee810ba1f6c2fc",
+      "license": "CC Attribution",
+      "author": "DRIVER-FIRE",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-2": null,
+    "carrera-4s": {
+      "embedUrl": "https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf?embed=1",
+      "sourceId": "d01b254483794de3819786d93e0e1ebf",
+      "license": "CC Attribution-ShareAlike",
+      "author": "Lionsharp Studios",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-2s": null,
+    "turbo-3.3": null,
+    "turbo-3.6": {
+      "embedUrl": "https://sketchfab.com/3d-models/1993-porsche-911-964-turbo-e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
+      "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
+      "license": "CC Attribution",
+      "author": "tonielpro520",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "turbo-s-3.6": {
+      "embedUrl": "https://sketchfab.com/3d-models/1992-porsche-911-964-turbo-s-36-b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
+      "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
+      "license": "CC Attribution",
+      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "rs-3.8": null,
+    "rsr-3.8": null,
+    "speedster": null,
+    "america-roadster": null,
+    "30th-anniversary": null,
+    "cup": null,
+    "carrera": {
+      "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+      "sourceId": "b711966542e143e2829a21e0230fa30e",
+      "license": "CC Attribution",
+      "author": "Ai 3D Designs",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-s": null,
+    "carrera-t": null,
+    "targa-4": null,
+    "targa-4s": {
+      "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-616ebc4356c74a3b8554c396eb3bd34c?embed=1",
+      "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
+      "license": "CC Attribution",
+      "author": "DisneyCars",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gts": {
+      "embedUrl": "https://sketchfab.com/3d-models/2018-porsche-911-carrera-gts-4e98dd91d11d4809bb80102edfbde42b?embed=1",
+      "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
+      "license": "CC Attribution",
+      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "turbo": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911turbo-996-2000-0aca89de30b94126bc7020109b2f3ef0?embed=1",
+      "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
+      "license": "CC Attribution",
+      "author": "i3bod",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "turbo-s": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-s-992-wip-b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
+      "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
+      "license": "CC Attribution",
+      "author": "let's not care abt it",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gt3": {
+      "embedUrl": "https://sketchfab.com/3d-models/2022-porsche-911-gt3-992-a23f04a665a84177ac97551ce0c720eb?embed=1",
+      "sourceId": "a23f04a665a84177ac97551ce0c720eb",
+      "license": "CC Attribution",
+      "author": "007",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gt3-touring": null,
+    "gt3-rs": {
+      "embedUrl": "https://sketchfab.com/3d-models/2023-porsche-911-gt3-rs-992-bbb0f6181a52416bb776713cfd4987dd?embed=1",
+      "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
+      "license": "CC Attribution",
+      "author": "DisneyCars",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gt2-rs": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-991-gt2-rs-cs-evo-wwwvecarzcom-98767072b9f94f8eb6c4512b7be891c4?embed=1",
+      "sourceId": "98767072b9f94f8eb6c4512b7be891c4",
+      "license": "CC Attribution",
+      "author": "vecarz",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "r": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-r-2017-a8f40dc2180142c0887d251199d74077?embed=1",
+      "sourceId": "a8f40dc2180142c0887d251199d74077",
+      "license": "CC Attribution",
+      "author": "Ulix21",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "50th-anniversary": null,
+    "cabriolet": null,
+    "carrera-rs": null,
+    "gt2": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt2-9971-c48298e703c44f2187d5562ef64f4dcf?embed=1",
+      "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
+      "license": "CC Attribution",
+      "author": "Mona x Supercars",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gt2-evo": null,
+    "club-sport": null,
+    "millennium-edition": null,
+    "gt3-rs-4.0": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-4-0-997-95226a73526b46e680b091f1caf6191f?embed=1",
+      "sourceId": "95226a73526b46e680b091f1caf6191f",
+      "license": "CC Attribution",
+      "author": "Antonis_zks",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "sport-classic": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-sport-classic-2023-38903fc72658408287a5972285494bd6?embed=1",
+      "sourceId": "38903fc72658408287a5972285494bd6",
+      "license": "CC Attribution",
+      "author": "Nieve5677",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "911-2.7": null,
+    "911-s-2.7": null,
+    "carrera-2.7": null,
+    "carrera-rs-3.0": null,
+    "carrera-rsr-3.0": null,
+    "turbo-3.0-930": {
+      "embedUrl": "https://sketchfab.com/3d-models/free-1975-porsche-911-930-turbo-8568d9d14a994b9cae59499f0dbed21e?embed=1",
+      "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+      "license": "MIT",
+      "author": "Utkarsh Pathrabe",
+      "glb": "/models/930-turbo-1975/model.glb",
+      "turntable": null,
+      "bytes": 2206432
+    },
+    "turbo-3.3-930": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-1980-d792213008744efa9253a9147523ca2d?embed=1",
+      "sourceId": "d792213008744efa9253a9147523ca2d",
+      "license": "CC Attribution",
+      "author": "Maarten Leys",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "turbo-flachbau": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-930-flachbau-16e4693a8f4144e4a071685289869dd6?embed=1",
+      "sourceId": "16e4693a8f4144e4a071685289869dd6",
+      "license": "CC Attribution",
+      "author": "LowPolyGarage",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "turbo-s-3.3": null,
+    "turbo-le-1989": null,
+    "carrera-3.0": null,
+    "sc": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-sc-rally-1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
+      "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
+      "license": "CC Attribution",
+      "author": "amogusstrikesback2",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "sc-rs": null,
+    "carrera-3.2": {
+      "embedUrl": "https://sketchfab.com/3d-models/porsche-911-32-carrera-coupe-26953936409c4ee7b9de11caa37e52f1?embed=1",
+      "sourceId": "26953936409c4ee7b9de11caa37e52f1",
+      "license": "CC Attribution",
+      "author": "cepela",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-3.2-turbo-look": null,
+    "carrera-club-sport": null,
+    "speedster-1989": null,
+    "turbo-gt": null,
+    "dakar": {
+      "embedUrl": "https://sketchfab.com/3d-models/2023--porsche-911--dakar--rallye--package-remix-326e90718d164f018e9a673849a3161b?embed=1",
+      "sourceId": "326e90718d164f018e9a673849a3161b",
+      "license": "CC Attribution",
+      "author": "HiQ3D",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "targa-4s-heritage": {
+      "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-heritage-design-992-c9af184fba65488db9138d9cffcea832?embed=1",
+      "sourceId": "c9af184fba65488db9138d9cffcea832",
+      "license": "CC Attribution",
+      "author": "007",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "carrera-gts": null,
+    "carrera-4-gts": null,
+    "targa-4-gts": {
+      "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
+      "sourceId": "214a61d759e942e2887290b6e4e50d49",
+      "license": "CC Attribution",
+      "author": "007",
+      "glb": null,
+      "turntable": null,
+      "bytes": null
+    },
+    "gt3-s-c": null,
+    "spirit-70": null
+  }
+}

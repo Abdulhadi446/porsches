@@ -62,6 +62,7 @@
   --space-32: 8rem;
 
   --gutter: clamp(1rem, 4vw, 4rem);
+  --nav-h: 4rem;
   --maxw: 1440px;
   --maxw-prose: 68ch;
 

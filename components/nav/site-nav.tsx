@@ -1,30 +1,25 @@
-import Link from "next/link";
 import { GENERATIONS } from "#lib/generations";
+import { NavChrome, type NavGeneration } from "./nav-chrome";
 
-/** STUB — owned by NAV-UX subagent; replace with the sticky mega-nav. */
+/**
+ * SITE NAV — owned by NAV-UX.
+ *
+ * A server component on purpose: the nine generation summaries are extracted
+ * here and handed to the client island (`NavChrome`) as plain props, so the
+ * generation JSON never ships in the client bundle of any route. The palette's
+ * index is code-split separately and only pulled in on first use.
+ */
 export function SiteNav() {
-  return (
-    <header
-      className="fixed inset-x-0 top-0 z-nav flex items-center justify-between border-b border-ink-4/60 bg-ink/70 px-[--gutter] py-4 backdrop-blur"
-      data-owner="nav-ux"
-    >
-      <Link href="/" className="font-display text-lg tracking-label uppercase">
-        911<span className="text-guards">.</span>SHOWCASE
-      </Link>
-      <nav aria-label="Generations" className="hidden gap-4 md:flex">
-        {GENERATIONS.map((g) => (
-          <Link
-            key={g.id}
-            href={`/911/${g.id}`}
-            className="label transition-colors hover:text-metal-100"
-          >
-            {g.code}
-          </Link>
-        ))}
-      </nav>
-      <Link href="/compare" className="label hover:text-guards">
-        Compare
-      </Link>
-    </header>
-  );
+  const generations: NavGeneration[] = GENERATIONS.map((generation) => ({
+    id: generation.id,
+    code: generation.code,
+    name: generation.name,
+    years: `${generation.yearsStart}\u2013${generation.yearsEnd ?? "today"}`,
+    accent: generation.accent,
+    tagline: generation.tagline ?? "",
+    variantCount: generation.variants.length,
+    yearStart: generation.yearsStart,
+  }));
+
+  return <NavChrome generations={generations} />;
 }
