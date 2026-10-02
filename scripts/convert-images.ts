@@ -13,7 +13,6 @@
  *       node --experimental-strip-types scripts/convert-images.ts
  */
 
-import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -26,6 +25,9 @@ const USER_AGENT =
   "porsche-911-showcase-image-pipeline/1.0 (unofficial fan showcase; contact: repository owner)";
 const WORK_DIR = process.env.P911_WORK_DIR ?? "/tmp/opencode/p911";
 const RAW_DIR = path.join(WORK_DIR, "raw");
+const CACHE_DIR = path.join(WORK_DIR, "cache");
+const API = "https://api.wikimedia.org/core/v1/commons";
+const TARGET_W = 1920;
 const IMAGES_JSON = path.join(ROOT, "data/images.json");
 const CREDITS_JSON = path.join(ROOT, "data/credits.json");
 const PUBLIC_DIR = path.join(ROOT, "public");
@@ -81,30 +83,104 @@ function findRaw(assetId: string): string | null {
   return null;
 }
 
-/** Rebuild the Wikimedia upload/thumb URL from the "File:…" title (md5 path). */
-function commonsUrls(fileTitle: string): { origUrl: string; thumbUrl: string } {
-  const name = fileTitle.slice(5).replace(/ /g, "_");
-  const h = crypto.createHash("md5").update(name).digest("hex");
-  const enc = encodeURIComponent(name);
-  const dir = `${h[0]}/${h.slice(0, 2)}/${enc}`;
-  return {
-    origUrl: `https://upload.wikimedia.org/wikipedia/commons/${dir}`,
-    thumbUrl: `https://thumb.wikimedia.org/wikipedia/commons/thumb/${dir}/1920px-${enc}`,
-  };
+/** Width-specific Commons thumbnail derived from the original upload URL. */
+function thumbUrlFor(origUrl: string, width: number): string | null {
+  const clean = origUrl.split("?")[0];
+  const m = /^(https:\/\/upload\.wikimedia\.org\/wikipedia\/commons)\/([0-9a-f])\/([0-9a-f]{2})\/([^/]+)$/.exec(
+    clean,
+  );
+  if (!m) return null;
+  const [, base, h1, h2, name] = m;
+  return `${base.replace("upload", "thumb")}/thumb/${h1}/${h2}/${name}/${width}px-${name}`;
+}
+
+function cachePath(kind: string, key: string): string {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < key.length; i++) {
+    h ^= key.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  const hex = h.toString(16).padStart(8, "0");
+  return path.join(CACHE_DIR, kind, hex.slice(0, 2), `${hex}.json`);
+}
+
+interface Meta {
+  origUrl: string;
+  width: number;
+  height: number;
+}
+
+/** Serialise REST calls: the shared API answers bursts with 429. */
+let apiNextAt = 0;
+async function apiGate(): Promise<void> {
+  const now = Date.now();
+  const wait = Math.max(0, apiNextAt - now);
+  apiNextAt = Math.max(now, apiNextAt) + 400;
+  if (wait > 0) await sleep(wait);
+}
+
+/** `api.wikimedia.org` is the only Commons host reachable from this machine, so
+ *  the exact upload URL is read from the REST file endpoint (cached on disk and
+ *  shared with scripts/fetch-images.ts) instead of being rebuilt from the md5. */
+async function metaFor(fileTitle: string): Promise<Meta | null> {
+  const url = `${API}/file/${encodeURIComponent(fileTitle)}`;
+  const cache = cachePath("meta", url);
+  if (fs.existsSync(cache)) {
+    try {
+      return JSON.parse(fs.readFileSync(cache, "utf8")) as Meta | null;
+    } catch {
+      /* refetch */
+    }
+  }
+  // api.wikimedia.org answers 429 to bursts, so every gap grows while it refuses
+  let gap = 400;
+  for (let attempt = 0; attempt <= 8; attempt++) {
+    await apiGate();
+    await sleep(gap);
+    try {
+      const res = await fetch(url, { headers: { "User-Agent": USER_AGENT, Accept: "application/json" } });
+      if (res.status === 429 || res.status >= 500) {
+        gap = Math.min(15000, Math.round(gap * 2));
+        continue;
+      }
+      if (!res.ok) return null;
+      const d = (await res.json()) as {
+        original?: { url?: string; width?: number; height?: number };
+      };
+      const meta: Meta | null = d.original?.url
+        ? {
+            origUrl: d.original.url.split("?")[0],
+            width: d.original.width ?? 0,
+            height: d.original.height ?? 0,
+          }
+        : null;
+      fs.mkdirSync(path.dirname(cache), { recursive: true });
+      fs.writeFileSync(cache, JSON.stringify(meta));
+      gap = Math.max(300, Math.round(gap * 0.8));
+      return meta;
+    } catch {
+      gap = Math.min(15000, Math.round(gap * 2));
+    }
+  }
+  return null;
 }
 
 async function reDownload(credit: Credit): Promise<string | null> {
   const existing = findRaw(credit.assetId);
   if (existing) return existing;
   if (!credit.sourceId?.startsWith("File:")) return null;
-  const { origUrl, thumbUrl } = commonsUrls(credit.sourceId);
-  const ext = (path.extname(new URL(origUrl).pathname) || ".jpg").toLowerCase();
+  const meta = await metaFor(credit.sourceId);
+  if (!meta) return null;
+  const ext = (path.extname(new URL(meta.origUrl).pathname) || ".jpg").toLowerCase();
   const dest = path.join(RAW_DIR, `${credit.assetId}${ext}`);
   fs.mkdirSync(RAW_DIR, { recursive: true });
-  for (const url of [thumbUrl, origUrl]) {
+  const thumb = thumbUrlFor(meta.origUrl, TARGET_W);
+  // never upscale: a 1920px thumb only exists when the original is at least that wide
+  const urls = thumb && meta.width >= TARGET_W ? [thumb, meta.origUrl] : [meta.origUrl];
+  for (const url of urls) {
     for (let attempt = 0; attempt <= 3; attempt++) {
       try {
-        const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+        const res = await fetch(url.split("?")[0], { headers: { "User-Agent": USER_AGENT } });
         if (res.status === 429 || res.status >= 500) {
           await sleep(700 * 2 ** attempt);
           continue;
@@ -159,7 +235,8 @@ async function convertJob(job: Job): Promise<{ ok: boolean; blur: string | null;
   const widths = AVIF_WIDTHS.filter((w) => w <= limit);
   if (widths.length === 0) widths.push(rawW <= limit ? rawW : limit);
 
-  const rel = job.src.replace(/^\//, "");
+  // the credit's localPath is the single canonical location for this image
+  const rel = (job.credit.localPath || job.src).replace(/^\//, "");
   const outDir = path.join(PUBLIC_DIR, path.dirname(rel));
   fs.mkdirSync(outDir, { recursive: true });
 
@@ -198,6 +275,147 @@ async function convertJob(job: Job): Promise<{ ok: boolean; blur: string | null;
 
 /* ------------------------------------------------------------------ main */
 
+interface VerifyRef {
+  src: string;
+  creditId?: string;
+  blurDataURL?: unknown;
+  width?: unknown;
+}
+
+/** Walk data/images.json and prove every referenced file exists on disk. */
+function verify(images: ImagesFile, creditsFile: { credits: Credit[] }): void {
+  const creditIds = new Set((creditsFile.credits ?? []).map((c) => c.assetId));
+  const seen = new Set<string>();
+  const missing: string[] = [];
+  const unknownCredit: string[] = [];
+  const noBlur: string[] = [];
+  const seenCredit = new Set<string>();
+  let refs = 0;
+  let variantsWithHero = 0;
+  let variantsWith5 = 0;
+  let variantsTotal = 0;
+
+  const check = (ref: VerifyRef, where: string): void => {
+    refs++;
+    const file = path.join(PUBLIC_DIR, ref.src.replace(/^\//, ""));
+    if (!fs.existsSync(file) || fs.statSync(file).size < 512) missing.push(ref.src);
+    if (!ref.creditId || !creditIds.has(ref.creditId)) unknownCredit.push(`${where} → ${ref.src}`);
+    else seenCredit.add(ref.creditId);
+    if (!ref.blurDataURL) noBlur.push(ref.src);
+    seen.add(ref.src);
+  };
+
+  const genLines: string[] = [];
+  for (const [genId, entry] of Object.entries(images.generations ?? {})) {
+    const e = entry as { heroImage?: VerifyRef | null; timelineImage?: VerifyRef | null };
+    for (const [role, ref] of [
+      ["hero", e.heroImage],
+      ["timeline", e.timelineImage],
+    ] as const) {
+      if (!ref) {
+        genLines.push(`  ${genId}.${role}: MISSING (no ref)`);
+        missing.push(`${genId}.${role}`);
+        continue;
+      }
+      check(ref, `${genId}.${role}`);
+      genLines.push(`  ${genId}.${role}: ${ref.src}`);
+    }
+  }
+  const varLines: string[] = [];
+  // per-generation keys are canonical; the plain-id aliases are the same entries
+  const allKeys = Object.keys(images.variants ?? {});
+  const slashed = allKeys.filter((k) => k.includes("/"));
+  const canonical = new Set<string>(slashed);
+  for (const k of allKeys) if (!k.includes("/") && !slashed.some((s) => s.endsWith(`/${k}`))) canonical.add(k);
+  for (const key of [...canonical].sort()) {
+    const e = (images.variants[key] ?? {}) as { heroImage?: VerifyRef | null; gallery?: VerifyRef[] };
+    const gallery = e.gallery ?? [];
+    variantsTotal++;
+    if (e.heroImage) {
+      variantsWithHero++;
+      check(e.heroImage, `${key}.heroImage`);
+    }
+    for (const g of gallery) check(g, `${key}.gallery`);
+    if (e.heroImage && gallery.length >= 5) variantsWith5++;
+    varLines.push(
+      `  ${key.padEnd(30)} hero ${e.heroImage ? "y" : "N"} · gallery ${gallery.length}${gallery.length < 5 ? "  <5" : ""}`,
+    );
+  }
+
+  const orphanCredits = (creditsFile.credits ?? []).filter((c) => !seenCredit.has(c.assetId));
+
+  console.log(`\nrefs ${refs} · distinct files ${seen.size} · exists ${seen.size - missing.length} · missing ${missing.length}`);
+  console.log(`credits ${creditsFile.credits?.length ?? 0} · referenced ${seenCredit.size} · orphaned ${orphanCredits.length}`);
+  console.log(`variants ${variantsTotal} · with hero ${variantsWithHero} · with >=5 gallery ${variantsWith5}`);
+  console.log(`refs without blurDataURL: ${noBlur.length}`);
+  console.log(`refs with unknown creditId: ${unknownCredit.length}`);
+  if (process.env.P911_VERIFY_QUIET !== "1") {
+    console.log("\ngenerations:\n" + genLines.join("\n"));
+    console.log("\nvariants:\n" + varLines.join("\n"));
+  }
+  if (missing.length) console.log(`\nMISSING FILES:\n  ${[...new Set(missing)].join("\n  ")}`);
+  if (orphanCredits.length) {
+    console.log(`\nORPHAN CREDITS (no ref):\n  ${orphanCredits.map((c) => `${c.assetId} ${c.sourceId}`).join("\n  ")}`);
+  }
+  if (unknownCredit.length) console.log(`\nUNKNOWN creditId:\n  ${unknownCredit.slice(0, 20).join("\n  ")}`);
+  console.log(`\npublic/images size ${(du(path.join(PUBLIC_DIR, "images")) / 1e6).toFixed(1)} MB`);
+  if (missing.length || unknownCredit.length) process.exitCode = 1;
+}
+
+/** Delete rendered files that no ImageRef in data/images.json points at (a
+ *  photo's canonical directory can move between runs; nothing is orphaned). */
+function prune(images: ImagesFile, dry: boolean): void {
+  const keep = new Set<string>();
+  const walk = (node: unknown): void => {
+    if (Array.isArray(node)) {
+      node.forEach(walk);
+      return;
+    }
+    if (!node || typeof node !== "object") return;
+    const obj = node as Record<string, unknown>;
+    if (typeof obj.src === "string" && typeof obj.creditId === "string") {
+      const src = obj.src.replace(/^\//, "");
+      keep.add(src);
+      // one credit renders to AVIF 640/1280/1920 + WebP 1280 next to the src
+      const base = src.replace(/-\d+\.\w+$/, "");
+      for (const f of ["-640.avif", "-1280.avif", "-1920.avif", "-1280.webp"]) keep.add(`${base}${f}`);
+    }
+    for (const v of Object.values(obj)) walk(v);
+  };
+  walk(images.generations);
+  walk(images.variants);
+  const root = path.join(PUBLIC_DIR, "images");
+  let bytes = 0;
+  const stale: string[] = [];
+  const scan = (dir: string): void => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.name === "_placeholder" || entry.name === "README.md") continue;
+      const p = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        scan(p);
+        if (fs.readdirSync(p).length === 0) {
+          fs.rmdirSync(p);
+          stale.push(`${path.relative(PUBLIC_DIR, p)}/ (dir)`);
+        }
+        continue;
+      }
+      const rel = path.relative(PUBLIC_DIR, p);
+      if (keep.has(rel)) continue;
+      stale.push(rel);
+      if (!dry) {
+        bytes += fs.statSync(p).size;
+        fs.unlinkSync(p);
+      }
+    }
+  };
+  if (!fs.existsSync(root)) return;
+  scan(root);
+  console.log(
+    `${dry ? "would remove" : "removed"} ${stale.length} unreferenced files (${(bytes / 1e6).toFixed(1)} MB)`,
+  );
+  if (stale.length && dry) console.log(`  ${stale.slice(0, 20).join("\n  ")}`);
+}
+
 async function main(): Promise<void> {
   const images = loadJson<ImagesFile>(IMAGES_JSON, {
     generatedAt: new Date().toISOString(),
@@ -205,6 +423,14 @@ async function main(): Promise<void> {
     variants: {},
   });
   const creditsFile = loadJson<{ credits: Credit[] }>(CREDITS_JSON, { credits: [] });
+  if (process.argv.includes("--prune")) {
+    prune(images, process.argv.includes("--dry-run"));
+    return;
+  }
+  if (process.argv.includes("--verify")) {
+    verify(images, creditsFile);
+    return;
+  }
   const credits = new Map<string, Credit>();
   for (const c of creditsFile.credits ?? []) credits.set(c.assetId, c);
 

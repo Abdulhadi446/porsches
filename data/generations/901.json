@@ -35,10 +35,54 @@
       "value": "911 R 20 · 911 T/R 35 · 911 S/T ≈33 · Carrera RS 2.7 1,580"
     }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/901/img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66-1920.avif",
+    "alt": "Original 911 / F-Body (901) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJZACdAC7GJ/jbAD+zduz/K3IXPHmX3zL+R3hbsfTELkkSpx6Pf38itPlSjUm7eFxuVhZ7atVFto4ocgAAA==",
+    "creditId": "img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66",
+    "width": 1920,
+    "height": 1280
+  },
+  "timelineImage": {
+    "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+    "alt": "Original 911 / F-Body (901) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+    "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+    "width": 1920,
+    "height": 1152
+  },
+  "model3d": {
+    "embedUrl": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+    "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+    "license": "CC Attribution",
+    "author": "tonielpro520",
+    "glb": null,
+    "turntable": null,
+    "bytes": null
+  },
+  "videos": [
+    {
+      "id": "21FWn800IpA",
+      "title": "Porsche Historic Footage – Porsche 911 Prototype and Premiere at the 1963 Frankfurt Motor Show",
+      "channel": "The Wheel Network",
+      "poster": null,
+      "note": "archival footage of the 901 Frankfurt debut that created the 911"
+    },
+    {
+      "id": "VGmd2rZQ1CY",
+      "title": "Porsche 901 prototype: the second-oldest surviving 911 of all time!",
+      "channel": "9WERKS TV",
+      "poster": null,
+      "note": "factory-original 901 prototype, the car Peugeot nearly stopped"
+    },
+    {
+      "id": "i32rihrkHSE",
+      "title": "This 1968 Porsche 911L Was Just A Dream",
+      "channel": "Petrolicious",
+      "poster": null,
+      "note": "series-two longhood 911L, the best of the very early 911s"
+    }
+  ],
   "variants": [
     {
       "id": "911-2.0",
@@ -64,11 +108,135 @@
       "description": "The car that started it all. Series production of the 130 PS 2.0-litre began in September 1964, and the first 82 cars carried 901 badges before Peugeot's objection forced the rename; part numbers kept the 901 prefix for years. Engine, transaxle, rack-and-pinion steering, MacPherson front struts and semi-trailing-arm rear suspension were all new, and Erwin Komenda fused them into a self-supporting shell drawn by Butzi Porsche — headlight tunnels, flat bonnet between them, hatchback with a large rear window. Coupe only until the Targa arrived in 1967. Porsche quoted 1,030 kg, 210 km/h and 0–60 mph in 8.3 s; the 2.0 stayed the constant throughout its run while trim, instruments and details changed constantly.",
       "special": false,
       "production": "82 cars built as 901 before the rename; 4,636 coupés and 986 Targas built as short-wheelbase 2.0 (stuttcars)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+        "alt": "911 2.0",
+        "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+        "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+        "width": 1920,
+        "height": 1440
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2-1920.avif",
+          "alt": "911 2.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZgCdADXEIlqAAD9K/7hQS7VgAebQW4n+m95WMLJaGquqF25ssjWYbNbpEw8HDGoWRBAaj/jt3CxVffefHLugAA=",
+          "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32-1920.avif",
+          "alt": "911 2.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJZAC7AED/yM5fMAA/VOZVShkoEtDqWdH8PyFieEuDA2hUrHEWrKg+NCsM48bWMp3oHeYub0K2pNwAAA=",
+          "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-4d1ad840-1920.avif",
+          "alt": "911 2.0 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoQABUAPxFwsFAsJiSisAgBgCIJYwCzgBuKMCh9vcwWtHAA/pTEexrvsGbVwz+H8buDsftHL72ELYH6W6b8FaMhL4PH7K/LEAw1RP7Fya/J7vqRcFXWM3/pAh1teVMSldsjUtUsg0AAAA==",
+          "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-4d1ad840",
+          "width": 1920,
+          "height": 2560
+        },
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        }
+      ],
+      "videos": [
+        {
+          "id": "s_Ae_cmUAHk",
+          "title": "1965 911 SWB by Sports Purpose. Is this £350,000 Porsche the purest driving 911 of them all?",
+          "channel": "Harry's garage",
+          "poster": null,
+          "note": "restored short-wheelbase 2.0, argued as the purest 911"
+        },
+        {
+          "id": "LiZUK9vKg64",
+          "title": "THIS CAR MATTERS - 1965 Porsche 911",
+          "channel": "Historic Vehicle Association",
+          "poster": null,
+          "note": "short, non-narrated look at why the original 2.0 matters"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+        "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+        "license": "CC Attribution",
+        "author": "tonielpro520",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AStuttgart_Jul_2012_20_(Porsche_Museum_-_1965_Porsche_911_2.0_Coupe).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Michael Barera",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Stuttgart_Jul_2012_20_(Porsche_Museum_-_1965_Porsche_911_2.0_Coupe).jpg",
+          "localPath": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3072×2304px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1966_Porsche_911_T_2.0%2C_Rallye_Monte-Carlo_Historique_2025%2C_Bad_Homburg_(P1033218).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1966_Porsche_911_T_2.0,_Rallye_Monte-Carlo_Historique_2025,_Bad_Homburg_(P1033218).jpg",
+          "localPath": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3888px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-901-911-2-0",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+          "license": "CC Attribution",
+          "author": "tonielpro520",
+          "retrieved": "2026-10-02",
+          "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -117,11 +285,100 @@
       "description": "\"Touring\": the new entry-level 911, launched in October 1967 with the 901/03 — the only engine in 911 history built without crankshaft counterweights. It effectively replaced the four-cylinder 912 and was deliberately stripped: four-speed manual, steel wheels and cheaper equipment, with silver instead of gold badging to mark it as the base car. For MY1968 the T switched to the 901/13, which regained counterweights and the same 110 PS output, and became available with the Sportomatic. In Europe the 911 T was the cheapest 911 by a wide margin, and because its homologated weight was lower than the S, it became the basis for the factory's rally-homologation special, the 911 T/R.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2-1920.avif",
+        "alt": "911 T 2.0",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZgCdADXEIlqAAD9K/7hQS7VgAebQW4n+m95WMLJaGquqF25ssjWYbNbpEw8HDGoWRBAaj/jt3CxVffefHLugAA=",
+        "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2",
+        "width": 1920,
+        "height": 1440
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32-1920.avif",
+          "alt": "911 T 2.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJZAC7AED/yM5fMAA/VOZVShkoEtDqWdH8PyFieEuDA2hUrHEWrKg+NCsM48bWMp3oHeYub0K2pNwAAA=",
+          "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-4d1ad840-1920.avif",
+          "alt": "911 T 2.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoQABUAPxFwsFAsJiSisAgBgCIJYwCzgBuKMCh9vcwWtHAA/pTEexrvsGbVwz+H8buDsftHL72ELYH6W6b8FaMhL4PH7K/LEAw1RP7Fya/J7vqRcFXWM3/pAh1teVMSldsjUtUsg0AAAA==",
+          "creditId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-4d1ad840",
+          "width": 1920,
+          "height": 2560
+        },
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 T 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 T 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 T 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 T 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 T 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1966_Porsche_911_T_2.0%2C_Rallye_Monte-Carlo_Historique_2025%2C_Bad_Homburg_(P1033218).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1966_Porsche_911_T_2.0,_Rallye_Monte-Carlo_Historique_2025,_Bad_Homburg_(P1033218).jpg",
+          "localPath": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-b59f85f2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3888px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1966_Porsche_911_T_2.0%2C_Rallye_Monte-Carlo_Historique_2025%2C_Bad_Homburg_(P1033221).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1966_Porsche_911_T_2.0,_Rallye_Monte-Carlo_Historique_2025,_Bad_Homburg_(P1033221).jpg",
+          "localPath": "/images/911-2.0/img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3888px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -170,11 +427,100 @@
       "description": "\"Luxus\": for one model year only, the 130 PS staple 911 was given a more upmarket specification — ventilated brake discs, heated rear window glass, brushed-aluminium dash, new door handles — and renamed 911 L. In North America it was the top of the range, because tightening US emissions rules excluded the 160 PS 911 S from the market; the US cars used the same 130 PS engine as the base model. The L was replaced by the fuel-injected 911 E for MY1969, and the middle rung of the range was vacated until then. Among early 911s the L is now the scarcest of the four 1968 A-series variants, and it is the only one-year-only 911 of the 2.0 era.",
       "special": false,
       "production": "≈1,610 total: 1,169 coupés and 441 Targas (stuttcars; one stuttcars paragraph says 575 Targas)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 L 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 L 2.0 (1968) — Stuttcars",
@@ -222,11 +568,100 @@
       "description": "The middle model that replaced the 911 L for one model year. For MY1969 the B-series line-up was simplified: the plain 911 and the 911 L were dropped and a new 911 E slotted in, distinguished by the arrival of Kugelfischer (later Bosch) mechanical fuel injection — a plunger-type fuel pump/distributor driven off the left camshaft by toothed belt, six injectors and six throttle butterflies. At 140 PS the E sat between the 110 PS T and the 170 PS S, and it was the first of the 911 T/E/S trio to satisfy the US EPA emissions standards, which is why Porsche calls them the first German cars to do so. Wider tyres on 6J-15 wheels came with the E.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 E 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -274,11 +709,100 @@
       "description": "The first engine derivative of the 911 and the top of the range for the whole 2.0 era. Compression rose to 9.8:1 for 160 PS at 6,600 rpm, and the S introduced the five-spoke forged Fuchs alloy wheel — designed for the 911 R — which became a 911 signature. In 1969 the S gained the 57 mm longer wheelbase and Bosch mechanical fuel injection for 170 PS. Not sold in North America in 1968, when the 911 L covered that market instead. The 2.0 S also carried the factory's rally-homologation special, the 911 S/R, and its own race version, the 911 S/R. 1968 was the final short-wheelbase 911 model year.",
       "special": false,
       "production": "4,582 coupés and 1,539 Targas across 1967–1969 (stuttcars); stuttcars separately quotes 2,106 cars (1,492 coupés, 614 Targa) for the 1969 long-wheelbase year",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-s-2.0/img-porsche-911-s-2-0-1968-12276987206-3db40dde-1280.avif",
+        "alt": "911 S 2.0",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAwABABoJYwCdAYtfyl8MY8/CcAA/uGnX6cdxH08JXwD2o5HDTUd2MtJoN89QC3T1eqj4bklPaJ0YtX43nyP0Gp3alwXhx3ZTDt7CwBpknLGcUAAAA==",
+        "creditId": "img-porsche-911-s-2-0-1968-12276987206-3db40dde",
+        "width": 1280,
+        "height": 960
+      },
+      "gallery": [
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 S 2.0 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-s-2-0-1968-12276987206-3db40dde",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_2.0_1968_(12276987206).jpg",
+          "license": "CC BY 2.0",
+          "author": "nakhon100",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_2.0_1968_(12276987206).jpg",
+          "localPath": "/images/911-s-2.0/img-porsche-911-s-2-0-1968-12276987206-3db40dde-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1584×1188px (NaN kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        },
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 S 2.0 (1967–1969) — Stuttcars",
@@ -327,11 +851,100 @@
       "description": "For MY1970 every 911 engine grew by 4 mm of bore to 2,195 cc, and the internal code switched from 901 to 911 — the transaxle, parts prefixes and engravings all changed. There was no plain base 911 in this era: the range was the carburetted 911 T, the fuel-injected 911 E and the 180 PS 911 S. Larger valves, new head gaskets and more cooling fins came with the extra displacement, and the C-series moved the front suspension mounting points 14 mm forward for lighter steering. In MY1971 the D-series added hot-dip zinc rust proofing, door side-impact beams, three-speed intermittent wipers and piston oil squirters, and production continued with the 2.2 units until July 1971.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-2.2/img-1969-porsche-911-2-2-c-series-1278e56f-1280.avif",
+        "alt": "911 2.2",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAwABABoJbACdADtDPnsf6AA/j4ivL+5+IPNn959mhx2JnM9J3hKoMs0x58Mo+PZaLuKqpqmrHoKN7RdaQMKscF7v2p+h7JBtHAA",
+        "creditId": "img-1969-porsche-911-2-2-c-series-1278e56f",
+        "width": 1280,
+        "height": 921
+      },
+      "gallery": [
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1969-porsche-911-2-2-c-series-1278e56f",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1969_Porsche_911_2.2_C_Series.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1969_Porsche_911_2.2_C_Series.jpg",
+          "localPath": "/images/911-2.2/img-1969-porsche-911-2-2-c-series-1278e56f-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1882×1354px (NaN kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        },
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -379,11 +992,100 @@
       "description": "The entry-level 2.2, and the only 2.2 derivative with a US-specific version, because the E and S could be exported to North America unmodified. Its own engine, the 911/03, ran softer cam timing and two Zenith 40 TIN carburettors for a broad torque curve rather than peak power, and the T kept the four-speed manual gearbox where the E and S got five. The Fuchs forged alloy wheels fitted across the range in 1970 became standard, and ventilated discs were now fitted everywhere — a significant step over the 2.0 cars. With the lower homologated weight, the 2.2 T was also the basis of the 911 ST homologation package.",
       "special": false,
       "production": "6,544 coupés and 2,545 Targas (stuttcars)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-t-2.2/img-porsche-911t-2-2-1969-ax32911-dsc-0048-balancer-2617555466-711442a6-1920.avif",
+        "alt": "911 T 2.2",
+        "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoQAAsABABoJbACsAYuHhkBTkPaAAD+eTYn7jECxBbNKtzp0jLIIkMDJh4cZli+3uuuU5zXbdKFTXYOlBxvsCMnvYu8+JJi48o1aky0gkH7RposbJl8HDvjAQNeAAAA",
+        "creditId": "img-porsche-911t-2-2-1969-ax32911-dsc-0048-balancer-2617555466-711442a6",
+        "width": 1920,
+        "height": 1278
+      },
+      "gallery": [
+        {
+          "src": "/images/911-t-2.2/img-porsche-911t-2-2-1969-ax32911-dsc-0045-balancer-2409997002-a9bf97cb-1920.avif",
+          "alt": "911 T 2.2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsABABoJbACdH8AFX/scawrwAD+ddckxEYXJu8VtAsO3BH2RalQvnoS3v08E2GufZ7wf19kCtZaHKfJCgH2M35dl7MDRMnIHZVdI83mZ54X1RyQIyoba5IAAA==",
+          "creditId": "img-porsche-911t-2-2-1969-ax32911-dsc-0045-balancer-2409997002-a9bf97cb",
+          "width": 1920,
+          "height": 1278
+        },
+        {
+          "src": "/images/911-t-2.2/img-porsche-911t-2-2-1969-ax32911-dsc-0046-balancer-3724172978-b411fdc4-1920.avif",
+          "alt": "911 T 2.2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAsABABoJbACdFQAA27La9KH8wAA/rs5x6mlIMKwmLPnzA+Z4sz0EdxedLVdUEbJP4XBUPH2AZqAInKKT+Lijvn70vDVboMyDE5D3fR02qnBdHVB0ZyMFUAAAA==",
+          "creditId": "img-porsche-911t-2-2-1969-ax32911-dsc-0046-balancer-3724172978-b411fdc4",
+          "width": 1920,
+          "height": 1277
+        },
+        {
+          "src": "/images/911-t-2.2/img-1971-porsche-911-t-2-2-49214328646-adb54c7a-1920.avif",
+          "alt": "911 T 2.2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAgCdASoQAAsABABoJbACdAYuly0s9TXCw9AA/t3XTFw8xSyOiehh55hQjV9bCLK+h0Ys+OIjW9J8vH3QwWcEYALWvJQz2bA2RjbJn7092MdAigADx5FvD2C3LXRoIWpIAAAA",
+          "creditId": "img-1971-porsche-911-t-2-2-49214328646-adb54c7a",
+          "width": 1920,
+          "height": 1364
+        },
+        {
+          "src": "/images/911-t-2.2/img-porsche-911t-targa-2-2-1970-53348460706-00752de8-1920.avif",
+          "alt": "911 T 2.2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAA8ABABoJYwCw7YuvD6oa30EAP20/+Jh7Wf55LEDBB/7LMCQo8jRWg52ExInKPvDkqDAHvGn8ahLSo/yQuWkSVqIjnSNeoOFkNSdLPA/DIQEqSOAVRgA",
+          "creditId": "img-porsche-911t-targa-2-2-1970-53348460706-00752de8",
+          "width": 1920,
+          "height": 1747
+        },
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 T 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 T 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 T 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911t-2-2-1969-ax32911-dsc-0048-balancer-2617555466-711442a6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911T_2.2%2C_1969_-_AX32911_-_DSC_0048_Balancer_(26175554669).jpg",
+          "license": "CC BY 2.0",
+          "author": "Lav Ulv from Viby J, Denmark",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911T_2.2,_1969_-_AX32911_-_DSC_0048_Balancer_(26175554669).jpg",
+          "localPath": "/images/911-t-2.2/img-porsche-911t-2-2-1969-ax32911-dsc-0048-balancer-2617555466-711442a6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3678×2448px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911t-2-2-1969-ax32911-dsc-0045-balancer-2409997002-a9bf97cb",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911T_2.2%2C_1969_-_AX32911_-_DSC_0045_Balancer_(24099970028).jpg",
+          "license": "CC BY 2.0",
+          "author": "Lav Ulv from Viby J, Denmark",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911T_2.2,_1969_-_AX32911_-_DSC_0045_Balancer_(24099970028).jpg",
+          "localPath": "/images/911-t-2.2/img-porsche-911t-2-2-1969-ax32911-dsc-0045-balancer-2409997002-a9bf97cb-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3725×2479px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 T 2.2 (1970–1971) — Stuttcars",
@@ -430,11 +1132,100 @@
       "description": "The refined middle car of the C and D series. Although it made 25 PS less than the 911 S, the E's softer camshafts and injection delivered more torque low down, which made it quicker than the S up to 160 km/h — and Porsche's own rally team preferred exactly that broad power band, which is why private rally entrants nicknamed it the \"secret weapon from Zuffenhausen\" while buying S models for the road. The E kept the hydro-pneumatic front struts for ride comfort, added an aluminium engine lid and aluminium front bumper section for weight saving, and carried gold anodised rear badging. It was the least popular of the three 2.2 variants.",
       "special": false,
       "production": "1,971 coupés and 933 Targas per stuttcars' spec box; stuttcars' text elsewhere gives 1,088 coupés and 935 Targas for 1970 — figures conflict",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 E 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 E 2.2 (1970–1971) — Stuttcars",
@@ -482,11 +1273,100 @@
       "description": "The sharpest car in the 2.2 range: 180 PS at 6,500 rpm on 9.8:1 compression, the highest output of the fuel-injected sixes before the 2.4 arrived. Its magnesium-alloy crankcase, larger valves and ports and stronger conrods were inherited from the racing development work, and Porsche's factory team used the S — with a lower-geared final drive — for circuit work. The 911 S 2.2 also became the homologation basis for the 911 S/T: combining the S engine with the T's reduced interior equipment gave Porsche a car that swept the 1970 Monte Carlo Rally. The long-wheelbase 2.2 S is widely regarded as the finest all-round early 911.",
       "special": false,
       "production": "1,744 coupés and 729 Targas (stuttcars, 1970 model year)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-3335771437-fd0cc2e6-1920.avif",
+        "alt": "911 S 2.2",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJQBOgBxNkiMdwAD+9XvoiNjNi37BKFwGt32VvCmXfWBwwinzfYFN8629iW9+UXn8NVrBr8JBYsRZyN8eHDQA",
+        "creditId": "img-porsche-911-s-2-2-targa-3335771437-fd0cc2e6",
+        "width": 1920,
+        "height": 1275
+      },
+      "gallery": [
+        {
+          "src": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-10544143603-177d84de-1920.avif",
+          "alt": "911 S 2.2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZQCw7EN5Bk1LAAA/tJrgiuXKannlKJLKcEwqX3pLlRTJhejHHDDdn2238bDbsI8b6y/+TxQO59wgAA=",
+          "creditId": "img-porsche-911-s-2-2-targa-10544143603-177d84de",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-10543917465-76aa43be-1920.avif",
+          "alt": "911 S 2.2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoABABoJZACdAELZSdrGCquAAD+7Fqw3uaDpkMdxuQDYjV3Oi8rGAYwE7bmTr/WdhoWOaoO1Jl3dsS6G5OFJbC5RP3fvEssn2XHjE27tZCAAAA=",
+          "creditId": "img-porsche-911-s-2-2-targa-10543917465-76aa43be",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "/images/911-s-2.2/img-porsche-911-s-2-2-1971-53777490132-b8f05ef7-1920.avif",
+          "alt": "911 S 2.2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAsABABoJbACdAYulkrtN6+VXIAA/OI/xh8a7/ymGvSV+wRJzIhO1isQ9Qk2Qk8PFhoJEudS3t8hlTtAaW23oNiH2Yjrt1Uwy4yRgnWKOiAAAAA=",
+          "creditId": "img-porsche-911-s-2-2-1971-53777490132-b8f05ef7",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-10543916985-061acf6e-640.avif",
+          "alt": "911 S 2.2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoQABUAPxFysVCsJqSisAgBgCIJZADFBoAyv8BtxqXbGF4PzRp7AAD+zgCH0I3i3QGzuqqbWu+62o/Vqz3VGelkbZUR2DB5SiQTIe88yB2p1+Kl1OMmENIrH7K8tGv/lY2lzWcISPE02c8P8duyJBv4u4yIGAAA",
+          "creditId": "img-porsche-911-s-2-2-targa-10543916985-061acf6e",
+          "width": 640,
+          "height": 853
+        },
+        {
+          "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "alt": "911 S 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+          "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 S 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 S 2.2 — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-s-2-2-targa-3335771437-fd0cc2e6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_2.2_Targa_(3335771437).jpg",
+          "license": "CC BY 2.0",
+          "author": "Fox Wu from Frankfurt am Main, Germany",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_2.2_Targa_(3335771437).jpg",
+          "localPath": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-3335771437-fd0cc2e6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4288×2848px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-s-2-2-targa-10544143603-177d84de",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_2.2_Targa_(10544143603).jpg",
+          "license": "CC BY 2.0",
+          "author": "Rick W. Dryve from Berlin, Germany",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_2.2_Targa_(10544143603).jpg",
+          "localPath": "/images/911-s-2.2/img-porsche-911-s-2-2-targa-10544143603-177d84de-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1920×1080px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 S 2.2 (1970–1971) — Stuttcars",
@@ -534,11 +1414,100 @@
       "description": "Porsche marketed 2,341 cc as the \"2.4\", even though it is closer to 2.3 litres — the bore stayed at 84 mm and the stroke stretched from 66 to 70.4 mm. New camshafts, shorter conrods, lower piston crowns fed by individual oil squirters, better porting and a fully counterbalanced forged crank made the 2.4 cleaner and stronger than the 2.2. The big change was the Type 915 transaxle, developed from the 908 race unit: a conventional H-pattern gate replacing the 901's dog-leg first, and a differential moved forward so the driveshafts met the rear wheels square after the 57 mm wheelbase stretch. In MY1972 the dry-sump oil tank moved from behind the right rear wheel to inside the wheelbase, with the famous \"Olklappe\" filler flap on the right rear quarter — scrapped for 1973 after fuel-station confusion.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 2.4",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 2.4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 2.4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 2.4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 2.4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 2.4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-2.4/img-1972-porsche-911-t-2-4-1-3d58fa58-1920.avif",
+          "alt": "911 2.4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJZQCdADwUC72pAAA/qngUmF8xw1f7nsriRb3GPUlZy5u07JnIw/kG+A8FnfYojN/LGDwCGZJcFfqyuNeYAAA",
+          "creditId": "img-1972-porsche-911-t-2-4-1-3d58fa58",
+          "width": 1920,
+          "height": 1044
+        },
+        {
+          "src": "/images/911-2.4/img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e-1920.avif",
+          "alt": "911 2.4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwABABoJQBOgCBXQOf+8AD+5FMpzo+Xg8qMMfIF3CZwsjxQfLQZcEMkGvOy1LjNfKU6yNXF3YPMvmxuQGcACRApL7xSwgAAAA==",
+          "creditId": "img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -586,11 +1555,100 @@
       "description": "Entry level again, and the last 911 T. The carburetted 2.4 T made 130 PS against the 140 PS of the fuel-injected US and Japanese versions — the injection units were worth 10 PS, and it is why late 2.4 T cars remain sought after. January 1973 US cars switched to Bosch K-Jetronic CIS, 140 PS, single throttle butterfly and slower revving than the six-butterfly MFI sets; collectors call these \"1973.5\" cars. Only 1972 cars carry the external oil filler flap on the right rear wing. MY1973 brought black horn grilles, blacked-out indicator surrounds, black engine-lid lettering and the first rectangular door mirrors — all proposed for the 1969 Pininfarina B17 concept.",
       "special": false,
       "production": "2,517 coupés and 3,476 Targas, 1972 through 1973.5 (stuttcars)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+        "alt": "911 T 2.4",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+        "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+        "width": 1920,
+        "height": 1136
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 T 2.4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 T 2.4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 T 2.4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-2.4/img-1972-porsche-911-t-2-4-1-3d58fa58-1920.avif",
+          "alt": "911 T 2.4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJZQCdADwUC72pAAA/qngUmF8xw1f7nsriRb3GPUlZy5u07JnIw/kG+A8FnfYojN/LGDwCGZJcFfqyuNeYAAA",
+          "creditId": "img-1972-porsche-911-t-2-4-1-3d58fa58",
+          "width": 1920,
+          "height": 1044
+        },
+        {
+          "src": "/images/911-t-2.4/img-porsche-911-t-2-4-targa-4351788879-abfec146-1920.avif",
+          "alt": "911 T 2.4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAwABABoJZQAAud1MGP5aEVAAP7pkONwAW5h5oOq4M6jucjAjgzl9Ajntd83eLXbavcJ+bst5CKwxAYiVbOF1pLrIVzrgNKZCxaZxujHP7ZoAAA=",
+          "creditId": "img-porsche-911-t-2-4-targa-4351788879-abfec146",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-t-2.4/img-porsche-911-t-2-4-targa-12573238675-9c74771d-1280.avif",
+          "alt": "911 T 2.4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAQCdASoQAAwABABoJQAATQcGmEAA/ma0gXzfQnMbupC957p81bwby/Ew8/CpOovf6tg3kHBfciig2y3rKYf5MvTP1k+mK56/0w8LGe0A2QS3EwAAAA==",
+          "creditId": "img-porsche-911-t-2-4-targa-12573238675-9c74771d",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/911-t-2.4/img-porsche-911-t-2-4-8212765522-7bd87734-1280.avif",
+          "alt": "911 T 2.4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAwABABoJZwAAY2wAtm4AP7zJYLNaJBf1RTN5FcFLN+0UOI26zrkVvHL4cjI7vcuOdsAHgYJUGJUNTOW7LTGEsL3WAAA",
+          "creditId": "img-porsche-911-t-2-4-8212765522-7bd87734",
+          "width": 1280,
+          "height": 960
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_T_2.4%2C_TC_24%2C_Essen_(TCE42749).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_T_2.4,_TC_24,_Essen_(TCE42749).jpg",
+          "localPath": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6720×4480px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 T 2.4 (1972–1973) — Stuttcars",
@@ -637,11 +1695,92 @@
       "description": "The 165 PS mid-range E, up 10 PS and 10 lb-ft on the 2.2 E, always fuel-injected and always with the five-speed manual available. Steel wheels gave way to new six-inch ATS \"cookie-cutter\" alloys in 1973. Because the E was the least popular of the three 2.4 variants, and because the 1972-only oil filler flap and 1973-only black trim split the model year, 2.4 E survivors are increasingly rare. It is also the version that carries the famous 1972 oil-tank relocation most visibly — the tank moved forward from behind the right rear wheel to inside the wheelbase for better weight distribution, at the cost of a hot right rear seat, and was moved back for 1973.",
       "special": false,
       "production": "1,366 coupés and 1,055 Targas (stuttcars text for the full 1972–73 run); stuttcars' spec box instead lists 1,088 coupés and 935 Targas",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-03-6a2a8fb5-1920.avif",
+        "alt": "911 E 2.4",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwABABoJaACdAEWQLnCUGz3AAD7veyH9MTFqy5zNDcEEMYdbdCZWFM9o+e82F//8dqv8+qQ4GqsSB6AbYcZkSJQEjGsZsPGwPzVQQLJp84A",
+        "creditId": "img-porsche-911-e-2-4-targa-03-6a2a8fb5",
+        "width": 1920,
+        "height": 1440
+      },
+      "gallery": [
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-01-feb45e2f-1920.avif",
+          "alt": "911 E 2.4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwABABoJbACdAEfoRIjVBBgAP2aA1bhIdLvBRAsogvaInW7Y/Vq3Jqxv21xYylwCQo75hhNigBZGGxeZoxQ9hoQNSh1cuGYzU/mRAU8wAAA",
+          "creditId": "img-porsche-911-e-2-4-targa-01-feb45e2f",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-05-cd252fdb-1920.avif",
+          "alt": "911 E 2.4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJbACdADPqLfidMAA/oi4Ntn93P7SvGHLtHDrICyRb94uwsQ/9WNDxEjSPZGRI1NS441Bs2PeaOo0V5Pe+T4Nyt43IAZrwwAAAA==",
+          "creditId": "img-porsche-911-e-2-4-targa-05-cd252fdb",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-9ba3d1b9-1920.avif",
+          "alt": "911 E 2.4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsABABoJbACdADiXIuNmjE1AAD6TTrD/g0UrfttzlHmokG8G0+4yhlGSfd1VDyFEGBbfnZMhB9ZwAfSH+WwL7jhVzRFiD8Qr3avq2D2mJUmDdgAAA==",
+          "creditId": "img-porsche-911-e-2-4-9ba3d1b9",
+          "width": 1920,
+          "height": 1293
+        },
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-02-1a904506-1920.avif",
+          "alt": "911 E 2.4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAwABABoJagCdAEQ0qBnFKAA/U1tilRVF3gyxKSOGArPPzkbGtUe8Xyc1VMUmpFtinLP+8P/n/D25tODdI0hulsAXvJae1HB3h7ql/O0QAAA",
+          "creditId": "img-porsche-911-e-2-4-targa-02-1a904506",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-06-7264a7f2-1920.avif",
+          "alt": "911 E 2.4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAwABABoJZgCdAC8ZFy5CWeAAM4GCJgYZ3BwuEaWJ6ZOQjKrzXkySCmX8soTrwWDsrXQFw0BjqOGLA/lW5tw5MsY8UQu+3CZKVLIcpe4t/TOEAA=",
+          "creditId": "img-porsche-911-e-2-4-targa-06-7264a7f2",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-04-86cb10ac-1920.avif",
+          "alt": "911 E 2.4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAwABABoJYgCdAD0XhreDUTAAOJ5aqD98y9Jb/iY2X9MoWutbCko9Q5W/75liQC75rVQRYAKvgACtdCbLFtWEA3n71Ic/E1k/fU/HAA=",
+          "creditId": "img-porsche-911-e-2-4-targa-04-86cb10ac",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-e-2-4-targa-03-6a2a8fb5",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_E_2.4_Targa_03.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "DiogoBaptista",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_E_2.4_Targa_03.jpg",
+          "localPath": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-03-6a2a8fb5-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4032×3024px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-e-2-4-targa-01-feb45e2f",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_E_2.4_Targa_01.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "DiogoBaptista",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_E_2.4_Targa_01.jpg",
+          "localPath": "/images/911-e-2.4/img-porsche-911-e-2-4-targa-01-feb45e2f-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4032×3024px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 E 2.4 (1972–1973) — Stuttcars",
@@ -689,11 +1828,92 @@
       "description": "Top of the range and the most powerful naturally aspirated production 911 before the Carrera RS: 190 PS from 2,341 cc in a car weighing about 1,050 kg, which still counted as genuine supercar performance in 1972. The 2.4 S also gained a discreet spoiler under the front bumper to calm high-speed front-end lift. Unlike the E and T, the S kept the Type 915 five-speed as standard equipment, and its 1,050 kg dry weight meant it was the heaviest of the three. Many period racers were built from this car, and its long-wheelbase chassis plus 57 mm stretch is what enthusiasts usually mean when they call the F-body the best-handling early 911.",
       "special": false,
       "production": "1,430 coupés and 788 Targas (stuttcars)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+        "alt": "911 S 2.4",
+        "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+        "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.4/img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e-1920.avif",
+          "alt": "911 S 2.4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwABABoJQBOgCBXQOf+8AD+5FMpzo+Xg8qMMfIF3CZwsjxQfLQZcEMkGvOy1LjNfKU6yNXF3YPMvmxuQGcACRApL7xSwgAAAA==",
+          "creditId": "img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-s-2.4/img-porsche-911-s-2-4-10543918466-18d7e11e-1920.avif",
+          "alt": "911 S 2.4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJYgCdACklh1gwADiBkbjXQPYbAG2jBZBlR/nKmRlgT3KeB7JRuab5MVghXHQGmk2mrj4SuSTXjtp1qQzINIqs9Dbo9cnAAA=",
+          "creditId": "img-porsche-911-s-2-4-10543918466-18d7e11e",
+          "width": 1920,
+          "height": 1200
+        },
+        {
+          "src": "/images/911-s-2.4/img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-heid-595d3dfb-1920.avif",
+          "alt": "911 S 2.4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJQBOgB6W2Jx2AAD9U2ubTGoqtjPE+7uulzrJZUY0OYdI9DDlgOErEs7IOk7HDTlOIsN7ST6N3gLDv0grnZjixrmPvI2AAAA=",
+          "creditId": "img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-heid-595d3dfb",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-s-2.4/img-porsche-911-s-2-4-7053131985-7d4a3fcf-1920.avif",
+          "alt": "911 S 2.4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsABABoJZACdAD1Xd7zBgAA4eX+qtlR1VizBO+a/CNGyRHnVDsCA6F7j10ASZwCj+DbH+5RqP6d1oyu79a0YQlQgxXuII4AAA==",
+          "creditId": "img-porsche-911-s-2-4-7053131985-7d4a3fcf",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-s-2.4/img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-ae1157c5-1920.avif",
+          "alt": "911 S 2.4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJYwC7ADphrJ2wAD+wo9vf9+SwvUMpiC7Y1QWr5F0CuBd6kEd3SiPiBe4cgin92orwsKB6s860L+rBwIHe2AIAAA=",
+          "creditId": "img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-ae1157c5",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-s-2.4/img-porsche-911-s-2-4-6822781709-4735dbef-1920.avif",
+          "alt": "911 S 2.4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAwABABoJYwAAhZ+uA9k4AAA/BrQdFzvZtEQhqYopif+fzeGHG/+J2jfFi/36SlA7AX+6R8xWERa/ymAIAAA",
+          "creditId": "img-porsche-911-s-2-4-6822781709-4735dbef",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_2.4_-_Flickr_-_Alexandre_Pr%C3%A9vot_(1).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_2.4_-_Flickr_-_Alexandre_Prévot_(1).jpg",
+          "localPath": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4445×2963px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_2.4_Targa%2C_ADAC_Deutschland_Klassik_2025%2C_Schwetzingen_(20250726-P1048471).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_2.4_Targa,_ADAC_Deutschland_Klassik_2025,_Schwetzingen_(20250726-P1048471).jpg",
+          "localPath": "/images/911-2.4/img-porsche-911-s-2-4-targa-adac-deutschland-klassik-2025-schw-aceee31e-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3888px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 S 2.4 (1972–1973) — Stuttcars",
@@ -739,11 +1959,128 @@
       "description": "The world's first production safety cabriolet, patented by Porsche in August 1965 and sold from late 1966 / model year 1967 as a \"safety-conscious cabriolet\": a fixed brushed-stainless-steel roll-over bar over the rear seats, a removable folding roof panel and a fold-back plastic rear window, with fixed glass available from MY1968. Porsche's concern was the US NHTSA, which was rumoured to be moving against fully open convertibles — and the Targa answered the safety objection without giving up the open-air driving experience. The name honours the Targa Florio road race in Sicily, which Porsche had won seven times since 1956. The Targa became the most-used open 911 body of the era and continued in the line-up for the next generation.",
       "special": false,
       "production": "986 short-wheelbase 2.0 Targas (stuttcars); per-model counts on the 2.2 and 2.4 entries",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/targa/img-porsche-911-targa-pink-dllu-b1661a13-1920.avif",
+        "alt": "911 Targa",
+        "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABwAQCdASoQAAgABABoJZwAAeL2AAD+rAuKmCHzldEKOEcPaMZ43cDkpVe5ph2sMMoUQsKAAAA=",
+        "creditId": "img-porsche-911-targa-pink-dllu-b1661a13",
+        "width": 1920,
+        "height": 960
+      },
+      "gallery": [
+        {
+          "src": "/images/targa/img-porsche-911-targa-munich-p1120206-363af0d5-1920.avif",
+          "alt": "911 Targa — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsABABoJYwCdADbp5uD6AAA+LZdDDP3zLqwMQm6/wA2UefwUOYo+CC6NEAcTfmqQt/UTo+maLccTcw0Kb2U6DjlRJ/MaEGVhAAA",
+          "creditId": "img-porsche-911-targa-munich-p1120206-363af0d5",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-moscow-porsche-targa-silver-grey-sept-2025-02-4c0d47d7-1920.avif",
+          "alt": "911 Targa — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAoABABoJZwAD4wRcFVmAAD6n9NySPDbPe5RJ1cNLcjbc/j/2YHRuxABwE8I6ZSZUegxGqqQNEaKVQBvQAAA",
+          "creditId": "img-moscow-porsche-targa-silver-grey-sept-2025-02-4c0d47d7",
+          "width": 1920,
+          "height": 1259
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-tc-24-essen-tce42603-addd630d-1920.avif",
+          "alt": "911 Targa — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbAC7AEVKg1KyuCgAP39MI+fIvLi4NdKOlzxj40S3P7zQFlluT2HHrY7MUdIRW0srRmP1FKrzrUD4x6OpSIyZUYFqZvY8l6DZ6OAAAA=",
+          "creditId": "img-porsche-911-targa-tc-24-essen-tce42603-addd630d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-motortreff-bella-italia-2024-munich-p119-e4fb5a1d-1920.avif",
+          "alt": "911 Targa — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJQBYdh3dw9v+AAD9TjMv497+YwsIUD9ZEuoTpotBdSGrujwwKJ/GXSVziVXg+v5wdz504gYvOHjNoEgAAA==",
+          "creditId": "img-porsche-911-targa-motortreff-bella-italia-2024-munich-p119-e4fb5a1d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-porsche-911-sc-targa-in-bre-hec-france-3-b814faa0-1920.avif",
+          "alt": "911 Targa — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAwABABoJQBdgBmEjZG0KQAA/u/ktkH0zI2FQsqUxi2uWQp6KyrZPvlhPIaXUloaGEUvuJW/9RBXCa12TJ6JrhNhxHgA",
+          "creditId": "img-porsche-911-sc-targa-in-bre-hec-france-3-b814faa0",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-gs-82fd611f-1920.avif",
+          "alt": "911 Targa — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAcABABoJZwC7AEQ2JZPFiQAAP6EAbHNGUo5aYoR5b6ST9wto736RSbdZL4lytrBwJyeMWw2lgAA",
+          "creditId": "img-porsche-911-targa-gs-82fd611f",
+          "width": 1920,
+          "height": 863
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-frankfurt-20260823-p1270827-498ca555-1280.avif",
+          "alt": "911 Targa — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAA0ABABoJbACdAYvDBL+oAAA4nlrTS/SjXV6/lY3DjOqbGqDyt498B3tIqYMW6zEUFNE0fw4rIdZN41Qpt3xgPtcb/1pB+YHu0x181AEh2xfWMoqZgmPzGDIOI2AgwAAAA==",
+          "creditId": "img-porsche-911-targa-frankfurt-20260823-p1270827-498ca555",
+          "width": 1280,
+          "height": 1024
+        }
+      ],
+      "videos": [
+        {
+          "id": "_Vc8d6UIc30",
+          "title": "1972 Porsche 911S Targa: Preserved, Not Pristine",
+          "channel": "Petrolicious",
+          "poster": null,
+          "note": "honest, unrestored 2.4 Targa — exactly how survivors wear"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-targa-low-poly-7e2018a0bccf48d6b26cd2285d544f19?embed=1",
+        "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
+        "license": "CC Attribution",
+        "author": "GhostMan",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-targa-pink-dllu-b1661a13",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_pink_dllu.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Dllu",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa_pink_dllu.jpg",
+          "localPath": "/images/targa/img-porsche-911-targa-pink-dllu-b1661a13-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 11595×5797px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-targa-munich-p1120206-363af0d5",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa%2C_Munich_(P1120206).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa,_Munich_(P1120206).jpg",
+          "localPath": "/images/targa/img-porsche-911-targa-munich-p1120206-363af0d5-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4337×2891px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-901-targa",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-targa-low-poly-7e2018a0bccf48d6b26cd2285d544f19?embed=1",
+          "license": "CC Attribution",
+          "author": "GhostMan",
+          "retrieved": "2026-10-02",
+          "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
         {
           "title": "Ten memorable milestones: Porsche at the IAA since 1950 — Porsche Newsroom",
@@ -790,11 +2127,100 @@
       "description": "Porsche's own soft-top Cabriolet did not arrive until 1982, so the very few genuine open 911s of this era were coachbuilt conversions. The best known is the 1965 911 Cabriolet bodied by Karosseriewerk Hebmüller of Wülfrath — the firm that built the Volkswagen Hebmüller Cabriolet — as a commission under the works option M472, using 911 mechanicals with a full folding hood and a proper windscreen instead of the Targa's removable roof and roll bar. It is a road car, not a racing special, and it predates the Targa by two years. Beyond its 1965 build year and its coachbuilder, no factory specification, price or production tally could be confirmed from the sources consulted, so nothing further is claimed here.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 Cabriolet (Hebmüller) — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "G1 research note — docs/research.md (project research)",
@@ -839,11 +2265,120 @@
       "description": "Homologation special rather than a road model. Porsche combined the 911 S engine with the 911 T's stripped interior to satisfy FIA Group 3, and the cars kept the 911 S name in official documentation while being called 911 ST internally. Weight reduction was radical: Plexiglas windows, aluminium and GFRP body parts, deleted heater ducts, glove-box lid, ashtray, sun visors and under-seal. The defining visual change was the flared fender, which widened the track to take seven-inch front and nine-inch rear tyres — hence the mismatched Fuchs front and Minilite rear wheels. From October 1970 it was orderable as a road-legal \"Sport Standard Version\" with the Mehr-Minder M471 package; M491 was the circuit car and M494 the rally car.",
       "special": true,
       "production": "≈33 units (1970–1971 per stuttcars); an alternative year-by-year tally on the same page gives 50 (6 in 1969, 15 in 1970, 6 in 1971, 23 in 1972) — Wikipedia cites both 50 (1969–1972) and 33 (1970–1971)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/st/img-1971-porsche-911-st-33080f3f-1920.avif",
+        "alt": "911 ST",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkABABoJagCdAEPdujsMpEAAP5BPRVRF10irQ6N9T79AtqnDhLogndEi9V6UWlvwA9n8nz2lixaW28EiImhO294Cpdw4NIZdMr6oTLFcQAA",
+        "creditId": "img-1971-porsche-911-st-33080f3f",
+        "width": 1920,
+        "height": 1118
+      },
+      "gallery": [
+        {
+          "src": "/images/st/img-porsche-911-st-iaa-open-space-2023-munich-p1120067-7b6164a4-1920.avif",
+          "alt": "911 ST — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJQBdgBKf2B8QAADLT4ysKXu3gr18CvXrdxL2Qebnh+wY/rmnTJjgYSAwQ9426iuP7ViOpGq5AUl+8/gAAA==",
+          "creditId": "img-porsche-911-st-iaa-open-space-2023-munich-p1120067-7b6164a4",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/st/img-grey-porsche-911-st-scd-24-47c71342-1920.avif",
+          "alt": "911 ST — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJZQCsAEWaAT8umAA/PoICxgiRfXL4NJ7Lnb8u9gXPDN2ZtllyhcrVQ/WCdJUdw0tP/+5zZPIaE77NbDR5YgA",
+          "creditId": "img-grey-porsche-911-st-scd-24-47c71342",
+          "width": 1920,
+          "height": 1127
+        },
+        {
+          "src": "/images/st/img-porsche-911-st-auto-2025-zurich-20251029-p1074413-a0429862-1920.avif",
+          "alt": "911 ST — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAwABABoJaAAAqHx0aPGlAD+hbUoSeqp5dO2RyMG8S4JZ+GXt1mtrtzm5/825ybLcg8VL4fOrIv2oMP8rncb/cAecQAA",
+          "creditId": "img-porsche-911-st-auto-2025-zurich-20251029-p1074413-a0429862",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/st/img-porsche-911-st-auto-2025-zurich-20251029-p1074416-da65ed07-1920.avif",
+          "alt": "911 ST — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwABABoJagCdAEXTbcqqgAA/u6vyKeee79XKGy//2MT9i6baU3yCXNCcCpajdcTE1Nzm4+NhnuCrp2Ygdpdydvuu+UMpRfgSJEpwqX6Za2trEAAAA==",
+          "creditId": "img-porsche-911-st-auto-2025-zurich-20251029-p1074416-da65ed07",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/st/img-porsche-911-st-auto-2025-zurich-20251029-p1074418-78605cc1-1920.avif",
+          "alt": "911 ST — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAwABABoJaACdH8AF/3uFQSTQXgA/u0pegkSSPBLzqDL5FtxsgS8eeG52D8yXVH/HS1hZFNYG3n+VA35qL6PTXNSS0UOIcH5RMqGwCPqcw7JaYd+4QAA",
+          "creditId": "img-porsche-911-st-auto-2025-zurich-20251029-p1074418-78605cc1",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/st/img-porsche-911-st-auto-2025-zurich-20251029-p1074414-7095e215-1920.avif",
+          "alt": "911 ST — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAwABABoJbACdAED7N9EK8iAAP70mTFx84S1V4gpaXOhvmec37z0bRtKlIbWTMV0arDXl1h7hySv9yFWh+4h0IwlO905o7gBE+u9tS4BVu0AAAA=",
+          "creditId": "img-porsche-911-st-auto-2025-zurich-20251029-p1074414-7095e215",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/st/img-porsche-911-st-auto-2025-zurich-20251029-p1074417-2455226e-1920.avif",
+          "alt": "911 ST — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAwABABoJZwAAp/kyYCKmzQAAP7pUXWqYazbqLYROll77zwTGgrYZC8gABY4UAA=",
+          "creditId": "img-porsche-911-st-auto-2025-zurich-20251029-p1074417-2455226e",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-st-1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
+        "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
+        "license": "CC Attribution",
+        "author": "CriMoreScum",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1971-porsche-911-st-33080f3f",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911_ST.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911_ST.jpg",
+          "localPath": "/images/st/img-1971-porsche-911-st-33080f3f-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4833×2814px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-st-iaa-open-space-2023-munich-p1120067-7b6164a4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_ST%2C_IAA_Open_Space_2023%2C_Munich_(P1120067).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_ST,_IAA_Open_Space_2023,_Munich_(P1120067).jpg",
+          "localPath": "/images/st/img-porsche-911-st-iaa-open-space-2023-munich-p1120067-7b6164a4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4608×3072px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-901-st",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-st-1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
+          "license": "CC Attribution",
+          "author": "CriMoreScum",
+          "retrieved": "2026-10-02",
+          "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
         {
           "title": "History: 911 S (ST) (1969 to 1972) — Porsche Newsroom",
@@ -892,11 +2427,122 @@
       "description": "Built to clear the FIA's 500-car minimum for Group 4 GT, and in practice the reason the Carrera RSR 2.8 could race at all. The bore grew from the 2.0's 80 mm to 90 mm, made possible by thin NIKASIL cylinder walls that kept room for cooling air between the cylinders. Mechanically it added a stiffened suspension, larger brakes, wider rear wheels and tyres, wider rear wings and the aluminium-framed ducktail — the first rear spoiler fitted as standard to a production car, and still the 911's most copied design cue. In November 1972 the first 500 had sold; Porsche tripled the run by July 1973 and passed 1,000 cars, earning Group 3 homologation as well. Three versions: Touring M472, Sport lightweight M471 and the RSR.",
       "special": true,
       "production": "1,580 total per Porsche Newsroom and Wikipedia (1,308 Touring M472, 200 Sport lightweight M471, 55 RSR, 17 homologation base cars); two secondary compilations quote 1,590",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
+      "heroImage": {
+        "src": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-front-left-391bbd45-640.avif",
+        "alt": "911 Carrera RS 2.7",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAsABABoJYgAAxaQcUjwAP7uysZRiXQzcajy0hRahbDl4GsPJNq2prl2Ev2djrUrXe9KUofY1rjI/8YOrAF6WB5Lf5rQAAA=",
+        "creditId": "img-porsche-911-carrera-rs-front-left-391bbd45",
+        "width": 640,
+        "height": 427
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-race-car-8989c508-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsABABoJYwCdIExgsix4x44CAD+mCjUe1uox09gYNztUBiEADhzm8Su1aa5W4zkkvxh8BXp3wSwTtQv3h0l9C/BjSFvnzP/KjUeRq8VadJ+T83XNQ9QAAA=",
+          "creditId": "img-porsche-911-carrera-rs-race-car-8989c508",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-1973-porsche-911-carrera-rs-63900-b0a9d0c8-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoABABoJbAC7ADRLTNp/AAA/WYBPfAjF1fTr4R2RYVrciUvNM4zEzdq9yQbs7LBya2wRCuaX3n4pDb6zMQaiujtKMpjIblsFXsAAAA=",
+          "creditId": "img-1973-porsche-911-carrera-rs-63900-b0a9d0c8",
+          "width": 1920,
+          "height": 1182
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-1973-porsche-911-carrera-rs-63888-b3a3e191-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkABABoJbACdACovIBXAAD9PM42CdePu7Fuc7xKN9eLfufMH3/gdRIRiad24GpTC5TYoHaL+g8hN2qKSHm+zjEAAA==",
+          "creditId": "img-1973-porsche-911-carrera-rs-63888-b3a3e191",
+          "width": 1920,
+          "height": 1057
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-ems-2023-essen-p1160557-rr-55f39e12-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJZACdADwfKtK8w58AMyi4K7Qf4ND6AN0/8A/1Hfy054fIzM1u2KmK46yY12S0LMyjV0IDWpFxwdKN2sIEb8Yz0mE/MHOAk64AAAA",
+          "creditId": "img-porsche-911-carrera-rs-ems-2023-essen-p1160557-rr-55f39e12",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-1973-porsche-911-carrera-rs-48831-595d7a76-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJbACdADwf0kUngAA79VwvErqejnjsD8J66pBvVClg1F0DZk7dHWbGQ9k3S4TIOPX+tDMHI76wXPXU/Y5T9atsUAAAA==",
+          "creditId": "img-1973-porsche-911-carrera-rs-48831-595d7a76",
+          "width": 1920,
+          "height": 1142
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-1973-porsche-911-carrera-rs-53347-6294734e-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJbACdADPKCygr7AA/U4n20EB5q90u26Nvpi50zegnjJNt6CU1Y8Iwgkqtq9zuhuE7jQpZzwj+aQq4AA=",
+          "creditId": "img-1973-porsche-911-carrera-rs-53347-6294734e",
+          "width": 1920,
+          "height": 1103
+        },
+        {
+          "src": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-cs-blue-47bc03bd-1920.avif",
+          "alt": "911 Carrera RS 2.7 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAgCdASoQAA0ABABoJbACdFQAFPYYJrqyTqe6nYAA/IK7EyjyEeTWawGnTX5dKN0/QgKjGvUVvYinUm2yo8d1mMYDFiAco7VBAQqB3kuMUMCrQpGk+oOoHTgreZTow520Y9o2YQAAAA==",
+          "creditId": "img-porsche-911-carrera-rs-cs-blue-47bc03bd",
+          "width": 1920,
+          "height": 1536
+        }
+      ],
+      "videos": [
+        {
+          "id": "K7OxHnCjtb0",
+          "title": "1973 Porsche 911 2.7 Carrera RS: Rennsport Royalty",
+          "channel": "Petrolicious",
+          "poster": null,
+          "note": "definitive RS 2.7 feature, Weber carbs and ducktail explained"
+        },
+        {
+          "id": "oR-l7e4kEkI",
+          "title": "This 1973 Porsche 2.7 Carrera RS Is a Race Car for the Street",
+          "channel": "Petrolicious",
+          "poster": null,
+          "note": "why the 1973 RS became the homologation-special template"
+        },
+        {
+          "id": "lMkRGjqEwZ8",
+          "title": "Classic 911 2.7 RS - Porsche Experience TV",
+          "channel": "Porsche",
+          "poster": null,
+          "note": "Porsche's own factory film on the 2.7 Carrera RS"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-rs-front-left-391bbd45",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_RS_front_left.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Abehn",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_RS_front_left.jpg",
+          "localPath": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-front-left-391bbd45-640.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1080×720px (NaN kB original), rendered locally to AVIF 640 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-carrera-rs-race-car-8989c508",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_carrera_rs_race_car.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Mika Kataja",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_carrera_rs_race_car.jpg",
+          "localPath": "/images/carrera-rs-2.7/img-porsche-911-carrera-rs-race-car-8989c508-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1920×1280px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Fifty years of the Porsche 911 Carrera RS 2.7 – 'Germany's fastest sports car' — Porsche Newsroom",
@@ -952,11 +2598,100 @@
       "description": "The works endurance-racing S — the customer-facing sibling of the 911 ST, and the direct ancestor of the 60th-anniversary 911 S/T. No two were alike, because they were built to order: some had thinner-gauge steel, some aluminium or fibreglass panels, different fuel capacities and, where FIA rules permitted, no under-seal and minimal paint. The flared arches that debuted here became standard on later 911s. Engines grew through 2.2, 2.3, 2.4 and finally 2.5 litres as the rules allowed, the last 2.5-litre unit making 270 PS with a counter-pressure-optimised exhaust, modified heads and an extra oil cooler. Koni or Bilstein dampers and a stiffened shell completed the package. Victories came at Daytona, Sebring, the 1,000 km Nürburgring and the 1972 Targa Florio.",
       "special": true,
       "production": "33 units (1970–1971 per stuttcars); alternative tallies give ≈50 across 1969–1972 — Wikipedia explicitly flags the uncertainty",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 S/T (1970–1971) — Stuttcars",
@@ -1004,11 +2739,100 @@
       "description": "The debut car, shown at the Frankfurt IAA on 12 September 1963 as \"Porsche 901\" — 2+2 seating, a 130 PS dry-sump flat-six, rack-and-pinion steering, MacPherson struts and semi-trailing arms, all wrapped in a body 120 mm longer and 70 mm narrower than the 356B, with a 111 mm longer wheelbase. At the Paris Salon in October 1964 Peugeot objected to the three-digit-with-zero-middle designation it held in France, and Porsche renamed the car 911 everywhere rather than run two names. Porsche USA's model history records that 82 units were built as 901, though Porsche Museum collection manager Alexander Klein has said that figure is a long-standing error carried over from a misread early record, and that far fewer cars actually wore 901 badges.",
       "special": true,
       "production": "82 units per Porsche's own model history; Porsche Museum's Alexander Klein disputes this figure (see description)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66-1920.avif",
+        "alt": "Porsche 901",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJZACdAC7GJ/jbAD+zduz/K3IXPHmX3zL+R3hbsfTELkkSpx6Pf38itPlSjUm7eFxuVhZ7atVFto4ocgAAA==",
+        "creditId": "img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/porsche-901/img-porsche-901-prototype-seats-at-pebble-beach-concours-2023-e9de29a3-1920.avif",
+          "alt": "Porsche 901 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAsABABoJQBdgCFy/BfK7JsAAP7gy2vlC102sj8i6Ajin3yJhRX/OTe/ZGEW8lNUPa6xiQc9D8nOSy4IvArk2Munn0yJbbBBZ70ASPb3/fFH0YW3L3ifnxgAAA==",
+          "creditId": "img-porsche-901-prototype-seats-at-pebble-beach-concours-2023-e9de29a3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/porsche-901/img-alois-ruf-jr-with-901-prototype-at-pebble-beach-concours-2-2690c5ac-1920.avif",
+          "alt": "Porsche 901 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJZgCdAEVSILSJfDQAP7KCpH+ki+JvI2EjbXRwp16DGCDmDrtNdOhgWxDR+i9sm2XZwfi01MGAXAhO4aY1gNd/IRsSOWvSxI6ZWgA",
+          "creditId": "img-alois-ruf-jr-with-901-prototype-at-pebble-beach-concours-2-2690c5ac",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/porsche-901/img-porsche-901-prototype-rear-at-pebble-beach-concours-2023-0c48669b-1920.avif",
+          "alt": "Porsche 901 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZgCw7DIzfiQAAD+oUvvTeH6nRQm2q+j8RPqtgd40dKqggMo7Y0QbjdKMFpYMY5bEZ5ohx62w1Cp64KyPgAA",
+          "creditId": "img-porsche-901-prototype-rear-at-pebble-beach-concours-2023-0c48669b",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/porsche-901/img-porsche-911t-type-901-front-6e657da5-1920.avif",
+          "alt": "Porsche 901 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAwABABoJQBOgBodx8j54gAAzh5G+Th96O4OtWOI8YAz+qasPQEHH243rClL8NQ6yFKwI48LGwpRV98nUkQ/x/EvUcBU9f2pQAAA",
+          "creditId": "img-porsche-911t-type-901-front-6e657da5",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/porsche-901/img-porsche-901-prototype-engine-at-pebble-beach-concours-2023-9653308f-1920.avif",
+          "alt": "Porsche 901 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsABABoJaACdAEN3YiHUgAAAP7SL7U4+eNgEQgAue1z9LLZ79/YsBEMp34Z0rsOFYTSyOjB5Nl7ctgoqmU+8Q+dCbemWfzFrgT2EqYAAA==",
+          "creditId": "img-porsche-901-prototype-engine-at-pebble-beach-concours-2023-9653308f",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/porsche-901/img-porsche-901-gims-2019-le-grand-saconnex-gims1277-42b9107b-1920.avif",
+          "alt": "Porsche 901 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoQAAsABABoJbACdAYtfmvdnNV8pRAAAN5j/1L9eWJpycM7z/Ar7/2BGF7uu/sj18bQeuYRcHWRtJUUOYqW7oX64Qj27apwIndDx1pToVSQvKgEdD1M0FI3/AUg9WfgAAA=",
+          "creditId": "img-porsche-901-gims-2019-le-grand-saconnex-gims1277-42b9107b",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/porsche-901/img-porsche-901-911-no-21-24052611035-2c3c59d4-1920.avif",
+          "alt": "Porsche 901 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoQAAsABABoJYwAAxbl+ao9Q0kgAP5BOtShl3NS8iCaFzLiwlHEeU2S2simtFJsAwuuuJAA",
+          "creditId": "img-porsche-901-911-no-21-24052611035-2c3c59d4",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Prova MO",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg",
+          "localPath": "/images/901/img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5789×3859px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-901-prototype-seats-at-pebble-beach-concours-2023-e9de29a3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_901_prototype_seats_at_Pebble_Beach_Concours_2023.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Prova MO",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_901_prototype_seats_at_Pebble_Beach_Concours_2023.jpg",
+          "localPath": "/images/porsche-901/img-porsche-901-prototype-seats-at-pebble-beach-concours-2023-e9de29a3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6000×4000px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Model 901 — Porsche USA Classic",
@@ -1056,11 +2880,100 @@
       "description": "The 911's cheap little brother: 911 body and chassis with the 356 SC's four-cylinder engine, launched in April 1965 when 356 production ended. It was a deliberate price weapon — Porsche's 100,000th car was a 912 Targa built for a German police force — and for its first couple of years it outsold the six-cylinder 911 roughly two to one before 911 supply caught up. Visual differences were minimal: silver rather than gold script, a three-dial instrument cluster instead of five, and a plastic steering-wheel rim on base cars. A short run of 2,562 Targas is recorded by the 912 Registry. The 912 was replaced by the mid-engined 914; a 912E with the 2.0-litre Volkswagen four returned for the US market only in 1975–76 (2,092 built), which falls in the next generation's era.",
       "special": false,
       "production": "More than 32,000 built April 1965 – July 1969 (Wikipedia); porsche.com states around 30,745",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/912/img-roter-porsche-912-baujahr-1968-15de4df1-1280.avif",
+        "alt": "Porsche 912",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJZgCdAYvNtgJiV9QAP2pPGOc3qw7sulOCYTZC72M/8xx5UegEkYEepPfBI4BGEnmvPpXKlmZOkW4SmoOHG0eFRB2fFgxp4ZpAEIIvx7gAA==",
+        "creditId": "img-roter-porsche-912-baujahr-1968-15de4df1",
+        "width": 1280,
+        "height": 853
+      },
+      "gallery": [
+        {
+          "src": "/images/912/img-porsche-912-targa-e17263b7-1280.avif",
+          "alt": "Porsche 912 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoABABoJZQAD5JwkHjIQGRsAPsiDVVCf8dblwCmQHELrrJIwLliVx0FjQrQVjVuCJ2RPS0hFdw7dzEIiTRDkvYUGZz2+EnXALIAAAA=",
+          "creditId": "img-porsche-912-targa-e17263b7",
+          "width": 1280,
+          "height": 798
+        },
+        {
+          "src": "/images/912/img-porsche-912-23077933695-27124963-1920.avif",
+          "alt": "Porsche 912 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAQCdASoQAAsABABoJbACdACZ7sUZ+AD+0gAjQPvG/jQLdN4PSXCa/1mjv3QXSjMzbfet42jNwmLyC9IZ0zk6Z4+dLplQt9A+NtUAWtyck1pFT9VVTE4lEkgcugAA",
+          "creditId": "img-porsche-912-23077933695-27124963",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/912/img-w4082-porsche-912-14800xa2-7e210900-1920.avif",
+          "alt": "Porsche 912 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAkABABoJYwAAsddI1IAAPKUmMsEMR8VDayBALmDijEGb6bjdLLE3BBa/zKXkdkwIAAA",
+          "creditId": "img-w4082-porsche-912-14800xa2-7e210900",
+          "width": 1920,
+          "height": 1083
+        },
+        {
+          "src": "/images/912/img-1967-red-porsche-912-0a6357fb-1920.avif",
+          "alt": "Porsche 912 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJbACdADjd7rDUf4AAP6JMpnHSd2daaQnEY97hLvONmLBa/sSt6zWBQ09E2g+4sTB5bu2MJ6QJzyx6odlk/NMNnelhnhNycAAAA==",
+          "creditId": "img-1967-red-porsche-912-0a6357fb",
+          "width": 1920,
+          "height": 1066
+        },
+        {
+          "src": "/images/912/img-w4081-porsche-912-14804xa2-48f0cc57-1920.avif",
+          "alt": "Porsche 912 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkABABoJQBOgCIgdg+XZ8AA/rINQAJtqv6FkTjQzyHAPO2zumf04fb7eKsb/zABh6B37/AKT+fWkHiDyAAA",
+          "creditId": "img-w4081-porsche-912-14804xa2-48f0cc57",
+          "width": 1920,
+          "height": 1083
+        },
+        {
+          "src": "/images/912/img-porsche-912-52576608168-26b08c77-1920.avif",
+          "alt": "Porsche 912 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJZAAD5GtVk5eLhUAAP4xkxwThSu75gs7RMpBKR7APb4ZWOOOAyzTeQGmXHFeitTMUlvpjhYQDF7YfdjQawtSxsneF2fqA5e/CEbAI4AAAA==",
+          "creditId": "img-porsche-912-52576608168-26b08c77",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/912/img-w4086-porsche-912-14803xa2-69541383-1920.avif",
+          "alt": "Porsche 912 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAkABABoJbACdADhk1ag3NgA/DjrrLMlI15ruJqBaJfc/K2Z404pAaS0MYQy5gMBd450q62/h7QAuzsKF33LjWRRcpho7mWAQS1H9uAAAA==",
+          "creditId": "img-w4086-porsche-912-14803xa2-69541383",
+          "width": 1920,
+          "height": 1083
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-roter-porsche-912-baujahr-1968-15de4df1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARoter_Porsche_912_Baujahr_1968.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Rizzo",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Roter_Porsche_912_Baujahr_1968.jpg",
+          "localPath": "/images/912/img-roter-porsche-912-baujahr-1968-15de4df1-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1536×1024px (NaN kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-912-targa-e17263b7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_912_Targa.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Cjp24",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_912_Targa.jpg",
+          "localPath": "/images/912/img-porsche-912-targa-e17263b7-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1443×900px (NaN kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 912 — Wikipedia",
@@ -1108,11 +3021,100 @@
       "description": "Developed under Ferdinand Piëch — the first time Porsche built a 911 purely to go racing. Twenty were made in 1967, and because that fell short of the FIA's GT-class production requirement, they were campaigned against purpose-built prototypes. Weight was attacked from every angle: thin aluminium doors, plastic door handles, smaller front and rear indicators, a magnesium-alloy crankcase, twin-spark cylinder heads, a fibreglass fuel tank and a single bucket seat. The magnesium crankcase went into series production on later cars, as did the hydraulic chain tensioners. The six-inch 15-inch forged Fuchs wheels developed for the 911 R were then offered as an option on production 911s — the origin of the wheel that became the marque's trademark five-spoke design.",
       "special": true,
       "production": "20 cars in 1967 (Wikipedia); one dealer production list gives 19",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia",
@@ -1155,11 +3157,100 @@
       "description": "The first homologation special built on the 911, and the reason the T/R exists at all. When the FIA reclassified the 911 T into the same class as the 911 S in 1968, Porsche could no longer supply rally customers with a homologation car, because the T road car weighed 54 kg more than the S — the wrong way round for competition. The answer was the T/R: the light 911 T chassis carrying the S/R's more powerful racing engine, built in 1968 for privateers who wanted to do both road and rally. It also foreshadowed the shape of everything that followed — a stripped, homologated 911 as the basis for a factory race programme.",
       "special": true,
       "production": "35 units (stuttcars)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+        "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdADxHaGMGhAA/uXb+bZ1VqzHJp66cCziZvVZxBS9LywtD9BQxQI8Gl2RDEFd8cCSCcxU3r8Q/jBgY/0yQem8viZ70tIXbmHSCz8sgAAA",
+        "creditId": "img-1972-porsche-911t-2-4-fe450f7d",
+        "width": 1920,
+        "height": 1152
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYgCdAEfbRzrXwAA/tusaP/LzFCpyOp6s5VKMjc4ErutKKiVayif/8FoWPAtbJpAGtn96YoPtPhAJyMpDuomQu4AAA==",
+          "creditId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/911-2.0/img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBdgBl9rrb5daAA9iZs6Lp1dSUDRb1VDeguRb2Sd4U2uVhesHlhRT0+AokvYyDBmo+2oli+zAckM141A0uAAAA=",
+          "creditId": "img-porsche-911-t-2-4-tc-24-essen-tce42749-0ae993d2",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-1971-porsche-911t-2-4-hcc23-8a1b2c3c-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoABABoJbACdADcXW7DCAAA/ail3vrqrQyPp8V4Yh152NMw9ePzVuoqWaUkQCfKPYF2PWQlCdusK+4kLuvvXPFVv2UANeCe2P5TaXgt1lp9ZQ2UzPIJ2qxFKAAA",
+          "creditId": "img-1971-porsche-911t-2-4-hcc23-8a1b2c3c",
+          "width": 1920,
+          "height": 1233
+        },
+        {
+          "src": "/images/911-t-2.0/img-1972-porsche-911-2-4-e176ac4f-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZwAApIxrkAAAPvE04BIUPo71PvFJ3G3g7xoCPLvQ4Z9UMrjUZQ0j3YzMGhHEcJ44L4vi2XyAAAA",
+          "creditId": "img-1972-porsche-911-2-4-e176ac4f",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/911-l-2.0/img-1972-porsche-911-t-2-4-19dba428-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkABABoJbACdAYt9wPfnYH0DwAA8Sd15wytq7F/jEOVTwdX9f9G9q6aBmnOMJEtErsDcuGMcHHWcVGTLjRelH+5ffQXoWrPPFyyw7k9mSenQAA=",
+          "creditId": "img-1972-porsche-911-t-2-4-19dba428",
+          "width": 1920,
+          "height": 1091
+        },
+        {
+          "src": "/images/911-l-2.0/img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJYgCdAELT2JGD/5QAOIENyoDzPMAKF0ZBFsVSJRY9CjIVH+EBZ4xCTquQCbqHozQ3BRfOvPtWRtybUTiAy3ISzgcH6jvR2ePmT+8gAA=",
+          "creditId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/911-2.0/img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9-1920.avif",
+          "alt": "911 T/R — stand-in photo (same 901 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJZACdAEM/A1qqxAA/vLcEiwt7GITJIcg6T/2wrLmWAOXaOjPJAUA3fn5C8qwaG7/QS1W6H34jbZ3BdAsMtdX0vqvrQbOhyAQAA==",
+          "creditId": "img-stuttgart-jul-2012-20-porsche-museum-1965-porsche-911-2-0-1bb393a9",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+          "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1971_Porsche_911T_2.4_Blue.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1971_Porsche_911T_2.4_Blue.jpg",
+          "localPath": "/images/911-2.0/img-1971-porsche-911t-2-4-blue-7961b499-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4643×2747px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 T/R (1968) — Stuttcars",
@@ -1198,11 +3289,84 @@
       "description": "The race car the whole Carrera RS existed to legitimise: with production of the RS above 500 units, the 911 qualified for FIA Group 4 Special GT, and 55 of the 1,580 RS cars were converted under code M491 into RSR 2.8 competition machines. They carried wider front and rear arches, wheels and tyres than the road RS, and the 2,808 cc engine with 92 mm bores — about 48 PS more than the road car's 2.7. Peter Gregg took one to a class win at Daytona in 1973, the season the RSR was homologated. It is the last factory race derivative built before the F-body ended and the impact-bumper G-series began.",
       "special": true,
       "production": "55 of the 1,580 Carrera RS cars were converted to RSR 2.8 under M491 (Wikipedia)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-f53f61d9-1920.avif",
+        "alt": "911 Carrera RSR 2.8 (M491)",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJaACdADs+Qc1yMCAAP7p/nm5Gscf+BuTeU/WAb8zjDOa/AtsVYDHneWicMZQtVwnRBOONeY7zeWEmestjQDK4R5GyqEdLlwJSOQZ6Ew4AA==",
+        "creditId": "img-1973-porsche-911-carrera-rsr-2-8-f53f61d9",
+        "width": 1920,
+        "height": 1217
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-black-62574d55-1920.avif",
+          "alt": "911 Carrera RSR 2.8 (M491) — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAkABABoJZACdAEUDNKAAP7vZHoMrrWGQc4EaQ2iARIXBZaDuQyEdLSSGPNetv10DaDoYj6iVjXrb2/gHfEsrooyg/1RGMWiVEAA",
+          "creditId": "img-1973-porsche-911-carrera-rsr-2-8-black-62574d55",
+          "width": 1920,
+          "height": 1069
+        },
+        {
+          "src": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-hcc25-c2457989-1920.avif",
+          "alt": "911 Carrera RSR 2.8 (M491) — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAkABABoJQBWAB9BRc/IAP13RFGi0gzbkZP+2BFgl7h6MoR2te0iZl+3eDijYBaUtA1//03Vmmv2I5NZIkbiIAA=",
+          "creditId": "img-1973-porsche-911-carrera-rsr-2-8-hcc25-c2457989",
+          "width": 1920,
+          "height": 1092
+        },
+        {
+          "src": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-hcc-25-9d09140a-1920.avif",
+          "alt": "911 Carrera RSR 2.8 (M491) — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAkABABoJQBYdhl65uXIAAD6e8Kki/WalIVpRkiK3PS8WpfwwxYM2Xu56a4gtzjk2XDWzPgRjUsoUOsYWGAA",
+          "creditId": "img-1973-porsche-911-carrera-rsr-2-8-hcc-25-9d09140a",
+          "width": 1920,
+          "height": 1059
+        },
+        {
+          "src": "/images/carrera-rsr-2.8/img-porsche-911-carrera-rsr-pau-2015-fd3891c9-1920.avif",
+          "alt": "911 Carrera RSR 2.8 (M491) — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsABABoJYgAD4wPususoPfS0AAA4jRSU8CgB6M4KASYEhmNfAzAfAqnDVSR8L8gL2ptk0w/lgXGNogTtlYklQmmUTzF+sBGnKmuRPWMZCgDmvuT30AAAAA=",
+          "creditId": "img-porsche-911-carrera-rsr-pau-2015-fd3891c9",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-brumos-racing-9b4b58e6-1920.avif",
+          "alt": "911 Carrera RSR 2.8 (M491) — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACQAgCdASoQAAsABABoJYgCsIExgnC/GK+meRaoAAD1nB8a6Jmmq83aJztcOg3omCMdL3moEDdxoF1Z9L3vwOeXARProUb8X9LKlV/FcjyHcceYx9jxU1paFV7QHaf9xdyeM3Lmh7MpzoLRPacRY/74RdciKNX0YAAAAA==",
+          "creditId": "img-1973-porsche-911-carrera-rsr-brumos-racing-9b4b58e6",
+          "width": 1920,
+          "height": 1275
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1973-porsche-911-carrera-rsr-2-8-f53f61d9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1973_Porsche_911_Carrera_RSR_2.8.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1973_Porsche_911_Carrera_RSR_2.8.jpg",
+          "localPath": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-f53f61d9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4771×3024px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1973-porsche-911-carrera-rsr-2-8-black-62574d55",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1973_Porsche_911_Carrera_RSR_2.8_Black.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1973_Porsche_911_Carrera_RSR_2.8_Black.jpg",
+          "localPath": "/images/carrera-rsr-2.8/img-1973-porsche-911-carrera-rsr-2-8-black-62574d55-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4850×2701px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
         {
           "title": "Porsche 911 (classic) — Wikipedia (Carrera RS 2.7 & RSR 2.8)",
@@ -1223,7 +3387,44 @@
       ]
     }
   ],
-  "credits": [],
+  "credits": [
+    {
+      "assetId": "img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Prova MO",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:Porsche_901_prototype_at_Pebble_Beach_Concours_2023.jpg",
+      "localPath": "/images/901/img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5789×3859px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1972_Porsche_911T_2.4.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1972_Porsche_911T_2.4.jpg",
+      "localPath": "/images/901/img-1972-porsche-911t-2-4-fe450f7d-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12886×7732px (NaN kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-901",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
+      "license": "CC Attribution",
+      "author": "tonielpro520",
+      "retrieved": "2026-10-02",
+      "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
+      "localPath": null,
+      "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    }
+  ],
   "sources": [
     {
       "title": "Porsche 911 (classic) — Wikipedia",

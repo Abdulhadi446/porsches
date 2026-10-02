@@ -6,21 +6,90 @@
   "yearsStart": 1994,
   "yearsEnd": 1998,
   "tagline": "The last air-cooled 911, and a modern classic",
-  "description": "The 993 was built from January 1994 to March 1998 as the fourth 911 and the last air-cooled Porsche. Tony Hatter\u2019s redesign kept the silhouette but added flatter polyellipsoid headlights, integrated bumpers and a new LSA (Light, Stable, Agile) aluminium chassis with a multi-link rear axle that cured lift-off oversteer; only about a fifth of the parts carried over from the 964. The engine line ran from a 272 PS 3.6-litre flat-six to the 285 PS VarioRam car and the first biturbo 911, a 408 PS twin-turbo. The range widened into Carrera 4S and Carrera S, the 300 PS Carrera RS, the rear-drive GT2, the 450 PS Turbo S, plus rare Speedster and Turbo Cabriolet specials. Road production ended on 31 March 1998, and today the 993 is widely treated as the most desirable post-classic 911.",
+  "description": "The 993 was built from January 1994 to March 1998 as the fourth 911 and the last air-cooled Porsche. Tony Hatter’s redesign kept the silhouette but added flatter polyellipsoid headlights, integrated bumpers and a new LSA (Light, Stable, Agile) aluminium chassis with a multi-link rear axle that cured lift-off oversteer; only about a fifth of the parts carried over from the 964. The engine line ran from a 272 PS 3.6-litre flat-six to the 285 PS VarioRam car and the first biturbo 911, a 408 PS twin-turbo. The range widened into Carrera 4S and Carrera S, the 300 PS Carrera RS, the rear-drive GT2, the 450 PS Turbo S, plus rare Speedster and Turbo Cabriolet specials. Road production ended on 31 March 1998, and today the 993 is widely treated as the most desirable post-classic 911.",
   "accent": "#8b8b95",
   "eraType": "display",
   "stats": [
-    { "label": "Production", "value": "68,881 (1993–1998)" },
-    { "label": "Engine", "value": "3.6 L air-cooled flat-six, 272–285 PS" },
-    { "label": "Milestone", "value": "Last air-cooled 911 (final road car 31 Mar 1998)" },
-    { "label": "First twin-turbo 911", "value": "408 PS (300 kW) in 1995" },
-    { "label": "Chassis", "value": "LSA aluminium multi-link Weissach rear axle" },
-    { "label": "Transmission", "value": "First 911 with a six-speed manual" }
+    {
+      "label": "Production",
+      "value": "68,881 (1993–1998)"
+    },
+    {
+      "label": "Engine",
+      "value": "3.6 L air-cooled flat-six, 272–285 PS"
+    },
+    {
+      "label": "Milestone",
+      "value": "Last air-cooled 911 (final road car 31 Mar 1998)"
+    },
+    {
+      "label": "First twin-turbo 911",
+      "value": "408 PS (300 kW) in 1995"
+    },
+    {
+      "label": "Chassis",
+      "value": "LSA aluminium multi-link Weissach rear axle"
+    },
+    {
+      "label": "Transmission",
+      "value": "First 911 with a six-speed manual"
+    }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+    "alt": "Last Air-Cooled (993) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+    "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+    "width": 1920,
+    "height": 1250
+  },
+  "timelineImage": {
+    "src": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+    "alt": "Last Air-Cooled (993) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkABABoJbACdABWBNAA/hnGQjWTu9Tv/d5elBsw4/R2V/6A6n4rvCN3sOYgjMiuTj+BSUGvbKFVh0chRTelmWav9kSrndBPQUUyomuz5gAA",
+    "creditId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+    "width": 1920,
+    "height": 1122
+  },
+  "model3d": {
+    "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+    "sourceId": "b711966542e143e2829a21e0230fa30e",
+    "license": "CC Attribution",
+    "author": "Ai 3D Designs",
+    "glb": null,
+    "turntable": null,
+    "bytes": null
+  },
+  "videos": [
+    {
+      "id": "EUAX-pIHrDk",
+      "title": "Porsche 993 Carrera buyer's guide: full story on the last air-cooled 911",
+      "channel": "9WERKS TV",
+      "poster": null,
+      "note": "best single summary of the last air-cooled generation"
+    },
+    {
+      "id": "bqez5xkW4jE",
+      "title": "Retro Review: 1996 Porsche 911 Turbo (993)",
+      "channel": "MotorWeek",
+      "poster": null,
+      "note": "the 400 PS twin-turbo that made the 993 turbo standard"
+    },
+    {
+      "id": "Z-g-QeFVr0E",
+      "title": "1995 Porsche 993 Speedster: Unicorn Conversion",
+      "channel": "Petrolicious",
+      "poster": null,
+      "note": "factory Speedster conversion, one of a handful"
+    },
+    {
+      "id": "s6bttkQ5RdI",
+      "title": "Driving the 1995 Porsche 911 Carrera RS - 300hp 3.8L Air Cooled Lightweight (POV Review)",
+      "channel": "Tedward",
+      "poster": null,
+      "note": "binaural POV of the 3.8 RS, the driver's 911 of the era"
+    }
+  ],
   "variants": [
     {
       "id": "carrera",
@@ -39,24 +108,151 @@
       "weight": "1,370 kg (3,020 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 4-speed Tiptronic (optional)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 993 Carrera opened the fourth generation in January 1994 as the lightest and purest of the range. Its 3.6-litre air-cooled flat-six kept the 964's bore and stroke but gained twin-spark ignition, a dual-flow exhaust with two catalytic converters and, from model year 1996, the VarioRam variable-length intake that lifted output from 272 to 285 PS. A six-speed manual was standard — a 911 first — with a four-speed Tiptronic optional. Tony Hatter's smoothed, polyellipsoid-headlamp body rode on the new LSA aluminium chassis with its multi-link Weissach rear axle. Around 23,000 Coupés were built, making this the volume 993.",
       "special": false,
       "production": "23,127 coupés (14,541 at 272 PS + 8,586 at 285 PS)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+        "alt": "911 Carrera",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+        "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+        "width": 1920,
+        "height": 1254
+      },
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+        "sourceId": "b711966542e143e2829a21e0230fa30e",
+        "license": "CC Attribution",
+        "author": "Ai 3D Designs",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+          "localPath": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15712×10264px (18179 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1996-porsche-911-993-carrera-4-b0cab1e4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1996_Porsche_911_993_Carrera_4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1996_Porsche_911_993_Carrera_4.jpg",
+          "localPath": "/images/carrera/img-1996-porsche-911-993-carrera-4-b0cab1e4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 10634×6986px (7800 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-993-carrera",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+          "license": "CC Attribution",
+          "author": "Ai 3D Designs",
+          "retrieved": "2026-10-02",
+          "sourceId": "b711966542e143e2829a21e0230fa30e",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html" },
-        { "title": "1995 911 Carrera Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/312" },
-        { "title": "1996 911 Carrera Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/313" },
-        { "title": "Model 911 (type 993) — Porsche Classic (USA)", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html"
+        },
+        {
+          "title": "1995 911 Carrera Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/312"
+        },
+        {
+          "title": "1996 911 Carrera Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/313"
+        },
+        {
+          "title": "Model 911 (type 993) — Porsche Classic (USA)",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/"
+        }
       ],
       "missing": [
         "Excellence's 1996 Carrera page still lists 272 hp @ 6,100 rpm; Porsche Newsroom and Wikipedia give 285 PS from model year 1996 (VarioRam). Numeric powerPs/powerKw use the 1996+ figure.",
         "Curb weight varies by measurement standard: Wikipedia infobox quotes 1,390 kg (3,064 lb) for the base Coupé against 1,370 kg (3,020 lb) in its text and at Excellence."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera/img-1996-porsche-911-993-carrera-4-b0cab1e4-1920.avif",
+          "alt": "911 Carrera — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAoABABoJagC06DxHL/oKXe7QAD+5FAXT+QUALb5+upcM4OxEyQ3UvqSqqEpkjZRNkWsnQIukyO2ai7wVeXFpVs5oFSPAAA=",
+          "creditId": "img-1996-porsche-911-993-carrera-4-b0cab1e4",
+          "width": 1920,
+          "height": 1261
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-99c38ad7-1920.avif",
+          "alt": "911 Carrera — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJQBOgBwj7oXbq/AA4enET8hjzs7pb07bf78dCqfN/eyC+jQ3th8qTYNcgVbPtGISz/RiS+wGOKYqoeAZo7Ja2iwAAA==",
+          "creditId": "img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-99c38ad7",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-993-911-carrera-amethyst-metallic-42-3c790901-1920.avif",
+          "alt": "911 Carrera — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAwABABoJaQAAqzbjiHh26AA+pQu8ez2Ax6ldwg/PIuuWv5jwyb4oWuXdbq2gSfz6G5uKKvEHqcjSyi3KAAA",
+          "creditId": "img-porsche-993-911-carrera-amethyst-metallic-42-3c790901",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-ff500a74-1920.avif",
+          "alt": "911 Carrera — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwABABoJYgCdAYrTGEd5pqAAAD+Je7ly7qN1WAeF+AFYdyoW7vdgoGk6jnZlBx36qjE2xuT85bObSotfIchfyVirrSmp2C8iRqQ1Xs1ZNnlJl3fHamnwAA=",
+          "creditId": "img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-ff500a74",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-993-911-carrera-amethyst-metallic-46-8084f58d-1920.avif",
+          "alt": "911 Carrera — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAwABABoJZwAAwDf5pCaAJZAAAD+wNQgl/bq/ppQo1QE0ynBscNdKGnSrEA12R8HgqBAelt2uksKlGv4JbCtgAA=",
+          "creditId": "img-porsche-993-911-carrera-amethyst-metallic-46-8084f58d",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-911-993-carrera-4-46807-bf1158cd-1920.avif",
+          "alt": "911 Carrera — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkABABoJbAAAlz6Ui/WVAAA9jQHlYhzvI7FsyNm1ftvl2hf3hGOVNQw9eaIwgAO40BR6X0+GBD6zSHmTdhpT3AAAA==",
+          "creditId": "img-1996-porsche-911-993-carrera-4-46807-bf1158cd",
+          "width": 1920,
+          "height": 1058
+        },
+        {
+          "src": "/images/carrera/img-porsche-993-911-carrera-amethyst-metallic-47-bf92244c-1920.avif",
+          "alt": "911 Carrera — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJZwAAjyIW2togAAA/Su7AIoa3M1l9A+Es2wTdV11mUpuDPdOAaA7uSvavex03wFTXjSUZaSg8tSJMiVSgostjuEAAA==",
+          "creditId": "img-porsche-993-911-carrera-amethyst-metallic-47-bf92244c",
+          "width": 1920,
+          "height": 1440
+        }
       ]
     },
     {
@@ -76,23 +272,128 @@
       "weight": "1,420 kg (3,131 lb)",
       "drivetrain": "All-wheel drive (viscous multi-plate clutch, rear-biased)",
       "transmission": "6-speed manual (no Tiptronic offered)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "For model year 1995 the Carrera 4 brought all-wheel drive back on a lighter, simpler system: a viscous multi-plate clutch replaced the 964's three-differential layout, a layout descended from the 959 that still sent most torque rearward. Output came from the same 3.6-litre flat-six, 272 PS rising to 285 PS with VarioRam for 1996. Visual tells are easy — clear front indicators, red rears, silver calipers and Carrera 4 wheel caps. At 1,420 kg it is roughly 50 kg heavier than the rear-drive Carrera, and Tiptronic was not offered. Coupé and Cabriolet bodies both sold.",
       "special": false,
       "production": "7,166 (4,744 coupés + 2,422 Cabriolets)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+        "alt": "911 Carrera 4",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+        "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+        "width": 1920,
+        "height": 1254
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+          "localPath": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15712×10264px (18179 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1996-porsche-911-carrera-993-e3c87b93",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1996_Porsche_911_Carrera_993.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1996_Porsche_911_Carrera_993.jpg",
+          "localPath": "/images/carrera-4/img-1996-porsche-911-carrera-993-e3c87b93-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14504×8188px (12563 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1995 911 Carrera 4 Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/328" },
-        { "title": "The innovations of the 911 (1994 Carrera 4 viscous clutch) — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/products/porsche-911-innovations-production-anniversary-13743.html" },
-        { "title": "Model 911 (type 993) — Porsche Classic (USA)", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1995 911 Carrera 4 Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/328"
+        },
+        {
+          "title": "The innovations of the 911 (1994 Carrera 4 viscous clutch) — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/products/porsche-911-innovations-production-anniversary-13743.html"
+        },
+        {
+          "title": "Model 911 (type 993) — Porsche Classic (USA)",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/"
+        }
       ],
       "missing": [
         "No manufacturer 0–100 km/h figure found for the Carrera 4; the 0–60 mph time is Excellence's contemporary test.",
         "Production split is from Wikipedia's table; 272 PS and 285 PS cars are counted separately and Cabriolets are included in the total."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera-4/img-1996-porsche-911-carrera-993-e3c87b93-1920.avif",
+          "alt": "911 Carrera 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkABABoJbACdAEQPFl3rOkIAP5Jy2FtGU40IOQjXZ2VOwkwe8hunLdL1J8d6gtfak9bEVRQPVwqq0CS7Ofow7LZxN/pvH4pr8jxrZYYwAAA",
+          "creditId": "img-1996-porsche-911-carrera-993-e3c87b93",
+          "width": 1920,
+          "height": 1084
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-911-993-carrera-4-b0cab1e4-1920.avif",
+          "alt": "911 Carrera 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAoABABoJagC06DxHL/oKXe7QAD+5FAXT+QUALb5+upcM4OxEyQ3UvqSqqEpkjZRNkWsnQIukyO2ai7wVeXFpVs5oFSPAAA=",
+          "creditId": "img-1996-porsche-911-993-carrera-4-b0cab1e4",
+          "width": 1920,
+          "height": 1261
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-99c38ad7-1920.avif",
+          "alt": "911 Carrera 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJQBOgBwj7oXbq/AA4enET8hjzs7pb07bf78dCqfN/eyC+jQ3th8qTYNcgVbPtGISz/RiS+wGOKYqoeAZo7Ja2iwAAA==",
+          "creditId": "img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-99c38ad7",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-993-911-carrera-amethyst-metallic-42-3c790901-1920.avif",
+          "alt": "911 Carrera 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAwABABoJaQAAqzbjiHh26AA+pQu8ez2Ax6ldwg/PIuuWv5jwyb4oWuXdbq2gSfz6G5uKKvEHqcjSyi3KAAA",
+          "creditId": "img-porsche-993-911-carrera-amethyst-metallic-42-3c790901",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-ff500a74-1920.avif",
+          "alt": "911 Carrera 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwABABoJYgCdAYrTGEd5pqAAAD+Je7ly7qN1WAeF+AFYdyoW7vdgoGk6jnZlBx36qjE2xuT85bObSotfIchfyVirrSmp2C8iRqQ1Xs1ZNnlJl3fHamnwAA=",
+          "creditId": "img-1996-porsche-993-carrera-at-the-village-fete-glinton-june-ff500a74",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-1996-porsche-911-993-carrera-4-46807-bf1158cd-1920.avif",
+          "alt": "911 Carrera 4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkABABoJbAAAlz6Ui/WVAAA9jQHlYhzvI7FsyNm1ftvl2hf3hGOVNQw9eaIwgAO40BR6X0+GBD6zSHmTdhpT3AAAA==",
+          "creditId": "img-1996-porsche-911-993-carrera-4-46807-bf1158cd",
+          "width": 1920,
+          "height": 1058
+        },
+        {
+          "src": "/images/carrera/img-porsche-993-911-carrera-amethyst-metallic-46-8084f58d-1920.avif",
+          "alt": "911 Carrera 4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAwABABoJZwAAwDf5pCaAJZAAAD+wNQgl/bq/ppQo1QE0ynBscNdKGnSrEA12R8HgqBAelt2uksKlGv4JbCtgAA=",
+          "creditId": "img-porsche-993-911-carrera-amethyst-metallic-46-8084f58d",
+          "width": 1920,
+          "height": 1440
+        }
       ]
     },
     {
@@ -112,24 +413,148 @@
       "weight": "1,450 kg (3,197 lb)",
       "drivetrain": "All-wheel drive (viscous coupling)",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Introduced for model year 1996, the Carrera 4S put the wide 911 Turbo bodyshell — with its Turbo-derived suspension, lowered stance and 322 mm cross-drilled four-piston brakes — under a naturally aspirated engine. It keeps all-wheel drive, unlike the later Carrera S, and omits the Turbo's fixed wing, retaining only the electrically extending Carrera spoiler. With 285 PS through a six-speed manual it is the heavier of the wide-body pair at 1,450 kg. The very last air-cooled 911 built for the road, completed on 31 March 1998, was a Riviera Blue Carrera 4S.",
       "special": false,
       "production": "6,948 (Wikipedia production table; not independently corroborated)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/carrera-4s/img-1998-porsche-911-993-carrera-4s-c625642d-1920.avif",
+        "alt": "911 Carrera 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJYwCw7Yto8CKu6AA9kZITOcnUL4AuH6naF3JLGq/yn9YobyQooM0RNCUQtG7KhO6DtxG2fWQEKZKseP6KhnzihIwAA==",
+        "creditId": "img-1998-porsche-911-993-carrera-4s-c625642d",
+        "width": 1920,
+        "height": 1132
+      },
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/1996-porsche-993-carrera-4s-5d90416b06854a369e566d3fa286c692?embed=1",
+        "sourceId": "5d90416b06854a369e566d3fa286c692",
+        "license": "CC Attribution",
+        "author": "_shobh19",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1998-porsche-911-993-carrera-4s-c625642d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1998_Porsche_911_993_Carrera_4S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1998_Porsche_911_993_Carrera_4S.jpg",
+          "localPath": "/images/carrera-4s/img-1998-porsche-911-993-carrera-4s-c625642d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3639×2146px (1133 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-993-carrera-4s-53703128438-1b780b5d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Carrera_4S_(53703128438).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Carrera_4S_(53703128438).jpg",
+          "localPath": "/images/carrera-4s/img-porsche-993-carrera-4s-53703128438-1b780b5d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4541 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-993-carrera-4s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/1996-porsche-993-carrera-4s-5d90416b06854a369e566d3fa286c692?embed=1",
+          "license": "CC Attribution",
+          "author": "_shobh19",
+          "retrieved": "2026-10-02",
+          "sourceId": "5d90416b06854a369e566d3fa286c692",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1996 911 Carrera 4S Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/334" },
-        { "title": "Porsche 911 (993) Carrera 4S 3.6 (285 Hp) technical specs — auto-data.net", "url": "https://www.auto-data.net/en/porsche-911-993-carrera-4s-3.6-285hp-36802" },
-        { "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1996 911 Carrera 4S Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/334"
+        },
+        {
+          "title": "Porsche 911 (993) Carrera 4S 3.6 (285 Hp) technical specs — auto-data.net",
+          "url": "https://www.auto-data.net/en/porsche-911-993-carrera-4s-3.6-285hp-36802"
+        },
+        {
+          "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html"
+        }
       ],
       "missing": [
         "Sport Auto 12/95 (via Wikipedia) recorded 5.5 s and 290 km/h for the Carrera 4S; Excellence and auto-data give 5.2–5.3 s and 270 km/h. The lower pair is used here.",
         "Production figure of 6,948 appears only in Wikipedia's production table and could not be confirmed elsewhere.",
         "Excellence's chassis field labels the 4S rear-wheel drive; it is all-wheel drive per Porsche and Wikipedia."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera-4s/img-porsche-993-carrera-4s-53703128438-1b780b5d-1920.avif",
+          "alt": "911 Carrera 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsABABoJbACdADMvdpxQb4A/pTZB8oqyx1lAOA7uLR7FVvlSTKiLVnMOBGFe3gJoc9bWcqJ5LHshZXCe4X+3gFNIhTWMJm7abnrgW6kLy7sgPopAwxMAAA=",
+          "creditId": "img-porsche-993-carrera-4s-53703128438-1b780b5d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-993-carrera-4s-53931404998-33db0866-1920.avif",
+          "alt": "911 Carrera 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAsABABoJZgCdAEWmmiEfWQA/torthUTEO/e4VRfv+CzKJoCbyc68DxvwJnS5fcpDA4hY8SiaXlzyRMGmlK4WVTVY5fwkjeRJSfT+L6UrUG80cKQ15QA",
+          "creditId": "img-porsche-993-carrera-4s-53931404998-33db0866",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-993-carrera-4s-816cc204-640.avif",
+          "alt": "911 Carrera 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsABABoJQBdj+ABymdBjYAA+gq5E8XZAPCjYOIRTLeHxprdYM4R0aMFa8c9tOJvAcm/k5lP4iky+JqyTDAsk/gkAAAA",
+          "creditId": "img-993-carrera-4s-816cc204",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-8461268066-6e2682d3-1280.avif",
+          "alt": "911 Carrera 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwABABoJZwAAxZBNgf8sgAA/tb0f4cl1ddqKU2aCjCW8Pg1izwF36F8AWT4MaImRGGKGeqlNepQPAA=",
+          "creditId": "img-porsche-911-993-carrera-4s-8461268066-6e2682d3",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-8544194099-71c0ca3d-1280.avif",
+          "alt": "911 Carrera 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAwABABoJaQAAgfktxjAAAD+ROOu9+WASIB9ABxlwx3sRWG8MSJfhBjIUA3eDPQX7NhpqWv4bCeHjiSo2j3ZAAA=",
+          "creditId": "img-porsche-911-993-carrera-4s-8544194099-71c0ca3d",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-6889035035-7e404657-1280.avif",
+          "alt": "911 Carrera 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwABABoJZwAAq0Jq7INHoAAAP7KXt1YAsvUc1fEP6/WvRsZZsAMz9YRwKjV3oO7fCu51xM8427wA8Ep9IExigf40gYoh//Ou0BLWRCtAAAA",
+          "creditId": "img-porsche-911-993-carrera-4s-6889035035-7e404657",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-12413942584-0226425b-1280.avif",
+          "alt": "911 Carrera 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAwABABoJZQAAeaK9zFAAP7O88udQ/kUyGQZxajXYhYUzTXX+6PwDNFJqwqqyMKydUJjMt5ZwBhXsanOXGiKa8p9fSqWQ1M5eAAA",
+          "creditId": "img-porsche-911-993-carrera-4s-12413942584-0226425b",
+          "width": 1280,
+          "height": 960
+        }
       ]
     },
     {
@@ -149,23 +574,147 @@
       "weight": "1,390 kg (3,064 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 4-speed Tiptronic S (optional)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The Carrera S arrived for model year 1997 as the rear-drive answer to the 4S: the same Turbo-sourced wide body and front panel, but without the all-wheel-drive hardware or the Turbo's 322 mm brakes. Output stayed at 285 PS from the 3.6-litre VarioRam flat-six, routed through a six-speed manual or Tiptronic S. Production ran to roughly 3,700 cars worldwide — most destined for North America — and a handful of Cabriolets were hand-built through Porsche Exclusiv although never catalogued. Enthusiasts call it the 2S, and it is today among the most valuable standard-body 993s.",
       "special": false,
       "production": "3,714 worldwide (1,752 of them North American, per Wikipedia)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+        "alt": "911 Carrera S",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+        "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+        "width": 1920,
+        "height": 1250
+      },
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
+        "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
+        "license": "CC Attribution",
+        "author": "Mona x Supercars",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Carrera_S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Carrera_S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3427 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-993-carrera-s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
+          "license": "CC Attribution",
+          "author": "Mona x Supercars",
+          "retrieved": "2026-10-02",
+          "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1997 911 Carrera S Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/323" },
-        { "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html" },
-        { "title": "Model 911 (type 993) — Porsche Classic (USA)", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1997 911 Carrera S Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/323"
+        },
+        {
+          "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html"
+        },
+        {
+          "title": "Model 911 (type 993) — Porsche Classic (USA)",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/"
+        }
       ],
       "missing": [
         "Excellence records 0–60 mph 5.3 s and a 171 mph (275 km/h) top speed; the Sport Auto 02/97 test via Wikipedia gives 5.7 s to 100 km/h and 270 km/h. Wikipedia's figures are used here.",
         "Total worldwide Carrera S production is given by Wikipedia as 3,714 while the same article quotes 1,752 for North America only."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "alt": "911 Carrera S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAQCdASoQAAsABABoJZQAAtlVtCgA/sQLdS7E+EzQ39U5GvUftkkGcGJRrKoIx6s6VcJq0Vsrdwf4BKGuEn4MI3V0CcMg/zRjXzEmAAA=",
+          "creditId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "alt": "911 Carrera S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+          "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "width": 1920,
+          "height": 1254
+        },
+        {
+          "src": "/images/carrera-s/img-silver-porsche-993-carrera-s-in-nancy-france-49918239188-64d16c6f-1920.avif",
+          "alt": "911 Carrera S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJZQAAmi9926cjswAAP6XbfoZ/4Zo0QAgl/i8FcSFUh+wswlOsMqwGwzK0eLPOTfg5Dy923IutTqzrgzYDPKIqD/4wAAA",
+          "creditId": "img-silver-porsche-993-carrera-s-in-nancy-france-49918239188-64d16c6f",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-54254840284-0266b56d-1920.avif",
+          "alt": "911 Carrera S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJZwAAxRhdlzjE2BgAP7FGZNf2WPCNkrFP5CLOcmbm6cCjpxzRS+oPBaXi7OUTi9IcqfhJb89/NwPOMC2JBo1Ev/19S3f4hg4NAAA",
+          "creditId": "img-porsche-993-carrera-s-54254840284-0266b56d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-54254834308-f5fc4c1b-1920.avif",
+          "alt": "911 Carrera S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsABABoJZQC7AEOz9rT+GtAAP7qtvFSWf0v6qbmkWe6ef8JZc0c77OsHWEDqQh8dx1arsm0iwL70ZPrvqBB1xc0ksGwAAA=",
+          "creditId": "img-porsche-993-carrera-s-54254834308-f5fc4c1b",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-1997-porsche-911-carrera-993-convertible-2011-11-18-01-d90718b8-1920.avif",
+          "alt": "911 Carrera S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAcABABoJZQAD4lvJ1+2uPIAAPwiyvrvC8hJuLwqBRqiognap5kzPRflcUdThDJ+/bBntXv4v2vSK8y6T5iQIAA=",
+          "creditId": "img-1997-porsche-911-carrera-993-convertible-2011-11-18-01-d90718b8",
+          "width": 1920,
+          "height": 806
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-54166486663-622fd572-1920.avif",
+          "alt": "911 Carrera S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZwAAp/Pmr34AAD+8BqYmpPdmKNeVXkEj7EhEQN+OH0lha/EXR+vWUm5lmb0rixO+t1+d/5q8N8KsHgIAAAA",
+          "creditId": "img-porsche-993-carrera-s-54166486663-622fd572",
+          "width": 1920,
+          "height": 1280
+        }
       ]
     },
     {
@@ -185,24 +734,128 @@
       "weight": "1,420 kg (3,130 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 4-speed Tiptronic S (optional)",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The 993 Targa, launched for model year 1996, reinvented the badge. Instead of a removable roof panel and a wide roll-over hoop, a large electrically operated laminated-glass panel slid beneath the steeply raked rear screen, leaving the Carrera profile untouched and flooding the cabin with light. The old B-pillar hoop disappeared entirely, though the mechanism added weight high up and proved more complex than a simple lift-off panel. Built on the Cabriolet structure and identified by distinctive two-piece 17-inch wheels, it used the 285 PS VarioRam engine with rear-wheel drive and optional Tiptronic S. About 4,600 were made.",
       "special": false,
       "production": "4,583 (Wikipedia table; article text also cites 4,619)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/targa/img-porsche-993-targa-mainz-348d172a-640.avif",
+        "alt": "911 Targa",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsABABoJYgAAttQ7/appQAA/lv7ksmITkpqteknpYbQ6xz28flXOCe7/Uu97IvcQs0hZFfK4n+EJZ2bWqwt3J8pJmyHLYAzUytz/CSAjihougAAAA==",
+        "creditId": "img-porsche-993-targa-mainz-348d172a",
+        "width": 640,
+        "height": 426
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-993-targa-mainz-348d172a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_targa_mainz.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Abehn",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_targa_mainz.jpg",
+          "localPath": "/images/targa/img-porsche-993-targa-mainz-348d172a-640.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 800×533px (101 kB original), rendered locally to AVIF 640 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-993-targa-black-bd44f8d0",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Targa_black.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Mr.choppers Object location 41° 01′ 21.96″ N, 73° 37′ 29.05″ W View this and other nearby images on: OpenStreetMap 41.022766; -73.624736",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Targa_black.jpg",
+          "localPath": "/images/targa/img-porsche-993-targa-black-bd44f8d0-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3162×1911px (4782 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1996 911 Targa (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/320" },
-        { "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html" },
-        { "title": "Model 911 (type 993) — Porsche Classic (USA)", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1996 911 Targa (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/320"
+        },
+        {
+          "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html"
+        },
+        {
+          "title": "Model 911 (type 993) — Porsche Classic (USA)",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/"
+        }
       ],
       "missing": [
         "Excellence's 1996 Targa page lists 272 hp @ 6,100 rpm; Porsche Classic and Wikipedia both state 285 PS from model year 1996. The 285 PS figure is used here.",
         "Production is 4,583 in Wikipedia's table but 4,619 in its uncited year-by-year list (1996: 2,442 / 1997: 1,843 / 1998: 334).",
         "Acceleration and top speed are Excellence's manual-gearbox test figures; Tiptronic S cars are slower (6.3 s to 60 mph, 270 km/h)."
+      ],
+      "gallery": [
+        {
+          "src": "/images/targa/img-porsche-993-targa-black-bd44f8d0-1920.avif",
+          "alt": "911 Targa — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJYwAAsRA++xiwADONsOrCYect6a+RUwOpUYWvKHx+jtGcYuid5t3klAhDZMYBPq5NgZ5lmKqU/qTyg2arpfgt9YW4T/XCAA=",
+          "creditId": "img-porsche-993-targa-black-bd44f8d0",
+          "width": 1920,
+          "height": 1160
+        },
+        {
+          "src": "/images/targa/img-porsche-993-targa-52747524004-ae1e22c6-1920.avif",
+          "alt": "911 Targa — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbACdADp6c/igVsAAP7SJg/VlqzWisLLL4ldE3ZLpQe8XKvvQEdv/3xKh3M4XlK9XTUgcAEIgE0t8G67/LfbBN+Z+sBRc9slgAAA",
+          "creditId": "img-porsche-993-targa-52747524004-ae1e22c6",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-porsche-993-targa-bordeaux-vl-cropped-e594fb27-1280.avif",
+          "alt": "911 Targa — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAkABABoJYgCw7Yt921N0LAbyAD+bOw3vBa10azZ8aGgMCYjOe7yam63t58ZuJRt8yrEKK/ObWnIO60mG1RR/blVXspd5fIaWulJqUFAAA==",
+          "creditId": "img-porsche-993-targa-bordeaux-vl-cropped-e594fb27",
+          "width": 1280,
+          "height": 693
+        },
+        {
+          "src": "/images/targa/img-porsche-993-targa-s-front-right-5b9945eb-1920.avif",
+          "alt": "911 Targa — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsABABoJZwAAsVrESHRKYAAzIkL/LbmrgFr3Hxihw27Oh32/MBBHL7RZYylWPAU4jXw0b/TzEmWZ/k04yAA",
+          "creditId": "img-porsche-993-targa-s-front-right-5b9945eb",
+          "width": 1920,
+          "height": 1281
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-993-1997-54871262447-15a7e426-1920.avif",
+          "alt": "911 Targa — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoABABoJaACdAEDUs2EUgAA+xiseHIF5yYpPnee5E0uoQAWljvyInIX9uKYbTAfqrHiwQkHQ8H0MSCE9fdgchbX3QXXcUVVZL1Mn4EGMAAA",
+          "creditId": "img-porsche-911-targa-993-1997-54871262447-15a7e426",
+          "width": 1920,
+          "height": 1205
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-993-1997-54872355978-283fccc3-1920.avif",
+          "alt": "911 Targa — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJbACw7CVEe3YnAAA9DiV00JmJ86iM8UbNiNOnEAx2Y80iXkiZRjlBlPRqdV0eQfgaUQ+Jam4tEh3HkmuNJ1O0pDAAA==",
+          "creditId": "img-porsche-911-targa-993-1997-54872355978-283fccc3",
+          "width": 1920,
+          "height": 1253
+        },
+        {
+          "src": "/images/targa/img-porsche-911-993-targa-22d9900e-1920.avif",
+          "alt": "911 Targa — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJbAC7AD2PorE10zEAAD+6Ut0RpTrVAJI4u4dLSPyp7+i+118CLV9bCHY3priKNZUoGPUbZ4IN29YoWGxR60oqgQiBz8AAAA=",
+          "creditId": "img-porsche-911-993-targa-22d9900e",
+          "width": 1920,
+          "height": 1282
+        }
       ]
     },
     {
@@ -222,23 +875,124 @@
       "weight": "1,390 kg (3,065 lb)",
       "drivetrain": "Rear-wheel drive (all-wheel drive available as Carrera 4 Cabriolet)",
       "transmission": "6-speed manual; 4-speed Tiptronic (optional)",
-      "bodyStyles": ["cabriolet"],
+      "bodyStyles": [
+        "cabriolet"
+      ],
       "description": "Revealed alongside the Coupé in April 1994 for the 1995 model year, the 993 Cabriolet wore a fully electrical, hand-stitched soft top reinforced with metal panels, an automatic wind blocker and a small rear spoiler carrying the third brake light. It shares the Coupé's 3.6-litre flat-six — 272 PS, then 285 PS with VarioRam — and its six-speed manual or Tiptronic, and was also offered with all-wheel drive as the Carrera 4 Cabriolet. At about 1,390 kg it is only a little heavier than the Coupé. A large share of the roughly 15,500 Cabriolets built went to the United States.",
       "special": false,
       "production": "15,499 Cabriolets (7,730 at 272 PS + 7,769 at 285 PS)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+        "alt": "911 Cabriolet",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkABABoJbACdABWBNAA/hnGQjWTu9Tv/d5elBsw4/R2V/6A6n4rvCN3sOYgjMiuTj+BSUGvbKFVh0chRTelmWav9kSrndBPQUUyomuz5gAA",
+        "creditId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+        "width": 1920,
+        "height": 1122
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
+          "localPath": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15054×8800px (11782 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-993-carrera-cabriolet-51200629190-ce0b18f6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Carrera_Cabriolet_(51200629190).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Carrera_Cabriolet_(51200629190).jpg",
+          "localPath": "/images/cabriolet/img-porsche-993-carrera-cabriolet-51200629190-ce0b18f6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4309 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1995 911 Carrera Cabriolet (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/316" },
-        { "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1995 911 Carrera Cabriolet (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/316"
+        },
+        {
+          "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html"
+        }
       ],
       "missing": [
         "Weight conflicts: Excellence lists 3,065 lb (1,390 kg) for the 1995 Cabriolet, Wikipedia 1,420 kg (3,131 lb).",
         "No manufacturer 0–100 km/h figure found; the 0–60 mph time is Excellence's contemporary test.",
         "Production total counts rear-drive Carrera Cabriolets only; Carrera 4 Cabriolets are listed under that variant."
+      ],
+      "gallery": [
+        {
+          "src": "/images/cabriolet/img-porsche-993-carrera-cabriolet-51200629190-ce0b18f6-1920.avif",
+          "alt": "911 Cabriolet — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJZQC7AENy1VtRCRgAOIwAVlx8jY19WLzePGUHR/wv8CkU5ubSbHrqv+BGvgb8yIIgA4jVh60UkTo2VQBdU0oYAAAAA==",
+          "creditId": "img-porsche-993-carrera-cabriolet-51200629190-ce0b18f6",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/cabriolet/img-porsche-911-993-cabriolet-cabriolet-8482104516-02a54dd4-1280.avif",
+          "alt": "911 Cabriolet — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwABABoJYwCsAERHj4msfwAAP7VEA5oZAiuzs4VJuOhEZBL3NBmV/eTj7Lx5Vv5VGOOEOXO8rOmdAAF+vQBf8vagAAA",
+          "creditId": "img-porsche-911-993-cabriolet-cabriolet-8482104516-02a54dd4",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/cabriolet/img-bmw-isetta-porsche-911-993-cabriolet-cabriolet-8482104464-eab2c2be-1280.avif",
+          "alt": "911 Cabriolet — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJZQC7AENfLQ6gAD7mf65Wd7Z3jweT3ivBiv2tgItRHd/4GNWENt/2YMW/MKhOksQ64oHj9rF9KwR5PAsjz735CvegFVOAAA=",
+          "creditId": "img-bmw-isetta-porsche-911-993-cabriolet-cabriolet-8482104464-eab2c2be",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/cabriolet/img-porsche-993-carrera-4-cabriolet-2-22a8f47a-1920.avif",
+          "alt": "911 Cabriolet — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZwAD4wPRHqdvwAA++QpKcAGRZq++jq2XHNhIksQpJdFngnPWWfBogUKSihDondZPqeNmfm65sEuAAA=",
+          "creditId": "img-porsche-993-carrera-4-cabriolet-2-22a8f47a",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/cabriolet/img-porsche-993-carrera-4-cabriolet-dc7b2840-1920.avif",
+          "alt": "911 Cabriolet — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkABABoJZwAAidmQLKiQAD+7ldrZlvvQ7YReSjbAtJ8UGVjiGIKKvnHplCAk0bfi+NUT61bBuzqnjlUugaq2qrsAAAA",
+          "creditId": "img-porsche-993-carrera-4-cabriolet-dc7b2840",
+          "width": 1920,
+          "height": 1119
+        },
+        {
+          "src": "/images/cabriolet/img-porsche-911-carrera-cabriolet-993-1996-52574737964-1eeef2f7-1920.avif",
+          "alt": "911 Cabriolet — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAoABABoJZwAKoAZFzGQfCjYAADMn6OWMEfSHJ5Pf+I/fhNqrEUis5sAB8eKyKZ6ZIP6WqOvG7EyeLn8bR08qOi6YpivjByAAA==",
+          "creditId": "img-porsche-911-carrera-cabriolet-993-1996-52574737964-1eeef2f7",
+          "width": 1920,
+          "height": 1236
+        },
+        {
+          "src": "/images/cabriolet/img-porsche-911-carrera-cabriolet-993-1996-52573993772-91c88a4f-1920.avif",
+          "alt": "911 Cabriolet — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJZQC7AYvDVPYS5q3AAD+ps5zYNwE8LvctMpMvknB5P5WwGngt3pmcWpIFZ6KitWcfHsKs7EU5TEMAGAoYUkZYuYzkcUQiyAdehUAAAA=",
+          "creditId": "img-porsche-911-carrera-cabriolet-993-1996-52573993772-91c88a4f",
+          "width": 1920,
+          "height": 1280
+        }
       ]
     },
     {
@@ -258,24 +1012,156 @@
       "weight": "1,500 kg (3,307 lb)",
       "drivetrain": "All-wheel drive (viscous coupling, 959-derived)",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "In 1995 the 911 Turbo entered its twin-turbo era. Two small KKK turbochargers spooling from about 2,000 rpm gave the 3.6-litre flat-six 408 PS and 540 Nm with far less lag than a single large unit, at 0.8 bar of boost. It was the first 911 Turbo with all-wheel drive, simplified from the 959, and the first production car in the world with OBD-II diagnostics — its engine also had the lowest emissions of any series-production unit at the time. Wide rear arches, a fixed intercooler wing and hollow-spoke 18-inch wheels marked it out. A six-speed manual was standard; 5,978 were built.",
       "special": false,
       "production": "5,978",
-      "heroImage": null,
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/turbo/img-1996-porsche-993-turbo-gt2-recreation-07f71b1a-1920.avif",
+        "alt": "911 Turbo",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJZQAAv+r4QaMRaAA/a5GiA6nZBrGx0y89SDesoboYElT+5BTc51CiXwuHiPm8acrw4RFNH5Wz3Hr7oJ0jgAA",
+        "creditId": "img-1996-porsche-993-turbo-gt2-recreation-07f71b1a",
+        "width": 1920,
+        "height": 1078
+      },
+      "videos": [
+        {
+          "id": "Foksr3pG58c",
+          "title": "1996 Porsche 911 Turbo : The Twin-Turbo 911 That Saved Porsche",
+          "channel": "Oh Shift",
+          "poster": null,
+          "note": "why the Variocam-plus twin turbo rescued the 911 line"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-993-turbo-low-poly-72f2943569434e4e93ab63f403c6aa1c?embed=1",
+        "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
+        "license": "CC Attribution",
+        "author": "Nieve5677",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1996-porsche-993-turbo-gt2-recreation-07f71b1a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1996_Porsche_993_Turbo_GT2_Recreation.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1996_Porsche_993_Turbo_GT2_Recreation.jpg",
+          "localPath": "/images/turbo/img-1996-porsche-993-turbo-gt2-recreation-07f71b1a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4596×2580px (2055 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-993-turbo-29187-66263386",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_993_Turbo_(29187).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_993_Turbo_(29187).jpg",
+          "localPath": "/images/turbo/img-porsche-911-993-turbo-29187-66263386-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12214×7414px (6840 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-993-turbo",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-993-turbo-low-poly-72f2943569434e4e93ab63f403c6aa1c?embed=1",
+          "license": "CC Attribution",
+          "author": "Nieve5677",
+          "retrieved": "2026-10-02",
+          "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1996 911 Turbo Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/325" },
-        { "title": "The innovations of the 911 (1995 bi-turbocharging) — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/products/porsche-911-innovations-production-anniversary-13743.html" },
-        { "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1996 911 Turbo Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/325"
+        },
+        {
+          "title": "The innovations of the 911 (1995 bi-turbocharging) — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/products/porsche-911-innovations-production-anniversary-13743.html"
+        },
+        {
+          "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html"
+        }
       ],
       "missing": [
         "Contemporary tests (Auto Motor Sport 4.3 s, Autocar/Car and Driver 3.7 s to 60 mph) beat the 4.5 s manufacturer figure; no single 0–100 km/h test figure is consistently published.",
         "Top speed: manufacturer 290 km/h, Auto Motor Sport 291 km/h, Excellence 180 mph — all rounded here to 290 km/h (180 mph).",
         "Fourteen 993 Turbo Cabriolets (1995, 964 Turbo 3.6 engine) are excluded from this total and listed separately."
+      ],
+      "gallery": [
+        {
+          "src": "/images/turbo/img-porsche-911-993-turbo-29187-66263386-1920.avif",
+          "alt": "911 Turbo — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoABABoJZQC7AYulgb7kvjWAP4zTg5hYKaf7184Zdq3KxWXLhWNp2vQhyMVktM1HkHWxaEXhN8K0j08isb3634yGmACKBOKpgXYAAA=",
+          "creditId": "img-porsche-911-993-turbo-29187-66263386",
+          "width": 1920,
+          "height": 1165
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-turbo-993-prototype-museum-hamburg-d04d0dcb-1280.avif",
+          "alt": "911 Turbo — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACQAQCdASoQAAkABABoJYwCdACD+XgA/Wncz+2iv8ybAe/cfpsSwxy+mQ53k/D+1L4KSvQeNWY63NQrxzC0XYTFiFaXkvAA",
+          "creditId": "img-porsche-911-turbo-993-prototype-museum-hamburg-d04d0dcb",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "src": "/images/turbo/img-1995-porsche-911-993-turbo-65641-e4fef222-1920.avif",
+          "alt": "911 Turbo — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAoABABoJbACdACZcOw6nMgA4mwZ2csVUMz9JBx9dSATEU59Ek66TrfGjFR7rAsQ2adPSUU+qXuI9/MFNCBVet1GoUSqsZS4hzqt5wwAAA==",
+          "creditId": "img-1995-porsche-911-993-turbo-65641-e4fef222",
+          "width": 1920,
+          "height": 1210
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-993-turbo-57407-c6041d22-1920.avif",
+          "alt": "911 Turbo — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJYwCsAYr7VZ+L+BAAP67bOkDOaNwDe+hyRgd9Pm8RX7YBAI/z/KxGwjz8Icp3Q0uZOH9LXkR79fJGpRI8Z/LsAA=",
+          "creditId": "img-porsche-911-993-turbo-57407-c6041d22",
+          "width": 1920,
+          "height": 1141
+        },
+        {
+          "src": "/images/turbo/img-1997-porsche-911-993-turbo-57547-f594db68-1920.avif",
+          "alt": "911 Turbo — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAgABABoJQBOgCP7szm4vBgA/r4cmN9YofEZB3GqRYUIQpIWAZR+7QfBGFxFhJ6Wjm0wydzCCAAA",
+          "creditId": "img-1997-porsche-911-993-turbo-57547-f594db68",
+          "width": 1920,
+          "height": 1012
+        },
+        {
+          "src": "/images/turbo/img-1997-porsche-911-993-turbo-440618c2-1920.avif",
+          "alt": "911 Turbo — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJZQCsAEVtdjDqgAA4DV8e8Jg0GNrF4g/tQotyIFGy3drRYueLl+C1gSHHuSssf+j827FTbL2vDomAAA=",
+          "creditId": "img-1997-porsche-911-993-turbo-440618c2",
+          "width": 1920,
+          "height": 1232
+        },
+        {
+          "src": "/images/turbo/img-porsche-993-turbo-scd-24-954ea843-1920.avif",
+          "alt": "911 Turbo — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAoABABoJbACdAYqNjXrJnKFgAD+g6t8kx8CkkptOxsxHpOIOdy1mGuWgyjCsprsVLUA+K4JhzaeLWhUy+18cKtGQbpz2hhBeBICeEsAAA==",
+          "creditId": "img-porsche-993-turbo-scd-24-954ea843",
+          "width": 1920,
+          "height": 1235
+        }
       ]
     },
     {
@@ -295,25 +1181,140 @@
       "weight": "1,500 kg (3,307 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The Turbo S was Porsche Exclusive's 1997–98 farewell to the air-cooled Turbo. Larger Triple K K-24 turbochargers, an extra oil cooler and reworked Motronic management lifted output to 450 PS in European trim, 424 hp for the United States. It is unmistakable: yellow brake calipers, a biplane Aerokit II wing, quad exhaust tips, brake-duct intakes where the fog lamps used to be, and the 993 Turbo's first rear-quarter side scoops. Leather and carbon trim covered nearly every interior surface, in contrast to the spartan 964 Turbo S. Around 345 were built — the last air-cooled 911 Turbo, and among the rarest series 993s.",
       "special": true,
       "production": "345 built (Porsche Exclusive); other Porsche Newsroom pages state 336 or 435",
-      "heroImage": null,
-      "videos": [],
+      "heroImage": {
+        "src": "/images/turbo-s/img-porsche-911-turbo-s-993-1997-52873227047-caba4334-1920.avif",
+        "alt": "911 Turbo S",
+        "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJQBOgCKm7WHzUc6+AAD+n2rsEP3bcUPjMZXFcMs1ToPN+t6sZJ3l+RxnsR22RSgW/K9VJLt9EKcvqvg7lJspg3pHn12Y1IxY3UsAAAA=",
+        "creditId": "img-porsche-911-turbo-s-993-1997-52873227047-caba4334",
+        "width": 1920,
+        "height": 1280
+      },
+      "videos": [
+        {
+          "id": "TClTFuIdT8A",
+          "title": "1997 Porsche 911 Turbo S (993) Review: The Final and ULTIMATE Air-Cooled 911 [Kennan]",
+          "channel": "Cars & Bids",
+          "poster": null,
+          "note": "450 PS final air-cooled 911, treated as the true summit"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-turbo-s-993-1997-52873227047-caba4334",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Turbo_S_(993%2C_1997)_(52873227047).jpg",
+          "license": "CC BY 2.0",
+          "author": "Charles from Port Chester, New York",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Turbo_S_(993,_1997)_(52873227047).jpg",
+          "localPath": "/images/turbo-s/img-porsche-911-turbo-s-993-1997-52873227047-caba4334-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6000×4000px (4070 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-turbo-s-993-1997-52873807901-57124e2b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Turbo_S_(993%2C_1997)_(52873807901).jpg",
+          "license": "CC BY 2.0",
+          "author": "Charles from Port Chester, New York",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Turbo_S_(993,_1997)_(52873807901).jpg",
+          "localPath": "/images/turbo-s/img-porsche-911-turbo-s-993-1997-52873807901-57124e2b-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6000×4000px (3969 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "1997 911 Turbo S Coupe (993) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/327" },
-        { "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom", "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html" },
-        { "title": "Porsche 911 Turbo S: history — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/pfv-porsche-911-turbo-s/Porsche-911-Turbo-S--history.html" },
-        { "title": "Porsche 911 Turbo S (993) 1997–1998 — Stuttcars", "url": "https://www.stuttcars.com/porsche-911-turbo-s-993-1997-1998/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "1997 911 Turbo S Coupe (993) specifications — Excellence",
+          "url": "https://www.excellence-mag.com/resources/specs/327"
+        },
+        {
+          "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html"
+        },
+        {
+          "title": "Porsche 911 Turbo S: history — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/pfv-porsche-911-turbo-s/Porsche-911-Turbo-S--history.html"
+        },
+        {
+          "title": "Porsche 911 Turbo S (993) 1997–1998 — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-turbo-s-993-1997-1998/"
+        }
       ],
       "missing": [
         "Production conflicts: 345 (Porsche Exclusive article, Stuttcars, RM Sotheby's) vs 336 (Newsroom Turbo S history) vs 435 (Newsroom heritage page). 345 is used here.",
         "Performance conflicts: Porsche heritage page 4.1 s / 300 km/h; Wikipedia 3.6 s to 60 mph and 296.6 km/h; Excellence 4.4 s / 183 mph.",
         "Torque is Excellence's US-spec 424 hp car; no separate DIN torque figure was found for the 450 PS European car."
+      ],
+      "gallery": [
+        {
+          "src": "/images/turbo-s/img-porsche-911-turbo-s-993-1997-52873807901-57124e2b-1920.avif",
+          "alt": "911 Turbo S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJYgCdAEPUleCC637gAD+ceG0QNE67HBgkGYVQUdZKrGx3oxfCfq20OMqlAbjSACkWQEDFv8Om1A3+I9Mh8sxqMSlBe+AAAA=",
+          "creditId": "img-porsche-911-turbo-s-993-1997-52873807901-57124e2b",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-1997-porsche-993-turbo-s-in-arctic-silver-metallic-front-l-ee189691-1920.avif",
+          "alt": "911 Turbo S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsABABoJZQCdAYuHX1xQAD+zGlBvPMn9EotM4EwnoWkQzvoWlaWkByVJ1/2zo7M35J2yvr2GqARbuWnNQv8iwPKy84mOHmYAA==",
+          "creditId": "img-1997-porsche-993-turbo-s-in-arctic-silver-metallic-front-l-ee189691",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/turbo-s/img-993-turbo-s-5305999142-e38ca019-1280.avif",
+          "alt": "911 Turbo S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAsABABoJZACdADxOBTzKr6kMkAA/u6o5rENHQxQgsfTd3vy+1DAWhKzlo8NgYivrAbANZTqfA0835p/wWTc2dxdmzmCFgIqCtUVcLF/uKOAAAA=",
+          "creditId": "img-993-turbo-s-5305999142-e38ca019",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "src": "/images/turbo-s/img-1997-porsche-993-turbo-s-in-arctic-silver-metallic-rear-le-5e17dc28-1920.avif",
+          "alt": "911 Turbo S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoABABoJZQAD4/Oj1CziDAA/rpvh+RlFg/y41JFvkCjFHfe5Fqeh0tD6rlmJ+Cul1EnrOKUlntNsRHWgfF70iZUXuJbljk7AAXwAAA=",
+          "creditId": "img-1997-porsche-993-turbo-s-in-arctic-silver-metallic-rear-le-5e17dc28",
+          "width": 1920,
+          "height": 1242
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-911-turbo-s-993-1998-55308550825-11700cac-1920.avif",
+          "alt": "911 Turbo S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAQCdASoQAAsABABoJbAC7ACdWAgA/n6UbIMYOtkIp0dgSh7iej2Xr0KnYOHXwMA9FT39tl49WhYgy+pPt7Jd0hHHgn25FyfbWi3RDtRO0xlt+4AAAA==",
+          "creditId": "img-porsche-911-turbo-s-993-1998-55308550825-11700cac",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-911-turbo-s-993-1998-55308380579-3a000891-1920.avif",
+          "alt": "911 Turbo S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoABABoJbACdADhijtVxzgAAPqfBBVypf1pXtTeR2QJDYfrIIDjwP2XJ/px1RjkNDc6Ka+f8iO6w7Kk34kZmmKegbTz0CdU6wzgAAA=",
+          "creditId": "img-porsche-911-turbo-s-993-1998-55308380579-3a000891",
+          "width": 1920,
+          "height": 1226
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-993-turbo-s-36630436405-91a5f6df-1920.avif",
+          "alt": "911 Turbo S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsABABoJQAAUkZ4ghxVwAD+7+S2fVf3qWDd2UVmDDwJvLz/eNsj1w1JBgO9qmGY3feIgZ5XBPVBqpwuBE2jTNkH9F1DpqEAAA==",
+          "creditId": "img-porsche-993-turbo-s-36630436405-91a5f6df",
+          "width": 1920,
+          "height": 1280
+        }
       ]
     },
     {
@@ -333,25 +1334,140 @@
       "weight": "1,280 kg (2,822 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (G50/31, short shifter, close ratios)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The Carrera RS of 1995–96 was the last air-cooled Rennsport 911 and the last to carry 'Carrera' in its RS title. Its 3.8-litre flat-six used VarioRam, forged pistons, big intake valves and a revised Motronic for 300 PS, driving a close-ratio six-speed with a single-mass flywheel. The body was seam-welded, lightened with an aluminium bonnet and thinner glass, stripped of sound deadening and set on Bilstein dampers under three-piece 18-inch wheels. A fixed wing, front lip and brake-cooling inlets replaced the standard rear seat and headlamp washers. Just 1,014 were built — and it was never approved for the United States.",
       "special": true,
       "production": "1,014 (including 227 Clubsports)",
-      "heroImage": null,
-      "videos": [],
+      "heroImage": {
+        "src": "/images/carrera-rs/img-porsche-911-993-carrera-rs-80978-cbf572d1-1920.avif",
+        "alt": "911 Carrera RS",
+        "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsABABoJbACdAEfVvzzib46QADN+0vsnmYigdDt80SoJC7BqwIX/Fnt/PqWRvWDrfzWQ2/71My9Sch+ZL3Ei6P2YAZCJS0MaKcowRk2vJWvAXRuh1WAAAA=",
+        "creditId": "img-porsche-911-993-carrera-rs-80978-cbf572d1",
+        "width": 1920,
+        "height": 1280
+      },
+      "videos": [
+        {
+          "id": "PKAxENMn6qg",
+          "title": "Porsche 993 Carrera RS review",
+          "channel": "Autoblog",
+          "poster": null,
+          "note": "short, well-judged drive of the 993 RS"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-993-carrera-rs-80978-cbf572d1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_993_Carrera_RS_(80978).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_993_Carrera_RS_(80978).jpg",
+          "localPath": "/images/carrera-rs/img-porsche-911-993-carrera-rs-80978-cbf572d1-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14808×9872px (11174 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1995-porsche-911-993-carrera-rs-d4df0906",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1995_Porsche_911_993_Carrera_RS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1995_Porsche_911_993_Carrera_RS.jpg",
+          "localPath": "/images/carrera-rs/img-1995-porsche-911-993-carrera-rs-d4df0906-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5255×3458px (9516 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre", "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html" },
-        { "title": "993 RS model history — GT Classics", "url": "https://www.gtclassics.co.uk/model-history/993-rs/" },
-        { "title": "Porsche 911 Carrera RS 3.8 Clubsport (993) — Stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-rs-993-1995-1996/" },
-        { "title": "The Rennsport bloodline: all 911 RS models — Elferspot", "url": "https://www.elferspot.com/en/magazine/the-porsche-rennsport-bloodline-all-911-rs-models-at-a-glance/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre",
+          "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html"
+        },
+        {
+          "title": "993 RS model history — GT Classics",
+          "url": "https://www.gtclassics.co.uk/model-history/993-rs/"
+        },
+        {
+          "title": "Porsche 911 Carrera RS 3.8 Clubsport (993) — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rs-993-1995-1996/"
+        },
+        {
+          "title": "The Rennsport bloodline: all 911 RS models — Elferspot",
+          "url": "https://www.elferspot.com/en/magazine/the-porsche-rennsport-bloodline-all-911-rs-models-at-a-glance/"
+        }
       ],
       "missing": [
         "GT Classics records 1,104 RS cars with 213 Clubsports; Wikipedia, Heritage Parts Centre, Elferspot and Stuttcars all give 1,014 with 227. The majority figures are used here.",
         "Top speed varies: Sport Auto test 287 km/h (Wikipedia), Stuttcars/supercars.net 277 km/h (172 mph).",
         "Torque quoted from GT Classics (262 lb-ft @ 5,400 rpm); no Porsche Newsroom torque figure was found."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera-rs/img-1995-porsche-911-993-carrera-rs-d4df0906-1920.avif",
+          "alt": "911 Carrera RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoABABoJbACdAD6CHrgvseAAN/8YM/bAdMvlvg71ZgcLJMDJjvwjzXUh4YYJ9vhT8ZDmPGAno1t6dsCwxAS7wP1PpbEw/GZ9jD8XH3M469SHwh/lHYaIyfw2+J28HCmAAAA",
+          "creditId": "img-1995-porsche-911-993-carrera-rs-d4df0906",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/carrera-rs/img-1995-porsche-993-carrera-rs-in-speed-yellow-front-right-33d1525e-1920.avif",
+          "alt": "911 Carrera RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoABABoJagCdAEPS0IjmuMIAAD+m/D8AGD/p/dhf8Up9Qd7k3RqnWmu5yB9oXnrFu6M+hv9d5Tdlm/D9ve2gajKRQVxQUHAS3HLxRsSdPCAAAA=",
+          "creditId": "img-1995-porsche-993-carrera-rs-in-speed-yellow-front-right-33d1525e",
+          "width": 1920,
+          "height": 1204
+        },
+        {
+          "src": "/images/carrera-rs/img-1995-porsche-993-carrera-rs-in-riviera-blue-front-left-d1505840-1920.avif",
+          "alt": "911 Carrera RS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAkABABoJaACdAC6C4664gAA/u9MaCdcw0Waglz6ApdAr8w9pRoIO0aWaYkWEUncGRsYD7Fenj+fSN3hB2JOqbCck2bv2hJ+nagAAAA=",
+          "creditId": "img-1995-porsche-993-carrera-rs-in-riviera-blue-front-left-d1505840",
+          "width": 1920,
+          "height": 1107
+        },
+        {
+          "src": "/images/carrera-rs/img-1995-porsche-993-carrera-rs-in-riviera-blue-front-left2-b00ac4b8-1920.avif",
+          "alt": "911 Carrera RS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAQCdASoQAAkABABoJagCdAEFeuAA/uxN8ZQipAS8PWRLMxhbL88AnIMLTbaYv2UU1Hz8nLYzcqPfoeDZZb9GOoUigwCDtGP2Exy1ICM1o6PLJboAAA==",
+          "creditId": "img-1995-porsche-993-carrera-rs-in-riviera-blue-front-left2-b00ac4b8",
+          "width": 1920,
+          "height": 1045
+        },
+        {
+          "src": "/images/carrera-rs/img-red-porsche-993-carrera-rs-7717832652-f81b1ab9-1920.avif",
+          "alt": "911 Carrera RS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJagCdACqkfrH4AD3uLE6lecOgNBEpOLEUG49lt54YuNEg6xQ/CWoCH/vnFAmQ2F+zR/4Zfi34gWfRnMAAA==",
+          "creditId": "img-red-porsche-993-carrera-rs-7717832652-f81b1ab9",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs/img-red-porsche-993-carrera-rs-7717947540-21b93990-1920.avif",
+          "alt": "911 Carrera RS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsABABoJbACdAB4qm2pAAD+g8LddoMPnN+meiy4TuV0SY7VyTdnLFuMlt3PCSX/6mkrtimzXYjgQzvbR7pzQJTYDuddUi3cKl83rXmq6yy5nquUAA==",
+          "creditId": "img-red-porsche-993-carrera-rs-7717947540-21b93990",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs/img-porsche-rs-spyder-and-993-carrera-rs-clubsport-in-the-pors-9b9ca017-640.avif",
+          "alt": "911 Carrera RS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJYgCdAEWXZMojh6gAP7IxkPK00jyLCbfagAE365wuBWhgjg55u/r5+JN6dSF2dzEoT7IdGMpOQ0+YXDS4gzbue8AAA==",
+          "creditId": "img-porsche-rs-spyder-and-993-carrera-rs-clubsport-in-the-pors-9b9ca017",
+          "width": 640,
+          "height": 427
+        }
       ]
     },
     {
@@ -371,25 +1487,132 @@
       "weight": "1,270 kg (2,800 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (G50/31, shorter 4th–6th, short throw)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The M003 Clubsport option turned the Carrera RS into a road-legal track tool. A welded roll cage, suspension strut brace, composite buckets with six-point harnesses, battery cut-off and fire extinguisher went in; carpets, electric windows, air-conditioning and the radio came out. A larger biplane wing and deeper chin spoiler replaced the Touring aero, and fourth through sixth gears were shortened. Otherwise it matched the standard RS: 300 PS from 3.8 litres, 322 mm cross-drilled Turbo brakes, Bilstein dampers and a limited-slip differential. Of the 1,014 RS cars built, 227 left the factory as Clubsports. Like the RS, it was never sold in the United States.",
       "special": true,
       "production": "227 of the 1,014 Carrera RSs (option code M003)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+        "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+        "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+        "width": 1920,
+        "height": 1250
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Carrera_S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Carrera_S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3427 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "Porsche 911 Carrera RS 3.8 Clubsport (993) 1995–1996 — Stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-rs-993-1995-1996/" },
-        { "title": "1996 Porsche 911 RS Clubsport — supercars.net", "url": "https://www.supercars.net/blog/1996-porsche-911-carrera-rs-38/" },
-        { "title": "993 RS model history — GT Classics", "url": "https://www.gtclassics.co.uk/model-history/993-rs/" },
-        { "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre", "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "Porsche 911 Carrera RS 3.8 Clubsport (993) 1995–1996 — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rs-993-1995-1996/"
+        },
+        {
+          "title": "1996 Porsche 911 RS Clubsport — supercars.net",
+          "url": "https://www.supercars.net/blog/1996-porsche-911-carrera-rs-38/"
+        },
+        {
+          "title": "993 RS model history — GT Classics",
+          "url": "https://www.gtclassics.co.uk/model-history/993-rs/"
+        },
+        {
+          "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre",
+          "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html"
+        }
       ],
       "missing": [
         "Clubsport count: 227 (Wikipedia, Stuttcars, Heritage Parts Centre, Elferspot) vs 213 (GT Classics) vs 226 (Sports Car Market). 227 is used here.",
         "Weight and acceleration are supercars.net estimates for the Clubsport; no factory figures were found for the M003 specifically.",
         "Top speed 172.1 mph from supercars.net; the standard RS was tested at 287 km/h by Sport Auto."
+      ],
+      "gallery": [
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAQCdASoQAAsABABoJZQAAtlVtCgA/sQLdS7E+EzQ39U5GvUftkkGcGJRrKoIx6s6VcJq0Vsrdwf4BKGuEn4MI3V0CcMg/zRjXzEmAAA=",
+          "creditId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs/img-porsche-911-993-carrera-rs-80978-cbf572d1-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsABABoJbACdAEfVvzzib46QADN+0vsnmYigdDt80SoJC7BqwIX/Fnt/PqWRvWDrfzWQ2/71My9Sch+ZL3Ei6P2YAZCJS0MaKcowRk2vJWvAXRuh1WAAAA=",
+          "creditId": "img-porsche-911-993-carrera-rs-80978-cbf572d1",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/club-sport/img-white-1997-porsche-911-993-gt2-4d8361ce-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkABABoJbACsAYul22aNmb0IAD+a/h9nIJn7G+Rnjqv2mrhROpSoARNHiPy+OACoGaSrkD62ue2OSu5rG9qTVzoQbG85Trl4Rnh4TF0VniXAAA=",
+          "creditId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
+          "width": 1920,
+          "height": 1143
+        },
+        {
+          "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+          "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "width": 1920,
+          "height": 1254
+        },
+        {
+          "src": "/images/carrera-rs/img-1995-porsche-911-993-carrera-rs-d4df0906-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoABABoJbACdAD6CHrgvseAAN/8YM/bAdMvlvg71ZgcLJMDJjvwjzXUh4YYJ9vhT8ZDmPGAno1t6dsCwxAS7wP1PpbEw/GZ9jD8XH3M469SHwh/lHYaIyfw2+J28HCmAAAA",
+          "creditId": "img-1995-porsche-911-993-carrera-rs-d4df0906",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "creditId": "img-porsche-911-993-gt2-64083-90827c43",
+          "width": 1920,
+          "height": 1084
+        },
+        {
+          "src": "/images/club-sport/img-1995-porsche-911-993-gt2-45606-811ae220-1920.avif",
+          "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAgABABoJYwCdAD1qfqJY0gA+UJhf/yZK16EK2Wy9fjEX0clI/FCdg85msfM6Vl7l36l/01GwjPqQ4TvqO86rQADTdoAAAA=",
+          "creditId": "img-1995-porsche-911-993-gt2-45606-811ae220",
+          "width": 1920,
+          "height": 987
+        }
       ]
     },
     {
@@ -409,25 +1632,147 @@
       "weight": "1,295 kg (2,855 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (G50/53)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Racing rules banning all-wheel drive turned the 993 Turbo into the rear-drive GT2, homologated for the FIA GT2 class and badged simply '911 GT' on the decklid. Bolt-on plastic arches, a strut-mounted wing with integrated air scoops and a stripped RS-style cabin defined it; the biturbo ran higher boost for 430 PS, rising to 450 PS for 1998 with dual ignition. Roughly 200 kg lighter than the Turbo, it was the most extreme road 993 — 0–100 km/h in under four seconds and a 296 km/h top speed. Around 57 were sold for homologation alongside some 110 customer racers.",
       "special": true,
       "production": "57 road cars (Wikipedia); GT Classics documents 173 road cars, Porsche Newsroom says 'an edition of 100'",
-      "heroImage": null,
-      "videos": [],
+      "heroImage": {
+        "src": "/images/club-sport/img-white-1997-porsche-911-993-gt2-4d8361ce-1920.avif",
+        "alt": "911 GT2",
+        "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkABABoJbACsAYul22aNmb0IAD+a/h9nIJn7G+Rnjqv2mrhROpSoARNHiPy+OACoGaSrkD62ue2OSu5rG9qTVzoQbG85Trl4Rnh4TF0VniXAAA=",
+        "creditId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
+        "width": 1920,
+        "height": 1143
+      },
+      "videos": [
+        {
+          "id": "9jUM-OWGLhA",
+          "title": "Porsche 993 GT2 review. Is this road racer special the ultimate air-cooled 911 turbo?",
+          "channel": "Harry's garage",
+          "poster": null,
+          "note": "road-legal race 911 GT2, long-form review"
+        },
+        {
+          "id": "Rf34n2rxzUI",
+          "title": "Porsche 911 (993) GT2: Charles Morgan's Classics - Carfection",
+          "channel": "Carfection",
+          "poster": null,
+          "note": "GT2 in Carfection's classics format, period detail intact"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AWhite_1997_Porsche_911_(993)_GT2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:White_1997_Porsche_911_(993)_GT2.jpg",
+          "localPath": "/images/club-sport/img-white-1997-porsche-911-993-gt2-4d8361ce-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5080×3024px (1624 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-993-gt2-64083-90827c43",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_993_GT2_(64083).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_993_GT2_(64083).jpg",
+          "localPath": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12324×6960px (5003 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 GT2 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2" },
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "993 GT2 (road) model history — GT Classics", "url": "https://www.gtclassics.co.uk/model-history/993-gt2-road/" },
-        { "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html" },
-        { "title": "Porsche 911 GT2 limited production models — Porsche Knowledge", "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/" }
+        {
+          "title": "Porsche 911 GT2 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2"
+        },
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "993 GT2 (road) model history — GT Classics",
+          "url": "https://www.gtclassics.co.uk/model-history/993-gt2-road/"
+        },
+        {
+          "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html"
+        },
+        {
+          "title": "Porsche 911 GT2 limited production models — Porsche Knowledge",
+          "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/"
+        }
       ],
       "missing": [
         "Road-car production is disputed: 57 (Wikipedia), 173 road cars (GT Classics: 140 basic + 33 Clubsport) plus 21 Evolutions, ~194 total (Porsche Knowledge), and 'an edition of 100' (Porsche Newsroom).",
         "Top speed: Auto Motor Sport test 296 km/h; Wikipedia's GT2 article lists 301 km/h (187 mph) and Stuttcars 186 mph.",
         "Right-hand-drive count is given as seven by one Wikipedia source and thirteen by another."
+      ],
+      "gallery": [
+        {
+          "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
+          "alt": "911 GT2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "creditId": "img-porsche-911-993-gt2-64083-90827c43",
+          "width": 1920,
+          "height": 1084
+        },
+        {
+          "src": "/images/club-sport/img-1995-porsche-911-993-gt2-45606-811ae220-1920.avif",
+          "alt": "911 GT2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAgABABoJYwCdAD1qfqJY0gA+UJhf/yZK16EK2Wy9fjEX0clI/FCdg85msfM6Vl7l36l/01GwjPqQ4TvqO86rQADTdoAAAA=",
+          "creditId": "img-1995-porsche-911-993-gt2-45606-811ae220",
+          "width": 1920,
+          "height": 987
+        },
+        {
+          "src": "/images/gt2/img-1995-porsche-911-993-gt2-93132-4de142ad-1920.avif",
+          "alt": "911 GT2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJQBOgCFsetCNCAAA/kBo0S/fPK07NMF+fzxqrpKYPoZpPQq4iMGHyrOqDSye/nMWc5DmrWbqd0dgAAA=",
+          "creditId": "img-1995-porsche-911-993-gt2-93132-4de142ad",
+          "width": 1920,
+          "height": 1031
+        },
+        {
+          "src": "/images/gt2/img-1995-porsche-911-993-gt2-62741-d0a5d399-1920.avif",
+          "alt": "911 GT2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwCdAEHulqAAPa4gWjTPN3in8SXSrP4tKcSJU7bISLRSeDWsW6LsDSU1y0uvD58Vb0t/+h+BNBfSaoe5pUudE7gAA==",
+          "creditId": "img-1995-porsche-911-993-gt2-62741-d0a5d399",
+          "width": 1920,
+          "height": 1047
+        },
+        {
+          "src": "/images/gt2/img-1995-porsche-911-993-gt2-81374-e739c3b2-1920.avif",
+          "alt": "911 GT2 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkABABoJQBOgBxoh7oRAAD+Pkvj/ETJRgUX8tiSnL9QTcAEBdPHPrcMUFnqCgeQORk2HNw/wv735gb90DfnKMZcVjRHUVYZdkgA",
+          "creditId": "img-1995-porsche-911-993-gt2-81374-e739c3b2",
+          "width": 1920,
+          "height": 1083
+        },
+        {
+          "src": "/images/gt2/img-1996-porsche-911-993-gt2-r-ec555fbb-1920.avif",
+          "alt": "911 GT2 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJZACdAEQ0jLeRZk4AP7awrpBss1PhKj5Wl73KoidJiwXzq2L4eMxFyR82W7cwvrf7HHNb2lviCcWFwbED/R7oTCSKsAUAAA=",
+          "creditId": "img-1996-porsche-911-993-gt2-r-ec555fbb",
+          "width": 1920,
+          "height": 1273
+        },
+        {
+          "src": "/images/gt2/img-1995-porsche-911-993-gt2-86935-b98c6e30-1920.avif",
+          "alt": "911 GT2 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAgABABoJYwCdADhlI8Y8o4A/oTJgORoMYwwrRSQk0BFb45QA8F/5V3dnp0B4E0UkAju1FCB0bXn62rssCWgAAA=",
+          "creditId": "img-1995-porsche-911-993-gt2-86935-b98c6e30",
+          "width": 1920,
+          "height": 1017
+        }
       ]
     },
     {
@@ -447,25 +1792,129 @@
       "weight": "1,100 kg (2,425 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "To take the GT2 into FIA GT1, Porsche built the GT2 Evo. A larger KKK K27 turbocharger set with 40.4 mm restrictors, a redesigned intake and exhaust, and optimized internals lifted the 3.6-litre flat-six to 600 PS, while the body gained an even higher rear wing, wider arches for GT1 tyres and extra cooling ducts; weight fell to about 1,100 kg. Production was tiny — nine to eleven race cars depending on the source — and a separate run of 21 road-legal Evolution cars at 450 PS is also recorded. The Evo was overtaken by the mid-engined 911 GT1.",
       "special": true,
       "production": "9–11 race cars (GT Classics/Wikipedia); 21 road Evolution cars (GT Classics)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/gt2-evo/img-porsche-993-gt2-evo-19263421922-70d59e86-1920.avif",
+        "alt": "911 GT2 Evo",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAsABABoJbACdH8AFd4Gn/eNAAD+2ZKui52W6bkxoMcBKELy9ZdUePM6xXNNVRAga4DYi0HDFCa7yUwVSnzLVHFt5CtOP4AAAA==",
+        "creditId": "img-porsche-993-gt2-evo-19263421922-70d59e86",
+        "width": 1920,
+        "height": 1280
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-993-gt2-evo-19263421922-70d59e86",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_GT2_Evo_(19263421922).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_GT2_Evo_(19263421922).jpg",
+          "localPath": "/images/gt2-evo/img-porsche-993-gt2-evo-19263421922-70d59e86-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3397 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-ferrari-f40-gte-eric-bernard-jean-marc-gounon-paul-belmond-6db0ce61",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFerrari_F40_GTE_-_Eric_Bernard%2C_Jean-Marc_Gounon_%26_Paul_Belmondo_ahead_of_the_Porsche_993_GT2_Evo_-_Pierre_Yver%2C_Jean-Luc_Chereau_%26_Jack_Leconte_as_it_enters_the_Esses_at_the_1996_Le_Mans_(51701460532).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Martin Lee from London, UK",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Ferrari_F40_GTE_-_Eric_Bernard,_Jean-Marc_Gounon_&_Paul_Belmondo_ahead_of_the_Porsche_993_GT2_Evo_-_Pierre_Yver,_Jean-Luc_Chereau_&_Jack_Leconte_as_it_enters_the_Esses_at_the_1996_Le_Mans_(51701460532).jpg",
+          "localPath": "/images/gt2-evo/img-ferrari-f40-gte-eric-bernard-jean-marc-gounon-paul-belmond-6db0ce61-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2532×1656px (1001 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 GT2 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2" },
-        { "title": "993 GT2 (race) model history — GT Classics", "url": "https://www.gtclassics.co.uk/model-history/993-gt2-race/" },
-        { "title": "Porsche 911 GT2 Evo (993) 1996–1998 — Stuttcars", "url": "https://www.stuttcars.com/porsche-911-gt2-evo-993-1996-1998/" },
-        { "title": "993 GT2 (road) model history — GT Classics", "url": "https://www.gtclassics.co.uk/model-history/993-gt2-road/" }
+        {
+          "title": "Porsche 911 GT2 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2"
+        },
+        {
+          "title": "993 GT2 (race) model history — GT Classics",
+          "url": "https://www.gtclassics.co.uk/model-history/993-gt2-race/"
+        },
+        {
+          "title": "Porsche 911 GT2 Evo (993) 1996–1998 — Stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-gt2-evo-993-1996-1998/"
+        },
+        {
+          "title": "993 GT2 (road) model history — GT Classics",
+          "url": "https://www.gtclassics.co.uk/model-history/993-gt2-road/"
+        }
       ],
       "missing": [
         "Torque not set: sources conflict — 491 lb-ft/666 Nm @ 5,000 rpm (Stuttcars) vs 900 Nm @ 5,000 rpm (tech-racingcars).",
         "Built count conflicts: 9 race Evos (GT Classics: 3 in 1996 + 6 in 1997), 11 (Wikipedia, Stuttcars), 21 road Evolutions (GT Classics, qv500).",
         "Power conflicts: 600 PS GT1 race spec (Wikipedia, Stuttcars) vs 450 PS road Evolution (GT Classics) — both are listed in the power field.",
         "0–100 km/h figure is a 0–60 mph estimate from Stuttcars; no factory 0–100 km/h time found."
+      ],
+      "gallery": [
+        {
+          "src": "/images/gt2-evo/img-ferrari-f40-gte-eric-bernard-jean-marc-gounon-paul-belmond-6db0ce61-1920.avif",
+          "alt": "911 GT2 Evo — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAoABABoJYwCw7EVvMHWzMHgAM4av6NVUT+tIj/Zg+VW49wNwuK9Y2aAeBXCM+1h/P/bzaHR9Dy5AAA=",
+          "creditId": "img-ferrari-f40-gte-eric-bernard-jean-marc-gounon-paul-belmond-6db0ce61",
+          "width": 1920,
+          "height": 1256
+        },
+        {
+          "src": "/images/gt2-evo/img-porsche-993-gt2-evo-jean-pierre-jarier-jesus-pareja-domini-a2e00366-1280.avif",
+          "alt": "911 GT2 Evo — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAA0ABABoJQAAP6ryiJgAAP1SDwMJOmtSjFT3dvIBIPtlXUHVwjqM/gfDYGCkLY5hgagtJzl899YyURhAAA==",
+          "creditId": "img-porsche-993-gt2-evo-jean-pierre-jarier-jesus-pareja-domini-a2e00366",
+          "width": 1280,
+          "height": 1015
+        },
+        {
+          "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+          "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+          "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+          "width": 1920,
+          "height": 1250
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAQCdASoQAAsABABoJZQAAtlVtCgA/sQLdS7E+EzQ39U5GvUftkkGcGJRrKoIx6s6VcJq0Vsrdwf4BKGuEn4MI3V0CcMg/zRjXzEmAAA=",
+          "creditId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/club-sport/img-white-1997-porsche-911-993-gt2-4d8361ce-1920.avif",
+          "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkABABoJbACsAYul22aNmb0IAD+a/h9nIJn7G+Rnjqv2mrhROpSoARNHiPy+OACoGaSrkD62ue2OSu5rG9qTVzoQbG85Trl4Rnh4TF0VniXAAA=",
+          "creditId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
+          "width": 1920,
+          "height": 1143
+        },
+        {
+          "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+          "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "width": 1920,
+          "height": 1254
+        },
+        {
+          "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
+          "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "creditId": "img-porsche-911-993-gt2-64083-90827c43",
+          "width": 1920,
+          "height": 1084
+        }
       ]
     },
     {
@@ -485,24 +1934,109 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "4-speed Tiptronic S (1995 car); 6-speed manual (1998 car)",
-      "bodyStyles": ["speedster"],
+      "bodyStyles": [
+        "speedster"
+      ],
       "description": "Porsche never catalogued a 993 Speedster. Two were built by Porsche Exclusive: a dark green Tiptronic S car with 17-inch wheels for Ferdinand Alexander Porsche's 60th birthday in 1995, and a wide-body, 18-inch manual car for Jerry Seinfeld, converted from a Cabriolet in 1998. Both use the 3.6-litre Carrera flat-six with the roof chopped down and a redesigned interior; a few more Cabriolets were converted by outside coachbuilders. A third claim of a 2000 build appears in Porsche's own Exclusive history. Factory performance, weight and torque figures were never published, so those fields are left empty rather than guessed.",
       "special": true,
       "production": "2 built by Porsche Exclusive (1995 and 1998, per Wikipedia)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/speedster/img-1994-porsche-993-speedster-barry-bonds-car-fvl-2b8e6a6a-1280.avif",
+        "alt": "911 Speedster",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAoABABoJZACw7EOePyAAP7awrYigV0IA9hkeV1FS7l3qR6Dxo5pawUSkEvNMwjbfMsg3SXk6vvisPG6RJBsggQAAA==",
+        "creditId": "img-1994-porsche-993-speedster-barry-bonds-car-fvl-2b8e6a6a",
+        "width": 1280,
+        "height": 800
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1994-porsche-993-speedster-barry-bonds-car-fvl-2b8e6a6a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_993_Speedster_-_Barry_Bonds_Car_-_fvl.jpg",
+          "license": "CC BY 2.0",
+          "author": "Rex Gray from Southern California",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1994_Porsche_993_Speedster_-_Barry_Bonds_Car_-_fvl.jpg",
+          "localPath": "/images/speedster/img-1994-porsche-993-speedster-barry-bonds-car-fvl-2b8e6a6a-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1680×1050px (914 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        },
+        {
+          "assetId": "img-1994-porsche-993-speedster-barry-bonds-car-rvl-6191ae7e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_993_Speedster_-_Barry_Bonds_Car_-_rvl.jpg",
+          "license": "CC BY 2.0",
+          "author": "Rex Gray from Southern California",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1994_Porsche_993_Speedster_-_Barry_Bonds_Car_-_rvl.jpg",
+          "localPath": "/images/speedster/img-1994-porsche-993-speedster-barry-bonds-car-rvl-6191ae7e-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1680×1050px (607 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom", "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html" },
-        { "title": "Porsche 911 limited production models — Porsche Knowledge", "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html"
+        },
+        {
+          "title": "Porsche 911 limited production models — Porsche Knowledge",
+          "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/"
+        }
       ],
       "missing": [
         "Second car's build year conflicts: 1998 (Wikipedia, Jerry Seinfeld car) vs 2000 (Porsche Exclusive Newsroom article).",
         "No factory 0–100 km/h, top speed, torque or weight figures exist for either 993 Speedster.",
         "Power is inferred from the '911 Carrera 3.6 Speedster' designation (272 PS as built in 1995); the second car's output is undocumented.",
         "A figure of 292 Speedsters quoted in project research notes could not be traced to any source and appears to be erroneous."
+      ],
+      "gallery": [
+        {
+          "src": "/images/speedster/img-1994-porsche-993-speedster-barry-bonds-car-rvl-6191ae7e-1280.avif",
+          "alt": "911 Speedster — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoABABoJbAC7AEDeEvt3gAA/nGYrPmSowMSQukM7wvW36Q3Z3qk171eXWo+MnzDI2bMuMsZysOKnIMkAA==",
+          "creditId": "img-1994-porsche-993-speedster-barry-bonds-car-rvl-6191ae7e",
+          "width": 1280,
+          "height": 800
+        },
+        {
+          "src": "/images/speedster/img-gunther-werks-porsche-993-speedster-in-white-rear-right-1ee57ba3-1920.avif",
+          "alt": "911 Speedster — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAkABABoJZwAD4hQjR6BcMoAAPIgkfI8WUSXdbIs+B9WN0PA4qPXxleFnXOJxF9Eqxe42wfT43er9dNzyA2zV9J3QHgA",
+          "creditId": "img-gunther-werks-porsche-993-speedster-in-white-rear-right-1ee57ba3",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/images/speedster/img-gunther-werks-porsche-993-speedster-in-white-rear-left2-f75b39b8-1920.avif",
+          "alt": "911 Speedster — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJZQCdACfNhwwAP6/yFDLh5eMB7eDveLIPw82wND++TouUcZlTzuue/wHNp6HI7qhVG9Tuu5CsdmIqBepJTKWQAAAAA==",
+          "creditId": "img-gunther-werks-porsche-993-speedster-in-white-rear-left2-f75b39b8",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/speedster/img-gunther-werks-porsche-993-speedster-in-white-rear-left1-e951390d-1920.avif",
+          "alt": "911 Speedster — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAkABABoJZQC7AYsjHN0oAD+0Nvb0xatdndic6eqvPIkdA+g6gxd3SZOJUjBKT4OpfwemQq195EmLzuFwylQqJSyblRiAA0gAA==",
+          "creditId": "img-gunther-werks-porsche-993-speedster-in-white-rear-left1-e951390d",
+          "width": 1920,
+          "height": 1143
+        },
+        {
+          "src": "/images/speedster/img-porsche-993-gemballa-biturbo-speedster-1997-1y7a6047-b0b52206-1920.avif",
+          "alt": "911 Speedster — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAsABABoJbACdAEQO8i+zd8YwAAA/iaFC/77gS9sG0xm23KW+4Y1YytcvfN0OLE6V9Z6UJ1W0UCl4jR/h/ZRx20bPRq3UdfbGvUDDLY5uM+Ry98OAAAA",
+          "creditId": "img-porsche-993-gemballa-biturbo-speedster-1997-1y7a6047-b0b52206",
+          "width": 1920,
+          "height": 1283
+        }
       ]
     },
     {
@@ -522,33 +2056,189 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "5-speed manual",
-      "bodyStyles": ["cabriolet"],
+      "bodyStyles": [
+        "cabriolet"
+      ],
       "description": "Before the twin-turbo Coupé arrived, Porsche Exclusive quietly built fourteen 993 Turbo Cabriolets during 1995. Each carried the 360 PS single-turbo 3.6-litre engine and five-speed manual gearbox of the 964 Turbo 3.6, rear-wheel drive, and that car's fixed rear wing, mounted on the open 993 body. At DM 89,500 — a 62 per cent premium over a standard 993 Cabriolet — they were among the priciest 993s of all. No official weight, acceleration or top-speed figures were ever published, so those fields stay empty rather than invented. Fourteen cars makes it one of the rarest 993 variants.",
       "special": true,
       "production": "14 built by Porsche Exclusive (1995)",
-      "heroImage": null,
+      "heroImage": {
+        "src": "/images/turbo-cabriolet/img-porsche-993-turbo-cabriolet-52681126279-eb71c99c-1920.avif",
+        "alt": "911 Turbo Cabriolet",
+        "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwAgCdASoQAAsABABoJbACdAYv/kzjNkvn6uuAAP7SbDJu5s3/AhA/myM0XUADMHN9amHwo3ScYQPlzqEDbS3FZ9Uz0HNxB7vzyFfhUhmUtGVs6KFz1ixBgAFS+DS/m7YO1xqUsnwAAA==",
+        "creditId": "img-porsche-993-turbo-cabriolet-52681126279-eb71c99c",
+        "width": 1920,
+        "height": 1280
+      },
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-993-turbo-cabriolet-52681126279-eb71c99c",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_993_Turbo_Cabriolet_(52681126279).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_993_Turbo_Cabriolet_(52681126279).jpg",
+          "localPath": "/images/turbo-cabriolet/img-porsche-993-turbo-cabriolet-52681126279-eb71c99c-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3277 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
+          "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-        { "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom", "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html" },
-        { "title": "Porsche 911 limited production models — Porsche Knowledge", "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/" }
+        {
+          "title": "Porsche 911 (993) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+        },
+        {
+          "title": "Porsche Exclusive makes nearly all dreams come true — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/EN/Products/Porsche-Exclusive-makes-nearly-all-dreams-come-true.html"
+        },
+        {
+          "title": "Porsche 911 limited production models — Porsche Knowledge",
+          "url": "https://www.porscheknowledge.com/porsche-911-limited-production-models/"
+        }
       ],
       "missing": [
         "No factory torque, weight, 0–100 km/h or top-speed figures published for the 993 Turbo Cabriolet.",
         "Wikipedia dates the 14 cars to 1995, before the Turbo Coupé launch; Porsche Knowledge lists them as 1995 only."
+      ],
+      "gallery": [
+        {
+          "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+          "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+          "width": 1920,
+          "height": 1250
+        },
+        {
+          "src": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkABABoJbACdABWBNAA/hnGQjWTu9Tv/d5elBsw4/R2V/6A6n4rvCN3sOYgjMiuTj+BSUGvbKFVh0chRTelmWav9kSrndBPQUUyomuz5gAA",
+          "creditId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+          "width": 1920,
+          "height": 1122
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAQCdASoQAAsABABoJZQAAtlVtCgA/sQLdS7E+EzQ39U5GvUftkkGcGJRrKoIx6s6VcJq0Vsrdwf4BKGuEn4MI3V0CcMg/zRjXzEmAAA=",
+          "creditId": "img-porsche-993-carrera-s-flickr-alexandre-pre-vot-73b609c3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo/img-1996-porsche-993-turbo-gt2-recreation-07f71b1a-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJZQAAv+r4QaMRaAA/a5GiA6nZBrGx0y89SDesoboYElT+5BTc51CiXwuHiPm8acrw4RFNH5Wz3Hr7oJ0jgAA",
+          "creditId": "img-1996-porsche-993-turbo-gt2-recreation-07f71b1a",
+          "width": 1920,
+          "height": 1078
+        },
+        {
+          "src": "/images/club-sport/img-white-1997-porsche-911-993-gt2-4d8361ce-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkABABoJbACsAYul22aNmb0IAD+a/h9nIJn7G+Rnjqv2mrhROpSoARNHiPy+OACoGaSrkD62ue2OSu5rG9qTVzoQbG85Trl4Rnh4TF0VniXAAA=",
+          "creditId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
+          "width": 1920,
+          "height": 1143
+        },
+        {
+          "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+          "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
+          "width": 1920,
+          "height": 1254
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-993-turbo-29187-66263386-1920.avif",
+          "alt": "911 Turbo Cabriolet — stand-in photo (same 993 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoABABoJZQC7AYulgb7kvjWAP4zTg5hYKaf7184Zdq3KxWXLhWNp2vQhyMVktM1HkHWxaEXhN8K0j08isb3634yGmACKBOKpgXYAAA=",
+          "creditId": "img-porsche-911-993-turbo-29187-66263386",
+          "width": 1920,
+          "height": 1165
+        }
       ]
     }
   ],
-  "credits": [],
+  "credits": [
+    {
+      "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
+      "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
+      "localPath": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15054×8800px (11782 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-993",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+      "license": "CC Attribution",
+      "author": "Ai 3D Designs",
+      "retrieved": "2026-10-02",
+      "sourceId": "b711966542e143e2829a21e0230fa30e",
+      "localPath": null,
+      "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    }
+  ],
   "sources": [
-    { "title": "Porsche 911 (993) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)" },
-    { "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html" },
-    { "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html" },
-    { "title": "Model 911 (type 993) — Porsche Classic (USA)", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/" },
-    { "title": "993 (911: 1995–98) specifications — Excellence", "url": "https://www.excellence-mag.com/resources/specs/312" },
-    { "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre", "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html" }
+    {
+      "title": "Porsche 911 (993) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(993)"
+    },
+    {
+      "title": "The seven generations of the Porsche 911 (Part 4): the type 993 — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-4-type-993-16486.html"
+    },
+    {
+      "title": "Thirty years of the 993-generation 911 Carrera — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/30-Jahre-911-Carrera-der-Generation-993-%E2%80%93-Der-letzte-seiner-Art.html"
+    },
+    {
+      "title": "Model 911 (type 993) — Porsche Classic (USA)",
+      "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/993/993/"
+    },
+    {
+      "title": "993 (911: 1995–98) specifications — Excellence",
+      "url": "https://www.excellence-mag.com/resources/specs/312"
+    },
+    {
+      "title": "Porsche 911 RS: Rennsport model history — Heritage Parts Centre",
+      "url": "https://www.heritagepartscentre.com/uk/blog/porsche-911-rs-rennsport-model-history.html"
+    }
   ],
   "missing": [
     "Total 993 production differs by source: 68,881 (Porsche Newsroom, 1993–1998), 68,029 (Wikipedia production table), 67,535 (Porsche one-millionth-911 press kit, 2017).",

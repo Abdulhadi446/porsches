@@ -47,14 +47,14 @@ const CREDITS_JSON = path.join(ROOT, "data/credits.json");
 const GEN_DIR = path.join(ROOT, "data/generations");
 
 const CONCURRENCY = Number(process.env.P911_CONCURRENCY ?? 4);
-const MIN_GAP_MS = Number(process.env.P911_MIN_GAP_MS ?? 150);
-const MAX_GAP_MS = 4000;
+const MIN_GAP_MS = Number(process.env.P911_GAP_MS ?? process.env.P911_MIN_GAP_MS ?? 350);
+const MAX_GAP_MS = 9000;
 const SEARCH_LIMIT = 30;
 const TARGET_W = 1920;
 const MIN_SOURCE_W = 800;
 const MAX_VARIANT_IMAGES = 8;
-const TARGET_GALLERY = 5;
-const MAX_RETRIES = 4;
+const TARGET_GALLERY = 6;
+const MAX_RETRIES = 8;
 const AVIF_WIDTHS = [640, 1280, 1920];
 
 /* ----------------------------------------------------------------- types */
@@ -163,7 +163,7 @@ function sleep(ms: number): Promise<void> {
 let throttleGap = MIN_GAP_MS;
 
 function throttled(): void {
-  throttleGap = Math.min(MAX_GAP_MS, Math.round(throttleGap * 1.8));
+  throttleGap = Math.min(MAX_GAP_MS, Math.round(throttleGap * 1.7));
 }
 
 function relaxed(): void {
@@ -350,7 +350,8 @@ async function searchCommons(query: string): Promise<SearchHit[]> {
       pages = [];
     }
   }
-  writeCache("search", url, { pages });
+  // an empty result set from a throttled request must never poison the cache
+  if (body) writeCache("search", url, { pages });
   return pages;
 }
 
@@ -562,6 +563,7 @@ function tidySentence(s: string): string {
     .replace(/^\s*this (?:file|image|work|photo|photograph|media)\s+/i, "")
     .replace(/^\s*(?:is|has been)\s+/i, "")
     .replace(/\s+/g, " ")
+    .replace(/\s+([.,;:])/g, "$1")
     .trim();
 }
 
@@ -647,6 +649,7 @@ const MODEL_PHRASES = [
 /** Model words that identify a *different* special edition — never acceptable as
  *  an illustration of the variant being matched. */
 const SPECIAL_PHRASES = [
+  "turbo",
   "carrera rsr",
   "sc rs",
   "carrera rs",
@@ -680,8 +683,30 @@ const SPECIAL_PHRASES = [
 /** Model keys that only mean something when anchored to the model number. */
 const ANCHORED_KEYS = new Set(["st", "s/t", "t/r", "r"]);
 
+/** Engine sizes no car of that generation ever wore. */
+const ERA_FORBIDDEN: Record<GenerationId, string[]> = {
+  "901": ["2.7", "3.0", "3.2", "3.3", "3.4", "3.6", "3.8", "4.0"],
+  gseries: ["2.0", "2.2", "2.4", "3.4", "3.6", "3.8", "4.0"],
+  "964": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
+  "993": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
+  "996": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
+  "997": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3", "3.4"],
+  "991": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3", "3.4", "3.6"],
+  "992-1": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3", "3.4", "3.6", "3.8"],
+  "992-2": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3", "3.4", "3.6", "3.8"],
+};
+
 /** Generations whose Commons titles reliably carry the chassis number. */
-const NEEDS_SIGNAL = new Set<GenerationId>(["964", "993", "996", "997", "991", "992-1", "992-2"]);
+const NEEDS_SIGNAL = new Set<GenerationId>([
+  "gseries",
+  "964",
+  "993",
+  "996",
+  "997",
+  "991",
+  "992-1",
+  "992-2",
+]);
 
 interface Override {
   extraRequired?: string[];
@@ -719,9 +744,16 @@ const OVERRIDES: Record<string, Override> = {
   "992-2/gt3-90-fa-porsche": { noExact: true },
   "992-2/carrera-4-gts-transfagarasan": { noExact: true },
   "992-2/gt3-s-c": { extraQueries: ["Porsche 911 GT3 S/C"] },
+  // the road Turbo S T-Hybrid, not the 2023 safety/road-course car with beacons
+  "992-2/turbo-s": { extraForbidden: ["safety car"] },
   "901/912": { extraQueries: ["Porsche 912"] },
   "901/porsche-901": { extraQueries: ["Porsche 901 prototype"] },
-  "901/cabriolet-hebmuller": { extraQueries: ["Porsche 911 Cabriolet Hebmuller"] },
+  // no licensed Commons photo of the 1965 Hebmuller has been found: any cabriolet
+  // shown for it must be labelled a stand-in, never presented as the Hebmuller
+  "901/cabriolet-hebmuller": {
+    extraQueries: ["Porsche 911 Cabriolet Hebmuller"],
+    noExact: true,
+  },
   "901/st": { extraQueries: ["Porsche 911 ST 1971"] },
   "964/turbo-s-lm-gt": { extraQueries: ["Porsche 964 LM GT"] },
   "964/rs-america": { extraQueries: ["Porsche 964 RS America"] },
@@ -741,6 +773,8 @@ const OVERRIDES: Record<string, Override> = {
 
 interface Spec {
   key: string;
+  /** sibling trims may differ in engine size, but never in special edition */
+  familyForbidden: string[];
   gen: GenerationId;
   variantId: string;
   name: string;
@@ -815,13 +849,21 @@ function deriveSpec(gen: GenerationLite, v: VariantLite): Spec {
     forbidden.push(p);
   }
   if (displacement) for (const d of DISPLACEMENTS) if (d !== displacement) forbidden.push(d);
-  if ((gen.id === "992-1" || gen.id === "992-2") && !hasToken(n, "t-hybrid")) forbidden.push("t-hybrid");
+  // engine sizes that did not exist in this generation's era can never illustrate it
+  for (const d of ERA_FORBIDDEN[gen.id]) if (d !== displacement) forbidden.push(d);
+  // the T-Hybrid does not exist in 992.1; 992.2 wants it (see scoreExtra below)
+  if (gen.id === "992-1" && !hasToken(n, "t-hybrid")) forbidden.push("t-hybrid");
   for (const f of ov.extraForbidden ?? []) forbidden.push(f);
 
   const brief = bodyExclusive ? (BODY_TOKEN[bodies[0]] ?? bodies[0]) : modelKey;
 
+  const familyForbidden = forbidden.filter(
+    (f) => !DISPLACEMENTS.includes(f) || ERA_FORBIDDEN[gen.id].includes(f),
+  );
+
   return {
     key,
+    familyForbidden,
     gen: gen.id,
     variantId: v.id,
     name: v.name,
@@ -843,6 +885,34 @@ function deriveSpec(gen: GenerationLite, v: VariantLite): Spec {
 }
 
 /* ------------------------------------------------------- title matching */
+
+/**
+ * Files whose photograph contradicts the caption, checked against the Commons
+ * preview during QA. They are never used, in any generation.
+ */
+const BLACKLIST: Record<string, string> = {
+  "File:1964_Porsche_901.jpg":
+    'titled "1964 Porsche 901" and captioned "a Porsche 901 at the London Concours 2021" - no road 901 exists; the photo shows a flared-arch 1990s 911',
+  "File:Porsche_911_r.jpg":
+    'ambiguous title "911 r"; the photo shows a 1990s-bodied coupe, not the 1971 911 R',
+  "File:Porsche_911_Turbo_Cabriolet_(31327).jpg":
+    "a 964 Turbo Cabriolet (1990s), not the 1965 Hebmueller 911 cabriolet",
+  "File:1964_Porsche_901_Red_HCC21.jpg":
+    "sibling of the excluded 1964_Porsche_901.jpg by the same photographer - same flared-arch 1990s 911, not the 901 prototype",
+  "File:Porsche_911_Cabriolet_(35575).jpg":
+    "a 1990s 911 cabriolet; it is neither the 1965 Hebmueller nor a 1963-73 cabriolet",
+  "File:Porsche_911_R_(front).jpg":
+    "part of an unlabelled \"911 R\" photo set; the car is a 1990s coupe, not the 1971 911 R",
+  "File:Porsche_911_R_(rear).jpg": "same unlabelled 911 R set - a 1990s coupe, not the 1971 911 R",
+  "File:Porsche_911_R_(side)_(1).jpg": "same unlabelled 911 R set - a 1990s coupe, not the 1971 911 R",
+  "File:Porsche_911_R_(side)_(2).jpg": "same unlabelled 911 R set - a 1990s coupe, not the 1971 911 R",
+  "File:Joustra-Porsche-911-Turbo-Racing-Team.jpg":
+    "racing-team livery artwork (Joustra), not a photograph of a car",
+};
+
+function blacklisted(fileTitle: string): string | null {
+  return BLACKLIST[fileTitle] ?? null;
+}
 
 const NOISE = [
   "diecast",
@@ -895,6 +965,21 @@ const NOISE = [
   "steering wheel",
   "rear badge",
   "front badge",
+  "illustration",
+  "artwork",
+  "airbrush",
+  "livery",
+  "joustra",
+  "render",
+  "sketch",
+  "comic",
+  "sticker",
+  "t-shirt",
+  "t shirt",
+  "mug",
+  "diorama",
+  "book cover",
+  "cover art",
 ];
 
 const IMAGE_EXT = /\.(jpe?g|png|tiff?|webp)$/i;
@@ -933,21 +1018,50 @@ function isNoise(title: string): boolean {
   return NOISE.some((w) => t.includes(w));
 }
 
-/** Pre-1999 model year in an unambiguous Commons position (model-year context). */
-function yearSignal(title: string): number | null {
-  const patterns = [
-    /\((19[6-8]\d)\)/,
-    /\bbj\.?\s*(19[6-8]\d)/,
-    /\b(19[6-8]\d)\s+porsche\b/,
-    /,\s*(19[6-8]\d)\s*[,\)]/,
-    /_(19[6-8]\d)(?:[-_.]|$)/,
+/**
+ * Model years stated in an unambiguous position of the *raw* Commons title
+ * ("1965_Porsche_911_2.0", "Porsche_911_(1968)", "2016_Porsche_911_R", …).
+ * Event years ("IAA_2017", "Rallye_2025") are deliberately NOT collected — they
+ * say when the photo was taken, not which car it shows. Every pattern must
+ * capture the year in group 1.
+ */
+function yearSignals(title: string): number[] {
+  const patterns: RegExp[] = [
+    /^((?:19[5-9]\d|20[0-3]\d))[-_]porsche/i,
+    /^((?:19[5-9]\d|20[0-3]\d))(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[-_]/,
+    /_((?:19[5-9]\d|20[0-3]\d))(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[-_]/,
+    /_((?:19[5-9]\d|20[0-3]\d))[-_]porsche/i,
+    /_((?:19[5-9]\d|20[0-3]\d))[-_](?:911|912|930|964|993|996|997|991|992)\b/i,
+    /_\(((?:19[5-9]\d|20[0-3]\d))\)/,
+    /\(((?:19[5-9]\d|20[0-3]\d))\)/,
+    /[,;]\s*((?:19[5-9]\d|20[0-3]\d))\s*porsche/i,
+    /\bbj\.?\s*((?:19[5-9]\d|20[0-3]\d))/i,
+    /((?:19[5-9]\d|20[0-3]\d))-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])/,
   ];
+  const out = new Set<number>();
+  const t = title.replace(/^File:/, "");
   for (const re of patterns) {
-    const m = re.exec(norm(title));
-    if (m) return Number(m[1]);
+    const m = re.exec(t);
+    if (m) {
+      const y = Number(m[1]);
+      if (Number.isFinite(y)) out.add(y);
+    }
   }
-  return null;
+  return [...out];
 }
+
+/** Model years a generation could plausibly be photographed in. */
+const GEN_YEARS: Record<GenerationId, [number, number]> = {
+  "901": [1962, 1974],
+  gseries: [1973, 1990],
+  "964": [1988, 1995],
+  "993": [1994, 1999],
+  "996": [1997, 2006],
+  "997": [2004, 2013],
+  "991": [2011, 2020],
+  "992-1": [2018, 2024],
+  "992-2": [2024, 2030],
+};
 
 /** "992" is reported for 992-series titles that do not say 992.1/992.2 — the
  *  T-hybrid is rarely written out, and both sub-generations look the same. */
@@ -995,13 +1109,17 @@ function genSignal(title: string): GenSignal | null {
   if (hasToken(t, "2.0") || hasToken(t, "2.2") || hasToken(t, "2.4")) return "901";
   if (hasToken(t, "2.7") || hasToken(t, "3.0") || hasToken(t, "3.2") || hasToken(t, "sc ")) return "gseries";
   if (hasToken(t, "930")) return "gseries";
-  const y = yearSignal(title);
-  if (y === null) return null;
-  if (y >= 1963 && y <= 1973) return "901";
-  if (y >= 1974 && y <= 1989) return "gseries";
-  if (y >= 1990 && y <= 1994) return "964";
-  if (y >= 1995 && y <= 1998) return "993";
   return null;
+}
+
+/** Model years the title states, none of which fall in the generation's window
+ *  (only used when the title carries no chassis code: an event year such as
+ *  "IAA_2023" must not veto a genuine 1965 car). */
+function yearVeto(title: string, gen: GenerationId): boolean {
+  const years = yearSignals(title);
+  if (years.length === 0) return false;
+  const [from, to] = GEN_YEARS[gen];
+  return !years.some((y) => y >= from && y <= to);
 }
 
 /** 992.1 and 992.2 share the "992" code, so they accept each other's titles. */
@@ -1021,6 +1139,8 @@ const NO: Match = { ok: false, score: 0, why: "" };
 
 /** The file title names this exact variant. */
 function matchExact(title: string, spec: Spec): Match {
+  const bad = blacklisted(title);
+  if (bad) return { ...NO, why: `excluded file: ${bad}` };
   const t = norm(title);
   if (!IMAGE_EXT.test(title)) return { ...NO, why: "not a raster image" };
   if (!mentionsPorsche(title)) return { ...NO, why: "not a Porsche 911 subject" };
@@ -1031,6 +1151,7 @@ function matchExact(title: string, spec: Spec): Match {
     return { ...NO, why: `title identifies ${gs}, not ${spec.gen}` };
   }
   if (spec.needsSignal && !gs) return { ...NO, why: `title does not identify ${spec.gen}` };
+  if (yearVeto(title, spec.gen)) return { ...NO, why: "title states a model year outside this generation" };
   for (const f of spec.forbidden) {
     if (hasToken(t, f)) return { ...NO, why: `title names a different variant ("${f}")` };
   }
@@ -1043,6 +1164,8 @@ function matchExact(title: string, spec: Spec): Match {
 
 /** A different trim of the same car — only with a positive signal for this gen. */
 function matchFamily(title: string, spec: Spec): Match {
+  const bad = blacklisted(title);
+  if (bad) return { ...NO, why: `excluded file: ${bad}` };
   const t = norm(title);
   if (!IMAGE_EXT.test(title)) return { ...NO, why: "not a raster image" };
   if (!mentionsPorsche(title)) return { ...NO, why: "not a Porsche 911 subject" };
@@ -1050,11 +1173,8 @@ function matchFamily(title: string, spec: Spec): Match {
   if (!genCompatible(genSignal(title), spec.gen)) {
     return { ...NO, why: `title does not identify this generation (${spec.gen})` };
   }
-  if (spec.displacement) {
-    const d = DISPLACEMENTS.find((x) => hasToken(t, x));
-    if (d && d !== spec.displacement) return { ...NO, why: `different engine size (${d})` };
-  }
-  for (const f of spec.forbidden) {
+  if (yearVeto(title, spec.gen)) return { ...NO, why: "title states a model year outside this generation" };
+  for (const f of spec.familyForbidden) {
     if (hasToken(t, f)) return { ...NO, why: `title names a different variant ("${f}")` };
   }
   if (!bodyCompatible(t, spec)) return { ...NO, why: "body style not offered for this variant" };
@@ -1069,9 +1189,12 @@ function bodyCompatible(t: string, spec: Spec): boolean {
 }
 
 function matchGeneration(title: string, gen: GenerationId): Match {
+  const bad = blacklisted(title);
+  if (bad) return { ...NO, why: `excluded file: ${bad}` };
   if (!IMAGE_EXT.test(title)) return { ...NO, why: "not a raster image" };
   if (!mentionsPorsche(title) || isNoise(title)) return { ...NO, why: "not usable" };
   if (!genCompatible(genSignal(title), gen)) return { ...NO, why: `title does not identify ${gen}` };
+  if (yearVeto(title, gen)) return { ...NO, why: "title states a model year outside this generation" };
   return { ok: true, score: 24, why: `identifies as ${gen}` };
 }
 
@@ -1090,6 +1213,11 @@ function subjectScore(title: string, rank: number): number {
   if (/rear|heck/.test(t)) s -= 2;
   if (/interior|cockpit|detail|engine/.test(t)) s -= 5;
   if (/panoramio|\d{6,}/.test(t)) s -= 1;
+  // shots where the car is a speck in a wide frame make poor heroes
+  if (/(corner|crossroad|intersection|street|traffic|parking|panorama|cityscape|building|storefront)/.test(t)) {
+    s -= 7;
+  }
+  if (/(three-quarter|threequarter|side view|profile)/.test(t)) s += 3;
   return s;
 }
 
@@ -1158,7 +1286,29 @@ function referencedCredits(images: ImagesFile): Set<string> {
   return out;
 }
 
+/** Every ImageRef of one credit must resolve to that credit's canonical
+ *  localPath: a photo shared by several variants is rendered once, and the
+ *  directory is decided by whichever generation wrote the credit last. */
+function normaliseRefs(images: ImagesFile, credits: Map<string, CreditOut>): void {
+  const walk = (node: unknown): void => {
+    if (Array.isArray(node)) {
+      node.forEach(walk);
+      return;
+    }
+    if (!node || typeof node !== "object") return;
+    const obj = node as Record<string, unknown>;
+    if (typeof obj.creditId === "string" && typeof obj.src === "string") {
+      const credit = credits.get(obj.creditId);
+      if (credit?.localPath) obj.src = credit.localPath;
+    }
+    for (const v of Object.values(obj)) walk(v);
+  };
+  walk(images.generations);
+  walk(images.variants);
+}
+
 function writeData(images: ImagesFile, credits: Map<string, CreditOut>): void {
+  normaliseRefs(images, credits);
   images.generatedAt = new Date().toISOString();
   const used = referencedCredits(images);
   for (const id of [...credits.keys()]) if (!used.has(id)) credits.delete(id);
@@ -1284,6 +1434,11 @@ async function runGeneration(
     const m = metaOf(t);
     return base + bonusOf(t) + compositionScore(m.width, m.height) + subjectScore(t, seenTitles.get(t)?.rank ?? 99);
   };
+  /** 992.2 is the T-Hybrid car: prefer titles that say so, never prefer 992.1. */
+  const subGenExtra = (t: string, spec: Spec): number => {
+    if (spec.gen !== "992-2") return 0;
+    return /t-hybrid|t-hybrid|thybrid/.test(norm(t)) ? 14 : -3;
+  };
 
   /* 3 — generation hero + timeline --------------------------------------- */
   const genRanked = usable
@@ -1304,11 +1459,21 @@ async function runGeneration(
 
   /* 4 — per-variant selection: exact first, then same-family top-up ------ */
   const picks = new Map<string, Selection[]>();
+  const heroUsed = new Set<string>();
   for (const spec of specs) {
     const chosen: Selection[] = [];
+    // a photo already used as another variant's hero of this generation is a last
+    // resort here: every variant page should lead with its own car
+    const diversity = (t: string): number => (heroUsed.has(t) ? -28 : 0);
     const ranked = (perSpec.get(spec.key) ?? [])
       .filter((c) => licences.get(c.fileTitle)?.ok === true)
-      .map((c) => ({ t: c.fileTitle, s: scoreOf(c.fileTitle, 100 + 8 * spec.required.length) }))
+      .map((c) => ({
+        t: c.fileTitle,
+        s:
+          scoreOf(c.fileTitle, 100 + 8 * spec.required.length) +
+          subGenExtra(c.fileTitle, spec) +
+          diversity(c.fileTitle),
+      }))
       .sort((a, b) => b.s - a.s);
     for (const r of ranked) {
       if (chosen.length >= MAX_VARIANT_IMAGES) break;
@@ -1320,7 +1485,11 @@ async function runGeneration(
         .filter((t) => !chosen.some((x) => x.title === t))
         .map((t) => ({ t, m: matchFamily(t, spec) }))
         .filter((x) => x.m.ok)
-        .map((x) => ({ t: x.t, s: scoreOf(x.t, x.m.score), why: x.m.why }))
+        .map((x) => ({
+          t: x.t,
+          s: scoreOf(x.t, x.m.score) + subGenExtra(x.t, spec) + diversity(x.t),
+          why: x.m.why,
+        }))
         .sort((a, b) => b.s - a.s);
       for (const f of fam) {
         if (chosen.length >= MAX_VARIANT_IMAGES) break;
@@ -1417,6 +1586,7 @@ async function runGeneration(
       list = [{ title: heroTitle, tier: "generation", note: `${gen.name} (${gen.code})` }];
       standIn++;
     }
+    if (list[0]) heroUsed.add(list[0].title);
     const refs = list
       .map((s, i) =>
         refFor(
@@ -1471,9 +1641,10 @@ async function main(): Promise<void> {
   fs.mkdirSync(RAW_DIR, { recursive: true });
 
   const all = loadGenerations();
-  const targets = (wantAll ? all : all.filter((g) => gens.includes(g.id))).sort(
-    (a, b) => (a.index ?? 0) - (b.index ?? 0),
-  );
+  // explicit --gen order is the caller's priority order; --all runs chronologically
+  const targets = wantAll
+    ? all
+    : gens.map((g) => all.find((x) => x.id === g)).filter((x): x is GenerationLite => Boolean(x));
   if (targets.length === 0) {
     console.error(`unknown generation; available: ${all.map((g) => g.id).join(", ")}`);
     process.exit(1);
@@ -1484,7 +1655,7 @@ async function main(): Promise<void> {
   for (const gen of targets) {
     await runGeneration(gen, images, credits, variants, dryRun);
   }
-  writeData(images, credits);
+  if (!dryRun) writeData(images, credits);
   console.log(`\ndata/images.json + data/credits.json written · ${credits.size} credits`);
 }
 

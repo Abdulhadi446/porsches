@@ -7,8 +7,9 @@ dist/
 .env*.local
 .vercel
 .tsbuildinfo
+# Generated image renders (~423 MB) are reproducible via `npm run assets:images`
 public/images/**/*
-!public/images/.gitkeep
-public/models/**/*
-!public/models/.gitkeep
+!public/images/_placeholder/
+!public/images/README.md
+# 3D models are small and are versioned so deploys do not depend on the fetch step
 .cache/

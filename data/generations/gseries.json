@@ -10,17 +10,86 @@
   "accent": "#f47b20",
   "eraType": "display",
   "stats": [
-    { "label": "Production", "value": "198,496 (1973–1989)" },
-    { "label": "Model years", "value": "16 — 1974 through 1989" },
-    { "label": "Body styles", "value": "Coupé · Targa · Cabriolet · Speedster" },
-    { "label": "Engines", "value": "2.7 / 3.0 / 3.2 / 3.3 L flat-six" },
-    { "label": "Top speed", "value": "275 km/h (171 mph) — 330 PS Flachbau" },
-    { "label": "First 911 Turbo", "value": "1975 — 930, 260 PS (191 kW)" }
+    {
+      "label": "Production",
+      "value": "198,496 (1973–1989)"
+    },
+    {
+      "label": "Model years",
+      "value": "16 — 1974 through 1989"
+    },
+    {
+      "label": "Body styles",
+      "value": "Coupé · Targa · Cabriolet · Speedster"
+    },
+    {
+      "label": "Engines",
+      "value": "2.7 / 3.0 / 3.2 / 3.3 L flat-six"
+    },
+    {
+      "label": "Top speed",
+      "value": "275 km/h (171 mph) — 330 PS Flachbau"
+    },
+    {
+      "label": "First 911 Turbo",
+      "value": "1975 — 930, 260 PS (191 kW)"
+    }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/gseries/img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446-1920.avif",
+    "alt": "G-Model & 930 Turbo (G-SERIES) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJbAC7ADJzU6DemAA/qMtgqvv7wW4gL2c5BdUKxyZ0sy1e9tS4ZU02mPuHDZ0yd+IUp3wtAKQS6T9MSYL1TD+rLN4+yAA",
+    "creditId": "img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446",
+    "width": 1920,
+    "height": 1187
+  },
+  "timelineImage": {
+    "src": "/images/gseries/img-1974-porsche-911-carrera-rs-3-0-3ff3ac31-1920.avif",
+    "alt": "G-Model & 930 Turbo (G-SERIES) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAkABABoJbACdAD0pjeeRVAAAP6/x9FL3h0vjZrsUnMn4UNyyKL9gTTWJZDaKHTdR7BE+pqebVsdqT6F/I4zz87oLzrK77/CgstSG4Gu6P3/tocAAA==",
+    "creditId": "img-1974-porsche-911-carrera-rs-3-0-3ff3ac31",
+    "width": 1920,
+    "height": 1123
+  },
+  "model3d": {
+    "glb": "/models/930-turbo-1975/model.glb",
+    "embedUrl": null,
+    "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+    "license": "MIT (repo) + CC Attribution (geometry, inferred)",
+    "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+    "turntable": null,
+    "bytes": 2206432
+  },
+  "videos": [
+    {
+      "id": "-WmO6Pn5Tqg",
+      "title": "This Porsche 930 Turbo Is A Widowmaker",
+      "channel": "Petrolicious",
+      "poster": null,
+      "note": "period-correct 930 launch era, and the nickname explained"
+    },
+    {
+      "id": "mqVwMQMAEEY",
+      "title": "Porsche 930 Turbo | The Big Thing with Magnus Walker - Ep. 03",
+      "channel": "Hagerty",
+      "poster": null,
+      "note": "Magnus Walker on what the 930 did for Porsche and the badge"
+    },
+    {
+      "id": "cDo67maiZDo",
+      "title": "Porsche 911 turbo drive and review. The legendary '80s Porsche 930",
+      "channel": "Harry's garage",
+      "poster": null,
+      "note": "long road-and-track appraisal of the '80s 930"
+    },
+    {
+      "id": "zCTeWbpCCMM",
+      "title": "The End Of An Era: 1984 - 1989 Porsche 911 Carrera 3.2",
+      "channel": "Roadster Life",
+      "poster": null,
+      "note": "the final air-cooled G-series run out to 1989"
+    }
+  ],
   "variants": [
     {
       "id": "911-2.7",
@@ -39,19 +108,123 @@
       "weight": "1,075 kg (MY1974–75); 1,123 kg (MY1976–77)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual (4-speed manual for some MY1976 cars)",
-      "bodyStyles": ["coupe", "targa"],
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
       "description": "The entry-level G-Model arrived with the 1974 model year, its 2.7-litre flat-six carried over from the Carrera RS 2.7 but fed by Bosch K-Jetronic rather than mechanical injection. Federal impact bumpers and the full-width rear light band defined its looks, and Coupé and Targa were the only bodies offered. Output was 150 PS (110 kW) through 1975 and rose to 165 PS (121 kW) for 1976–77, lifting top speed from 210 to 217 km/h. It was the volume car of the early range: roughly 17,000 Coupés and Targas left Zuffenhausen across four model years.",
       "production": "≈16,977 Coupé + Targa (1974–1977, stuttcars G-series production table)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+        "alt": "911 2.7",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+        "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+        "width": 1920,
+        "height": 1190
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 2.7 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 2.7 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 2.7 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-26267-120ed128-1920.avif",
+          "alt": "911 2.7 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJbAC06DjWlOGYwAA/qMq4HWazCAZUAXeZqnFxNeo4iX8RzubXM0dsYnBTV+uS8uJcVmWh3OniPMaBnHjgAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-26267-120ed128",
+          "width": 1920,
+          "height": 1044
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-bs-o24-b6f1a2d7-1920.avif",
+          "alt": "911 2.7 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJaACdAC9SJeyAAD+GbXisdi0L2Q18IO80X95kKnG78JD27xXOsudpTGB/vX5PyIy4KRtz6rT84vE//nVC6SgAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-bs-o24-b6f1a2d7",
+          "width": 1920,
+          "height": 1053
+        },
+        {
+          "src": "/images/911-2.7/img-1973-porsche-911-2-7-53556509215-c49ffd55-1920.avif",
+          "alt": "911 2.7 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAkABABoJZQCdAYsPkv3DUwDAADOKaKMbgH5vIAX7u5aHLrc78/mYUJeeaJbflWhoU3aVava5micgU8inDfgWMTDxqR19MiAAA==",
+          "creditId": "img-1973-porsche-911-2-7-53556509215-c49ffd55",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/images/911-2.7/img-1973-porsche-911-2-7-4475d845-1920.avif",
+          "alt": "911 2.7 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwABABoJbACdAEOAXJ3VAAAyygl2cdlqtMC7BsXWgoQB7svNRDeK6tOBf7enLFOdmFbJ0GEKwsUc47pEomu8SAe6hnQwAA=",
+          "creditId": "img-1973-porsche-911-2-7-4475d845",
+          "width": 1920,
+          "height": 1445
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7_BS_O24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7_BS_O24.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3234×1931px (1429 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars", "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" },
-        { "title": "Porsche 911 Coupe (G) — Automoli specifications", "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/" }
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars",
+          "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        },
+        {
+          "title": "Porsche 911 Coupe (G) — Automoli specifications",
+          "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/"
+        }
       ],
       "missing": [
         "Torque given without engine speed — factory rpm not published in the sources used.",
@@ -75,19 +248,115 @@
       "weight": "1,105 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual",
-      "bodyStyles": ["coupe", "targa"],
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
       "description": "The 911 S 2.7 sat in the middle of the early G-Model line-up: the same K-Jetronic 2.7-litre flat-six as the base car, but tuned to 175 PS (129 kW), a 25 PS gain over the entry model. Top speed rose to 225 km/h (140 mph) and 0–100 km/h fell to 7.6 seconds. Like every early G-Model it was offered as a Coupé or Targa, and it was produced alongside the rarer Kugelfischer-fed Carrera 2.7. Porsche dropped the S after 1977 as the range consolidated around 3.0-litre cars.",
       "production": "≈17,641 Coupé + Targa (1974–1977, stuttcars G-series production table)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-s-2.7/img-1976-porsche-911-s-2-7-4d9bfcb8-1920.avif",
+        "alt": "911 S 2.7",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAkABABoJZACdH8AFmBD2xDEGAD7It5O6h1uphBth3Rvbs1X7by8/AEe5b+aKDK1YNFsFlL3x7rUokLJ0ljLGeLgAA==",
+        "creditId": "img-1976-porsche-911-s-2-7-4d9bfcb8",
+        "width": 1920,
+        "height": 1102
+      },
+      "gallery": [
+        {
+          "src": "/images/911-s-2.7/img-porsche-911-s-targa-2-7-s-6301644-9fc2813d-1920.avif",
+          "alt": "911 S 2.7 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAQCdASoQAAwABABoJaACdABwgAD+49B1AcdgpXVOjUOe4aJUpHUAdk6IgSf7Brlff3k3tb4akW4l6PTiC4YwIAA=",
+          "creditId": "img-porsche-911-s-targa-2-7-s-6301644-9fc2813d",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-s-2.7/img-porsche-911-s-targa-2-7-s-targa-6280386-713322d1-1920.avif",
+          "alt": "911 S 2.7 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAwABABoJYwCdAEPfYgvKmAAAP7pXrfTQ6iWoD7sKdFBFKBGycVe5fOC7N1Lv4c/H05ZXRllLZ6zrAAAAA==",
+          "creditId": "img-porsche-911-s-targa-2-7-s-targa-6280386-713322d1",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/911-s-2.7/img-porsche-911s-1977-2-7-coupe-lfrontside-night-mode-porschem-64d5d711-640.avif",
+          "alt": "911 S 2.7 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsABABoJZQAAuYYViQncAD+93yA92+Qn7bDR2L8wfHc4ZwaHrYBHeaDQZXBhs28mnPNqjivzAM3l05PQysA1ymDpgBDgAA=",
+          "creditId": "img-porsche-911s-1977-2-7-coupe-lfrontside-night-mode-porschem-64d5d711",
+          "width": 640,
+          "height": 428
+        },
+        {
+          "src": "/images/911-s-2.7/img-porsche-911s-1977-2-7-coupe-lsidefront-porschem-9june2013-461c9e26-640.avif",
+          "alt": "911 S 2.7 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsABABoJQBOgCHYmkzFHCkAAP73eWo8xm1UdjbQnNubV+SVAxZqafTNIOrttdpT89mDa5i52jeVYtgbRA5nfJNEq1/QAAA=",
+          "creditId": "img-porsche-911s-1977-2-7-coupe-lsidefront-porschem-9june2013-461c9e26",
+          "width": 640,
+          "height": 428
+        },
+        {
+          "src": "/images/911-s-2.7/img-porsche-911s-1977-2-7-coupe-lside-porschem-9june2013-15009-85ea64ed-640.avif",
+          "alt": "911 S 2.7 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJQBOgB8mUpAkogAA/vSq0UukJcvoTpw8E6EEYJdKZmUEhEzjK5K/lEnpCHpSOwZsQ7gvtwDUg3OLdPGTH9bAAAA=",
+          "creditId": "img-porsche-911s-1977-2-7-coupe-lside-porschem-9june2013-15009-85ea64ed",
+          "width": 640,
+          "height": 428
+        },
+        {
+          "src": "/images/911-s-2.7/img-porsche-911s-1977-2-7-coupe-lsiderear-porschem-9june2013-1-1d7c1956-640.avif",
+          "alt": "911 S 2.7 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsABABoJZQAAt0Kfgj5NeIAAP7lO3hAhcttP0SCHXu2XvmPDqsQb9jVCTq1/DsuZTCjHvVzXRle+46gCSo6o9PSoqAA",
+          "creditId": "img-porsche-911s-1977-2-7-coupe-lsiderear-porschem-9june2013-1-1d7c1956",
+          "width": 640,
+          "height": 428
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1976-porsche-911-s-2-7-4d9bfcb8",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_S_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_S_2.7.jpg",
+          "localPath": "/images/911-s-2.7/img-1976-porsche-911-s-2-7-4d9bfcb8-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3612×2074px (1634 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-s-targa-2-7-s-6301644-9fc2813d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_S_Targa_-_2.7_S_6301644.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Ermell",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_S_Targa_-_2.7_S_6301644.jpg",
+          "localPath": "/images/911-s-2.7/img-porsche-911-s-targa-2-7-s-6301644-9fc2813d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3383×2537px (4522 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars", "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" },
-        { "title": "Porsche 911 Coupe (G) — Automoli specifications", "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/" }
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars",
+          "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        },
+        {
+          "title": "Porsche 911 Coupe (G) — Automoli specifications",
+          "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/"
+        }
       ],
       "missing": [
         "Torque given without engine speed — factory rpm not published in the sources used.",
@@ -111,18 +380,103 @@
       "weight": "1,075 kg (1974–75)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual",
-      "bodyStyles": ["coupe", "targa"],
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
       "description": "For four years the Carrera 2.7 was the fastest normally aspirated 911 on the price list. Its 2,687 cc flat-six kept the Bosch Kugelfischer mechanical injection of the 1973 RS 2.7 and made 210 PS (154 kW), good for 0–100 km/h in 6.3 seconds and a 240 km/h (149 mph) top speed. A wider rear track gave the Carrera its Coke-bottle silhouette, and like the 2.7 S it was sold as a Coupé or Targa. European cars retained mechanical injection throughout; North America received K-Jetronic versions.",
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+        "alt": "911 Carrera 2.7",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+        "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+        "width": 1920,
+        "height": 1190
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Carrera 2.7 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Carrera 2.7 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 Carrera 2.7 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-26267-120ed128-1920.avif",
+          "alt": "911 Carrera 2.7 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJbAC06DjWlOGYwAA/qMq4HWazCAZUAXeZqnFxNeo4iX8RzubXM0dsYnBTV+uS8uJcVmWh3OniPMaBnHjgAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-26267-120ed128",
+          "width": 1920,
+          "height": 1044
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-bs-o24-b6f1a2d7-1920.avif",
+          "alt": "911 Carrera 2.7 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJaACdAC9SJeyAAD+GbXisdi0L2Q18IO80X95kKnG78JD27xXOsudpTGB/vX5PyIy4KRtz6rT84vE//nVC6SgAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-bs-o24-b6f1a2d7",
+          "width": 1920,
+          "height": 1053
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7_BS_O24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7_BS_O24.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3234×1931px (1429 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "Porsche 911 (G-Series) — The Story, stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-the-story/" },
-        { "title": "Porsche 911 Coupe (G) — Automoli specifications", "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/" }
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "Porsche 911 (G-Series) — The Story, stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-the-story/"
+        },
+        {
+          "title": "Porsche 911 Coupe (G) — Automoli specifications",
+          "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/"
+        }
       ],
       "missing": [
         "Production count not verified — European MFI and North American K-Jetronic cars are counted differently by the sources found, so no figure is published here."
@@ -145,20 +499,123 @@
       "weight": "≈900 kg dry",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The RS 3.0 was built in tiny numbers purely to homologate the 3.0-litre RSR racing car. Its 2,993 cc engine took the RSR's 95 mm bore and ran Kugelfischer mechanical injection on 9.8:1 compression, while the chassis gained wider Fuchs wheels, a reinforced suspension and 917-derived cross-drilled ventilated brakes. A systematic diet left the car around 900 kg dry. In road tune the six produced 230 PS (169 kW) at 6,200 rpm with 275 Nm at 5,000. Only 55–56 cars were completed in 1974.",
       "production": "55 built (stuttcars, RM Sotheby's) / 56 (Classic Driver, Gooding) — sources differ",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gseries/img-1974-porsche-911-carrera-rs-3-0-3ff3ac31-1920.avif",
+        "alt": "911 Carrera RS 3.0",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAkABABoJbACdAD0pjeeRVAAAP6/x9FL3h0vjZrsUnMn4UNyyKL9gTTWJZDaKHTdR7BE+pqebVsdqT6F/I4zz87oLzrK77/CgstSG4Gu6P3/tocAAA==",
+        "creditId": "img-1974-porsche-911-carrera-rs-3-0-3ff3ac31",
+        "width": 1920,
+        "height": 1123
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-18097-1fdd77c4-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAoABABoJZQAAZg/S7bEwAD+41CFH+v7xYvbdC/mCynSp7UD5Nk74Eoi8ZfOd093GTjcz4dnlKPngVXW+dSKG5fB7sTA0K8uIrvzP2XAAA==",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-18097-1fdd77c4",
+          "width": 1920,
+          "height": 1221
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-92054-483e4b71-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJZQAAtvoPm5/ChEAAPff5MfU1UV0V23T7+a2h7QmgjyXkW6Dqzr8FCzNw/hiE5I7LD3IXX+SXq5FkZePyHz758AAAA==",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-92054-483e4b71",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-guards-red-1d253d36-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAkABABoJbACdAEVvO5xmPSJJAD+2augZgLIFIi99Cgl3i2tu95QlyZv5AmSb0Q0Vg1911R/tS3w+Ru2z7xUX+b7ill7G8qPfabNlsLXE4AA",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-guards-red-1d253d36",
+          "width": 1920,
+          "height": 1087
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-48854-d218528a-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJZQAAuR6hAlxRt4AAP5+pyEGAesByfB/mxTMzbvF0uchXu7KZeW1IM0lEN4FNxFii4Uw40snlgSNScxgMrdCvV4AAA==",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-48854-d218528a",
+          "width": 1920,
+          "height": 1318
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-no-9093-front-right-at-lim-1e61d532-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsABABoJQAAX7FvnsEDVSAAzetoSXRCD69ry9YNYSuIeF0U6R1RKmi4NntwxsROHKJGI+oOXTC/odb0QEU+0RE4Iz1j7x/WviY9DojPjAAA",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-no-9093-front-right-at-lim-1e61d532",
+          "width": 1920,
+          "height": 1313
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-porsche-911-carrera-rs-3-0-e3c685b1-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAwABABoJQBOgB0fhPY0YADMjnsLWeuctH9ORw973RR7Gly+ZGWtXJTs9FEyBYYamg+50GKi0d8wZpM+Mq9pHhUiZqx5lK62gjCVb6B99xJhfAAAAA==",
+          "creditId": "img-porsche-911-carrera-rs-3-0-e3c685b1",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-litre-guards-red-cdecbc45-1920.avif",
+          "alt": "911 Carrera RS 3.0 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoABABoJbACdAD2Hyx23ZAA/r4Cd+F3gcFe+KYCrEINBDRQ/vVbdSSMuU2UQKSkJFjajCwAXL1QU7sNgm+biOAiENLDM3HtK/IpcQVgKAAA",
+          "creditId": "img-1974-porsche-911-carrera-rs-3-0-litre-guards-red-cdecbc45",
+          "width": 1920,
+          "height": 1152
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1974-porsche-911-carrera-rs-3-0-3ff3ac31",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1974_Porsche_911_Carrera_RS_3.0.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1974_Porsche_911_Carrera_RS_3.0.jpg",
+          "localPath": "/images/gseries/img-1974-porsche-911-carrera-rs-3-0-3ff3ac31-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4792×2802px (2121 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1974-porsche-911-carrera-rs-3-0-18097-1fdd77c4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1974_Porsche_911_Carrera_RS_3.0_(18097).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1974_Porsche_911_Carrera_RS_3.0_(18097).jpg",
+          "localPath": "/images/carrera-rs-3.0/img-1974-porsche-911-carrera-rs-3-0-18097-1fdd77c4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4080×2594px (3526 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera RS 3.0 (1974) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-rs-3-0-1974/" },
-        { "title": "1974 Porsche 911 \"G\" — 911 Carrera RS 3.0, Classic Driver", "url": "https://www.classicdriver.com/en/car/porsche/911-g/1974/787146" },
-        { "title": "1974 Porsche 911 Carrera RS 3.0 — RM Sotheby's London 2020", "url": "https://rmsothebys.com/auctions/lf20/lots/r0014-1974-porsche-911-carrera-rs-30/" },
-        { "title": "1974 Porsche 911 Carrera RS 3.0 — supercars.net", "url": "https://www.supercars.net/blog/1974-porsche-911-carrera-rs-3-0/" }
+        {
+          "title": "Porsche 911 Carrera RS 3.0 (1974) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rs-3-0-1974/"
+        },
+        {
+          "title": "1974 Porsche 911 \"G\" — 911 Carrera RS 3.0, Classic Driver",
+          "url": "https://www.classicdriver.com/en/car/porsche/911-g/1974/787146"
+        },
+        {
+          "title": "1974 Porsche 911 Carrera RS 3.0 — RM Sotheby's London 2020",
+          "url": "https://rmsothebys.com/auctions/lf20/lots/r0014-1974-porsche-911-carrera-rs-30/"
+        },
+        {
+          "title": "1974 Porsche 911 Carrera RS 3.0 — supercars.net",
+          "url": "https://www.supercars.net/blog/1974-porsche-911-carrera-rs-3-0/"
+        }
       ],
       "missing": [
         "Factory 0–100 km/h figure not published — only 0–60 mph times, and those differ (5.2 s vs 5.5 s).",
@@ -182,20 +639,107 @@
       "weight": "≈900 kg dry",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The RSR 3.0 was the pure competition car that the RS 3.0 existed to homologate. The Type 911/75 engine was bored to 2,996 cc and given twin-spark ignition, a dry sump and a six-piston Kugelfischer pump, revving to 8,000 rpm for 330 bhp (246 kW) and 314 Nm. Dry weight was about 900 kg, with 917-derived ventilated brakes and a reinforced 915 five-speed; top speed was 288 km/h (179 mph). The RSR became the most successful Group 4 racing car of its era, yet Porsche never published a 0–100 km/h time for it.",
       "production": "109 RS 3.0 and RSR 3.0 cars built together; RSR-only count not found",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-rsr-3.0/img-1977-porsche-911-carrera-rsr-3-0-lc24-7435f0c6-1920.avif",
+        "alt": "911 Carrera RSR 3.0",
+        "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAkABABoJbACdAEYG+gu0dZ/kAD+rTzTGtwzZ5vfrc/QoC7IMPv1Mz1pL2j9ok/ME+Evs0jVAooMEQPVz1YJ/nrAOvvbXDYaOfURgAA=",
+        "creditId": "img-1977-porsche-911-carrera-rsr-3-0-lc24-7435f0c6",
+        "width": 1920,
+        "height": 1080
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-rsr-3.0/img-1977-porsche-911-carrera-rsr-3-0-low-lc24-897474ed-1920.avif",
+          "alt": "911 Carrera RSR 3.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoQAAkABABoJbACsAYr7jWZuR2FPAAA/oaglRguDXv1gZ9XgcgaQasD2D+quKu5/32I4B97KynmpCjWR8Gj87seTa40TWvWk7J2AA==",
+          "creditId": "img-1977-porsche-911-carrera-rsr-3-0-low-lc24-897474ed",
+          "width": 1920,
+          "height": 1115
+        },
+        {
+          "src": "/images/carrera-rsr-3.0/img-1973-porsche-911-carrera-rsr-3-0-recreation-a639c799-1920.avif",
+          "alt": "911 Carrera RSR 3.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwAgCdASoQAAsABABoJYgC/OEYFPwNt3rLlCfAAP3bN7ps7QcpqxFSigD+tG17BgaCgZRx5H4GaeJaQvGsBHIsR6ragx+WDxdAXjkNkTk3Jq0KGJEAi+oTUIjxa5IAAAA=",
+          "creditId": "img-1973-porsche-911-carrera-rsr-3-0-recreation-a639c799",
+          "width": 1920,
+          "height": 1336
+        },
+        {
+          "src": "/images/carrera-rsr-3.0/img-porsche-carrera-rsr-3-0-1980-45259563485-939aef18-1920.avif",
+          "alt": "911 Carrera RSR 3.0 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoABABoJbACdAEf5Gg6SRfiUAD+vgOYAktpfLVV4lzQwVAAUKmYxFFfW8lq2XqI7LvG2BA6Nv/enUjvyZawMbuzePdjOI0tL9X8tUdxeJflg3W1E3b24zQGpa6xuh6SAjoZQAA=",
+          "creditId": "img-porsche-carrera-rsr-3-0-1980-45259563485-939aef18",
+          "width": 1920,
+          "height": 1172
+        },
+        {
+          "src": "/images/carrera-rsr-3.0/img-porsche-carrera-rsr-3-0-1980-920a6069-1920.avif",
+          "alt": "911 Carrera RSR 3.0 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAwABABoJbACdDBMwXH9Uxn8quUAAP7shH5apqPrv+OFTMm067njERsCQKOhIv7Hy8WbhaspnVjEgrl8e4NdVAx6bRKcG3VYZ+x7vrZX1YC96/1FgVreeGgG6rJoiTdSpJAA",
+          "creditId": "img-porsche-carrera-rsr-3-0-1980-920a6069",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-rsr-3.0/img-1975-porsche-911-carrera-rsr-3-0-463dcdb4-1920.avif",
+          "alt": "911 Carrera RSR 3.0 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAwABABoJbACdAEfNcBGscgAAP7OA+Jyie26JVub6EVmx/n9X94yXXxaRW/s/vdAl93mdj+OV/L/PScjJaDkfQjstsFDH9HjS0HnsmEL0UtQThJbJD401Sm2Bo9XlQAAAA==",
+          "creditId": "img-1975-porsche-911-carrera-rsr-3-0-463dcdb4",
+          "width": 1920,
+          "height": 1496
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1977-porsche-911-carrera-rsr-3-0-lc24-7435f0c6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1977_Porsche_911_Carrera_RSR_3.0_LC24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1977_Porsche_911_Carrera_RSR_3.0_LC24.jpg",
+          "localPath": "/images/carrera-rsr-3.0/img-1977-porsche-911-carrera-rsr-3-0-lc24-7435f0c6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4707×2648px (2189 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1977-porsche-911-carrera-rsr-3-0-low-lc24-897474ed",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1977_Porsche_911_Carrera_RSR_3.0_Low_LC24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1977_Porsche_911_Carrera_RSR_3.0_Low_LC24.jpg",
+          "localPath": "/images/carrera-rsr-3.0/img-1977-porsche-911-carrera-rsr-3-0-low-lc24-897474ed-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4726×2745px (2254 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera RSR 3.0 (1974) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-rsr-3-0-1974/" },
-        { "title": "1975 Porsche 911 Carrera RSR 3.0 Technical Specifications — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-rsr-3-0-1974-1975-specifications-performance/" },
-        { "title": "1974 Porsche 911 Carrera RSR 3.0 — supercars.net", "url": "https://www.supercars.net/blog/1974-porsche-911-carrera-rsr-3-0/" },
-        { "title": "1974 Porsche 911 Carrera 3.0 RSR — Gooding & Company", "url": "https://bid.goodingco.com/lots/view/1-AXVGGT/1974-porsche-911-carrera-30-rsr" }
+        {
+          "title": "Porsche 911 Carrera RSR 3.0 (1974) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rsr-3-0-1974/"
+        },
+        {
+          "title": "1975 Porsche 911 Carrera RSR 3.0 Technical Specifications — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-rsr-3-0-1974-1975-specifications-performance/"
+        },
+        {
+          "title": "1974 Porsche 911 Carrera RSR 3.0 — supercars.net",
+          "url": "https://www.supercars.net/blog/1974-porsche-911-carrera-rsr-3-0/"
+        },
+        {
+          "title": "1974 Porsche 911 Carrera 3.0 RSR — Gooding & Company",
+          "url": "https://bid.goodingco.com/lots/view/1-AXVGGT/1974-porsche-911-carrera-30-rsr"
+        }
       ],
       "missing": [
         "Factory 0–100 km/h figure not published — only 0–60 mph (5.6 s).",
@@ -219,21 +763,147 @@
       "weight": "1,140–1,195 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 4-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Unveiled at the Paris Motor Show in October 1974 and in showrooms from spring 1975, the 930 Turbo was the first turbocharged 911 and, at the time, the fastest production car sold in Germany. Its 2,993 cc flat-six ran 0.8 bar of boost for 260 PS (191 kW) and 343 Nm, pushing the wide-bodied Coupé to 250 km/h (155 mph) and 0–100 km/h in 5.4–5.5 seconds — all through a four-speed gearbox. The whale tail, flared arches and sudden boost earned it the \"widowmaker\" reputation. Porsche counts 2,819 cars to 1977; its own press material says 2,850.",
       "production": "2,819 (Wikipedia, PurelyPorsche) / 2,850 (Porsche Newsroom, porsche.com) — sources differ",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+        "alt": "911 Turbo 3.0 (930)",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQAAoABABoJYgCdAYsPzgxxKuRpogAAP6tA/dtBJQoB2u1VouylpvXkW0ms0m5Gh9wpT4GcRwHorNh/TY59uaMlHi/dvGOjrbesPx42V5h9AJaMFYAAA==",
+        "creditId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+        "width": 1920,
+        "height": 1155
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-turbo-3-0-43e7ee45-1280.avif",
+          "alt": "911 Turbo 3.0 (930) — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAsABABoJYwCdAEQPf6pqFyjZAAA/geSCXg6ztDAAgSK6acbpba0214yos1UO2ioR1GthF7uN5s8oMqCtbRIbzCzSbxbyXJEdNb676QAAA==",
+          "creditId": "img-porsche-911-turbo-3-0-43e7ee45",
+          "width": 1280,
+          "height": 859
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Turbo 3.0 (930) — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "glb": "/models/930-turbo-1975/model.glb",
+        "embedUrl": null,
+        "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+        "license": "MIT (repo) + CC Attribution (geometry, inferred)",
+        "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+        "turntable": null,
+        "bytes": 2206432
+      },
+      "credits": [
+        {
+          "assetId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1977_Porsche_911_(930)_Turbo_3.0.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1977_Porsche_911_(930)_Turbo_3.0.jpg",
+          "localPath": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3042×1830px (3922 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-turbo-3-0-43e7ee45",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Turbo_3.0.JPG",
+          "license": "CC BY-SA 4.0",
+          "author": "Cocco1974 This image has an extracted file : Porsche 911 Turbo 3.0 (cropped).JPG ",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Turbo_3.0.JPG",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-turbo-3-0-43e7ee45-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1343×901px (378 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        },
+        {
+          "assetId": "model-gseries-turbo-3-0-930",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "/models/930-turbo-1975/model.glb",
+          "license": "MIT (repo) + CC Attribution (geometry, inferred)",
+          "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+          "retrieved": "2026-10-02",
+          "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+          "localPath": "/models/930-turbo-1975/model.glb",
+          "note": "local GLB"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (930) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)" },
-        { "title": "The 911 Turbo generations — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" },
-        { "title": "A brief history of the Porsche 911 Turbo — porsche.com", "url": "https://www.porsche.com/stories/innovation/brief-history-of-porsche-911-turbo/" },
-        { "title": "Porsche 911 Coupe (Type 930) 3.0 Turbo (260 Hp) — auto-data.net", "url": "https://www.auto-data.net/en/porsche-911-coupe-type-930-3.0-turbo-260hp-6649" },
-        { "title": "911 930 Turbo ~ 1975-1977 — PurelyPorsche", "url": "https://purelyporsche.com/timeline/911-930-turbo-1975-1977/" }
+        {
+          "title": "Porsche 911 (930) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)"
+        },
+        {
+          "title": "The 911 Turbo generations — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+        },
+        {
+          "title": "A brief history of the Porsche 911 Turbo — porsche.com",
+          "url": "https://www.porsche.com/stories/innovation/brief-history-of-porsche-911-turbo/"
+        },
+        {
+          "title": "Porsche 911 Coupe (Type 930) 3.0 Turbo (260 Hp) — auto-data.net",
+          "url": "https://www.auto-data.net/en/porsche-911-coupe-type-930-3.0-turbo-260hp-6649"
+        },
+        {
+          "title": "911 930 Turbo ~ 1975-1977 — PurelyPorsche",
+          "url": "https://purelyporsche.com/timeline/911-930-turbo-1975-1977/"
+        }
       ],
       "missing": [
         "Production count unresolved: 2,819 (Wikipedia/PurelyPorsche) vs 2,850 (Porsche's own press kit) — both cited.",
@@ -257,21 +927,164 @@
       "weight": "≈1,300 kg (MY1978–79); 1,210–1,379 kg across the run",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 4-speed manual; five-speed Getrag G50 from 1989",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "For 1978 the Turbo grew to 3,299 cc and gained an air-to-air intercooler tucked under a re-profiled \"tea tray\" wing — the first production car to use one. Output rose to 300 PS (221 kW) at 5,500 rpm with 412 Nm, yet top speed only edged up to 260 km/h (162 mph) while kerb weight passed 1,300 kg. A Werksleistungssteigerung kit lifted output to 330 PS. From February 1987 Targa and Cabriolet bodies joined the range, and for 1989 the four-speed was finally replaced by a five-speed Getrag G50. Roughly 18,770 were built (Porsche's own figure is 17,792).",
       "production": "18,770 (Wikipedia) / 17,792 (porsche.com) — sources differ",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/turbo-3.3-930/img-festival-automobile-international-2011-vente-aux-enche-res-398e76cc-1920.avif",
+        "alt": "911 Turbo 3.3 (930)",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAsABABoJZQAAaXQUeQAAP7A9gn7Yy4t99AyRrX2n/VJdnf9/7+Z1Uh1jjFv4mjoLmU11TzVMDjllgwIqVLJekoAAA==",
+        "creditId": "img-festival-automobile-international-2011-vente-aux-enche-res-398e76cc",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-3.3-930/img-festival-automobile-international-2011-vente-aux-enche-res-524184a1-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAsABABoJZwAAq8Tv7+dcAAA/aEIlPx/z9hGQJqB5eMceu+U7qJZN4Yyn6oqBpfkDU+xgPY4AA==",
+          "creditId": "img-festival-automobile-international-2011-vente-aux-enche-res-524184a1",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-porsche-e-930-911-turbo-3-3-no-23-22052909464-9603dd2e-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsABABoJYwAD5JvuCVH42a8AAD+0VgLDiAzXZgDL4TYi7F3CbDopwSKOBQ4K8VsfUDmxkRSP4UpjD+yHe7SfLlXHt3xN/oCFHLGUnbADgAiz5ABXAAA",
+          "creditId": "img-porsche-e-930-911-turbo-3-3-no-23-22052909464-9603dd2e",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-1981-porsche-930-turbo-3-3-bs-o24-6954dc77-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsABABoJQAAYtm+rNyC3YAA/XBW3OWIo57gEe3vdsvREDPr89r8vZwGn3M0H9dT3YJpYrIyOH2GGNCLFhvE/tZ3NGie/LAAAA==",
+          "creditId": "img-1981-porsche-930-turbo-3-3-bs-o24-6954dc77",
+          "width": 1920,
+          "height": 1302
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-1981-porsche-930-turbo-3-3-2-a11cacec-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsABABoJYwC7ADV+yTbYAD33BJnonHk+zNx4hSlizVoO1RljKwOGwf/xwEmgxWKNpLLHK06F7HYP09klrNi5mqktBO1UKcOyeAA",
+          "creditId": "img-1981-porsche-930-turbo-3-3-2-a11cacec",
+          "width": 1920,
+          "height": 1344
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-1981-porsche-930-turbo-3-3-9685ee9d-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwABABoJQBdgCHu2PWQjbQA+p9BCM9EPjAEhfYExpVPs4owQh3MQmKtk0uyaRKS3aYPj63iSoPZ79WrZERh5gQJXHOw2ORVmLKLSJjn/eniYgAAAA==",
+          "creditId": "img-1981-porsche-930-turbo-3-3-9685ee9d",
+          "width": 1920,
+          "height": 1391
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-porsche-911-turbo-typ-930-3-3-adac-deutschland-klassik-201-ab3c51c1-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABwAQCdASoQAAgABABoJYwAAlZQAAD9lRuw6YtAJH+V5jPas2r3BPNVr0+9pKn935M62i+ujscuuug4AAA=",
+          "creditId": "img-porsche-911-turbo-typ-930-3-3-adac-deutschland-klassik-201-ab3c51c1",
+          "width": 1920,
+          "height": 949
+        },
+        {
+          "src": "/images/turbo-3.3-930/img-1989-porsche-930-turbo-3-3-g50-targa-23fcebfa-1920.avif",
+          "alt": "911 Turbo 3.3 (930) — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAwABABoJZgC7AEQ9gTl5XToAAD+waPNQRM+QCleHhzAFharHz8c0bXNwcuRxfP7N2hVJPxyGCquDqN66gTXKqC5GD3n1WC5KdnGQ5T8pV10nfwCjiAA",
+          "creditId": "img-1989-porsche-930-turbo-3-3-g50-targa-23fcebfa",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
+      "videos": [
+        {
+          "id": "x00O3wHIP0Q",
+          "title": "This Porsche 930 Has Been Unleashed",
+          "channel": "Petrolicious",
+          "poster": null,
+          "note": "3.3-litre Kreasel turbo car at full boost, valves included"
+        },
+        {
+          "id": "n_XlcTBjVgY",
+          "title": "The Original Porsche 911 930 Turbo Is Awesome and Fast",
+          "channel": "Doug DeMuro",
+          "poster": null,
+          "note": "high-strung 930, driving impressions with real-world caveats"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-1980-d792213008744efa9253a9147523ca2d?embed=1",
+        "sourceId": "d792213008744efa9253a9147523ca2d",
+        "license": "CC Attribution",
+        "author": "Maarten Leys",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-festival-automobile-international-2011-vente-aux-enche-res-398e76cc",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFestival_automobile_international_2011_-_Vente_aux_ench%C3%A8res_-_Porsche_930_turbo_3.3_cabriolet_-_1987_-_002.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Thesupermat",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Festival_automobile_international_2011_-_Vente_aux_enchères_-_Porsche_930_turbo_3.3_cabriolet_-_1987_-_002.jpg",
+          "localPath": "/images/turbo-3.3-930/img-festival-automobile-international-2011-vente-aux-enche-res-398e76cc-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4752×3168px (11130 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-festival-automobile-international-2011-vente-aux-enche-res-524184a1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFestival_automobile_international_2011_-_Vente_aux_ench%C3%A8res_-_Porsche_930_turbo_3.3_cabriolet_-_1987_-_001.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Thesupermat",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Festival_automobile_international_2011_-_Vente_aux_enchères_-_Porsche_930_turbo_3.3_cabriolet_-_1987_-_001.jpg",
+          "localPath": "/images/turbo-3.3-930/img-festival-automobile-international-2011-vente-aux-enche-res-524184a1-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4752×3168px (12463 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-gseries-turbo-3-3-930",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-turbo-1980-d792213008744efa9253a9147523ca2d?embed=1",
+          "license": "CC Attribution",
+          "author": "Maarten Leys",
+          "retrieved": "2026-10-02",
+          "sourceId": "d792213008744efa9253a9147523ca2d",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (930) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)" },
-        { "title": "The 911 Turbo generations — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" },
-        { "title": "A brief history of the Porsche 911 Turbo — porsche.com", "url": "https://www.porsche.com/stories/innovation/brief-history-of-porsche-911-turbo/" },
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "50 years of the Porsche 911 (G-Series) — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/50-Jahre-Porsche-911-(G-Serie)-%E2%80%93-Der-Dauerbrenner-von-Porsche.html" }
+        {
+          "title": "Porsche 911 (930) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)"
+        },
+        {
+          "title": "The 911 Turbo generations — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+        },
+        {
+          "title": "A brief history of the Porsche 911 Turbo — porsche.com",
+          "url": "https://www.porsche.com/stories/innovation/brief-history-of-porsche-911-turbo/"
+        },
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "50 years of the Porsche 911 (G-Series) — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/50-Jahre-Porsche-911-(G-Serie)-%E2%80%93-Der-Dauerbrenner-von-Porsche.html"
+        }
       ],
       "missing": [
         "Production count unresolved: 18,770 (Wikipedia) vs 17,792 (porsche.com) — both cited.",
@@ -296,20 +1109,153 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 4-speed manual; five-speed Getrag G50 from 1989",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "The Flachbau (slantnose) was Porsche's Sonderwunsch answer to customers who wanted their Turbo to look like a 935. Steel front wings dropped the headlights into the bumper — pop-up lamps from 1983 — while louvred rear-wheel air intakes and a deep front spoiler with an integral oil cooler completed the transformation. First customer cars left the Restoration Department in Werks 1 in 1982; production ran in three generations to 1989, when M505 (US) and M506 (rest-of-world) cars were finally built on the main line. Porsche counts 948 in total. With the 330 PS kit it was the fastest 930, at 275 km/h (171 mph).",
       "production": "948 built — 58 generation 1 (1982–83), 204 generation 2 (1983–87), 686 generation 3 (1987–89)",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/gseries/img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446-1920.avif",
+        "alt": "911 Turbo Flachbau",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJbAC7ADJzU6DemAA/qMtgqvv7wW4gL2c5BdUKxyZ0sy1e9tS4ZU02mPuHDZ0yd+IUp3wtAKQS6T9MSYL1TD+rLN4+yAA",
+        "creditId": "img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446",
+        "width": 1920,
+        "height": 1187
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-flachbau/img-ruf-btr-930-flachbau-8007d4b2-1920.avif",
+          "alt": "911 Turbo Flachbau — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoABABoJbACdADdcKiBn8A+gAD+TXnsSo9fycnJJI1nJGBcafKVp1zWxlcYo1OUL2f95FyPFnqPpAkXJDNnUZJtTD/G1h7v1g3aHKtLddAA",
+          "creditId": "img-ruf-btr-930-flachbau-8007d4b2",
+          "width": 1920,
+          "height": 1168
+        },
+        {
+          "src": "/images/turbo-flachbau/img-porsche-930-turbo-flachbau-in-guards-red-rear-left-6571063b-1920.avif",
+          "alt": "911 Turbo Flachbau — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAoABABoJZgC7ACkmLNrBgAAyx/CtuP8IqbygvIE1UFjmtM4FwCWYK88Vt+rP+NI6Ij05V6O1+kREW4lBG6LXybIHoDMdSzvRN6xBIAAAA==",
+          "creditId": "img-porsche-930-turbo-flachbau-in-guards-red-rear-left-6571063b",
+          "width": 1920,
+          "height": 1237
+        },
+        {
+          "src": "/images/turbo-flachbau/img-porsche-930-turbo-flachbau-in-guards-red-front-left-9214c978-1920.avif",
+          "alt": "911 Turbo Flachbau — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbACdAECmqQZ/zNwAP6jYBtzkp3fP8hOCPflIW71uiZe2lc+FEPWRrDbqDAmDKefIzQ1u4DLOwfZrFrzR9pj8DpMPRHHKToPYAAA",
+          "creditId": "img-porsche-930-turbo-flachbau-in-guards-red-front-left-9214c978",
+          "width": 1920,
+          "height": 1295
+        },
+        {
+          "src": "/images/turbo-flachbau/img-1988-porsche-930-turbo-cabriolet-flachbau-rear-left-hershe-9c334f3a-1920.avif",
+          "alt": "911 Turbo Flachbau — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAsABABoJagCdDBAAU6znh0yoAAA+yGmMLhp85W8V5YaOCNTuMT5eN66va8Rimc+Hu2ZKobN+2VeUyBeXHRFuONe7Ra1xDCKapBkUXHxDBhJAAA=",
+          "creditId": "img-1988-porsche-930-turbo-cabriolet-flachbau-rear-left-hershe-9c334f3a",
+          "width": 1920,
+          "height": 1273
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+          "alt": "911 Turbo Flachbau — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQAAoABABoJYgCdAYsPzgxxKuRpogAAP6tA/dtBJQoB2u1VouylpvXkW0ms0m5Gh9wpT4GcRwHorNh/TY59uaMlHi/dvGOjrbesPx42V5h9AJaMFYAAA==",
+          "creditId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+          "width": 1920,
+          "height": 1155
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 Turbo Flachbau — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Turbo Flachbau — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        }
+      ],
+      "videos": [
+        {
+          "id": "DGhSB8DfEwI",
+          "title": "Porsche 911 930 Slantnose | Porsche Targa: Part Two | Road Review I survived the Widowmaker",
+          "channel": "Chasing The Apex",
+          "poster": null,
+          "note": "slantnose Carrera 3.2 Turbo road review, the '84–89 slant nose"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-930-flachbau-16e4693a8f4144e4a071685289869dd6?embed=1",
+        "sourceId": "16e4693a8f4144e4a071685289869dd6",
+        "license": "CC Attribution",
+        "author": "LowPolyGarage",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1988_Porsche_930_Turbo_Cabriolet_Flachbau%2C_front_right_(Hershey_2019).jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Mr.choppers",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1988_Porsche_930_Turbo_Cabriolet_Flachbau,_front_right_(Hershey_2019).jpg",
+          "localPath": "/images/gseries/img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5091×3148px (9150 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-ruf-btr-930-flachbau-8007d4b2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARUF_BTR_930_Flachbau.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:RUF_BTR_930_Flachbau.jpg",
+          "localPath": "/images/turbo-flachbau/img-ruf-btr-930-flachbau-8007d4b2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3345×2035px (1308 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-gseries-turbo-flachbau",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-930-flachbau-16e4693a8f4144e4a071685289869dd6?embed=1",
+          "license": "CC Attribution",
+          "author": "LowPolyGarage",
+          "retrieved": "2026-10-02",
+          "sourceId": "16e4693a8f4144e4a071685289869dd6",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Discover the Porsche 930 Turbo Slantnose — porsche.com", "url": "https://www.porsche.com/stories/innovation/discover-the-porsche-930-turbo-slantnose/" },
-        { "title": "911 Slantnose Versions — 911flachbau.com", "url": "https://www.911flachbau.com/generations" },
-        { "title": "Special Wishes Program — 911flachbau.com", "url": "https://www.911flachbau.com/specialwishes" },
-        { "title": "The 911 Turbo generations — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" }
+        {
+          "title": "Discover the Porsche 930 Turbo Slantnose — porsche.com",
+          "url": "https://www.porsche.com/stories/innovation/discover-the-porsche-930-turbo-slantnose/"
+        },
+        {
+          "title": "911 Slantnose Versions — 911flachbau.com",
+          "url": "https://www.911flachbau.com/generations"
+        },
+        {
+          "title": "Special Wishes Program — 911flachbau.com",
+          "url": "https://www.911flachbau.com/specialwishes"
+        },
+        {
+          "title": "The 911 Turbo generations — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+        }
       ],
       "missing": [
         "0–100 km/h for the Flachbau not found from a citable source.",
@@ -334,20 +1280,123 @@
       "weight": "1,335 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "Getrag G50/50 5-speed manual with limited-slip differential",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 1989 Turbo S was the ultimate factory 930: a standard-body Coupé carrying the 930/66S engine, which used higher-compression pistons, a larger K27 turbocharger and wastegate, a 1.5-bar intercooler, a front-mounted oil cooler and a quad-tip exhaust to lift output from 300 to 330 PS (243 kW) and torque from 430 to 467 Nm. Top speed rose to 270 km/h (168 mph). It also gained a five-speed G50 with limited-slip differential, a 7,000-rpm rev counter and a 300 km/h speedometer. Just 55 were built for 1989, 42 of them reserved for German customers.",
       "production": "55 standard-body Coupés for 1989, 42 earmarked for German customers",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+        "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQAAoABABoJYgCdAYsPzgxxKuRpogAAP6tA/dtBJQoB2u1VouylpvXkW0ms0m5Gh9wpT4GcRwHorNh/TY59uaMlHi/dvGOjrbesPx42V5h9AJaMFYAAA==",
+        "creditId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+        "width": 1920,
+        "height": 1155
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 Turbo S 3.3 — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1977_Porsche_911_(930)_Turbo_3.0.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1977_Porsche_911_(930)_Turbo_3.0.jpg",
+          "localPath": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3042×1830px (3922 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "1989 Porsche 911 Turbo S 'WLS' Coupe — RM Sotheby's Arizona 2024", "url": "https://rmsothebys.com/auctions/az24/lots/r0081-1989-porsche-911-turbo-s-wls-coupe/" },
-        { "title": "1989 Porsche 911 \"Turbo\" — 930 3.3L Turbo S Coupé G50, Classic Driver", "url": "https://www.classicdriver.com/en/car/porsche/911-turbo/1989/917602" },
-        { "title": "Porsche 911 Coupe (Type 930) 3.3 Turbo S (330 Hp) — auto-data.net", "url": "https://www.auto-data.net/en/porsche-911-coupe-type-930-3.3-turbo-s-330hp-6655" },
-        { "title": "Porsche 911 Turbo 3.3 WLS 1989 — elferspot.com", "url": "https://www.elferspot.com/en/car/porsche-911-turbo-3-3-wls-1989-627127/" }
+        {
+          "title": "1989 Porsche 911 Turbo S 'WLS' Coupe — RM Sotheby's Arizona 2024",
+          "url": "https://rmsothebys.com/auctions/az24/lots/r0081-1989-porsche-911-turbo-s-wls-coupe/"
+        },
+        {
+          "title": "1989 Porsche 911 \"Turbo\" — 930 3.3L Turbo S Coupé G50, Classic Driver",
+          "url": "https://www.classicdriver.com/en/car/porsche/911-turbo/1989/917602"
+        },
+        {
+          "title": "Porsche 911 Coupe (Type 930) 3.3 Turbo S (330 Hp) — auto-data.net",
+          "url": "https://www.auto-data.net/en/porsche-911-coupe-type-930-3.3-turbo-s-330hp-6655"
+        },
+        {
+          "title": "Porsche 911 Turbo 3.3 WLS 1989 — elferspot.com",
+          "url": "https://www.elferspot.com/en/car/porsche-911-turbo-3-3-wls-1989-627127/"
+        }
       ],
       "missing": [
         "0–100 km/h for the 1989 Turbo S not found from a citable source.",
@@ -371,20 +1420,123 @@
       "weight": "1,300 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "Getrag G50 5-speed manual with 40% limited-slip differential",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "To close out fourteen years of 930 production, Porsche pulled 50 Coupés from the final G50 assembly batch and handed them to the Exclusive department at Zuffenhausen. Each LE got the 330 PS Sport Equipment engine — 30 PS above the standard Turbo — plus a limited-slip differential, rear-wheel air intakes, sill extensions and an Exclusive front spoiler with an integral oil cooler, evoking the 935. Inside there were heated electric sport seats, a three-spoke wheel with a gold crest and a numbered console plaque. One car was allocated to each UK Porsche Centre; 0–60 mph took 4.6 seconds.",
       "production": "50 built (one per UK Porsche Centre)",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-le-1989/img-porsche-911-turbo-930-52575620837-e6c959de-1920.avif",
+        "alt": "911 Turbo LE",
+        "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsABABoJbACdAYvDnDS+t4fYAAA/s4ARMvonQbrd19mdQF5hZPono4a9mT8WIZ6pxea5nNhwW8s6yvsjIaCnUia/WOjYvpaODk2NC7tfAHKvkc2EffhQAA=",
+        "creditId": "img-porsche-911-turbo-930-52575620837-e6c959de",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-le-1989/img-porsche-911-930-turbo-le-f25b5b02-1920.avif",
+          "alt": "911 Turbo LE — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAwABABoJaQAD5Gw5Itw1MguAAD+24W/TlU204d77qHKs9xd89FvMJuBHm5DZRm+HZOohSdmWZZRGAVXBsXh5qPxutI3dVCSYAAA",
+          "creditId": "img-porsche-911-930-turbo-le-f25b5b02",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1977-porsche-911-930-turbo-3-0-bfa80da8-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoQAAoABABoJYgCdAYsPzgxxKuRpogAAP6tA/dtBJQoB2u1VouylpvXkW0ms0m5Gh9wpT4GcRwHorNh/TY59uaMlHi/dvGOjrbesPx42V5h9AJaMFYAAA==",
+          "creditId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
+          "width": 1920,
+          "height": 1155
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Turbo LE — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-turbo-930-52575620837-e6c959de",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Turbo_930_(52575620837).jpg",
+          "license": "CC BY 2.0",
+          "author": "Clemens Vasters from Viersen, Germany, Germany",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Turbo_930_(52575620837).jpg",
+          "localPath": "/images/turbo-le-1989/img-porsche-911-turbo-930-52575620837-e6c959de-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6960×4640px (9180 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-930-turbo-le-f25b5b02",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_930_Turbo_LE.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Luke Santamaria",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_930_Turbo_LE.jpg",
+          "localPath": "/images/turbo-le-1989/img-porsche-911-930-turbo-le-f25b5b02-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3113×2334px (927 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Turbo LE (930) (1989) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-turbo-limited-edition-1989/" },
-        { "title": "1989 Porsche 911 Turbo LE Coupé — Bonhams", "url": "https://cars.bonhams.com/auction/15343/lot/216/1989-porsche-911-turbo-le-coupe-chassis-no-wpozzz93zks000793-engine-no-67k00945/" },
-        { "title": "1989 Porsche 911 930 Turbo LE – 1 of only 50 — Jasmine PorschaLink UK", "url": "https://jasmine-porschalink.co.uk/vehicle/1989-porsche-911-930-turbo-le-1-of-only-50/" },
-        { "title": "1989 Porsche 911 Turbo Limited Edition — supercars.net", "url": "https://www.supercars.net/blog/1989-porsche-911-turbo-limited-edition/" }
+        {
+          "title": "Porsche 911 Turbo LE (930) (1989) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-turbo-limited-edition-1989/"
+        },
+        {
+          "title": "1989 Porsche 911 Turbo LE Coupé — Bonhams",
+          "url": "https://cars.bonhams.com/auction/15343/lot/216/1989-porsche-911-turbo-le-coupe-chassis-no-wpozzz93zks000793-engine-no-67k00945/"
+        },
+        {
+          "title": "1989 Porsche 911 930 Turbo LE – 1 of only 50 — Jasmine PorschaLink UK",
+          "url": "https://jasmine-porschalink.co.uk/vehicle/1989-porsche-911-930-turbo-le-1-of-only-50/"
+        },
+        {
+          "title": "1989 Porsche 911 Turbo Limited Edition — supercars.net",
+          "url": "https://www.supercars.net/blog/1989-porsche-911-turbo-limited-edition/"
+        }
       ],
       "missing": [
         "0–100 km/h not published — only 0–60 mph (4.6 s per stuttcars/Bonhams, ~5.0 s estimated by supercars.net).",
@@ -409,19 +1561,123 @@
       "weight": "1,120 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual (3-speed Sportomatic on 1–2% of cars)",
-      "bodyStyles": ["coupe", "targa"],
+      "bodyStyles": [
+        "coupe",
+        "targa"
+      ],
       "description": "The Carrera 3.0 replaced the 2.7 Carrera for 1976 and traded mechanical injection for K-Jetronic, costing it 7 kW: 147 kW (200 PS) at 6,000 rpm with 255 Nm. It was effectively the first road car with the bottom end that the 930 Turbo would use, and it became the mechanical template for the SC that followed. Performance stayed close to the 2.7 Carrera's — 0–100 km/h in about 6.3 seconds and a 230 km/h (143 mph) top speed — while the body remained narrow. Some 3,687 were built across 1976–77, roughly 30 per cent of them Targas.",
       "production": "≈3,687 (about 30% Targa) — stuttcars",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-3.0/img-1977-porsche-911-carrera-3-0-68246-fd9a3468-1920.avif",
+        "alt": "911 Carrera 3.0",
+        "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAoABABoJagCdAEYGKGix59AAPw1h+PLAFk8tGb1bdl7d8hy4cL4JpHBO1uVOEV+2L41mWqEVvqB06bNt84Fjvr8cgl2dpHafP9FNP2p/A0Out5QUnEAAAA=",
+        "creditId": "img-1977-porsche-911-carrera-3-0-68246-fd9a3468",
+        "width": 1920,
+        "height": 1244
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-3.0/img-1976-porsche-911-carrera-3-0-rally-car-d1a87617-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoABABoJaAC7ACZ2Wyk0wAA/oOY3QeSqHc8Jz1mUkeHI/DjOOsWSbpsjiFG5wSjve6Vm0TrZGNCVRTVwZF/aHouwZkdL6wUVXqMAAA=",
+          "creditId": "img-1976-porsche-911-carrera-3-0-rally-car-d1a87617",
+          "width": 1920,
+          "height": 1230
+        },
+        {
+          "src": "/images/carrera-3.0/img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-c2b301a6-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJQBOgCFvyUlWQVAAAN4obuAKBFzANS/J59O90l+c75HIYby3CEqjXodlXvcQ9bFo//FUyIsHsFmEqvUai+RfCYwTgAAA",
+          "creditId": "img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-c2b301a6",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-3.0/img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-9d7e8a8b-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAwABABoJZACw7EQdq+9F6hbgADLQn++ZPJmQRubhIp5sK1bOsIGjKQRNhZu4lY/6/s7cFRxlh77wgh2+TtXEBhUgP9b4Q4GXQAA",
+          "creditId": "img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-9d7e8a8b",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-3.0/img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-6e5aa534-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAwABABoJZQAApQcWDpAAAD+SveFWmhz0Ooec3s+pOfWrOdjxvXmTWpSJ5dXP5pHpgQZlkIDisSBd8m4ubDAP+OB4AAA",
+          "creditId": "img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-6e5aa534",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-3.0/img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-8d53b06c-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJYgCsAEQ/dhmdQAA+52jA/k5FoHITFMn+ie+CAXisdewEeOOArheJCuRMiRPeOiU+CsBDlx8B5Cx4AA=",
+          "creditId": "img-1976-porsche-911-carrera-3-0-no-127-rallye-monte-carlo-his-8d53b06c",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-3.0/img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-fc766d18-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwABABoJZwAApQuaISUYxUAAP7b4apqGS31JMel51TBBFGiAReOs9B2d1Yhfsg8P1yvQ8IWVLFd++zWwaptDCAImZOfcFMAAA==",
+          "creditId": "img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-fc766d18",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-3.0/img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-b5871d24-1920.avif",
+          "alt": "911 Carrera 3.0 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZQCdADHdXh+QAD+oyV83OhSfgihVGC76uaHXjgU5uMFeBmU7YaMry9Y9uPDcc8sIpBdsj8tT9oHptjJeV/4gAA=",
+          "creditId": "img-porsche-911-carrera-3-0-rallye-monte-carlo-historique-2025-b5871d24",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1977-porsche-911-carrera-3-0-68246-fd9a3468",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1977_Porsche_911_Carrera_3.0_(68246).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1977_Porsche_911_Carrera_3.0_(68246).jpg",
+          "localPath": "/images/carrera-3.0/img-1977-porsche-911-carrera-3-0-68246-fd9a3468-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14450×9362px (16782 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-3-0-rally-car-d1a87617",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_3.0_Rally_Car.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_3.0_Rally_Car.jpg",
+          "localPath": "/images/carrera-3.0/img-1976-porsche-911-carrera-3-0-rally-car-d1a87617-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3724×2386px (3633 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "Porsche 911 (G-Series) — The Story, stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-the-story/" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" },
-        { "title": "Porsche 911 Coupe (G) — Automoli specifications", "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/" }
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "Porsche 911 (G-Series) — The Story, stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-the-story/"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        },
+        {
+          "title": "Porsche 911 Coupe (G) — Automoli specifications",
+          "url": "https://www.automoli.com/en/vehicles/porsche/911/911-coupe-g-8724/"
+        }
       ],
       "missing": [
         "Top speed differs between sources (230 km/h stuttcars vs 235 km/h adelgigs); no single factory figure confirmed.",
@@ -445,20 +1701,156 @@
       "weight": "1,233 kg (MY1978–79); 1,160 kg (MY1980–83)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual (3-speed Sportomatic for MY1978–80)",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "Marketed as the last 911 — the 928 was meant to replace it — the SC arrived for 1978 with a 2,994 cc K-Jetronic flat-six and a heavier, galvanised body. Output climbed through its life: 180 PS (132 kW) for 1978–79, 188 PS (138 kW) for 1980 and 204 PS (150 kW) for 1981–83, with top speed rising from 220 to 235 km/h. It was also the first 911 with a factory Cabriolet — shown in Geneva in March 1982 and sold from the 1983 model year. Porsche built 60,265 SCs before the 3.2 Carrera replaced it.",
       "production": "60,265 (adelgigs / Simon's Porsche 911 SC Site production data)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/sc/img-porsche-911-sc-es5-vhc-rallye-de-l-arde-che-2024-1e973373-1920.avif",
+        "alt": "911 SC",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsABABoJZgCdAECnqXROIgAAP4c1WELsCDGfSasAwEA1Bkfu7vDqTZOGi8V8T+n4vreVkfmR6BGQJULFwAkDyYAAA==",
+        "creditId": "img-porsche-911-sc-es5-vhc-rallye-de-l-arde-che-2024-1e973373",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/sc/img-porsche-911-sc-vhc-rallye-du-bas-vivarais-2024-es3-1a0fb43d-1920.avif",
+          "alt": "911 SC — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAsABABoJQBOgB+XwhCAAP7BGQU8XoMkmFLn3avj0GFvl3rmUgWJuIMxeU/gr/GfhDqZPJ+aWE9aaagXTdaN0QPOecJiAK4AAA==",
+          "creditId": "img-porsche-911-sc-vhc-rallye-du-bas-vivarais-2024-es3-1a0fb43d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/sc/img-porsche-911-930-sc-2-538c35c8-1920.avif",
+          "alt": "911 SC — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsABABoJbACdAEXw/JPz/1SAAD+63ltsEaBRC976UBFMa3MG/U/TsmIfLDnplqpe3hojX6WzJYzWLpivGCmS5U63a9o3UE53GjSRR4GtF1ZQpkWkAAA",
+          "creditId": "img-porsche-911-930-sc-2-538c35c8",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/sc/img-porsche-911-930-sc-78ba8b96-1920.avif",
+          "alt": "911 SC — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJbACdAEKBFd2YWyAAP7ux6q+i0PtlJ5shTR9/UE4xSePaNk97RiCzUQWk7bmzhRI3cvSu5sti8pOA/wajHa02dptP7RgAAA=",
+          "creditId": "img-porsche-911-930-sc-78ba8b96",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 SC — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 SC — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 SC — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 SC — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        }
+      ],
+      "videos": [
+        {
+          "id": "_F_p085RC2M",
+          "title": "The Best 911 We Ever Had? 1979 Porsche 911 SC | Sound, Test Drive and Review",
+          "channel": "Invictus Porsche",
+          "poster": null,
+          "note": "3.0-litre impact-bumper SC, full sound and test drive"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-sc-rally-1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
+        "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
+        "license": "CC Attribution",
+        "author": "amogusstrikesback2",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-sc-es5-vhc-rallye-de-l-arde-che-2024-1e973373",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_SC_-_ES5_-_VHC_-_Rallye_de_l'Ard%C3%A8che_2024.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Kakoula10",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_SC_-_ES5_-_VHC_-_Rallye_de_l'Ardèche_2024.jpg",
+          "localPath": "/images/sc/img-porsche-911-sc-es5-vhc-rallye-de-l-arde-che-2024-1e973373-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4200×2800px (2966 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-sc-vhc-rallye-du-bas-vivarais-2024-es3-1a0fb43d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_SC_-_VHC_-_Rallye_du_Bas_Vivarais_2024_ES3.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Kakoula10",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_SC_-_VHC_-_Rallye_du_Bas_Vivarais_2024_ES3.jpg",
+          "localPath": "/images/sc/img-porsche-911-sc-vhc-rallye-du-bas-vivarais-2024-es3-1a0fb43d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3700×2467px (1425 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-gseries-sc",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-sc-rally-1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
+          "license": "CC Attribution",
+          "author": "amogusstrikesback2",
+          "retrieved": "2026-10-02",
+          "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-        { "title": "911SC ~ 1978-1983 — PurelyPorsche", "url": "https://purelyporsche.com/timeline/911sc-1978-1983/" },
-        { "title": "Porsche 911 SC Production Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911scproductiondata.shtml" },
-        { "title": "From the 356 \"No. 1\" Roadster to the 911 SC Cabriolet — Porsche Newsroom", "url": "https://newsroom.porsche.com/en_AU/2019/history/porsche-911-cabriolet-history-17144.html" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" }
+        {
+          "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+        },
+        {
+          "title": "911SC ~ 1978-1983 — PurelyPorsche",
+          "url": "https://purelyporsche.com/timeline/911sc-1978-1983/"
+        },
+        {
+          "title": "Porsche 911 SC Production Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911scproductiondata.shtml"
+        },
+        {
+          "title": "From the 356 \"No. 1\" Roadster to the 911 SC Cabriolet — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en_AU/2019/history/porsche-911-cabriolet-history-17144.html"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        }
       ],
       "missing": [
         "Acceleration sources disagree: stuttcars publishes 0–100 km/h (7.0/6.8 s) while adelgigs publishes 0–60 mph (5.7–6.5 s) under a 0–100 km/h heading; the stuttcars figures are used.",
@@ -482,21 +1874,127 @@
       "weight": "960 kg minimum (empty); ≈1,200 kg rally-ready",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual with ZF 40% limited-slip differential",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The SC RS was Porsche's stopgap Group B rally car, created while the 959 was still in development. Announced in June 1983 as the \"911 SC RS – Gruppe B\", it used the outgoing 3.0-litre SC platform because the new 3.2 would have pushed it into a heavier class. The Type 930/18 engine ran 10.3:1 compression on Kugelfischer injection for 250–255 bhp on the road and around 270 bhp in rally trim, with a 960 kg minimum weight. Twenty homologation cars were built — a 21st followed — and Prodrive ran six of them for the Rothmans Porsche Rally Team.",
       "production": "20 homologation cars plus a 21st assembled later — sources give 20 or 21",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/sc-rs/img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-241a28db-1920.avif",
+        "alt": "911 SC RS",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJYwAAqFmDmSheQAA/kEXPy5OVAMourVSfP2vdINOu7vcowYfE2VS4/8B49iowY0gzjTyk4TYTsNVljl8cFW8kK8Q4AAA",
+        "creditId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-241a28db",
+        "width": 1920,
+        "height": 1220
+      },
+      "gallery": [
+        {
+          "src": "/images/sc-rs/img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-2-24ddaa52-1920.avif",
+          "alt": "911 SC RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAoABABoJZQAAp/C6Gn0go4A/oPkZgLKBvDPcCPP9p56GZbWnTwdbI61KLm679HX40EVvhCsShzg0xXwZAAA",
+          "creditId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-2-24ddaa52",
+          "width": 1920,
+          "height": 1193
+        },
+        {
+          "src": "/images/sc-rs/img-1984-porsche-911-3-0-sc-rs-at-lime-rock-rear-right-80667a92-1920.avif",
+          "alt": "911 SC RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQAAsABABoJaACw7YuRymb8veGuueAAM3wCFdetGVqjwefqKGFEyjZ/Q+GCCoUG4PGQ0OjmixxASMfAlGtITabx/ZPCeM472eDvITfqw34T6kA+RRjMAAA",
+          "creditId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-rear-right-80667a92",
+          "width": 1920,
+          "height": 1318
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "alt": "911 SC RS — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+          "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 SC RS — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 SC RS — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 SC RS — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 SC RS — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-241a28db",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1984_Porsche_911_3.0_SC_RS_at_Lime_Rock%2C_front_right.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Mr.choppers",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1984_Porsche_911_3.0_SC_RS_at_Lime_Rock,_front_right.jpg",
+          "localPath": "/images/sc-rs/img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-241a28db-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5276×3352px (11101 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-2-24ddaa52",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1984_Porsche_911_3.0_SC_RS_at_Lime_Rock%2C_front_right_2.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Mr.choppers",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1984_Porsche_911_3.0_SC_RS_at_Lime_Rock,_front_right_2.jpg",
+          "localPath": "/images/sc-rs/img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-2-24ddaa52-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5246×3260px (6943 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 SC RS 3.0 (1984) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-sc-rs-an-oft-overlooked-gem/" },
-        { "title": "From the parts bin to the world rally stage: the 1984 Porsche 911 SC/RS Rothmans — Road Scholars", "url": "https://www.roadscholars.com/articles/from-the-parts-bin-to-the-world-rally-stage-the-1984-porsche-911-sc-rs-rothmans" },
-        { "title": "The influence of advertising and sponsorship (911 SC RS history) — Road Scholars", "url": "https://www.roadscholars.com/articles/the-influence-of-advertising-and-sponsorship" },
-        { "title": "Porsche 911 SC RS — archived qv500 specification page", "url": "https://web.archive.org/web/20100124143934/http:/www.qv500.com/porsche911scp5.php" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" }
+        {
+          "title": "Porsche 911 SC RS 3.0 (1984) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-sc-rs-an-oft-overlooked-gem/"
+        },
+        {
+          "title": "From the parts bin to the world rally stage: the 1984 Porsche 911 SC/RS Rothmans — Road Scholars",
+          "url": "https://www.roadscholars.com/articles/from-the-parts-bin-to-the-world-rally-stage-the-1984-porsche-911-sc-rs-rothmans"
+        },
+        {
+          "title": "The influence of advertising and sponsorship (911 SC RS history) — Road Scholars",
+          "url": "https://www.roadscholars.com/articles/the-influence-of-advertising-and-sponsorship"
+        },
+        {
+          "title": "Porsche 911 SC RS — archived qv500 specification page",
+          "url": "https://web.archive.org/web/20100124143934/http:/www.qv500.com/porsche911scp5.php"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        }
       ],
       "missing": [
         "Road power quoted as 250 PS (Total 911) and 255 bhp (stuttcars, qv500); both are given.",
@@ -521,20 +2019,156 @@
       "weight": "1,210 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual (MY1984–86); Getrag G50 5-speed with hydraulic clutch (MY1987–89)",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "Replacing the SC, the 3.2 Carrera was 80 per cent new: 3,164 cc via the SC's 95 mm bore and the Turbo's 74.4 mm crankshaft, with port injection and electronic engine management. European cars made 231 PS (170 kW) at 5,900 rpm and 284 Nm, hitting 0–100 km/h in 6.1 seconds and 245 km/h (152 mph); North America got 207–217 hp engines on 9.5:1 compression. The 915 gearbox lasted to 1986 before the Getrag G50 with hydraulic clutch arrived for 1987. Coupé, Targa and Cabriolet were all offered, and 76,473 cars were built to 1989.",
       "production": "76,473 built — 35,670 Coupé, 19,987 Cabriolet, 18,468 Targa (Wikipedia)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 Carrera 3.2",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-3-2-carrera-hcc23-84985a7c-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJbACsAEUjJ9IM464gADMQ7RHPPYwwLsjjZrLGEpWXkIZREvuRbNytf6XpKDFgYTfO48GN1DYUzfoq8kcea4trnaWb6wxmaZPxM0wAAA=",
+          "creditId": "img-1984-porsche-911-3-2-carrera-hcc23-84985a7c",
+          "width": 1920,
+          "height": 1278
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-hcc24-22c0fb9d-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJagCdADwU0dPggAAAPY8xWCjyOF5mtEVhaPZgpRZB5U79+9wfJYEJ29IWtYFDMD2vWIGFYJEpj3qJ/OoxUKyAAA=",
+          "creditId": "img-1984-porsche-911-carrera-3-2-hcc24-22c0fb9d",
+          "width": 1920,
+          "height": 1260
+        },
+        {
+          "src": "/images/carrera-3.2/img-1985-porsche-911-carrera-3-2-95273-3dcf18ab-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoABABoJYwAAv9dCKODDTAA4gerNn4krKmJUuevrZvYOSGoDHjt1h+Pnp1jQwvw/7LioAt4Uq1q4ENkp2Y3WUApi4r6TFsUdbnyayIA4sAA",
+          "creditId": "img-1985-porsche-911-carrera-3-2-95273-3dcf18ab",
+          "width": 1920,
+          "height": 1251
+        },
+        {
+          "src": "/images/carrera-3.2/img-1987-porsche-911-carrera-3-2-supersport-762ed7ed-1920.avif",
+          "alt": "911 Carrera 3.2 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoABABoJbAC7AERCC7Jf/AAAP5Os0q314EJ3d9KCRgzDuBrSAQrC8SZRZOh0kfwNQnhyrRhVOzGBoCQOPVVJcaMP0L8vsXCSFchxlPceQAA",
+          "creditId": "img-1987-porsche-911-carrera-3-2-supersport-762ed7ed",
+          "width": 1920,
+          "height": 1262
+        }
+      ],
+      "videos": [
+        {
+          "id": "28wjrayxJzk",
+          "title": "The Story of the Porsche 911 3.2 Carrera (G Model)",
+          "channel": "Brightside Media",
+          "poster": null,
+          "note": "fast history of the wide-arch 3.2 G-model run"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-32-carrera-coupe-26953936409c4ee7b9de11caa37e52f1?embed=1",
+        "sourceId": "26953936409c4ee7b9de11caa37e52f1",
+        "license": "CC Attribution",
+        "author": "cepela",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2%2C_TC_24%2C_Essen_(TCE43244).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2,_TC_24,_Essen_(TCE43244).jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6720×3780px (15229 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-gseries-carrera-3-2",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-32-carrera-coupe-26953936409c4ee7b9de11caa37e52f1?embed=1",
+          "license": "CC Attribution",
+          "author": "cepela",
+          "retrieved": "2026-10-02",
+          "sourceId": "26953936409c4ee7b9de11caa37e52f1",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Coupe (G) 3.2 Carrera (231 Hp) — auto-data.net", "url": "https://www.auto-data.net/en/porsche-911-coupe-g-3.2-carrera-231hp-6652" },
-        { "title": "Porsche 911 Carrera 3.2 (1984 - 1989) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-1984-1989/" },
-        { "title": "Porsche 911 Carrera 3.2 specifications & performance — stuttcars", "url": "https://www.stuttcars.com/porsche-911carrera-3-2-1984-1989-specifications-performance/" },
-        { "title": "Model Guide: 1984-1989 Porsche 911 Carrera — Porsche Club of America", "url": "https://www.pca.org/news/model-guide-1984-1989-porsche-911-carrera" },
-        { "title": "Porsche 911 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911" }
+        {
+          "title": "Porsche 911 Coupe (G) 3.2 Carrera (231 Hp) — auto-data.net",
+          "url": "https://www.auto-data.net/en/porsche-911-coupe-g-3.2-carrera-231hp-6652"
+        },
+        {
+          "title": "Porsche 911 Carrera 3.2 (1984 - 1989) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-1984-1989/"
+        },
+        {
+          "title": "Porsche 911 Carrera 3.2 specifications & performance — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911carrera-3-2-1984-1989-specifications-performance/"
+        },
+        {
+          "title": "Model Guide: 1984-1989 Porsche 911 Carrera — Porsche Club of America",
+          "url": "https://www.pca.org/news/model-guide-1984-1989-porsche-911-carrera"
+        },
+        {
+          "title": "Porsche 911 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911"
+        }
       ],
       "missing": [
         "Per-body production figures from some sources do not sum to the 76,473 total; the Wikipedia body split is used as published.",
@@ -558,20 +2192,128 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual (MY1984–86); Getrag G50 5-speed (MY1987–89)",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "Option M491 gave a naturally aspirated Carrera the full 930 Turbo package — wide arches, tea-tray spoiler, Turbo suspension, aluminium trailing arms, four-piston brakes and 16-inch Fuchs wheels — without the forced induction. Introduced for 1984 as a Coupé-only Special Wishes request, it became a catalogue option and from 1985 could be ordered on the Targa and Cabriolet too; in the UK it was sold as \"Super Sport Equipment\" and later \"Supersport\". Some 3,572 were built across all body types, including 755 Coupés for the US, where the real Turbo was unavailable.",
       "production": "3,572 units (all body types) — stuttcars; 755 M491 Coupés for the US (RM Sotheby's)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 Carrera 3.2 Turbo Look",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/carrera-3.2-turbo-look/img-porsche-911-3-2-carrera-turbo-look-cabriolet-1988-55082977-18b7a4bd-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAoABABoJaQAAodQe+qmAAD+crPBmqhQiOY5LxftfdpjjVRdBv2aPHNo5erqTI3Gc2GseqVbWT/Ggq3UnRbxtEpF1r0dAAA=",
+          "creditId": "img-porsche-911-3-2-carrera-turbo-look-cabriolet-1988-55082977-18b7a4bd",
+          "width": 1920,
+          "height": 1229
+        },
+        {
+          "src": "/images/carrera-3.2-turbo-look/img-porsche-911-3-2-carrera-turbo-look-cabriolet-1988-55082977-08ea899e-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAoABABoJaQAD4fw5R2zldmRAAD+cy+/w8B1/7ZZ3ahClDHTuaw3aY9QQH/y9XazH2kHdg5T5N6OftJgJRTmArfHYPIAAAA=",
+          "creditId": "img-porsche-911-3-2-carrera-turbo-look-cabriolet-1988-55082977-08ea899e",
+          "width": 1920,
+          "height": 1220
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-3-2-carrera-hcc23-84985a7c-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJbACsAEUjJ9IM464gADMQ7RHPPYwwLsjjZrLGEpWXkIZREvuRbNytf6XpKDFgYTfO48GN1DYUzfoq8kcea4trnaWb6wxmaZPxM0wAAA=",
+          "creditId": "img-1984-porsche-911-3-2-carrera-hcc23-84985a7c",
+          "width": 1920,
+          "height": 1278
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-hcc24-22c0fb9d-1920.avif",
+          "alt": "911 Carrera 3.2 Turbo Look — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJagCdADwU0dPggAAAPY8xWCjyOF5mtEVhaPZgpRZB5U79+9wfJYEJ29IWtYFDMD2vWIGFYJEpj3qJ/OoxUKyAAA=",
+          "creditId": "img-1984-porsche-911-carrera-3-2-hcc24-22c0fb9d",
+          "width": 1920,
+          "height": 1260
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2%2C_TC_24%2C_Essen_(TCE43244).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Matti Blume",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2,_TC_24,_Essen_(TCE43244).jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6720×3780px (15229 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera 3.2 \"Turbo Look\" (1984 - 1989) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-turbo-look-1984-1989/" },
-        { "title": "1984 Porsche 911 Carrera 3.2 'Turbo-Look' Coupe — RM Sotheby's", "url": "https://rmsothebys.com/auctions/wc23/lots/r0029-1984-porsche-911-carrera-32-turbolook-coupe/" },
-        { "title": "Car Tales: The Look Of Love, Porsche Carrera Coupe Turbo Look — Beverly Hills Car Club", "url": "https://www.beverlyhillscarclub.com/car-tales-the-look-of-love-porsche-carrera-coupe-turbo-look.htm" },
-        { "title": "Model Guide: 1984-1989 Porsche 911 Carrera — Porsche Club of America", "url": "https://www.pca.org/news/model-guide-1984-1989-porsche-911-carrera" },
-        { "title": "Porsche 911 Carrera 3.2 buyers guide — Porsche Club GB", "url": "http://www.porscheclubgb.com/Buying-Guides/911-Carrera-3-2-Buyers-Guide" }
+        {
+          "title": "Porsche 911 Carrera 3.2 \"Turbo Look\" (1984 - 1989) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-turbo-look-1984-1989/"
+        },
+        {
+          "title": "1984 Porsche 911 Carrera 3.2 'Turbo-Look' Coupe — RM Sotheby's",
+          "url": "https://rmsothebys.com/auctions/wc23/lots/r0029-1984-porsche-911-carrera-32-turbolook-coupe/"
+        },
+        {
+          "title": "Car Tales: The Look Of Love, Porsche Carrera Coupe Turbo Look — Beverly Hills Car Club",
+          "url": "https://www.beverlyhillscarclub.com/car-tales-the-look-of-love-porsche-carrera-coupe-turbo-look.htm"
+        },
+        {
+          "title": "Model Guide: 1984-1989 Porsche 911 Carrera — Porsche Club of America",
+          "url": "https://www.pca.org/news/model-guide-1984-1989-porsche-911-carrera"
+        },
+        {
+          "title": "Porsche 911 Carrera 3.2 buyers guide — Porsche Club GB",
+          "url": "http://www.porscheclubgb.com/Buying-Guides/911-Carrera-3-2-Buyers-Guide"
+        }
       ],
       "missing": [
         "Kerb weight not found for the Turbo Look specifically (the standard 3.2 Coupé is 1,210 kg).",
@@ -596,21 +2338,127 @@
       "weight": "1,160 kg (Porsche press pack)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "Getrag G50 5-speed manual with short-throw shift",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The Club Sport was Porsche's \"less is more\" reply to the excess of the 1980s. Option M637 deleted the sunroof, rear seat, air conditioning, power windows, radio, sound insulation and underseal to save roughly 40–70 kg, while the engine gained hollow inlet valves, a revised intake and a raised 6,840 rpm rev limiter. Official output stayed at 231 PS, but kerb weight fell to about 1,160 kg, taking 0–60 mph to 5.1 seconds and top speed to 244 km/h (152 mph). Coupé-only, built from September 1987 to September 1989: 340 cars, 53 for the UK and 28 for the US.",
       "production": "340 built (53 for the UK, 28 for the US)",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 Carrera Club Sport — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera 3.2 Clubsport (1987 - 1989) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-clubsport-1987-1989/" },
-        { "title": "The RS that never was: the G-body 911 Carrera Club Sport — Road Scholars", "url": "https://www.roadscholars.com/articles/the-rs-that-never-was-the-g-body-911-carrera-club-sport" },
-        { "title": "Porsche 911 3.2 Carrera Clubsport: driving the light fantastic — City AM", "url": "https://www.cityam.com/porsche-911-3-2-carrera-clubsport-driving-the-light-fantastic/" },
-        { "title": "Carrera Club Sport ~ 1987-1989 — PurelyPorsche", "url": "https://purelyporsche.com/timeline/carrera-club-sport-1987-1989/" },
-        { "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site", "url": "https://www.adelgigs.com/911performance.shtml" }
+        {
+          "title": "Porsche 911 Carrera 3.2 Clubsport (1987 - 1989) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-3-2-clubsport-1987-1989/"
+        },
+        {
+          "title": "The RS that never was: the G-body 911 Carrera Club Sport — Road Scholars",
+          "url": "https://www.roadscholars.com/articles/the-rs-that-never-was-the-g-body-911-carrera-club-sport"
+        },
+        {
+          "title": "Porsche 911 3.2 Carrera Clubsport: driving the light fantastic — City AM",
+          "url": "https://www.cityam.com/porsche-911-3-2-carrera-clubsport-driving-the-light-fantastic/"
+        },
+        {
+          "title": "Carrera Club Sport ~ 1987-1989 — PurelyPorsche",
+          "url": "https://purelyporsche.com/timeline/carrera-club-sport-1987-1989/"
+        },
+        {
+          "title": "Porsche 911 Performance Data — Simon's Porsche 911 SC Site",
+          "url": "https://www.adelgigs.com/911performance.shtml"
+        }
       ],
       "missing": [
         "0–100 km/h not published — only 0–60 mph (5.1 s, Porsche press pack).",
@@ -635,22 +2483,131 @@
       "weight": "1,220 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "Getrag G50 5-speed manual",
-      "bodyStyles": ["speedster"],
+      "bodyStyles": [
+        "speedster"
+      ],
       "description": "Shown as a Clubsport study at the 1987 IAA, the Speedster finally reached production in March 1989 as the last act of the G-Model. It used the Carrera 3.2's 231 PS flat-six and G50 five-speed but sat behind a windscreen shortened by 80 mm and raked five degrees further back, lost the rear seats for a fibreglass double-bubble tonneau, and shed about 70 kg versus the Cabriolet. Almost all cars wore the wide Turbo-look body; 171 left the factory narrow. Some 2,104 were built before G-Model production ended in July 1989, of which 129 were right-hand drive.",
       "production": "2,104 built (RM Sotheby's, Motor Trend, Porsche Club GB); Porsche Newsroom states 2,103 — 171 narrow-body cars (one Newsroom article says 161)",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 Speedster — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Speedster: driving pleasure for more than six decades — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/2019/history/porsche-speedster-history-open-top-driving-pleasure-17559.html" },
-        { "title": "The G model: The 911 gets off to a flying start — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-2-g-model-16459.html" },
-        { "title": "1989 Porsche 911 Speedster — RM Sotheby's London 2020", "url": "https://rmsothebys.com/auctions/lf20/lots/r0052-1989-porsche-911-speedster/" },
-        { "title": "Porsche 911 Speedster — supercars.net", "url": "https://www.supercars.net/blog/1989-porsche-911-speedster/" },
-        { "title": "Porsche 911 Speedster (1989) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-speedster-1989/" },
-        { "title": "Porsche Speedster register — Porsche Club GB", "url": "https://www.porscheclubgb.com/regions-registers/registers/other-registers/speedster" }
+        {
+          "title": "Porsche Speedster: driving pleasure for more than six decades — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2019/history/porsche-speedster-history-open-top-driving-pleasure-17559.html"
+        },
+        {
+          "title": "The G model: The 911 gets off to a flying start — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-2-g-model-16459.html"
+        },
+        {
+          "title": "1989 Porsche 911 Speedster — RM Sotheby's London 2020",
+          "url": "https://rmsothebys.com/auctions/lf20/lots/r0052-1989-porsche-911-speedster/"
+        },
+        {
+          "title": "Porsche 911 Speedster — supercars.net",
+          "url": "https://www.supercars.net/blog/1989-porsche-911-speedster/"
+        },
+        {
+          "title": "Porsche 911 Speedster (1989) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-speedster-1989/"
+        },
+        {
+          "title": "Porsche Speedster register — Porsche Club GB",
+          "url": "https://www.porscheclubgb.com/regions-registers/registers/other-registers/speedster"
+        }
       ],
       "missing": [
         "Production count differs: 2,104 total (RM Sotheby's, Motor Trend, Porsche Club GB) vs 2,103 (Porsche Newsroom).",
@@ -676,21 +2633,127 @@
       "weight": "1,250 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "915 5-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The Weissach Edition was a 1980 US-only special marking Porsche's new Weissach development centre and the Sonderwunsch department. Option M439 cost $32,050 and added Black or Platinum Metallic paint over Doric Grey full leather with burgundy piping, a whale-tail spoiler borrowed from the Turbo, a flexible front lip, Bilstein dampers, fog lamps, a power sunroof and 15-inch Fuchs with painted spokes. Mechanically it was an unchanged 180 hp SC. Porsche built 408 cars — one source says 400 — making it a rare, understated footnote in the SC's six-year run.",
       "production": "408 built (stuttcars, PurelyPorsche, Rennlist); 400 (Gooding, Berlin Motor Books) — sources differ",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 SC Weissach — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "911SC ~ 1978-1983 — PurelyPorsche", "url": "https://purelyporsche.com/timeline/911sc-1978-1983/" },
-        { "title": "1980 911SC Weissach Edition Info — Rennlist", "url": "https://rennlist.com/forums/911-forum/112874-1980-911sc-weissach-edition-info.html" },
-        { "title": "1980 Porsche 911 SC Weissach Edition — Gooding & Company", "url": "https://www.goodingco.com/lot/1980-porsche-911-sc-weissach-edition/?pageNumber=0" },
-        { "title": "Porsche Weissach Edition – 911 SC 3.0 Weissach Series Model Year 1980 — Berlin Motor Books", "url": "https://berlinmotorbooks.de/en/porsche-weissach-edition-911-model-year-1980/" },
-        { "title": "Porsche 911 911SC Modifications & VIN Numbers 1978-1983 — stuttcars", "url": "https://www.stuttcars.com/porsche-911sc-modifications-vin-numbers-1978-1983/" }
+        {
+          "title": "911SC ~ 1978-1983 — PurelyPorsche",
+          "url": "https://purelyporsche.com/timeline/911sc-1978-1983/"
+        },
+        {
+          "title": "1980 911SC Weissach Edition Info — Rennlist",
+          "url": "https://rennlist.com/forums/911-forum/112874-1980-911sc-weissach-edition-info.html"
+        },
+        {
+          "title": "1980 Porsche 911 SC Weissach Edition — Gooding & Company",
+          "url": "https://www.goodingco.com/lot/1980-porsche-911-sc-weissach-edition/?pageNumber=0"
+        },
+        {
+          "title": "Porsche Weissach Edition – 911 SC 3.0 Weissach Series Model Year 1980 — Berlin Motor Books",
+          "url": "https://berlinmotorbooks.de/en/porsche-weissach-edition-911-model-year-1980/"
+        },
+        {
+          "title": "Porsche 911 911SC Modifications & VIN Numbers 1978-1983 — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911sc-modifications-vin-numbers-1978-1983/"
+        }
       ],
       "missing": [
         "0–100 km/h and top speed not published for the Weissach Edition.",
@@ -714,21 +2777,129 @@
       "weight": "1,210 kg",
       "drivetrain": "Rear-wheel drive",
       "transmission": "Getrag G50 5-speed manual with short-throw shift",
-      "bodyStyles": ["coupe", "targa", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "targa",
+        "cabriolet"
+      ],
       "description": "To mark the 250,000th 911, Porsche built 875 Commemorative Edition Carreras from the summer of 1987 for the 1988 model year — 505 Coupés, 165 Targas and 205 Cabriolets. All wore Diamond Blue Metallic with colour-matched 15-inch Fuchs, Silver Blue leather on the door panels, steering wheel and gearknob, and Ferry Porsche's signature stitched into the headrests; Coupés got a sliding sunroof and every car a glovebox anniversary plaque. Equipment included a short-throw shifter, sports suspension and the luxury carpet option. Of the total, 250 were earmarked for Germany, 300 for the US and 50 for the UK.",
       "production": "875 built — 505 Coupé, 165 Targa, 205 Cabriolet (Porsche Newsroom); 300 US, 250 Germany, 50 UK",
       "special": true,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+        "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJQBOgB4g3rZfMDAAAP7svZJ+jlTJhAmfqzyZ0Cb+4E9YgfpOJOgHxM1Pt39vKVVLbPURYQnSlQb+SRtyucSXGo2gAA==",
+        "creditId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+        "width": 1920,
+        "height": 1257
+      },
+      "gallery": [
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAoABABoJYgAAtiBf8czWrAA/n50RxECllQZqBs+Wkf2GlJ5DQf4FC/1u81X6x9Ld8vLssErgR7PePUEa/8AAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZwAAp9OGVBQAPyxjuKTvwihHj/zR+ZUB3RwnjNabwRsIWZQ7q02wVa97T7LSiSTN4lMpAHAAA==",
+          "creditId": "img-porsche-911-carrera-3-2-tc-24-essen-tce43244-e084f3c4",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbAAAp3Q8E7fVwAAzJiYMEHndF78SzpENcb2SOJDvA65SPr6A1vVSW1ngpAfeMY2tCHKMFtsOO+ZNSapwAAA",
+          "creditId": "img-1976-porsche-911-carrera-2-7-bs-o24-f82212cd",
+          "width": 1920,
+          "height": 1146
+        },
+        {
+          "src": "/images/911-2.7/img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJbACdAB5fKTrIAD+wD888UesaZyjqE4IYdbpazVsVBgI676DHDfUFXCGGSEcIUkvlxIxpL3O3VlT0mc2gC1LqxIsq+jIAAA=",
+          "creditId": "img-1974-porsche-911-carrera-2-7-mfi-5c5e23a0",
+          "width": 1920,
+          "height": 1217
+        },
+        {
+          "src": "/images/turbo-3.0-930/img-1985-porsche-911-carrera-3-2-hcc24-e793a126-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwAApENO4pAAP55NM898Q7ZJtYbhKYrBMAq4ytHbmLxu5BJ2sE9qj49+FKIL2yGo0c2gJmuM0za1RrP795jMFAAAA==",
+          "creditId": "img-1985-porsche-911-carrera-3-2-hcc24-e793a126",
+          "width": 1920,
+          "height": 1118
+        },
+        {
+          "src": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJYgAAl0ocbfr5EAA9ZibxJK+3ScT4+onyJhqPhssL+3YyjW48xf9nnh5npK3KO8xfNIEnxtBztnUFC6xz9PgAAA=",
+          "creditId": "img-1976-porsche-911-carrera-2-7-22546-0fd8d4b0",
+          "width": 1920,
+          "height": 1263
+        },
+        {
+          "src": "/images/carrera-3.2/img-1984-porsche-911-carrera-3-2-9ea6dfe2-1920.avif",
+          "alt": "911 Carrera Commemorative Edition — stand-in photo (same gseries family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJYwAArA70DZjQAD9u3RBlb8dcW7d9o2yfGnuRy8BrsX29xRMpB0ACO3ygz32m5yqP5PA40AAAA==",
+          "creditId": "img-1984-porsche-911-carrera-3-2-9ea6dfe2",
+          "width": 1920,
+          "height": 1103
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "uploader Stahlkocher",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Carrera_3.2_1988_vr_EMS.jpg",
+          "localPath": "/images/turbo-3.0-930/img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2517×1648px (414 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1976_Porsche_911_Carrera_2.7.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1976_Porsche_911_Carrera_2.7.jpg",
+          "localPath": "/images/911-2.7/img-1976-porsche-911-carrera-2-7-c4268537-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14768×9152px (12929 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "The 'quarter millionaire' — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/2024/history/porsche-klassik-911-g-model-anniversary-model-1987-35245.html" },
-        { "title": "Porsche 911 Carrera Commemorative Edition (1988) — stuttcars", "url": "https://www.stuttcars.com/porsche-911-carrera-commemorative-edition-1988/" },
-        { "title": "1988 911 Commemorative Edition — Porsche Club of America", "url": "https://www.pca.org/tech/1988-911-commemorative-edition" },
-        { "title": "1988 Porsche 911 Carrera Cabriolet Commemorative Edition — Barrett-Jackson", "url": "https://www.barrett-jackson.com/las-vegas/2015/docket/vehicle/1988-porsche-911-carrera-cabriolet-188110" },
-        { "title": "1987 Porsche 911 \"G\" - Carrera Commemorative Edition — Classic Driver", "url": "https://www.classicdriver.com/en/car/porsche/911-g/1987/791350" }
+        {
+          "title": "The 'quarter millionaire' — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2024/history/porsche-klassik-911-g-model-anniversary-model-1987-35245.html"
+        },
+        {
+          "title": "Porsche 911 Carrera Commemorative Edition (1988) — stuttcars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-commemorative-edition-1988/"
+        },
+        {
+          "title": "1988 911 Commemorative Edition — Porsche Club of America",
+          "url": "https://www.pca.org/tech/1988-911-commemorative-edition"
+        },
+        {
+          "title": "1988 Porsche 911 Carrera Cabriolet Commemorative Edition — Barrett-Jackson",
+          "url": "https://www.barrett-jackson.com/las-vegas/2015/docket/vehicle/1988-porsche-911-carrera-cabriolet-188110"
+        },
+        {
+          "title": "1987 Porsche 911 \"G\" - Carrera Commemorative Edition — Classic Driver",
+          "url": "https://www.classicdriver.com/en/car/porsche/911-g/1987/791350"
+        }
       ],
       "missing": [
         "Model year is given as 1988 while Porsche Newsroom records the build as summer 1987 and some listings show 1987 deliveries.",
@@ -737,15 +2908,73 @@
       ]
     }
   ],
-  "credits": [],
+  "credits": [
+    {
+      "assetId": "img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1988_Porsche_930_Turbo_Cabriolet_Flachbau%2C_front_right_(Hershey_2019).jpg",
+      "license": "CC BY-SA 3.0",
+      "author": "Mr.choppers",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1988_Porsche_930_Turbo_Cabriolet_Flachbau,_front_right_(Hershey_2019).jpg",
+      "localPath": "/images/gseries/img-1988-porsche-930-turbo-cabriolet-flachbau-front-right-hers-77c33446-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5091×3148px (9150 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-1974-porsche-911-carrera-rs-3-0-3ff3ac31",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1974_Porsche_911_Carrera_RS_3.0.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "MrWalkr",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1974_Porsche_911_Carrera_RS_3.0.jpg",
+      "localPath": "/images/gseries/img-1974-porsche-911-carrera-rs-3-0-3ff3ac31-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4792×2802px (2121 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-gseries",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "/models/930-turbo-1975/model.glb",
+      "license": "MIT (repo) + CC Attribution (geometry, inferred)",
+      "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+      "retrieved": "2026-10-02",
+      "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
+      "localPath": "/models/930-turbo-1975/model.glb",
+      "note": "local GLB"
+    }
+  ],
   "sources": [
-    { "title": "50 years of the Porsche 911 (G-Series) — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/50-Jahre-Porsche-911-(G-Serie)-%E2%80%93-Der-Dauerbrenner-von-Porsche.html" },
-    { "title": "2nd Generation 911 (G-Series), 1973–1989 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/2.-Generation-911,-(G-Serie),-1973---1989.html" },
-    { "title": "The G model: The 911 gets off to a flying start with technical innovations — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-2-g-model-16459.html" },
-    { "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars", "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/" },
-    { "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars", "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/" },
-    { "title": "Porsche 911 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911" },
-    { "title": "Porsche 911 (930) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)" }
+    {
+      "title": "50 years of the Porsche 911 (G-Series) — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/50-Jahre-Porsche-911-(G-Serie)-%E2%80%93-Der-Dauerbrenner-von-Porsche.html"
+    },
+    {
+      "title": "2nd Generation 911 (G-Series), 1973–1989 — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/2.-Generation-911,-(G-Serie),-1973---1989.html"
+    },
+    {
+      "title": "The G model: The 911 gets off to a flying start with technical innovations — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-2-g-model-16459.html"
+    },
+    {
+      "title": "Porsche 911 (G-Body) European Technical Spec Comparison — stuttcars",
+      "url": "https://www.stuttcars.com/porsche-911-g-series-european-technical-spec-comparison/"
+    },
+    {
+      "title": "Porsche 911 (G-Series) — Ultimate Model Guide, stuttcars",
+      "url": "https://www.stuttcars.com/porsche-model-research/porsche-911-research/porsche-911-g-series-2nd-generation-research-hub/"
+    },
+    {
+      "title": "Porsche 911 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911"
+    },
+    {
+      "title": "Porsche 911 (930) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(930)"
+    }
   ],
   "missing": [
     "Generation production total: 198,496 (Porsche Newsroom '50 years' and 'seven generations part 2') vs 196,397 (Porsche Newsroom 60-Years press kit datasheet). Both are cited; unresolved.",

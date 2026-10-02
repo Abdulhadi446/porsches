@@ -10,17 +10,86 @@
   "accent": "#55555e",
   "eraType": "display",
   "stats": [
-    { "label": "Production", "value": "175,262 built (1998–2005)" },
-    { "label": "First water-cooled 911", "value": "3.4 L flat-six, 300 PS (221 kW)" },
-    { "label": "Carrera from 2002", "value": "3.6 L, 320 PS · 0–100 km/h 4.9 s" },
-    { "label": "911 Turbo (2000–2005)", "value": "420 PS · 0–100 km/h 4.2 s" },
-    { "label": "911 GT2 from 2003", "value": "483 PS (355 kW), rear-wheel drive" },
-    { "label": "Designers", "value": "Pinky Lai and Harm Lagaay" }
+    {
+      "label": "Production",
+      "value": "175,262 built (1998–2005)"
+    },
+    {
+      "label": "First water-cooled 911",
+      "value": "3.4 L flat-six, 300 PS (221 kW)"
+    },
+    {
+      "label": "Carrera from 2002",
+      "value": "3.6 L, 320 PS · 0–100 km/h 4.9 s"
+    },
+    {
+      "label": "911 Turbo (2000–2005)",
+      "value": "420 PS · 0–100 km/h 4.2 s"
+    },
+    {
+      "label": "911 GT2 from 2003",
+      "value": "483 PS (355 kW), rear-wheel drive"
+    },
+    {
+      "label": "Designers",
+      "value": "Pinky Lai and Harm Lagaay"
+    }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/996/img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e-1920.avif",
+    "alt": "Water-Cooled Turn (996) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAgABABoJZQCdADwSstdcAAA2noK8kSNfVJKuolP/pZ+EnubRHswgitZqa7ym8cpk4AA",
+    "creditId": "img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e",
+    "width": 1920,
+    "height": 982
+  },
+  "timelineImage": {
+    "src": "/images/996/img-porsche-911-996-gt3-rs-f587350a-1920.avif",
+    "alt": "Water-Cooled Turn (996) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoABABoJaAC7AEPdxMAiXb50AAA/hnbhst4l5J/fuolM1ohXBew6uF3156L2+UBUKRuNKGNDx/6au1op3T/1Po1sN9LlIxHYJA9nzgP/kwA",
+    "creditId": "img-porsche-911-996-gt3-rs-f587350a",
+    "width": 1920,
+    "height": 1188
+  },
+  "model3d": {
+    "embedUrl": "https://sketchfab.com/3d-models/porsche-996-bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
+    "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
+    "license": "CC Attribution",
+    "author": "MattDoesBlender",
+    "glb": null,
+    "turntable": null,
+    "bytes": null
+  },
+  "videos": [
+    {
+      "id": "ct30rm78cEA",
+      "title": "Porsche 911 996 in-depth review - see why it's the ultimate sports car bargain!",
+      "channel": "Mat Watson Cars",
+      "poster": null,
+      "note": "thorough first-water-cooled 911 assessment, warts included"
+    },
+    {
+      "id": "w6jCiB9dt0A",
+      "title": "DRIVETRIBE GARAGE: Jethro's Porsche 911",
+      "channel": "DRIVETRIBE",
+      "poster": null,
+      "note": "Carbon-era garage episode built around a 996 911"
+    },
+    {
+      "id": "2OFuYRe1NLQ",
+      "title": "Here's Why the Porsche 911 Turbo (996) Is a Crazy Bargain",
+      "channel": "Doug DeMuro",
+      "poster": null,
+      "note": "996 turbo ownership reality check, prices and caveats"
+    },
+    {
+      "id": "5TfqLjRV8q4",
+      "title": "Porsche 911 (996) GT3 RS - The Best Drivers Porsche?",
+      "channel": "Collecting Cars",
+      "poster": null,
+      "note": "first water-cooled 911 GT3 RS, Chris Harris on lightness"
+    }
+  ],
   "variants": [
     {
       "id": "carrera",
@@ -39,19 +108,120 @@
       "weight": "1,316 kg (2,901 lb) 3.4 L; 1,342 kg (2,959 lb) 3.6 L (manual coupé)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The launch car of the water-cooled era: a 3.4-litre flat-six with four valves per cylinder, 300 PS and a 0–100 km/h sprint of 5.2 seconds in a body roughly 50 kg lighter than the 993 it replaced. It arrived as a coupé and cabriolet, rear-wheel drive, with either a six-speed manual or five-speed Tiptronic S. The 2002 facelift raised capacity to 3.6 litres and output to 320 PS, sharpened the front end with Turbo-derived lights, and rewrote the numbers: 4.9 seconds to 100 km/h and 286 km/h flat out.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2003-porsche-911-996-carrera-2-d89381c7-1920.avif",
+        "alt": "911 Carrera",
+        "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoABABoJbACdAYulFCHx7+MAAD6nE/4RDh8JZNVNUFfRdtrUhx0Nv7KOlgQtwcg3BFZq6tytIgecGZ14CSUZabH01ksEyYNonpsOXJdouIHru3iuNaAAAA=",
+        "creditId": "img-2003-porsche-911-996-carrera-2-d89381c7",
+        "width": 1920,
+        "height": 1188
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-367e289a-1920.avif",
+          "alt": "911 Carrera — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJaACdAEfYscNM89noAD+qNCZB+gVxsSnaDDiJ2ANPygMgYKOrG55FdVebleNaZlXdGrNhl7acgAA",
+          "creditId": "img-1999-porsche-911-996-carrera-4-367e289a",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-94606-1e4d7acb-1920.avif",
+          "alt": "911 Carrera — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAoABABoJaACdADwgYQNrhw0AP5HTDyt3JMGwreCOaZF2gMaz0KxkJGDlNXKGR/rKyajXkFHyDKgfG+C4ZhNAAA=",
+          "creditId": "img-1999-porsche-911-996-carrera-4-94606-1e4d7acb",
+          "width": 1920,
+          "height": 1211
+        },
+        {
+          "src": "/images/carrera/img-porsche-911-996-carrera-3-4-a0e24646-1920.avif",
+          "alt": "911 Carrera — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbAAAvySHBEOh5IAAP7ACoWUYgeP94JUFrqya4Ypyx2VOi0D/CIQiXmBYeUNtJYbxLsUya2VpIDFr30nbJgaaGw4kwTG8KYU0AAA",
+          "creditId": "img-porsche-911-996-carrera-3-4-a0e24646",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-996-carrera-pau-2015-6f2e1e38-1920.avif",
+          "alt": "911 Carrera — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsABABoJbAAArCpZqplfAAA/sGfF0GypngIef+PIJhYtFnySjI7/tqjdpfALwKJPwzde5qOtT8VT3KeOg9Mjjprjg5fOMLzG/5fURTSbg1xgAA=",
+          "creditId": "img-porsche-996-carrera-pau-2015-6f2e1e38",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-911-996-carrera-cabriolet-93622ee6-1920.avif",
+          "alt": "911 Carrera — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAsABABoJbAC7ACGNHZPogAA/ofIiFvFK2kl9RY76ZCuSacHyDA9DKgKyqhBJ08OTGE/7OkpPKvdGu8LNc1jQ4hxcx0/+u2FrlOmufQU7sF6oJ7xAAAA",
+          "creditId": "img-porsche-911-996-carrera-cabriolet-93622ee6",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-911-996-carrera-cabriolet-2-9bf62798-1920.avif",
+          "alt": "911 Carrera — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsABABoJbACdADhK0MeaahAAP7kQlVrf1X/bEDkNwqJgbG4dkfCPe3MjzDInF6nWzVCZ7MVk3KpjSjvyuoTyNN2YTspaeXsbjrlC/eK5dKB9hkkvLDrYAA=",
+          "creditId": "img-porsche-911-996-carrera-cabriolet-2-9bf62798",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-996-carrera-pau-2015-2-1dd055a2-1920.avif",
+          "alt": "911 Carrera — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsABABoJbAAD46uiaUj7PkAAPjZ+Un6uQ7EozLhFB4XEzRoifOvICqjzFYJB8YMUsgltjEnv18Hud3+AGT8OGxK/JUPHTeJ7tlY1jAFaZBuea28AAAA",
+          "creditId": "img-porsche-996-carrera-pau-2015-2-1dd055a2",
+          "width": 1920,
+          "height": 1282
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2003-porsche-911-996-carrera-2-d89381c7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2003_Porsche_911_996_Carrera_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2003_Porsche_911_996_Carrera_2.jpg",
+          "localPath": "/images/carrera/img-2003-porsche-911-996-carrera-2-d89381c7-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12546×7760px (12449 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1999-porsche-911-996-carrera-4-367e289a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1999_Porsche_911_996_Carrera_4.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1999_Porsche_911_996_Carrera_4.jpg",
+          "localPath": "/images/carrera/img-1999-porsche-911-996-carrera-4-367e289a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10392px (20903 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" },
-        { "title": "2002 911 Carrera Coupe (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/63" },
-        { "title": "2004 911 Carrera Coupe (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/67" }
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        },
+        {
+          "title": "2002 911 Carrera Coupe (996 v2) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/63"
+        },
+        {
+          "title": "2004 911 Carrera Coupe (996 v2) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/67"
+        }
       ],
       "missing": []
     },
@@ -70,18 +240,115 @@
       "weight": null,
       "drivetrain": null,
       "transmission": null,
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "There has never been a 996-generation 911 Carrera S. Porsche dropped the S suffix after the 993, and the 996 range runs from the Carrera through the all-wheel-drive Carrera 4S — a model introduced in 2002 that plays the part a buyer might expect a Carrera S to fill. The badge returned on the 997 in 2005. This roster entry is retained so the variant id survives across generations, but no 996 specifications can honestly be attached to it.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-s/img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c-1920.avif",
+        "alt": "911 Carrera S",
+        "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAYABABoJZQCdAD0R8Pd9DQAAPagmmxNpSwfUhCbCQqtzL+HKAYWMhd+bCMIQD224JdQgAA=",
+        "creditId": "img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c",
+        "width": 1920,
+        "height": 761
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-2003-porsche-911-996-carrera-2-d89381c7-1920.avif",
+          "alt": "911 Carrera S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoABABoJbACdAYulFCHx7+MAAD6nE/4RDh8JZNVNUFfRdtrUhx0Nv7KOlgQtwcg3BFZq6tytIgecGZ14CSUZabH01ksEyYNonpsOXJdouIHru3iuNaAAAA=",
+          "creditId": "img-2003-porsche-911-996-carrera-2-d89381c7",
+          "width": 1920,
+          "height": 1188
+        },
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-367e289a-1920.avif",
+          "alt": "911 Carrera S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJaACdAEfYscNM89noAD+qNCZB+gVxsSnaDDiJ2ANPygMgYKOrG55FdVebleNaZlXdGrNhl7acgAA",
+          "creditId": "img-1999-porsche-911-996-carrera-4-367e289a",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-94606-1e4d7acb-1920.avif",
+          "alt": "911 Carrera S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAoABABoJaACdADwgYQNrhw0AP5HTDyt3JMGwreCOaZF2gMaz0KxkJGDlNXKGR/rKyajXkFHyDKgfG+C4ZhNAAA=",
+          "creditId": "img-1999-porsche-911-996-carrera-4-94606-1e4d7acb",
+          "width": 1920,
+          "height": 1211
+        },
+        {
+          "src": "/images/carrera/img-porsche-911-996-carrera-3-4-a0e24646-1920.avif",
+          "alt": "911 Carrera S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbAAAvySHBEOh5IAAP7ACoWUYgeP94JUFrqya4Ypyx2VOi0D/CIQiXmBYeUNtJYbxLsUya2VpIDFr30nbJgaaGw4kwTG8KYU0AAA",
+          "creditId": "img-porsche-911-996-carrera-3-4-a0e24646",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-996-carrera-pau-2015-6f2e1e38-1920.avif",
+          "alt": "911 Carrera S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsABABoJbAAArCpZqplfAAA/sGfF0GypngIef+PIJhYtFnySjI7/tqjdpfALwKJPwzde5qOtT8VT3KeOg9Mjjprjg5fOMLzG/5fURTSbg1xgAA=",
+          "creditId": "img-porsche-996-carrera-pau-2015-6f2e1e38",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-996-carrera-pau-2015-2-1dd055a2-1920.avif",
+          "alt": "911 Carrera S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsABABoJbAAD46uiaUj7PkAAPjZ+Un6uQ7EozLhFB4XEzRoifOvICqjzFYJB8YMUsgltjEnv18Hud3+AGT8OGxK/JUPHTeJ7tlY1jAFaZBuea28AAAA",
+          "creditId": "img-porsche-996-carrera-pau-2015-2-1dd055a2",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-911-carrera-996-washington-dc-metro-area-usa-7505ca98-1920.avif",
+          "alt": "911 Carrera S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoQAA0ABABoJQBOgB2WTbAAAPm1sp7WbDQmMu6lndbUxsvdFUD8EfaRIb5GfRwkimdC6+EjNVeRUOc593iS0TK3iJJJ5KsE9ltw2+VQ5pujwAAA",
+          "creditId": "img-porsche-911-carrera-996-washington-dc-metro-area-usa-7505ca98",
+          "width": 1920,
+          "height": 1536
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1999_Porsche_911_Carrera_(996)_coupe_(2011-05-26).jpg",
+          "license": "Public domain — released into the public domain by its author, OSX.",
+          "author": "OSX",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:1999_Porsche_911_Carrera_(996)_coupe_(2011-05-26).jpg",
+          "localPath": "/images/carrera-s/img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3678×1458px (3225 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2003-porsche-911-996-carrera-2-d89381c7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2003_Porsche_911_996_Carrera_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2003_Porsche_911_996_Carrera_2.jpg",
+          "localPath": "/images/carrera/img-2003-porsche-911-996-carrera-2-d89381c7-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12546×7760px (12449 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" },
-        { "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs (996 model list)", "url": "https://www.excellence-mag.com/resources/specs/83" }
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        },
+        {
+          "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs (996 model list)",
+          "url": "https://www.excellence-mag.com/resources/specs/83"
+        }
       ],
       "missing": [
         "No 996-generation 'Carrera S' exists: the model is absent from Porsche's 996 range and from Excellence's 996 spec index, which lists Carrera, Carrera 4, Carrera 4S, Targa, Turbo, Turbo S, GT3 and GT2 only. All spec fields left null."
@@ -104,20 +371,124 @@
       "weight": "1,375 kg (3,032 lb) coupé 3.4 L; 1,483 kg (3,267 lb) cabriolet 3.6 L",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "From October 1998 the 996 range gained permanent all-wheel drive, a system that sent between five and forty percent of torque to the front wheels as conditions demanded. The Carrera 4 was the accessible way into four-wheel-drive 911 traction, sharing the 3.4-litre 300 PS engine with the rear-drive Carrera and taking on the 320 PS 3.6-litre when the cabriolet was updated for 2002. The narrow-body coupé ended its run in 2001, making way for the wide-bodied Carrera 4S, while the Carrera 4 Cabriolet — with its Z-fold roof and removable hardtop — continued until 2004.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1-1920.avif",
+        "alt": "911 Carrera 4",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsABABoJbACdADhYARNLh1lgAD+2+XNuheBOkOs+M4vtxMrBZMwwUGGMUXjzYBjEUJqPVrn8cmSK/rtDlBb/5pzovIYCnSG5tjVqPyKQAAA",
+        "creditId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab-1920.avif",
+          "alt": "911 Carrera 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsABABoJQBOgBsuPzf2AAD9v8ueLD7jTjs34WJC4I+Oay7p1woUwGqsiecyZrdvUUtPfC/csN5MVItVmEYC8mSiHjY35UdUTiEE4GIleUCdeYAAAA==",
+          "creditId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-1-1fd62a6a-1920.avif",
+          "alt": "911 Carrera 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAsABABoJYwAAo4WR0QAAP5+VzBLHh8QNDX9EfgZAZR0N94JGHEGebNqb+GlKf7mzSeG1m0wr7tTqv3EeITvhnRe/uQlTd9MK6g4qtGAAA==",
+          "creditId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-1-1fd62a6a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera/img-2003-porsche-911-996-carrera-2-d89381c7-1920.avif",
+          "alt": "911 Carrera 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoABABoJbACdAYulFCHx7+MAAD6nE/4RDh8JZNVNUFfRdtrUhx0Nv7KOlgQtwcg3BFZq6tytIgecGZ14CSUZabH01ksEyYNonpsOXJdouIHru3iuNaAAAA=",
+          "creditId": "img-2003-porsche-911-996-carrera-2-d89381c7",
+          "width": 1920,
+          "height": 1188
+        },
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-367e289a-1920.avif",
+          "alt": "911 Carrera 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJaACdAEfYscNM89noAD+qNCZB+gVxsSnaDDiJ2ANPygMgYKOrG55FdVebleNaZlXdGrNhl7acgAA",
+          "creditId": "img-1999-porsche-911-996-carrera-4-367e289a",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/carrera/img-1999-porsche-911-996-carrera-4-94606-1e4d7acb-1920.avif",
+          "alt": "911 Carrera 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAoABABoJaACdADwgYQNrhw0AP5HTDyt3JMGwreCOaZF2gMaz0KxkJGDlNXKGR/rKyajXkFHyDKgfG+C4ZhNAAA=",
+          "creditId": "img-1999-porsche-911-996-carrera-4-94606-1e4d7acb",
+          "width": 1920,
+          "height": 1211
+        },
+        {
+          "src": "/images/carrera/img-porsche-911-996-carrera-3-4-a0e24646-1920.avif",
+          "alt": "911 Carrera 4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsABABoJbAAAvySHBEOh5IAAP7ACoWUYgeP94JUFrqya4Ypyx2VOi0D/CIQiXmBYeUNtJYbxLsUya2VpIDFr30nbJgaaGw4kwTG8KYU0AAA",
+          "creditId": "img-porsche-911-996-carrera-3-4-a0e24646",
+          "width": 1920,
+          "height": 1282
+        },
+        {
+          "src": "/images/carrera/img-porsche-996-carrera-pau-2015-6f2e1e38-1920.avif",
+          "alt": "911 Carrera 4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsABABoJbAAArCpZqplfAAA/sGfF0GypngIef+PIJhYtFnySjI7/tqjdpfALwKJPwzde5qOtT8VT3KeOg9Mjjprjg5fOMLzG/5fURTSbg1xgAA=",
+          "creditId": "img-porsche-996-carrera-pau-2015-6f2e1e38",
+          "width": 1920,
+          "height": 1282
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Carrera_4_Cabriolet_-_Flickr_-_Alexandre_Pr%C3%A9vot_(2).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Carrera_4_Cabriolet_-_Flickr_-_Alexandre_Prévot_(2).jpg",
+          "localPath": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4520 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Carrera_4_Cabriolet_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Carrera_4_Cabriolet_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4608×3072px (7123 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera 4 (type 996) — Porsche Classic", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/996/996-4" },
-        { "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/83" },
-        { "title": "2003 911 Carrera 4 Cabriolet (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/90" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "Porsche 911 Carrera 4 (type 996) — Porsche Classic",
+          "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/996/996-4"
+        },
+        {
+          "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/83"
+        },
+        {
+          "title": "2003 911 Carrera 4 Cabriolet (996 v2) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/90"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": [
         "Carrera 4 (3.4 L) top speed differs by source: Wikipedia EU-spec lists 274 km/h, Excellence lists 174 mph (280 km/h). Wikipedia figure used."
@@ -140,19 +511,120 @@
       "weight": "1,470 kg (3,240 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The 4S gave the 996 a second, more aggressive shape: the Turbo's wide 1,830 mm body, its wheels and its brakes, but with the 3.6-litre naturally aspirated engine in place of the twin-turbo. Launched for 2002 as a coupé — the cabriolet followed for 2004 — it combined permanent all-wheel drive with 320 PS, 370 Nm, a 5.1-second sprint to 100 km/h and a 280 km/h top speed. Wider rear arches, cross-drilled discs and the aero-tuned front end made it the most planted naturally aspirated 996, and today it is among the generation's most sought-after variants.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-4s/img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-b48e91f4-1920.avif",
+        "alt": "911 Carrera 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwAgCdASoQAAsABABoJaACdAYvDqfrcaFND/ZoAP13Rpq97rQb55LfA6Bo/1ULN0wwZiQ2ECgUTu4X+Vql7ByGJmbRop4VYGbU5oaenCHFyBNN1/uxCy8ks1AlTSzWKZQPvhmeXHRAAA==",
+        "creditId": "img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-b48e91f4",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-4s/img-2002-porsche-911-996-carrera-4s-b806e805-1920.avif",
+          "alt": "911 Carrera 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAkABABoJZQCdAEf3Z15nLLVYAD+pst0vYozMaSp1Q2V7zOPk2HQhDO2KfqkyyVTuBnfUzM/xt+vgkHpWWkWAAA=",
+          "creditId": "img-2002-porsche-911-996-carrera-4s-b806e805",
+          "width": 1920,
+          "height": 1062
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-1-f923959d-1920.avif",
+          "alt": "911 Carrera 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJYgCdAECvEH0KeIQAMsnqgHa/Yj677QKrCGOPDV2/SpqVPGnVRUp+HyB/eF9jwT2+aV/OOOj7m3D4gc7F2bmEIAAAA==",
+          "creditId": "img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-1-f923959d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-2004-porsche-911-996-carrera-4s-tiptronic-s-6d8b2670-1920.avif",
+          "alt": "911 Carrera 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAoABABoJbAC7ADdcNTgYA5AQAD2a4lKN42H1z7XUVYVVKM9zlVtR+JVs/AGcSqF81LvCSGkozkIkws+2KoTPbmiPeJMkgAAAA==",
+          "creditId": "img-2004-porsche-911-996-carrera-4s-tiptronic-s-6d8b2670",
+          "width": 1920,
+          "height": 1262
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-996-carrera-4s-54904657994-62dd186c-1920.avif",
+          "alt": "911 Carrera 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAsABABoJZQAAlca3yAAAP5A9+DIFlzrzrsXH+xwE8Direxz5oo9H7U34RUEq8ogNOt3pODZF2CvIndX9cp3YgBZSNp/jgPAAA==",
+          "creditId": "img-porsche-996-carrera-4s-54904657994-62dd186c",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-996-carrera-4s-4-c9d07edc-1920.avif",
+          "alt": "911 Carrera 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgABABoJZQAAcJhtjsAAP6jdWpFZiY4s0t1uqC83D6a6ByKhc5tvofGZsCzfZ32ActNR4KKVcx7iRF86AolWkCDgKAAAAA=",
+          "creditId": "img-porsche-996-carrera-4s-4-c9d07edc",
+          "width": 1920,
+          "height": 997
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-996-carrera-4s-54895096292-0a800a7f-1920.avif",
+          "alt": "911 Carrera 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsABABoJZQAAjd4PNbQEAD+tj7DEzD3KgOofGIW7HJ1nZMJNPW8zrnWVnZQLP/AGqZUmsxJtJWZF0XS1a8/yJghDAiQAAA=",
+          "creditId": "img-porsche-996-carrera-4s-54895096292-0a800a7f",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-996-carrera-4s-2-f8a54c8a-1920.avif",
+          "alt": "911 Carrera 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoABABoJQBYdsWCztOgds4BxwAA/uRJyi7nxCHbrFyV74suT0/EQCmET8GKm1oRwmraLYuTFadqbIZvlYOUGknLXHbG3ZPaUgvrvHesbYNMECfAAAAA",
+          "creditId": "img-porsche-996-carrera-4s-2-f8a54c8a",
+          "width": 1920,
+          "height": 1180
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-b48e91f4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Carrera_4S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Carrera_4S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/carrera-4s/img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-b48e91f4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4960 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2002-porsche-911-996-carrera-4s-b806e805",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2002_Porsche_911_996_Carrera_4S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2002_Porsche_911_996_Carrera_4S.jpg",
+          "localPath": "/images/carrera-4s/img-2002-porsche-911-996-carrera-4s-b806e805-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6482×3584px (3626 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "2002 911 Carrera 4S Coupe (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/92" },
-        { "title": "How to buy a Porsche 996 — Porsche", "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "2002 911 Carrera 4S Coupe (996 v2) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/92"
+        },
+        {
+          "title": "How to buy a Porsche 996 — Porsche",
+          "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": []
     },
@@ -173,19 +645,119 @@
       "weight": "1,415 kg (3,114 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "Available from December 2001, the 996 Targa replaced the old lift-off roof panel with an electrically operated glass surface of more than 16 square feet (roughly 1.5 m²) — the largest glass area ever fitted to a 911 — and, for the first time, a rear window that powered upwards. Unusually for a 996 badged Targa, it was rear-wheel drive; the Targa 4 and Targa 4S names only arrived with the 997. The 3.6-litre 320 PS flat-six and six-speed manual gave 0–100 km/h in 5.2 seconds and 285 km/h, at a 1,415 kg kerb weight.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/996/img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e-1920.avif",
+        "alt": "911 Targa",
+        "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAgABABoJZQCdADwSstdcAAA2noK8kSNfVJKuolP/pZ+EnubRHswgitZqa7ym8cpk4AA",
+        "creditId": "img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e",
+        "width": 1920,
+        "height": 982
+      },
+      "gallery": [
+        {
+          "src": "/images/targa/img-porsche-996-targa-2e8cca0b-1280.avif",
+          "alt": "911 Targa — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJYwCdAEfYSFe0r6sAAD+gt1zFKGbAk6UBtnTnBW1nq77y1LIYKCpadVeQMwXH+l1KLevXeOfKGbN3V1Gvvm6LNxyySLVeN8xwWyYAAA=",
+          "creditId": "img-porsche-996-targa-2e8cca0b",
+          "width": 1280,
+          "height": 850
+        },
+        {
+          "src": "/images/targa/img-porsche-996-targa-51984502970-23f79331-1920.avif",
+          "alt": "911 Targa — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsABABoJYwAAtgphZrOoAD+lyCXBsJkAHSfC+cZk4V8a7LiqvJwDE+40pa7Xkd/FDLo+6L2dJZYITjfTH245Bfj3UusTgAAAA==",
+          "creditId": "img-porsche-996-targa-51984502970-23f79331",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-silver-porsche-911-targa-996-gumball-8712536f-640.avif",
+          "alt": "911 Targa — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkABABoJQBdgBVAw9PIAPoKhtg47QgI/emxwKFBugtLA0qKzcKOfu22OBVN267PR9LBfGL8KMCWDXpObAAA",
+          "creditId": "img-silver-porsche-911-targa-996-gumball-8712536f",
+          "width": 640,
+          "height": 379
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-996-6341245779-641a44ec-1920.avif",
+          "alt": "911 Targa — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAkABABoJYwCdACSahaAAP7KjB6W4EDMPjcdRZ20Cf77Z3YWO4casavzlbiv2zoM1CBRN1P51EcV3wA9/q+fPuFjjd8AAAA=",
+          "creditId": "img-porsche-911-targa-996-6341245779-641a44ec",
+          "width": 1920,
+          "height": 1130
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-996-2-2003-52342240669-21117ef5-1920.avif",
+          "alt": "911 Targa — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAsABABoJQBOgCK+i+f8ZgAA/oeinF63WS9NsPfk5x31mTJ5mI2wvzR6t5CFWl5Ezs7l76BIcaKTouLY8B1KYutkHifGCelvX7utxsSBtvcnZ/qBCe1CCWrdPu7WGkAAAA==",
+          "creditId": "img-porsche-911-targa-996-2-2003-52342240669-21117ef5",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-porsche-911-targa-996-2-2003-52342181598-bab29498-1920.avif",
+          "alt": "911 Targa — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJQBOgCKPjTUHZGgA/nhhHDYTh9eCs+7R56Z3xn1STmMDXNkqADMsXsyZJ/7GSQCTkfaqZzc392KJ88KLbgFFSmZd1lJgAAA=",
+          "creditId": "img-porsche-911-targa-996-2-2003-52342181598-bab29498",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa/img-porsche-996-targa-heck-f1ab7617-1280.avif",
+          "alt": "911 Targa — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAsABABoJYwC7ADw8Gtki+0+QAD+qh8mSUi3JnUaaVrGfIc+YiCLqasWlcyCtKelteYbvIQWRXUnVUFkPLqCnFYYYP3nXe8AAA==",
+          "creditId": "img-porsche-996-targa-heck-f1ab7617",
+          "width": 1280,
+          "height": 855
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2002_Porsche_911_996_Carrera_S_Targa_Tiptronic.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2002_Porsche_911_996_Carrera_S_Targa_Tiptronic.jpg",
+          "localPath": "/images/996/img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6916×3538px (2876 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-targa-2e8cca0b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Targa.JPG",
+          "license": "CC BY 3.0",
+          "author": "Thomas doerfer",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Targa.JPG",
+          "localPath": "/images/targa/img-porsche-996-targa-2e8cca0b-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1500×996px (200 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "History of the Porsche Targa — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-generations-history-21010.html" },
-        { "title": "2002 911 Targa (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/69" },
-        { "title": "2002 Porsche 911 Carrera 4S & 911 Targa — MotorWeek road test", "url": "https://motorweek.org/road_tests/2002_porsche_911_carrera_4s_911_targa_program_2206" }
+        {
+          "title": "History of the Porsche Targa — Porsche Newsroom",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-generations-history-21010.html"
+        },
+        {
+          "title": "2002 911 Targa (996 v2) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/69"
+        },
+        {
+          "title": "2002 Porsche 911 Carrera 4S & 911 Targa — MotorWeek road test",
+          "url": "https://motorweek.org/road_tests/2002_porsche_911_carrera_4s_911_targa_program_2206"
+        }
       ],
       "missing": []
     },
@@ -206,19 +778,140 @@
       "weight": "1,540 kg (3,395 lb) (manual coupé)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Launched in spring 2000 with VINs assigned to model year 2001, the 996 Turbo used the GT2's 3.6-litre twin-turbo flat-six in road-trimmed form: 420 PS and 563 Nm, routed through all-wheel drive into a 1,540 kg coupé. It reached 100 km/h in 4.2 seconds and ran to 304 km/h, with ceramic composite brakes optional and 18-inch Turbo Twist wheels under Turbo-look bodywork fed by its side intakes. A Cabriolet followed, and the run closed with the 450 PS Turbo S.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo/img-porsche-911-996-turbo-f36efc76-1920.avif",
+        "alt": "911 Turbo",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAoABABoJagAAgU++NTAAPeGolgDObaBGdjdvzYx3slhSiRipqXH8ikxyL4/xn5o45AKa17LvJg1t3/HmwD0AAA=",
+        "creditId": "img-porsche-911-996-turbo-f36efc76",
+        "width": 1920,
+        "height": 1191
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo/img-porsche-996-turbo-flickr-alexandre-pre-vot-15-edda7132-1920.avif",
+          "alt": "911 Turbo — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsABABoJZACdAEQJW/LwAAA/tUUP2jXZGr++ydGxrEEn1jSezsEExmUdW7TmmyRy+7wkinAeb+cMdE1cAmIAAA=",
+          "creditId": "img-porsche-996-turbo-flickr-alexandre-pre-vot-15-edda7132",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo/img-2002-porsche-911-996-turbo-46460-3990fb43-1920.avif",
+          "alt": "911 Turbo — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsABABoJZQAD5Dw8iCPmQuUAAD2KPoa7/NA+IxYThmWTEz7fI7xBuYtiCP+ulTOLshbJADOIjtZ5MWgm8Im3kGGPKYdCfOMqrJ1+mv3WAAA",
+          "creditId": "img-2002-porsche-911-996-turbo-46460-3990fb43",
+          "width": 1920,
+          "height": 1266
+        },
+        {
+          "src": "/images/turbo/img-2000-porsche-911-996-turbo-e3e5e4f5-1920.avif",
+          "alt": "911 Turbo — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAgCdASoQAAoABABoJbACdAYtVi3xw1KldEQAAP2zzQTnsERCgjwC8zrZY1gHTK5WBrlWpTX9qaJLCVJZm9m9swA5EvfX5kzLQnBbIY/V72VYUw8ogAAA",
+          "creditId": "img-2000-porsche-911-996-turbo-e3e5e4f5",
+          "width": 1920,
+          "height": 1192
+        },
+        {
+          "src": "/images/turbo/img-porsche-996-turbo-cabriolet-67186bbe-640.avif",
+          "alt": "911 Turbo — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJZQCw7DSLSFcgAD2QjImaIR+4rtZ7L0zh+nL5ec1Y70VFaFCnKLhK9fRKmfKst/OGZN9vU8OkEz9v5qQaQYAAAA=",
+          "creditId": "img-porsche-996-turbo-cabriolet-67186bbe",
+          "width": 640,
+          "height": 369
+        },
+        {
+          "src": "/images/turbo/img-2001-porsche-996-turbo-fos22-d30fc33b-1920.avif",
+          "alt": "911 Turbo — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAoABABoJZgCw7DvGwAAAP4//xjqKu+w9GVCUPsIrFpX1gvatSPjFlXvtGqcAqP1D2QAtEvWph9Aucntnlo7Nx+SOwXHTkkdgAAA",
+          "creditId": "img-2001-porsche-996-turbo-fos22-d30fc33b",
+          "width": 1920,
+          "height": 1213
+        },
+        {
+          "src": "/images/turbo/img-2004-porsche-911-turbo-996-fos22-02d4c096-1280.avif",
+          "alt": "911 Turbo — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoABABoJaACw7CoN5XbwFAAAP6qF+BKRCUpuc7zZzz4kXDboijyQasX2xdsicekRqScg3N3A1baZ/n8VcoQRAugtJvIOvMj3wlAAAA=",
+          "creditId": "img-2004-porsche-911-turbo-996-fos22-02d4c096",
+          "width": 1280,
+          "height": 773
+        },
+        {
+          "src": "/images/turbo/img-996-turbo-2003-911-porsche-silver-fab05022-1280.avif",
+          "alt": "911 Turbo — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJQBOgB4mu9GdlngA/Kx4tE9mMaMeZKNxm0N8WT25Yhly3GQnrtA/C8GSEyqH/3vaV0lDTlE5wmfnHT2yobVqL1P4VAAA",
+          "creditId": "img-996-turbo-2003-911-porsche-silver-fab05022",
+          "width": 1280,
+          "height": 797
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911turbo-996-2000-0aca89de30b94126bc7020109b2f3ef0?embed=1",
+        "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
+        "license": "CC Attribution",
+        "author": "i3bod",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-996-turbo-f36efc76",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_996_Turbo.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_996_Turbo.jpg",
+          "localPath": "/images/turbo/img-porsche-911-996-turbo-f36efc76-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2838×1760px (1315 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-turbo-flickr-alexandre-pre-vot-15-edda7132",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Turbo_-_Flickr_-_Alexandre_Pr%C3%A9vot_(15).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Turbo_-_Flickr_-_Alexandre_Prévot_(15).jpg",
+          "localPath": "/images/turbo/img-porsche-996-turbo-flickr-alexandre-pre-vot-15-edda7132-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4274 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-996-turbo",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911turbo-996-2000-0aca89de30b94126bc7020109b2f3ef0?embed=1",
+          "license": "CC Attribution",
+          "author": "i3bod",
+          "retrieved": "2026-10-02",
+          "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "2001 911 Turbo Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/72" },
-        { "title": "Porsche 911 Turbo (996) specs — FastestLaps", "url": "https://fastestlaps.com/models/porsche-911-turbo-996" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "2001 911 Turbo Coupe (996) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/72"
+        },
+        {
+          "title": "Porsche 911 Turbo (996) specs — FastestLaps",
+          "url": "https://fastestlaps.com/models/porsche-911-turbo-996"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": []
     },
@@ -239,18 +932,100 @@
       "weight": "1,590 kg (3,505 lb) (manual coupé)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The final and most potent 996 Turbo: 450 PS and 620 Nm from the twin-turbo 3.6, with ceramic composite brakes and six-piston front calipers as standard equipment plus Turbo S badging and a revised rear deck. Offered only for the 2004 and 2005 model years, it weighed 1,590 kg in manual form and, on Excellence's figures, matched the regular Turbo's 4.2-second 0–100 km/h while lifting top speed to 306 km/h. Coupé and cabriolet were both built; other sources quote a quicker 3.9-second sprint, so the conflict is recorded in missing.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-s/img-porsche-996-turbo-s-cabriolet-50179533347-b9925d59-1920.avif",
+        "alt": "911 Turbo S",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsABABoJZwAD5RQZ7LRyTSBIAD+7e78aZi5EOKldxmj4dGFuuIb969DEjaxnEtiEX4vpJfON+bLO1FyGLG6mYmh7cNfEMYDRitfie70cAAA",
+        "creditId": "img-porsche-996-turbo-s-cabriolet-50179533347-b9925d59",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-s/img-porsche-996-carrera-panamera-turbo-s-flickr-alexandre-pre-25904b42-1920.avif",
+          "alt": "911 Turbo S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsABABoJQAASzLIlxkwAAD+71RKTOo0LV4djd3weD4Tzy6W9QqrL8IFTr0WaJxvLxqRvUrIcT04ha8ph4vbBw7E4wiZ0cG5Z5E/8vYAAA==",
+          "creditId": "img-porsche-996-carrera-panamera-turbo-s-flickr-alexandre-pre-25904b42",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-996-turbo-s-cabrio-52175327992-71208969-1920.avif",
+          "alt": "911 Turbo S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJagCsAYv0wr08IAA/tmiRSBTFjdaoWVDMxZ03Z1I7OFmIJkixCiENH4xZ4pCLcX0wXCYeUKUblI0PS0m1u3km4qGsyEWAAA=",
+          "creditId": "img-porsche-996-turbo-s-cabrio-52175327992-71208969",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-911-996-turbo-s-8759592714-5db04160-1280.avif",
+          "alt": "911 Turbo S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJQAAXw9wZxNOXYQA/uALilDYbAach/rP6Ce3pYsPdb5TGKWZ6vD6r4+1XCiEM54/QQVFYC0J3EwPAAA=",
+          "creditId": "img-porsche-911-996-turbo-s-8759592714-5db04160",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-911-996-turbo-s-13828501834-af6fc1bc-1280.avif",
+          "alt": "911 Turbo S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAwABABoJZwAAp3NEPgXnlwA/vAbeu70/rYm+9QS3qIkB9YYS1q+ty/mU4BOvXkR8/G8q6LH/ZouDgAAAA==",
+          "creditId": "img-porsche-911-996-turbo-s-13828501834-af6fc1bc",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-996-turbo-s-cabrio-52176356703-c6b94082-1920.avif",
+          "alt": "911 Turbo S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQABAABABoJbACdAECpsrAtPwoRgAA/jLyPOuU665+UTH2AAoOg3zcQlOBJEl+WiDsj23pER11TsniUxyzzZOucYELAuAcDIUn8BuSqHK6wCK6HsI25IYqlXPtY8ovTHKg0lF+mgzcxMroAAA=",
+          "creditId": "img-porsche-996-turbo-s-cabrio-52176356703-c6b94082",
+          "width": 1920,
+          "height": 1920
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-996-turbo-s-cabriolet-50179533347-b9925d59",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Turbo_S_Cabriolet_(50179533347).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Turbo_S_Cabriolet_(50179533347).jpg",
+          "localPath": "/images/turbo-s/img-porsche-996-turbo-s-cabriolet-50179533347-b9925d59-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3351 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-carrera-panamera-turbo-s-flickr-alexandre-pre-25904b42",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Carrera_%5E_Panamera_Turbo_S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Carrera_^_Panamera_Turbo_S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/turbo-s/img-porsche-996-carrera-panamera-turbo-s-flickr-alexandre-pre-25904b42-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (5005 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "2005 911 Turbo S Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/77" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "2005 911 Turbo S Coupe (996) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/77"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": [
         "Turbo S performance figures conflict between sources: Excellence lists 4.2 s (0–100 km/h) and 190 mph (306 km/h) for the manual coupé, while Wikipedia quotes 3.9 s and 317 km/h. Excellence figures used."
@@ -273,19 +1048,119 @@
       "weight": "1,350 kg (2,976 lb) Mk1; 1,380 kg (3,043 lb) Mk2",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Porsche's first GT3 arrived in May 1999 as a homologation special built on the stiffer Carrera 4 bodyshell: a high-revving naturally aspirated 3.6 flat-six with 11.7:1 compression and 8,200 rpm available, no rear seats, bucket seats, firmer adjustable suspension and cross-drilled brakes. The Mk1 made 360 PS and covered 0–100 km/h in 4.8 seconds at 1,350 kg; the 2002 Mk2 lifted output to 381 PS and torque to 385 Nm, cut the sprint to 4.5 seconds and ran to 306 km/h. Rear-wheel drive and a six-speed manual kept it the purest 996 on track.",
       "special": true,
       "production": "1,868 built (Mk1); 2,313 built (Mk2)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+        "alt": "911 GT3",
+        "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZgCdAC3DAqspAAA/cKdHrxastC0y+gZN1d7s6GJfeXOsNBPZaMMrnnZv15TleD4L/guNE/A73Ns5/VYPViYpdCsEL8abB24AA==",
+        "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24-1920.avif",
+          "alt": "911 GT3 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsABABoJaACdAC3Z+KHoAD+5lID6XN+p6YzwABG6ivKf89N8WQUZpokGPjG+N9Wz4lQb0XPMQyJ8lS6QlBXN3fukCGLeeuVLop+4m9xNsAA",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-1999-porsche-911-996-gt3-49ac0d77-1920.avif",
+          "alt": "911 GT3 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAgCdASoQAAoABABoJZQCsAD7g5R+42OStOAA9AHk6FfPz6sw0uqIsb4DHo4rca2UE7I0pJmQzLFY17qkyKUnQwAAAA==",
+          "creditId": "img-1999-porsche-911-996-gt3-49ac0d77",
+          "width": 1920,
+          "height": 1189
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-f86c4724-1920.avif",
+          "alt": "911 GT3 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJZQAAqFbjQP0d3YQAAD10JFsvRvoUEvF1YvRvwBau+fnxSL9BILDpWMJjr8Ak2o78NBHe9wnHAAA",
+          "creditId": "img-2003-porsche-911-996-gt3-f86c4724",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-69936-9e89e003-1920.avif",
+          "alt": "911 GT3 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkABABoJZwAD45Q7FIh454AAP1u+ZW4ycweLQwpZ1rQ2TdsbB7Zu19OJzYd0u4O3d+SFuAaZMoGtTJB24jYAAA=",
+          "creditId": "img-2003-porsche-911-996-gt3-69936-9e89e003",
+          "width": 1920,
+          "height": 1077
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-996-gt3-of-peter-fitzgerald-at-the-2026-adelai-8c6d2706-1920.avif",
+          "alt": "911 GT3 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsABABoJaAAAu1TBOME51AA/vSnAzyzcqeoQuwlUKmf26kTurDspoAGMAYnsK/Jgz/VgJ3hcKSafOqHUZjtSqXMahqWuLlcSGhDmK/5W+h0CidvGOKfIAA=",
+          "creditId": "img-porsche-911-996-gt3-of-peter-fitzgerald-at-the-2026-adelai-8c6d2706",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-gt3-996-at-the-2026-adelaide-motorsport-festiv-2a2bf489-1920.avif",
+          "alt": "911 GT3 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAsABABoJbACdACqg2yAAOICfeFPhNm/I5SPCq95vW3YO9haYCs5JlNHK0dA6R+jb6TgD3/WOw/cQ4YxjPSYQb2/WtofrTFPcEOlDPj9hC0IAAA=",
+          "creditId": "img-porsche-911-gt3-996-at-the-2026-adelaide-motorsport-festiv-2a2bf489",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-mg-ex257-anthony-reid-warren-hughes-jonny-kane-leading-rye-5826f2f4-1280.avif",
+          "alt": "911 GT3 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACQAQCdASoQAAoABABoJQAATXkXQAAA+GPomZzwhAzjmBiUwywAx+XeCdk9/1XmgTtwEASH+ynbar+AAAA=",
+          "creditId": "img-mg-ex257-anthony-reid-warren-hughes-jonny-kane-leading-rye-5826f2f4",
+          "width": 1280,
+          "height": 795
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "license": "CC BY 4.0",
+          "author": "Yu Chu Chin",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "localPath": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6960×4640px (10993 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4382).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Yu Chu Chin",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4382).jpg",
+          "localPath": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6960×4640px (10666 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "2004 911 GT3 Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/82" },
-        { "title": "Porsche 911 GT3 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "2004 911 GT3 Coupe (996) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/82"
+        },
+        {
+          "title": "Porsche 911 GT3 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": []
     },
@@ -306,18 +1181,123 @@
       "weight": "1,360 kg (2,998 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 996 GT3 RS was the lightest and most focused normally aspirated 996: the Mk2 GT3's 381 PS flat-six and six-speed manual in a body trimmed to 1,360 kg through thinner glass, lightweight composites and the deletion of rear seats. It carried red-accented graphics, lightweight bucket seats and 18-inch forged wheels, reached 100 km/h in 4.4 seconds and topped out at 306 km/h. Built in 682 examples across the 2003 and 2004 model years, coupé only, it revived the RS name for the first time since the air-cooled era.",
       "special": true,
       "production": "682 built",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
+      "heroImage": {
+        "src": "/images/996/img-porsche-911-996-gt3-rs-f587350a-1920.avif",
+        "alt": "911 GT3 RS",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoABABoJaAC7AEPdxMAiXb50AAA/hnbhst4l5J/fuolM1ohXBew6uF3156L2+UBUKRuNKGNDx/6au1op3T/1Po1sN9LlIxHYJA9nzgP/kwA",
+        "creditId": "img-porsche-911-996-gt3-rs-f587350a",
+        "width": 1920,
+        "height": 1188
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-seikel-motorsport-2003-24-hours-of-le-m-3a4adfa7-1280.avif",
+          "alt": "911 GT3 RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJZQAAxPH/QB/9owAAP7b686YCv7wsABHc3p6BuT+3xZm943eVbglwMee71M0DdN7IxzkBEXxmToRfshgCxlK2AA=",
+          "creditId": "img-porsche-996-gt3-rs-seikel-motorsport-2003-24-hours-of-le-m-3a4adfa7",
+          "width": 1280,
+          "height": 780
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-01-e4c001f4-1920.avif",
+          "alt": "911 GT3 RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAYABABoJZwAAqFl8G3MjUAA8UVQ5VEpoRxdalyxoA5SRaZ4ZcJEE3YBZ+l/9DELwuDgF28ISAWAAAA=",
+          "creditId": "img-porsche-996-gt3-rs-01-e4c001f4",
+          "width": 1920,
+          "height": 709
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-15409287003-4950e52b-1920.avif",
+          "alt": "911 GT3 RS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsABABoJbACdAD6eOVOUjjFoAD+z2lO6o89BOuWR93QquVa622HYxYhsdPjoigqwpPrj4gjxNKVqvK7ot5XJ6FUPv2nhWYjkVXNtgcVCR2WrhLh/zyAAAA=",
+          "creditId": "img-porsche-996-gt3-rs-15409287003-4950e52b",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-frontansicht-1820100a-640.avif",
+          "alt": "911 GT3 RS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAwABABoJaQAAujVGXJgAAD+8MeAEu9564OmD3/kmzfglsmk3xZsNJLfWM+XtliAAA==",
+          "creditId": "img-porsche-996-gt3-rs-frontansicht-1820100a",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-51917848068-daf853a5-1920.avif",
+          "alt": "911 GT3 RS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZwAAmrhfx464AD+tCuEgorNLDHy5dNYeN/4u8CIzyhuoVTio/FWo2O/dTX8jDkYlue6CxEjzZ+/jUBuigAA",
+          "creditId": "img-porsche-996-gt3-rs-51917848068-daf853a5",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-2-cef09902-1920.avif",
+          "alt": "911 GT3 RS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJZwAAfbXuw3LAADcbfQhQPMpvb3p1IbMKnRPMNXAP89MZzZZC6QrtugTYTiFPe6obj/QzUbs80IuB4AAAA==",
+          "creditId": "img-porsche-996-gt3-rs-2-cef09902",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-996-gt3-rs-9212485905-4d827a83-1920.avif",
+          "alt": "911 GT3 RS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJZQAAgc974dp0uQA/Z1cdX7FC4w/XPW+9R8zGyFIU8h1lh6s4oiT+uuBxM8UOYMLrYM7Id47rw/oCwKYBtFLUwwEDHeEAAA=",
+          "creditId": "img-porsche-996-gt3-rs-9212485905-4d827a83",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
+      "videos": [
+        {
+          "id": "DVvCr8gBzY4",
+          "title": "Class of 2003 MEGA TEST | 996 GT3 RS vs 360 Challenge Stradale vs M3 CSL | Supercar Driver | 4K",
+          "channel": "Supercar Driver",
+          "poster": null,
+          "note": "996 GT3 RS benchmarked against its 2003 rivals"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-996-gt3-rs-f587350a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_996_GT3_RS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_996_GT3_RS.jpg",
+          "localPath": "/images/996/img-porsche-911-996-gt3-rs-f587350a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12998×8044px (9663 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-gt3-rs-seikel-motorsport-2003-24-hours-of-le-m-3a4adfa7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT3_RS_-_Seikel_Motorsport_2003_-_24_Hours_of_Le_Mans.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Martin Lee",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT3_RS_-_Seikel_Motorsport_2003_-_24_Hours_of_Le_Mans.jpg",
+          "localPath": "/images/gt3-rs/img-porsche-996-gt3-rs-seikel-motorsport-2003-24-hours-of-le-m-3a4adfa7-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1331×811px (516 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Coupe (996 series) GT3 RS specs — Ultimate Specs", "url": "https://www.ultimatespecs.com/car-specs/Porsche/3585/Porsche-911-Coupe-(996-series)-GT3-RS.html" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "Porsche 911 Coupe (996 series) GT3 RS specs — Ultimate Specs",
+          "url": "https://www.ultimatespecs.com/car-specs/Porsche/3585/Porsche-911-Coupe-(996-series)-GT3-RS.html"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": []
     },
@@ -338,20 +1318,138 @@
       "weight": "1,440 kg (3,175 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The GT2 took the 996 Turbo's drivetrain and removed everything Porsche could live without: all-wheel drive, rear seats and around 100 kg of mass. It ran with 462 PS in 2001–2002 form and 483 PS from 2003, driving the rear wheels through a six-speed manual with ceramic composite brakes standard, 315-section rear tyres and 1,440 kg to haul. It cracked 100 km/h in 4.0 seconds and ran to 314 km/h — the fastest production 911 of its day. Homologated for GT2-class racing, it was rawer and far rarer than the Turbo, and famously unforgiving of mistakes.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
+      "heroImage": {
+        "src": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+        "alt": "911 GT2",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbACsAYuRiz1+MwAAP6+j17s4HPTMKcJCQRoH6ZHe8mvo40OqsJbv15ToQapqisybxK+YtyIpI6WhlmZjJl7eKXhAUBSX7Z74PG6J20AAA==",
+        "creditId": "img-2001-porsche-911-996-gt2-5080e3e9",
+        "width": 1920,
+        "height": 1156
+      },
+      "gallery": [
+        {
+          "src": "/images/gt2/img-porsche-996-gt2-coupe-7cfb15d6-1920.avif",
+          "alt": "911 GT2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAkABABoJYwCdAEQXK7y+cgAAPyP9i0gTHrqvUtfVWq+O6TXGNKsoWAhLV9Uj3I00Z9hWcj93LacZReGFlQo1IoAAA==",
+          "creditId": "img-porsche-996-gt2-coupe-7cfb15d6",
+          "width": 1920,
+          "height": 1136
+        },
+        {
+          "src": "/images/gt2/img-2001-porsche-911-996-gt2-33570-5f725d27-1920.avif",
+          "alt": "911 GT2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwABABoJbACdAYuRishQG2kAADiWV1hIZdI9o1zCYVLLk0AOCeTKjdSHSqPdOL7OG7en6YtoXU2oTiZwDdMj82xQxeSHyaS9zLWHRlKju7lhrzBxZ8IAAA=",
+          "creditId": "img-2001-porsche-911-996-gt2-33570-5f725d27",
+          "width": 1920,
+          "height": 1433
+        },
+        {
+          "src": "/images/gt2/img-2001-porsche-911-996-gt2-80382-2865a6c4-1920.avif",
+          "alt": "911 GT2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwABABoJbAC7AEQDOItlLgAAP7qAa8LIF6nC8rC24/wXMUsYLPdw/zvrYy5/iD27TznEPnllHzwdOFUWBPQyGVjGz638O/UYVYF/4AAAA==",
+          "creditId": "img-2001-porsche-911-996-gt2-80382-2865a6c4",
+          "width": 1920,
+          "height": 1428
+        },
+        {
+          "src": "/images/gt2/img-porsche-996-gt2-interior-e703335e-1920.avif",
+          "alt": "911 GT2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsABABoJZQCw7EC/78PEEwA+p/Y35mvj9Wes0wqmSm2/sUZfzW008r2iwCsr3l70Am6w8PehdTYFels7eSUVdjJFbaR4hiG2/z0EM6KAAAA",
+          "creditId": "img-porsche-996-gt2-interior-e703335e",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt2/img-porsche-996-gt2-fd8c8017-640.avif",
+          "alt": "911 GT2 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZQAAu1xYMztwAD+7r4txmkOQg52aHECTBWQ5yWMcEVsP2mwAqaVIc7ve+X/yUpx6UUxHVPLfO3y6T7egkugKAA=",
+          "creditId": "img-porsche-996-gt2-fd8c8017",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "src": "/images/gt2/img-porsche-996-gt2-spread-out-e576ec7a-1920.avif",
+          "alt": "911 GT2 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAA0ABABoJYwCdAC2tnXX0LHAAP3wb1oZZ3f0fvgk06xr4Tx/7BhR/Wp7vebOAvbe8aXo7CKsL4fYKVH0ROD2lYMo0egVStx4JtOlD4TezSN9sd9RL6AhoawAAA==",
+          "creditId": "img-porsche-996-gt2-spread-out-e576ec7a",
+          "width": 1920,
+          "height": 1604
+        },
+        {
+          "src": "/images/gt2/img-techart-gt-street-based-on-porsche-996-gt2-92eaa17d-1280.avif",
+          "alt": "911 GT2 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJYgCdAEMVckRnYUAAMs7ZrXmnLmwRay7bOKgDfZoU5cek6I+xZVILWrDgtglO28HIY9LDrVE9tDIFKQ+WTLFa5h1AJTAAAA=",
+          "creditId": "img-techart-gt-street-based-on-porsche-996-gt2-92eaa17d",
+          "width": 1280,
+          "height": 851
+        }
+      ],
+      "videos": [
+        {
+          "id": "cFov3RZD16s",
+          "title": "The Beauty of Brutality: Porsche 996 GT2",
+          "channel": "Petrolicious",
+          "poster": null,
+          "note": "the 996 GT2 stripped of wings and driven hard"
+        },
+        {
+          "id": "2_v5CBv-3CM",
+          "title": "Driving the WIDOWMAKER: What's The Fearsome Porsche 911 996 GT2 Really Like?",
+          "channel": "JayEmm on Cars",
+          "poster": null,
+          "note": "long road-and-track GT2 test in early 996 form"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2001-porsche-911-996-gt2-5080e3e9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2001_Porsche_911_996_GT2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2001_Porsche_911_996_GT2.jpg",
+          "localPath": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15862×9554px (17716 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-gt2-coupe-7cfb15d6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT2_coup%C3%A9.jpg",
+          "license": "CC BY 2.0",
+          "author": "Mats Lindh Reviewer InfoField FAEP",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT2_coupé.jpg",
+          "localPath": "/images/gt2/img-porsche-996-gt2-coupe-7cfb15d6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2783×1647px (1331 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "2002 911 GT2 Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/79" },
-        { "title": "How to buy a Porsche 996 — Porsche", "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide" },
-        { "title": "2004 Porsche 911 — Cars.com", "url": "https://www.cars.com/research/porsche-911-2004" },
-        { "title": "Porsche 911 GT2 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2" }
+        {
+          "title": "2002 911 GT2 Coupe (996) — Excellence specs",
+          "url": "https://www.excellence-mag.com/resources/specs/79"
+        },
+        {
+          "title": "How to buy a Porsche 996 — Porsche",
+          "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide"
+        },
+        {
+          "title": "2004 Porsche 911 — Cars.com",
+          "url": "https://www.cars.com/research/porsche-911-2004"
+        },
+        {
+          "title": "Porsche 911 GT2 — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2"
+        }
       ],
       "missing": [
         "MY2003–2005 GT2 (483 PS) performance not separately verified: the 4.0 s and 314 km/h figures come from Excellence's 2002 (462 PS) car; Cars.com quotes about 4 s and a 198 mph (319 km/h) top track speed for the 2004 model."
@@ -372,19 +1470,119 @@
       "weight": null,
       "drivetrain": null,
       "transmission": null,
-      "bodyStyles": ["cabriolet"],
+      "bodyStyles": [
+        "cabriolet"
+      ],
       "description": "No 996 America Roadster was ever built. The name belongs two generations earlier: Porsche's 964 911 America Roadster of 1992 and 1993, a Turbo-bodied, Turbo-sprung cabriolet made for the North American market in a run of exactly 250 cars, echoing the 356 America Roadster. The 996 range contains no such model — its open cars are the Carrera Cabriolet, Carrera 4 Cabriolet, Carrera 4S Cabriolet and Turbo Cabriolet. This entry exists only because the roster carries the id across generations; every specification field is intentionally null.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+        "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbACsAYuRiz1+MwAAP6+j17s4HPTMKcJCQRoH6ZHe8mvo40OqsJbv15ToQapqisybxK+YtyIpI6WhlmZjJl7eKXhAUBSX7Z74PG6J20AAA==",
+        "creditId": "img-2001-porsche-911-996-gt2-5080e3e9",
+        "width": 1920,
+        "height": 1156
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZgCdAC3DAqspAAA/cKdHrxastC0y+gZN1d7s6GJfeXOsNBPZaMMrnnZv15TleD4L/guNE/A73Ns5/VYPViYpdCsEL8abB24AA==",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/america-roadster/img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJaQAAksv0n9SAAD8tK4fckPtw1bqFHN2ZpUYp/WDNdc1O6n8ccFQnZlo3a3hfLcGFm0NsI+2KVNTvAAAAA==",
+          "creditId": "img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsABABoJbACdADhYARNLh1lgAD+2+XNuheBOkOs+M4vtxMrBZMwwUGGMUXjzYBjEUJqPVrn8cmSK/rtDlBb/5pzovIYCnSG5tjVqPyKQAAA",
+          "creditId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsABABoJaACdAC3Z+KHoAD+5lID6XN+p6YzwABG6ivKf89N8WQUZpokGPjG+N9Wz4lQb0XPMQyJ8lS6QlBXN3fukCGLeeuVLop+4m9xNsAA",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAYABABoJZQCdAD0R8Pd9DQAAPagmmxNpSwfUhCbCQqtzL+HKAYWMhd+bCMIQD224JdQgAA=",
+          "creditId": "img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c",
+          "width": 1920,
+          "height": 761
+        },
+        {
+          "src": "/images/carrera-4/img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsABABoJQBOgBsuPzf2AAD9v8ueLD7jTjs34WJC4I+Oay7p1woUwGqsiecyZrdvUUtPfC/csN5MVItVmEYC8mSiHjY35UdUTiEE4GIleUCdeYAAAA==",
+          "creditId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2487d9ab",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-1999-porsche-911-996-gt3-49ac0d77-1920.avif",
+          "alt": "911 America Roadster — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAgCdASoQAAoABABoJZQCsAD7g5R+42OStOAA9AHk6FfPz6sw0uqIsb4DHo4rca2UE7I0pJmQzLFY17qkyKUnQwAAAA==",
+          "creditId": "img-1999-porsche-911-996-gt3-49ac0d77",
+          "width": 1920,
+          "height": 1189
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2001-porsche-911-996-gt2-5080e3e9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2001_Porsche_911_996_GT2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2001_Porsche_911_996_GT2.jpg",
+          "localPath": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15862×9554px (17716 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "license": "CC BY 4.0",
+          "author": "Yu Chu Chin",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "localPath": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6960×4640px (10993 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 America Roadster (964) (1992–1993) — StuttCars", "url": "https://www.stuttcars.com/porsche-911-america-roadster-964-1992-1993" },
-        { "title": "1993 Porsche 911 America Roadster — Classic.com", "url": "https://www.classic.com/m/porsche/911/964/carrera-2/america-roadster/year-1993" },
-        { "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs (996 model list)", "url": "https://www.excellence-mag.com/resources/specs/83" }
+        {
+          "title": "Porsche 911 America Roadster (964) (1992–1993) — StuttCars",
+          "url": "https://www.stuttcars.com/porsche-911-america-roadster-964-1992-1993"
+        },
+        {
+          "title": "1993 Porsche 911 America Roadster — Classic.com",
+          "url": "https://www.classic.com/m/porsche/911/964/carrera-2/america-roadster/year-1993"
+        },
+        {
+          "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs (996 model list)",
+          "url": "https://www.excellence-mag.com/resources/specs/83"
+        }
       ],
       "missing": [
         "No 996-generation 'America Roadster' exists: the model is a 1992–1993 964 limited to 250 cars. All spec fields left null; roster id retained for cross-generation consistency."
@@ -407,19 +1605,119 @@
       "weight": null,
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "For the turn of the millennium Porsche dressed a Carrera 4 in Violet Chromaflair — a paint that shifts from deep violet towards green as the light changes — over natural caramel leather with dark burr maple trim and chrome 18-inch Turbo Twist wheels. A numbered console plate and a '911' badge on the engine lid marked each car out. Just 911 examples were built for model year 2000, each with the 300 PS 3.4-litre flat-six and permanent all-wheel drive, in six-speed manual or Tiptronic form: a collector's specification rather than a performance statement.",
       "special": true,
       "production": "911 built",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/america-roadster/img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7-1920.avif",
+        "alt": "911 Millennium Edition",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJaQAAksv0n9SAAD8tK4fckPtw1bqFHN2ZpUYp/WDNdc1O6n8ccFQnZlo3a3hfLcGFm0NsI+2KVNTvAAAAA==",
+        "creditId": "img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbACsAYuRiz1+MwAAP6+j17s4HPTMKcJCQRoH6ZHe8mvo40OqsJbv15ToQapqisybxK+YtyIpI6WhlmZjJl7eKXhAUBSX7Z74PG6J20AAA==",
+          "creditId": "img-2001-porsche-911-996-gt2-5080e3e9",
+          "width": 1920,
+          "height": 1156
+        },
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZgCdAC3DAqspAAA/cKdHrxastC0y+gZN1d7s6GJfeXOsNBPZaMMrnnZv15TleD4L/guNE/A73Ns5/VYPViYpdCsEL8abB24AA==",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsABABoJaACdAC3Z+KHoAD+5lID6XN+p6YzwABG6ivKf89N8WQUZpokGPjG+N9Wz4lQb0XPMQyJ8lS6QlBXN3fukCGLeeuVLop+4m9xNsAA",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAYABABoJZQCdAD0R8Pd9DQAAPagmmxNpSwfUhCbCQqtzL+HKAYWMhd+bCMIQD224JdQgAA=",
+          "creditId": "img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c",
+          "width": 1920,
+          "height": 761
+        },
+        {
+          "src": "/images/gt3/img-1999-porsche-911-996-gt3-49ac0d77-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAgCdASoQAAoABABoJZQCsAD7g5R+42OStOAA9AHk6FfPz6sw0uqIsb4DHo4rca2UE7I0pJmQzLFY17qkyKUnQwAAAA==",
+          "creditId": "img-1999-porsche-911-996-gt3-49ac0d77",
+          "width": 1920,
+          "height": 1189
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-f86c4724-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJZQAAqFbjQP0d3YQAAD10JFsvRvoUEvF1YvRvwBau+fnxSL9BILDpWMJjr8Ak2o78NBHe9wnHAAA",
+          "creditId": "img-2003-porsche-911-996-gt3-f86c4724",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-69936-9e89e003-1920.avif",
+          "alt": "911 Millennium Edition — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkABABoJZwAD45Q7FIh454AAP1u+ZW4ycweLQwpZ1rQ2TdsbB7Zu19OJzYd0u4O3d+SFuAaZMoGtTJB24jYAAA=",
+          "creditId": "img-2003-porsche-911-996-gt3-69936-9e89e003",
+          "width": 1920,
+          "height": 1077
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_Carrera_4_Millennium_Edition_(52742880473).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_Carrera_4_Millennium_Edition_(52742880473).jpg",
+          "localPath": "/images/america-roadster/img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (5420 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2001-porsche-911-996-gt2-5080e3e9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2001_Porsche_911_996_GT2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2001_Porsche_911_996_GT2.jpg",
+          "localPath": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15862×9554px (17716 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Carrera 4 Millennium Edition (996) (2000) — StuttCars", "url": "https://www.stuttcars.com/porsche-911-carrera-4-millennium-edition-996-2000" },
-        { "title": "Porsche 996 Carrera 4 Millennium Edition 1999 — Elferspot", "url": "https://www.elferspot.com/en/car/porsche-996-carrera-4-millennium-edition-1999-3306098" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "Porsche 911 Carrera 4 Millennium Edition (996) (2000) — StuttCars",
+          "url": "https://www.stuttcars.com/porsche-911-carrera-4-millennium-edition-996-2000"
+        },
+        {
+          "title": "Porsche 996 Carrera 4 Millennium Edition 1999 — Elferspot",
+          "url": "https://www.elferspot.com/en/car/porsche-996-carrera-4-millennium-edition-1999-3306098"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": [
         "Millennium Edition kerb weight not found in any source consulted; no 0–100 km/h figure is quoted either (source gives 0–60 mph 5.2 s only), so acceleration is stated in imperial."
@@ -442,55 +1740,276 @@
       "weight": "1,370 kg (3,020 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Built to mark 40 years of the 911, the 40th Anniversary (40 Jahre 911) was a rear-drive Carrera coupé given the X51 power kit as standard: 254 kW (345 PS) instead of 320, via new camshafts and exhaust manifolds rather than a simple remap. It also gained a limited-slip differential, lowered sports suspension, a Turbo front bumper, 18-inch Carrera II wheels, dark grey leather sports seats with a numbered plaque and, exclusively, GT Silver Metallic paint. Porsche made 1,963 of them for model year 2004 — one for every year since the 911 arrived in 1963.",
       "special": true,
       "production": "1,963 built",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+        "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbACsAYuRiz1+MwAAP6+j17s4HPTMKcJCQRoH6ZHe8mvo40OqsJbv15ToQapqisybxK+YtyIpI6WhlmZjJl7eKXhAUBSX7Z74PG6J20AAA==",
+        "creditId": "img-2001-porsche-911-996-gt2-5080e3e9",
+        "width": 1920,
+        "height": 1156
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZgCdAC3DAqspAAA/cKdHrxastC0y+gZN1d7s6GJfeXOsNBPZaMMrnnZv15TleD4L/guNE/A73Ns5/VYPViYpdCsEL8abB24AA==",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/america-roadster/img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJaQAAksv0n9SAAD8tK4fckPtw1bqFHN2ZpUYp/WDNdc1O6n8ccFQnZlo3a3hfLcGFm0NsI+2KVNTvAAAAA==",
+          "creditId": "img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAsABABoJaACdAC3Z+KHoAD+5lID6XN+p6YzwABG6ivKf89N8WQUZpokGPjG+N9Wz4lQb0XPMQyJ8lS6QlBXN3fukCGLeeuVLop+4m9xNsAA",
+          "creditId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a43-48627b24",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAYABABoJZQCdAD0R8Pd9DQAAPagmmxNpSwfUhCbCQqtzL+HKAYWMhd+bCMIQD224JdQgAA=",
+          "creditId": "img-1999-porsche-911-carrera-996-coupe-2011-05-26-c2979e2c",
+          "width": 1920,
+          "height": 761
+        },
+        {
+          "src": "/images/gt3/img-1999-porsche-911-996-gt3-49ac0d77-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAgCdASoQAAoABABoJZQCsAD7g5R+42OStOAA9AHk6FfPz6sw0uqIsb4DHo4rca2UE7I0pJmQzLFY17qkyKUnQwAAAA==",
+          "creditId": "img-1999-porsche-911-996-gt3-49ac0d77",
+          "width": 1920,
+          "height": 1189
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-f86c4724-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoABABoJZQAAqFbjQP0d3YQAAD10JFsvRvoUEvF1YvRvwBau+fnxSL9BILDpWMJjr8Ak2o78NBHe9wnHAAA",
+          "creditId": "img-2003-porsche-911-996-gt3-f86c4724",
+          "width": 1920,
+          "height": 1223
+        },
+        {
+          "src": "/images/gt3/img-2003-porsche-911-996-gt3-69936-9e89e003-1920.avif",
+          "alt": "911 40th Anniversary (40 Jahre) — stand-in photo (same 996 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkABABoJZwAD45Q7FIh454AAP1u+ZW4ycweLQwpZ1rQ2TdsbB7Zu19OJzYd0u4O3d+SFuAaZMoGtTJB24jYAAA=",
+          "creditId": "img-2003-porsche-911-996-gt3-69936-9e89e003",
+          "width": 1920,
+          "height": 1077
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2001-porsche-911-996-gt2-5080e3e9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2001_Porsche_911_996_GT2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2001_Porsche_911_996_GT2.jpg",
+          "localPath": "/images/gt2/img-2001-porsche-911-996-gt2-5080e3e9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15862×9554px (17716 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "license": "CC BY 4.0",
+          "author": "Yu Chu Chin",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_996_GT3_at_the_2025_Shannons_Adelaide_Rally_(028A4616).jpg",
+          "localPath": "/images/gt3/img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6960×4640px (10993 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 40 Jahre Anniversary — PistonHeads", "url": "https://www.pistonheads.com/news/ph-spottedykywt/porsche-911-40-jahre-anniversary--spotted/46771" },
-        { "title": "Porsche 911 40th Anniversary — Classic.com", "url": "https://www.classic.com/m/porsche/911/996/9962/carrera/40th-anniversary" },
-        { "title": "2004 Porsche 911 — Cars.com", "url": "https://www.cars.com/research/porsche-911-2004" },
-        { "title": "2003 Porsche 911 Anniversary 996 — Carfolio", "url": "https://www.carfolio.com/porsche-911-anniversary-114246" },
-        { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" }
+        {
+          "title": "Porsche 911 40 Jahre Anniversary — PistonHeads",
+          "url": "https://www.pistonheads.com/news/ph-spottedykywt/porsche-911-40-jahre-anniversary--spotted/46771"
+        },
+        {
+          "title": "Porsche 911 40th Anniversary — Classic.com",
+          "url": "https://www.classic.com/m/porsche/911/996/9962/carrera/40th-anniversary"
+        },
+        {
+          "title": "2004 Porsche 911 — Cars.com",
+          "url": "https://www.cars.com/research/porsche-911-2004"
+        },
+        {
+          "title": "2003 Porsche 911 Anniversary 996 — Carfolio",
+          "url": "https://www.carfolio.com/porsche-911-anniversary-114246"
+        },
+        {
+          "title": "Porsche 911 (996) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+        }
       ],
       "missing": [
         "40th Anniversary: no verified 0–100 km/h or top-speed figure found in any source consulted, so both fields are null. Curb weight (1,370 kg) rests on a single source (Carfolio)."
       ]
     }
   ],
-  "credits": [],
+  "credits": [
+    {
+      "assetId": "img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A2002_Porsche_911_996_Carrera_S_Targa_Tiptronic.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:2002_Porsche_911_996_Carrera_S_Targa_Tiptronic.jpg",
+      "localPath": "/images/996/img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6916×3538px (2876 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-porsche-911-996-gt3-rs-f587350a",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_996_GT3_RS.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:Porsche_911_996_GT3_RS.jpg",
+      "localPath": "/images/996/img-porsche-911-996-gt3-rs-f587350a-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 12998×8044px (9663 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-996",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "https://sketchfab.com/3d-models/porsche-996-bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
+      "license": "CC Attribution",
+      "author": "MattDoesBlender",
+      "retrieved": "2026-10-02",
+      "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
+      "localPath": null,
+      "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    }
+  ],
   "sources": [
-    { "title": "Porsche 911 (996) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)" },
-    { "title": "5th Generation Porsche 911 (996), 1997–2005 — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/5.-Generation-Porsche-911,-(996),-1997-2005.html" },
-    { "title": "The 996: First 911 with water-cooled flat engine — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-5-typ-996-16487.html" },
-    { "title": "History of the Porsche Targa — Porsche Newsroom", "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-generations-history-21010.html" },
-    { "title": "How to buy a Porsche 996 — Porsche", "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide" },
-    { "title": "2004 911 Carrera Coupe (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/67" },
-    { "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/83" },
-    { "title": "2003 911 Carrera 4 Cabriolet (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/90" },
-    { "title": "2002 911 Carrera 4S Coupe (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/92" },
-    { "title": "2002 911 Targa (996 v2) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/69" },
-    { "title": "2001 911 Turbo Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/72" },
-    { "title": "2005 911 Turbo S Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/77" },
-    { "title": "2004 911 GT3 Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/82" },
-    { "title": "2002 911 GT2 Coupe (996) — Excellence specs", "url": "https://www.excellence-mag.com/resources/specs/79" },
-    { "title": "Porsche 911 GT3 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3" },
-    { "title": "Porsche 911 GT2 — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2" },
-    { "title": "Porsche 911 Coupe (996 series) GT3 RS specs — Ultimate Specs", "url": "https://www.ultimatespecs.com/car-specs/Porsche/3585/Porsche-911-Coupe-(996-series)-GT3-RS.html" },
-    { "title": "Porsche 911 Turbo (996) specs — FastestLaps", "url": "https://fastestlaps.com/models/porsche-911-turbo-996" },
-    { "title": "2002 Porsche 911 Carrera 4S & 911 Targa — MotorWeek road test", "url": "https://motorweek.org/road_tests/2002_porsche_911_carrera_4s_911_targa_program_2206" },
-    { "title": "Porsche 911 Carrera 4 Millennium Edition (996) (2000) — StuttCars", "url": "https://www.stuttcars.com/porsche-911-carrera-4-millennium-edition-996-2000" },
-    { "title": "Porsche 911 America Roadster (964) (1992–1993) — StuttCars", "url": "https://www.stuttcars.com/porsche-911-america-roadster-964-1992-1993" },
-    { "title": "Porsche 911 40 Jahre Anniversary — PistonHeads", "url": "https://www.pistonheads.com/news/ph-spottedykywt/porsche-911-40-jahre-anniversary--spotted/46771" },
-    { "title": "Porsche 911 40th Anniversary — Classic.com", "url": "https://www.classic.com/m/porsche/911/996/9962/carrera/40th-anniversary" },
-    { "title": "2004 Porsche 911 — Cars.com", "url": "https://www.cars.com/research/porsche-911-2004" },
-    { "title": "Buying Guide: Porsche 911 996 (1997 to 2004) — Hagerty", "url": "https://www.hagerty.co.uk/articles/buying-guides/buying-guide-porsche-911-996-1997-to-2004" },
-    { "title": "Porsche 911 Carrera 4 (type 996) — Porsche Classic", "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/996/996-4" }
+    {
+      "title": "Porsche 911 (996) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(996)"
+    },
+    {
+      "title": "5th Generation Porsche 911 (996), 1997–2005 — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/5.-Generation-Porsche-911,-(996),-1997-2005.html"
+    },
+    {
+      "title": "The 996: First 911 with water-cooled flat engine — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-5-typ-996-16487.html"
+    },
+    {
+      "title": "History of the Porsche Targa — Porsche Newsroom",
+      "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-generations-history-21010.html"
+    },
+    {
+      "title": "How to buy a Porsche 996 — Porsche",
+      "url": "https://www.porsche.com/stories/mobility/porsche-996-buyers-guide"
+    },
+    {
+      "title": "2004 911 Carrera Coupe (996 v2) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/67"
+    },
+    {
+      "title": "1999 911 Carrera 4 Coupe (996 v1) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/83"
+    },
+    {
+      "title": "2003 911 Carrera 4 Cabriolet (996 v2) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/90"
+    },
+    {
+      "title": "2002 911 Carrera 4S Coupe (996 v2) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/92"
+    },
+    {
+      "title": "2002 911 Targa (996 v2) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/69"
+    },
+    {
+      "title": "2001 911 Turbo Coupe (996) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/72"
+    },
+    {
+      "title": "2005 911 Turbo S Coupe (996) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/77"
+    },
+    {
+      "title": "2004 911 GT3 Coupe (996) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/82"
+    },
+    {
+      "title": "2002 911 GT2 Coupe (996) — Excellence specs",
+      "url": "https://www.excellence-mag.com/resources/specs/79"
+    },
+    {
+      "title": "Porsche 911 GT3 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_GT3"
+    },
+    {
+      "title": "Porsche 911 GT2 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_GT2"
+    },
+    {
+      "title": "Porsche 911 Coupe (996 series) GT3 RS specs — Ultimate Specs",
+      "url": "https://www.ultimatespecs.com/car-specs/Porsche/3585/Porsche-911-Coupe-(996-series)-GT3-RS.html"
+    },
+    {
+      "title": "Porsche 911 Turbo (996) specs — FastestLaps",
+      "url": "https://fastestlaps.com/models/porsche-911-turbo-996"
+    },
+    {
+      "title": "2002 Porsche 911 Carrera 4S & 911 Targa — MotorWeek road test",
+      "url": "https://motorweek.org/road_tests/2002_porsche_911_carrera_4s_911_targa_program_2206"
+    },
+    {
+      "title": "Porsche 911 Carrera 4 Millennium Edition (996) (2000) — StuttCars",
+      "url": "https://www.stuttcars.com/porsche-911-carrera-4-millennium-edition-996-2000"
+    },
+    {
+      "title": "Porsche 911 America Roadster (964) (1992–1993) — StuttCars",
+      "url": "https://www.stuttcars.com/porsche-911-america-roadster-964-1992-1993"
+    },
+    {
+      "title": "Porsche 911 40 Jahre Anniversary — PistonHeads",
+      "url": "https://www.pistonheads.com/news/ph-spottedykywt/porsche-911-40-jahre-anniversary--spotted/46771"
+    },
+    {
+      "title": "Porsche 911 40th Anniversary — Classic.com",
+      "url": "https://www.classic.com/m/porsche/911/996/9962/carrera/40th-anniversary"
+    },
+    {
+      "title": "2004 Porsche 911 — Cars.com",
+      "url": "https://www.cars.com/research/porsche-911-2004"
+    },
+    {
+      "title": "Buying Guide: Porsche 911 996 (1997 to 2004) — Hagerty",
+      "url": "https://www.hagerty.co.uk/articles/buying-guides/buying-guide-porsche-911-996-1997-to-2004"
+    },
+    {
+      "title": "Porsche 911 Carrera 4 (type 996) — Porsche Classic",
+      "url": "https://www.porsche.com/usa/accessoriesandservice/classic/models/996/996-4"
+    }
   ],
   "missing": [
     "Roster id `carrera-s`: no 996 Carrera S was ever produced (the 'S' role was filled by the 2002 Carrera 4S; the badge returned on the 997). Variant kept with null spec fields.",

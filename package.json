@@ -8,7 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "merge:assets": "node scripts/merge-assets.ts",
+    "assets:images": "node scripts/fetch-images.ts --all && node scripts/convert-images.ts",
+    "assets:images:verify": "node scripts/convert-images.ts --verify",
+    "assets:models": "node scripts/fetch-models.ts"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

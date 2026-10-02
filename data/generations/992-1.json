@@ -10,17 +10,86 @@
   "accent": "#d5001c",
   "eraType": "display",
   "stats": [
-    { "label": "World premiere", "value": "28 November 2018, Los Angeles Auto Show (Carrera S and Carrera 4S)" },
-    { "label": "Body", "value": "Wide arches on every 992 — 45 mm (1.8 in) wider than the 991, same 2,450 mm wheelbase" },
-    { "label": "Engine range", "value": "3.0 L twin-turbo 385/450/480 PS · 3.7 L twin-turbo 550/580/650 PS · 4.0 L NA 510/525 PS" },
-    { "label": "Peak output", "value": "650 PS (478 kW; 641 hp), 800 Nm (590 lb-ft) — 911 Turbo S" },
-    { "label": "Quickest", "value": "0–100 km/h in 2.7 s, 330 km/h (205 mph) — 911 Turbo S" },
-    { "label": "Numbered editions", "value": "Targa 4S Heritage Design 992 · Sport Classic 1,250 · S/T 1,963 · Dakar 2,500 · Turbo 50 Years 1,974" }
+    {
+      "label": "World premiere",
+      "value": "28 November 2018, Los Angeles Auto Show (Carrera S and Carrera 4S)"
+    },
+    {
+      "label": "Body",
+      "value": "Wide arches on every 992 — 45 mm (1.8 in) wider than the 991, same 2,450 mm wheelbase"
+    },
+    {
+      "label": "Engine range",
+      "value": "3.0 L twin-turbo 385/450/480 PS · 3.7 L twin-turbo 550/580/650 PS · 4.0 L NA 510/525 PS"
+    },
+    {
+      "label": "Peak output",
+      "value": "650 PS (478 kW; 641 hp), 800 Nm (590 lb-ft) — 911 Turbo S"
+    },
+    {
+      "label": "Quickest",
+      "value": "0–100 km/h in 2.7 s, 330 km/h (205 mph) — 911 Turbo S"
+    },
+    {
+      "label": "Numbered editions",
+      "value": "Targa 4S Heritage Design 992 · Sport Classic 1,250 · S/T 1,963 · Dakar 2,500 · Turbo 50 Years 1,974"
+    }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/992-1/img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240-1920.avif",
+    "alt": "992.1 Generation (992.1) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAkABABoJYwCdADdqoFWUKYAAP7mOxV8r2CEEiTAjZDcDEUs52EFlthigtJ7dyMPWbAFrKQMlBzJxauNQAAA",
+    "creditId": "img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240",
+    "width": 1920,
+    "height": 1080
+  },
+  "timelineImage": {
+    "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+    "alt": "992.1 Generation (992.1) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJbACdAC3y0UiMQ+AAPuejrnx5nKbeIEyfeectqTA9Cytt3SBkUspAqu0krD81iyJ9UJobZ8CXXu7wSmDulIAAAA=",
+    "creditId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+    "width": 1920,
+    "height": 1161
+  },
+  "model3d": {
+    "embedUrl": "https://sketchfab.com/3d-models/porsche-911-992-carrera-s-318cfb7279a94e8f96095ec0236f02ad?embed=1",
+    "sourceId": "318cfb7279a94e8f96095ec0236f02ad",
+    "license": "CC Attribution",
+    "author": "Nieve5677",
+    "glb": null,
+    "turntable": null,
+    "bytes": null
+  },
+  "videos": [
+    {
+      "id": "DLLN7f-a8xk",
+      "title": "NEW Porsche 911 (992 Generation): In-Depth First Look - Carfection (4K)",
+      "channel": "Carfection",
+      "poster": null,
+      "note": "full first look at the all-new 992 architecture"
+    },
+    {
+      "id": "EDm58UgBUxk",
+      "title": "Livestream reveal: Presenting the new Porsche 911 GT3 RS",
+      "channel": "Porsche",
+      "poster": null,
+      "note": "Porsche's official GT3 RS world premiere stream"
+    },
+    {
+      "id": "wXyNe-UX15Y",
+      "title": "New PORSCHE 911 S/T BREAKS COVER! First Look at the GREATEST 911 EVER",
+      "channel": "Shmee150",
+      "poster": null,
+      "note": "unveiled 60th-anniversary S/T, 1,963 built, manual only"
+    },
+    {
+      "id": "xdAsI1WlmIg",
+      "title": "2023 Porsche 911 Sport Classic: First Drive Review | Catchpole on Carfection",
+      "channel": "Carfection",
+      "poster": null,
+      "note": "992 Sport Classic judged on road, not against the GT3"
+    }
+  ],
   "variants": [
     {
       "id": "carrera",
@@ -39,19 +108,120 @@
       "weight": "1,505 kg (3,318 lb) DIN",
       "drivetrain": "Rear-wheel drive",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Joined the range in July 2019 as the entry point to the eighth generation, nine months after the Carrera S and 4S debuted in Los Angeles. It uses the same 2,981 cc twin-turbo flat-six as the S car but with model-specific turbochargers — smaller turbine and compressor wheels — to make 283 kW (385 PS; 379 hp) and 450 Nm (332 lb-ft) from 1,950 rpm. Only an eight-speed PDK was offered: the manual gearbox was reserved for the S, the 4S and later the Carrera T. Coupé and Cabriolet, rear-wheel drive, on 19-inch front and 20-inch rear wheels with smaller brakes than the S, plus the 10.9-inch PCM display, Wet Mode and PASM.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+        "alt": "911 Carrera",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQAAcABABoJQBdgMWW7MSElfkORAAA9pdbh/64lOYhpZuGa9IHJN+BSoIgwzd24y4JWz1bXPWsiI13nc5x/HdSIAA=",
+        "creditId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+        "width": 1920,
+        "height": 868
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "alt": "911 Carrera — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwABABoJZQAAsSLYvcb4dlgAM2mhPKgbhH20kcXivkZlm23zUBjmGM1ignmghnCEkH+lUEkZcZqgzPmoAAA",
+          "creditId": "img-porsche-992-carrera-eaee33d4",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-6-3e268416-1920.avif",
+          "alt": "911 Carrera — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAwABABoJbACdADuz60yAAD4+zxr9ZCqD4o66yOtexwLaW2G3ioGcUwdEHg2PondAkzbqA9u+/7g5MeBac94W5pyuVchnzb3oE51neu3SlgGgAA=",
+          "creditId": "img-porsche-992-carrera-s-6-3e268416",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-7-1c6ab9cf-1920.avif",
+          "alt": "911 Carrera — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAwABABoJbACdAEQ98SpBNJAAP7azXuGn+UZ+dW0ysobXtanyGEKDGx6UL/HGPWBgdiXF/24Iv0Fi3P/hzIIlSmBQWI97HkWuPDoyYyyL/bghZ71FiK/8gAAAA==",
+          "creditId": "img-porsche-992-carrera-s-7-1c6ab9cf",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-2020-porsche-911-992-carrera-s-ad16985f-1920.avif",
+          "alt": "911 Carrera — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZQAD4nNpmZHkgAA+4Zv3uDC//xxysazrTpp4zgqDHw1XPMDN1Yxd8+bu4jky1At2U/1cEV1fm4AAAA=",
+          "creditId": "img-2020-porsche-911-992-carrera-s-ad16985f",
+          "width": 1920,
+          "height": 1115
+        },
+        {
+          "src": "/images/carrera/img-2019-porsche-911-992-carrera-s-20719f4f-1920.avif",
+          "alt": "911 Carrera — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAoABABoJbAC7AC23tGpwAD4Yg5s2yPbLM003DLMN/O9zFW5qvSiJxBYzgCSHqAuZIwWpwSAtRwcw4IonRdnIJuBBoAA",
+          "creditId": "img-2019-porsche-911-992-carrera-s-20719f4f",
+          "width": 1920,
+          "height": 1151
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-8-68a218e8-1920.avif",
+          "alt": "911 Carrera — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwABABoJbACdAECpWEdQp4gAP7bnYARDLJq8Z4/w0rM+5LOLhAlRtkFpXDLrm5Qm74NP1FdfrEpETCRUF1xL4Ax74zV+dlVRy/U3+hl26Fo2FrdhepwAAA=",
+          "creditId": "img-porsche-992-carrera-s-8-68a218e8",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-4-932b0a5c-1920.avif",
+          "alt": "911 Carrera — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwABABoJbACdAELjpCetR3IAPYyiY9cAIp74GYCwBi1Esuj7xwNGfnqz1ztAZo+HfGhss22/DRd0CwnG9gzsB+iadFuqh/ByS6bNIZFDFXY1NvQAA==",
+          "creditId": "img-porsche-992-carrera-s-4-932b0a5c",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2021_Porsche_911_992_Carrera_S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2021_Porsche_911_992_Carrera_S.jpg",
+          "localPath": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6488×2932px (2656 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-992-carrera-eaee33d4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Carrera_%3F.jpg",
+          "license": "CC0 1.0",
+          "author": "uploader Mathious Ier",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Carrera_?.jpg",
+          "localPath": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4608×3456px (3424 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" },
-        { "title": "Porsche introduces new 911 Carrera Coupé and 911 Carrera Cabriolet (press release, 30 July 2019)", "url": "https://newsroom.porsche.com/en/2019/products/porsche-911-carrera-coupe-cabriolet-eighth-generation-18248.html" },
-        { "title": "How the new 911 got its “drive” — Porsche Newsroom technology (13 February 2019)", "url": "https://newsroom.porsche.com/en/2019/technology/porsche-911-carrera-type-992-powertrain-boxer-engine-16978.html" }
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        },
+        {
+          "title": "Porsche introduces new 911 Carrera Coupé and 911 Carrera Cabriolet (press release, 30 July 2019)",
+          "url": "https://newsroom.porsche.com/en/2019/products/porsche-911-carrera-coupe-cabriolet-eighth-generation-18248.html"
+        },
+        {
+          "title": "How the new 911 got its “drive” — Porsche Newsroom technology (13 February 2019)",
+          "url": "https://newsroom.porsche.com/en/2019/technology/porsche-911-carrera-type-992-powertrain-boxer-engine-16978.html"
+        }
       ],
       "missing": []
     },
@@ -72,19 +242,120 @@
       "weight": "1,515 kg (3,340 lb) DIN",
       "drivetrain": "Rear-wheel drive",
       "transmission": "8-speed PDK dual-clutch; 7-speed manual (with Sport Chrono standard) from 2020 model year",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The car that launched the 992. Porsche chose the Los Angeles Auto Show on 28 November 2018 to unveil the Carrera S and Carrera 4S, and the 3.0-litre biturbo was the headline: 331 kW (450 PS; 443 hp) at 6,500 rpm and 530 Nm (391 lb-ft) between 2,300 and 5,000 rpm, both new highs for a Carrera. A brand-new eight-speed PDK was standard, with a seven-speed manual added for 2020 model years — fitted with Sport Chrono as standard. The S sprints to 100 km/h in 3.7 seconds, or 3.5 with Sport Chrono, and runs to 308 km/h. Coupé and Cabriolet, and the basis for the Sport Classic and the whole 992.1 GT family.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+        "alt": "911 Carrera S",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQAAcABABoJQBdgMWW7MSElfkORAAA9pdbh/64lOYhpZuGa9IHJN+BSoIgwzd24y4JWz1bXPWsiI13nc5x/HdSIAA=",
+        "creditId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+        "width": 1920,
+        "height": 868
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "alt": "911 Carrera S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwABABoJZQAAsSLYvcb4dlgAM2mhPKgbhH20kcXivkZlm23zUBjmGM1ignmghnCEkH+lUEkZcZqgzPmoAAA",
+          "creditId": "img-porsche-992-carrera-eaee33d4",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-6-3e268416-1920.avif",
+          "alt": "911 Carrera S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAwABABoJbACdADuz60yAAD4+zxr9ZCqD4o66yOtexwLaW2G3ioGcUwdEHg2PondAkzbqA9u+/7g5MeBac94W5pyuVchnzb3oE51neu3SlgGgAA=",
+          "creditId": "img-porsche-992-carrera-s-6-3e268416",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-7-1c6ab9cf-1920.avif",
+          "alt": "911 Carrera S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAwABABoJbACdAEQ98SpBNJAAP7azXuGn+UZ+dW0ysobXtanyGEKDGx6UL/HGPWBgdiXF/24Iv0Fi3P/hzIIlSmBQWI97HkWuPDoyYyyL/bghZ71FiK/8gAAAA==",
+          "creditId": "img-porsche-992-carrera-s-7-1c6ab9cf",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-2020-porsche-911-992-carrera-s-ad16985f-1920.avif",
+          "alt": "911 Carrera S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZQAD4nNpmZHkgAA+4Zv3uDC//xxysazrTpp4zgqDHw1XPMDN1Yxd8+bu4jky1At2U/1cEV1fm4AAAA=",
+          "creditId": "img-2020-porsche-911-992-carrera-s-ad16985f",
+          "width": 1920,
+          "height": 1115
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-8-68a218e8-1920.avif",
+          "alt": "911 Carrera S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwABABoJbACdAECpWEdQp4gAP7bnYARDLJq8Z4/w0rM+5LOLhAlRtkFpXDLrm5Qm74NP1FdfrEpETCRUF1xL4Ax74zV+dlVRy/U3+hl26Fo2FrdhepwAAA=",
+          "creditId": "img-porsche-992-carrera-s-8-68a218e8",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-4-932b0a5c-1920.avif",
+          "alt": "911 Carrera S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwABABoJbACdAELjpCetR3IAPYyiY9cAIp74GYCwBi1Esuj7xwNGfnqz1ztAZo+HfGhss22/DRd0CwnG9gzsB+iadFuqh/ByS6bNIZFDFXY1NvQAA==",
+          "creditId": "img-porsche-992-carrera-s-4-932b0a5c",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-at-iaa-2019-img-0264-31f67778-1920.avif",
+          "alt": "911 Carrera S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAkABABoJaACdAEVV4ZCiw7uAAD+wgdguCbUNcfO23+cSjqMOi5IJi+NRCz8+B095JFcjoaEaUlznDKcDSN+DUEAkEAA",
+          "creditId": "img-porsche-992-carrera-at-iaa-2019-img-0264-31f67778",
+          "width": 1920,
+          "height": 1027
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2021_Porsche_911_992_Carrera_S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2021_Porsche_911_992_Carrera_S.jpg",
+          "localPath": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6488×2932px (2656 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-992-carrera-eaee33d4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Carrera_%3F.jpg",
+          "license": "CC0 1.0",
+          "author": "uploader Mathious Ier",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Carrera_?.jpg",
+          "localPath": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4608×3456px (3424 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018", "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" },
-        { "title": "All set for open-top season – the new 911 Cabriolet (press release, 9 January 2019)", "url": "https://newsroom.porsche.com/en/products/porsche-911-carrera-s-4s-cabriolet-first-model-derivative-new-eighth-generation-992-timeless-machine-16764.html" }
+        {
+          "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018",
+          "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        },
+        {
+          "title": "All set for open-top season – the new 911 Cabriolet (press release, 9 January 2019)",
+          "url": "https://newsroom.porsche.com/en/products/porsche-911-carrera-s-4s-cabriolet-first-model-derivative-new-eighth-generation-992-timeless-machine-16764.html"
+        }
       ],
       "missing": []
     },
@@ -105,19 +376,120 @@
       "weight": "1,555 kg (3,428 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Arrived in September 2019, four months after the rear-drive Carrera, bringing Porsche Traction Management and the wide body to the entry-level 911. The engine is the Carrera's 2,981 cc twin-turbo — 283 kW (385 PS; 379 hp) at 6,500 rpm with 450 Nm (332 lb-ft) from 1,950 rpm — but the front axle drive was redeveloped for the extra mass, and the car carries roughly 50 kg more than the rear-drive Coupé. It reaches 100 km/h in 4.2 seconds, 4.0 with Sport Chrono, and 291 km/h; the Cabriolet needs 4.4 seconds and 289 km/h. PASM became standard across the 992 range, with 20-inch front and 21-inch rear wheels.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+        "alt": "911 Carrera 4",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQAAcABABoJQBdgMWW7MSElfkORAAA9pdbh/64lOYhpZuGa9IHJN+BSoIgwzd24y4JWz1bXPWsiI13nc5x/HdSIAA=",
+        "creditId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+        "width": 1920,
+        "height": 868
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "alt": "911 Carrera 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwABABoJZQAAsSLYvcb4dlgAM2mhPKgbhH20kcXivkZlm23zUBjmGM1ignmghnCEkH+lUEkZcZqgzPmoAAA",
+          "creditId": "img-porsche-992-carrera-eaee33d4",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-6-3e268416-1920.avif",
+          "alt": "911 Carrera 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAwABABoJbACdADuz60yAAD4+zxr9ZCqD4o66yOtexwLaW2G3ioGcUwdEHg2PondAkzbqA9u+/7g5MeBac94W5pyuVchnzb3oE51neu3SlgGgAA=",
+          "creditId": "img-porsche-992-carrera-s-6-3e268416",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-7-1c6ab9cf-1920.avif",
+          "alt": "911 Carrera 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAwABABoJbACdAEQ98SpBNJAAP7azXuGn+UZ+dW0ysobXtanyGEKDGx6UL/HGPWBgdiXF/24Iv0Fi3P/hzIIlSmBQWI97HkWuPDoyYyyL/bghZ71FiK/8gAAAA==",
+          "creditId": "img-porsche-992-carrera-s-7-1c6ab9cf",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-2020-porsche-911-992-carrera-s-ad16985f-1920.avif",
+          "alt": "911 Carrera 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZQAD4nNpmZHkgAA+4Zv3uDC//xxysazrTpp4zgqDHw1XPMDN1Yxd8+bu4jky1At2U/1cEV1fm4AAAA=",
+          "creditId": "img-2020-porsche-911-992-carrera-s-ad16985f",
+          "width": 1920,
+          "height": 1115
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-8-68a218e8-1920.avif",
+          "alt": "911 Carrera 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwABABoJbACdAECpWEdQp4gAP7bnYARDLJq8Z4/w0rM+5LOLhAlRtkFpXDLrm5Qm74NP1FdfrEpETCRUF1xL4Ax74zV+dlVRy/U3+hl26Fo2FrdhepwAAA=",
+          "creditId": "img-porsche-992-carrera-s-8-68a218e8",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-s-4-932b0a5c-1920.avif",
+          "alt": "911 Carrera 4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwABABoJbACdAELjpCetR3IAPYyiY9cAIp74GYCwBi1Esuj7xwNGfnqz1ztAZo+HfGhss22/DRd0CwnG9gzsB+iadFuqh/ByS6bNIZFDFXY1NvQAA==",
+          "creditId": "img-porsche-992-carrera-s-4-932b0a5c",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-992-carrera-at-iaa-2019-img-0264-31f67778-1920.avif",
+          "alt": "911 Carrera 4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAkABABoJaACdAEVV4ZCiw7uAAD+wgdguCbUNcfO23+cSjqMOi5IJi+NRCz8+B095JFcjoaEaUlznDKcDSN+DUEAkEAA",
+          "creditId": "img-porsche-992-carrera-at-iaa-2019-img-0264-31f67778",
+          "width": 1920,
+          "height": 1027
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2021_Porsche_911_992_Carrera_S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2021_Porsche_911_992_Carrera_S.jpg",
+          "localPath": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6488×2932px (2656 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-992-carrera-eaee33d4",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Carrera_%3F.jpg",
+          "license": "CC0 1.0",
+          "author": "uploader Mathious Ier",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Carrera_?.jpg",
+          "localPath": "/images/carrera/img-porsche-992-carrera-eaee33d4-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4608×3456px (3424 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "The all new Porsche 911 Carrera 4 Coupé and 911 Carrera 4 Cabriolet (press release, 10 September 2019)", "url": "https://newsroom.porsche.com/en/2019/products/porsche-911-carrera-4-coupe-cabriolet-all-wheel-drive-18652.html" },
-        { "title": "Technical data — 911 Carrera Cabriolet (Porsche Newsroom PDF, 18 September 2019)", "url": "https://newsroom.porsche.com/dam/jcr:8ef847b3-4a91-4111-b2e6-1656ce3e045a/PAG_911CarreraCabriolet_EN.pdf" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "The all new Porsche 911 Carrera 4 Coupé and 911 Carrera 4 Cabriolet (press release, 10 September 2019)",
+          "url": "https://newsroom.porsche.com/en/2019/products/porsche-911-carrera-4-coupe-cabriolet-all-wheel-drive-18652.html"
+        },
+        {
+          "title": "Technical data — 911 Carrera Cabriolet (Porsche Newsroom PDF, 18 September 2019)",
+          "url": "https://newsroom.porsche.com/dam/jcr:8ef847b3-4a91-4111-b2e6-1656ce3e045a/PAG_911CarreraCabriolet_EN.pdf"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "Torque figure conflict: Porsche's Carrera 4 launch press release quotes 440 Nm, while Porsche's official 992.1 technical data and Wikipedia's engine table give 450 Nm (332 lb-ft) for Carrera, Carrera 4 and Targa 4. 450 Nm used here as the official spec value."
@@ -140,19 +512,140 @@
       "weight": "1,565 kg (3,450 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch; 7-speed manual (with Sport Chrono standard) from 2020 model year",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The all-wheel-drive flagship of the 992.1 Carrera line, unveiled alongside the Carrera S in Los Angeles in November 2018 and repeated as a Cabriolet at the Geneva show in March 2019. It shares the S car's 331 kW (450 PS; 443 hp) and 530 Nm (391 lb-ft), but four driven wheels and standard rear-axle steering extract the extra performance: 3.6 seconds to 100 km/h, 3.4 with Sport Chrono, and 306 km/h (190 mph) flat out. From 2020 model years a seven-speed manual became available, always paired with Sport Chrono. Coupé and Cabriolet bodies on 20/21-inch wheels, 1,565 kg (3,450 lb) DIN in Coupé form.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-4s/img-porsche-992-cabrio-carrera-4s-genf-2019-1y7a5428-a116040d-1920.avif",
+        "alt": "911 Carrera 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcABABoJYwAAp2NgKJm8QAA/uyY/mKBVv8mXpO5BUa9NQz96/EoEAMEk+JiC8+RUayk92+nZszkVLLaA6gAAAA=",
+        "creditId": "img-porsche-992-cabrio-carrera-4s-genf-2019-1y7a5428-a116040d",
+        "width": 1920,
+        "height": 820
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-53002096061-9db6872e-1920.avif",
+          "alt": "911 Carrera 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsABABoJZwCdADjfbxUvnGYgAD5bZcdpz87qjL3VqrdpNhtEvFqXsOR3y+xvVa7lQmjyc47GiXyM2sRFMjByqEz41KHVhqtZxSsmunpb9Al3wAAAA==",
+          "creditId": "img-porsche-992-carrera-4s-53002096061-9db6872e",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-img-2943-4b5c3b37-1920.avif",
+          "alt": "911 Carrera 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAkABABoJaQAApMqku4tAAD+JtWF8U/ztNVfTqgn9WRZgzVB5xInso7KyXyb8RXuyAU51b/AAAAA",
+          "creditId": "img-porsche-992-carrera-4s-img-2943-4b5c3b37",
+          "width": 1920,
+          "height": 1042
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-51943917084-8756c4ab-1920.avif",
+          "alt": "911 Carrera 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAsABABoJYwAAjod4tRQAP7iGNaKJWZjKYyHf/+a4wV1ycdpRE47Y8Wr0v4N7sWvXQZPOsfl716urXAbAC0/aL4AAA==",
+          "creditId": "img-porsche-992-carrera-4s-51943917084-8756c4ab",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-53008614210-6cd1574a-1920.avif",
+          "alt": "911 Carrera 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJQBOgMX64JXYU18AAP6Dr3/bZw8jQfIsVW4wFP+xubXSs+QSX7EZpQ2WwdII6RAEG2G0LQ3H6MdWuMDOWDMoEk03tKEr0wsxF+3iSAAAAA==",
+          "creditId": "img-porsche-992-carrera-4s-53008614210-6cd1574a",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-img-2942-6f33e068-1920.avif",
+          "alt": "911 Carrera 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAgABABoJaQAAuuBn9ZRnAAA/NXulTiCIVxSTE78jZ3UmfCK/vl6iftVJ494yxniUIiH0RgAAA==",
+          "creditId": "img-porsche-992-carrera-4s-img-2942-6f33e068",
+          "width": 1920,
+          "height": 996
+        },
+        {
+          "src": "/images/carrera-4s/img-white-porsche-911-carrera-4s-cabriolet-992-convertible-wit-96953742-1920.avif",
+          "alt": "911 Carrera 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAwABABoJZQAAgeIwSUrkAD+zaojlHcC7CUUlnTWxsVcXDwEtQ1lonUL0DFw86aW/vzolpqDIJ9yaqiUgmAdbt7ccdm9NzLVSn93pX/ynLwA",
+          "creditId": "img-white-porsche-911-carrera-4s-cabriolet-992-convertible-wit-96953742",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-992-carrera-4s-51761349256-0794183b-1920.avif",
+          "alt": "911 Carrera 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJZwAAcL74qmwAAD+mh+zYOoNIXuPWIv0oMb+KjEd8ohiGYJQf6C/daTyfgk+Xsex5hv3zUt2nY637kAAAA==",
+          "creditId": "img-porsche-992-carrera-4s-51761349256-0794183b",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2019-porsche-911-carrera-4s-992-e2be40c215e34812af7dfb933bc7967a?embed=1",
+        "sourceId": "e2be40c215e34812af7dfb933bc7967a",
+        "license": "CC Attribution",
+        "author": "Maroi Mister Let Me Think Official 3D Studio",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-992-cabrio-carrera-4s-genf-2019-1y7a5428-a116040d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Cabrio_Carrera_4S_Genf_2019_1Y7A5428.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Alexander Migl",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Cabrio_Carrera_4S_Genf_2019_1Y7A5428.jpg",
+          "localPath": "/images/carrera-4s/img-porsche-992-cabrio-carrera-4s-genf-2019-1y7a5428-a116040d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5193×2219px (11753 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-992-carrera-4s-53002096061-9db6872e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Carrera_4S_(53002096061).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Carrera_4S_(53002096061).jpg",
+          "localPath": "/images/carrera-4s/img-porsche-992-carrera-4s-53002096061-9db6872e-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3670 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-carrera-4s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2019-porsche-911-carrera-4s-992-e2be40c215e34812af7dfb933bc7967a?embed=1",
+          "license": "CC Attribution",
+          "author": "Maroi Mister Let Me Think Official 3D Studio",
+          "retrieved": "2026-10-02",
+          "sourceId": "e2be40c215e34812af7dfb933bc7967a",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018", "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html" },
-        { "title": "How the new 911 got its “drive” — Porsche Newsroom technology (13 February 2019)", "url": "https://newsroom.porsche.com/en/2019/technology/porsche-911-carrera-type-992-powertrain-boxer-engine-16978.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018",
+          "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html"
+        },
+        {
+          "title": "How the new 911 got its “drive” — Porsche Newsroom technology (13 February 2019)",
+          "url": "https://newsroom.porsche.com/en/2019/technology/porsche-911-carrera-type-992-powertrain-boxer-engine-16978.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": []
     },
@@ -173,19 +666,139 @@
       "weight": "1,675 kg (3,693 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch; 7-speed manual (with Sport Chrono standard)",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The 992 brought the Targa back in May 2020 after a six-year absence, premiered on Porsche's own 9:11 Magazine web TV channel. The Targa 4S pairs the roof system's retractable panel and roll hoop with the Carrera 4S drivetrain: 331 kW (450 PS; 443 hp), 530 Nm (391 lb-ft) between 2,300 and 5,000 rpm, all-wheel drive and an eight-speed PDK, with a seven-speed manual offered with Sport Chrono standard. It reaches 100 km/h in 3.8 seconds, 3.6 with Sport Chrono, and 304 km/h (189 mph). PASM and 350 mm brake discs front and rear are standard and PTV Plus is fitted; the targa is the only roof body the 992 offers besides coupé and cabriolet.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/targa-4s/img-porsche-911-targa-4s-992-china-4369f690-1920.avif",
+        "alt": "911 Targa 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAgABABoJZwAD45NalG9zBQAAP7Xcdl3AwL+6K2hDMxj5S9HoMCIyW1Qj32CpDNcH8scdTjGcvWQYAAAAA==",
+        "creditId": "img-porsche-911-targa-4s-992-china-4369f690",
+        "width": 1920,
+        "height": 997
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4s/img-porsche-911-targa-4s-992-china-2-e4dca94a-1920.avif",
+          "alt": "911 Targa 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAgABABoJQAAVCu4Q0UDcAD+W+tHC7qar8OHus1tku5X+0nbUemJLixeXeMTkyJUReWiMFIqjcjUY8wQNBXWsAAAAA==",
+          "creditId": "img-porsche-911-targa-4s-992-china-2-e4dca94a",
+          "width": 1920,
+          "height": 1004
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-992-targa-4s-2-0c787359-1920.avif",
+          "alt": "911 Targa 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAsABABoJZQAAxUw4raz1ui+gADicRIlR4+KRQFpiS6Sp7IecdLIcbMsleW0qdiYI55e8GGKJmUq2X9COmLV3swpeCFnhvQAAA==",
+          "creditId": "img-porsche-992-targa-4s-2-0c787359",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-992-targa-4s-54560737763-85293e51-1920.avif",
+          "alt": "911 Targa 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZQAAq0jnWgwxEAA+OWwiMwGiqxkCs6qdcfcq5KCkkewN97nkRSfzAbcPrVKPJ9p7H6m1oSGG3PjbEk9PME6o0EKDfB/8YAAAA==",
+          "creditId": "img-porsche-992-targa-4s-54560737763-85293e51",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-2021-porsche-911-992-targa-4s-a8fb35f7-1920.avif",
+          "alt": "911 Targa 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAoABABoJZwAAfR33N4iUAD92zZmScxc8N+SDhVK+TWDdh/lToROYdLDvfl/VPFs3jysklA1kZHEmnISDFQIAAA=",
+          "creditId": "img-2021-porsche-911-992-targa-4s-a8fb35f7",
+          "width": 1920,
+          "height": 1157
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-992-targa-4s-c72a5ce3-1920.avif",
+          "alt": "911 Targa 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsABABoJZQAAlu9pgIDAAD7xNtr+rYc5Ak1LHWYo9Harrlog8fwoz0RTWmjvG0arMHTca24db8ZAgpVii9+FxbLIsi3/sm5Q6/EgAA=",
+          "creditId": "img-porsche-992-targa-4s-c72a5ce3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-992-targa-4s-51802066084-9f869abb-1920.avif",
+          "alt": "911 Targa 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQAAsABABoJYwC7AEO9bQc45Q7jAAA/I7gLUVaMvmZhWhQdFRIdgntyYLzaDIU39q0PyKX5lUwOo4Kf1WgtRrEOSKprqQXCue5/klZAAA=",
+          "creditId": "img-porsche-992-targa-4s-51802066084-9f869abb",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-911-992-targa-4s-13819a60-1920.avif",
+          "alt": "911 Targa 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsABABoJbACdB2gAiSiw23tsADeZsMjkXiMhuUd7N25wbGM2ctttUA83oqpAtWA92uvl6yVxUZRqwZ8+ysEWZaczDqcMKoynUux0qtZf8cSXyq3OHAAAAA=",
+          "creditId": "img-porsche-911-992-targa-4s-13819a60",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-616ebc4356c74a3b8554c396eb3bd34c?embed=1",
+        "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
+        "license": "CC Attribution",
+        "author": "DisneyCars",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-targa-4s-992-china-4369f690",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APORSCHE_911_TARGA_4S_(992)_China.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Dinkun Chen",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:PORSCHE_911_TARGA_4S_(992)_China.jpg",
+          "localPath": "/images/targa-4s/img-porsche-911-targa-4s-992-china-4369f690-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5970×3099px (5092 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-targa-4s-992-china-2-e4dca94a",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APORSCHE_911_TARGA_4S_(992)_China_(2).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Dinkun Chen",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:PORSCHE_911_TARGA_4S_(992)_China_(2).jpg",
+          "localPath": "/images/targa-4s/img-porsche-911-targa-4s-992-china-2-e4dca94a-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5780×3023px (3683 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-targa-4s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-616ebc4356c74a3b8554c396eb3bd34c?embed=1",
+          "license": "CC Attribution",
+          "author": "DisneyCars",
+          "retrieved": "2026-10-02",
+          "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "World premiere of the new Porsche 911 Targa (press release, 18 May 2020)", "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-992-eighth-generation-20903.html" },
-        { "title": "The new 911 Targa 4 and 911 Targa 4S — Porsche press kit (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:7e1737b7-ce67-401a-abe1-b1c9849c2e37/PAG-911-Targa_PM_EN.pdf" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "World premiere of the new Porsche 911 Targa (press release, 18 May 2020)",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-992-eighth-generation-20903.html"
+        },
+        {
+          "title": "The new 911 Targa 4 and 911 Targa 4S — Porsche press kit (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:7e1737b7-ce67-401a-abe1-b1c9849c2e37/PAG-911-Targa_PM_EN.pdf"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "992 Targa roof open/close time not verified from a Porsche primary source in this session (the 991's 19-second figure is often repeated but not confirmed for the 992)."
@@ -208,19 +821,140 @@
       "weight": "1,545 kg (3,406 lb) DIN with PDK",
       "drivetrain": "Rear-wheel drive (Carrera 4 GTS: all-wheel drive)",
       "transmission": "8-speed PDK dual-clutch or 7-speed manual with shortened lever",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Twelve years after the first 911 GTS, the 992.1 GTS arrived in June 2021 in five forms: Carrera GTS and Carrera 4 GTS Coupés and Cabriolets plus the Targa 4 GTS. The 2,981 cm³ twin-turbo flat-six was uprated to 353 kW (480 PS; 473 hp) and 570 Nm (420 lb-ft) — 30 PS and 20 Nm more than the Carrera S. GTS-specific PASM suspension, Turbo braking hardware and a seven-speed manual with a shortened lever sit alongside the eight-speed PDK, and a Lightweight Design package from November 2021 saved up to 25 kg. An optional Aerokit replaced the deployable spoiler with a fixed wing. The Coupé runs 0–100 km/h in 3.4 seconds with Sport Chrono and 312 km/h (194 mph).",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-gts/img-porsche-911-992-carrera-gts-2a494b18-1920.avif",
+        "alt": "911 Carrera GTS",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgABABoJZwAAn3FCYa2wwAA/b7DsqaDXh0tu2gGVwsFs9Fa7OgEyHB7Ahzeg9OAa64j9eLU7vcPJnsNdQmvEAAAAA==",
+        "creditId": "img-porsche-911-992-carrera-gts-2a494b18",
+        "width": 1920,
+        "height": 997
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-4-gts/img-porsche-911-992-carrera-4-gts-safety-car-6787fa68-1920.avif",
+          "alt": "911 Carrera GTS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoABABoJYwAD40vGTmYhagIoADOH3z5tOqACizJJ+v804C5Vsz98uyQLKFmSyL4d9G1wYOS9JUJsPKWsOeYmfsjLRVpThH7aUQW1mhcaOAA",
+          "creditId": "img-porsche-911-992-carrera-4-gts-safety-car-6787fa68",
+          "width": 1920,
+          "height": 1225
+        },
+        {
+          "src": "/images/gts/img-2022-porsche-911-992-carrera-gts-88df0ec8-1920.avif",
+          "alt": "911 Carrera GTS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoABABoJbACdADp6+dhOi2AAP4jXc+K2eK8bcFxXR1PM5C4PMsAcgHh8M3IoankkVKTmNS13spwro06fXnZjdU3fG1FMDwWYAAA",
+          "creditId": "img-2022-porsche-911-992-carrera-gts-88df0ec8",
+          "width": 1920,
+          "height": 1171
+        },
+        {
+          "src": "/images/gts/img-2024-porsche-911-992-carrera-gts-24306-74294ed5-1920.avif",
+          "alt": "911 Carrera GTS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJYwAD4tNxbT99bYAAP6smwsN7w9H+ONHcTIDmCd0z2Tl4MYErbFAq520JAuhRosJgw6DA1cSC0T/iywLyoRQAAA=",
+          "creditId": "img-2024-porsche-911-992-carrera-gts-24306-74294ed5",
+          "width": 1920,
+          "height": 1152
+        },
+        {
+          "src": "/images/gts/img-2022-porsche-911-992-carrera-4-gts-809edc93-1920.avif",
+          "alt": "911 Carrera GTS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAkABABoJbACdAEQLcUpKOAA/uaRRHzinq5gtRW6avakefrxJ4HpwZLkjP15mqBtodZHDWkWJgiP69M/0irv82dfks8qoNed2X5yRsAAAA==",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-809edc93",
+          "width": 1920,
+          "height": 1109
+        },
+        {
+          "src": "/images/carrera-gts/img-porsche-992-carrera-4-gts-1x7a7209-bearb-sp-2-018048e3-1920.avif",
+          "alt": "911 Carrera GTS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJZACdAEPhEKj3QWuAP7nN5Q3cfZpHUDvO88SA96Hb3wdmLxBVOENpBtmDMOpY2Nm3o84reUDZSrEZgaWoNU6Z1ZsAAAA",
+          "creditId": "img-porsche-992-carrera-4-gts-1x7a7209-bearb-sp-2-018048e3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gts/img-2022-porsche-911-992-carrera-4-gts-cabriolet-e5dedc0d-1920.avif",
+          "alt": "911 Carrera GTS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJagAAusk2jmhKAAAzXjrZtdQ0Z/EC61ITHnDzqRuLfgTcyFKPm99jEfvZsB0B1CPG9I5hTPbnfpZq8chr9QhrN8Y0cAA",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-cabriolet-e5dedc0d",
+          "width": 1920,
+          "height": 1209
+        },
+        {
+          "src": "/images/carrera/img-2021-porsche-911-992-carrera-s-3c9c40ec-1920.avif",
+          "alt": "911 Carrera GTS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQAAcABABoJQBdgMWW7MSElfkORAAA9pdbh/64lOYhpZuGa9IHJN+BSoIgwzd24y4JWz1bXPWsiI13nc5x/HdSIAA=",
+          "creditId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
+          "width": 1920,
+          "height": 868
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2018-porsche-911-carrera-gts-4e98dd91d11d4809bb80102edfbde42b?embed=1",
+        "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
+        "license": "CC Attribution",
+        "author": "Maroi Mister Let Me Think Official 3D Studio",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-992-carrera-gts-2a494b18",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_(992)_Carrera_GTS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_(992)_Carrera_GTS.jpg",
+          "localPath": "/images/carrera-gts/img-porsche-911-992-carrera-gts-2a494b18-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4851×2520px (5227 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-992-carrera-4-gts-safety-car-6787fa68",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_Carrera_4_GTS_Safety_Car.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_Carrera_4_GTS_Safety_Car.jpg",
+          "localPath": "/images/carrera-4-gts/img-porsche-911-992-carrera-4-gts-safety-car-6787fa68-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15892×10136px (15613 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-gts",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2018-porsche-911-carrera-gts-4e98dd91d11d4809bb80102edfbde42b?embed=1",
+          "license": "CC Attribution",
+          "author": "Maroi Mister Let Me Think Official 3D Studio",
+          "retrieved": "2026-10-02",
+          "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)", "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" },
-        { "title": "8th Generation – Engines, 60 Years of Porsche 911 press kit", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html" }
+        {
+          "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)",
+          "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        },
+        {
+          "title": "8th Generation – Engines, 60 Years of Porsche 911 press kit",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html"
+        }
       ],
       "missing": []
     },
@@ -241,19 +975,120 @@
       "weight": "1,630 kg (3,594 lb) DIN",
       "drivetrain": "All-wheel drive",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Seven months after the Turbo S, in July 2020, the 992.1 Turbo arrived as the cheapest route to 580 PS. The 3,745 cc twin-turbo flat-six uses symmetrical VTG turbochargers with a slightly smaller compressor wheel than the S, giving 427 kW (580 PS; 572 hp) at 6,750 rpm and 750 Nm (553 lb-ft) between 2,500 and 5,000 rpm — with no overboost time limit. The result matches the outgoing 997-generation Turbo S: under three seconds to 100 km/h, in fact 2.8, and 320 km/h (199 mph). The Turbo keeps the S's side intakes and rear wing logic but gives up the twin oval sport exhaust for four round tips, cast-iron discs with red calipers and five-lug wheels; almost everything else was optional on the S.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo/img-porsche-992-turbo-img-3522-db16864b-1920.avif",
+        "alt": "911 Turbo",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcABABoJaQAAuirvrYXUTAAzijHtdojtL+/eP4P0hoIAEVApysiRKdg3DrfxfJg/QJ0psuADbPhSkejTNJAAAA=",
+        "creditId": "img-porsche-992-turbo-img-3522-db16864b",
+        "width": 1920,
+        "height": 788
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+          "alt": "911 Turbo — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAkABABoJZwAAxYIXmeUZ6gAAP6xB0CojCVX/T2PkGTG/af48RcS6t3MoysQAAA=",
+          "creditId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/turbo/img-porsche-992-turbo-img-3521-28317562-1920.avif",
+          "alt": "911 Turbo — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAcABABoJaQAAxe64NCR+cAA/ZziNzv31g19eYKWz7YawSsCJ6+PBmyd5eomJINpvBhBBpqFag9RSywAAA==",
+          "creditId": "img-porsche-992-turbo-img-3521-28317562",
+          "width": 1920,
+          "height": 784
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-992-turbo-2980b6f2-1920.avif",
+          "alt": "911 Turbo — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgABABoJbAAAizS1hm5AAD+o2YXz+2pRTd4Ndxn2zx4RoMp+rbHBzYyreGuWfL3y1CVXzKFBTxXeCcGLyVoAAA=",
+          "creditId": "img-porsche-911-992-turbo-2980b6f2",
+          "width": 1920,
+          "height": 982
+        },
+        {
+          "src": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-f2309141-1920.avif",
+          "alt": "911 Turbo — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAcABABoJbAAAknhUt4AAP40ZFNxPIKm0ndYoaH1grz0B17lDphtm2Tkp3Syy6jBTEt99Q8ZspjoAAA=",
+          "creditId": "img-2024-porsche-911-992-turbo-s-f2309141",
+          "width": 1920,
+          "height": 870
+        },
+        {
+          "src": "/images/turbo/img-2023-porsche-911-992-turbo-s-53e572e8-1920.avif",
+          "alt": "911 Turbo — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAQCdASoQAAoABABoJagAAkmfnADyXF7izrOOlDx/+/fJNfkoZWlHJ/PW3ROZf1sCIKjQNHpeaZOycUhJQPnQ1lWLOm0cbPe3O+dpthZ4sBwA",
+          "creditId": "img-2023-porsche-911-992-turbo-s-53e572e8",
+          "width": 1920,
+          "height": 1166
+        },
+        {
+          "src": "/images/turbo/img-2021-porsche-911-992-turbo-s-b6a5cc96-1920.avif",
+          "alt": "911 Turbo — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJagCdAEXdboavtRAAP7QZEDTIAHUVZjFxQm03KMGBivxkFgBEKAQOA1KK3yOQettEun4/zCsvoEd438DTJM7gAA=",
+          "creditId": "img-2021-porsche-911-992-turbo-s-b6a5cc96",
+          "width": 1920,
+          "height": 1178
+        },
+        {
+          "src": "/images/turbo/img-2022-porsche-911-992-turbo-s-a99ec0cf-1920.avif",
+          "alt": "911 Turbo — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkABABoJbACdADhk6uED0AA/jGHsDIwaqL99+ESCKNnlyF+mf4at+gFnOTu7Qm9ZmQN4P6rHvKmVP+nrjWt8e67C3coAAA=",
+          "creditId": "img-2022-porsche-911-992-turbo-s-a99ec0cf",
+          "width": 1920,
+          "height": 1106
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-992-turbo-img-3522-db16864b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Turbo_IMG_3522.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Alexander Migl",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Turbo_IMG_3522.jpg",
+          "localPath": "/images/turbo/img-porsche-992-turbo-img-3522-db16864b-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2898×1190px (3549 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2023_6_Hours_of_Spa-Francorchamps_Manthey-Racing_Porsche_911_(992)_Turbo_S_FIA_WEC_Safety_Car_(DSC04721).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MarcelX42",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2023_6_Hours_of_Spa-Francorchamps_Manthey-Racing_Porsche_911_(992)_Turbo_S_FIA_WEC_Safety_Car_(DSC04721).jpg",
+          "localPath": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3496×1967px (2151 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Benchmark for the past 45 years: the Porsche 911 Turbo (press release, 16 July 2020)", "url": "https://newsroom.porsche.com/en/2020/products/porsche-new-911-turbo-coupe-cabriolet-premiere-21499.html" },
-        { "title": "8th Generation – Engines — 60 Years of Porsche 911 press kit (911 Turbo, 580 PS)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "Benchmark for the past 45 years: the Porsche 911 Turbo (press release, 16 July 2020)",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-new-911-turbo-coupe-cabriolet-premiere-21499.html"
+        },
+        {
+          "title": "8th Generation – Engines — 60 Years of Porsche 911 press kit (911 Turbo, 580 PS)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": []
     },
@@ -274,19 +1109,140 @@
       "weight": "1,640 kg (3,616 lb) DIN",
       "drivetrain": "All-wheel drive",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Presented on 3 March 2020, the 992.1 Turbo S was the most powerful 911 Porsche had built. A brand-new 3,745 cm³ boxer with two VTG turbochargers — based on the Carrera engine but with a shorter stroke — makes 478 kW (650 PS; 641 hp) at 6,750 rpm and 800 Nm (590 lb-ft) from 2,500 rpm. The air intake moved from the rear wings to directly behind the engine, and the wings now house the air filters. Standard equipment ran to PDCC, rear-axle steering, adaptive anti-roll bars and ceramic composite brakes, while the two-stage rear wing generated 15 per cent more downforce than the outgoing car. It covered 100 km/h in 2.7 seconds and 330 km/h, and Sport Auto timed it at 7:17.3 on the Nordschleife.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+        "alt": "911 Turbo S",
+        "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAkABABoJZwAAxYIXmeUZ6gAAP6xB0CojCVX/T2PkGTG/af48RcS6t3MoysQAAA=",
+        "creditId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+        "width": 1920,
+        "height": 1080
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-f2309141-1920.avif",
+          "alt": "911 Turbo S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAcABABoJbAAAknhUt4AAP40ZFNxPIKm0ndYoaH1grz0B17lDphtm2Tkp3Syy6jBTEt99Q8ZspjoAAA=",
+          "creditId": "img-2024-porsche-911-992-turbo-s-f2309141",
+          "width": 1920,
+          "height": 870
+        },
+        {
+          "src": "/images/turbo/img-2023-porsche-911-992-turbo-s-53e572e8-1920.avif",
+          "alt": "911 Turbo S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAQCdASoQAAoABABoJagAAkmfnADyXF7izrOOlDx/+/fJNfkoZWlHJ/PW3ROZf1sCIKjQNHpeaZOycUhJQPnQ1lWLOm0cbPe3O+dpthZ4sBwA",
+          "creditId": "img-2023-porsche-911-992-turbo-s-53e572e8",
+          "width": 1920,
+          "height": 1166
+        },
+        {
+          "src": "/images/turbo/img-2021-porsche-911-992-turbo-s-b6a5cc96-1920.avif",
+          "alt": "911 Turbo S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJagCdAEXdboavtRAAP7QZEDTIAHUVZjFxQm03KMGBivxkFgBEKAQOA1KK3yOQettEun4/zCsvoEd438DTJM7gAA=",
+          "creditId": "img-2021-porsche-911-992-turbo-s-b6a5cc96",
+          "width": 1920,
+          "height": 1178
+        },
+        {
+          "src": "/images/turbo/img-2022-porsche-911-992-turbo-s-a99ec0cf-1920.avif",
+          "alt": "911 Turbo S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkABABoJbACdADhk6uED0AA/jGHsDIwaqL99+ESCKNnlyF+mf4at+gFnOTu7Qm9ZmQN4P6rHvKmVP+nrjWt8e67C3coAAA=",
+          "creditId": "img-2022-porsche-911-992-turbo-s-a99ec0cf",
+          "width": 1920,
+          "height": 1106
+        },
+        {
+          "src": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-13270-3859919e-1920.avif",
+          "alt": "911 Turbo S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAgCdASoQAAoABABoJaAC7AEfVBedV1rC9d4AAP58rK1wSaaQhclQbfGx2jaLDqx8cqu4sjpipv5LX9zy1L8zT44XgYo9NMv5xm4YUAA=",
+          "creditId": "img-2024-porsche-911-992-turbo-s-13270-3859919e",
+          "width": 1920,
+          "height": 1246
+        },
+        {
+          "src": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-16183-905e6284-1920.avif",
+          "alt": "911 Turbo S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoABABoJagCdAEK1vrtKpVAAADLTXobAMT8dOpK3K73SezvzIHqLGCASnafFbI+fF4ZyFBu/h5gKgY3mAw2zJacwAAA",
+          "creditId": "img-2024-porsche-911-992-turbo-s-16183-905e6284",
+          "width": 1920,
+          "height": 1247
+        },
+        {
+          "src": "/images/turbo-s/img-2023-porsche-911-992-turbo-s-cabriolet-ba558b76-1920.avif",
+          "alt": "911 Turbo S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoABABoJagAAxZDs6fu806sAP5NJViRFTQ0Yk3yjAVt+pqaicDcwh1ny7mT8X623IPvGzVAdbY/n0f1COXQgcFSybI0WQ8AAA==",
+          "creditId": "img-2023-porsche-911-992-turbo-s-cabriolet-ba558b76",
+          "width": 1920,
+          "height": 1193
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-s-992-wip-b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
+        "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
+        "license": "CC Attribution",
+        "author": "let's not care abt it",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2023_6_Hours_of_Spa-Francorchamps_Manthey-Racing_Porsche_911_(992)_Turbo_S_FIA_WEC_Safety_Car_(DSC04721).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MarcelX42",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2023_6_Hours_of_Spa-Francorchamps_Manthey-Racing_Porsche_911_(992)_Turbo_S_FIA_WEC_Safety_Car_(DSC04721).jpg",
+          "localPath": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3496×1967px (2151 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2024-porsche-911-992-turbo-s-f2309141",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Turbo_S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Turbo_S.jpg",
+          "localPath": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-f2309141-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 11866×5375px (7802 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-turbo-s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-turbo-s-992-wip-b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
+          "license": "CC Attribution",
+          "author": "let's not care abt it",
+          "retrieved": "2026-10-02",
+          "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Top-of-the-range 911 with enhanced dynamics: the Porsche 911 Turbo S (press release, 3 March 2020)", "url": "https://newsroom.porsche.com/en/2020/products/porsche-new-911-turbo-s-coupe-cabriolet-top-of-the-range-premiere-20110.html" },
-        { "title": "The new 911 Turbo S Coupé and the new 911 Turbo S Cabriolet — Porsche press kit (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:17f739a0-1faf-49fc-a298-eb739bde18ac/PAG-911-Turbo-S_PM_EN.pdf" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "Top-of-the-range 911 with enhanced dynamics: the Porsche 911 Turbo S (press release, 3 March 2020)",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-new-911-turbo-s-coupe-cabriolet-top-of-the-range-premiere-20110.html"
+        },
+        {
+          "title": "The new 911 Turbo S Coupé and the new 911 Turbo S Cabriolet — Porsche press kit (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:17f739a0-1faf-49fc-a298-eb739bde18ac/PAG-911-Turbo-S_PM_EN.pdf"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": []
     },
@@ -307,19 +1263,120 @@
       "weight": "1,725 kg (3,802 lb) DIN implied — Porsche states +85 kg over the 992.1 Turbo S, whose DIN weight is 1,640 kg; no direct figure published",
       "drivetrain": "All-wheel drive",
       "transmission": "8-speed PDK dual-clutch with integrated 60 kW electric motor",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "Porsche has never sold a 911 badged Turbo GT: the range-topping 992.2 is officially the 911 Turbo S, unveiled at IAA Munich in September 2025 as the first 911 with twin eTurbos in its T-Hybrid system. This roster id is retained so the canonical name resolves, and it carries the verified 992.2 Turbo S data: a 3,591 cc twin-eTurbo flat-six plus a 60 kW permanent-magnet motor in the eight-speed PDK and a 1.9 kWh battery for 523 kW (711 PS; 701 hp) and 800 Nm. It runs 0–100 km/h in 2.5 seconds, 322 km/h on a closed circuit and 7:03.92 on the Nordschleife, 85 kg heavier than its 992.1 predecessor. DATA-992-2 also covers this car.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-gt/img-porsche-992-turbo-s-cabriolet-54308864046-68f6a80e-1920.avif",
+        "alt": "911 Turbo GT",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJaQAAuRToSO4dhAAAP7x+qclLDqr5isL6xJ8pun5jlMd6ZlCTj3uQ7wJW09PMl4+pUGF54n8y+3V2Squq/6np6Ch4EAA",
+        "creditId": "img-porsche-992-turbo-s-cabriolet-54308864046-68f6a80e",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo/img-porsche-992-turbo-img-3522-db16864b-1920.avif",
+          "alt": "911 Turbo GT — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcABABoJaQAAuirvrYXUTAAzijHtdojtL+/eP4P0hoIAEVApysiRKdg3DrfxfJg/QJ0psuADbPhSkejTNJAAAA=",
+          "creditId": "img-porsche-992-turbo-img-3522-db16864b",
+          "width": 1920,
+          "height": 788
+        },
+        {
+          "src": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+          "alt": "911 Turbo GT — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAkABABoJZwAAxYIXmeUZ6gAAP6xB0CojCVX/T2PkGTG/af48RcS6t3MoysQAAA=",
+          "creditId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/turbo/img-porsche-992-turbo-img-3521-28317562-1920.avif",
+          "alt": "911 Turbo GT — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAcABABoJaQAAxe64NCR+cAA/ZziNzv31g19eYKWz7YawSsCJ6+PBmyd5eomJINpvBhBBpqFag9RSywAAA==",
+          "creditId": "img-porsche-992-turbo-img-3521-28317562",
+          "width": 1920,
+          "height": 784
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-992-turbo-2980b6f2-1920.avif",
+          "alt": "911 Turbo GT — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgABABoJbAAAizS1hm5AAD+o2YXz+2pRTd4Ndxn2zx4RoMp+rbHBzYyreGuWfL3y1CVXzKFBTxXeCcGLyVoAAA=",
+          "creditId": "img-porsche-911-992-turbo-2980b6f2",
+          "width": 1920,
+          "height": 982
+        },
+        {
+          "src": "/images/turbo-s/img-2024-porsche-911-992-turbo-s-f2309141-1920.avif",
+          "alt": "911 Turbo GT — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAcABABoJbAAAknhUt4AAP40ZFNxPIKm0ndYoaH1grz0B17lDphtm2Tkp3Syy6jBTEt99Q8ZspjoAAA=",
+          "creditId": "img-2024-porsche-911-992-turbo-s-f2309141",
+          "width": 1920,
+          "height": 870
+        },
+        {
+          "src": "/images/turbo/img-2023-porsche-911-992-turbo-s-53e572e8-1920.avif",
+          "alt": "911 Turbo GT — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAQCdASoQAAoABABoJagAAkmfnADyXF7izrOOlDx/+/fJNfkoZWlHJ/PW3ROZf1sCIKjQNHpeaZOycUhJQPnQ1lWLOm0cbPe3O+dpthZ4sBwA",
+          "creditId": "img-2023-porsche-911-992-turbo-s-53e572e8",
+          "width": 1920,
+          "height": 1166
+        },
+        {
+          "src": "/images/turbo/img-2021-porsche-911-992-turbo-s-b6a5cc96-1920.avif",
+          "alt": "911 Turbo GT — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJagCdAEXdboavtRAAP7QZEDTIAHUVZjFxQm03KMGBivxkFgBEKAQOA1KK3yOQettEun4/zCsvoEd438DTJM7gAA=",
+          "creditId": "img-2021-porsche-911-992-turbo-s-b6a5cc96",
+          "width": 1920,
+          "height": 1178
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-992-turbo-s-cabriolet-54308864046-68f6a80e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Turbo_S_Cabriolet_(54308864046).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Turbo_S_Cabriolet_(54308864046).jpg",
+          "localPath": "/images/turbo-gt/img-porsche-992-turbo-s-cabriolet-54308864046-68f6a80e-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (4135 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-992-turbo-img-3522-db16864b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Turbo_IMG_3522.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Alexander Migl",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Turbo_IMG_3522.jpg",
+          "localPath": "/images/turbo/img-porsche-992-turbo-img-3522-db16864b-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2898×1190px (3549 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "911 Turbo S — Porsche International model page", "url": "https://www.porsche.com/international/models/911/911-turbo-models/911-turbo-s" },
-        { "title": "Product Highlights: Porsche 911 Turbo S – the superior all-rounder among sports cars — Porsche Newsroom (2026 model year)", "url": "https://newsroom.porsche.com/en_AU/2026/products/product-highlights-porsche-911-turbo-s-the-superior-all-rounder-among-sports-cars-42442.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "911 Turbo S — Porsche International model page",
+          "url": "https://www.porsche.com/international/models/911/911-turbo-models/911-turbo-s"
+        },
+        {
+          "title": "Product Highlights: Porsche 911 Turbo S – the superior all-rounder among sports cars — Porsche Newsroom (2026 model year)",
+          "url": "https://newsroom.porsche.com/en_AU/2026/products/product-highlights-porsche-911-turbo-s-the-superior-all-rounder-among-sports-cars-42442.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "No Porsche nameplate '911 Turbo GT' exists for either 992 phase; Porsche's official 992.2 range-topper is the 911 Turbo S. Roster id retained to keep the canonical list resolvable — the lead may prefer to move this id to data/generations/992-2.json.",
@@ -343,19 +1400,139 @@
       "weight": "1,435 kg (3,164 lb) DIN with PDK; 1,418 kg (3,126 lb) with manual",
       "drivetrain": "Rear-wheel drive",
       "transmission": "7-speed PDK dual-clutch or 6-speed GT sports manual",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The seventh GT3, unveiled on 16 February 2021, returned the 911 to naturally aspirated form with the 4.0-litre flat-six from the GT3 R endurance racer: 3,996 cc, individual throttle valves, a 9,000 rpm rev limit and 375 kW (510 PS; 503 hp) at 8,400 rpm, 10 PS more than the 991.2 car. A double-wishbone front axle and swan-neck rear wing were lifted from the 911 RSR, and the GT3 was a coupé only, offered with a seven-speed PDK or — new for the model — a six-speed GT manual. It reaches 100 km/h in 3.4 seconds on PDK, runs to 318 km/h, and weighs 1,435 kg (3,164 lb) with the dual-clutch.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/targa-4-gts/img-porsche-911-992-gt3-90d16a5e-1920.avif",
+        "alt": "911 GT3",
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgABABoJagC7ADR+SZ5PQAA/cAHAlwKJe2qMx1L9PcvaB/ciSCBryB29RWP1TAZrPMxB8a6ZiUHrcs4dPxRX/RQAA==",
+        "creditId": "img-porsche-911-992-gt3-90d16a5e",
+        "width": 1920,
+        "height": 954
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-cc40c6e3-1920.avif",
+          "alt": "911 GT3 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAoABABoJYwAAjPwI9MAAAD+3gEOnWSgwiF9qQwn/idbkADz3kJyZIu03ieG2zrHjQND0yehe+qtmrgvxue3vYS7jQAA",
+          "creditId": "img-porsche-911-992-gt3-touring-cc40c6e3",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-11105-e7af1c25-1920.avif",
+          "alt": "911 GT3 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJbACdAECmqwX+0I9QAD+qgBOmQ80MVXQLKWMjlsjs0RIGn86Zes1sbSSaVVSD562YOE93sRl7A/faTiQlaRgO2VCVTohAAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-11105-e7af1c25",
+          "width": 1920,
+          "height": 1265
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-73261-627d9ab4-1920.avif",
+          "alt": "911 GT3 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJZwAAlkUxHZgAOEfbm7ZcJvHJSO8Lke+inJVyykUNOOB4GFq0hrNG5ppoxwiBAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-73261-627d9ab4",
+          "width": 1920,
+          "height": 1027
+        },
+        {
+          "src": "/images/gt3/img-2022-porsche-911-992-gt3-e70e37ad-1920.avif",
+          "alt": "911 GT3 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAgABABoJZwCdAD1k5fVGF9AAP2c+3h8F2CBE2j+dTtxXHa7mgb5YY+yBWLuCk6v9lsW7GYZjCTIGu++M4AA",
+          "creditId": "img-2022-porsche-911-992-gt3-e70e37ad",
+          "width": 1920,
+          "height": 1006
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-95614-ded913c0-1920.avif",
+          "alt": "911 GT3 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAoABABoJaAAAcKQWWgAAP6pXO5kA3YY0cuvUzNitVMKxLbR1ee9TPeUVGde1QWBEUcOotF5kcaeAwtNx/as0Dmk1TgA",
+          "creditId": "img-porsche-911-992-gt3-touring-95614-ded913c0",
+          "width": 1920,
+          "height": 1258
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-71271-1de469d9-1920.avif",
+          "alt": "911 GT3 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbACsAYtLVYNthhwAP7kZc7UnQLLokYDF4P3Ubo0mSWfSLfFPYw++UBPxkfwWnRxhUYT/KYxxZAMUkN2Y5yUWEhs7bIW3if7tENMwAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-71271-1de469d9",
+          "width": 1920,
+          "height": 1265
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-gt3-touring-992-2-001-5c7d0bb4-1920.avif",
+          "alt": "911 GT3 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAwABABoJZwAD5AvqVWdPz4QAADLF7+L77TOAYZ6e8CwunSK0uLG0IutWM/DzcV9PYE/xB8TxJTHiDy5p6rWQRp2Q8OiAAA=",
+          "creditId": "img-porsche-911-gt3-touring-992-2-001-5c7d0bb4",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2022-porsche-911-gt3-992-a23f04a665a84177ac97551ce0c720eb?embed=1",
+        "sourceId": "a23f04a665a84177ac97551ce0c720eb",
+        "license": "CC Attribution",
+        "author": "007",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-992-gt3-90d16a5e",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_GT3.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_GT3.jpg",
+          "localPath": "/images/targa-4-gts/img-porsche-911-992-gt3-90d16a5e-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5749×2858px (2973 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-992-gt3-touring-cc40c6e3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_GT3_Touring.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_GT3_Touring.jpg",
+          "localPath": "/images/gt3/img-porsche-911-992-gt3-touring-cc40c6e3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6773×4434px (4381 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-gt3",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2022-porsche-911-gt3-992-a23f04a665a84177ac97551ce0c720eb?embed=1",
+          "license": "CC Attribution",
+          "author": "007",
+          "retrieved": "2026-10-02",
+          "sourceId": "a23f04a665a84177ac97551ce0c720eb",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 GT3 with motorsport expertise (press release, 16 February 2021)", "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gt3-world-premiere-livestream-23624.html" },
-        { "title": "The new Porsche 911 GT3 — Porsche press kit (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:94dbeef5-0a13-4fd2-95e7-9f05de55d62d/PAG_Porsche_911_GT3_EN.pdf" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "Porsche 911 GT3 with motorsport expertise (press release, 16 February 2021)",
+          "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gt3-world-premiere-livestream-23624.html"
+        },
+        {
+          "title": "The new Porsche 911 GT3 — Porsche press kit (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:94dbeef5-0a13-4fd2-95e7-9f05de55d62d/PAG_Porsche_911_GT3_EN.pdf"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "Six-speed manual 0–100 km/h time for the 992.1 GT3 is not reconciled: Wikipedia's performance table gives 3.8 s, Porsche's 992.2 GT3 press kit gives 3.9 s. Not published here.",
@@ -380,19 +1557,127 @@
       "weight": "1,418 kg (3,126 lb) DIN with six-speed manual as standard",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed GT sports manual as standard; 7-speed PDK available at no extra cost",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Shown at the same time as the winged GT3 in February 2021, the Touring Package was the quieter half of the launch and, on the 992, could be ordered with either gearbox. Mechanically identical — 375 kW (510 PS; 503 hp), 450 Nm, double-wishbone front axle, 20/21-inch forged wheels — but the swan-neck rear wing is replaced by the Carrera's variable rear spoiler, and a front lift system plus two luggage-compartment bags make it usable on real roads. The Touring car came with the short-ratio six-speed GT manual as standard, the lightest 911 GT3 configuration at 1,418 kg (3,126 lb), and PDK was made available for the first time at no cost.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
+      "heroImage": {
+        "src": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd24-2e066e0d-1920.avif",
+        "alt": "911 GT3 Touring",
+        "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAgABABoJZQAAjAy3w2wAP1wihYjcAZ4rG8G3MGZ7qHLIF9psMWbLEHNy8xUo17If1z8wgAAAA==",
+        "creditId": "img-2022-porsche-992-gt3-touring-scd24-2e066e0d",
+        "width": 1920,
+        "height": 956
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-cc40c6e3-1920.avif",
+          "alt": "911 GT3 Touring — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAoABABoJYwAAjPwI9MAAAD+3gEOnWSgwiF9qQwn/idbkADz3kJyZIu03ieG2zrHjQND0yehe+qtmrgvxue3vYS7jQAA",
+          "creditId": "img-porsche-911-992-gt3-touring-cc40c6e3",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd-24-21c680f4-1920.avif",
+          "alt": "911 GT3 Touring — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAoABABoJYwC7AD6PrzHDfjIAADc+/xaCmDepS0BEev54mCuuNaZz4Aj5OTtevoLTmhwYU33qT5SHWHRUdyK26HBvFLoroAAAA==",
+          "creditId": "img-2022-porsche-992-gt3-touring-scd-24-21c680f4",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-11105-e7af1c25-1920.avif",
+          "alt": "911 GT3 Touring — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJbACdAECmqwX+0I9QAD+qgBOmQ80MVXQLKWMjlsjs0RIGn86Zes1sbSSaVVSD562YOE93sRl7A/faTiQlaRgO2VCVTohAAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-11105-e7af1c25",
+          "width": 1920,
+          "height": 1265
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-73261-627d9ab4-1920.avif",
+          "alt": "911 GT3 Touring — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJZwAAlkUxHZgAOEfbm7ZcJvHJSO8Lke+inJVyykUNOOB4GFq0hrNG5ppoxwiBAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-73261-627d9ab4",
+          "width": 1920,
+          "height": 1027
+        },
+        {
+          "src": "/images/gt3-touring/img-2023-porsche-992-gt3-touring-scd-24-1c7faf9d-1920.avif",
+          "alt": "911 GT3 Touring — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkABABoJQBOgCIaWLRm9wAA+50jKku8r8osUUQu8Wia1u8sz9T0NMh3O39u/EgZBwt09isg6QTpMgAAAA==",
+          "creditId": "img-2023-porsche-992-gt3-touring-scd-24-1c7faf9d",
+          "width": 1920,
+          "height": 1042
+        },
+        {
+          "src": "/images/gt3-touring/img-porsche-911-992-gt3-touring-88647-f4c861f6-1920.avif",
+          "alt": "911 GT3 Touring — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAoABABoJbAC06DsvN2QjwAA/qlOoq1qguunEcCmWpuLaechhCfS6dExp/XSNulL96n5V+ZuEEO6qG5lbUpmbaD2b9Gj5Kh9ba+AseQAAA==",
+          "creditId": "img-porsche-911-992-gt3-touring-88647-f4c861f6",
+          "width": 1920,
+          "height": 1228
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-95614-ded913c0-1920.avif",
+          "alt": "911 GT3 Touring — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAoABABoJaAAAcKQWWgAAP6pXO5kA3YY0cuvUzNitVMKxLbR1ee9TPeUVGde1QWBEUcOotF5kcaeAwtNx/as0Dmk1TgA",
+          "creditId": "img-porsche-911-992-gt3-touring-95614-ded913c0",
+          "width": 1920,
+          "height": 1258
+        }
+      ],
+      "videos": [
+        {
+          "id": "hP7LDAnofBM",
+          "title": "Chris Harris Drives The New Porsche 992 GT3 Touring",
+          "channel": "Collecting Cars",
+          "poster": null,
+          "note": "aero deleted, rear wing gone, driving intact"
+        }
+      ],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2022-porsche-992-gt3-touring-scd24-2e066e0d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2022_Porsche_992_GT3_Touring_SCD24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2022_Porsche_992_GT3_Touring_SCD24.jpg",
+          "localPath": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd24-2e066e0d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6799×3384px (3346 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-992-gt3-touring-cc40c6e3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_GT3_Touring.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_GT3_Touring.jpg",
+          "localPath": "/images/gt3/img-porsche-911-992-gt3-touring-cc40c6e3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6773×4434px (4381 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "The new Porsche 911 GT3 with Touring package (press release, 16 February 2021)", "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gt3-touring-package-premiere-24794.html" },
-        { "title": "Porsche 911 GT3 — Porsche Newsroom press kit", "url": "https://newsroom.porsche.com/en/press-kits/911-GT3.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "The new Porsche 911 GT3 with Touring package (press release, 16 February 2021)",
+          "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gt3-touring-package-premiere-24794.html"
+        },
+        {
+          "title": "Porsche 911 GT3 — Porsche Newsroom press kit",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-GT3.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "Porsche's GT3 Touring premiere release does not publish a separate top speed or 0–100 km/h time for the Touring car; the figures shown are the combined GT3/GT3 Touring values from Wikipedia's 992 performance table."
@@ -415,19 +1700,154 @@
       "weight": "1,450 kg (3,197 lb) DIN",
       "drivetrain": "Rear-wheel drive",
       "transmission": "7-speed PDK dual-clutch only, shorter overall ratio than the GT3",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The most extreme road-legal 911 of the 992.1 line, revealed on 17 August 2022 and built around the cooling and aerodynamic systems of the 911 GT3 R. A single large angled centre radiator — mounted where other 911s have a luggage compartment — freed space for active aerodynamics: a two-part rear wing that can open like a Formula 1 DRS, front dive planes, 409 kg of downforce at 200 km/h rising to 860 kg at 285 km/h, twice the 991.2 GT3 RS. The 4.0-litre flat-six makes 386 kW (525 PS; 518 hp) and 465 Nm (343 lb-ft). It runs 0–100 km/h in 3.2 seconds, 296 km/h, from 1,450 kg, on forged centre-lock wheels.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-65040-bdbcb82b-1920.avif",
+        "alt": "911 GT3 RS",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJbACdADp5SitaAAAzJdqkYrg9OFcSFMSFdqPWhs7rl+IzsRFAWIO2i3m2YfKFSXFS+D6uH0ig0Vm3wXH3kAA",
+        "creditId": "img-porsche-911-992-gt3-rs-65040-bdbcb82b",
+        "width": 1920,
+        "height": 1060
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-52626-2787607f-1920.avif",
+          "alt": "911 GT3 RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJbACdADMICtJOs4AAP5JGsx2MVYbUng05ALrUa102J2LIZ+sY2LIAyO0lYgP2TzTWWsmjmH1GrOOq5Fu46djCmW1iKaBKQAAAA==",
+          "creditId": "img-porsche-911-992-gt3-rs-52626-2787607f",
+          "width": 1920,
+          "height": 1028
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-gt3-rs-992-front-view-at-japan-mobility-show-k-96c0ed82-1920.avif",
+          "alt": "911 GT3 RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAoABABoJZwAAgPuJ9Q2hgAA/om41F8BJMfe4O08yXyv2mKCe8zxnzSMMiqN+5ZmS/tJYRWczqsWbhDAeUafZgAAAA==",
+          "creditId": "img-porsche-911-gt3-rs-992-front-view-at-japan-mobility-show-k-96c0ed82",
+          "width": 1920,
+          "height": 1243
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-121f3dee-1920.avif",
+          "alt": "911 GT3 RS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAoABABoJQBOgB9gud0530YogAD+fk16YKqWhtWs9OENyZFFMTmD5i5NVjBtZKJ1L8MZIYuXsaPpjgQQDbPdwyUCSUwAAAA=",
+          "creditId": "img-porsche-911-992-gt3-rs-121f3dee",
+          "width": 1920,
+          "height": 1186
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-52777-26e4a640-1920.avif",
+          "alt": "911 GT3 RS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAgABABoJZgAAujXv/UgAP54qb0ahwyEYqsDz5q8g+UV5e2BbX4qgbUTBo7siT4bEMEr0zX2EyDuixqCLPXNqAA=",
+          "creditId": "img-porsche-911-992-gt3-rs-52777-26e4a640",
+          "width": 1920,
+          "height": 918
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-88504-3325280b-1920.avif",
+          "alt": "911 GT3 RS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoABABoJbACw7D69mUYFAAA/qMWbMKmGkV51uUO8p1D1y6dSgi2QPSLiGSHQ+fA0jUmXjzT86Wa3CqXrDs4x3I8JXTaot33EbHSX6orVrwAAAA=",
+          "creditId": "img-porsche-911-992-gt3-rs-88504-3325280b",
+          "width": 1920,
+          "height": 1224
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-gt3-rs-992-4-8ba1b75b-1920.avif",
+          "alt": "911 GT3 RS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAUABABoJQBOgCHM/jvAAP7NGYhW8oMigN8cZhksv/qinTnAptquCIGdSKnAwQAAAA==",
+          "creditId": "img-porsche-911-gt3-rs-992-4-8ba1b75b",
+          "width": 1920,
+          "height": 552
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-992-gt3-rs-13206-1696c366-1920.avif",
+          "alt": "911 GT3 RS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoABABoJZgCdAEPRSASYgNwAPulRvkoDI9RSPz9zU1fwTgnGsNqys3fTaj9SE8AZyAyLtjv2rRxkIpnyVlFCO1rVEAY6AAs19D9QZf0cAAA",
+          "creditId": "img-porsche-911-992-gt3-rs-13206-1696c366",
+          "width": 1920,
+          "height": 1152
+        }
+      ],
+      "videos": [
+        {
+          "id": "CE-ZCQdpqeg",
+          "title": "FIRST LOOK: New Porsche 911 GT3 RS (992) - 518bhp, £195k and DRS! | Top Gear",
+          "channel": "Top Gear",
+          "poster": null,
+          "note": "992 GT3 RS with active aero and the DRS debut"
+        },
+        {
+          "id": "7eAv3lsb0Xc",
+          "title": "NEW Porsche 911 GT3 RS: In-Depth First Look with Andreas Preuninger | Catchpole on Carfection",
+          "channel": "Carfection",
+          "poster": null,
+          "note": "Preuninger explains why the aero is manual-first"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2023-porsche-911-gt3-rs-992-bbb0f6181a52416bb776713cfd4987dd?embed=1",
+        "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
+        "license": "CC Attribution",
+        "author": "DisneyCars",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-992-gt3-rs-65040-bdbcb82b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_GT3_RS_(65040).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_GT3_RS_(65040).jpg",
+          "localPath": "/images/gt3-rs/img-porsche-911-992-gt3-rs-65040-bdbcb82b-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15558×8588px (14926 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-992-gt3-rs-52626-2787607f",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_GT3_RS_(52626).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_GT3_RS_(52626).jpg",
+          "localPath": "/images/gt3-rs/img-porsche-911-992-gt3-rs-52626-2787607f-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×8734px (13067 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-gt3-rs",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2023-porsche-911-gt3-rs-992-bbb0f6181a52416bb776713cfd4987dd?embed=1",
+          "license": "CC Attribution",
+          "author": "DisneyCars",
+          "retrieved": "2026-10-02",
+          "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Purpose-built for performance: the new Porsche 911 GT3 RS (press release, 17 August 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-gt3-rs-world-premiere-29177.html" },
-        { "title": "Porsche 911 GT3 RS celebrates 50 years of Carrera RS 2.7 (press release, 19 August 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-gt3-rs-tribute-50-years-carrera-rs-27-monterey-car-week-usa-29459.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "Purpose-built for performance: the new Porsche 911 GT3 RS (press release, 17 August 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-gt3-rs-world-premiere-29177.html"
+        },
+        {
+          "title": "Porsche 911 GT3 RS celebrates 50 years of Carrera RS 2.7 (press release, 19 August 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-gt3-rs-tribute-50-years-carrera-rs-27-monterey-car-week-usa-29459.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "Porsche has not published a production total for the 992.1 GT3 RS.",
@@ -451,20 +1871,158 @@
       "weight": "1,380 kg (3,042 lb) DIN",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed GT sports manual only — no PDK option",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Built to celebrate the 911's sixtieth anniversary in 2023, the S/T is what happens when the GT3 RS drivetrain meets a GT3 Touring body. The 3,996 cc naturally aspirated flat-six makes 386 kW (525 PS; 518 hp) and 465 Nm, and for the first time is mated to a six-speed manual — with a clutch and single-mass flywheel developed for the car that together save 10.5 kg, plus rigid rocker arms in place of hydraulic valve adjustment. CFRP front wings and bonnet, GT3 RS doors weighing just 9.5 kg, and a double-bubble roof. At 1,380 kg (3,042 lb) DIN it is the lightest 911 of the generation: 0–100 km/h in 3.7 seconds, 300 km/h limited.",
       "special": true,
       "production": "1,963 units worldwide",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+        "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJbACdAC3y0UiMQ+AAPuejrnx5nKbeIEyfeectqTA9Cytt3SBkUspAqu0krD81iyJ9UJobZ8CXXu7wSmDulIAAAA=",
+        "creditId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+        "width": 1920,
+        "height": 1161
+      },
+      "gallery": [
+        {
+          "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoQAAkABABoJbAC7AYtB25SVEDMq4AAyvgXAxY1FQeXMp4RGGU6MfJt3fpVuKl023s9YPWveiQFpD4/8RUBePopUvzt13Z0GJAAAA==",
+          "creditId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "width": 1920,
+          "height": 1098
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJbACdAYsPy1/8gAA/icoLVWAXg92YcHPim0Bt8+cU+ACWFOmNT6e3hGxGK6X+IiyykSs9KDE4o1pU9ZUKKApmRNn5+AA",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc",
+          "width": 1920,
+          "height": 1262
+        },
+        {
+          "src": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd24-2e066e0d-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAgABABoJZQAAjAy3w2wAP1wihYjcAZ4rG8G3MGZ7qHLIF9psMWbLEHNy8xUo17If1z8wgAAAA==",
+          "creditId": "img-2022-porsche-992-gt3-touring-scd24-2e066e0d",
+          "width": 1920,
+          "height": 956
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-911-992-gt3-90d16a5e-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgABABoJagC7ADR+SZ5PQAA/cAHAlwKJe2qMx1L9PcvaB/ciSCBryB29RWP1TAZrPMxB8a6ZiUHrcs4dPxRX/RQAA==",
+          "creditId": "img-porsche-911-992-gt3-90d16a5e",
+          "width": 1920,
+          "height": 954
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-cc40c6e3-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAoABABoJYwAAjPwI9MAAAD+3gEOnWSgwiF9qQwn/idbkADz3kJyZIu03ieG2zrHjQND0yehe+qtmrgvxue3vYS7jQAA",
+          "creditId": "img-porsche-911-992-gt3-touring-cc40c6e3",
+          "width": 1920,
+          "height": 1257
+        },
+        {
+          "src": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd-24-21c680f4-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAoABABoJYwC7AD6PrzHDfjIAADc+/xaCmDepS0BEev54mCuuNaZz4Aj5OTtevoLTmhwYU33qT5SHWHRUdyK26HBvFLoroAAAA==",
+          "creditId": "img-2022-porsche-992-gt3-touring-scd-24-21c680f4",
+          "width": 1920,
+          "height": 1190
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-992-gt3-touring-11105-e7af1c25-1920.avif",
+          "alt": "911 S/T — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAsABABoJbACdAECmqwX+0I9QAD+qgBOmQ80MVXQLKWMjlsjs0RIGn86Zes1sbSSaVVSD562YOE93sRl7A/faTiQlaRgO2VCVTohAAA=",
+          "creditId": "img-porsche-911-992-gt3-touring-11105-e7af1c25",
+          "width": 1920,
+          "height": 1265
+        }
+      ],
+      "videos": [
+        {
+          "id": "xsQ2xdtli2k",
+          "title": "Porsche 911 S/T: The Greatest Road Car Porsche Has EVER Built?",
+          "channel": "carwow",
+          "poster": null,
+          "note": "GT3 RS engine, GT3 Touring body, new lightweight clutch"
+        },
+        {
+          "id": "yDpABJHzxT0",
+          "title": "FIRST DRIVE: Porsche 911 S/T – 518bhp GT3 RS Engine + Manual = Ultimate 911 | Top Gear",
+          "channel": "Top Gear",
+          "poster": null,
+          "note": "Top Gear on the 1,380 kg manual-only anniversary car"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2024-porsche-911-st-f39f7c539a3440428c22a3da2f52af43?embed=1",
+        "sourceId": "f39f7c539a3440428c22a3da2f52af43",
+        "license": "CC Attribution",
+        "author": "Ddiaz Design",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3690×2232px (2951 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3428×1960px (1931 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-s-t",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2024-porsche-911-st-f39f7c539a3440428c22a3da2f52af43?embed=1",
+          "license": "CC Attribution",
+          "author": "Ddiaz Design",
+          "retrieved": "2026-10-02",
+          "sourceId": "f39f7c539a3440428c22a3da2f52af43",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "The new 911 S/T: the lightest 911 of its generation (press release, 1 August 2023)", "url": "https://newsroom.porsche.com/en_US/model-range/911/911-S-T.html" },
-        { "title": "Powertrain and performance — 911 S/T press kit", "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/Powertrain-and-performance.html" },
-        { "title": "911 S/T technical data — Porsche Newsroom (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:48d49db2-d0fa-4e20-b3f3-b2cc2c21176d/pag-911-st-en.pdf" },
-        { "title": "Product Highlights: Porsche 911 S/T – Purpose-built for performance — Porsche Newsroom (23 July 2024)", "url": "https://newsroom.porsche.com/en_AU/2024/products/porsche-911-ST-product-highlights-36897.html" }
+        {
+          "title": "The new 911 S/T: the lightest 911 of its generation (press release, 1 August 2023)",
+          "url": "https://newsroom.porsche.com/en_US/model-range/911/911-S-T.html"
+        },
+        {
+          "title": "Powertrain and performance — 911 S/T press kit",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-s-t/Powertrain-and-performance.html"
+        },
+        {
+          "title": "911 S/T technical data — Porsche Newsroom (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:48d49db2-d0fa-4e20-b3f3-b2cc2c21176d/pag-911-st-en.pdf"
+        },
+        {
+          "title": "Product Highlights: Porsche 911 S/T – Purpose-built for performance — Porsche Newsroom (23 July 2024)",
+          "url": "https://newsroom.porsche.com/en_AU/2024/products/porsche-911-ST-product-highlights-36897.html"
+        }
       ],
       "missing": [
         "No market-by-market or model-year split of the 1,963 S/T units published by Porsche."
@@ -487,19 +2045,154 @@
       "weight": "1,605 kg (3,539 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "A 992 with 191 mm of ground clearance, revealed at the Los Angeles Auto Show on 16 November 2022 and named after the 1984 Paris-Dakar win that introduced all-wheel drive to the 911. The suspension sits 50 mm higher than a Carrera's, with a lift system adding a further 30 mm and usable to 170 km/h; the front overhang is 16 mm shorter, lifting the approach angle from 8 to 16.1 degrees. Underneath sits the GTS's 2,981 cm³ twin-turbo — 353 kW (480 PS; 473 hp) and 570 Nm — with a Turbo air filter for dust and GT3 engine mounts. All-wheel drive and an eight-speed PDK are the only options. 1,605 kg (3,539 lb) on Pirelli Scorpion all-terrain tyres.",
       "special": true,
       "production": "2,500 units worldwide",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/dakar/img-2023-porsche-911-992-dakar-front-left-06-30-2024-3c936ec9-1920.avif",
+        "alt": "911 Dakar",
+        "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQAAoABABoJZQC7AYtzdCT8I+QzAAA/QLkrKy27QhfqKh0w1+yvoH+F9BZ7W5usn0bcX50Yw5RyMb8M36Vz7PSJ3efteLYcipQwzF7AAA=",
+        "creditId": "img-2023-porsche-911-992-dakar-front-left-06-30-2024-3c936ec9",
+        "width": 1920,
+        "height": 1200
+      },
+      "gallery": [
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-54180-33ec25fd-1920.avif",
+          "alt": "911 Dakar — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJQBdgCFa2KV/ZQAA/tKSTGlzMTbCX32cs6FfXNQ3hxvJLCZlnkUhIv4JWq+3TT0WbavT/QOTc3kmnwmVhWoA",
+          "creditId": "img-porsche-911-992-dakar-54180-33ec25fd",
+          "width": 1920,
+          "height": 1065
+        },
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-24833-7b2f71a9-1920.avif",
+          "alt": "911 Dakar — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAoABABoJaACdAYvXVhB/7T7AAD9qL74Uj1qOP1yZ5kAaYPcSbsjI/UyM524GUoQgjhIXY4dsoQBG59NYSFDQ72zo6EtRR6QC5+wAAA=",
+          "creditId": "img-porsche-911-992-dakar-24833-7b2f71a9",
+          "width": 1920,
+          "height": 1172
+        },
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-76642-38ad9130-1920.avif",
+          "alt": "911 Dakar — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAoABABoJQAARZoq9fJcwAD2bH6rNkfyF3TydMnJs6HnUDl5VKW2DQg5DpruScQZEXdzlr4QMhV2uAMXrrohoMCpY+YAAAA=",
+          "creditId": "img-porsche-911-992-dakar-76642-38ad9130",
+          "width": 1920,
+          "height": 1208
+        },
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-90583-564576e2-1920.avif",
+          "alt": "911 Dakar — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAkABABoJagCdACzsVb0AADN8r9vHmJAOfioxpjx0ZSgVUcfVjmpr8/ObCtct7gIL2nOoRzWvBiXEt8d+GtHSQKC+lcflXAAAA==",
+          "creditId": "img-porsche-911-992-dakar-90583-564576e2",
+          "width": 1920,
+          "height": 1095
+        },
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-72097-f3a2d10c-1920.avif",
+          "alt": "911 Dakar — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoABABoJYwAD5DxZmrv9AAA/tIELwkMWpmFBUpKn+c1Ps722qGnOKTfMeWWhoj23VyuRe9FtM6pPP9NAtl0avqW2zANhMR+K4UAAAA=",
+          "creditId": "img-porsche-911-992-dakar-72097-f3a2d10c",
+          "width": 1920,
+          "height": 1178
+        },
+        {
+          "src": "/images/dakar/img-porsche-911-992-dakar-ab0decf9-1920.avif",
+          "alt": "911 Dakar — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAkABABoJZACdAEJy2sPgAD+rZwQp3O68F8Xy1h1RZyDQitfDJfSOh2MQVnFZdY1St2tBCET7bujSnR26coH+5p+01GlpZTvWgqBSAA=",
+          "creditId": "img-porsche-911-992-dakar-ab0decf9",
+          "width": 1920,
+          "height": 1131
+        },
+        {
+          "src": "/images/dakar/img-2024-porsche-911-992-dakar-45101-49f523a7-1920.avif",
+          "alt": "911 Dakar — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkABABoJZACsADR/VcP8ADLRzVAlllPUZ0PWO7hphGV/NgKaknS+oYt7Fr1FX4xFyVcxyJzOGaGQnpiCWqVVsAAAA==",
+          "creditId": "img-2024-porsche-911-992-dakar-45101-49f523a7",
+          "width": 1920,
+          "height": 1124
+        }
+      ],
+      "videos": [
+        {
+          "id": "FyNVlxA2ySk",
+          "title": "2023 Porsche 911 Dakar Revealed",
+          "channel": "DPCcars",
+          "poster": null,
+          "note": "2,500 Dakar, raised ride height and three-door body"
+        },
+        {
+          "id": "c1OVVBsjLnA",
+          "title": "Porsche 911 Dakar First Drive Review | Can we break it?",
+          "channel": "CAR magazine",
+          "poster": null,
+          "note": "first proper road test of the safari-spec 911"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2023--porsche-911--dakar--rallye--package-remix-326e90718d164f018e9a673849a3161b?embed=1",
+        "sourceId": "326e90718d164f018e9a673849a3161b",
+        "license": "CC Attribution",
+        "author": "HiQ3D",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-2023-porsche-911-992-dakar-front-left-06-30-2024-3c936ec9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2023_Porsche_911_992_Dakar%2C_front_left%2C_06-30-2024.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Ethan Llamas",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2023_Porsche_911_992_Dakar,_front_left,_06-30-2024.jpg",
+          "localPath": "/images/dakar/img-2023-porsche-911-992-dakar-front-left-06-30-2024-3c936ec9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5253×3283px (5975 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-992-dakar-54180-33ec25fd",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_Dakar_(54180).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_Dakar_(54180).jpg",
+          "localPath": "/images/dakar/img-porsche-911-992-dakar-54180-33ec25fd-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×9052px (10683 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-dakar",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2023--porsche-911--dakar--rallye--package-remix-326e90718d164f018e9a673849a3161b?embed=1",
+          "license": "CC Attribution",
+          "author": "HiQ3D",
+          "retrieved": "2026-10-02",
+          "sourceId": "326e90718d164f018e9a673849a3161b",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 911 Dakar — press kit, Highlights", "url": "https://newsroom.porsche.com/en/press-kits/911-Dakar/Highlights.html" },
-        { "title": "Porsche 911 Dakar aces test programme on gravel, sand and snow (press release, 9 November 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-dakar-prototype-test-programme-weissach-sweden-dubai-marocco-30326.html" },
-        { "title": "911 Dakar technical data — Porsche Newsroom (PDF)", "url": "https://newsroom.porsche.com/dam/jcr%3A5cac90b3-71ec-4021-b0fd-ec1e4bbfc087/pag-911-dakar-td-en.pdf.PDF" }
+        {
+          "title": "Porsche 911 Dakar — press kit, Highlights",
+          "url": "https://newsroom.porsche.com/en/press-kits/911-Dakar/Highlights.html"
+        },
+        {
+          "title": "Porsche 911 Dakar aces test programme on gravel, sand and snow (press release, 9 November 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-dakar-prototype-test-programme-weissach-sweden-dubai-marocco-30326.html"
+        },
+        {
+          "title": "911 Dakar technical data — Porsche Newsroom (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr%3A5cac90b3-71ec-4021-b0fd-ec1e4bbfc087/pag-911-dakar-td-en.pdf.PDF"
+        }
       ],
       "missing": []
     },
@@ -520,19 +2213,154 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive only (no all-wheel-drive version offered)",
       "transmission": "7-speed manual only",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The second of Porsche's four Heritage Design collector's cars, revealed on 28 April 2022. It takes the wide Turbo body and removes everything that made the Turbo difficult to love: all-wheel drive, the deployable spoiler, PDK and the 580 PS tune. What is left is a rear-wheel-drive 992 with a seven-speed manual, a fixed ducktail rear spoiler and ducts in its own spoiler skin instead of fender intakes, a CFRP bonnet, and a 3,745 cm³ twin-turbo detuned to 405 kW (550 PS; 542 hp) and 600 Nm (443 lb-ft) because the manual could not take the Turbo's 750 Nm. Spring rates at the front were softened for the missing driven axle. At 1,250 units it remains the most powerful manual 911 in production.",
       "special": true,
       "production": "1,250 units worldwide",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/sport-classic/img-porsche-992-sport-classic-2-7e8a7e93-1920.avif",
+        "alt": "911 Sport Classic",
+        "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAsABABoJagCdAYv1gJyLSJ+gqgAAP5zAwbiZ+HAk8Z2ykY9Nl8Tc1kI6fcxD1O6SaP6DdSmssEcB3ZsoHMwXctpJkBjL3q3y3TambZAo2VTI1JkxFdl8SaR2ZdKUSGqEAAA",
+        "creditId": "img-porsche-992-sport-classic-2-7e8a7e93",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/sport-classic/img-2022-porsche-911-sport-classic-992-01f91858-1920.avif",
+          "alt": "911 Sport Classic — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsABABoJZwAAu0Fe1zHU8oAAP7mCOn/oVocEvdGnprDMiGH4tWOIuIfpkdZ8VHSOeKG/uYj7JxitImSvSAXP6xNh3Nl4AA=",
+          "creditId": "img-2022-porsche-911-sport-classic-992-01f91858",
+          "width": 1920,
+          "height": 1277
+        },
+        {
+          "src": "/images/sport-classic/img-porsche-992-sport-classic-54458308721-ea901e62-1920.avif",
+          "alt": "911 Sport Classic — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAsABABoJZQCdAYv1zK2YUuT+AAA/kr3RWPxvit0PYV9rcVxjOscqo88B6SMIYTY6SW7Yv/KXzVWgwByL9ebfotmJA3GWx3Kff5vYqulIAAA",
+          "creditId": "img-porsche-992-sport-classic-54458308721-ea901e62",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/sport-classic/img-2022-porsche-911-992-sport-classic-4ca0089b-1920.avif",
+          "alt": "911 Sport Classic — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAoABABoJZwAAuipsL0oAM4OSwMAdOfN2Vv+Pw9xDg8EDqk2HdiQr19kjw2Y9h9m0KIEz4raJpOGoURCaYycQAA=",
+          "creditId": "img-2022-porsche-911-992-sport-classic-4ca0089b",
+          "width": 1920,
+          "height": 1214
+        },
+        {
+          "src": "/images/sport-classic/img-porsche-992-sport-classic-52870164886-b4e47c74-1920.avif",
+          "alt": "911 Sport Classic — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsABABoJYwCw7EOzYiEfcwAAP088EAosWJFW4oNDpT4fRHAB6XNOaNaeU/k1XHi+7Aq3gw2leHcjkbrM6qmFwBBqkQwAAA=",
+          "creditId": "img-porsche-992-sport-classic-52870164886-b4e47c74",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/sport-classic/img-porsche-992-sport-classic-54126011474-5b7c4df6-1920.avif",
+          "alt": "911 Sport Classic — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJQBOgCPQJxZnAAD+xRwjphGrIoAjgBnD2lFpjgGkhQLQUma6Tj1/aOVxY91f1LHxc9M+OpSzq4pX3pnGAAAA",
+          "creditId": "img-porsche-992-sport-classic-54126011474-5b7c4df6",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/sport-classic/img-2023-porsche-911-992-sport-classic-98307-5477b7ba-1920.avif",
+          "alt": "911 Sport Classic — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkABABoJagC/ODhZpj7azAA/trL8MmAHiNxNE5cecMv5fGI5eEpzmEw4HxPBcZexVcHVAc8Y3OhM11gasQA",
+          "creditId": "img-2023-porsche-911-992-sport-classic-98307-5477b7ba",
+          "width": 1920,
+          "height": 1122
+        },
+        {
+          "src": "/images/sport-classic/img-2023-porsche-911-992-sport-classic-90020-4b859730-1920.avif",
+          "alt": "911 Sport Classic — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJagCsADp67G2xQAA8kpSbWwMK0iViM5tyXh4wL4q5JhQtSmp7nxM6tVn4dE7mUcDSvj//ttHn647EjRggAAA",
+          "creditId": "img-2023-porsche-911-992-sport-classic-90020-4b859730",
+          "width": 1920,
+          "height": 1189
+        }
+      ],
+      "videos": [
+        {
+          "id": "sUV1C_kNiAY",
+          "title": "Porsche 911 Sport Classic. Fantastic looks, 550bhp, 2WD but is it better than the GT3 Touring?",
+          "channel": "Harry's garage",
+          "poster": null,
+          "note": "the GT3 Touring comparison every Sport Classic review makes"
+        },
+        {
+          "id": "G-MqQ3MUHSQ",
+          "title": "Porsche 911 Sport Classic takes on the Goodwood Hillclimb",
+          "channel": "Porsche",
+          "poster": null,
+          "note": "Porsche's own hillclimb run of the 1,250-built car"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-sport-classic-2023-38903fc72658408287a5972285494bd6?embed=1",
+        "sourceId": "38903fc72658408287a5972285494bd6",
+        "license": "CC Attribution",
+        "author": "Nieve5677",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-992-sport-classic-2-7e8a7e93",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_992_Sport_Classic_(2).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Alexandre Prevot",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_992_Sport_Classic_(2).jpg",
+          "localPath": "/images/sport-classic/img-porsche-992-sport-classic-2-7e8a7e93-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3500×2333px (7100 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2022-porsche-911-sport-classic-992-01f91858",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2022_Porsche_911_Sport_Classic_992.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2022_Porsche_911_Sport_Classic_992.jpg",
+          "localPath": "/images/sport-classic/img-2022-porsche-911-sport-classic-992-01f91858-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4760×3167px (1717 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-sport-classic",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-sport-classic-2023-38903fc72658408287a5972285494bd6?embed=1",
+          "license": "CC Attribution",
+          "author": "Nieve5677",
+          "retrieved": "2026-10-02",
+          "sourceId": "38903fc72658408287a5972285494bd6",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "The new Porsche 911 Sport Classic: back to the future (press release, 28 April 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-sport-classic-world-premiere-28164.html" },
-        { "title": "Design, technology and plenty of history — interview with the Sport Classic designers (2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-sport-classic-design-grant-larson-daniela-milosevic-chris-holzinger-boris-apenbrink-interview-28108.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "The new Porsche 911 Sport Classic: back to the future (press release, 28 April 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-sport-classic-world-premiere-28164.html"
+        },
+        {
+          "title": "Design, technology and plenty of history — interview with the Sport Classic designers (2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-911-sport-classic-design-grant-larson-daniela-milosevic-chris-holzinger-boris-apenbrink-interview-28108.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "0–100 km/h acceleration time not published in Porsche's Sport Classic press release or press kit text retrieved.",
@@ -557,19 +2385,154 @@
       "weight": null,
       "drivetrain": "All-wheel drive",
       "transmission": "8-speed PDK dual-clutch or 7-speed manual",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The first car in Porsche's Heritage Design strategy, revealed on 2 June 2020 and limited to 992 units — a number chosen to match the type code. Underneath it is a Targa 4S, with 331 kW (450 PS; 443 hp) and 530 Nm (391 lb-ft), unchanged chassis and the option of the seven-speed manual. Over the top are cues from the 1950s and early 1960s: Cherry Metallic paint with a white livery and spear-shaped motorsports graphics on the front wings, gold badging, a 1963 crest on the bonnet and wheel centres, 20/21-inch Carrera Exclusive Design wheels in gloss black, Bordeaux Red and Atacama Beige two-tone leather with corduroy, a perforated microfibre roof lining and green-backlit dials. Buyers also received a numbered Porsche Design chronograph.",
       "special": true,
       "production": "992 units worldwide",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-59443-f0caa4da-1920.avif",
+        "alt": "911 Targa 4S Heritage Design Edition",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgABABoJZwAD48K5suCAAD8JVPaz3bgF0YpGcmm7TBtW2T2O5Ook+z94sHZRO4kOs0mS5wH6iE7gnYFWdqEAAA=",
+        "creditId": "img-2021-porsche-911-992-targa-4s-heritage-59443-f0caa4da",
+        "width": 1920,
+        "height": 976
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-7467fdf7-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAgABABoJYwAD45J8q7NdAD330Vq6YXIJgFF26Fzq08ST/ZR5V0zJAMFHSyXXgTiTtfy0OH2JUv6SHlHk+ZPx0h27DAA",
+          "creditId": "img-2021-porsche-911-992-targa-4s-heritage-7467fdf7",
+          "width": 1920,
+          "height": 993
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-43169-99f19504-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAgABABoJZQC7AYt9a2kptHSQAD+M0zBBZ4dRcc3YHnjnn9yBqiP3G+OLeWhJEU0T/5h4ydxdU/EDZ1gSXSSAAA=",
+          "creditId": "img-2021-porsche-911-992-targa-4s-heritage-43169-99f19504",
+          "width": 1920,
+          "height": 907
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-31616-1d93e100-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAcABABoJZwAAh//jq2YAPRMikldYXgxw0gTQZ/pYAAdY27dDSdVyN0nhO896WuCIhAkKJzgPPQntPJ/4fUAAAA=",
+          "creditId": "img-2021-porsche-911-992-targa-4s-heritage-31616-1d93e100",
+          "width": 1920,
+          "height": 867
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-18740-0172953d-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAgABABoJQBOgB3hM6QAAN0B8ekILm9SRC3WkTaB+f8KKIdVFnq4kPkzkBYeRVjaeTlvIHsnCX1J8gkIAAAA",
+          "creditId": "img-2021-porsche-911-992-targa-4s-heritage-18740-0172953d",
+          "width": 1920,
+          "height": 948
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-70450-987c684f-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACQAQCdASoQAAgABABoJZwAAfQlQAAA9qwSTHlyHhdUo075ad8TKtLxggo5rgPqihoFWTZOIwW8MEjY4IDhmBQA",
+          "creditId": "img-2021-porsche-911-992-targa-4s-heritage-70450-987c684f",
+          "width": 1920,
+          "height": 926
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-porsche-992-targa-4s-heritage-design-edition-8b23e639-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAwABABoJZQCdAChjCmoAPfddCpN1lX4GqSIltIIntmlXfsrfjjYJEKP5uuU9pcxjiWfn82szCxGaKir3nnR/IKIiUn6AAA=",
+          "creditId": "img-porsche-992-targa-4s-heritage-design-edition-8b23e639",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4s-heritage/img-porsche-992-targa-4s-heritage-design-edition-img-4014-6df46b09-1920.avif",
+          "alt": "911 Targa 4S Heritage Design Edition — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAkABABoJQBOgB6WvmigAP7ABUw6jYHUMSKRYSyE3U4M//rxiZNSeaVNXW5oHbxXmRNn8c0rVOcTcoa945avMv4AAA==",
+          "creditId": "img-porsche-992-targa-4s-heritage-design-edition-img-4014-6df46b09",
+          "width": 1920,
+          "height": 1038
+        }
+      ],
+      "videos": [
+        {
+          "id": "Giz_bOBEgQs",
+          "title": "The Heritage Design Edition of the 911 Targa",
+          "channel": "Porsche",
+          "poster": null,
+          "note": "Porsche's own film on the 992-built Heritage Design Targa"
+        },
+        {
+          "id": "_5v2FMk5HXU",
+          "title": "2020 Porsche 911 Targa 4S Heritage Design Edition | Cherrymetallic | Driving, Interior, Exterior",
+          "channel": "The Wheel Network",
+          "poster": null,
+          "note": "Lava Grey / Cherrymetallic, six-speed manual, full walkthrough"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-heritage-design-992-c9af184fba65488db9138d9cffcea832?embed=1",
+        "sourceId": "c9af184fba65488db9138d9cffcea832",
+        "license": "CC Attribution",
+        "author": "007",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-2021-porsche-911-992-targa-4s-heritage-59443-f0caa4da",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2021_Porsche_911_992_Targa_4S_Heritage_(59443).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2021_Porsche_911_992_Targa_4S_Heritage_(59443).jpg",
+          "localPath": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-59443-f0caa4da-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 8160×4148px (6200 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2021-porsche-911-992-targa-4s-heritage-7467fdf7",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2021_Porsche_911_992_Targa_4S_Heritage.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2021_Porsche_911_992_Targa_4S_Heritage.jpg",
+          "localPath": "/images/targa-4s-heritage/img-2021-porsche-911-992-targa-4s-heritage-7467fdf7-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5560×2876px (2597 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-targa-4s-heritage",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-heritage-design-992-c9af184fba65488db9138d9cffcea832?embed=1",
+          "license": "CC Attribution",
+          "author": "007",
+          "retrieved": "2026-10-02",
+          "sourceId": "c9af184fba65488db9138d9cffcea832",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Paying tribute to tradition: the 911 Targa 4S Heritage Design Edition (press release, 2 June 2020)", "url": "https://newsroom.porsche.com/en/2020/products/porsche-exclusive-manufaktur-911-targa-heritage-design-edition-992-eighth-generation-vehicle-concept-21083.html" },
-        { "title": "The 911 Targa 4S Heritage Design Edition — Porsche press kit (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:569cb3da-52de-49f3-b9bf-322b860fcca4/PAG-911-Targa-HDE_PM_EN.pdf" },
-        { "title": "A Leap in Time: McQueen's Le Mans — Porsche Newsroom (2020)", "url": "https://newsroom.porsche.com/en/2020/history/porsche-le-mans-steve-mcqueen-911-targa-4s-heritage-design-edition-christophorus-395-21336.html" }
+        {
+          "title": "Paying tribute to tradition: the 911 Targa 4S Heritage Design Edition (press release, 2 June 2020)",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-exclusive-manufaktur-911-targa-heritage-design-edition-992-eighth-generation-vehicle-concept-21083.html"
+        },
+        {
+          "title": "The 911 Targa 4S Heritage Design Edition — Porsche press kit (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:569cb3da-52de-49f3-b9bf-322b860fcca4/PAG-911-Targa-HDE_PM_EN.pdf"
+        },
+        {
+          "title": "A Leap in Time: McQueen's Le Mans — Porsche Newsroom (2020)",
+          "url": "https://newsroom.porsche.com/en/2020/history/porsche-le-mans-steve-mcqueen-911-targa-4s-heritage-design-edition-christophorus-395-21336.html"
+        }
       ],
       "missing": [
         "DIN kerb weight for the Heritage Design Edition is not published separately by Porsche (assumed to match the Targa 4S but not stated)."
@@ -592,19 +2555,119 @@
       "weight": "1,470 kg (3,241 lb) DIN with manual gearbox",
       "drivetrain": "Rear-wheel drive",
       "transmission": "7-speed manual as standard; 8-speed PDK available",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Added in October 2022 to revive the 'Touring' idea, the Carrera T is a 992.1 built for the analogue driver. It wears the base Carrera's 283 kW (385 PS; 379 hp) twin-turbo, sits between the Carrera and Carrera S, and comes with a seven-speed manual gearbox as standard — or an eight-speed PDK if you insist. The rear seats are deleted, and lightweight glass, reduced insulation and a smaller battery save more than 35 kg against a Carrera with PDK, leaving 1,470 kg (3,241 lb). PASM sport suspension lowers it 10 mm, Sport Chrono is standard, and PTV with a mechanical rear differential lock comes with the S-spec manual. It covers 0–100 km/h in 4.5 seconds and 291 km/h (181 mph).",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+        "alt": "911 Carrera T",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJbACdAC3y0UiMQ+AAPuejrnx5nKbeIEyfeectqTA9Cytt3SBkUspAqu0krD81iyJ9UJobZ8CXXu7wSmDulIAAAA=",
+        "creditId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+        "width": 1920,
+        "height": 1161
+      },
+      "gallery": [
+        {
+          "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "alt": "911 Carrera T — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoQAAkABABoJbAC7AYtB25SVEDMq4AAyvgXAxY1FQeXMp4RGGU6MfJt3fpVuKl023s9YPWveiQFpD4/8RUBePopUvzt13Z0GJAAAA==",
+          "creditId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "width": 1920,
+          "height": 1098
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc-1920.avif",
+          "alt": "911 Carrera T — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJbACdAYsPy1/8gAA/icoLVWAXg92YcHPim0Bt8+cU+ACWFOmNT6e3hGxGK6X+IiyykSs9KDE4o1pU9ZUKKApmRNn5+AA",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc",
+          "width": 1920,
+          "height": 1262
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-992-carrera-t-54302733294-cc07d35f-1920.avif",
+          "alt": "911 Carrera T — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsABABoJZQAAwFuQbgi0MtgAPYrF6XeIbyKgglHuGcnGC8uypJJeQgIxSFMplHrozekU+0dxCgI9kKV3JYGV7VGhG2Y0AA=",
+          "creditId": "img-porsche-992-carrera-t-54302733294-cc07d35f",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095798543-633dc0b5-1920.avif",
+          "alt": "911 Carrera T — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoABABoJbACdAYuv2tSH+cAAP6C2FnvIPiVgxQSDJuBEPZmkIdqoX9DhLiyO3IgFrZfgzua+encGskn5ijGOs0ljgDveQBbakAA",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095798543-633dc0b5",
+          "width": 1920,
+          "height": 1237
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095545066-07e5bf37-1920.avif",
+          "alt": "911 Carrera T — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoABABoJaACdAYuly9OFNZ4aAD7pVu+lXKlJ0tLYG8rfoXMi72kwdbQAuS4vL32eNq6kyCMX+rQ5uUBqw5IotUSpA+kLMRPCZjv5YB8kJ+j41xtwuFJ4M4oAA==",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095545066-07e5bf37",
+          "width": 1920,
+          "height": 1220
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095877524-6298fa1a-1920.avif",
+          "alt": "911 Carrera T — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAoABABoJbACdAEK5/PwAAD+wjdbiFI/2IVAheqxrIP+A0cI/K5MyK0iHPjnv/0O4eypGuvSlcSXIC3JkQYeARJ4wmRwAAA=",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095877524-6298fa1a",
+          "width": 1920,
+          "height": 1249
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54094673617-056af060-1920.avif",
+          "alt": "911 Carrera T — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoABABoJbACdACyn4fqI7AA8qQaVell3+np3G1cLQX/8Qf6zYwq6y6SXuttjS3oMDvzEm0rTbsb8GnLDqB9+j03CybjrxVzFPEnom+O5pKCrBimRoRCo/EwAA==",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54094673617-056af060",
+          "width": 1920,
+          "height": 1243
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3690×2232px (2951 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3428×1960px (1931 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "New lightweight sports car: Porsche 911 Carrera T (press release, 19 October 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-new-911-carrera-t-touring-world-premiere-30087.html" },
-        { "title": "Porsche 911 (Type 992) Carrera T — The Porsche Heritage Experience press kit", "url": "https://newsroom.porsche.com/en/press-kits/Porsche-Heritage-Experience/Porsche-911-(Typ-992)-Carrera-T.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "New lightweight sports car: Porsche 911 Carrera T (press release, 19 October 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-new-911-carrera-t-touring-world-premiere-30087.html"
+        },
+        {
+          "title": "Porsche 911 (Type 992) Carrera T — The Porsche Heritage Experience press kit",
+          "url": "https://newsroom.porsche.com/en/press-kits/Porsche-Heritage-Experience/Porsche-911-(Typ-992)-Carrera-T.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "DIN weight and 0–100 km/h for the optional PDK version of the 992.1 Carrera T are not published by Porsche; only the manual figures (1,470 kg, 4.5 s) are given in the launch release."
@@ -627,19 +2690,103 @@
       "weight": "1,665 kg (3,671 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The base all-wheel-drive Targa, launched alongside the 4S in May 2020 with a 283 kW (385 PS; 379 hp) version of the 3.0-litre twin-turbo — 15 PS more than the 991 Targa — and 450 Nm (332 lb-ft) from 1,950 rpm. With Sport Chrono it reaches 100 km/h in 4.2 seconds and 289 km/h (180 mph). It is PDK only, and around 100 kg heavier than the Carrera 4 at 1,665 kg (3,671 lb) because of the retractable roof structure, with 330 mm brake discs front and rear against the 4S's 350 mm. Porsche Traction Management splits torque to all four wheels, PTV Plus is optional, and the roof panel stows electrically under the rear deck.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/992-1/img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240-1920.avif",
+        "alt": "911 Targa 4",
+        "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAkABABoJYwCdADdqoFWUKYAAP7mOxV8r2CEEiTAjZDcDEUs52EFlthigtJ7dyMPWbAFrKQMlBzJxauNQAAA",
+        "creditId": "img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240",
+        "width": 1920,
+        "height": 1080
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4/img-porsche-911-targa-4-992-rear-three-quarter-view-in-osaka-4059e1cd-1920.avif",
+          "alt": "911 Targa 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkABABoJQBOgCKxGRtVdAAA/h/SXU6leXBnARA8u/fmLlcwu5g4Xe1JpsOz50JoxfxYt9NjJqfgDouAAA==",
+          "creditId": "img-porsche-911-targa-4-992-rear-three-quarter-view-in-osaka-4059e1cd",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-992-targa-58446-50f8cfb6-1920.avif",
+          "alt": "911 Targa 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkABABoJZwAD4iw1UFGRAAA/tmGZd127fzPS2bYVVtYmpPnAVf4WKLz71ZPAp8Irts8TnDbJ0gAA+tbdBNNHHdOkqKAAAA=",
+          "creditId": "img-porsche-911-992-targa-58446-50f8cfb6",
+          "width": 1920,
+          "height": 1062
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-992-targa-32944-9aaaa781-1920.avif",
+          "alt": "911 Targa 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAkABABoJZACdAYuvuVRQvvWQAD8peZcRpNSJlRK24gvgfeKOdVKrqPvC/ESC3r8muJOGdcVQXAYlbvnZnSzP5qOkVsJVta8HFgAAAA=",
+          "creditId": "img-porsche-911-992-targa-32944-9aaaa781",
+          "width": 1920,
+          "height": 1128
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-992-targa-15595-d55d7bc4-1920.avif",
+          "alt": "911 Targa 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAoABABoJZACdADpMp8sY0bUAAD7oJs/MA7skYPeGl9rGSUVKNtvqZgkHJlIe8bMH8CC7yS89sKA4H2VVIOPJQWJcxiUnEa/uQowAAA=",
+          "creditId": "img-porsche-911-992-targa-15595-d55d7bc4",
+          "width": 1920,
+          "height": 1177
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-992-targa-e6539be1-1920.avif",
+          "alt": "911 Targa 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsABABoJZQAArA7NHSbbAAA+5myt24fMm7J3AtQE5GszMbaJRtrCnHe5062gqb37iMtPIYQ1/ElYMf5V9S5X8VU6nhAAAA=",
+          "creditId": "img-porsche-911-992-targa-e6539be1",
+          "width": 1920,
+          "height": 1279
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_4_(992)_(front_three-quarter_view)_in_Osaka.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Aos.1905",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa_4_(992)_(front_three-quarter_view)_in_Osaka.jpg",
+          "localPath": "/images/992-1/img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2756×1550px (2865 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-targa-4-992-rear-three-quarter-view-in-osaka-4059e1cd",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_4_(992)_(rear_three-quarter_view)_in_Osaka.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Aos.1905",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa_4_(992)_(rear_three-quarter_view)_in_Osaka.jpg",
+          "localPath": "/images/targa-4/img-porsche-911-targa-4-992-rear-three-quarter-view-in-osaka-4059e1cd-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2300×1295px (2094 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "World premiere of the new Porsche 911 Targa (press release, 18 May 2020)", "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-992-eighth-generation-20903.html" },
-        { "title": "The new 911 Targa 4 and 911 Targa 4S — Porsche press kit (PDF)", "url": "https://newsroom.porsche.com/dam/jcr:7e1737b7-ce67-401a-abe1-b1c9849c2e37/PAG-911-Targa_PM_EN.pdf" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "World premiere of the new Porsche 911 Targa (press release, 18 May 2020)",
+          "url": "https://newsroom.porsche.com/en/2020/products/porsche-911-targa-992-eighth-generation-20903.html"
+        },
+        {
+          "title": "The new 911 Targa 4 and 911 Targa 4S — Porsche press kit (PDF)",
+          "url": "https://newsroom.porsche.com/dam/jcr:7e1737b7-ce67-401a-abe1-b1c9849c2e37/PAG-911-Targa_PM_EN.pdf"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": [
         "The Targa launch release quotes 4.2 s to 100 km/h with Sport Chrono but does not state the figure without it; 4.4 s taken from Wikipedia's 992 performance table."
@@ -662,18 +2809,116 @@
       "weight": "1,595 kg (3,516 lb) DIN with PDK (Coupé)",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch or 7-speed manual with shortened lever",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "All-wheel drive plus the GTS's 480 PS made this the quickest 992.1 Carrera in production. The 353 kW (480 PS; 473 hp) and 570 Nm (420 lb-ft) 2,981 cm³ twin-turbo drives all four wheels through Porsche Traction Management, with GTS-tuned PASM dampers, rear helper springs and the Turbo's brake hardware. Coupé and Cabriolet were both offered with the eight-speed PDK or a seven-speed manual. The Coupé reaches 100 km/h in 3.3 seconds with Sport Chrono and 308 km/h (191 mph); the Cabriolet manages 3.5 seconds. An optional Aerokit swapped the retractable spoiler for a fixed rear wing, and a Lightweight Design package from November 2021 cut up to 25 kg.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-4-gts/img-porsche-911-992-carrera-4-gts-safety-car-6787fa68-1920.avif",
+        "alt": "911 Carrera 4 GTS",
+        "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoABABoJYwAD40vGTmYhagIoADOH3z5tOqACizJJ+v804C5Vsz98uyQLKFmSyL4d9G1wYOS9JUJsPKWsOeYmfsjLRVpThH7aUQW1mhcaOAA",
+        "creditId": "img-porsche-911-992-carrera-4-gts-safety-car-6787fa68",
+        "width": 1920,
+        "height": 1225
+      },
+      "gallery": [
+        {
+          "src": "/images/gts/img-2022-porsche-911-992-carrera-4-gts-809edc93-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAkABABoJbACdAEQLcUpKOAA/uaRRHzinq5gtRW6avakefrxJ4HpwZLkjP15mqBtodZHDWkWJgiP69M/0irv82dfks8qoNed2X5yRsAAAA==",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-809edc93",
+          "width": 1920,
+          "height": 1109
+        },
+        {
+          "src": "/images/gts/img-2022-porsche-911-992-carrera-4-gts-cabriolet-e5dedc0d-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJagAAusk2jmhKAAAzXjrZtdQ0Z/EC61ITHnDzqRuLfgTcyFKPm99jEfvZsB0B1CPG9I5hTPbnfpZq8chr9QhrN8Y0cAA",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-cabriolet-e5dedc0d",
+          "width": 1920,
+          "height": 1209
+        },
+        {
+          "src": "/images/carrera-gts/img-porsche-992-carrera-4-gts-1x7a7209-bearb-sp-2-018048e3-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJZACdAEPhEKj3QWuAP7nN5Q3cfZpHUDvO88SA96Hb3wdmLxBVOENpBtmDMOpY2Nm3o84reUDZSrEZgaWoNU6Z1ZsAAAA",
+          "creditId": "img-porsche-992-carrera-4-gts-1x7a7209-bearb-sp-2-018048e3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4-gts/img-2022-porsche-911-992-carrera-4-gts-14014-623a6901-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkABABoJbACdAYrx20NfRDAAP7BoFP8GNr6lVAypilsDb6epxd2i6ocd9qwWagC6XySvN3jrZIhgr+2Fr+XHl7p+acWcv57FE/BINg4xAAA",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-14014-623a6901",
+          "width": 1920,
+          "height": 1123
+        },
+        {
+          "src": "/images/carrera-4-gts/img-2022-porsche-911-992-carrera-4-gts-20469-a6dce85a-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQAAsABABoJbAC7AEDqfkbjpG+6gAAzJOMa76y3LxmYVS4RZepYcdmZC+Nn9gpEBQwc3kosQiR5k7wBp2yGZSWhGyCk0ySLB+dbW4AAAA=",
+          "creditId": "img-2022-porsche-911-992-carrera-4-gts-20469-a6dce85a",
+          "width": 1920,
+          "height": 1276
+        },
+        {
+          "src": "/images/carrera-4-gts/img-porsche-992-911-carrera-4-gts-convertible-crayon-10-53f77ab8-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAwABABoJQBdgMXI7LwJ3kc8AAD2kIB5QTVZ9VMUHoXGHMVYZ9hYPYTLvCqrCxa2c8raOa9yxF34bwFs6AEaxpY3GrfsDOihxCI6h2gOWxugAAA=",
+          "creditId": "img-porsche-992-911-carrera-4-gts-convertible-crayon-10-53f77ab8",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera-4-gts/img-2023-porsche-911-992-carrera-4-gts-aero-pack-2e9a2488-1920.avif",
+          "alt": "911 Carrera 4 GTS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoABABoJbACdAEK/tMa2A7gAP7s0kV+lO1UTdu97W6EP3mWCuB5mc6mU/nom2xDsouF5mCSZ0ETtkizKxwPR6H77Xpv7K2rrIV08loZat6vAAA=",
+          "creditId": "img-2023-porsche-911-992-carrera-4-gts-aero-pack-2e9a2488",
+          "width": 1920,
+          "height": 1231
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-992-carrera-4-gts-safety-car-6787fa68",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_Carrera_4_GTS_Safety_Car.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_Carrera_4_GTS_Safety_Car.jpg",
+          "localPath": "/images/carrera-4-gts/img-porsche-911-992-carrera-4-gts-safety-car-6787fa68-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15892×10136px (15613 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2022-porsche-911-992-carrera-4-gts-809edc93",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2022_Porsche_911_992_Carrera_4_GTS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2022_Porsche_911_992_Carrera_4_GTS.jpg",
+          "localPath": "/images/gts/img-2022-porsche-911-992-carrera-4-gts-809edc93-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 7698×4448px (5478 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)", "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)",
+          "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": []
     },
@@ -694,19 +2939,139 @@
       "weight": "1,685 kg (3,715 lb) DIN",
       "drivetrain": "All-wheel drive (Porsche Traction Management)",
       "transmission": "8-speed PDK dual-clutch or 7-speed manual with shortened lever",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The third of the five 992.1 GTS models, and the only one that keeps the Targa's extra mass over the equivalent coupé. It uses the same 353 kW (480 PS; 473 hp) and 570 Nm (420 lb-ft) twin-turbo as the Carrera GTS, all-wheel drive, and either the eight-speed PDK or a seven-speed manual with a shortened lever. Unusually for a GTS, Porsche gave it the Targa 4S chassis — including PASM, rear-axle steering and the roof's structural weight — which costs both performance and refinement: 0–100 km/h in 3.5 seconds with Sport Chrono and 308 km/h (191 mph), from 1,685 kg (3,715 lb) DIN. Launched in June 2021 alongside the other GTS models, and the basis of the 750-unit 911 Edition 50 Years Porsche Design.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/targa-4-gts/img-porsche-911-992-targa-4-gts-2b2f757d-1920.avif",
+        "alt": "911 Targa 4 GTS",
+        "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJQBdgBVQqGpgAP6HBrZ11mfsk6J/sCpeS8FwsNmnYuBgd5Keynh3GqhNpjS8HCoBkT7xq3xQAA==",
+        "creditId": "img-porsche-911-992-targa-4-gts-2b2f757d",
+        "width": 1920,
+        "height": 1122
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4-gts/img-2024-porsche-911-992-targa-4-gts-376a80a8-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoABABoJbAAAxYD0NGevF+oAP5+JUcBFfs9nlUndxnMsqnRZpiNuN8N79UEgxgAvfbhk1yWmYEsSMyNL0MA1tdWfGgyDmCjBQ90Yhe/scq6WIVo4AAA",
+          "creditId": "img-2024-porsche-911-992-targa-4-gts-376a80a8",
+          "width": 1920,
+          "height": 1221
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-targa-4-gts-54875767605-5edb46c3-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAsABABoJZQAAfL5dvtgAP6Yigg6AINXPduwRqr+piVInO7Zj5oghsODbb6qv33kQ7HKcb9ZbItctbzyam2DgLEy7c9A9yGfbfIMUAA=",
+          "creditId": "img-porsche-992-targa-4-gts-54875767605-5edb46c3",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-911-targa-4-gts-gt-silver-metallic-2-b1f3a2f1-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAwABABoJZQC7AC2iOm2qQAA/qKBah2kONdHfbZJeMOcHdcc9C8XFkrTP6+KXkS+Bx9zlz9GMzA7G4pHHb10oqzILgAA",
+          "creditId": "img-porsche-992-911-targa-4-gts-gt-silver-metallic-2-b1f3a2f1",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-911-targa-4-gts-gt-silver-metallic-4-1705e32f-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAQCdASoQAAwABABoJYwAAdFo8QAA/sD1MK1eY5gqJc4sE+UuX8sSRZm0JLrwUrIuzN1EOjyk884kHIpeXbk4e8pcsetuiCrfwYx32pWwAA==",
+          "creditId": "img-porsche-992-911-targa-4-gts-gt-silver-metallic-4-1705e32f",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-911-targa-4-gts-gt-silver-metallic-3-c12941e0-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZQAAlpyav0EgAD+qkHq4Fjp294qs8m9G7MPzn/3xQ4Omyfk9ggX1KQaRfjX/K5uLv2iWJc4hZ3PHxv4MY7lAAA=",
+          "creditId": "img-porsche-992-911-targa-4-gts-gt-silver-metallic-3-c12941e0",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-911-targa-4-gts-gt-silver-metallic-1-d5e7b66a-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAwABABoJZQC7AC22Zv+PoAA/p/dYJcUQZzusJWVU+De7eUTFsKqjCyOxVCtuqtjjuoid2Ypk1IQe2m2N2GvWLcwjnpz7GPAAAAA",
+          "creditId": "img-porsche-992-911-targa-4-gts-gt-silver-metallic-1-d5e7b66a",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4-gts/img-porsche-992-911-targa-4-gts-50-years-porsche-design-editio-de2d9544-1920.avif",
+          "alt": "911 Targa 4 GTS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwABABoJaQAAxR17fXTtUAAAP5pcTnDY7mTN99px/WahL3gwV2hnlrIusSUaW7YN8H8ync66oaaZ50GBChSSkKqgAAA",
+          "creditId": "img-porsche-992-911-targa-4-gts-50-years-porsche-design-editio-de2d9544",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
-      "model3d": null,
-      "credits": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
+        "sourceId": "214a61d759e942e2887290b6e4e50d49",
+        "license": "CC Attribution",
+        "author": "007",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-992-targa-4-gts-2b2f757d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_992_Targa_4_GTS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_992_Targa_4_GTS.jpg",
+          "localPath": "/images/targa-4-gts/img-porsche-911-992-targa-4-gts-2b2f757d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3492×2040px (2313 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2024-porsche-911-992-targa-4-gts-376a80a8",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Targa_4_GTS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Targa_4_GTS.jpg",
+          "localPath": "/images/targa-4-gts/img-2024-porsche-911-992-targa-4-gts-376a80a8-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 13292×8454px (14963 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-992-1-targa-4-gts",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
+          "license": "CC Attribution",
+          "author": "007",
+          "retrieved": "2026-10-02",
+          "sourceId": "214a61d759e942e2887290b6e4e50d49",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)", "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html" },
-        { "title": "The 911 Porsche Design 50th Anniversary Edition (press release, 18 January 2022)", "url": "https://newsroom.porsche.com/en/2022/products/porsche-design-50-years-anniversary-911-porsche-design-50th-anniversary-edition-27070.html" },
-        { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" }
+        {
+          "title": "More distinctive and dynamic than ever: the new Porsche 911 GTS models (press release, 23 June 2021)",
+          "url": "https://newsroom.porsche.com/en/2021/products/porsche-911-gts-models-premiere-24875.html"
+        },
+        {
+          "title": "The 911 Porsche Design 50th Anniversary Edition (press release, 18 January 2022)",
+          "url": "https://newsroom.porsche.com/en/2022/products/porsche-design-50-years-anniversary-911-porsche-design-50th-anniversary-edition-27070.html"
+        },
+        {
+          "title": "Porsche 911 (992) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+        }
       ],
       "missing": []
     },
@@ -727,32 +3092,184 @@
       "weight": null,
       "drivetrain": "All-wheel drive",
       "transmission": "8-speed PDK dual-clutch only",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "Marking fifty years of the 911 Turbo, this 992.1 special edition was unveiled at Monterey in August 2024 and limited to 1,974 units — the year the first Turbo was shown. Mechanically it is a Turbo S: 3,745 cm³ twin-turbo flat-six, 478 kW (650 PS; 641 hp) and 800 Nm (590 lb-ft), all-wheel drive and the eight-speed PDK, with the chassis lowered 10 mm and a sport exhaust. The styling does the celebrating: a new Turbonite metallic on the fuel cap, crest, decklid inlays and Exclusive Design wheels; Anthracite Grey on the wing and intake trim; a rear badge showing a turbocharger and '1974–2024'; side graphics from the 1973 911 RSR Turbo; and MacKenzie tartan on the seat centres and door cards.",
       "special": true,
       "production": "1,974 units worldwide",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+        "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJbACdAC3y0UiMQ+AAPuejrnx5nKbeIEyfeectqTA9Cytt3SBkUspAqu0krD81iyJ9UJobZ8CXXu7wSmDulIAAAA=",
+        "creditId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+        "width": 1920,
+        "height": 1161
+      },
+      "gallery": [
+        {
+          "src": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoQAAkABABoJbAC7AYtB25SVEDMq4AAyvgXAxY1FQeXMp4RGGU6MfJt3fpVuKl023s9YPWveiQFpD4/8RUBePopUvzt13Z0GJAAAA==",
+          "creditId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "width": 1920,
+          "height": 1098
+        },
+        {
+          "src": "/images/carrera-t/img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoABABoJbACdAYsPy1/8gAA/icoLVWAXg92YcHPim0Bt8+cU+ACWFOmNT6e3hGxGK6X+IiyykSs9KDE4o1pU9ZUKKApmRNn5+AA",
+          "creditId": "img-porsche-911-carrera-t-992-2023-54095952788-c7e5a4fc",
+          "width": 1920,
+          "height": 1262
+        },
+        {
+          "src": "/images/turbo/img-porsche-992-turbo-img-3522-db16864b-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcABABoJaQAAuirvrYXUTAAzijHtdojtL+/eP4P0hoIAEVApysiRKdg3DrfxfJg/QJ0psuADbPhSkejTNJAAAA=",
+          "creditId": "img-porsche-992-turbo-img-3522-db16864b",
+          "width": 1920,
+          "height": 788
+        },
+        {
+          "src": "/images/gt3-touring/img-2022-porsche-992-gt3-touring-scd24-2e066e0d-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAgABABoJZQAAjAy3w2wAP1wihYjcAZ4rG8G3MGZ7qHLIF9psMWbLEHNy8xUo17If1z8wgAAAA==",
+          "creditId": "img-2022-porsche-992-gt3-touring-scd24-2e066e0d",
+          "width": 1920,
+          "height": 956
+        },
+        {
+          "src": "/images/turbo-s/img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAkABABoJZwAAxYIXmeUZ6gAAP6xB0CojCVX/T2PkGTG/af48RcS6t3MoysQAAA=",
+          "creditId": "img-2023-6-hours-of-spa-francorchamps-manthey-racing-porsche-9-047b987c",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/images/turbo/img-porsche-992-turbo-img-3521-28317562-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAcABABoJaQAAxe64NCR+cAA/ZziNzv31g19eYKWz7YawSsCJ6+PBmyd5eomJINpvBhBBpqFag9RSywAAA==",
+          "creditId": "img-porsche-992-turbo-img-3521-28317562",
+          "width": 1920,
+          "height": 784
+        },
+        {
+          "src": "/images/turbo/img-porsche-911-992-turbo-2980b6f2-1920.avif",
+          "alt": "911 Turbo 50 Years — stand-in photo (same 992-1 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgABABoJbAAAizS1hm5AAD+o2YXz+2pRTd4Ndxn2zx4RoMp+rbHBzYyreGuWfL3y1CVXzKFBTxXeCcGLyVoAAA=",
+          "creditId": "img-porsche-911-992-turbo-2980b6f2",
+          "width": 1920,
+          "height": 982
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3690×2232px (2951 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2024-porsche-911-992-carrera-t-auto-ccb15f46",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2024_Porsche_911_992_Carrera_T_Auto.jpg",
+          "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-auto-ccb15f46-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3428×1960px (1931 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Unique anniversary model: The Porsche 911 Turbo 50 Years (press release, 16 August 2024)", "url": "https://newsroom.porsche.com/en/2024/products/porsche-911-turbo-50-years-anniversary-model-premiere-37078.html" },
-        { "title": "The Porsche 911 Turbo 50 Years — Porsche Newsroom USA (16 August 2024)", "url": "https://newsroom.porsche.com/en_US/2024/products/porsche-911-turbo-50-years-anniversary-model-premiere-37083.html" }
+        {
+          "title": "Unique anniversary model: The Porsche 911 Turbo 50 Years (press release, 16 August 2024)",
+          "url": "https://newsroom.porsche.com/en/2024/products/porsche-911-turbo-50-years-anniversary-model-premiere-37078.html"
+        },
+        {
+          "title": "The Porsche 911 Turbo 50 Years — Porsche Newsroom USA (16 August 2024)",
+          "url": "https://newsroom.porsche.com/en_US/2024/products/porsche-911-turbo-50-years-anniversary-model-premiere-37083.html"
+        }
       ],
       "missing": [
         "DIN kerb weight for the Turbo 50 Years is not published separately by Porsche; the acceleration and top speed shown are the Turbo S figures, as Porsche describes the edition as based on the Turbo S without restating them."
       ]
     }
   ],
-  "credits": [],
+  "credits": [
+    {
+      "assetId": "img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_4_(992)_(front_three-quarter_view)_in_Osaka.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Aos.1905",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:Porsche_911_Targa_4_(992)_(front_three-quarter_view)_in_Osaka.jpg",
+      "localPath": "/images/992-1/img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2756×1550px (2865 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3A2024_Porsche_911_992_Carrera_T.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:2024_Porsche_911_992_Carrera_T.jpg",
+      "localPath": "/images/992-2/img-2024-porsche-911-992-carrera-t-c3e1c3f6-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3690×2232px (2951 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-992-1",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "https://sketchfab.com/3d-models/porsche-911-992-carrera-s-318cfb7279a94e8f96095ec0236f02ad?embed=1",
+      "license": "CC Attribution",
+      "author": "Nieve5677",
+      "retrieved": "2026-10-02",
+      "sourceId": "318cfb7279a94e8f96095ec0236f02ad",
+      "localPath": null,
+      "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    }
+  ],
   "sources": [
-    { "title": "Porsche 911 (992) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)" },
-    { "title": "8th Generation Porsche 911 (992), since 2018 — 60 Years of Porsche 911 press kit", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation-Porsche-911,-(992),-seit-2018.html" },
-    { "title": "8th Generation – Engines — 60 Years of Porsche 911 press kit", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html" },
-    { "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018", "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html" },
-    { "title": "The lightweight gene — Porsche Newsroom technology, aluminium and high-pressure die-cast body-in-white of the 992 (2019)", "url": "https://newsroom.porsche.com/en/2019/technology/porsche-engineering-lightweight-911-18802.html" },
-    { "title": "Stronger. Racier. Sharper. — design interview with Peter Varga and Ivo van Hulten on the new 911 (8 January 2019)", "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-design-interview-peter-varga-ivo-van-hulten-16507.html" }
+    {
+      "title": "Porsche 911 (992) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+    },
+    {
+      "title": "8th Generation Porsche 911 (992), since 2018 — 60 Years of Porsche 911 press kit",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation-Porsche-911,-(992),-seit-2018.html"
+    },
+    {
+      "title": "8th Generation – Engines — 60 Years of Porsche 911 press kit",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/8.-Generation---Motoren.html"
+    },
+    {
+      "title": "The new Porsche 911: more powerful, faster, digital — world premiere press release, 28 November 2018",
+      "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-world-premiere-los-angeles-2018-news-tv-live-broadcasting-16473.html"
+    },
+    {
+      "title": "The lightweight gene — Porsche Newsroom technology, aluminium and high-pressure die-cast body-in-white of the 992 (2019)",
+      "url": "https://newsroom.porsche.com/en/2019/technology/porsche-engineering-lightweight-911-18802.html"
+    },
+    {
+      "title": "Stronger. Racier. Sharper. — design interview with Peter Varga and Ivo van Hulten on the new 911 (8 January 2019)",
+      "url": "https://newsroom.porsche.com/en/products/porsche-911-new-eighth-generation-992-timeless-machine-design-interview-peter-varga-ivo-van-hulten-16507.html"
+    }
   ],
   "missing": [
     "Porsche has not published a dated cumulative production total for the 992. The '60 Years of the 911' press-kit page states '96,603 examples having left the factory by the end of last year' but carries no publication date, so the reference year cannot be verified and the figure is not used in this file.",

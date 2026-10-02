@@ -10,17 +10,86 @@
   "accent": "#c9c9cf",
   "eraType": "display",
   "stats": [
-    { "label": "Production", "value": "213,004 (2004–2012); 215,092 per 2017 Newsroom" },
-    { "label": "Model variants", "value": "24 (incl. special editions)" },
-    { "label": "Years", "value": "2004–2012" },
-    { "label": "Engines", "value": "3.6–4.0 L flat-six, NA and twin-turbo" },
-    { "label": "Power span", "value": "325–620 PS (321–612 hp)" },
-    { "label": "GT2 RS Nordschleife", "value": "7:18 min" }
+    {
+      "label": "Production",
+      "value": "213,004 (2004–2012); 215,092 per 2017 Newsroom"
+    },
+    {
+      "label": "Model variants",
+      "value": "24 (incl. special editions)"
+    },
+    {
+      "label": "Years",
+      "value": "2004–2012"
+    },
+    {
+      "label": "Engines",
+      "value": "3.6–4.0 L flat-six, NA and twin-turbo"
+    },
+    {
+      "label": "Power span",
+      "value": "325–620 PS (321–612 hp)"
+    },
+    {
+      "label": "GT2 RS Nordschleife",
+      "value": "7:18 min"
+    }
   ],
-  "heroImage": null,
-  "timelineImage": null,
-  "model3d": null,
-  "videos": [],
+  "heroImage": {
+    "src": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+    "alt": "Return of Round Lights (997) — hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAkABABoJQBOgBZxjgXAAPqUlv3cful3UtaQtuat13uZ3uxb8N8DnnVIqTC+YdYB0xQy+egkppTmrv2uVL/CWIu84g8AAAA=",
+    "creditId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+    "width": 1920,
+    "height": 1124
+  },
+  "timelineImage": {
+    "src": "/images/997/img-porsche-911-997-gt3-rs-68893-b0f30699-1920.avif",
+    "alt": "Return of Round Lights (997) — wide view for the timeline",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbACdAD2GLKFHAAA/h8dzROr1zfrXv/jQgcNEwrjfPnbYWIR4ZFHUJEiX/vVqlTKzq31ousi1TNGlisoAAAA",
+    "creditId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
+    "width": 1920,
+    "height": 1195
+  },
+  "model3d": {
+    "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-9972-11-7e25beb0e2c841f0bf51f94fde651fd4?embed=1",
+    "sourceId": "7e25beb0e2c841f0bf51f94fde651fd4",
+    "license": "CC Attribution",
+    "author": "Mona x Supercars",
+    "glb": null,
+    "turntable": null,
+    "bytes": null
+  },
+  "videos": [
+    {
+      "id": "ANmQyLI70-g",
+      "title": "Porsche 911 CSR: Transforming a 997 | Carfection 4K",
+      "channel": "Carfection",
+      "poster": null,
+      "note": "blueprint-driven 997, a clean portrait of the generation"
+    },
+    {
+      "id": "L6vlVdY2Fr8",
+      "title": "2006 Porsche 997 Carrera S - One Take",
+      "channel": "TheSmokingTire",
+      "poster": null,
+      "note": "997.1 Carrera S single-take drive and impressions"
+    },
+    {
+      "id": "AhbtKNHZTJo",
+      "title": "Porsche 911 GT3 RS (997.2) | Anniversary Rise & Drive | PistonHeads",
+      "channel": "PistonHeads",
+      "poster": null,
+      "note": "997.2 GT3 RS as a proper anniversary event car"
+    },
+    {
+      "id": "_AFKEMaS330",
+      "title": "Porsche 911 Sport Classic: 997 vs 992",
+      "channel": "9WERKS TV",
+      "poster": null,
+      "note": "the two back-to-back homologation special stories"
+    }
+  ],
   "variants": [
     {
       "id": "carrera",
@@ -39,20 +108,124 @@
       "weight": "1,415 kg (3,120 lb) (997.1 coupé)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The 911 Carrera opened the 997 era in July 2004 with the return of oval, clear-glass headlights and a 3.6-litre flat-six rated at 325 PS (321 hp) and 370 Nm (273 lb-ft). Its rear bodywork sat 88 mm (3.5 in) wider than the 996's, with a drag coefficient of 0.28 and 18-inch wheels as standard. For the 2008 model update Porsche introduced direct fuel injection, lifting the same displacement to 345 PS (340 hp) and 390 Nm (288 lb-ft) while cutting fuel use and emissions, and replaced the five-speed Tiptronic S with the seven-speed PDK dual-clutch gearbox. Offered as a coupé and a cabriolet, the Carrera was the volume car of what Porsche calls the most diverse 911 range yet.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+        "alt": "911 Carrera",
+        "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZgC7ADQQtAAAPY2gbNQoHgxFEkpc7AFaOHqPAdn8oQLzeP5mI3vQd52tVgRQ+r8Y7Kr0S6U+AAA",
+        "creditId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+        "width": 1920,
+        "height": 1245
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "alt": "911 Carrera — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsABABoJbACdAEREX2xfwiwAAD7/I2IqpW46TLVbuvVAz0LTKNJoQuH1PRb9hrV+2Uh2wHym1/b25Lz6LXjDAAAAA==",
+          "creditId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "width": 1920,
+          "height": 1292
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800-1920.avif",
+          "alt": "911 Carrera — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwABABoJZwAAxUijpbIcaIAAP7Q+Rwi8w0CSSO4jkwJ2kvi+mCOHINAYX7WO4/SzNEl92wSvCUAnZ7MPh3Epk5pPR1wIAA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5-1920.avif",
+          "alt": "911 Carrera — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJZwAAqABV7+iCAAAzc747ScFt4RIV5c+nTzAz+1rHXzRu3GJYsnWcN55cQCnxWCvXLdXICBTghM6KDsUTNNTigAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9-1920.avif",
+          "alt": "911 Carrera — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJZQAApGKSTPr3lgA/KKUUMjMQ/uLzNJYNlQoSURTcN7kk+drFalQVTorjE9VnXc+TBeWvIOiHKm5/gA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e-1920.avif",
+          "alt": "911 Carrera — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwABABoJZwAAxUoS0gBEIAA/tzv/xND1COSjoxuKI/njBsw+p8VhFKDSYUA6PpIxv4wsM69OsxxyP8PkrHOGwAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-9-7a9ab911-1920.avif",
+          "alt": "911 Carrera — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwABABoJZwAAjSem5UP8AD+J4m9Pa1ZR3soIpcEhMiBu+ZPu+SzbmqUTS1+ll4TgTVUCz5v39NdyHiMh7DFZwIAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-9-7a9ab911",
+          "width": 1920,
+          "height": 1441
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-2-f25698b2-1920.avif",
+          "alt": "911 Carrera — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAwABABoJZwAAiXv0ssAAP6i8LolQeeRQiK/uFyzUb8zgjf455H7qtY2xAEeMmUlOOVoPHMgITdAAAA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-2-f25698b2",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera_(95736).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera_(95736).jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3684×2388px (2870 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera.jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15354×10328px (19465 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" }
+        {
+          "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        }
       ],
       "missing": []
     },
@@ -73,20 +246,124 @@
       "weight": "1,425 kg (3,142 lb) (997.1 coupé)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The Carrera S arrived with the launch cars in July 2004, defined by a new 3.8-litre flat-six — the largest naturally aspirated boxer in a series-production 911 to that point — producing 355 PS (350 hp) and 400 Nm (295 lb-ft). It came with PASM adaptive dampers, 19-inch wheels, an upgraded braking system, sports exhaust and bi-xenon headlamps as standard. From the 2006 model year an X51 Powerkit raised output to 381 PS (376 hp), and the 2008 direct-injection revision lifted the 3.8 to 385 PS (380 hp) with 420 Nm (310 lb-ft). Coupé and cabriolet bodies were joined by the wider, all-wheel-drive Carrera 4S.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+        "alt": "911 Carrera S",
+        "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZgC7ADQQtAAAPY2gbNQoHgxFEkpc7AFaOHqPAdn8oQLzeP5mI3vQd52tVgRQ+r8Y7Kr0S6U+AAA",
+        "creditId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+        "width": 1920,
+        "height": 1245
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "alt": "911 Carrera S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsABABoJbACdAEREX2xfwiwAAD7/I2IqpW46TLVbuvVAz0LTKNJoQuH1PRb9hrV+2Uh2wHym1/b25Lz6LXjDAAAAA==",
+          "creditId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "width": 1920,
+          "height": 1292
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-997-carrera-s-cabriolet-flickr-alexandre-pre-vot-574c4b61-1920.avif",
+          "alt": "911 Carrera S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJZwAAxbvU5zovqAAAP7VDjdnO/79FNszYEpgeXXdDjmIKZ01GkAklfTG25VgMoGIREkE9J8PmKqN30rV3BAP+B8AAA==",
+          "creditId": "img-porsche-997-carrera-s-cabriolet-flickr-alexandre-pre-vot-574c4b61",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-997-carrera-s-cabriolet-techart-flickr-alexandre-p-894c1f33-1920.avif",
+          "alt": "911 Carrera S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJYwCdAC3BT6Oo/lAAOGCWVo++3yb/Oyb7SfbKjMC9bjdobKU7u6nPGr6j+/TdCnKYJFEbmSSAMPxydFWVfDnHzqJyAAA",
+          "creditId": "img-porsche-997-carrera-s-cabriolet-techart-flickr-alexandre-p-894c1f33",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800-1920.avif",
+          "alt": "911 Carrera S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwABABoJZwAAxUijpbIcaIAAP7Q+Rwi8w0CSSO4jkwJ2kvi+mCOHINAYX7WO4/SzNEl92wSvCUAnZ7MPh3Epk5pPR1wIAA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5-1920.avif",
+          "alt": "911 Carrera S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJZwAAqABV7+iCAAAzc747ScFt4RIV5c+nTzAz+1rHXzRu3GJYsnWcN55cQCnxWCvXLdXICBTghM6KDsUTNNTigAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9-1920.avif",
+          "alt": "911 Carrera S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJZQAApGKSTPr3lgA/KKUUMjMQ/uLzNJYNlQoSURTcN7kk+drFalQVTorjE9VnXc+TBeWvIOiHKm5/gA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e-1920.avif",
+          "alt": "911 Carrera S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwABABoJZwAAxUoS0gBEIAA/tzv/xND1COSjoxuKI/njBsw+p8VhFKDSYUA6PpIxv4wsM69OsxxyP8PkrHOGwAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e",
+          "width": 1920,
+          "height": 1440
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera_(95736).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera_(95736).jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3684×2388px (2870 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera.jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15354×10328px (19465 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Porsche Newsroom — From zero to 1,000,000: Seven generations of the Porsche 911", "url": "https://newsroom.porsche.com/en/products/porsche-one-millionth-911-milestone-seven-generations-13735.html" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche 2011 911 brochure — Carrera / Carrera S / Targa specifications", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" }
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche Newsroom — From zero to 1,000,000: Seven generations of the Porsche 911",
+          "url": "https://newsroom.porsche.com/en/products/porsche-one-millionth-911-milestone-seven-generations-13735.html"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche 2011 911 brochure — Carrera / Carrera S / Targa specifications",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+        }
       ],
       "missing": []
     },
@@ -107,19 +384,120 @@
       "weight": "1,470 kg (3,241 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The Carrera 4 brought four-wheel drive to the naturally aspirated 997 range from the 2005 model year, using Porsche Traction Management to split torque between the axles of the wide-body shell. It shares the 3.6-litre flat-six of the rear-drive Carrera — 325 PS (321 hp) in 997.1 form, 345 PS (340 hp) with direct injection from 2008 — but carries extra weight, so 0–100 km/h takes 5.0 s with the manual gearbox on the original figures. Its distinguishing mark is the continuous red reflector strip running between the tail lamps, a Carrera 4 signature retained across the range. Coupé and cabriolet versions were offered, with all-wheel drive remaining a genuine traction advantage in wet and cold conditions.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+        "alt": "911 Carrera 4",
+        "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZgC7ADQQtAAAPY2gbNQoHgxFEkpc7AFaOHqPAdn8oQLzeP5mI3vQd52tVgRQ+r8Y7Kr0S6U+AAA",
+        "creditId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+        "width": 1920,
+        "height": 1245
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "alt": "911 Carrera 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsABABoJbACdAEREX2xfwiwAAD7/I2IqpW46TLVbuvVAz0LTKNJoQuH1PRb9hrV+2Uh2wHym1/b25Lz6LXjDAAAAA==",
+          "creditId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "width": 1920,
+          "height": 1292
+        },
+        {
+          "src": "/images/carrera-s/img-porsche-997-carrera-s-cabriolet-techart-flickr-alexandre-p-894c1f33-1920.avif",
+          "alt": "911 Carrera 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJYwCdAC3BT6Oo/lAAOGCWVo++3yb/Oyb7SfbKjMC9bjdobKU7u6nPGr6j+/TdCnKYJFEbmSSAMPxydFWVfDnHzqJyAAA",
+          "creditId": "img-porsche-997-carrera-s-cabriolet-techart-flickr-alexandre-p-894c1f33",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800-1920.avif",
+          "alt": "911 Carrera 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwABABoJZwAAxUijpbIcaIAAP7Q+Rwi8w0CSSO4jkwJ2kvi+mCOHINAYX7WO4/SzNEl92wSvCUAnZ7MPh3Epk5pPR1wIAA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-8-89d05800",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5-1920.avif",
+          "alt": "911 Carrera 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJZwAAqABV7+iCAAAzc747ScFt4RIV5c+nTzAz+1rHXzRu3GJYsnWcN55cQCnxWCvXLdXICBTghM6KDsUTNNTigAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-16-fdee8ef5",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9-1920.avif",
+          "alt": "911 Carrera 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwABABoJZQAApGKSTPr3lgA/KKUUMjMQ/uLzNJYNlQoSURTcN7kk+drFalQVTorjE9VnXc+TBeWvIOiHKm5/gA=",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-12-1749e3e9",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e-1920.avif",
+          "alt": "911 Carrera 4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwABABoJZwAAxUoS0gBEIAA/tzv/xND1COSjoxuKI/njBsw+p8VhFKDSYUA6PpIxv4wsM69OsxxyP8PkrHOGwAAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-6-c7cc143e",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/carrera/img-porsche-997-1-911-carrera-s-gt-silver-metallic-9-7a9ab911-1920.avif",
+          "alt": "911 Carrera 4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwABABoJZwAAjSem5UP8AD+J4m9Pa1ZR3soIpcEhMiBu+ZPu+SzbmqUTS1+ll4TgTVUCz5v39NdyHiMh7DFZwIAAA==",
+          "creditId": "img-porsche-997-1-911-carrera-s-gt-silver-metallic-9-7a9ab911",
+          "width": 1920,
+          "height": 1441
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera_(95736).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera_(95736).jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3684×2388px (2870 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera.jpg",
+          "localPath": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15354×10328px (19465 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" },
-        { "title": "Porsche 2011 911 brochure — Carrera 4 / Carrera 4S specifications", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" }
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        },
+        {
+          "title": "Porsche 2011 911 brochure — Carrera 4 / Carrera 4S specifications",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        }
       ],
       "missing": []
     },
@@ -140,19 +518,120 @@
       "weight": "1,480 kg (3,263 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The Carrera 4S combined the wide body of the Turbo — broader rear wings, 19-inch wheels — with the naturally aspirated 3.8-litre flat-six and all-wheel drive. Output followed the S line of the range: 355 PS (350 hp) from 2005, 381 PS (376 hp) with the X51 Powerkit from 2006, and 385 PS (380 hp) once direct injection arrived in 2008, with 420 Nm (310 lb-ft) at 4,400 rpm. The 997.2 coupé covered 0–100 km/h in 4.7 s with the manual or 4.5 s with PDK, and reached a 298 km/h (185 mph) maximum — marginally below the rear-drive Carrera S. PASM, the red reflector strip between the tail lamps and the Turbo-style rear end are its visual and chassis signatures.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/carrera-4s/img-2005-porsche-911-997-carrera-4s-0bd70203-1920.avif",
+        "alt": "911 Carrera 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkABABoJQBWABuwPqv3AAD6n9g/bE5L4NKXcJ1gJvlhm/sQvygqoxXuNxjgihSnQf5ghJCZPNfgIkhPH9bIAAA=",
+        "creditId": "img-2005-porsche-911-997-carrera-4s-0bd70203",
+        "width": 1920,
+        "height": 1086
+      },
+      "gallery": [
+        {
+          "src": "/images/carrera-4s/img-porsche-997-carrera-4s-flickr-alexandre-pre-vot-939aa079-1920.avif",
+          "alt": "911 Carrera 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsABABoJYwC7ADwROzvwAD9qYhjiNVMhfi3pPMWTlZdRFXTVuRRO2hARl/nud9mZOFT+u7hXDGbV8voyEQkRCFMENAh5NqwuIZIAAA=",
+          "creditId": "img-porsche-997-carrera-4s-flickr-alexandre-pre-vot-939aa079",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-997-carrera-4s-31338424705-06f10627-1920.avif",
+          "alt": "911 Carrera 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAsABABoJbACdAEXeNVBL7gAAP3ieM1uOmfOAoCRmwuqIiVUhthztFPUUiSNsQqVmfzKCeK0tvVDP2Gukx1M+STuS1tcsoTbyGkujSREELYsFqE+p2JVIVwAAA==",
+          "creditId": "img-porsche-997-carrera-4s-31338424705-06f10627",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-997-carrera-4s-24130702321-ee3d8ea8-1920.avif",
+          "alt": "911 Carrera 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsABABoJaQAAud3FenjD7AAAP7q6pdbCEHYwejUk9B4TwvnzVXP6KEla81Hg++/UOh8PYE0KKFpeF5AAA==",
+          "creditId": "img-porsche-997-carrera-4s-24130702321-ee3d8ea8",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-997-carrera-4s-14843116347-b4b54e97-1920.avif",
+          "alt": "911 Carrera 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAsABABoJYwAAueKjn5qOQAA/sXi31FIkIyeIu2qFh/knfG+gIaSYn+gUVtJ7lhcMoLwTnO8jh0ndroBolqkCEHWpPAsNtbZ0lVvKonx1ooXbY3xiC+qLM4AAA==",
+          "creditId": "img-porsche-997-carrera-4s-14843116347-b4b54e97",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-997-carrera-4s-51847067572-02502255-1920.avif",
+          "alt": "911 Carrera 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZwAApp6Uo7VoAD+2EC16CCCqo9T2UAMjnbqoI2HVHjcMJHg/Y+QVVISSjnjlOerp4R7y25W8qN75SU5+MAA",
+          "creditId": "img-porsche-997-carrera-4s-51847067572-02502255",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-4s/img-2011-porsche-911-997-2-carrera-4s-rear-c19c5528-1920.avif",
+          "alt": "911 Carrera 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJYwC7AEQM6xhs1TQAP6tmLJTr6YEjlT4tq2W+0Xy1VK8/ydTOY3Rq1tAc78TX7jmMGIrDXMOGws6T4a3xg3aQAA=",
+          "creditId": "img-2011-porsche-911-997-2-carrera-4s-rear-c19c5528",
+          "width": 1920,
+          "height": 1229
+        },
+        {
+          "src": "/images/carrera-4s/img-porsche-911-997-carrera-4s-8210249050-cropped-77f087c6-1280.avif",
+          "alt": "911 Carrera 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAQCdASoQAAkABABoJZQAALyQAP2ZOvihhfpWK5roZ5QwxqrSpDG4/R8WQSwe+FRqc4SYDsw21E4G+NhPwFmtZHUgPAAA",
+          "creditId": "img-porsche-911-997-carrera-4s-8210249050-cropped-77f087c6",
+          "width": 1280,
+          "height": 711
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-2005-porsche-911-997-carrera-4s-0bd70203",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2005_Porsche_911_997_Carrera_4S.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2005_Porsche_911_997_Carrera_4S.jpg",
+          "localPath": "/images/carrera-4s/img-2005-porsche-911-997-carrera-4s-0bd70203-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 7270×4112px (4806 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-997-carrera-4s-flickr-alexandre-pre-vot-939aa079",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Carrera_4S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Carrera_4S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/carrera-4s/img-porsche-997-carrera-4s-flickr-alexandre-pre-vot-939aa079-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3288 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Porsche 2011 911 brochure — Carrera 4S specifications", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" }
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche 2011 911 brochure — Carrera 4S specifications",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        }
       ],
       "missing": []
     },
@@ -173,19 +652,119 @@
       "weight": "1,530 kg (3,373 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S / Tiptronic (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "Introduced at the 2006 North American International Auto Show and on sale from model year 2007, the 911 Targa 4 revived a name unused on the 911 since 1998. Like the original 1965 car, the Targa concept is a fixed roof rather than a cabriolet: a lightweight magnesium roof panel retracts electrically beneath a large, continuous glass hatch in about 17 seconds, giving an open-air feeling while keeping the coupé's handling. All-wheel drive and the wide rear bodywork were standard, powered by the 3.6-litre flat-six — 325 PS (321 hp) rising to 345 PS (340 hp) with direct injection from 2008. Porsche built 1,760 examples in the first production year.",
       "special": false,
       "production": "1,760 units (2007 first production year)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/targa-4/img-porsche-997-targa-4-right-view-cropped-f823c5c1-1920.avif",
+        "alt": "911 Targa 4",
+        "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoABABoJZwAAdLagbeKAAD+quHKm6cPOlJFyV02xqOyldThGkZujXLDOw8aL43I7wleL/qPcXsPN4iTf/gTvXztQ6b53igrJvEbNAA=",
+        "creditId": "img-porsche-997-targa-4-right-view-cropped-f823c5c1",
+        "width": 1920,
+        "height": 1187
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4/img-porsche-997-targa-4-right-view-d8f03764-1920.avif",
+          "alt": "911 Targa 4 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwABABoJYwC7AC8jD2/g/YAAM44QlVhnjjsOj/teg9yksYXHl4YWCgT/DKSwpu8BrOveG7nsGPfAmhC2asE/c284ncjukWvaXqXmBkLb+bdMeAAAA==",
+          "creditId": "img-porsche-997-targa-4-right-view-d8f03764",
+          "width": 1920,
+          "height": 1437
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-997-targa-4-13043393913-329dc5df-1280.avif",
+          "alt": "911 Targa 4 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAwABABoJZwAD4ixerNQ3539P4AA/sYBMn7Va/4wt+flN6SJGvm97IMAiFPQ1A1WaZpUplQKd3JeVTB97Atb0NORMm9/+gLsZPxWIgAAAA==",
+          "creditId": "img-porsche-911-997-targa-4-13043393913-329dc5df",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-997-targa-6783905514-92c5273d-1280.avif",
+          "alt": "911 Targa 4 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwABABoJaQAApGIzIiAAADKLThWI3uhmSeamJINmHJdfbmziHzrf6rBGekmCvtyk/sVPWIlwskVHygtwAAA",
+          "creditId": "img-porsche-911-997-targa-6783905514-92c5273d",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-997-carrera-targa-8413953331-77f1493a-1280.avif",
+          "alt": "911 Targa 4 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwABABoJQBOgCIe8Zq46lAAAP5b++Kb8ukLaqUilhPqYKDl0n+LRqnfne1R9qgoipzdWouKl9VN95bniZHDiyzzvWn8L++M+AAA",
+          "creditId": "img-porsche-911-997-carrera-targa-8413953331-77f1493a",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-997-carrera-targa-6783905524-43bbdfff-1280.avif",
+          "alt": "911 Targa 4 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAwABABoJZwAAcFGXhUAAMwepEdDy66r7XxioVgbeVErziTbLQEOF6WqNLF0/X1d5eafoBvvA4OIC/ZiHaq1NvzqhAAA",
+          "creditId": "img-porsche-911-997-carrera-targa-6783905524-43bbdfff",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "src": "/images/targa-4/img-porsche-997-targa-heckklappe-8adcb233-1920.avif",
+          "alt": "911 Targa 4 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAwABABoJZQC7AENeMxqIAD859TJkD0eC/u+qIQ/sZt/WHg0KriVItrukLTWZSbUQmr/5qXWJh82af6VvYIT+dFgKAAA",
+          "creditId": "img-porsche-997-targa-heckklappe-8adcb233",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/targa-4/img-porsche-911-targa-4-997-2-2011-54722972365-5039d0af-1920.avif",
+          "alt": "911 Targa 4 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwABABoJYwC7ADPmVb0NQAAAM44r5v7JBtQDxJK611Cu8WxIvxpi2XeqILECXdxVKC19oSsOL9mA0rsLt9DVpg14xgoynVgAA==",
+          "creditId": "img-porsche-911-targa-4-997-2-2011-54722972365-5039d0af",
+          "width": 1920,
+          "height": 1426
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-997-targa-4-right-view-cropped-f823c5c1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Targa_4%2C_right_view_(cropped).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Cjp24",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Targa_4,_right_view_(cropped).jpg",
+          "localPath": "/images/targa-4/img-porsche-997-targa-4-right-view-cropped-f823c5c1-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3997×2471px (1999 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-997-targa-4-right-view-d8f03764",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Targa_4%2C_right_view.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Cjp24",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Targa_4,_right_view.jpg",
+          "localPath": "/images/targa-4/img-porsche-997-targa-4-right-view-d8f03764-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4389×3286px (2923 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche 2011 911 brochure — Targa specifications", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche 2011 911 brochure — Targa specifications",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
       ],
       "missing": []
     },
@@ -206,19 +785,119 @@
       "weight": "1,540 kg (3,395 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual; 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["targa"],
+      "bodyStyles": [
+        "targa"
+      ],
       "description": "The Targa 4S paired the glass-roof and lightweight magnesium roof panel of the Targa 4 with the wider Carrera 4S body and the 3.8-litre flat-six. Output followed the S family: 355 PS (350 hp) at the 2006 launch, 385 PS (380 hp) and 420 Nm (310 lb-ft) after direct fuel injection was introduced for 2008. The 997 brochure figures give 4.9 s to 100 km/h with the manual and a 298 km/h (185 mph) maximum, marginally slower than the equivalent coupé because of the added glass roof. All-wheel drive, PASM and 19-inch wheels completed a grand-touring two-plus-two that offered open-air motoring without the weight and body-flex compromises of a full convertible.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/targa-4s/img-porsche-911-targa-4s-997-25870002183-c8165da1-1920.avif",
+        "alt": "911 Targa 4S",
+        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsABABoJZgCdAEOemra8AAA/lv5G4nmz9WDKKI837EWT+mqZOGuoMK9l2zolakNp1gx3UNRbDdjv80a2LNOcEevex/yS94oQoF+j/5O4hiZmAAAAA==",
+        "creditId": "img-porsche-911-targa-4s-997-25870002183-c8165da1",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/targa-4s/img-porsche-911-targa-4s-997-26472831375-1be9605d-1920.avif",
+          "alt": "911 Targa 4S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoQAAsABABoJYgCdH8Agoiwhm/Qe0gAAP4F3ImVZKOUu+UHlWBZI3WpaTJJjoKtLRvo99o77f+ZBo3cKNUMSEhCUC1YWicLBTFyXs/qM2FF+TN+Hx0RCCHMwFV0bMm/AAA=",
+          "creditId": "img-porsche-911-targa-4s-997-26472831375-1be9605d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-997-targa-4s-8631032733-c68a747c-1920.avif",
+          "alt": "911 Targa 4S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsABABoJZwAAqH9o1m1dcAA/tYprek4P2y7Fcs95drtBzNU/SvDZbfa9T/oR995G/OilhngcUeerOqB+JPPwMvMHIvT5hqmAAAA",
+          "creditId": "img-porsche-997-targa-4s-8631032733-c68a747c",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-997-targa-4s-8631031205-ef6fc543-1920.avif",
+          "alt": "911 Targa 4S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsABABoJZwAD45PsQyA1mIqAADfuk3/IrD2xfO0WaDf7HADlrc3xjjecbVFRigWwR4KcImVWczk2QHxTeQeknONZItmdVMXGiAA",
+          "creditId": "img-porsche-997-targa-4s-8631031205-ef6fc543",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-997-targa-4s-26761635784-d8984923-1920.avif",
+          "alt": "911 Targa 4S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsABABoJZQC7AD0XQvLDtAA/q+uJZjQIq7Eh/JdVNqYhBSZFZRFdYXwYKRpifXLRj2XLfixABUCN+2rIRcmZybs8GZNj6mscqLiHqsAAA==",
+          "creditId": "img-porsche-997-targa-4s-26761635784-d8984923",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-997-targa-4s-8632136538-f4a5c749-1920.avif",
+          "alt": "911 Targa 4S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJZwAAwEw10kr2MsAAM1uyxD1rOatq58FDrAxpQMT2/5Z8s3s3YM3nJqWFHZr+J/0WIm/ZYUIIFi8FVVJgIKgHWwBQAAA",
+          "creditId": "img-porsche-997-targa-4s-8632136538-f4a5c749",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-blue-porsche-997-targa-4s-rr-iaa-2009-a5cea6c8-1920.avif",
+          "alt": "911 Targa 4S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsABABoJYwC7ADP0ygL8rMAAP7d4pi4/PqaqiU4SheqflcjP6/8ENZzg0UceXGBM7PHMJNxWBCBjeHWmUlEVEAAAA==",
+          "creditId": "img-blue-porsche-997-targa-4s-rr-iaa-2009-a5cea6c8",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/targa-4s/img-porsche-997-targa-4s-51876296227-d7740a3d-1920.avif",
+          "alt": "911 Targa 4S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAsABABoJYwAArPi6jwSPzv8gAD+eQ/0IepGYIovrX0zKHZNTn6jdYQQVuYai+MZEhE4kQC++cHIDR7hqphKO4GW6wAA",
+          "creditId": "img-porsche-997-targa-4s-51876296227-d7740a3d",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-targa-4s-997-25870002183-c8165da1",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_4S_(997)_(25870002183).jpg",
+          "license": "CC BY 2.0",
+          "author": "ilikewaffles11",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa_4S_(997)_(25870002183).jpg",
+          "localPath": "/images/targa-4s/img-porsche-911-targa-4s-997-25870002183-c8165da1-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3456px (6416 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-targa-4s-997-26472831375-1be9605d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Targa_4S_(997)_(26472831375).jpg",
+          "license": "CC BY 2.0",
+          "author": "ilikewaffles11",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Targa_4S_(997)_(26472831375).jpg",
+          "localPath": "/images/targa-4s/img-porsche-911-targa-4s-997-26472831375-1be9605d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3456px (7008 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche 2011 911 brochure — Targa 4S specifications", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" }
+        {
+          "title": "Porsche 2011 911 brochure — Targa 4S specifications",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        }
       ],
       "missing": []
     },
@@ -239,19 +918,120 @@
       "weight": "1,570 kg (3,461 lb) (997.1 coupé)",
       "drivetrain": "All-wheel drive",
       "transmission": "6-speed manual or 5-speed Tiptronic S (997.1); 7-speed PDK (997.2)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The 997 Turbo went on sale in June 2006 as the first petrol series-production car with variable turbine geometry on its twin-turbocharged flat-six. The 3.6-litre engine developed 480 PS (473 hp) and 620 Nm (457 lb-ft) rising to 680 Nm (502 lb-ft) under overboost, cutting 41 kg (90 lb) of weight against the 996 Turbo through thinner walls in the aluminium body, a lithium-ion starter battery and lighter wheels. The wide Turbo body borrowed its front end from the Carrera 4S and added large air intakes ahead of the rear wheels, plus bi-xenon headlamps with washers and 19-inch polished alloys as standard. For 2009 the displacement grew to 3.8 litres with direct injection, output rose to 500 PS (493 hp) and the seven-speed PDK replaced the Tiptronic S.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo/img-porsche-911-997-turbo-cabriolet-7176a473-1920.avif",
+        "alt": "911 Turbo",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAoABABoJbACdACZ4sJLmAD9mMfVs9Doc8rqO76FDpyQyZ6Selh/TPcVGBZ5VVdi37ehAvYmYCKJtFWipoUq4HUzPP605HFUAAAA",
+        "creditId": "img-porsche-911-997-turbo-cabriolet-7176a473",
+        "width": 1920,
+        "height": 1162
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo/img-2010-porsche-911-997-turbo-f1e4c7c3-1920.avif",
+          "alt": "911 Turbo — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAkABABoJZwAAxYSKOtoAAD+eOv3ppQ59SNQ6uGBqXVF08bHP5TRdO6ahp19yMePAuQb3XqJAAAA",
+          "creditId": "img-2010-porsche-911-997-turbo-f1e4c7c3",
+          "width": 1920,
+          "height": 1098
+        },
+        {
+          "src": "/images/turbo/img-2009-porsche-911-997-turbo-cabriolet-43f34b7b-1920.avif",
+          "alt": "911 Turbo — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAoABABoJbACdAD1NxueoAAA/aY/TtyVWuz6ZULm0FFwKbviFj6agy95slddgFEqlbx/L5IXljnTHT+aeRdeMIVmQMh3Wqsf4W1fBJ3ARdRDJAh5ICAA",
+          "creditId": "img-2009-porsche-911-997-turbo-cabriolet-43f34b7b",
+          "width": 1920,
+          "height": 1185
+        },
+        {
+          "src": "/images/turbo/img-2006-porsche-911-997-turbo-2c9b8428-1920.avif",
+          "alt": "911 Turbo — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAoABABoJbACdAEWTLQL648lQAD+z1/eMRZ+pCdZHk5eNOi8AsR86dN29hMpCRWBTfj8IFaSrj8D01HAOrYGB9u0pzaAAAA=",
+          "creditId": "img-2006-porsche-911-997-turbo-2c9b8428",
+          "width": 1920,
+          "height": 1158
+        },
+        {
+          "src": "/images/turbo/img-porsche-997-turbo-cabriolet-52884223421-3bc8c498-1920.avif",
+          "alt": "911 Turbo — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsABABoJYgAAud9MOEzaLAAzdtopNvhBT1EYmytb2gBFjDvoxnOfbLvBJ6xY99jklULOUOQCaKlD2LwLt0Gi4H9IwD1eFmAAA==",
+          "creditId": "img-porsche-997-turbo-cabriolet-52884223421-3bc8c498",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo/img-porsche-997-turbo-cabriolet-mki-15665061133-096f0758-1920.avif",
+          "alt": "911 Turbo — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsABABoJZQC7ADAZpxOgADOPD0gi0tL/rz8qEDGESYK7KZAYKNYePFdPx+bHiEGwIeyU4UfXEtKHsOOFTgaqTlteENG7epseAAA",
+          "creditId": "img-porsche-997-turbo-cabriolet-mki-15665061133-096f0758",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo/img-2007-porsche-911-997-1-turbo-997-t-58912c2d-1920.avif",
+          "alt": "911 Turbo — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAoABABoJQBOgBjo/pgAAOIDdZbf/1uGGcd6IPJ7nbw6f04EcP5c98u9v9YSxAckobvVP2BB60bnos67dTYJl0oAAA==",
+          "creditId": "img-2007-porsche-911-997-1-turbo-997-t-58912c2d",
+          "width": 1920,
+          "height": 1175
+        },
+        {
+          "src": "/images/turbo/img-porsche-997-turbo-toulouse-a93743a6-1920.avif",
+          "alt": "911 Turbo — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAQCdASoQAAsABABoJZwAAqE1gAD+6QW6+odsJb3wgJE+tSfiFCQ36SjSnqSEajwrMMsMK9Hab5KOjpLiBjHLoKojMdcWgf6zyAAA",
+          "creditId": "img-porsche-997-turbo-toulouse-a93743a6",
+          "width": 1920,
+          "height": 1282
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-997-turbo-cabriolet-7176a473",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_Turbo_Cabriolet.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_997_Turbo_Cabriolet.jpg",
+          "localPath": "/images/turbo/img-porsche-911-997-turbo-cabriolet-7176a473-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3518×2130px (2371 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2010-porsche-911-997-turbo-f1e4c7c3",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2010_Porsche_911_997_Turbo.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2010_Porsche_911_997_Turbo.jpg",
+          "localPath": "/images/turbo/img-2010-porsche-911-997-turbo-f1e4c7c3-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4392×2512px (2120 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — The 911 Turbo: 50 Years", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" }
+        {
+          "title": "Porsche Newsroom — The 911 Turbo: 50 Years",
+          "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        }
       ],
       "missing": []
     },
@@ -272,19 +1052,120 @@
       "weight": "1,570 kg (3,461 lb)",
       "drivetrain": "All-wheel drive",
       "transmission": "7-speed PDK dual-clutch (only)",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The 997 Turbo S was unveiled in April 2010 and delivered from May, reaching its top speed of 315 km/h (196 mph) — 15 km/h more than the standard Turbo. Its 3.8-litre twin-turbocharged flat-six combined direct fuel injection with variable turbine geometry to produce 530 PS (523 hp) and 700 Nm (516 lb-ft), enabling 0–100 km/h (62 mph) in 2.7 seconds and 0–200 km/h in 9.6 seconds. The PDK seven-speed dual-clutch gearbox was standard, as were ceramic composite brakes (PCCB), forged alloy wheels with centre locks, rear differential lock and the Sport Chrono Package. It was the first Turbo S equipped with launch control.",
       "special": false,
       "production": "4,950 units coupé + cabriolet (2010–2012, classic.com)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/turbo-s/img-porsche-997-turbo-s-flickr-alexandre-pre-vot-db057f7d-1920.avif",
+        "alt": "911 Turbo S",
+        "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsABABoJQAB8h4SEGzukMaIAAD83eUrLLnrzdGZrgl9n9dqcb17eOKRmZ0Vz3KOLEGETHdooL+ylEdn01kxe4uq48a6VpPrjHNnyov/YJELwAA=",
+        "creditId": "img-porsche-997-turbo-s-flickr-alexandre-pre-vot-db057f7d",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-3-83aa4588-1920.avif",
+          "alt": "911 Turbo S — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsABABoJZwAAt1jBcALr8AA4gQoykiehLlIBKG28ddMxLCScIuglPChg7Wwvs8tTWO0wodJqWlQHGi48F9ARQG+XQAA",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-3-83aa4588",
+          "width": 1920,
+          "height": 1279
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-4-126f8277-1920.avif",
+          "alt": "911 Turbo S — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsABABoJZwAAxUx9CxV6agA+xmvK+uhKJGc5kHLGB7if2rNXbQ37h6M5dqI7GYOF8RwykwRosrAvxq/7HT58WTgAAAA",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-4-126f8277",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-5-35b31cde-1920.avif",
+          "alt": "911 Turbo S — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJZwAD5LQw70Eh8AAAP4JJAOYuyko7N7E9PAWUzNRqHoVU9J0l+0viBtaaRAByg2R01WytN7CiNfBYDCH9nKVopvXR79wHgA=",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-5-35b31cde",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-8-669fa503-1920.avif",
+          "alt": "911 Turbo S — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZwCw7DQiWCHwAD7nbBxlMsJrUMVW92L3OtbR1MzYsjaqkjsH9oKoufnlN2F+rhSsIzrdSx4q3H4IzACAAAA",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-8-669fa503",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-7-dbe11ba4-1920.avif",
+          "alt": "911 Turbo S — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJZwAAqGYQY5MNIAA+V9FI7YSUdqy6ayOX8N/DVUy5kKckFo+l/aXM2KZHKVw+I0EPLSjyEHdB2h/PuaL1zxUVYAAEEgeAAA=",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-7-dbe11ba4",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-6-34599585-1920.avif",
+          "alt": "911 Turbo S — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsABABoJZQC7AD1fGWP4etgAM4d2A3gTul62ojqEB5SA4/8u2NrcUXoGnKN1E5cDMWVp8XD2uw2LXGYNQ/rv64Ml6HDMXwAAA==",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-6-34599585",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-carrera-flickr-alexandre-pre-f01e7743-1920.avif",
+          "alt": "911 Turbo S — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAsABABoJQBdgBbmKqaAAM3EnYJ6XpiLBoGTgyWsVlII5kCvTOoQ08ExIP+WFS70vKmllqOrF44rujtK3bOU7HEiaicrgAA=",
+          "creditId": "img-porsche-997-turbo-s-cabriolet-carrera-flickr-alexandre-pre-f01e7743",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-997-turbo-s-flickr-alexandre-pre-vot-db057f7d",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Turbo_S_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Turbo_S_-_Flickr_-_Alexandre_Prévot.jpg",
+          "localPath": "/images/turbo-s/img-porsche-997-turbo-s-flickr-alexandre-pre-vot-db057f7d-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3488 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-3-83aa4588",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Turbo_S_Cabriolet_-_Flickr_-_Alexandre_Pr%C3%A9vot_(3).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prévot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Turbo_S_Cabriolet_-_Flickr_-_Alexandre_Prévot_(3).jpg",
+          "localPath": "/images/turbo-s/img-porsche-997-turbo-s-cabriolet-flickr-alexandre-pre-vot-3-83aa4588-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×1999px (3255 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Porsche Newsroom — The 911 Turbo: 50 Years", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" },
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "classic.com — Porsche 911 997 market guide", "url": "https://www.classic.com/insights/market-guide-porsche-997" }
+        {
+          "title": "Porsche Newsroom — The 911 Turbo: 50 Years",
+          "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+        },
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "classic.com — Porsche 911 997 market guide",
+          "url": "https://www.classic.com/insights/market-guide-porsche-997"
+        }
       ],
       "missing": []
     },
@@ -305,19 +1186,119 @@
       "weight": "1,395 kg (3,075 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 997 GT3 was unveiled in March 2006 for the 2007 model year, reviving a badge last seen in 1998 after Porsche omitted it from the 996-generation Carrera's international lineup. Engine output was raised from 360 to 415 PS (409 hp) at 7,600 rpm and torque from 370 to 405 Nm (299 lb-ft), with a 40 kg (88 lb) weight reduction to 1,395 kg (3,075 lb), launching the car to 100 km/h in 4.1 seconds and on to 310 km/h (193 mph). The 2009 facelift enlarged the flat-six to 3.8 litres and 435 PS (429 hp), matched to a mechanically different six-speed manual. The German price at launch was €104,052.51 (US$106,000), with a restricted top speed of 302 km/h (188 mph) on US-spec cars.",
       "special": false,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gt3/img-porsche-911-997-gt3-db3f9a01-1920.avif",
+        "alt": "911 GT3",
+        "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAgABABoJZQAAaXrHEwAAP66h7vBf0w1ymssVS83h7jy3u/Al6vsfUcJiCgKs4rVXzFnNYG2RamLHcIAAA==",
+        "creditId": "img-porsche-911-997-gt3-db3f9a01",
+        "width": 1920,
+        "height": 1021
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3/img-porsche-911-997-gt3-96909-ef5001be-1920.avif",
+          "alt": "911 GT3 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJaACdAYt9sAkxGgAAP6qENdS9/KW1wCmBdxcx95f7NJ/7j7sbCMFmAiSiHZXIF1ggF/f8uekt7zwRBV0XQrRwAA=",
+          "creditId": "img-porsche-911-997-gt3-96909-ef5001be",
+          "width": 1920,
+          "height": 1240
+        },
+        {
+          "src": "/images/gt3/img-2007-porsche-911-997-gt3-1e5bda77-1920.avif",
+          "alt": "911 GT3 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJbAAD4wQ2bMl3LgQAP5JtkszNpVb2Jewzt3mTKDlT3hEiEI5NtgM28s4X0L77IBUWmimmNR2fbCGvAmUpFpAAAA=",
+          "creditId": "img-2007-porsche-911-997-gt3-1e5bda77",
+          "width": 1920,
+          "height": 1046
+        },
+        {
+          "src": "/images/gt3/img-2010-porsche-911-997-gt3-918a73c3-1920.avif",
+          "alt": "911 GT3 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkABABoJbACdAEfceh9hOeAAP6rd79VLXGIyPDdcWhBLBaCjRXXxLbgQSghJnKXYwzJUl8W83nOdF1Xu4Qtm1GX+02bKmgAAA==",
+          "creditId": "img-2010-porsche-911-997-gt3-918a73c3",
+          "width": 1920,
+          "height": 1110
+        },
+        {
+          "src": "/images/gt3/img-porsche-997-gt3-front-c94eb5db-1920.avif",
+          "alt": "911 GT3 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoQAAwABABoJZQAD49xZ1ZxKUF9saAA/oPYE4TNgcrzsIqAkuDRrd+SnsXfuz3UTUdhqC7ffPqOVKF0lV13qcuYJIYWLonmMdsIAA==",
+          "creditId": "img-porsche-997-gt3-front-c94eb5db",
+          "width": 1920,
+          "height": 1440
+        },
+        {
+          "src": "/images/gt3/img-2010-porsche-911-997-gt3-15641-2d0dfeb6-1920.avif",
+          "alt": "911 GT3 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoABABoJbACdDBKwX482t90AP6fGN9RUlbA/F7rphRL6HxR1cxYt2BHyVQI/KhUvx05QycmQeYk7POBkO2F99ZqL52sZtHkj6CRb1uQ/E4r8yAAAA==",
+          "creditId": "img-2010-porsche-911-997-gt3-15641-2d0dfeb6",
+          "width": 1920,
+          "height": 1252
+        },
+        {
+          "src": "/images/gt3/img-2008-porsche-911-997-gt3-4f8522f2-1920.avif",
+          "alt": "911 GT3 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoABABoJbACdAEUWfagTrkAAP6jPIA5KRZzYAfwGNLP0pm25YZxr8goqEcev2p+SGmoLaJVefArO8gitqWPqCHkJ98AGY9vdpXdgluc2UH8AAA=",
+          "creditId": "img-2008-porsche-911-997-gt3-4f8522f2",
+          "width": 1920,
+          "height": 1207
+        },
+        {
+          "src": "/images/gt3/img-2010-porsche-911-997-gt3-94782-24fa569b-1920.avif",
+          "alt": "911 GT3 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoABABoJbACdAD1k9ZhfLUQAP7qMz3SBiHfbqWCJlreAJ5PW6eewzwp3n4Ix0UMQLZTLTIurpfV2Dd63a5OS2Do09KEH+3yRVCfy0eIJeAA",
+          "creditId": "img-2010-porsche-911-997-gt3-94782-24fa569b",
+          "width": 1920,
+          "height": 1219
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-997-gt3-db3f9a01",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_GT3.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_997_GT3.jpg",
+          "localPath": "/images/gt3/img-porsche-911-997-gt3-db3f9a01-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 6742×3584px (3434 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-997-gt3-96909-ef5001be",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_GT3_(96909).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_997_GT3_(96909).jpg",
+          "localPath": "/images/gt3/img-porsche-911-997-gt3-96909-ef5001be-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15214×9826px (15321 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
       ],
       "missing": []
     },
@@ -338,19 +1319,119 @@
       "weight": "1,370 kg (3,020 lb) (997.2 with lithium-ion battery, −10 kg)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 997 GT3 RS of 2006 was the first 911 RS model since 1973, conceived with racing in mind and now credited as the beginning of the tradition continued by today's GT3 RS. It stood 44 mm (1.7 in) wider at the rear than the standard Carrera, and its output rose to 415 PS (409 hp), with the 3.8-litre evolution reaching 450 PS (444 hp) at 8,250 rpm. The car became available across Europe in October 2006 and in the United States from March 2007, sold in white or orange with contrasting black wings. The redesigned model made its first public appearance at the 2009 Frankfurt Motor Show, with a power-to-weight ratio of 2.34 kilograms per horsepower.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/997/img-porsche-911-997-gt3-rs-68893-b0f30699-1920.avif",
+        "alt": "911 GT3 RS",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbACdAD2GLKFHAAA/h8dzROr1zfrXv/jQgcNEwrjfPnbYWIR4ZFHUJEiX/vVqlTKzq31ousi1TNGlisoAAAA",
+        "creditId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
+        "width": 1920,
+        "height": 1195
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3-rs/img-porsche-911-997-gt3-rs-48111-17a50eb0-1920.avif",
+          "alt": "911 GT3 RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAgABABoJagCdADhmEWv2U/AAP7qSbXtTLjRA3BN3DhabVgPeNpWKFjNtNTTP+PycOAeFs58OjY64tbVaI/IECFd0A1x8AA=",
+          "creditId": "img-porsche-911-997-gt3-rs-48111-17a50eb0",
+          "width": 1920,
+          "height": 904
+        },
+        {
+          "src": "/images/gt3-rs/img-porsche-911-997-gt3-rs-81900-95c85e09-1920.avif",
+          "alt": "911 GT3 RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkABABoJZgCdAC3EpcQxrAA/Z1H/GoG8vhBhZuyUXVq9leLYngNg/7cQu3sQbpUrlFaGgjIJyomx0aselN9rjzdgq5AgAA=",
+          "creditId": "img-porsche-911-997-gt3-rs-81900-95c85e09",
+          "width": 1920,
+          "height": 1112
+        },
+        {
+          "src": "/images/gt3-rs/img-2007-porsche-911-997-gt3-rs-68819-9057e641-1920.avif",
+          "alt": "911 GT3 RS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgABABoJQBdgCPmm8YEKAD2rZIqvB4lhUPOjuIbXHdlawKN0RoNm73D3Q1H+epmXA0JYE9kSUcPkhdZ5+FKIAA=",
+          "creditId": "img-2007-porsche-911-997-gt3-rs-68819-9057e641",
+          "width": 1920,
+          "height": 981
+        },
+        {
+          "src": "/images/gt3-rs/img-2007-porsche-911-997-gt3-rs-85042-10a874f0-1920.avif",
+          "alt": "911 GT3 RS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkABABoJQBOgCG8wIrsR38AAPwSkUMzPFFvxSmOedWhygIOMP8SNxAjGUa9w9uamiEjgFm7sSyNAJCU6fCQKAA=",
+          "creditId": "img-2007-porsche-911-997-gt3-rs-85042-10a874f0",
+          "width": 1920,
+          "height": 1088
+        },
+        {
+          "src": "/images/gt3-rs/img-2007-porsche-911-997-gt3-rs-79609-864999a2-1920.avif",
+          "alt": "911 GT3 RS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoABABoJYwC7AEWz64/bPOYAAD5B3SpHMRPFsTyNCyDWB0awOUbhkUWdexv5TWK/Qiv9DtDYRRwg5p3UJeD9as94+mEy1mijeE70Nr3wAAA",
+          "creditId": "img-2007-porsche-911-997-gt3-rs-79609-864999a2",
+          "width": 1920,
+          "height": 1182
+        },
+        {
+          "src": "/images/gt3-rs/img-2010-porsche-911-997-gt3-rs-911cac81-1920.avif",
+          "alt": "911 GT3 RS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJbACdAC4a7rX7gAA/IuP1aJmeh9cjOyGe2j/fZhvBvLEhepm9dLvoKiV2mZrDajSNMd3sqMogjdzQSpr2TAA",
+          "creditId": "img-2010-porsche-911-997-gt3-rs-911cac81",
+          "width": 1920,
+          "height": 1032
+        },
+        {
+          "src": "/images/gt3-rs/img-2011-porsche-911-997-gt3-rs-8049382c-1920.avif",
+          "alt": "911 GT3 RS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAoABABoJaAC7AEPUtMDBLC9h7AA++sY7dtUNlen57a5yQSsjBVzrzxJmWpgPeBMOxpt5KdFliClepiGeHeGZc2eJfriuJfIsqQrEF1EsNYAAAA=",
+          "creditId": "img-2011-porsche-911-997-gt3-rs-8049382c",
+          "width": 1920,
+          "height": 1229
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
+      "credits": [
+        {
+          "assetId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_GT3_RS_(68893).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_997_GT3_RS_(68893).jpg",
+          "localPath": "/images/997/img-porsche-911-997-gt3-rs-68893-b0f30699-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10154px (22390 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-997-gt3-rs-48111-17a50eb0",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_GT3_RS_(48111).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_997_GT3_RS_(48111).jpg",
+          "localPath": "/images/gt3-rs/img-porsche-911-997-gt3-rs-48111-17a50eb0-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14450×6804px (10298 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
       "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-        { "title": "Porsche Classic — 997", "url": "https://www.porsche.com/international/accessoriesandservice/classic/models/997/" }
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        },
+        {
+          "title": "Porsche Classic — 997",
+          "url": "https://www.porsche.com/international/accessoriesandservice/classic/models/997/"
+        }
       ],
       "missing": []
     },
@@ -371,18 +1452,143 @@
       "weight": "1,370 kg (3,020 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The GT3 RS 4.0 was a 2011 limited edition based on the GT3 RS but equipped with a 4.0-litre flat-six — the largest displacement engine ever installed in a series-production 911 at the time. It developed 500 PS (493 hp) at 8,250 rpm, enabling acceleration from 0 to 100 km/h in 3.9 seconds and a top speed of 310 km/h (193 mph), while 460 Nm (339 lb-ft) was available at 5,750 rpm. The engine used the crankshaft of the GT3 RSR racing car, raising the stroke from 76.4 to 80.4 mm. Deliveries began in May 2011: 600 cars were built, all painted with the RS logo in Carrera White, GT Silver Metallic or Black.",
       "special": true,
       "production": "600 units (2011)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
+      "heroImage": {
+        "src": "/images/gt3-rs-4.0/img-2011-porsche-911-997-gt3-rs-4-0-33d1f625-1920.avif",
+        "alt": "911 GT3 RS 4.0",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkABABoJbACdAEfxH444dLwAP1QAXc2+ufluJS88USIu3Va75nFLHBYVpZbrQv3YLRLxniyTTvcVl5Y+0G1Jr86IvB81fvoAA==",
+        "creditId": "img-2011-porsche-911-997-gt3-rs-4-0-33d1f625",
+        "width": 1920,
+        "height": 1051
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3-rs-4.0/img-2011-porsche-911-997-gt3-rs-4-0-26094-a34ba6b2-1920.avif",
+          "alt": "911 GT3 RS 4.0 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAcABABoJbACdAEUWaSpQcrv6AD+eLU4EUl4lV1fH+Y0ajEA1cBbt7NQj8szEkmyU/1eU1EmiEYYePs3yZeiJeTnqwAA",
+          "creditId": "img-2011-porsche-911-997-gt3-rs-4-0-26094-a34ba6b2",
+          "width": 1920,
+          "height": 871
+        },
+        {
+          "src": "/images/gt3-rs-4.0/img-2011-white-porsche-997-gt3-rs-4-0-goodwood-fos-92cb3c3b-1920.avif",
+          "alt": "911 GT3 RS 4.0 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkABABoJZQAAujfqEIN+AAA/uo5qive/CyQXw7D+fghH8SKlOV7FyJEkBpg68ibtt8JJDInqPaS5rqFAAAA",
+          "creditId": "img-2011-white-porsche-997-gt3-rs-4-0-goodwood-fos-92cb3c3b",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/images/gt3-rs-4.0/img-2011-black-porsche-997-gt3-rs-4-0-in-soho-nyc-bee6244e-1920.avif",
+          "alt": "911 GT3 RS 4.0 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsABABoJQAB8lot+qhr3JYAAPsiypvZ4ilrsLx2v9ebCwY8fXPPl+XCRl4Vti7f4lDtXEdw3gP9CjjPb1vbozvPcSoDJWPPO5KNM0AAAA==",
+          "creditId": "img-2011-black-porsche-997-gt3-rs-4-0-in-soho-nyc-bee6244e",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt3-rs-4.0/img-porsche-997-gt3-rs-4-0-rear-view-in-soho-nyc-a335bbdc-1920.avif",
+          "alt": "911 GT3 RS 4.0 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAsABABoJZwAAXDUgjuAAP6sRpTDHcRZ9iEvcMpYvkN97glXuao7i4Yti093/Bdgoa2VND2uiQclQOglmNdJ8hiGxYG1iFeJ3GkOAAA=",
+          "creditId": "img-porsche-997-gt3-rs-4-0-rear-view-in-soho-nyc-a335bbdc",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+          "alt": "911 GT3 RS 4.0 — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAkABABoJQBOgBZxjgXAAPqUlv3cful3UtaQtuat13uZ3uxb8N8DnnVIqTC+YdYB0xQy+egkppTmrv2uVL/CWIu84g8AAAA=",
+          "creditId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+          "width": 1920,
+          "height": 1124
+        },
+        {
+          "src": "/images/997/img-porsche-911-997-gt3-rs-68893-b0f30699-1920.avif",
+          "alt": "911 GT3 RS 4.0 — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJbACdAD2GLKFHAAA/h8dzROr1zfrXv/jQgcNEwrjfPnbYWIR4ZFHUJEiX/vVqlTKzq31ousi1TNGlisoAAAA",
+          "creditId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
+          "width": 1920,
+          "height": 1195
+        },
+        {
+          "src": "/images/gt3-rs-4.0/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92-1920.avif",
+          "alt": "911 GT3 RS 4.0 — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoABABoJZwAD5MpI/pfAAD+ZYZVIO/uYVy6vbpuu/Q4O9IZk0+BnBhijRpKt/9pCbLbSmTbq5BhlvmbxU7ugASLOrK5PSaJHbK+pshixyMgAAA=",
+          "creditId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92",
+          "width": 1920,
+          "height": 1187
+        }
+      ],
+      "videos": [
+        {
+          "id": "cL_gUsaMmFc",
+          "title": "Is This Porsche's Best Engine? | Porsche 997.1 GT3 RS | Naturally Aspirated Heroes Ep 4 | 4K",
+          "channel": "Supercar Driver",
+          "poster": null,
+          "note": "the 3.8 as a standalone subject, not just a car review"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-4-0-997-95226a73526b46e680b091f1caf6191f?embed=1",
+        "sourceId": "95226a73526b46e680b091f1caf6191f",
+        "license": "CC Attribution",
+        "author": "Antonis_zks",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-2011-porsche-911-997-gt3-rs-4-0-33d1f625",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2011_Porsche_911_997_GT3_RS_4.0.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2011_Porsche_911_997_GT3_RS_4.0.jpg",
+          "localPath": "/images/gt3-rs-4.0/img-2011-porsche-911-997-gt3-rs-4-0-33d1f625-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15286×8370px (17814 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-2011-porsche-911-997-gt3-rs-4-0-26094-a34ba6b2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A2011_Porsche_911_997_GT3_RS_4.0_(26094).jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:2011_Porsche_911_997_GT3_RS_4.0_(26094).jpg",
+          "localPath": "/images/gt3-rs-4.0/img-2011-porsche-911-997-gt3-rs-4-0-26094-a34ba6b2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15718×7132px (15198 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-997-gt3-rs-4-0",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-4-0-997-95226a73526b46e680b091f1caf6191f?embed=1",
+          "license": "CC Attribution",
+          "author": "Antonis_zks",
+          "retrieved": "2026-10-02",
+          "sourceId": "95226a73526b46e680b091f1caf6191f",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
       "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
       ],
       "missing": []
     },
@@ -403,21 +1609,143 @@
       "weight": "1,440 kg (3,175 lb)",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 997 GT2 was released in November 2007 as the road version of the 2007 GT2 racing car. Its 3.6-litre flat-six used two variable-geometry turbochargers to develop 530 PS (523 hp) and 680 Nm (502 lb-ft), making the rear-drive GT2 the fastest two-seat Porsche at the time with 330 km/h (205 mph) and 0–97 km/h (0–60 mph) in 3.4 seconds. Weight was trimmed by 70 kg (154 lb) against the Turbo through thinner body panels and a lithium-ion battery, carbon-ceramic brakes, a titanium exhaust system and lightweight forged wheels. It was the first Porsche to feature launch control. A total of 1,242 examples were built during the 2008–2009 period.",
       "special": false,
       "production": "1,242 units (2008–2009, classic.com)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
-      "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "classic.com — Porsche 911 997 market guide", "url": "https://www.classic.com/insights/market-guide-porsche-997" },
-        { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" }
+      "heroImage": {
+        "src": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+        "alt": "911 GT2",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAkABABoJQBOgBZxjgXAAPqUlv3cful3UtaQtuat13uZ3uxb8N8DnnVIqTC+YdYB0xQy+egkppTmrv2uVL/CWIu84g8AAAA=",
+        "creditId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+        "width": 1920,
+        "height": 1124
+      },
+      "gallery": [
+        {
+          "src": "/images/gt3-rs-4.0/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92-1920.avif",
+          "alt": "911 GT2 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoABABoJZwAD5MpI/pfAAD+ZYZVIO/uYVy6vbpuu/Q4O9IZk0+BnBhijRpKt/9pCbLbSmTbq5BhlvmbxU7ugASLOrK5PSaJHbK+pshixyMgAAA=",
+          "creditId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92",
+          "width": 1920,
+          "height": 1187
+        },
+        {
+          "src": "/images/gt2/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-1e4fa197-1280.avif",
+          "alt": "911 GT2 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoABABoJZwAAo85q7QAAP5b6cQ87oAdcXu2bpDnpsmLtdAuxYE6ksVN+BvsQ98nEpXCoyBAWdj8DbMDKoE+UFzxzpMyQwhoeWwb8IcSbJJQAAA=",
+          "creditId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-1e4fa197",
+          "width": 1280,
+          "height": 789
+        },
+        {
+          "src": "/images/gt2/img-porsche-997-gt2-london-uk-february-2012-587d4f0d-1920.avif",
+          "alt": "911 GT2 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAsABABoJZwAAdJZmKCgAPzXDmA5Isjc1jmplQ72t5VB8Cy2o1Ag+kxos2MS4B3SIo/44D20uh4Yn0k/sBwWpSgAAA==",
+          "creditId": "img-porsche-997-gt2-london-uk-february-2012-587d4f0d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt2/img-porsche-911-gt2-997-flickr-alexandre-pre-vot-1-fdf9c65a-1920.avif",
+          "alt": "911 GT2 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsABABoJZwCdAEO4/Rgwy4AAP5s2CI67uMOHtvDb3TzAQe+XIqib8hhh5LTdDdtEuGXwYJud+ZNtGenmbhgZUoMPw0A6hWEjmTBrQAAAA==",
+          "creditId": "img-porsche-911-gt2-997-flickr-alexandre-pre-vot-1-fdf9c65a",
+          "width": 1920,
+          "height": 1279
+        },
+        {
+          "src": "/images/gt2/img-porsche-911-gt2-997-flickr-alexandre-pre-vot-2a2fe15b-1920.avif",
+          "alt": "911 GT2 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsABABoJZAAAvxr5U/DAAD+yl6mkP5QEuX6SKcM0ducFD11T1RbfpVEuBJXOo93oiQDA3KrkVvjqTh6pF/6L0E2AAAA",
+          "creditId": "img-porsche-911-gt2-997-flickr-alexandre-pre-vot-2a2fe15b",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt2/img-porsche-997-gt2-a23ed1c8-1920.avif",
+          "alt": "911 GT2 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsABABoJZQAAv+B9jMakQAA/afOik0Cf8j5hWpby0H2/pikzF+Tu+FgQTFJZ6qheTlkBC/wnpfULlRGIJCYOQgZQtK3664kAAAA",
+          "creditId": "img-porsche-997-gt2-a23ed1c8",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt2/img-porsche-997-gt2-54787119049-8f5b35ec-1920.avif",
+          "alt": "911 GT2 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJZQAD5JvukXkn6I4APiwzkxVY6GoIwGu63Sbdymi9Kh5IAGmlLiefGlG6GHRw3Tp2ivfitkYcsQEbosxICamfSs1y2nQg+f/wIuegAA=",
+          "creditId": "img-porsche-997-gt2-54787119049-8f5b35ec",
+          "width": 1920,
+          "height": 1280
+        }
       ],
-      "missing": ["Production total not confirmed on a Porsche Newsroom source; cited to classic.com"]
+      "videos": [],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt2-9971-c48298e703c44f2187d5562ef64f4dcf?embed=1",
+        "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
+        "license": "CC Attribution",
+        "author": "Mona x Supercars",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AA_Porsche_997_GT2_in_front_of_Boutique_de_parfumerie_Guerlain%2C_356_rue_Saint-Honor%C3%A9.jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "CarSpotter from New York",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:A_Porsche_997_GT2_in_front_of_Boutique_de_parfumerie_Guerlain,_356_rue_Saint-Honoré.jpg",
+          "localPath": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3264×1910px (5966 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AWhite_Porsche_997_GT2_with_black_rims_in_Ahrweiler_(cropped).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "White_Porsche_997_GT2_with_black_rims_in_Ahrweiler.jpg : Morten Schwend from Berlin, Deutschland derivative work: FAEP ( talk )",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:White_Porsche_997_GT2_with_black_rims_in_Ahrweiler_(cropped).jpg",
+          "localPath": "/images/gt3-rs-4.0/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2148×1328px (284 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-997-gt2",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-gt2-9971-c48298e703c44f2187d5562ef64f4dcf?embed=1",
+          "license": "CC Attribution",
+          "author": "Mona x Supercars",
+          "retrieved": "2026-10-02",
+          "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "classic.com — Porsche 911 997 market guide",
+          "url": "https://www.classic.com/insights/market-guide-porsche-997"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+        }
+      ],
+      "missing": [
+        "Production total not confirmed on a Porsche Newsroom source; cited to classic.com"
+      ]
     },
     {
       "id": "gt2-rs",
@@ -436,20 +1764,154 @@
       "weight": "1,370 kg (3,020 lb) — 70 kg (154 lb) lighter than the GT2",
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 997 GT2 RS was unveiled at Porsche's Leipzig plant on 4 May 2010 as the most powerful and fastest road-legal 911 of its day. Its 3.6-litre twin-turbocharged flat-six produced 620 PS (612 hp) and 700 Nm (516 lb-ft), propelling the rear-drive coupé from 0–97 km/h (0–60 mph) in 3.3 seconds and on to 330 km/h (205 mph), while the Nordschleife lap time of 7:18 seconds underscored its circuit capability. Seventy kilograms (154 lb) were saved against the GT2 through thinner body panels and the use of carbon-fibre reinforced plastic for the bonnet, rear wing, roof and rear diffuser; the wing and rear spoiler were made of exposed carbon fibre. Production ran to 2011.",
       "special": true,
       "production": null,
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
-      "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html" }
+      "heroImage": {
+        "src": "/images/gt2-rs/img-porsche-911-gt2-rs-997-d54ae653-1920.avif",
+        "alt": "911 GT2 RS",
+        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsABABoJbACdAEVKBDGgAD+mF+OeO2o5Mp8BBeCmKNSdd58eFyvsCA3mLyPI+mMaH1TquSksAMewLYJtB10mDb8QlGIAAA=",
+        "creditId": "img-porsche-911-gt2-rs-997-d54ae653",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/gt2-rs/img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-5d26b675-1920.avif",
+          "alt": "911 GT2 RS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAoABABoJQBOgCDI/FAAAP7ur70F3KtTt02HdtRVsc3dtO97y0ULrdyM5S5poGrmA3aBvFrlWi5aggAAAA==",
+          "creditId": "img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-5d26b675",
+          "width": 1920,
+          "height": 1180
+        },
+        {
+          "src": "/images/gt2-rs/img-porsche-997-gt2-rs-ppihc-2011-5875040423-f5db1b7e-1920.avif",
+          "alt": "911 GT2 RS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAsABABoJZQAD4/NQxX7YKSLQAD+zgP+NCvHrjQ4qzfPM5LV7muVGok5ViN+6kjoDKyoWnrCXqj9fgkZTRrOQxcY+/U2BTbmEXwrhTycDvq3qpqc1n2cOzYAfIJaaABz4BDwAAA=",
+          "creditId": "img-porsche-997-gt2-rs-ppihc-2011-5875040423-f5db1b7e",
+          "width": 1920,
+          "height": 1275
+        },
+        {
+          "src": "/images/gt2-rs/img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-cropped-cc69d7fc-1280.avif",
+          "alt": "911 GT2 RS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAgABABoJQBOj+ACBRMzvAAA+6Heq262qSM+DkUFXQMRLgIjxmUWSqDlbt6QAMrOtjiMsQTIjAggAAA=",
+          "creditId": "img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-cropped-cc69d7fc",
+          "width": 1280,
+          "height": 645
+        },
+        {
+          "src": "/images/gt2-rs/img-porsche-911-gt2-rs-997-22469153635-db8923be-1920.avif",
+          "alt": "911 GT2 RS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJZACw7DJ0Ok2UuAA/tq5Qe57g8A0WkpfpIDkSCL7aY8PwJm4rym3JC2yD/LC4mowjb0mDfemGh6wMW+6MV8zX6r4kRQAAAA=",
+          "creditId": "img-porsche-911-gt2-rs-997-22469153635-db8923be",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gt2-rs/img-2010-silver-997-gt2-rs-at-goodwood-fos-cfb00ead-1280.avif",
+          "alt": "911 GT2 RS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAoABABoJZgC7AELEzxAAP6jeVIrquXPme+vPnHDw53dmxM5s3U2A/n7NZr5RfU3U0/B8lngG4zYEuQAAA==",
+          "creditId": "img-2010-silver-997-gt2-rs-at-goodwood-fos-cfb00ead",
+          "width": 1280,
+          "height": 792
+        },
+        {
+          "src": "/images/gt2-rs/img-ppihc-997-gt2-rs-front-view-5875041387-3257b42c-1920.avif",
+          "alt": "911 GT2 RS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAsABABoJZQC7AEPg+OS/b4wwAD+ypSBsc23PNEugNC3lNJ5kXfsKmbl/L9n9UeVQzv4QCHnB+aN3DAi1Us/dWsG/2IJUpqmJzoQWQAAAA==",
+          "creditId": "img-ppihc-997-gt2-rs-front-view-5875041387-3257b42c",
+          "width": 1920,
+          "height": 1275
+        },
+        {
+          "src": "/images/gt2-rs/img-2010-07-04-silver-porsche-997-gt2-rs-2367x1617-2aca58b7-1920.avif",
+          "alt": "911 GT2 RS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsABABoJZQAAtw7y3cgAADMHg862LIGVcV3DyX7BX+JIcO4Hyh6bsG3gdCyDoT/yqGljSmHxNbP9a1ks3yYAAA=",
+          "creditId": "img-2010-07-04-silver-porsche-997-gt2-rs-2367x1617-2aca58b7",
+          "width": 1920,
+          "height": 1312
+        }
       ],
-      "missing": ["Production total not published; model-year end date taken from Wikipedia's 2010–2011 range"]
+      "videos": [
+        {
+          "id": "vQcwqCt4JE8",
+          "title": "Porsche 911 GT2 RS review and drift - Auto Express",
+          "channel": "Auto Express",
+          "poster": null,
+          "note": "620 PS GT2 RS review, road plus the inevitable slide"
+        },
+        {
+          "id": "7V1xfgpUWyM",
+          "title": "Porsche 911 GT2 RS #TBT - Fifth Gear",
+          "channel": "Fifth Gear",
+          "poster": null,
+          "note": "Tiff-era GT2 RS road test from the original #TBT"
+        }
+      ],
+      "model3d": {
+        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt2-rs-with-angle-eyes-41419345868e406eaec8a271e33de3c1?embed=1",
+        "sourceId": "41419345868e406eaec8a271e33de3c1",
+        "license": "CC Attribution",
+        "author": "COOL601",
+        "glb": null,
+        "turntable": null,
+        "bytes": null
+      },
+      "credits": [
+        {
+          "assetId": "img-porsche-911-gt2-rs-997-d54ae653",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_GT2_RS_(997).jpg",
+          "license": "CC BY 2.0",
+          "author": "Jacob Frey 4A",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_GT2_RS_(997).jpg",
+          "localPath": "/images/gt2-rs/img-porsche-911-gt2-rs-997-d54ae653-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5184×3456px (6183 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-5d26b675",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJeff_Zwart_Porsche_997_GT2_RS_PPIHC_2011_(Mile_13).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Jasen Miller from Colorado Springs",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Jeff_Zwart_Porsche_997_GT2_RS_PPIHC_2011_(Mile_13).jpg",
+          "localPath": "/images/gt2-rs/img-jeff-zwart-porsche-997-gt2-rs-ppihc-2011-mile-13-5d26b675-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2848×1750px (4108 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-997-gt2-rs",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "https://sketchfab.com/3d-models/porsche-911-gt2-rs-with-angle-eyes-41419345868e406eaec8a271e33de3c1?embed=1",
+          "license": "CC Attribution",
+          "author": "COOL601",
+          "retrieved": "2026-10-02",
+          "sourceId": "41419345868e406eaec8a271e33de3c1",
+          "localPath": null,
+          "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997",
+          "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html"
+        }
+      ],
+      "missing": [
+        "Production total not published; model-year end date taken from Wikipedia's 2010–2011 range"
+      ]
     },
     {
       "id": "gts",
@@ -468,21 +1930,126 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive (Carrera GTS); all-wheel drive (Carrera 4 GTS, from May 2011)",
       "transmission": "6-speed manual; 7-speed PDK",
-      "bodyStyles": ["coupe", "cabriolet"],
+      "bodyStyles": [
+        "coupe",
+        "cabriolet"
+      ],
       "description": "The Carrera GTS was introduced to fill the gap between the Carrera S and the GT3, using a 408 PS (402 hp) version of the 3.8-litre direct-injection flat-six in a wide body shared with the Carrera 4S. It was launched as a rear-drive coupé and cabriolet with a 193 mm (7.6 in) wider track and centred exhaust pipes, and from May 2011 the all-wheel-drive Carrera 4 GTS joined the range. Coupés rode on lightweight 19-inch Spyder wheels, the cabriolets on 20-inch Turbo wheels, and the interior mixed Alcantara with a sports exhaust that raised the note under load. Between 2010 and 2012 Porsche built 6,947 examples.",
       "special": false,
       "production": "6,947 units (classic.com)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/gts/img-porsche-997-carrera-gts-c6e232de-1920.avif",
+        "alt": "911 Carrera GTS",
+        "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsABABoJZwAD49sYef75RK+oAD+qhUVruLBgzch12IlyNvGIsDP+XV5Wxn086ESD2sSEjUTCd1hj+fI21JJA1oW7LR64HgFfUu0jvMABt1x+NO2AAAA",
+        "creditId": "img-porsche-997-carrera-gts-c6e232de",
+        "width": 1920,
+        "height": 1275
+      },
+      "gallery": [
+        {
+          "src": "/images/gts/img-porsche-997-carrera-gts-cab-6849629244-b54f190b-1280.avif",
+          "alt": "911 Carrera GTS — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJZwAAqsN/446AADyoAeT67RF6jFIvwda6Oj3353HbthAQHbOywkddv7qWkh4XIhRiK+1GW95hyfWGTxyDi6AAAA=",
+          "creditId": "img-porsche-997-carrera-gts-cab-6849629244-b54f190b",
+          "width": 1280,
+          "height": 711
+        },
+        {
+          "src": "/images/carrera/img-2005-porsche-911-997-carrera-95736-52ec0b69-1920.avif",
+          "alt": "911 Carrera GTS — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAoABABoJZgC7ADQQtAAAPY2gbNQoHgxFEkpc7AFaOHqPAdn8oQLzeP5mI3vQd52tVgRQ+r8Y7Kr0S6U+AAA",
+          "creditId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
+          "width": 1920,
+          "height": 1245
+        },
+        {
+          "src": "/images/gts/img-porsche-997-carrera-gts-heck-c41436a0-1920.avif",
+          "alt": "911 Carrera GTS — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQAAsABABoJZwAD4kPT2W977l2HLAAAP7lOZtL6Z2b+l93cY//bpbg+mwK8BfU5MFSbQr0foXPBfucj2MjFHTlXbm0tu3KsOFC53AcieP9wEnSNsABmAAA",
+          "creditId": "img-porsche-997-carrera-gts-heck-c41436a0",
+          "width": 1920,
+          "height": 1279
+        },
+        {
+          "src": "/images/gts/img-porsche-997-carrera-gts-52764971923-b4f5e99f-1920.avif",
+          "alt": "911 Carrera GTS — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsABABoJZQAAo8oHhMrQAD+3ux+4LiDUzjbzgWsQgn5lMMZhRyRPSIuoIRjPWrY+4bM9AgPRzGvW14gD9RgCAAAAA==",
+          "creditId": "img-porsche-997-carrera-gts-52764971923-b4f5e99f",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/gts/img-porsche-911-type-997-carrera-4-gts-rear-china-2012-04-15-fbcb57ed-1280.avif",
+          "alt": "911 Carrera GTS — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkABABoJZwAD5AsUlTZJ/gA/U42ElmlhKKpMFX+694lZttJOxX1O8F7T6+6MyoPHMvdmbGP++YvZK8jx9MAAAA=",
+          "creditId": "img-porsche-911-type-997-carrera-4-gts-rear-china-2012-04-15-fbcb57ed",
+          "width": 1280,
+          "height": 735
+        },
+        {
+          "src": "/images/carrera/img-2005-porsche-911-997-carrera-5a445eff-1920.avif",
+          "alt": "911 Carrera GTS — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsABABoJbACdAEREX2xfwiwAAD7/I2IqpW46TLVbuvVAz0LTKNJoQuH1PRb9hrV+2Uh2wHym1/b25Lz6LXjDAAAAA==",
+          "creditId": "img-2005-porsche-911-997-carrera-5a445eff",
+          "width": 1920,
+          "height": 1292
+        },
+        {
+          "src": "/images/gts/img-porsche-997-carrera-gts-cabriolet-4b577df8-1920.avif",
+          "alt": "911 Carrera GTS — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsABABoJZwAD4/QwpyLIMXLAAD+eTO4qB4IkFJcjlBZq6tDvAEzDJzVk3OlwMMywHU1x3Ziuu8jPsyOl6odCG5A/Tx4Mf6jgsfInkWOgqJuEkHp/QAA",
+          "creditId": "img-porsche-997-carrera-gts-cabriolet-4b577df8",
+          "width": 1920,
+          "height": 1280
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
-      "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "classic.com — Porsche 911 997 market guide", "url": "https://www.classic.com/insights/market-guide-porsche-997" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+      "credits": [
+        {
+          "assetId": "img-porsche-997-carrera-gts-c6e232de",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Carrera_GTS.JPG",
+          "license": "CC BY 3.0",
+          "author": "Thomas doerfer",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Carrera_GTS.JPG",
+          "localPath": "/images/gts/img-porsche-997-carrera-gts-c6e232de-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2443×1622px (804 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-997-carrera-gts-cab-6849629244-b54f190b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Carrera_GTS_Cab_(6849629244).jpg",
+          "license": "CC BY 2.0",
+          "author": "Curt Smith from Bellevue, WA, USA",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Carrera_GTS_Cab_(6849629244).jpg",
+          "localPath": "/images/gts/img-porsche-997-carrera-gts-cab-6849629244-b54f190b-1280.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 1600×889px (461 kB original), rendered locally to AVIF 640/1280 + WebP 1280"
+        }
       ],
-      "missing": ["Torque not published in cited sources", "Curb weight not published in cited sources", "Year window differs by source: Wikipedia gives 2010–2011, classic.com gives 2011–2012"]
+      "sources": [
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "classic.com — Porsche 911 997 market guide",
+          "url": "https://www.classic.com/insights/market-guide-porsche-997"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
+      ],
+      "missing": [
+        "Torque not published in cited sources",
+        "Curb weight not published in cited sources",
+        "Year window differs by source: Wikipedia gives 2010–2011, classic.com gives 2011–2012"
+      ]
     },
     {
       "id": "speedster",
@@ -501,20 +2068,120 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "7-speed PDK dual-clutch (only)",
-      "bodyStyles": ["speedster"],
+      "bodyStyles": [
+        "speedster"
+      ],
       "description": "The 997 Speedster, produced in 2011, was only the third series Speedster of 911 history after 1954 and 1989. Its windscreen was 70 mm (2.8 in) shorter than that of the cabriolet and raked back more steeply over a two-seater cabin in a body finished in Pure Blue or Carrera White. A lightweight fabric hood and a shortened, power-assisted lid for the rear storage compartment completed the open-top silhouette. The 3.8-litre direct-injection flat-six of the Carrera GTS delivered 408 PS (402 hp) to the rear wheels through a seven-speed PDK gearbox with an additional gear ratio in the range of first. Exactly 356 cars were built in 2011.",
       "special": true,
       "production": "356 units (2011)",
-      "heroImage": null,
-      "gallery": [],
+      "heroImage": {
+        "src": "/images/speedster/img-porsche-997-speedster-52681114369-4dc6b842-1920.avif",
+        "alt": "911 Speedster",
+        "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAsABABoJbACdADp9pM79/wAAP7ltiUWKHemajvOO47Qo8itj/Ftm9QggZUalpAE1M459LEn3x2AnAGWE9g2Izpae1um9dBXGrc+yOE1xk368nu5y1uuKsC7y+AA",
+        "creditId": "img-porsche-997-speedster-52681114369-4dc6b842",
+        "width": 1920,
+        "height": 1280
+      },
+      "gallery": [
+        {
+          "src": "/images/speedster/img-porsche-911-speedster-997-2-2011-52874246053-ddbbe1ea-1920.avif",
+          "alt": "911 Speedster — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJbACdAELz0A+XeQAAM3s6YuiE/Sd40CUGlDGz0/SUgXMNWklTa4HTtKVBYKt6M246F0/+P+2l+tBq+wFSxUnJsRJrpyjl5iTZIJPGAAAAA==",
+          "creditId": "img-porsche-911-speedster-997-2-2011-52874246053-ddbbe1ea",
+          "width": 1920,
+          "height": 1264
+        },
+        {
+          "src": "/images/speedster/img-2010-blue-porsche-911-speedster-997-mondial-paris-4013x267-dd6890f1-1920.avif",
+          "alt": "911 Speedster — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsABABoJbACdAEPEPr3vfqIAP60neY9nVSZIUx9WiHfyjmdQdxPod0GnKysFG9FHIr8h8fsVIhFy3QUg1AgUQAAAA==",
+          "creditId": "img-2010-blue-porsche-911-speedster-997-mondial-paris-4013x267-dd6890f1",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/speedster/img-porsche-911-speedster-997-2-2011-52874183085-ec7f4c4d-1920.avif",
+          "alt": "911 Speedster — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAsABABoJbACdDiAAQPy/T8AAP6qXnN4hGhNYAYK+VgrQ93Nw8sn49wg07KqvTal1ASNytRmgJIWH0+MfkspHmoZkp+A4nMaJsR9MXmgbnDCFIG6aYahJICVeUn1AAA=",
+          "creditId": "img-porsche-911-speedster-997-2-2011-52874183085-ec7f4c4d",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/speedster/img-porsche-911-speedster-997-2-2011-55220704967-ba9cb1a3-1920.avif",
+          "alt": "911 Speedster — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoABABoJaACdAD1fYlzQar0AAD+6DQ391CKxJdfAujb0PFeo6oX5xW3t/CVzZOEsxeiYtVCOU8peqIz4fWSNcCakoacjUK7KlWafpkPLW7IRIzwU4OAAAA=",
+          "creditId": "img-porsche-911-speedster-997-2-2011-55220704967-ba9cb1a3",
+          "width": 1920,
+          "height": 1222
+        },
+        {
+          "src": "/images/speedster/img-p997-speedster-front-50e84c45-1920.avif",
+          "alt": "911 Speedster — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAwABABoJZgCdH8AFn7dfCXeugAA/vHi/Vu1r4vwI0L9z2AdcEPGXFmcmRxfmLK7VL/uaOkY+s6TBAyV3jRPVLKZsZ3jVpdQce4fryYAAA==",
+          "creditId": "img-p997-speedster-front-50e84c45",
+          "width": 1920,
+          "height": 1434
+        },
+        {
+          "src": "/images/speedster/img-porsche-911-speedster-997-5215799980-2baac5ab-1920.avif",
+          "alt": "911 Speedster — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoQAAsABABoJZgCdEf/gaSE2RGKhN5QAP66fY9SaD9+HxDMW+7WFvASM2Fo9uf9U3Aqh1WhBY/a/vO4/pPIg8D0byy8LMfzpEzDaF2artUKDtDeCkmGZGZtDPCvI/n3AAA=",
+          "creditId": "img-porsche-911-speedster-997-5215799980-2baac5ab",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/speedster/img-p997-speedster-seite-1decc62a-1920.avif",
+          "alt": "911 Speedster — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAwABABoJZACdAEK4FeNGujEAAD+7jyXEugqbOS96gIaEhuzv2Z7Mjr6JXP8tZbCjuqHdVKgVu00Mojo8WMQ4vTEAAAA",
+          "creditId": "img-p997-speedster-seite-1decc62a",
+          "width": 1920,
+          "height": 1434
+        }
+      ],
       "videos": [],
       "model3d": null,
-      "credits": [],
-      "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+      "credits": [
+        {
+          "assetId": "img-porsche-997-speedster-52681114369-4dc6b842",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Speedster_(52681114369).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Alexandre Prevot from Nancy, France",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Speedster_(52681114369).jpg",
+          "localPath": "/images/speedster/img-porsche-997-speedster-52681114369-4dc6b842-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3000×2000px (3367 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-speedster-997-2-2011-52874246053-ddbbe1ea",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Speedster_(997.2%2C_2011)_(52874246053).jpg",
+          "license": "CC BY 2.0",
+          "author": "Charles from Port Chester, New York",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_911_Speedster_(997.2,_2011)_(52874246053).jpg",
+          "localPath": "/images/speedster/img-porsche-911-speedster-997-2-2011-52874246053-ddbbe1ea-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5906×3887px (4500 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
       ],
-      "missing": ["Torque not published in cited sources", "Curb weight not published in cited sources"]
+      "sources": [
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
+      ],
+      "missing": [
+        "Torque not published in cited sources",
+        "Curb weight not published in cited sources"
+      ]
     },
     {
       "id": "sport-classic",
@@ -533,38 +2200,214 @@
       "weight": null,
       "drivetrain": "Rear-wheel drive",
       "transmission": "6-speed manual (only)",
-      "bodyStyles": ["coupe"],
+      "bodyStyles": [
+        "coupe"
+      ],
       "description": "The 911 Sport Classic was unveiled at the 2009 Frankfurt Motor Show as a homage to the 1964 911 901 and the 1973 Carrera RS 2.7. Its distinguishing features were the double-dome roof, 44 mm (1.7 in) wider front and rear fenders with 911 Turbo-derived wheels, a ducktail spoiler and a centrally positioned exhaust, combined with 19-inch Fuchs-style forged alloys and a mechanically locking rear differential. The 3.8-litre direct-injection flat-six developed 408 PS (402 hp) through a special resonance intake manifold, delivered to the rear wheels by a six-speed manual. The coupe was lowered by 20 mm (0.8 in) with PASM. Sales began in January 2010: 250 cars were made and sold out within 48 hours.",
       "special": true,
       "production": "250 units (2010–2011)",
-      "heroImage": null,
-      "gallery": [],
-      "videos": [],
-      "model3d": null,
-      "credits": [],
-      "sources": [
-        { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-        { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" }
+      "heroImage": {
+        "src": "/images/sport-classic/img-porsche-997-sport-classic-afd65562-1920.avif",
+        "alt": "911 Sport Classic",
+        "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcABABoJZwC7AEKRHMiVJgA/pE9FnMHH/jfj4wKp1T0xBElYZWgizQwJb9rU9CRquC9dRiz5ZHYVr4Peh1QAAA=",
+        "creditId": "img-porsche-997-sport-classic-afd65562",
+        "width": 1920,
+        "height": 832
+      },
+      "gallery": [
+        {
+          "src": "/images/sport-classic/img-porsche-997-sport-classic-rear-34075b97-1920.avif",
+          "alt": "911 Sport Classic — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAcABABoJZQAAj0yLCrgAPR07D40pydTNAqv8c4q6kotcOQSIRdjSmuXarzfilxE/Jpcma7yg/YkMAA=",
+          "creditId": "img-porsche-997-sport-classic-rear-34075b97",
+          "width": 1920,
+          "height": 883
+        },
+        {
+          "src": "/images/sport-classic/img-997-sport-classic-2cd34604-1920.avif",
+          "alt": "911 Sport Classic — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAsABABoJZQAAuMdJswiAAD+9Le5PG84BD5XUrnUgDRsHC60lpb9WnCTV6oChC12/T7wRidfW0uiW0cekBvlfnbEAR1CRT7nFnBxFNgIFSkAAAA=",
+          "creditId": "img-997-sport-classic-2cd34604",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+          "alt": "911 Sport Classic — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAkABABoJQBOgBZxjgXAAPqUlv3cful3UtaQtuat13uZ3uxb8N8DnnVIqTC+YdYB0xQy+egkppTmrv2uVL/CWIu84g8AAAA=",
+          "creditId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+          "width": 1920,
+          "height": 1124
+        },
+        {
+          "src": "/images/gt3-rs-4.0/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92-1920.avif",
+          "alt": "911 Sport Classic — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoABABoJZwAD5MpI/pfAAD+ZYZVIO/uYVy6vbpuu/Q4O9IZk0+BnBhijRpKt/9pCbLbSmTbq5BhlvmbxU7ugASLOrK5PSaJHbK+pshixyMgAAA=",
+          "creditId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-7225ed92",
+          "width": 1920,
+          "height": 1187
+        },
+        {
+          "src": "/images/gt2/img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-1e4fa197-1280.avif",
+          "alt": "911 Sport Classic — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoABABoJZwAAo85q7QAAP5b6cQ87oAdcXu2bpDnpsmLtdAuxYE6ksVN+BvsQ98nEpXCoyBAWdj8DbMDKoE+UFzxzpMyQwhoeWwb8IcSbJJQAAA=",
+          "creditId": "img-white-porsche-997-gt2-with-black-rims-in-ahrweiler-cropped-1e4fa197",
+          "width": 1280,
+          "height": 789
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-997-gt3-db3f9a01-1920.avif",
+          "alt": "911 Sport Classic — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAgABABoJZQAAaXrHEwAAP66h7vBf0w1ymssVS83h7jy3u/Al6vsfUcJiCgKs4rVXzFnNYG2RamLHcIAAA==",
+          "creditId": "img-porsche-911-997-gt3-db3f9a01",
+          "width": 1920,
+          "height": 1021
+        },
+        {
+          "src": "/images/gt3/img-porsche-911-997-gt3-96909-ef5001be-1920.avif",
+          "alt": "911 Sport Classic — stand-in photo (same 997 family, sibling trim)",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoABABoJaACdAYt9sAkxGgAAP6qENdS9/KW1wCmBdxcx95f7NJ/7j7sbCMFmAiSiHZXIF1ggF/f8uekt7zwRBV0XQrRwAA=",
+          "creditId": "img-porsche-911-997-gt3-96909-ef5001be",
+          "width": 1920,
+          "height": 1240
+        }
       ],
-      "missing": ["Torque not published in cited sources", "Curb weight not published in cited sources"]
+      "videos": [
+        {
+          "id": "ww7izAkZ_oQ",
+          "title": "Porsche 911 Sport Classic 997 // REVIEW on AUTOBAHN",
+          "channel": "AutoTopNL",
+          "poster": null,
+          "note": "250-built Sport Classic flat-out, with sound"
+        }
+      ],
+      "model3d": null,
+      "credits": [
+        {
+          "assetId": "img-porsche-997-sport-classic-afd65562",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Sport_Classic.jpg",
+          "license": "CC0 1.0",
+          "author": "TTTNIS",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Sport_Classic.jpg",
+          "localPath": "/images/sport-classic/img-porsche-997-sport-classic-afd65562-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4201×1821px (3902 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-997-sport-classic-rear-34075b97",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_997_Sport_Classic_rear.jpg",
+          "license": "CC0 1.0",
+          "author": "TTTNIS",
+          "retrieved": "2026-10-02",
+          "sourceId": "File:Porsche_997_Sport_Classic_rear.jpg",
+          "localPath": "/images/sport-classic/img-porsche-997-sport-classic-rear-34075b97-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 4230×1946px (3897 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Porsche 911 (997)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+        },
+        {
+          "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+          "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+        }
+      ],
+      "missing": [
+        "Torque not published in cited sources",
+        "Curb weight not published in cited sources"
+      ]
     }
   ],
   "sources": [
-    { "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997", "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html" },
-    { "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html" },
-    { "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)", "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html" },
-    { "title": "Porsche Newsroom — One millionth 911: milestone for seven generations (production total 215,092)", "url": "https://newsroom.porsche.com/en/products/porsche-one-millionth-911-milestone-seven-generations-13735.html" },
-    { "title": "Porsche Newsroom — The 911 Turbo: 50 Years", "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html" },
-    { "title": "Porsche Classic — 997", "url": "https://www.porsche.com/international/accessoriesandservice/classic/models/997/" },
-    { "title": "Porsche 2011 911 specifications (PDF)", "url": "https://newsroom.porsche.com/dam/jcr%3A4a41d864-04a7-4cfd-b166-77d548baa675/2011_911_Carrera_4_Specifications.pdf" },
-    { "title": "Porsche 2011 911 brochure (PDF)", "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf" },
-    { "title": "Wikipedia — Porsche 911 (997)", "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)" },
-    { "title": "classic.com — Porsche 911 997 market guide", "url": "https://www.classic.com/insights/market-guide-porsche-997" }
+    {
+      "title": "Porsche Newsroom — The seven generations of the Porsche 911: Part 6, the type 997",
+      "url": "https://newsroom.porsche.com/en/history/porsche-911-seven-generations-part-6-type-997-16489.html"
+    },
+    {
+      "title": "Porsche Newsroom — 6th Generation Porsche 911 (997), 2004–2012 (60 Years press kit)",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation-Porsche-911,-(997),-2004-012.html"
+    },
+    {
+      "title": "Porsche Newsroom — 6th Generation Engines (60 Years press kit)",
+      "url": "https://newsroom.porsche.com/en/press-kits/60-Years-Porsche-911/6.-Generation---Motoren.html"
+    },
+    {
+      "title": "Porsche Newsroom — One millionth 911: milestone for seven generations (production total 215,092)",
+      "url": "https://newsroom.porsche.com/en/products/porsche-one-millionth-911-milestone-seven-generations-13735.html"
+    },
+    {
+      "title": "Porsche Newsroom — The 911 Turbo: 50 Years",
+      "url": "https://newsroom.porsche.com/en/press-kits/50-years-porsche-turbo/The-911-Turbo-generations.html"
+    },
+    {
+      "title": "Porsche Classic — 997",
+      "url": "https://www.porsche.com/international/accessoriesandservice/classic/models/997/"
+    },
+    {
+      "title": "Porsche 2011 911 specifications (PDF)",
+      "url": "https://newsroom.porsche.com/dam/jcr%3A4a41d864-04a7-4cfd-b166-77d548baa675/2011_911_Carrera_4_Specifications.pdf"
+    },
+    {
+      "title": "Porsche 2011 911 brochure (PDF)",
+      "url": "https://cdn.dealereprocess.org/cdn/brochures/porsche/2011-911.pdf"
+    },
+    {
+      "title": "Wikipedia — Porsche 911 (997)",
+      "url": "https://en.wikipedia.org/wiki/Porsche_911_(997)"
+    },
+    {
+      "title": "classic.com — Porsche 911 997 market guide",
+      "url": "https://www.classic.com/insights/market-guide-porsche-997"
+    }
   ],
   "missing": [
     "Two published production totals for the same generation: 213,004 (Newsroom Part 6 and 60 Years press kit) vs 215,092 (Newsroom one-millionth-911 article) — both cited, not reconciled",
     "Torque and curb weight not published for the Carrera GTS, 911 Speedster and 911 Sport Classic",
     "Carrera GTS year window differs by source (Wikipedia 2010–2011 vs classic.com 2011–2012)",
     "GT2 production total (1,242) and GT2 RS production figures sourced from classic.com, not Porsche"
+  ],
+  "credits": [
+    {
+      "assetId": "img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3AA_Porsche_997_GT2_in_front_of_Boutique_de_parfumerie_Guerlain%2C_356_rue_Saint-Honor%C3%A9.jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "CarSpotter from New York",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:A_Porsche_997_GT2_in_front_of_Boutique_de_parfumerie_Guerlain,_356_rue_Saint-Honoré.jpg",
+      "localPath": "/images/997/img-a-porsche-997-gt2-in-front-of-boutique-de-parfumerie-guerl-3cd1da20-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 3264×1910px (5966 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
+      "kind": "image",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_997_GT3_RS_(68893).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:Porsche_911_997_GT3_RS_(68893).jpg",
+      "localPath": "/images/997/img-porsche-911-997-gt3-rs-68893-b0f30699-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10154px (22390 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+    },
+    {
+      "assetId": "model-997",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-9972-11-7e25beb0e2c841f0bf51f94fde651fd4?embed=1",
+      "license": "CC Attribution",
+      "author": "Mona x Supercars",
+      "retrieved": "2026-10-02",
+      "sourceId": "7e25beb0e2c841f0bf51f94fde651fd4",
+      "localPath": null,
+      "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    }
   ]
 }
