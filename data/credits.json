@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:26:53.298Z",
+  "generatedAt": "2026-10-03T14:09:02.501Z",
   "credits": [
     {
       "assetId": "img-1966-porsche-911-t-2-0-rallye-monte-carlo-historique-2025-46ddbd32",
@@ -8508,6 +8508,18 @@
       "sourceId": "97785983d3a949cf87e9ee6bf49f4032",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
+    },
+    {
+      "assetId": "model-991-carrera-4s",
+      "kind": "model",
+      "source": "sketchfab",
+      "url": "/models/991-carrera-4s/model.glb",
+      "license": "CC Attribution-ShareAlike 4.0 (adapted)",
+      "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
+      "retrieved": "2026-10-03",
+      "sourceId": "d01b254483794de3819786d93e0e1ebf",
+      "localPath": "/models/991-carrera-4s/model.glb",
+      "note": "local GLB"
     },
     {
       "assetId": "model-991-carrera-s",

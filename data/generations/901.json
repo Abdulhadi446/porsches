@@ -196,8 +196,9 @@
         "license": "CC Attribution",
         "author": "tonielpro520",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/901__911-2.0",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -776,7 +777,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-s-2.0",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-s-2-0-1968-12276987206-3db40dde",
@@ -918,7 +922,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-2.2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1969-porsche-911-2-2-c-series-1278e56f",
@@ -1059,7 +1066,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-t-2.2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911t-2-2-1969-ax32911-dsc-0048-balancer-2617555466-711442a6",
@@ -1199,7 +1209,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-e-2.2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
@@ -1340,7 +1353,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-s-2.2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-s-2-2-targa-3335771437-fd0cc2e6",
@@ -1481,7 +1497,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-2.4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
@@ -1622,7 +1641,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-t-2.4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1971-porsche-911t-2-4-blue-7961b499",
@@ -1754,7 +1776,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-e-2.4"
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-e-2-4-targa-03-6a2a8fb5",
@@ -1887,7 +1911,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__911-s-2.4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-s-2-4-flickr-alexandre-pre-vot-1-4a6fa17a",
@@ -2516,7 +2543,10 @@
           "note": "Porsche's own factory film on the 2.7 Carrera RS"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__carrera-rs-2.7",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-rs-front-left-391bbd45",
@@ -2665,7 +2695,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__s-t",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1972-porsche-911t-2-4-fe450f7d",
@@ -2806,7 +2839,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__porsche-901"
+      },
       "credits": [
         {
           "assetId": "img-porsche-901-prototype-at-pebble-beach-concours-2023-b01f8f66",
@@ -2947,7 +2982,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__912",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-roter-porsche-912-baujahr-1968-15de4df1",
@@ -3340,7 +3378,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/901__carrera-rsr-2.8",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1973-porsche-911-carrera-rsr-2-8-f53f61d9",

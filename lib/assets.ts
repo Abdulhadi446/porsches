@@ -58,6 +58,8 @@ export interface ModelResult {
   glb?: string;
   embedUrl?: string;
   turntable?: string;
+  /** true when the frames are a parallax pan of one photo, not a real orbit */
+  turntableSynthetic?: boolean;
   license?: string | null;
   author?: string | null;
   sourceId?: string | null;
@@ -92,6 +94,7 @@ export function getModel(
     return {
       kind: "turntable",
       turntable: model.turntable,
+      turntableSynthetic: model.turntableSynthetic === true,
       license: model.license,
       author: model.author,
       sourceId: model.sourceId,

@@ -182,7 +182,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__carrera",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
@@ -320,7 +323,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__carrera-s"
+      },
       "credits": [
         {
           "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
@@ -458,7 +463,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__carrera-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2005-porsche-911-997-carrera-95736-52ec0b69",
@@ -592,7 +600,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__carrera-4s"
+      },
       "credits": [
         {
           "assetId": "img-2005-porsche-911-997-carrera-4s-0bd70203",
@@ -725,7 +735,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__targa-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-997-targa-4-right-view-cropped-f823c5c1",
@@ -858,7 +871,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__targa-4s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-targa-4s-997-25870002183-c8165da1",
@@ -992,7 +1008,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__turbo"
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-997-turbo-cabriolet-7176a473",
@@ -1126,7 +1144,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__turbo-s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-997-turbo-s-flickr-alexandre-pre-vot-db057f7d",
@@ -1259,7 +1280,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__gt3",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-997-gt3-db3f9a01",
@@ -1392,7 +1416,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__gt3-rs",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-997-gt3-rs-68893-b0f30699",
@@ -1858,8 +1885,9 @@
         "license": "CC Attribution",
         "author": "COOL601",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/997__gt2-rs",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -2004,7 +2032,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__gts",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-997-carrera-gts-c6e232de",
@@ -2141,7 +2172,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__speedster",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-997-speedster-52681114369-4dc6b842",
@@ -2281,7 +2315,10 @@
           "note": "250-built Sport Classic flat-out, with sound"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/997__sport-classic",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-997-sport-classic-afd65562",

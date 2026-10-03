@@ -182,7 +182,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__carrera",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
@@ -316,7 +319,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__carrera-s"
+      },
       "credits": [
         {
           "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
@@ -450,7 +455,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__carrera-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2021-porsche-911-992-carrera-s-3c9c40ec",
@@ -1049,7 +1057,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__turbo",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-992-turbo-img-3522-db16864b",
@@ -1501,7 +1512,10 @@
           "note": "aero deleted, rear wing gone, driving intact"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__gt3-touring",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2022-porsche-992-gt3-touring-scd24-2e066e0d",
@@ -1828,8 +1842,9 @@
         "license": "CC Attribution",
         "author": "Ddiaz Design",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/992-1__s-t",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -2002,7 +2017,7 @@
         "license": "CC Attribution",
         "author": "HiQ3D",
         "glb": null,
-        "turntable": null,
+        "turntable": "/turntables/992-1__dakar",
         "bytes": null
       },
       "credits": [
@@ -2491,7 +2506,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__carrera-t",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2024-porsche-911-992-carrera-t-c3e1c3f6",
@@ -2610,7 +2628,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__targa-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-targa-4-992-front-three-quarter-view-in-osaka-94419240",
@@ -2746,7 +2767,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-1__carrera-4-gts"
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-992-carrera-4-gts-safety-car-6787fa68",
@@ -2881,8 +2904,9 @@
         "license": "CC Attribution",
         "author": "007",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/992-1__targa-4-gts",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {

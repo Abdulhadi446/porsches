@@ -129,7 +129,7 @@
         "license": "CC Attribution",
         "author": "Ai 3D Designs",
         "glb": null,
-        "turntable": null,
+        "turntable": "/turntables/993__carrera",
         "bytes": null
       },
       "credits": [
@@ -288,7 +288,10 @@
         "height": 1254
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__carrera-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
@@ -595,8 +598,9 @@
         "license": "CC Attribution",
         "author": "Mona x Supercars",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/993__carrera-s",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -749,7 +753,10 @@
         "height": 426
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__targa",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-993-targa-mainz-348d172a",
@@ -890,7 +897,10 @@
         "height": 1122
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__cabriolet",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
@@ -1041,7 +1051,7 @@
         "license": "CC Attribution",
         "author": "Nieve5677",
         "glb": null,
-        "turntable": null,
+        "turntable": "/turntables/993__turbo",
         "bytes": null
       },
       "credits": [
@@ -1204,7 +1214,10 @@
           "note": "450 PS final air-cooled 911, treated as the true summit"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__turbo-s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-turbo-s-993-1997-52873227047-caba4334",
@@ -1357,7 +1370,10 @@
           "note": "short, well-judged drive of the 993 RS"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__carrera-rs",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-993-carrera-rs-80978-cbf572d1",
@@ -1502,7 +1518,10 @@
         "height": 1250
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__club-sport",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
@@ -1662,7 +1681,9 @@
           "note": "GT2 in Carfection's classics format, period detail intact"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__gt2"
+      },
       "credits": [
         {
           "assetId": "img-white-1997-porsche-911-993-gt2-4d8361ce",
@@ -1807,7 +1828,10 @@
         "height": 1280
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__gt2-evo",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-993-gt2-evo-19263421922-70d59e86",
@@ -1949,7 +1973,10 @@
         "height": 800
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__speedster",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1994-porsche-993-speedster-barry-bonds-car-fvl-2b8e6a6a",
@@ -2071,7 +2098,10 @@
         "height": 1280
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/993__turbo-cabriolet",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-993-turbo-cabriolet-52681126279-eb71c99c",

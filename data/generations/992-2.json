@@ -182,7 +182,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-2__carrera",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-992-carrera-eaee33d4",
@@ -465,7 +468,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-2__carrera-s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-992-carrera-eaee33d4",
@@ -609,7 +615,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-2__carrera-4s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-992-cabrio-carrera-4s-genf-2019-1y7a5428-a116040d",
@@ -1675,7 +1684,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/992-2__gt3-touring",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-992-gt3-touring-cc40c6e3",

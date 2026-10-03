@@ -146,8 +146,9 @@
         "license": "CC Attribution",
         "author": "007",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/964__carrera-4",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -312,7 +313,10 @@
         "height": 1152
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__carrera-2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",
@@ -1259,7 +1263,9 @@
           "note": "3.6 versus the unicorn 3.8 RS, same day, same driver"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__rs-3.8"
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-rs-3-8-964-1993-52574462231-2151f2aa",
@@ -1403,7 +1409,10 @@
         "height": 1176
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__rsr-3.8",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-rsr-3-8-964-1993-52873808146-9baf3c2f",
@@ -1550,7 +1559,10 @@
         "height": 1171
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__speedster",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1994-porsche-964-speedster-in-maritime-blue-front-right-8a0e1fc3",
@@ -1696,7 +1708,10 @@
         "height": 1275
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__america-roadster",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1992-93-porsche-911-america-roadster-964-7074293831-43b591b2",
@@ -1820,7 +1835,10 @@
         "height": 1280
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__targa",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-2-targa-964-1990-52873974569-229d1b58",
@@ -1966,7 +1984,10 @@
         "height": 1152
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__30th-anniversary",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",
@@ -2107,7 +2128,10 @@
         "height": 1152
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__cup",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",
@@ -2248,7 +2272,10 @@
         "height": 1280
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__cabriolet",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-964-carrera-2-cabriolet-53117866569-0d2e8e73",
@@ -2393,7 +2420,10 @@
         "height": 1280
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__rs-america",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-rs-america-964-26406589001-c8da78b9",
@@ -2534,7 +2564,10 @@
         "height": 1152
       },
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/964__turbo-s-3.3",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",

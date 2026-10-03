@@ -174,7 +174,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__carrera",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-carrera-at-the-2025-shannons-adelaide-rally-02-cc6deae9",
@@ -462,7 +465,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__carrera-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-carrera-at-the-2025-shannons-adelaide-rally-02-cc6deae9",
@@ -596,7 +602,15 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "glb": "/models/991-carrera-4s/model.glb",
+        "embedUrl": null,
+        "sourceId": "d01b254483794de3819786d93e0e1ebf",
+        "license": "CC Attribution-ShareAlike 4.0 (adapted)",
+        "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
+        "turntable": null,
+        "bytes": 905340
+      },
       "credits": [
         {
           "assetId": "img-2013-porsche-911-carrera-4s-991-9626546987-5d6a1409",
@@ -621,6 +635,18 @@
           "sourceId": "File:2015_Porsche_911_991_Carrera_4S.jpg",
           "localPath": "/images/carrera-4s/img-2015-porsche-911-991-carrera-4s-fbe84c12-1920.avif",
           "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 14104×8744px (10210 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "model-991-carrera-4s",
+          "kind": "model",
+          "source": "sketchfab",
+          "url": "/models/991-carrera-4s/model.glb",
+          "license": "CC Attribution-ShareAlike 4.0 (adapted)",
+          "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
+          "retrieved": "2026-10-03",
+          "sourceId": "d01b254483794de3819786d93e0e1ebf",
+          "localPath": "/models/991-carrera-4s/model.glb",
+          "note": "local GLB"
         }
       ],
       "sources": [
@@ -737,7 +763,10 @@
           "note": "where the lightweight, manual Carrera T actually sits"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__carrera-t",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2018-porsche-911-991-2-carrera-t-bd366215",
@@ -852,7 +881,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__targa-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-aba-991j1-911-targa-4-23052110471-8eb2eed9",
@@ -985,7 +1017,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__targa-4s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-targa-4s-16741833059-a25a7b65",
@@ -1120,7 +1155,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__gts",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-carrera-at-the-2025-shannons-adelaide-rally-02-cc6deae9",
@@ -1256,7 +1294,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__turbo",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-turbo-s-mkii-flickr-alexandre-prevot-cdf0b5e4",
@@ -1543,7 +1584,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__gt3",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-991-gt3-2-5f886aca",
@@ -1678,7 +1722,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__gt3-touring",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-991-gt3-touring-b65efd16",
@@ -1997,8 +2044,9 @@
         "license": "CC Attribution",
         "author": "vecarz",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/991__gt2-rs",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -2165,8 +2213,9 @@
         "license": "CC Attribution",
         "author": "Ulix21",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/991__r",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -2312,7 +2361,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__speedster",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2019-porsche-911-991-speedster-front-nyias-2019-36f68a06",
@@ -2445,7 +2497,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__50th-anniversary",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-50th-anniversary-edition-19889533705-d1fbd070",
@@ -2709,7 +2764,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/991__turbo-s-exclusive",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-991-turbo-s-mkii-flickr-alexandre-prevot-cdf0b5e4",

@@ -182,7 +182,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__carrera",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2003-porsche-911-996-carrera-2-d89381c7",
@@ -445,7 +448,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__carrera-4",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-996-carrera-4-cabriolet-flickr-alexandre-pre-vot-2-fbe216f1",
@@ -585,7 +591,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__carrera-4s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-996-carrera-4s-flickr-alexandre-pre-vot-b48e91f4",
@@ -718,7 +727,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__targa",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2002-porsche-911-996-carrera-s-targa-tiptronic-af9b081e",
@@ -990,7 +1002,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__turbo-s",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-996-turbo-s-cabriolet-50179533347-b9925d59",
@@ -1121,7 +1136,9 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__gt3"
+      },
       "credits": [
         {
           "assetId": "img-porsche-996-gt3-at-the-2025-shannons-adelaide-rally-028a46-a3b66162",
@@ -1262,7 +1279,10 @@
           "note": "996 GT3 RS benchmarked against its 2003 rivals"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__gt3-rs",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-996-gt3-rs-f587350a",
@@ -1406,7 +1426,10 @@
           "note": "long road-and-track GT2 test in early 996 form"
         }
       ],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__gt2",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-2001-porsche-911-996-gt2-5080e3e9",
@@ -1678,7 +1701,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/996__millennium-edition",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-996-carrera-4-millennium-edition-52742880473-3e9bc4b7",

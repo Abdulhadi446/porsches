@@ -76,8 +76,13 @@ export interface Model3D {
   sourceId?: string | null;
   license?: string | null;
   author?: string | null;
-  /** local image-sequence turntable fallback, e.g. /turntables/901 */
+  /**
+   * Local image-sequence turntable, e.g. `/turntables/901`. `synthetic: true`
+   * means the frames are a parallax pan of ONE photograph rather than an orbit
+   * of the car around it — the UI says so, because it is not a real turntable.
+   */
   turntable?: string | null;
+  turntableSynthetic?: boolean;
   /** glb size in bytes (perf budget: < 3_000_000) */
   bytes?: number | null;
 }

@@ -126,14 +126,22 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                 accent={accent}
               />
             ) : model.kind === "turntable" && model.turntable ? (
-              <Turntable3D
-                base={model.turntable}
-                poster={poster}
-                carName={carName}
-                accent={accent}
-                autoPlay={!reduced}
-                enabled={inView}
-              />
+              <>
+                {model.turntableSynthetic && (
+                  <p className="label mt-[--space-2]">
+                    Parallax pan of one photograph — no multi-angle 360° of this
+                    car exists under a free licence
+                  </p>
+                )}
+                <Turntable3D
+                  base={model.turntable}
+                  poster={poster}
+                  carName={carName}
+                  accent={accent}
+                  autoPlay={!reduced}
+                  enabled={inView}
+                />
+              </>
             ) : (
               <NoModelPanel accent={accent} carName={carName} poster={poster} />
             )}

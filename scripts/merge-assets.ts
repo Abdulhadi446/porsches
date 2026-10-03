@@ -53,6 +53,9 @@ const mods = models as {
   variants?: Record<string, Model3D | null>;
 };
 const vids = videos as { entries?: Record<string, VideoRef[]> };
+const turntables = read<{
+  entries?: Record<string, { dir?: string; synthetic?: boolean }>;
+}>("data/turntables.json");
 
 /** creditId → Credit, synthesising one if the images agent missed it. */
 function ensureCredit(ref: ImageRef | null | undefined): Credit | null {
@@ -181,6 +184,11 @@ for (const f of files) {
     if (vi?.heroImage) v.heroImage = vi.heroImage;
     if (vi?.gallery?.length) v.gallery = vi.gallery;
     if (vm) v.model3d = vm;
+    const tt = turntables.entries?.[key];
+    if (tt?.dir) {
+      v.model3d = { ...(v.model3d ?? {}), turntable: tt.dir };
+      if (tt.synthetic) v.model3d.turntableSynthetic = true;
+    }
     if (vv.length) {
       v.videos = vv;
       vv.forEach((x) => void videoCredit(x));

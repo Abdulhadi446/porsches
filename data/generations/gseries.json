@@ -55,8 +55,8 @@
     "glb": "/models/930-turbo-1975/model.glb",
     "embedUrl": null,
     "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
-    "license": "MIT (repo) + CC Attribution (geometry, inferred)",
-    "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+    "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
+    "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
     "turntable": null,
     "bytes": 2206432
   },
@@ -181,7 +181,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__911-2.7",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
@@ -313,7 +316,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__911-s-2.7",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1976-porsche-911-s-2-7-4d9bfcb8",
@@ -437,7 +443,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__carrera-2.7",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1976-porsche-911-carrera-2-7-c4268537",
@@ -572,7 +581,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__carrera-rs-3.0",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1974-porsche-911-carrera-rs-3-0-3ff3ac31",
@@ -696,7 +708,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__carrera-rsr-3.0",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1977-porsche-911-carrera-rsr-3-0-lc24-7435f0c6",
@@ -840,8 +855,8 @@
         "glb": "/models/930-turbo-1975/model.glb",
         "embedUrl": null,
         "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
-        "license": "MIT (repo) + CC Attribution (geometry, inferred)",
-        "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+        "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
+        "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
         "turntable": null,
         "bytes": 2206432
       },
@@ -1023,8 +1038,9 @@
         "license": "CC Attribution",
         "author": "Maarten Leys",
         "glb": null,
-        "turntable": null,
-        "bytes": null
+        "turntable": "/turntables/gseries__turbo-3.3-930",
+        "bytes": null,
+        "turntableSynthetic": true
       },
       "credits": [
         {
@@ -1353,7 +1369,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__turbo-s-3.3",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1977-porsche-911-930-turbo-3-0-bfa80da8",
@@ -1493,7 +1512,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__turbo-le-1989",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-turbo-930-52575620837-e6c959de",
@@ -1634,7 +1656,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__carrera-3.0",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1977-porsche-911-carrera-3-0-68246-fd9a3468",
@@ -1947,7 +1972,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__sc-rs",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-1984-porsche-911-3-0-sc-rs-at-lime-rock-front-right-241a28db",
@@ -2556,7 +2584,10 @@
         }
       ],
       "videos": [],
-      "model3d": null,
+      "model3d": {
+        "turntable": "/turntables/gseries__speedster-1989",
+        "turntableSynthetic": true
+      },
       "credits": [
         {
           "assetId": "img-porsche-911-carrera-3-2-1988-vr-ems-1d7aba79",
