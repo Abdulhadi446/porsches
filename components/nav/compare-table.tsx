@@ -216,8 +216,8 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
   const enough = picked.length >= 2;
 
   return (
-    <div className="mt-[--space-8]">
-      <div className="grid gap-[--space-4] md:grid-cols-2 xl:grid-cols-4">
+    <div className="mt-(--space-8)">
+      <div className="grid gap-(--space-4) md:grid-cols-2 xl:grid-cols-4">
         {visibleKeys.map((key) => {
           const slot = slots.find((entry) => entry.key === key) ?? resolveSlot(key, "");
           return (
@@ -232,7 +232,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
         })}
       </div>
 
-      <div className="mt-[--space-6] flex flex-wrap items-center gap-[--space-3]">
+      <div className="mt-(--space-6) flex flex-wrap items-center gap-(--space-3)">
         <button
           type="button"
           onClick={() => {
@@ -249,7 +249,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
             }
           }}
           aria-pressed={four}
-          className={`rounded-[--radius-sm] border px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
+          className={`inline-flex min-h-6 items-center rounded-(--radius-sm) border px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
             four
               ? "border-guards bg-guards/15 text-metal-100"
               : "border-ink-4 text-metal-500 hover:border-metal-700 hover:text-metal-300"
@@ -260,21 +260,21 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
         <button
           type="button"
           onClick={swap}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="inline-flex min-h-6 items-center rounded-(--radius-sm) border border-ink-4 px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Swap A ⇄ B
         </button>
         <button
           type="button"
           onClick={randomise}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="inline-flex min-h-6 items-center rounded-(--radius-sm) border border-ink-4 px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Surprise me
         </button>
         <button
           type="button"
           onClick={share}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="inline-flex min-h-6 items-center rounded-(--radius-sm) border border-ink-4 px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           {copied ? "Link copied" : "Copy shareable link"}
         </button>
@@ -284,7 +284,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
       </div>
 
       {sharedGenerations.length > 0 && (
-        <p className="mt-[--space-4] border-l-2 border-signal bg-ink-2 px-[--space-4] py-[--space-3] font-mono text-mono-sm text-metal-300">
+        <p className="mt-(--space-4) border-l-2 border-signal bg-ink-2 px-(--space-4) py-(--space-3) font-mono text-mono-sm text-metal-300">
           {sharedGenerations.length === 1
             ? `Every pick is from the ${
                 picked.find((entry) => entry.generation === sharedGenerations[0])
@@ -300,9 +300,9 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
       )}
 
       {!enough ? (
-        <div className="mt-[--space-8] border border-ink-4 bg-ink-2 p-[--space-12] text-center">
+        <div className="mt-(--space-8) border border-ink-4 bg-ink-2 p-(--space-12) text-center">
           <p className="font-display text-2xl uppercase">Pick two 911s</p>
-          <p className="mx-auto mt-[--space-3] max-w-[--maxw-prose] text-metal-500">
+          <p className="mx-auto mt-(--space-3) max-w-(--maxw-prose) text-metal-500">
             Choose at least two variants above — type a model name, a code or a
             year in either box. Every spec below comes straight from the dataset
             and is cited on each variant page.
@@ -310,7 +310,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
         </div>
       ) : (
         <>
-          <div className="mt-[--space-8] grid gap-[--space-4] md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-(--space-8) grid gap-(--space-4) md:grid-cols-2 xl:grid-cols-4">
             {ROWS.filter((row) => row.metric).map((row) => (
               <MetricCard
                 key={row.key}
@@ -322,7 +322,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
             ))}
           </div>
 
-          <div className="mt-[--space-8] overflow-x-auto border border-ink-4">
+          <div className="mt-(--space-8) overflow-x-auto border border-ink-4">
             <table className="w-full border-collapse text-left">
               <caption className="sr-only">
                 Specification differences between the selected 911 variants
@@ -331,7 +331,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                 <tr>
                   <th
                     scope="col"
-                    className="sticky left-0 z-content bg-ink-3 px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500"
+                    className="sticky left-0 z-content bg-ink-3 px-(--space-4) py-(--space-3) font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500"
                   >
                     Spec
                   </th>
@@ -339,11 +339,11 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                     <th
                       key={slot.key}
                       scope="col"
-                      className="min-w-[12rem] border-l border-ink-4 px-[--space-4] py-[--space-3]"
+                      className="min-w-[12rem] border-l border-ink-4 px-(--space-4) py-(--space-3)"
                     >
                       <span
                         aria-hidden="true"
-                        className="mb-[--space-2] block h-0.5 w-10"
+                        className="mb-(--space-2) block h-0.5 w-10"
                         style={{ backgroundColor: slot.variant?.genAccent }}
                       />
                       <Link
@@ -373,12 +373,12 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                     >
                       <th
                         scope="row"
-                        className={`sticky left-0 z-content bg-ink-2 px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-label] ${
+                        className={`sticky left-0 z-content bg-ink-2 px-(--space-4) py-(--space-3) font-mono text-mono-xs uppercase tracking-(--tracking-label) ${
                           differs ? "text-guards-text" : "text-metal-700"
                         }`}
                       >
                         {differs && (
-                          <span aria-hidden="true" className="mr-[--space-2]">
+                          <span aria-hidden="true" className="mr-(--space-2)">
                             ▸
                           </span>
                         )}
@@ -388,7 +388,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                       {values.map((value, index) => (
                         <td
                           key={`${row.key}-${chosen[index].key}`}
-                          className={`border-l border-ink-4 px-[--space-4] py-[--space-3] font-mono text-mono-xs leading-relaxed ${
+                          className={`border-l border-ink-4 px-(--space-4) py-(--space-3) font-mono text-mono-xs leading-relaxed ${
                             differs ? "text-metal-100" : "text-metal-700"
                           }`}
                         >
@@ -451,14 +451,14 @@ function SlotCard({
   );
 
   return (
-    <div className="flex flex-col border border-ink-4 bg-ink-2 p-[--space-4]">
-      <div className="mb-[--space-3] flex items-center gap-[--space-2]">
+    <div className="flex flex-col border border-ink-4 bg-ink-2 p-(--space-4)">
+      <div className="mb-(--space-3) flex items-center gap-(--space-2)">
         <span className="label">Slot {slotKey.toUpperCase()}</span>
         {slot.variant && (
           <button
             type="button"
             onClick={() => onClear(slotKey)}
-            className="ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="ml-auto font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Clear
           </button>
@@ -466,7 +466,7 @@ function SlotCard({
       </div>
 
       {slot.variant && !open && (
-        <div className="flex items-start gap-[--space-3]">
+        <div className="flex items-start gap-(--space-3)">
           <span
             aria-hidden="true"
             className="mt-1 h-10 w-0.5 shrink-0"
@@ -482,7 +482,7 @@ function SlotCard({
             </p>
             <Link
               href={slot.variant.href}
-              className="mt-[--space-2] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="mt-(--space-2) inline-block font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               Open variant page →
             </Link>
@@ -494,7 +494,7 @@ function SlotCard({
               setQuery("");
               requestAnimationFrame(() => inputRef.current?.focus());
             }}
-            className="ml-auto shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-2] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="ml-auto inline-flex min-h-6 shrink-0 items-center rounded-(--radius-sm) border border-ink-4 px-2 py-1 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Change
           </button>
@@ -508,7 +508,7 @@ function SlotCard({
       )}
 
       {(open || !slot.variant) && (
-        <div className="relative mt-[--space-2]">
+        <div className="relative mt-(--space-2)">
           <input
             ref={inputRef}
             id={`${listId}-input`}
@@ -546,7 +546,7 @@ function SlotCard({
               }
               keys(event, () => commit(activeEntry));
             }}
-            className="w-full rounded-[--radius-sm] border border-ink-4 bg-ink-3 px-[--space-3] py-[--space-2] font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
+            className="w-full rounded-(--radius-sm) border border-ink-4 bg-ink-3 px-3 py-2 font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
           />
 
           {open && query.trim() && (
@@ -557,7 +557,7 @@ function SlotCard({
               className="absolute inset-x-0 top-[calc(100%+4px)] z-[var(--z-overlay)] max-h-64 overflow-y-auto overscroll-contain border border-ink-4 bg-ink-2"
             >
               {results.length === 0 && (
-                <li className="px-[--space-3] py-[--space-3] text-mono-sm text-metal-500">
+                <li className="px-(--space-3) py-(--space-3) text-mono-sm text-metal-500">
                   No match for “{query.trim()}”.
                 </li>
               )}
@@ -573,7 +573,7 @@ function SlotCard({
                     aria-selected={index === active}
                     type="button"
                     onClick={() => commit(entry)}
-                    className={`flex w-full items-center gap-[--space-2] px-[--space-3] py-[--space-2] text-left font-mono text-mono-xs transition-colors ${
+                    className={`flex min-h-6 w-full items-center gap-(--space-2) px-3 py-2 text-left font-mono text-mono-xs transition-colors ${
                       index === active
                         ? "bg-ink-4 text-metal-100"
                         : "text-metal-300 hover:bg-ink-3"
@@ -597,7 +597,7 @@ function SlotCard({
       )}
 
       {slot.invalid && (
-        <p className="mt-[--space-3] border-l-2 border-guards bg-guards/5 px-[--space-3] py-[--space-2] font-mono text-mono-xs text-metal-300">
+        <p className="mt-(--space-3) border-l-2 border-guards bg-guards/5 px-(--space-3) py-(--space-2) font-mono text-mono-xs text-metal-300">
           No 911 matches “{slot.invalid}” — pick one above.
         </p>
       )}
@@ -629,8 +629,8 @@ function MetricCard({
   const span = Math.max(max - min, 1e-6);
 
   return (
-    <div className="border border-ink-4 bg-ink-2 p-[--space-4]">
-      <p className="label mb-[--space-3]">
+    <div className="border border-ink-4 bg-ink-2 p-(--space-4)">
+      <p className="label mb-(--space-3)">
         {row.label}
         {row.lowerIsBetter && (
           <span className="ml-2 normal-case tracking-normal text-metal-700">
@@ -638,7 +638,7 @@ function MetricCard({
           </span>
         )}
       </p>
-      <ul className="flex flex-col gap-[--space-3]">
+      <ul className="flex flex-col gap-(--space-3)">
         {variants.map((variant, index) => {
           const value = values[index];
           const ratio =
@@ -649,7 +649,7 @@ function MetricCard({
                 : 0.25 + 0.75 * ((value - min) / span);
           return (
             <li key={`${row.key}-${variant.key}`}>
-              <div className="mb-1 flex items-baseline justify-between gap-[--space-2]">
+              <div className="mb-1 flex items-baseline justify-between gap-(--space-2)">
                 <span className="truncate font-mono text-mono-xs text-metal-500">
                   {labels[index] || variant.name}
                 </span>
@@ -659,7 +659,7 @@ function MetricCard({
               </div>
               <div className="h-1.5 w-full overflow-hidden bg-ink-4">
                 <div
-                  className="h-full transition-[width] duration-[--dur-slow] ease-[--ease-out-expo]"
+                  className="h-full transition-[width] duration-(--dur-slow) ease-(--ease-out-expo)"
                   style={{
                     width: `${Math.round((ratio ?? 0.04) * 100)}%`,
                     backgroundColor:

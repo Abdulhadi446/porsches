@@ -1252,7 +1252,7 @@
           "url": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
           "license": "CC Attribution",
           "author": "007",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "214a61d759e942e2887290b6e4e50d49",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1740,11 +1740,11 @@
       "id": "gt3-rs",
       "name": "911 GT3 RS",
       "generation": "992-2",
-      "years": "unconfirmed for 992.2",
+      "years": "not announced as of 2026-10",
       "yearsStart": null,
       "yearsEnd": null,
-      "engine": "UNCONFIRMED for the 992.2 generation — no official specification published by Porsche. (Outgoing 992.1 GT3 RS: 3,996 cc 4.0 L naturally aspirated flat-six, 9,000 rpm redline.)",
-      "power": "UNCONFIRMED for the 992.2 generation — Porsche has published no figures. (Outgoing 992.1 GT3 RS: 386 kW / 525 PS / 518 hp at 8,500 rpm.)",
+      "engine": null,
+      "power": null,
       "powerPs": null,
       "powerKw": null,
       "torque": null,
@@ -1756,7 +1756,7 @@
       "bodyStyles": [
         "coupe"
       ],
-      "description": "STATUS: UNCONFIRMED — no 992.2 911 GT3 RS has been announced by Porsche as of 1 October 2026. The roster entry is retained as a placeholder and deliberately carries no 992.2 specifications. What is on record: prototypes of a 992.2-phase GT3 RS have been photographed testing at the Nürburgring since mid-2025, most recently in September 2026, with a revised front bumper, canards, a wider diffuser and a three-element active rear wing retaining DRS. Spy photography and soundtrack recordings have led outlets to conclude forced induction is likely, with power estimates from 650 hp upward, but Porsche GT boss Andreas Preuninger has only said a turbocharged or electrified future GT3 is possible. Reveal dates reported for August 2026 did not materialise. The current on-sale car remains the 992.1 GT3 RS.",
+      "description": "PLACEHOLDER — NO SUCH CAR HAS BEEN ANNOUNCED. No 992.2 911 GT3 RS exists as an announced production model as of 1 October 2026; only camouflaged prototypes have been reported. The roster entry is retained (roster ids are stable) but every specification field is null, so the specification plate renders a dash plus the note that explains it and the site cannot present this car with real numbers. What is on record: prototypes of a 992.2-phase GT3 RS have been photographed testing at the Nürburgring since mid-2025, most recently in September 2026, with a revised front bumper, canards, a wider diffuser and a three-element active rear wing retaining DRS. Spy photography and soundtrack recordings have led outlets to conclude forced induction is likely, with power estimates from 650 hp upward, but Porsche has only ever said that a turbocharged or electrified future GT3 is possible. Reveal dates reported for August 2026 did not materialise, and the current on-sale car remains the 992.1 GT3 RS (386 kW / 525 PS / 518 hp at 8,500 rpm) — that figure belongs to the 992.1 and is deliberately not repeated in this record. If and when Porsche announces the car, this entry becomes a normal variant; until then it is a hole in the lineup, not a car.",
       "special": false,
       "production": null,
       "heroImage": {
@@ -1874,7 +1874,10 @@
       "missing": [
         "No 992.2 911 GT3 RS has been officially announced or revealed as of 2026-10-01 — only camouflaged prototypes have been reported (latest: Nürburgring spy shots, 23/09/2026)",
         "992.2 GT3 RS engine, displacement, aspiration, power, torque, transmission, acceleration, top speed, weight and production all unverified",
-        "Porsche has not published an official reveal date or model-year designation for a 992.2 GT3 RS"
+        "Porsche has not published an official reveal date or model-year designation for a 992.2 GT3 RS",
+        "Decision (2026-10-03): the variant is KEPT rather than deleted, because roster ids are stable and deleting it would break any inbound link to /911/992-2/gt3-rs; the compromise is that engine, power, torque, acceleration, top speed, weight, drivetrain, transmission and production are all null and `years` reads 'not announced as of 2026-10', so no spec figure can be rendered as fact",
+        "The 992.1 GT3 RS figures that used to sit in this record's engine and power strings (3,996 cc, 525 PS / 518 hp) have been removed so the placeholder cannot display another car's numbers; they remain on 992-1/gt3-rs, where they belong",
+        "Media: data/images.json keys `992-2/gt3-rs` to photographs of the 992.1 GT3 RS, so this placeholder currently shows a real but wrong-generation car in its hero image and gallery. ASSET-IMAGES should blank or re-point that entry until a 992.2 car exists"
       ]
     },
     {
@@ -2657,7 +2660,7 @@
       "url": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-9922-b668f8a336b54954b04fa0dade507300?embed=1",
       "license": "CC Attribution",
       "author": "BMW'S Lost Proxy",
-      "retrieved": "2026-10-02",
+      "retrieved": "2026-10-03",
       "sourceId": "b668f8a336b54954b04fa0dade507300",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2704,6 +2707,9 @@
     "Official Porsche DIN unladen weights were not found for the 992.2 Carrera Cabriolet, Carrera S Cabriolet, Carrera 4S (Coupé/Cabriolet) or Targa 4S; US curb weights are recorded where available",
     "0–100 km/h figure for the 992.2 Targa 4S differs between sources (porsche.com International 3.5 s with Sport Chrono vs Wikipedia 3.3 s)",
     "Porsche has not published official Nürburgring Nordschleife lap times for the 992.2 GT3, GT3 Touring or GT3 S/C",
-    "Porsche Excellence magazine issue 324 could not be retrieved from this environment; no figures in this file depend on it"
+    "Porsche Excellence magazine issue 324 could not be retrieved from this environment; no figures in this file depend on it",
+    "992.2 GT3 RS (roster id retained): no 992.2 911 GT3 RS has been announced as of 2026-10-03 — only camouflaged prototypes are reported (latest: Nürburgring spy shots, 23/09/2026). The variant is deliberately kept with every specification null and the note 'not announced as of 2026-10' in its year field; see the gt3-rs variant's missing[] notes",
+    "No 992.2-generation 911 RSR has been announced: newsroom.porsche.com carries no 992.2 RSR release (searched 2026-10-03) and the newest RSR material there is the 991-generation car's 2019 retrospective, so there is nothing to model",
+    "911 Challenge (announced 26/08/2026) is a customer-motorsport car that combines 911 GT3 DNA with a racing engine for the 911 Cup series — a race car, not a road-legal variant, and deliberately not modelled here"
   ]
 }

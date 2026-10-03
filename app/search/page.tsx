@@ -55,13 +55,13 @@ export default async function SearchPage({
   const query = filters.q.trim();
 
   return (
-    <div className="px-[--gutter] pt-[calc(var(--nav-h,64px)+var(--space-12))] pb-[--space-24]">
-      <div className="mx-auto max-w-[--maxw]">
-        <header className="mb-[--space-8] max-w-[--maxw-prose]">
-          <p className="label mb-[--space-2]">
+    <div className="px-(--gutter) pt-[calc(var(--nav-h,64px)+var(--space-12))] pb-(--space-24)">
+      <div className="mx-auto max-w-(--maxw)">
+        <header className="mb-(--space-8) max-w-(--maxw-prose)">
+          <p className="label mb-(--space-2)">
             {VARIANT_COUNT} variants · {GENERATION_INDEX.length} generations
           </p>
-          <h1 className="text-display-2 mb-[--space-4]">
+          <h1 className="text-display-2 mb-(--space-4)">
             {query ? (
               <>
                 Results for <span className="text-guards-text">“{query}”</span>
@@ -79,7 +79,7 @@ export default async function SearchPage({
           </p>
         </header>
 
-        <form action="/search" method="get" role="search" className="mb-[--space-8] flex flex-wrap gap-[--space-3]">
+        <form action="/search" method="get" role="search" className="mb-(--space-8) flex flex-wrap gap-(--space-3)">
           <label htmlFor="q" className="sr-only">
             Search 911 variants
           </label>
@@ -89,35 +89,35 @@ export default async function SearchPage({
             type="search"
             defaultValue={filters.q}
             placeholder="gt3 rs, 996 turbo, air-cooled targa, 1974…"
-            className="min-w-[16rem] flex-1 rounded-[--radius-sm] border border-ink-4 bg-ink-2 px-[--space-4] py-[--space-3] font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
+            className="min-w-[16rem] flex-1 rounded-(--radius-sm) border border-ink-4 bg-ink-2 px-(--space-4) py-(--space-3) font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
           />
           <input type="hidden" name="sort" value={filters.sort} />
           <button
             type="submit"
-            className="rounded-[--radius-sm] bg-guards px-[--space-5] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-ink transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="rounded-(--radius-sm) bg-guards px-(--space-5) py-(--space-3) font-mono text-mono-xs uppercase tracking-(--tracking-label) text-ink transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Search
           </button>
           <PaletteLauncher
             seed={filters.q}
             label="Quick search"
-            className="px-[--space-5] py-[--space-3]"
+            className="px-(--space-5) py-(--space-3)"
           />
         </form>
 
-        <div className="grid gap-[--space-8] lg:grid-cols-[17rem_1fr]">
+        <div className="grid gap-(--space-8) lg:grid-cols-[17rem_1fr]">
           <div className="lg:sticky lg:top-[calc(var(--nav-h,64px)+var(--space-6))] lg:self-start">
             <Facets filters={filters} />
             <Link
               href={filtersHref("/variants", filters)}
-              className="mt-[--space-6] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="mt-(--space-6) inline-block font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               Open in the filterable grid →
             </Link>
           </div>
 
           <div>
-            <p className="mb-[--space-4] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500">
+            <p className="mb-(--space-4) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
               {results.length} result{results.length === 1 ? "" : "s"}
               {results.length > PAGE_SIZE && (
                 <>
@@ -128,22 +128,22 @@ export default async function SearchPage({
             </p>
 
             {visible.length === 0 ? (
-              <div className="border border-ink-4 bg-ink-2 p-[--space-12] text-center">
+              <div className="border border-ink-4 bg-ink-2 p-(--space-12) text-center">
                 <p className="font-display text-2xl uppercase">Nothing matches</p>
-                <p className="mx-auto mt-[--space-3] max-w-[--maxw-prose] text-metal-500">
+                <p className="mx-auto mt-(--space-3) max-w-(--maxw-prose) text-metal-500">
                   No variant satisfies every filter at once. Try removing a
                   facet or widening the year range to{" "}
                   {YEAR_MIN}–{YEAR_MAX}.
                 </p>
                 <Link
                   href="/search"
-                  className="mt-[--space-6] inline-block rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="mt-(--space-6) inline-block rounded-(--radius-sm) border border-guards px-(--space-4) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-label) text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Reset the search
                 </Link>
               </div>
             ) : (
-              <ul className="flex flex-col gap-[--space-2]">
+              <ul className="flex flex-col gap-(--space-2)">
                 {visible.map((variant) => (
                   <li key={variant.key}>
                     <ResultRow variant={variant} />
@@ -209,11 +209,11 @@ function Facets({ filters }: { filters: VariantFilters }) {
   ];
 
   return (
-    <div className="flex flex-col gap-[--space-6]">
+    <div className="flex flex-col gap-(--space-6)">
       {groups.map((entry) => (
         <fieldset key={entry.group}>
-          <legend className="label mb-[--space-2]">{entry.legend}</legend>
-          <ul className="flex flex-wrap gap-[--space-2]">
+          <legend className="label mb-(--space-2)">{entry.legend}</legend>
+          <ul className="flex flex-wrap gap-(--space-2)">
             {entry.options.map((option) => {
               const on = entry.selected.includes(option.id);
               const next = toggleFilterValue(filters, entry.group, option.id);
@@ -222,7 +222,7 @@ function Facets({ filters }: { filters: VariantFilters }) {
                   <Link
                     href={filtersHref("/search", next)}
                     aria-pressed={on}
-                    className={`inline-block rounded-[--radius-sm] border px-[--space-2] py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
+                    className={`inline-block rounded-(--radius-sm) border px-(--space-2) py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
                       on
                         ? "border-guards bg-guards/15 text-metal-100"
                         : "border-ink-4 text-metal-500 hover:border-metal-700 hover:text-metal-300"
@@ -239,8 +239,8 @@ function Facets({ filters }: { filters: VariantFilters }) {
       ))}
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Years</legend>
-        <ul className="flex flex-wrap gap-[--space-2] font-mono text-mono-xs text-metal-500">
+        <legend className="label mb-(--space-2)">Years</legend>
+        <ul className="flex flex-wrap gap-(--space-2) font-mono text-mono-xs text-metal-500">
           <li>
             {filters.yearFrom} – {filters.yearTo}
           </li>
@@ -267,13 +267,13 @@ function Facets({ filters }: { filters: VariantFilters }) {
 
 function ResultRow({ variant }: { variant: IndexedVariant }) {
   return (
-    <article className="relative border border-ink-4 bg-ink-2 p-[--space-4] transition-colors hover:border-guards">
+    <article className="relative border border-ink-4 bg-ink-2 p-(--space-4) transition-colors hover:border-guards">
       <span
         aria-hidden="true"
         className="absolute inset-y-0 left-0 w-0.5"
         style={{ backgroundColor: variant.genAccent }}
       />
-      <div className="flex flex-wrap items-baseline gap-x-[--space-3] gap-y-1">
+      <div className="flex flex-wrap items-baseline gap-x-(--space-3) gap-y-1">
         <h2 className="font-display text-xl leading-tight">
           <Link
             href={variant.href}
@@ -282,48 +282,48 @@ function ResultRow({ variant }: { variant: IndexedVariant }) {
             {variant.name}
           </Link>
         </h2>
-        <p className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500">
+        <p className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
           {variant.genCode} · {variant.years} · {variant.driveLabel}
           {variant.special ? " · limited" : ""}
         </p>
       </div>
-      <p className="mt-[--space-2] max-w-[--maxw-prose] text-mono-xs leading-relaxed text-metal-300">
+      <p className="mt-(--space-2) max-w-(--maxw-prose) text-mono-xs leading-relaxed text-metal-300">
         {variant.engine || "Engine data pending."}
       </p>
-      <dl className="mt-[--space-3] flex flex-wrap gap-x-[--space-6] gap-y-1 font-mono text-mono-xs">
-        <div className="flex gap-[--space-2]">
+      <dl className="mt-(--space-3) flex flex-wrap gap-x-(--space-6) gap-y-1 font-mono text-mono-xs">
+        <div className="flex gap-(--space-2)">
           <dt className="text-metal-700">Power</dt>
           <dd className="text-metal-100">
             {variant.powerPs ? `${variant.powerPs} PS` : variant.power || "—"}
           </dd>
         </div>
-        <div className="flex gap-[--space-2]">
+        <div className="flex gap-(--space-2)">
           <dt className="text-metal-700">0–100</dt>
           <dd className="text-metal-100">
             {variant.accel ? `${variant.accel} s` : "—"}
           </dd>
         </div>
-        <div className="flex gap-[--space-2]">
+        <div className="flex gap-(--space-2)">
           <dt className="text-metal-700">Top</dt>
           <dd className="text-metal-100">
             {variant.topSpeed ? `${variant.topSpeed} km/h` : "—"}
           </dd>
         </div>
-        <div className="flex gap-[--space-2]">
+        <div className="flex gap-(--space-2)">
           <dt className="text-metal-700">Body</dt>
           <dd className="text-metal-100">{variant.bodyLabel || "—"}</dd>
         </div>
       </dl>
-      <p className="mt-[--space-3] flex gap-[--space-4]">
+      <p className="mt-(--space-3) flex gap-(--space-4)">
         <Link
           href={`/compare?a=${variant.key}`}
-          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Compare this →
         </Link>
         <Link
           href={`/variants?gen=${variant.generation}`}
-          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           All {variant.genCode} variants →
         </Link>
@@ -351,7 +351,7 @@ function SearchPagination({
   for (let i = from; i <= to; i += 1) numbers.push(i);
 
   return (
-    <nav aria-label="Search results pages" className="mt-[--space-12] flex items-center gap-[--space-2]">
+    <nav aria-label="Search results pages" className="mt-(--space-12) flex items-center gap-(--space-2)">
       <PageLink href={link(Math.max(1, page - 1))} disabled={page <= 1} label="Previous page">
         ←
       </PageLink>
@@ -367,7 +367,7 @@ function SearchPagination({
       >
         →
       </PageLink>
-      <p className="ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700">
+      <p className="ml-auto font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700">
         {PAGE_SIZE} per page · {total} total
       </p>
     </nav>
@@ -387,7 +387,7 @@ function PageLink({
   current?: boolean;
   disabled?: boolean;
 }) {
-  const className = `inline-flex min-w-10 items-center justify-center rounded-[--radius-sm] border px-[--space-2] py-[--space-1] font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
+  const className = `inline-flex min-w-10 items-center justify-center rounded-(--radius-sm) border px-(--space-2) py-(--space-1) font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
     current
       ? "border-guards bg-guards/15 text-metal-100"
       : disabled

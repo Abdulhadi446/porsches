@@ -36,20 +36,20 @@
     }
   ],
   "heroImage": {
-    "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+    "src": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
     "alt": "Last Air-Cooled (993) — hero photograph",
-    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
-    "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgABABoJZgCdH8AFW1xyXRAAP7b5/ZyrND1h/EtnVYX7Mg/jpuyjFri7/cFzjb+610vzKZB0cz8giTJbhtAivyAApe70gAAAA==",
+    "creditId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
     "width": 1920,
-    "height": 1250
+    "height": 996
   },
   "timelineImage": {
-    "src": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
+    "src": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
     "alt": "Last Air-Cooled (993) — wide view for the timeline",
-    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkABABoJbACdABWBNAA/hnGQjWTu9Tv/d5elBsw4/R2V/6A6n4rvCN3sOYgjMiuTj+BSUGvbKFVh0chRTelmWav9kSrndBPQUUyomuz5gAA",
-    "creditId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJYwC7AYtpm+oqL0AAP5IvveapjrU2qjhbvSZkQMiLt7TVbcv66CjGZDgspjAF7VhMOaCW4jnpCfg4eABmHEAAAA=",
+    "creditId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
     "width": 1920,
-    "height": 1122
+    "height": 1140
   },
   "model3d": {
     "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
@@ -164,7 +164,7 @@
           "url": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
           "license": "CC Attribution",
           "author": "Ai 3D Designs",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "b711966542e143e2829a21e0230fa30e",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -344,7 +344,7 @@
         {
           "src": "/images/carrera-4/img-1996-porsche-911-carrera-993-e3c87b93-1920.avif",
           "alt": "911 Carrera 4 — photo 2",
-          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkABABoJbACdAEQPFl3rOkIAP5Jy2FtGU40IOQjXZ2VOwkwe8hunLdL1J8d6gtfak9bEVRQPVwqq0CS7Ofow7LZxN/pvH4pr8jxrZYYwAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJbACdAEQPFl3rOkIAP5Jy2CpJ9jQ1bk8vM1MknBwzLM+tDhozcQzrKEXETX5yZljNFOMeVhdD9q3bEdC1eGW5PlEmyDTZdTAAA==",
           "creditId": "img-1996-porsche-911-carrera-993-e3c87b93",
           "width": 1920,
           "height": 1084
@@ -472,7 +472,7 @@
           "url": "https://sketchfab.com/3d-models/1996-porsche-993-carrera-4s-5d90416b06854a369e566d3fa286c692?embed=1",
           "license": "CC Attribution",
           "author": "_shobh19",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "5d90416b06854a369e566d3fa286c692",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -521,7 +521,7 @@
         {
           "src": "/images/carrera-4s/img-993-carrera-4s-816cc204-640.avif",
           "alt": "911 Carrera 4S — photo 4",
-          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsABABoJQBdj+ABymdBjYAA+gq5E8XZAPCjYOIRTLeHxprdYM4R0aMFa8c9tOJvAcm/k5lP4iky+JqyTDAsk/gkAAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsABABoJQBdj+ABymdBjYAA+gq2xH7JLOLpr4OlyUGDtRxoE6Iubvwl6ogvvdTnJdn/o8URL9krh5L2+oTzGm4KoAAA",
           "creditId": "img-993-carrera-4s-816cc204",
           "width": 640,
           "height": 427
@@ -529,7 +529,7 @@
         {
           "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-8461268066-6e2682d3-1280.avif",
           "alt": "911 Carrera 4S — photo 5",
-          "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwABABoJZwAAxZBNgf8sgAA/tb0f4cl1ddqKU2aCjCW8Pg1izwF36F8AWT4MaImRGGKGeqlNepQPAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAwABABoJZwAAvcfm34UwAD+1vR/fpr5xHiQYMe3zToOecb1Z5K8tS+6EO1rR6IIVQvGe3GBeNVgB4AAAA==",
           "creditId": "img-porsche-911-993-carrera-4s-8461268066-6e2682d3",
           "width": 1280,
           "height": 960
@@ -537,7 +537,7 @@
         {
           "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-8544194099-71c0ca3d-1280.avif",
           "alt": "911 Carrera 4S — photo 6",
-          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAwABABoJaQAAgfktxjAAAD+ROOu9+WASIB9ABxlwx3sRWG8MSJfhBjIUA3eDPQX7NhpqWv4bCeHjiSo2j3ZAAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAwABABoJZwAAewKZ9oAAP5E4674DJrum4xaMSwGAma8rflGREMD0oDDvm4eix9E6NP2ePcIFyR/VM5K2kAAAAA=",
           "creditId": "img-porsche-911-993-carrera-4s-8544194099-71c0ca3d",
           "width": 1280,
           "height": 960
@@ -545,7 +545,7 @@
         {
           "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-6889035035-7e404657-1280.avif",
           "alt": "911 Carrera 4S — photo 7",
-          "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwABABoJZwAAq0Jq7INHoAAAP7KXt1YAsvUc1fEP6/WvRsZZsAMz9YRwKjV3oO7fCu51xM8427wA8Ep9IExigf40gYoh//Ou0BLWRCtAAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJZwAAuo3xlLeIAD+yl7fGX8+rXQJ0cfcC/G8Cn2A6njt+vHh0/Yf3aTrbrB78oYM9b7yBL/8eQ+V5g1xjclV8W21iMgUAAA=",
           "creditId": "img-porsche-911-993-carrera-4s-6889035035-7e404657",
           "width": 1280,
           "height": 960
@@ -553,7 +553,7 @@
         {
           "src": "/images/carrera-4s/img-porsche-911-993-carrera-4s-12413942584-0226425b-1280.avif",
           "alt": "911 Carrera 4S — photo 8",
-          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAwABABoJZQAAeaK9zFAAP7O88udQ/kUyGQZxajXYhYUzTXX+6PwDNFJqwqqyMKydUJjMt5ZwBhXsanOXGiKa8p9fSqWQ1M5eAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwABABoJZQAAxbBdBb1L9UAAP7O88udIla2PbQUjzUDYUzTXhdSBEknf8yCCOkzFDjoXWQ91AnrylmtEx7f0yJxOyRPKcsV+6wA",
           "creditId": "img-porsche-911-993-carrera-4s-12413942584-0226425b",
           "width": 1280,
           "height": 960
@@ -634,7 +634,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
           "license": "CC Attribution",
           "author": "Mona x Supercars",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -747,7 +747,7 @@
       "heroImage": {
         "src": "/images/targa/img-porsche-993-targa-mainz-348d172a-640.avif",
         "alt": "911 Targa",
-        "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsABABoJYgAAttQ7/appQAA/lv7ksmITkpqteknpYbQ6xz28flXOCe7/Uu97IvcQs0hZFfK4n+EJZ2bWqwt3J8pJmyHLYAzUytz/CSAjihougAAAA==",
+        "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsABABoJYgCdAYt9wS3rD+vjngA/lv7ksmITko45v9JxWd3Xqixe9fhtzDL+U+Szui1VLuzo1gqxXiFGZLSdMQc0EzEvTjmhgxSOvNWeBRtvRAEmUgAAAA=",
         "creditId": "img-porsche-993-targa-mainz-348d172a",
         "width": 640,
         "height": 426
@@ -826,7 +826,7 @@
         {
           "src": "/images/targa/img-porsche-993-targa-bordeaux-vl-cropped-e594fb27-1280.avif",
           "alt": "911 Targa — photo 4",
-          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAkABABoJYgCw7Yt921N0LAbyAD+bOw3vBa10azZ8aGgMCYjOe7yam63t58ZuJRt8yrEKK/ObWnIO60mG1RR/blVXspd5fIaWulJqUFAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAkABABoJYgCw7YuHuVR6fwjAAD+bOw3vBa2z5V29O45+L5XaMT5aYLEgHB3STB4xTF/ui+EsMIkQhXcQn0X8BtpnXKMdEuss7wA58lAAA==",
           "creditId": "img-porsche-993-targa-bordeaux-vl-cropped-e594fb27",
           "width": 1280,
           "height": 693
@@ -958,7 +958,7 @@
         {
           "src": "/images/cabriolet/img-porsche-911-993-cabriolet-cabriolet-8482104516-02a54dd4-1280.avif",
           "alt": "911 Cabriolet — photo 3",
-          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwABABoJYwCsAERHj4msfwAAP7VEA5oZAiuzs4VJuOhEZBL3NBmV/eTj7Lx5Vv5VGOOEOXO8rOmdAAF+vQBf8vagAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAwABABoJYwCsAEO9W6vUoTQAP7VEA7o5spHEx6S5DMDMOXJcaM51k6rqAG1FET3gJf/29nFzNgoygAUPE+AAAA=",
           "creditId": "img-porsche-911-993-cabriolet-cabriolet-8482104516-02a54dd4",
           "width": 1280,
           "height": 960
@@ -966,7 +966,7 @@
         {
           "src": "/images/cabriolet/img-bmw-isetta-porsche-911-993-cabriolet-cabriolet-8482104464-eab2c2be-1280.avif",
           "alt": "911 Cabriolet — photo 4",
-          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJZQC7AENfLQ6gAD7mf65Wd7Z3jweT3ivBiv2tgItRHd/4GNWENt/2YMW/MKhOksQ64oHj9rF9KwR5PAsjz735CvegFVOAAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJZQC7AEPAHDgTgAA9hz65Wd7KS/KbjhQZ2vresuyOcnTLyYG8AyNOIZv/Nw8XbU0rzietStdWS70q66BTIc8+zAAAA==",
           "creditId": "img-bmw-isetta-porsche-911-993-cabriolet-cabriolet-8482104464-eab2c2be",
           "width": 1280,
           "height": 960
@@ -1086,7 +1086,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-993-turbo-low-poly-72f2943569434e4e93ab63f403c6aa1c?embed=1",
           "license": "CC Attribution",
           "author": "Nieve5677",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1619,7 +1619,7 @@
         {
           "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
           "alt": "911 Carrera RS Clubsport — stand-in photo (same 993 family, sibling trim)",
-          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkABABoJQBOgMV47MYVeAEoAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA03T/ytsM3GE7/KNgAA=",
           "creditId": "img-porsche-911-993-gt2-64083-90827c43",
           "width": 1920,
           "height": 1084
@@ -1741,7 +1741,7 @@
         {
           "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
           "alt": "911 GT2 — photo 2",
-          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkABABoJQBOgMV47MYVeAEoAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA03T/ytsM3GE7/KNgAA=",
           "creditId": "img-porsche-911-993-gt2-64083-90827c43",
           "width": 1920,
           "height": 1084
@@ -1765,7 +1765,7 @@
         {
           "src": "/images/gt2/img-1995-porsche-911-993-gt2-62741-d0a5d399-1920.avif",
           "alt": "911 GT2 — photo 5",
-          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwCdAEHulqAAPa4gWjTPN3in8SXSrP4tKcSJU7bISLRSeDWsW6LsDSU1y0uvD58Vb0t/+h+BNBfSaoe5pUudE7gAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJYwCdAEHulqAAPa4gWjTPN3in8SXSrP4tKcSJU7bISLRSeDWsW6LsDSU1y0uvD58Vb0t/+h+BNBfSaoe5pUvh5tQAA==",
           "creditId": "img-1995-porsche-911-993-gt2-62741-d0a5d399",
           "width": 1920,
           "height": 1047
@@ -1934,7 +1934,7 @@
         {
           "src": "/images/club-sport/img-porsche-911-993-gt2-64083-90827c43-1920.avif",
           "alt": "911 GT2 Evo — stand-in photo (same 993 family, sibling trim)",
-          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkABABoJQBOgMV47MYVd/1gAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA04/pcxqNh4ZeiRdNkAAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkABABoJQBOgMV47MYVeAEoAP4lzueh/nlCyyWRql874nmtjjhz73Jv12lQtDKuwKmS0LuB9hqS7fAS7pVHA03T/ytsM3GE7/KNgAA=",
           "creditId": "img-porsche-911-993-gt2-64083-90827c43",
           "width": 1920,
           "height": 1084
@@ -2204,32 +2204,165 @@
           "height": 1165
         }
       ]
+    },
+    {
+      "id": "gt1",
+      "name": "Porsche 911 GT1",
+      "generation": "993",
+      "years": "1996–1999",
+      "yearsStart": 1996,
+      "yearsEnd": 1999,
+      "engine": "3,164 cc (3.2 L) water-cooled twin-turbo flat-six (Porsche M96/80), longitudinally mid-mounted",
+      "power": "400 kW (544 PS; 536 hp) at 7,000 rpm (road version; the GT1 race engine is quoted at 608 PS / 447 kW / 600 hp)",
+      "powerPs": 544,
+      "powerKw": 400,
+      "torque": "600 Nm (443 lb-ft) at 4,250 rpm",
+      "acceleration": "3.9 s (0–100 km/h, road version; Auto, Motor und Sport test, 1997)",
+      "topSpeed": "308 km/h (191 mph) (road version; the race car reached 330 km/h / 205 mph on the Mulsanne Straight in 1996 practice)",
+      "weight": "1,150 kg (2,535 lb)",
+      "drivetrain": "Rear-wheel drive (rear mid-engine layout)",
+      "transmission": "6-speed manual",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "When the FIA GT1 class demanded a road-going homologation car, Porsche answered with the 911 GT1 Straßenversion — and in doing so built one of the least 911-like 911s ever: a mid-engined car whose front chassis derives from the 993 and whose rear subframe came from the 962C Group C prototype, sharing only the headlamps with the production 993. Two fully road-legal prototypes were built first (one homologated with the German Federal Ministry of Transport in early 1996, the other now with a collector in Bahrain), then a production run of roughly twenty 'GT1 Straßenversion' coupés in 1997 with 996-style headlamps, most in Arctic Silver or Fern White, plus one further road car — the GT1-98 Straßenversion — in 1998. The road engine is the race engine detuned for emissions: 544 PS (400 kW; 536 hp) and 600 Nm, 1,150 kg, six-speed manual, 0–100 km/h in 3.9 s and 308 km/h. Twenty-five road cars were needed to satisfy the regulation in total. The GT1's descendants took overall victory at Le Mans in 1998 — Porsche's sixteenth win and, at the time, more than any manufacturer. It belongs in a 911 showcase because Porsche built it under the 911 name and in the 993 GT2 lineage, and because the alternative — omitting the most famous GT1 of all — would leave a conspicuous hole; it is filed here with the caveat that its own Wikipedia page says the car is not generally counted as a true 911.",
+      "special": true,
+      "production": "25 road cars in total for homologation: 2 road-legal prototypes (1995–96) + ~20 GT1 Straßenversion coupés (1997) + 1 GT1-98 Straßenversion (1998)",
+      "sources": [
+        {
+          "title": "Porsche 911 GT1 — Wikipedia (street-legal GT1 Straßenversion specification, 1996–1999 run, homologation history, Auto, Motor und Sport road test)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_GT1"
+        },
+        {
+          "title": "Porsche 911 — Wikipedia (911 GT1 section: 25 road-going cars, 608 PS race engine, 544 PS road version, 330 km/h, the 'not a real 911' caveat)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911"
+        }
+      ],
+      "missing": [
+        "Porsche has published no press release, model page or specification sheet for the GT1; every figure here comes from Wikipedia's dedicated GT1 article and the main 911 article. The Porsche US specification page those articles cite for the 1998 car is a dead link, preserved only at https://web.archive.org/web/20120916230303/http://www.porsche.com/usa/eventsandracing/motorsport/philosophy/history/racingcars/1998-911gt198/",
+        "Scope judgement: the GT1 shares only its headlamps with the 993 — its front chassis derives from the 993 GT2 and the rear subframe and engine derive from the 962C, and Wikipedia notes the car 'is not considered to be real 911'. It is filed under 993 as a homologation special of the 993 GT2 lineage, not as a 911 road car, and that caveat is part of the record",
+        "Production split is approximate (2 prototypes + ~20 in 1997 + 1 in 1998, 25 in total). Porsche published no per-year run and no VIN list; the two prototypes were never given to customers",
+        "The 911 GT1 Evo (1997, 996-style headlamps and revised aerodynamics) and the 911 GT1-98 (1998, the Le Mans winner, of which a single road-legal Straßenversion was built) are deliberately not modelled as separate variants: both are racing cars built for homologation, and the chapter already carries gt2-evo for the 993 GT2 Evo that was itself run as the first GT1-homologated car",
+        "Race-only figures (608 PS / 950–1,050 kg race weights, 3.3 s to 97 km/h) are quoted for context only; no separate race variant is claimed here"
+      ],
+      "heroImage": {
+        "src": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
+        "alt": "Porsche 911 GT1",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgABABoJZgCdH8AFW1xyXRAAP7b5/ZyrND1h/EtnVYX7Mg/jpuyjFri7/cFzjb+610vzKZB0cz8giTJbhtAivyAApe70gAAAA==",
+        "creditId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
+        "width": 1920,
+        "height": 996
+      },
+      "gallery": [
+        {
+          "src": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJYwC7AYtpm+oqL0AAP5IvveapjrU2qjhbvSZkQMiLt7TVbcv66CjGZDgspjAF7VhMOaCW4jnpCfg4eABmHEAAAA=",
+          "creditId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
+          "width": 1920,
+          "height": 1140
+        },
+        {
+          "src": "/images/gt1/img-porsche-993-gt1-scd-24-b8922581-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAoABABoJZQAAuMXtLuAAP7p+GL8y20ROUN91C9BZXrwaT7dBCsFrrTfUuSDwrZZ7w+WXdsnv/VgQ7wQgaHAAAA=",
+          "creditId": "img-porsche-993-gt1-scd-24-b8922581",
+          "width": 1920,
+          "height": 1192
+        },
+        {
+          "src": "/images/gt1/img-rohr-porsche-1996-993-911-gt1-customer-car-6306394736-a9cf43da-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAsABABoJaACdAEXuZf7yyAA/seCMKNY0f2uGEDcCG+EKCXIVcXNDfnPaPYeXLeeuIPrQX+2PRQMFKaVybRkoL4RwV87kQ1GhsXc4JgE+hn0pksbgAAA",
+          "creditId": "img-rohr-porsche-1996-993-911-gt1-customer-car-6306394736-a9cf43da",
+          "width": 1920,
+          "height": 1285
+        },
+        {
+          "src": "/images/gt1/img-porsche-911-gt1-1996-993-style-exhaust-subframe-air-jack-i-040bb2b4-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsABABoJbACdADw3OMjF5AAAP3jO+HGJYlHbOVsvIgkL5JpBGQeOfodCBejxxvKjVfMDps3jgcnwW9HikgnqFfmTD5MkIP9yEez1hfKTldgAAA=",
+          "creditId": "img-porsche-911-gt1-1996-993-style-exhaust-subframe-air-jack-i-040bb2b4",
+          "width": 1920,
+          "height": 1285
+        },
+        {
+          "src": "/images/gt1/img-rohr-1996-porsche-993-911-gt1-passenger-seat-cockpit-63063-83b15449-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQAAsABABoJbAC7H8AGALBEMnTugAA/vELpWHQ7lFEvBP8x6T8b7FZ3FO9R8/ZwftGKYjYHqbnp3ZKz3UNytRwRTLZK3S6gAA=",
+          "creditId": "img-rohr-1996-porsche-993-911-gt1-passenger-seat-cockpit-63063-83b15449",
+          "width": 1920,
+          "height": 1285
+        },
+        {
+          "src": "/images/gt1/img-rohr-1996-porsche-911-gt1-993-diffuser-engine-vent-breathe-47be0947-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsABABoJbACdADcqvlc6biAAPfftAnnhqyrCfT5N2WToixTQc0ov+vveryI6XgfPeQH+kXjLo66ABx1MnXWQMd+WVWN4yil7ViwfLTMYlzwT07sAA==",
+          "creditId": "img-rohr-1996-porsche-911-gt1-993-diffuser-engine-vent-breathe-47be0947",
+          "width": 1920,
+          "height": 1285
+        },
+        {
+          "src": "/images/gt1/img-rohr-1996-993-911-gt1-passenger-seat-drivers-seat-cockpit-e6218dec-1920.avif",
+          "alt": "Porsche 911 GT1 — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAsABABoJbACdH8AGAmd4kvN1gD+fq+PJ9NZbpyDcnWjVmXYCA03TRWs+0U1aSJCJW3gr865DDWmeKcdvXqzP16vgEqmpIC4ZV7ZeRwAAA==",
+          "creditId": "img-rohr-1996-993-911-gt1-passenger-seat-drivers-seat-cockpit-e6218dec",
+          "width": 1920,
+          "height": 1285
+        }
+      ],
+      "credits": [
+        {
+          "assetId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
+          "license": "CC BY-SA 2.0",
+          "author": "Bill Abbott",
+          "retrieved": "2026-10-03",
+          "sourceId": "File:Rohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
+          "localPath": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2794×1450px (375 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_GT1_993_SCD_24.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "MrWalkr",
+          "retrieved": "2026-10-03",
+          "sourceId": "File:Porsche_911_GT1_993_SCD_24.jpg",
+          "localPath": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 9616×5711px (6446 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ]
     }
   ],
   "credits": [
     {
-      "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
+      "assetId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
-      "license": "CC BY-SA 4.0",
-      "author": "Calreyn88",
-      "retrieved": "2026-10-02",
-      "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
-      "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "url": "https://commons.wikimedia.org/wiki/File%3ARohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
+      "license": "CC BY-SA 2.0",
+      "author": "Bill Abbott",
+      "retrieved": "2026-10-03",
+      "sourceId": "File:Rohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
+      "localPath": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2794×1450px (375 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
-      "assetId": "img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5",
+      "assetId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_GT1_993_SCD_24.jpg",
       "license": "CC BY-SA 4.0",
-      "author": "Calreyn88",
-      "retrieved": "2026-10-02",
-      "sourceId": "File:1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg",
-      "localPath": "/images/993/img-1994-porsche-911-993-carrera-cabriolet-auto-475ea0c5-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15054×8800px (11782 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "author": "MrWalkr",
+      "retrieved": "2026-10-03",
+      "sourceId": "File:Porsche_911_GT1_993_SCD_24.jpg",
+      "localPath": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 9616×5711px (6446 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
       "assetId": "model-993",
@@ -2238,7 +2371,7 @@
       "url": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
       "license": "CC Attribution",
       "author": "Ai 3D Designs",
-      "retrieved": "2026-10-02",
+      "retrieved": "2026-10-03",
       "sourceId": "b711966542e143e2829a21e0230fa30e",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2273,6 +2406,8 @@
   "missing": [
     "Total 993 production differs by source: 68,881 (Porsche Newsroom, 1993–1998), 68,029 (Wikipedia production table), 67,535 (Porsche one-millionth-911 press kit, 2017).",
     "Media fields (heroImage, timelineImage, model3d, videos) are intentionally empty pending ASSET-IMAGES / ASSET-3D / ASSET-VIDEO.",
-    "Variant roster had no 'carrera-s' id; 'carrera-s' and 'turbo-cabriolet' were appended as distinct variants per contract rule 5."
+    "Variant roster had no 'carrera-s' id; 'carrera-s' and 'turbo-cabriolet' were appended as distinct variants per contract rule 5.",
+    "911 GT1 Evo (1997) and 911 GT1-98 (1998) are deliberately out of scope as separate variants — both are GT1-homologation racing cars (the '98 took overall victory at the 1998 24 Hours of Le Mans), and the chapter models the road-legal GT1 (gt1) plus the 993 GT2 Evo that began the programme (gt2-evo)",
+    "The 911 GT1 is filed in this chapter although Porsche never badged it a 993: only its headlamps and front chassis come from the 993, the rest is 962C — see the gt1 variant's missing[] notes"
   ]
 }

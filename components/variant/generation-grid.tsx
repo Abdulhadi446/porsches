@@ -26,18 +26,18 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
 
   return (
     <>
-      <header className="relative isolate overflow-hidden border-b border-ink-4 px-[--gutter] pb-[--space-12] pt-[--space-24]">
+      <header className="relative isolate overflow-hidden border-b border-ink-4 px-(--gutter) pb-(--space-12) pt-(--space-24)">
         <p className="label">Unofficial showcase · 1963 → today</p>
-        <h1 className="text-display-2 mt-[--space-4] max-w-[16ch] text-metal-100">
+        <h1 className="text-display-2 mt-(--space-4) max-w-[16ch] text-metal-100">
           Nine generations, {totalVariants} variants
         </h1>
-        <p className="mt-[--space-6] max-w-[--maxw-prose] text-body-2 leading-relaxed text-metal-500">
+        <p className="mt-(--space-6) max-w-(--maxw-prose) text-body-2 leading-relaxed text-metal-500">
           Every catalogue entry has its own page: the specification plate the source
           actually published, the archive frames we were able to licence, the films
           worth watching, and the neighbours it is worth comparing against. Nothing here
           is invented — where a figure is not published, the page says so.
         </p>
-        <dl className="spec-grid mt-[--space-10] grid grid-cols-2 gap-x-[--space-8] gap-y-[--space-4] sm:grid-cols-4">
+        <dl className="spec-grid mt-(--space-10) grid grid-cols-2 gap-x-(--space-8) gap-y-(--space-4) sm:grid-cols-4">
           <div>
             <dt className="label">Generations</dt>
             <dd data-spec className="text-display-3 text-guards-text">
@@ -71,8 +71,8 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
         </dl>
       </header>
 
-      <div className="px-[--gutter] py-[--space-16]">
-        <ul className="mx-auto grid w-full max-w-[--maxw] grid-cols-1 gap-[--space-4] md:grid-cols-6">
+      <div className="px-(--gutter) py-(--space-16)">
+        <ul className="mx-auto grid w-full max-w-(--maxw) grid-cols-1 gap-(--space-4) md:grid-cols-6">
           {generations.map((generation, index) => {
             const image = getImage(
               generation.heroImage ?? generation.timelineImage,
@@ -106,7 +106,7 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
                         : "(min-width: 768px) 44vw, 100vw"
                     }
                     className={cx(
-                      "-z-10 object-cover transition-transform duration-[--dur-cinema] group-hover:scale-[1.05]",
+                      "-z-10 object-cover transition-transform duration-(--dur-cinema) group-hover:scale-[1.05]",
                       image.fallback ? "opacity-40 grayscale" : "opacity-70",
                     )}
                   />
@@ -121,18 +121,18 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
 
                   <p
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-x-[--space-4] top-[-0.15em] select-none font-display text-[clamp(3.5rem,9vw,7rem)] leading-[0.8] tracking-[--tracking-display] text-transparent opacity-70"
+                    className="pointer-events-none absolute inset-x-(--space-4) top-[-0.15em] select-none font-display text-[clamp(3.5rem,9vw,7rem)] leading-[0.8] tracking-(--tracking-display) text-transparent opacity-70"
                     style={{ WebkitTextStroke: `1px ${generation.accent}` }}
                   >
                     {generation.code}
                   </p>
 
-                  <span className="flex flex-col gap-[--space-2] p-[--space-5]">
+                  <span className="flex flex-col gap-(--space-2) p-(--space-5)">
                     <span className="label">
                       {String(generation.index).padStart(2, "0")} ·{" "}
                       {yearRange(generation.yearsStart, generation.yearsEnd)}
                     </span>
-                    <span className="font-display text-display-3 leading-none tracking-[--tracking-display] text-metal-100">
+                    <span className="font-display text-display-3 leading-none tracking-(--tracking-display) text-metal-100">
                       {generation.name}
                     </span>
                     {generation.tagline ? (
@@ -140,7 +140,7 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
                         {generation.tagline}
                       </span>
                     ) : null}
-                    <span className="mt-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700">
+                    <span className="mt-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700">
                       {totals[generation.id] ?? 0} variants ·{" "}
                       {videoCounts[generation.id] ?? 0} films
                     </span>

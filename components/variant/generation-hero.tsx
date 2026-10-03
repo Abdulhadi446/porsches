@@ -118,7 +118,7 @@ export function GenerationHero({
     <section
       ref={rootRef}
       aria-labelledby={`gen-${generationId}-heading`}
-      className="relative isolate flex min-h-[92svh] flex-col justify-end overflow-hidden bg-ink px-[--gutter] pb-[--space-12] pt-[--space-24]"
+      className="relative isolate flex min-h-[92svh] flex-col justify-end overflow-hidden bg-ink px-(--gutter) pb-(--space-12) pt-(--space-24)"
     >
       <div data-gen-media className="absolute inset-0 -z-30 will-change-transform">
         <SafeImage
@@ -153,22 +153,22 @@ export function GenerationHero({
       <p
         aria-hidden="true"
         data-gen-numerals
-        className="pointer-events-none absolute inset-x-[--gutter] top-[12%] select-none font-display text-[clamp(5rem,20vw,17rem)] leading-[0.8] tracking-[--tracking-display] text-transparent opacity-55"
+        className="pointer-events-none absolute inset-x-(--gutter) top-[12%] select-none font-display text-[clamp(5rem,20vw,17rem)] leading-[0.8] tracking-(--tracking-display) text-transparent opacity-55"
         style={{ WebkitTextStroke: `1px ${accent}` }}
       >
         {yearRange(yearsStart, yearsEnd)}
       </p>
 
-      <div className="relative z-content mx-auto w-full max-w-[--maxw]">
+      <div className="relative z-content mx-auto w-full max-w-(--maxw)">
         <motion.nav
           aria-label="Breadcrumb"
           {...entrance}
           transition={{ ...transition, delay: reduced ? 0 : 0.05 }}
-          className="label flex flex-wrap items-center gap-x-[--space-3] gap-y-1"
+          className="label flex flex-wrap items-center gap-x-(--space-3) gap-y-1"
         >
           <Link
             href="/911"
-            className="rounded-[--radius-sm] py-1 transition-colors hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="rounded-(--radius-sm) py-1 transition-colors hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             All generations
           </Link>
@@ -183,10 +183,10 @@ export function GenerationHero({
         <motion.p
           {...entrance}
           transition={{ ...transition, delay: reduced ? 0 : 0.1 }}
-          className="label mt-[--space-6]"
+          className="label mt-(--space-6)"
         >
           <span style={{ color: accent }}>{code}</span>
-          <span aria-hidden="true" className="mx-[--space-3] text-ink-4">
+          <span aria-hidden="true" className="mx-(--space-3) text-ink-4">
             —
           </span>
           {yearRange(yearsStart, yearsEnd)}
@@ -196,7 +196,7 @@ export function GenerationHero({
           id={`gen-${generationId}-heading`}
           {...entrance}
           transition={{ ...transition, delay: reduced ? 0 : 0.16 }}
-          className="text-display-2 mt-[--space-2] max-w-[min(18ch,92%)] text-metal-100"
+          className="text-display-2 mt-(--space-2) max-w-[min(18ch,92%)] text-metal-100"
         >
           {name}
         </motion.h1>
@@ -205,7 +205,7 @@ export function GenerationHero({
           <motion.p
             {...entrance}
             transition={{ ...transition, delay: reduced ? 0 : 0.22 }}
-            className="mt-[--space-4] max-w-[52ch] font-display text-display-3 leading-[1.05] text-metal-300"
+            className="mt-(--space-4) max-w-[52ch] font-display text-display-3 leading-[1.05] text-metal-300"
           >
             {tagline}
           </motion.p>
@@ -214,15 +214,15 @@ export function GenerationHero({
         <motion.div
           {...entrance}
           transition={{ ...transition, delay: reduced ? 0 : 0.28 }}
-          className="mt-[--space-8] grid max-w-[70rem] gap-[--space-6] lg:grid-cols-2"
+          className="mt-(--space-8) grid max-w-[70rem] gap-(--space-6) lg:grid-cols-2"
         >
           {firstParagraph ? (
-            <p className="max-w-[--maxw-prose] text-body-2 leading-relaxed text-metal-300">
+            <p className="max-w-(--maxw-prose) text-body-2 leading-relaxed text-metal-300">
               {firstParagraph}
             </p>
           ) : null}
           {secondParagraph ? (
-            <p className="max-w-[--maxw-prose] text-body-2 leading-relaxed text-metal-500">
+            <p className="max-w-(--maxw-prose) text-body-2 leading-relaxed text-metal-500">
               {secondParagraph}
             </p>
           ) : null}
@@ -231,12 +231,12 @@ export function GenerationHero({
         <motion.div
           {...entrance}
           transition={{ ...transition, delay: reduced ? 0 : 0.34 }}
-          className="mt-[--space-8] flex flex-wrap items-center gap-x-[--space-6] gap-y-[--space-3]"
+          className="mt-(--space-8) flex flex-wrap items-center gap-x-(--space-6) gap-y-(--space-3)"
         >
           <a
             href="#variants"
             className={cx(
-              "inline-flex items-center gap-[--space-3] rounded-[--radius-sm] border border-ink-4 bg-ink/60 px-[--space-4] py-[--space-3] font-mono text-mono-sm uppercase tracking-[--tracking-mono] transition-colors hover:border-metal-500 hover:bg-ink-2",
+              "inline-flex items-center gap-(--space-3) rounded-(--radius-sm) border border-ink-4 bg-ink/60 px-(--space-4) py-(--space-3) font-mono text-mono-sm uppercase tracking-(--tracking-mono) transition-colors hover:border-metal-500 hover:bg-ink-2",
               "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards",
             )}
           >

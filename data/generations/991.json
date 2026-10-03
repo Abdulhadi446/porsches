@@ -352,7 +352,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
           "license": "CC Attribution",
           "author": "Mona x Supercars",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -639,14 +639,14 @@
         {
           "assetId": "model-991-carrera-4s",
           "kind": "model",
-          "source": "sketchfab",
-          "url": "/models/991-carrera-4s/model.glb",
+          "source": "other",
+          "url": "https://www.get3dmodels.com/vehicles/porsche-911-carrera-4s/",
           "license": "CC Attribution-ShareAlike 4.0 (adapted)",
           "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
-          "retrieved": "2026-10-03",
+          "retrieved": "2026-10-03T13:34:09.489Z",
           "sourceId": "d01b254483794de3819786d93e0e1ebf",
           "localPath": "/models/991-carrera-4s/model.glb",
-          "note": "local GLB"
+          "note": "glb 905340 bytes (< 3000000 budget); Sketchfab uid d01b254483794de3819786d93e0e1ebf; downloaded anonymously from https://www.get3dmodels.com/download/free_porsche_911_carrera_4s.glb (Sketchfab export, licence re-checked against api.sketchfab.com); 991.1 vs 991.2 facelift not distinguishable from the source imagery"
         }
       ],
       "sources": [
@@ -1271,7 +1271,7 @@
         {
           "src": "/images/turbo/img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782-1280.avif",
           "alt": "911 Turbo — photo 6",
-          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJQBYdiP4aeFquGAA+hDcN+Ipzkq4UCCmemR7dvw8jNSi2GwtVJZpZhayV+n7eO568DBzM6VrJbdN7n2nr+LCo+AAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAkABABoJYgCw7YtB25krtYhIAD6ENw7kTx4PKPPO+b67DWv9VQ/lHqQiKIhvYaEbiH2UyWydCrMD403lJ03dwo7uC/iwqPgAA==",
           "creditId": "img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782",
           "width": 1280,
           "height": 755
@@ -1408,7 +1408,7 @@
         {
           "src": "/images/turbo/img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782-1280.avif",
           "alt": "911 Turbo S — photo 6",
-          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJQBYdiP4aeFquGAA+hDcN+Ipzkq4UCCmemR7dvw8jNSi2GwtVJZpZhayV+n7eO568DBzM6VrJbdN7n2nr+LCo+AAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAkABABoJYgCw7YtB25krtYhIAD6ENw7kTx4PKPPO+b67DWv9VQ/lHqQiKIhvYaEbiH2UyWydCrMD403lJ03dwo7uC/iwqPgAA==",
           "creditId": "img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782",
           "width": 1280,
           "height": 755
@@ -1472,7 +1472,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-9912-turbo-s-1924ab5a79b7451e95b9a659f3db715d?embed=1",
           "license": "CC Attribution",
           "author": "Officially Mentally Unstable :)",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "1924ab5a79b7451e95b9a659f3db715d",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1909,7 +1909,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-9911-gt3-rs-2b02e300bb094a2293f4b714e2ae7ddf?embed=1",
           "license": "CC Attribution",
           "author": "Casacade Models",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "2b02e300bb094a2293f4b714e2ae7ddf",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1976,7 +1976,7 @@
         {
           "src": "/images/gt2-rs/img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-3-91347670-1280.avif",
           "alt": "911 GT2 RS — photo 3",
-          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwABABoJQBOgCPaW1WrrAD9PRGMg983Pio29wSMgN138FF93jilLvaAYVAU1+Jdjv/Dcpw2DUAiDJRZo5WQ5ygayhR/dQcgAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJQBOgCPcDewNHOgA/T0RjIPfNz4mQNSUIOe4C3Ci+7xxSl3tAMKZO3Kjl90aUn5ilW+x0JFfskw5QNZQo/uoOQAAAA==",
           "creditId": "img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-3-91347670",
           "width": 1280,
           "height": 960
@@ -1984,7 +1984,7 @@
         {
           "src": "/images/gt2-rs/img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-4-a9e3b43f-1280.avif",
           "alt": "911 GT2 RS — photo 4",
-          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAwABABoJZQCw7D1fTKZbCK0gAD+33V8qRUu4WEUcWfUcnVBRoWQ7u4BSPYFWNYioO/xj6URSq9FAtQsCjZDEJDIAAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAwABABoJZQCw7DdmhodK4AA/t91fKkVLuE7BcQJq2MpyoSlMg91N/tt3PNWd3d3LdGedlsjgbuPMr5VsSYCZzdPnAAA",
           "creditId": "img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-4-a9e3b43f",
           "width": 1280,
           "height": 960
@@ -1992,7 +1992,7 @@
         {
           "src": "/images/gt2-rs/img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-2-8478cc94-1280.avif",
           "alt": "911 GT2 RS — photo 5",
-          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJQAAXXWN8vUegAD+o3L0Ctuf+ryCUxic0vSU1UCHUtSwZ+fFstukV1kF+CW/dgsZQzgDNTOIdX4bIB06ye6AAAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAwABABoJQAAWuLJWwGAAP6jcxbF4SzULlAN+EWYh6fvDKqnJILIa5EkMOof1g/EwXhkl16Lttdzrbc8r677a0G2+0AA",
           "creditId": "img-red-porsche-911-991-gt2-rs-next-to-vendo-me-place-paris-2-8478cc94",
           "width": 1280,
           "height": 960
@@ -2080,7 +2080,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-991-gt2-rs-cs-evo-wwwvecarzcom-98767072b9f94f8eb6c4512b7be891c4?embed=1",
           "license": "CC Attribution",
           "author": "vecarz",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "98767072b9f94f8eb6c4512b7be891c4",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2249,7 +2249,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911-r-2017-a8f40dc2180142c0887d251199d74077?embed=1",
           "license": "CC Attribution",
           "author": "Ulix21",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "a8f40dc2180142c0887d251199d74077",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2306,7 +2306,7 @@
         {
           "src": "/images/speedster/img-porsche-911-991-speedster-02135a88-1920.avif",
           "alt": "911 Speedster — photo 2",
-          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAkABABoJZACdAEO0aY5tAAA/p+8RpGEO7pHbhPWU5X/2QmR974BrFyzACE+wIt8dBmRbwCQYY0gtTkmlfh3+rPvfEogAEpObkg8AAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkABABoJZACdAEO0bfa7sAA/p+8RpGEO7pHbhPWU5X/2QmR974BrFyzACE+wIt8dBmRWO+dndS55QNw3R11/wnLXDkii+dqcAAA",
           "creditId": "img-porsche-911-991-speedster-02135a88",
           "width": 1920,
           "height": 1106
@@ -2322,7 +2322,7 @@
         {
           "src": "/images/speedster/img-porsche-911-991-speedster-42792-cf9a9f9c-1920.avif",
           "alt": "911 Speedster — photo 4",
-          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAoABABoJYgCdAEN8ZnyIExQAP2uRrfSH6Fj2B/nvzXgKWZS0aZGgcp0n/yOu9Ges3f4RKf+iw+r2/RmJvHu1UkMhvftuluA9FotYLAAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAoABABoJYgCdAEN8ZnyIExQAP2uRrfSH6Fj2B/nvzXgKWZS0aZGgcp0n/yOu9Ges3f4RKa2PTJeqjSe8ALi94blll+ZrTqzeLwQ2QsAAA==",
           "creditId": "img-porsche-911-991-speedster-42792-cf9a9f9c",
           "width": 1920,
           "height": 1152
@@ -2733,7 +2733,7 @@
         {
           "src": "/images/turbo/img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782-1280.avif",
           "alt": "911 Turbo S Exclusive Series — photo 5",
-          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJQBYdiP4aeFquGAA+hDcN+Ipzkq4UCCmemR7dvw8jNSi2GwtVJZpZhayV+n7eO568DBzM6VrJbdN7n2nr+LCo+AAAA==",
+          "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAkABABoJYgCw7YtB25krtYhIAD6ENw7kTx4PKPPO+b67DWv9VQ/lHqQiKIhvYaEbiH2UyWydCrMD403lJ03dwo7uC/iwqPgAA==",
           "creditId": "img-white-911-turbo-s-991-convertible-fos21-front-1c0dd782",
           "width": 1280,
           "height": 755
@@ -2809,6 +2809,51 @@
         }
       ],
       "missing": []
+    },
+    {
+      "id": "turbo-gt",
+      "name": "911 Turbo GT",
+      "generation": "991",
+      "years": "2018",
+      "yearsStart": 2018,
+      "yearsEnd": null,
+      "engine": null,
+      "power": null,
+      "powerPs": null,
+      "powerKw": null,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": null,
+      "transmission": null,
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The 911 Turbo GT is a 991.2-generation Turbo derivative that Porsche never announced in a press release, a model page or a technical data sheet: newsroom.porsche.com carries no Turbo GT article at all (searched 2026-10-03 through the newsroom search index) and Porsche's own archived US technical-specification list jumps from the 2018 911 Carrera T straight to the 2019 Speedster and GT3 RS. There is no Wikipedia article about the car in any language, and Porsche Cars North America never offered it, so there is no US press material or configurator entry either. The car is real — it can be photographed at Klassikstadt Frankfurt — and the widely circulated description is a lightly modified 991.2 Turbo coupé with a 3.8-litre twin-turbo flat-six, 645 PS and either a six-speed manual or the seven-speed PDK, good for 330 km/h. None of those figures could be traced to a fetchable primary source in this session, so every specification field on this record is deliberately null: the variant is published as a disclosed gap rather than as a car with numbers. What it needs next is a citable Porsche specification, not a better-sounding guess.",
+      "special": true,
+      "production": null,
+      "sources": [
+        {
+          "title": "Technical Specifications — Porsche Newsroom USA (archive searched 2026-10-03: contains 2018 Carrera T, 2019 Speedster and 2019 GT3 RS data sheets, but no 911 Turbo GT)",
+          "url": "https://newsroom.porsche.com/en_US/media-resources/technical-specifications.html"
+        },
+        {
+          "title": "Porsche 911 (991) — Wikipedia (documents the 991.2 Turbo S Exclusive Series, GT2 RS and GT3 RS; no Turbo GT entry)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(991)"
+        },
+        {
+          "title": "911 — Porsche Newsroom model index (current 911 range; the Turbo GT is absent, consistent with a low-volume car never given a newsroom page)",
+          "url": "https://newsroom.porsche.com/en/products/911.html"
+        }
+      ],
+      "missing": [
+        "No primary Porsche source is reachable for this car: newsroom.porsche.com has no 911 Turbo GT article (searched 2026-10-03) and Porsche published no model page or technical data sheet — the launch seems never to have been published on the newsroom, so engine, power, torque, acceleration, top speed, weight, drivetrain and transmission are all null and must not be filled from secondary retellings without a citation",
+        "The figures in circulation — 3.8-litre twin-turbo flat-six, 645 PS, 800 Nm, 0–100 km/h 2.9 s, 330 km/h, six-speed manual or seven-speed PDK, model year 2018 — come from secondary retellings only and are recorded here as context, not as data; the '2018' model year itself is unconfirmed against Porsche",
+        "Production total unknown: Porsche published no run length for the Turbo GT and Porsche Cars North America never offered the car, so no US press material exists to triangulate a number",
+        "Media: data/images.json still keys `turbo-gt` (and `992-1/turbo-gt`) to photographs of 992 Turbo and Turbo S cars, fetched for the 992.1 Turbo GT placeholder that was removed as a non-existent model. Until ASSET-IMAGES re-keys or deletes that entry, scripts/merge-assets.ts will attach 992 Turbo photographs to this 991.2 car",
+        "Media: one licensed Commons photograph of a Porsche 911 Turbo GT does exist — File:Porsche 911 Turbo GT, Klassikstadt, Frankfurt am Main (P1032540).jpg, CC BY-SA, uploaded by MB-one, 11 December 2024 (https://commons.wikimedia.org/wiki/File:Porsche_911_Turbo_GT,_Klassikstadt,_Frankfurt_am_Main_(P1032540).jpg) — but its caption does not state the model year, so it must be verified as a 991.2 car before it is used"
+      ]
     }
   ],
   "credits": [
@@ -2843,7 +2888,7 @@
       "url": "https://sketchfab.com/3d-models/porsche-911-carrera-s-991-97785983d3a949cf87e9ee6bf49f4032?embed=1",
       "license": "CC Attribution",
       "author": "Mona x Supercars",
-      "retrieved": "2026-10-02",
+      "retrieved": "2026-10-03",
       "sourceId": "97785983d3a949cf87e9ee6bf49f4032",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2878,6 +2923,10 @@
   "missing": [
     "Production split between the 991.1 (2011–2015) and 991.2 (2016–2019) phases is not published per variant",
     "Per-variant production totals are not published for series Carrera, Targa, GTS and Turbo models",
-    "Porsche quoted 217,930 991s built to 31 October 2018; the final count is 233,540 (20 December 2019) — both figures cited, no conflict resolved"
+    "Porsche quoted 217,930 991s built to 31 October 2018; the final count is 233,540 (20 December 2019) — both figures cited, no conflict resolved",
+    "911 GT2 RS 'Weissach' Package and the Manthey Performance kit are options, not variants: the Weissach Package was an $18,000 option on the GT2 RS (RM Sotheby's, 2019 GT2 RS 'Weissach' lot, Miami 2025), so the car is modelled once, as 991/gt2-rs; the same is true of the GT3 RS Weissach Package",
+    "911 GT3 R (991.2, 2019) and 911 RSR (991-generation) are customer/track racing cars rather than road-legal variants, so neither is modelled here; the chapter's single racing entry, 991/935, is a track-only Porsche-badged special built around the GT2 RS",
+    "No 'GT3 RS Heritage' exists: for the 991.2 phase Porsche published only the GT3 RS (2018–2019) and its optional Weissach Package — no Heritage edition was ever announced (checked against the 991 generation article on Wikipedia, 2026-10-03)",
+    "911 Carrera Cabriolet / Carrera S Cabriolet / Carrera 4 Cabriolet and the 991.2 Carrera GTS Cabriolet are still unmodelled: they are real road-legal bodies with no roster id and were out of scope for this pass — flagged for a future one"
   ]
 }

@@ -1,0 +1,154 @@
+name: Assets
+
+# Regenerates the two generated media trees (public/images, public/turntables)
+# and proves the site still passes the 177-route smoke test with the real files.
+#
+# Why this is not part of CI: the pipeline is network-bound and rate-limited
+# (api.wikimedia.org answers bursts with 429 + Retry-After — we have already
+# tripped it once), it is resumable from a cache, and it writes ~490 MB. Nothing
+# about it belongs on every commit.
+#
+# Nothing here is committed and nothing is deployed: the refreshed manifests and
+# media are uploaded as a workflow artifact for a human to review. Publishing
+# them is documented in docs/DEPLOY.md.
+#
+# GitHub disables scheduled workflows after 60 days without repository activity;
+# delete the `schedule:` block if the weekly run is not wanted.
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Which pipeline to run"
+        type: choice
+        options:
+          - all
+          - images
+          - turntables
+        default: all
+  schedule:
+    # Mondays, 04:17 UTC — an off-peak minute on purpose.
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: assets
+  cancel-in-progress: false
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+  # Outside the workspace: keeps the cache out of eslint's and next's file walks.
+  P911_WORK_DIR: ${{ runner.temp }}/p911-work
+
+jobs:
+  refresh:
+    name: fetch · convert · merge · build · smoke
+    runs-on: ubuntu-latest
+    # Untimed on this project: budget roughly 1–2 h for a full run, most of it
+    # the deliberate request pacing in scripts/fetch-*.ts.
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: install
+        run: npm ci
+
+      - name: chromium for scripts/smoke.mjs
+        run: npx playwright install --with-deps chromium
+
+      - name: restore Wikimedia API cache
+        # Only the JSON answers (search / file / page), not the raw originals:
+        # that is the part that is rate-limited, and it is small. Each run saves
+        # under its own key and restores the newest older entry.
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.P911_WORK_DIR }}/cache
+          key: p911-api-${{ github.run_id }}
+          restore-keys: |
+            p911-api-
+
+      - name: fetch images (Wikimedia Commons REST API)
+        if: inputs.scope != 'turntables'
+        run: node scripts/fetch-images.ts --all
+
+      - name: "convert images (sharp: AVIF 640/1280/1920 + WebP 1280)"
+        if: inputs.scope != 'turntables'
+        run: node scripts/convert-images.ts
+
+      - name: fetch turntables (image sequences)
+        if: inputs.scope != 'images'
+        run: node scripts/fetch-turntables.ts --all
+
+      - name: licence audit (dry run, informational)
+        if: inputs.scope != 'images'
+        # Re-reads every turntable source's own Commons licence and prints what
+        # would change. Never fails the run and never writes: pass --write by
+        # hand after reading the report.
+        run: node scripts/verify-turntable-licences.ts
+
+      - name: merge manifests + rebuild client catalogue
+        run: |
+          node scripts/merge-assets.ts
+          node scripts/build-client-catalog.ts
+
+      - name: every referenced render exists
+        # Exits non-zero when a file in data/images.json is missing or a credit
+        # id does not resolve. The real "assets are complete" gate.
+        run: P911_VERIFY_QUIET=1 node scripts/convert-images.ts --verify
+
+      - name: build
+        run: npx next build
+
+      - name: smoke against the real media
+        run: |
+          npx next start --port 3111 &
+          for _ in $(seq 1 60); do
+            if curl -fsS -o /dev/null http://localhost:3111/; then break; fi
+            sleep 2
+          done
+          curl -fsS -o /dev/null http://localhost:3111/ || { echo "::error::server never came up"; exit 1; }
+          node scripts/smoke.mjs http://localhost:3111
+
+      - name: size report
+        run: |
+          du -sh public/images public/turntables
+          node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const f = (p) => JSON.parse(readFileSync(p, "utf8"));
+            const imgs = f("data/images.json");
+            const srcs = new Set();
+            const walk = (n) => {
+              if (!n || typeof n !== "object") return;
+              if (typeof n.src === "string" && typeof n.creditId === "string") srcs.add(n.src);
+              for (const v of Object.values(n)) walk(v);
+            };
+            walk(imgs.generations); walk(imgs.variants);
+            console.log("image refs", srcs.size, "| credits", f("data/credits.json").credits.length, "| turntables", Object.keys(f("data/turntables.json").entries).length);
+          '
+
+      - name: upload refreshed assets
+        # ~490 MB of already-compressed media: compression-level 0 keeps the run
+        # fast. Review before using — these are generated from Wikimedia and
+        # carry the licences recorded in data/credits.json.
+        uses: actions/upload-artifact@v4
+        with:
+          name: p911-assets
+          retention-days: 14
+          compression-level: 0
+          path: |
+            public/images
+            public/turntables
+            data/images.json
+            data/credits.json
+            data/turntables.json
+            data/turntable-credits.json
+            data/models.json
+            data/client-catalog.json

@@ -131,6 +131,10 @@
       {
         "id": "cup",
         "name": "911 Carrera Cup"
+      },
+      {
+        "id": "carrera-rs-n-gt",
+        "name": "911 Carrera RS N/GT"
       }
     ],
     "991": [
@@ -201,6 +205,10 @@
       {
         "id": "50th-anniversary",
         "name": "911 50th Anniversary Edition"
+      },
+      {
+        "id": "turbo-gt",
+        "name": "911 Turbo GT"
       }
     ],
     "993": [
@@ -251,6 +259,10 @@
       {
         "id": "club-sport",
         "name": "911 Carrera RS Clubsport"
+      },
+      {
+        "id": "gt1",
+        "name": "Porsche 911 GT1"
       }
     ],
     "996": [
@@ -471,10 +483,6 @@
       {
         "id": "turbo-s",
         "name": "911 Turbo S"
-      },
-      {
-        "id": "turbo-gt",
-        "name": "911 Turbo GT"
       },
       {
         "id": "gt3",

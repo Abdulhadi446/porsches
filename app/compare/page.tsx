@@ -61,12 +61,12 @@ export default async function ComparePage({
   const prefilled = slots.some((slot) => slot.variant);
 
   return (
-    <div className="px-[--gutter] pt-[calc(var(--nav-h,64px)+var(--space-12))] pb-[--space-24]">
+    <div className="px-(--gutter) pt-[calc(var(--nav-h,64px)+var(--space-12))] pb-(--space-24)">
       <LoadingScreen caption="Side by side" />
-      <div className="mx-auto max-w-[--maxw]">
-        <header className="mb-[--space-8] max-w-[--maxw-prose]">
-          <p className="label mb-[--space-2]">Compare</p>
-          <h1 className="text-display-2 mb-[--space-4]">
+      <div className="mx-auto max-w-(--maxw)">
+        <header className="mb-(--space-8) max-w-(--maxw-prose)">
+          <p className="label mb-(--space-2)">Compare</p>
+          <h1 className="text-display-2 mb-(--space-4)">
             Two 911s, <span className="text-guards-text">spec for spec</span>
           </h1>
           <p className="text-metal-500">
@@ -79,21 +79,21 @@ export default async function ComparePage({
         <CompareTable initialSlots={slots} />
 
         {!prefilled && (
-          <section aria-labelledby="suggested-heading" className="mt-[--space-16]">
-            <h2 id="suggested-heading" className="text-display-3 mb-[--space-6]">
+          <section aria-labelledby="suggested-heading" className="mt-(--space-16)">
+            <h2 id="suggested-heading" className="text-display-3 mb-(--space-6)">
               Start with a classic pair
             </h2>
-            <ul className="grid gap-[--space-3] md:grid-cols-2">
+            <ul className="grid gap-(--space-3) md:grid-cols-2">
               {SUGGESTED.map((pair) => (
                 <li key={`${pair.a}-${pair.b}`}>
                   <Link
                     href={`/compare?a=${pair.a}&b=${pair.b}`}
-                    className="block border border-ink-4 bg-ink-2 p-[--space-5] transition-colors hover:border-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                    className="block border border-ink-4 bg-ink-2 p-(--space-5) transition-colors hover:border-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                   >
                     <span className="block font-display text-lg uppercase">
                       {labelOf(pair.a)} vs {labelOf(pair.b)}
                     </span>
-                    <span className="mt-[--space-2] block text-mono-sm text-metal-500">
+                    <span className="mt-(--space-2) block text-mono-sm text-metal-500">
                       {pair.note}
                     </span>
                   </Link>

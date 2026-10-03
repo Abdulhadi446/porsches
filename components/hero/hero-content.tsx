@@ -80,18 +80,18 @@ export function HeroContent({
   return (
     <div
       data-hero-content=""
-      className="pointer-events-none absolute inset-0 z-content flex flex-col justify-between px-[--gutter] pb-[--space-8] pt-[--space-12]"
+      className="pointer-events-none absolute inset-0 z-content flex flex-col justify-between px-(--gutter) pb-(--space-8) pt-(--space-12)"
     >
       {/* ---- top rail ---- */}
-      <div className="flex items-start justify-between gap-[--space-6]">
+      <div className="flex items-start justify-between gap-(--space-6)">
         <motion.p
           {...enter(0.15, reducedMotion)}
           data-hero-kicker=""
-          className="label flex items-center gap-[--space-3] text-metal-300"
+          className="label flex items-center gap-(--space-3) text-metal-300"
         >
           <span
             aria-hidden="true"
-            className="inline-block h-[2px] w-[--space-8] bg-guards"
+            className="inline-block h-[2px] w-(--space-8) bg-guards"
           />
           {HERO_KICKER}
         </motion.p>
@@ -103,7 +103,7 @@ export function HeroContent({
       </div>
 
       {/* ---- headline block ---- */}
-      <div className="max-w-[--maxw]">
+      <div className="max-w-(--maxw)">
         <motion.h1
           {...enterPaintSafe(0.05, reducedMotion)}
           data-hero-title=""
@@ -115,17 +115,17 @@ export function HeroContent({
         </motion.h1>
         <motion.p
           {...enter(0.6, reducedMotion)}
-          className="mt-[--space-4] max-w-[--maxw-prose] text-body-2 text-metal-500"
+          className="mt-(--space-4) max-w-(--maxw-prose) text-body-2 text-metal-500"
         >
           {HERO_STANDFIRST}
         </motion.p>
       </div>
 
       {/* ---- spec strip + hint ---- */}
-      <div className="flex items-end justify-between gap-[--space-8]">
+      <div className="flex items-end justify-between gap-(--space-8)">
         <div
           data-hero-specs=""
-          className="relative h-[--space-24] min-w-[15rem] flex-1 sm:max-w-[26rem]"
+          className="relative h-(--space-24) min-w-[15rem] flex-1 sm:max-w-[26rem]"
         >
           {specs.map((spec, index) => (
             <div
@@ -140,10 +140,10 @@ export function HeroContent({
                 {" · "}
                 {spec.code} · {spec.years}
               </p>
-              <p className="mt-[--space-1] font-mono text-mono-md tracking-[--tracking-mono] text-metal-100">
+              <p className="mt-(--space-1) font-mono text-mono-md tracking-(--tracking-mono) text-metal-100">
                 {spec.power}
               </p>
-              <p className="label mt-[--space-1]">{spec.name}</p>
+              <p className="label mt-(--space-1)">{spec.name}</p>
             </div>
           ))}
         </div>
@@ -151,12 +151,12 @@ export function HeroContent({
         <motion.div
           {...enter(0.8, reducedMotion)}
           data-hero-hint=""
-          className="flex shrink-0 items-center gap-[--space-3] pb-[--space-2]"
+          className="flex shrink-0 items-center gap-(--space-3) pb-(--space-2)"
         >
           <span className="label text-metal-300">{HERO_SCROLL_HINT}</span>
           <motion.span
             aria-hidden="true"
-            className="block h-[--space-8] w-px bg-gradient-to-b from-metal-300 to-transparent"
+            className="block h-(--space-8) w-px bg-gradient-to-b from-metal-300 to-transparent"
             animate={reducedMotion ? undefined : { scaleY: [0.35, 1, 0.35], originY: [0, 0, 0] }}
             transition={
               reducedMotion
@@ -170,7 +170,7 @@ export function HeroContent({
       {/* ---- orbit progress hairline ---- */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-[--gutter] bottom-0 h-px bg-ink-4"
+        className="absolute inset-x-(--gutter) bottom-0 h-px bg-ink-4"
       >
         <div
           data-hero-progress=""

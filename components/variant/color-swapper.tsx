@@ -43,8 +43,8 @@ export function ColorSwapper({
       className="border-0 p-0"
       aria-describedby={enabled ? undefined : "viewer-paint-note"}
     >
-      <legend className="label mb-[--space-2]">Paint</legend>
-      <div className="flex flex-wrap items-center gap-[--space-2]">
+      <legend className="label mb-(--space-2)">Paint</legend>
+      <div className="flex flex-wrap items-center gap-(--space-2)">
         {paints.map((paint) => {
           const id = `paint-${paint.id}`;
           return (
@@ -62,7 +62,7 @@ export function ColorSwapper({
                 htmlFor={id}
                 title={enabled ? paint.label : disabledReason}
                 className={cx(
-                  "flex cursor-pointer items-center gap-[--space-2] rounded-[--radius-pill] border border-ink-4 bg-ink-3 py-[--space-2] pr-[--space-3] pl-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors",
+                  "flex cursor-pointer items-center gap-(--space-2) rounded-(--radius-pill) border border-ink-4 bg-ink-3 py-(--space-2) pr-(--space-3) pl-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors",
                   "hover:border-metal-500 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-guards",
                   "peer-checked:border-guards peer-checked:text-metal-100",
                   !enabled && "cursor-not-allowed opacity-40 hover:border-ink-4",
@@ -86,12 +86,12 @@ export function ColorSwapper({
       {!enabled ? (
         <p
           id="viewer-paint-note"
-          className="mt-[--space-2] max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-700"
+          className="mt-(--space-2) max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-700"
         >
           {disabledReason ?? "Not available for this model."}
         </p>
       ) : basis === "heuristic" ? (
-        <p className="mt-[--space-2] max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+        <p className="mt-(--space-2) max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
           Tinted the largest single material — the model exposes no material named
           &ldquo;paint&rdquo; or &ldquo;body&rdquo;.
         </p>

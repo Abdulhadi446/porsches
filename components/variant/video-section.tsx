@@ -31,10 +31,10 @@ export function VideoSection({ videos, carName, accent, headingId, lede }: Video
   return (
     <section
       aria-labelledby={headingId}
-      className="scroll-mt-[--space-16] px-[--gutter] py-[--space-16]"
+      className="scroll-mt-(--space-16) px-(--gutter) py-(--space-16)"
     >
-      <div className="mx-auto w-full max-w-[--maxw]">
-        <p className="label flex items-center gap-[--space-3]">
+      <div className="mx-auto w-full max-w-(--maxw)">
+        <p className="label flex items-center gap-(--space-3)">
           <span
             aria-hidden="true"
             className="inline-block h-px w-8"
@@ -42,27 +42,27 @@ export function VideoSection({ videos, carName, accent, headingId, lede }: Video
           />
           Watch
         </p>
-        <h2 id={headingId} className="mt-[--space-3] text-display-3 text-metal-100">
+        <h2 id={headingId} className="mt-(--space-3) text-display-3 text-metal-100">
           {videos.length} film{videos.length === 1 ? "" : "s"} on the {carName.replace(/^911\s*/i, "")}
         </h2>
         {lede ? (
-          <p className="mt-[--space-4] max-w-[--maxw-prose] text-body-2 text-metal-500">
+          <p className="mt-(--space-4) max-w-(--maxw-prose) text-body-2 text-metal-500">
             {lede}
           </p>
         ) : null}
 
-        <ul className="mt-[--space-8] grid grid-cols-1 gap-[--space-6] md:grid-cols-2">
+        <ul className="mt-(--space-8) grid grid-cols-1 gap-(--space-6) md:grid-cols-2">
           {videos.map((video) => (
-            <li key={video.id} className="flex flex-col gap-[--space-3]">
+            <li key={video.id} className="flex flex-col gap-(--space-3)">
               <VideoFacade video={video} accent={accent} />
-              <div className="flex flex-col gap-[--space-1]">
-                <p className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700">
+              <div className="flex flex-col gap-(--space-1)">
+                <p className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700">
                   {video.scope === "variant" ? "This variant" : "Generation"}
                   {video.channel ? ` · ${video.channel}` : ""}
                 </p>
                 <p className="text-body-2 leading-snug text-metal-300">{video.title}</p>
                 {video.note ? (
-                  <p className="max-w-[52ch] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+                  <p className="max-w-[52ch] font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
                     {video.note}
                   </p>
                 ) : null}
@@ -123,7 +123,7 @@ function VideoFacade({ video, accent }: { video: ScopedVideo; accent: string }) 
             className="absolute inset-0 grid place-items-center"
           >
             <span
-              className="grid h-16 w-16 place-items-center rounded-[--radius-pill] border border-ink-4 bg-ink/70 text-xl text-metal-100 transition-transform duration-[--dur-base] group-hover:scale-105"
+              className="grid h-16 w-16 place-items-center rounded-(--radius-pill) border border-ink-4 bg-ink/70 text-xl text-metal-100 transition-transform duration-(--dur-base) group-hover:scale-105"
               style={{ boxShadow: `0 0 0 1px ${accent}` }}
             >
               ▶

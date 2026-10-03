@@ -23,32 +23,32 @@ export function DataNotes({
   const Heading = level === 2 ? "h2" : "h3";
 
   return (
-    <section className="px-[--gutter] pb-[--space-16]">
-      <div className="mx-auto w-full max-w-[--maxw]">
+    <section className="px-(--gutter) pb-(--space-16)">
+      <div className="mx-auto w-full max-w-(--maxw)">
         <details className="group border border-ink-4 bg-ink-2">
-          <summary className="flex cursor-pointer list-none items-center gap-[--space-3] px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-(--space-3) px-4 py-3 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards">
             <span
               aria-hidden="true"
               className="inline-block h-px w-6"
               style={{ backgroundColor: accent }}
             />
-            <Heading className="font-mono text-mono-xs uppercase tracking-[--tracking-mono]">
+            <Heading className="font-mono text-mono-xs uppercase tracking-(--tracking-mono)">
               {heading} ({notes.length})
             </Heading>
             <span
               aria-hidden="true"
-              className="ml-auto text-metal-500 transition-transform duration-[--dur-base] group-open:rotate-45"
+              className="ml-auto text-metal-500 transition-transform duration-(--dur-base) group-open:rotate-45"
             >
               +
             </span>
           </summary>
-          <ul className="flex flex-col gap-[--space-2] border-t border-ink-4 px-[--space-4] py-[--space-4]">
+          <ul className="flex flex-col gap-(--space-2) border-t border-ink-4 px-(--space-4) py-(--space-4)">
             {notes.map((note, index) => (
               <li
                 key={`${index}-${note.slice(0, 12)}`}
-                className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500"
+                className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500"
               >
-                <span aria-hidden="true" className="mr-[--space-2] text-metal-700">
+                <span aria-hidden="true" className="mr-(--space-2) text-metal-700">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 {note}

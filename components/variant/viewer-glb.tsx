@@ -95,11 +95,11 @@ export function GlbStage({ url, paint, wheel, active, onInspect, accent }: GlbSt
         </Canvas>
       </Boundary>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-between gap-[--space-2] bg-gradient-to-t from-ink to-transparent p-[--space-3]">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-between gap-(--space-2) bg-gradient-to-t from-ink to-transparent p-(--space-3)">
         <p className="label pointer-events-none hidden md:block">
           Drag to orbit · scroll to zoom
         </p>
-        <div className="pointer-events-auto flex flex-wrap items-center gap-[--space-2]">
+        <div className="pointer-events-auto flex flex-wrap items-center gap-(--space-2)">
           <StageButton onClick={() => cameraApiRef.current?.("out")} label="Zoom out">
             −
           </StageButton>
@@ -139,7 +139,7 @@ function StageButton({
       onClick={onClick}
       aria-label={label}
       aria-pressed={pressed}
-      className="rounded-[--radius-sm] border border-ink-4 bg-ink-2/90 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+      className="rounded-(--radius-sm) border border-ink-4 bg-ink-2/90 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
     >
       {children}
     </button>
@@ -414,8 +414,8 @@ class Boundary extends Component<BoundaryProps, BoundaryState> {
   render() {
     if (this.state.message) {
       return (
-        <div className="absolute inset-0 grid place-items-center bg-ink-2 p-[--space-6]">
-          <p className="max-w-[46ch] text-center font-mono text-mono-sm leading-relaxed tracking-[--tracking-mono] text-metal-500">
+        <div className="absolute inset-0 grid place-items-center bg-ink-2 p-(--space-6)">
+          <p className="max-w-[46ch] text-center font-mono text-mono-sm leading-relaxed tracking-(--tracking-mono) text-metal-500">
             The 3D model could not be loaded on this device. Every other part of this
             page works without it.
           </p>

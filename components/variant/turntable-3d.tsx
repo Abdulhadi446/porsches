@@ -235,7 +235,7 @@ export function Turntable3D({
         )}
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-between gap-[--space-2] bg-gradient-to-t from-ink to-transparent p-[--space-3]">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-between gap-(--space-2) bg-gradient-to-t from-ink to-transparent p-(--space-3)">
         <p className="label">
           {probing
             ? "Looking for the frame sequence"
@@ -248,7 +248,7 @@ export function Turntable3D({
             type="button"
             onClick={() => setPlaying((value) => !value)}
             aria-pressed={playing}
-            className="pointer-events-auto rounded-[--radius-sm] border border-ink-4 bg-ink-2/90 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="pointer-events-auto rounded-(--radius-sm) border border-ink-4 bg-ink-2/90 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             {playing ? "Pause" : "Play"}
           </button>
@@ -258,7 +258,7 @@ export function Turntable3D({
       {count > 1 ? (
         <div
           aria-hidden="true"
-          className="absolute inset-x-[--gutter] bottom-[--space-12] h-px bg-ink-4"
+          className="absolute inset-x-(--gutter) bottom-(--space-12) h-px bg-ink-4"
         >
           <div
             className="h-px"

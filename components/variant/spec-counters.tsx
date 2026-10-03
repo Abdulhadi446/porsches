@@ -37,21 +37,21 @@ export function SpecCounters({ rows, accent, headingId, lede }: SpecCountersProp
     <section
       id="specs"
       aria-labelledby={headingId}
-      className="scroll-mt-[--space-16] px-[--gutter] py-[--space-16] md:py-[--space-24]"
+      className="scroll-mt-(--space-16) px-(--gutter) py-(--space-16) md:py-(--space-24)"
     >
-      <div className="mx-auto w-full max-w-[--maxw]">
+      <div className="mx-auto w-full max-w-(--maxw)">
         <Eyebrow accent={accent}>Specification plate</Eyebrow>
-        <h2 id={headingId} className="mt-[--space-3] text-display-3 text-metal-100">
+        <h2 id={headingId} className="mt-(--space-3) text-display-3 text-metal-100">
           Numbers as published
         </h2>
         {lede ? (
-          <p className="mt-[--space-4] max-w-[--maxw-prose] text-body-2 text-metal-500">
+          <p className="mt-(--space-4) max-w-(--maxw-prose) text-body-2 text-metal-500">
             {lede}
           </p>
         ) : null}
 
         <div ref={ref}>
-          <dl className="mt-[--space-8] grid grid-cols-1 gap-px border border-ink-4 bg-ink-4 sm:grid-cols-2 lg:grid-cols-3">
+          <dl className="mt-(--space-8) grid grid-cols-1 gap-px border border-ink-4 bg-ink-4 sm:grid-cols-2 lg:grid-cols-3">
             {rows.map((row) => (
               <SpecCell
                 key={row.key}
@@ -92,13 +92,13 @@ function SpecCell({
   return (
     <div
       className={cx(
-        "flex min-h-[9rem] flex-col gap-[--space-2] bg-ink-2 p-[--space-5]",
+        "flex min-h-[9rem] flex-col gap-(--space-2) bg-ink-2 p-(--space-5)",
         row.wide && "sm:col-span-2 lg:col-span-2",
       )}
     >
       <dt className="label">{row.label}</dt>
 
-      <dd className="flex flex-1 flex-col gap-[--space-2]">
+      <dd className="flex flex-1 flex-col gap-(--space-2)">
         {row.count ? (
           <p
             data-spec
@@ -108,7 +108,7 @@ function SpecCell({
             <span aria-hidden="true" style={{ color: accent }}>
               {animated}
               {row.count.suffix ? (
-                <span className="ml-1 text-[0.45em] uppercase tracking-[--tracking-mono] text-metal-500">
+                <span className="ml-1 text-[0.45em] uppercase tracking-(--tracking-mono) text-metal-500">
                   {row.count.suffix}
                 </span>
               ) : null}
@@ -130,13 +130,13 @@ function SpecCell({
         )}
 
         {row.count && row.detail && row.detail !== row.value ? (
-          <p className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+          <p className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
             {row.detail}
           </p>
         ) : null}
 
         {row.missing ? (
-          <p className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-700">
+          <p className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-700">
             {row.note ? `Not published: ${row.note}` : "Not published in the source data"}
           </p>
         ) : null}
@@ -162,8 +162,8 @@ export function StatCounters({
   const { ref, inView } = useInView<HTMLDivElement>({ rootMargin: "0px 0px -8% 0px" });
 
   return (
-    <section aria-labelledby={headingId} className="px-[--gutter] py-[--space-12]">
-      <div className="mx-auto w-full max-w-[--maxw]">
+    <section aria-labelledby={headingId} className="px-(--gutter) py-(--space-12)">
+      <div className="mx-auto w-full max-w-(--maxw)">
         <h2 id={headingId} className="sr-only">
           Generation summary figures
         </h2>
@@ -206,7 +206,7 @@ function GenerationStat({
   });
 
   return (
-    <Reveal className="flex flex-col gap-[--space-3] bg-ink-2 p-[--space-5]">
+    <Reveal className="flex flex-col gap-(--space-3) bg-ink-2 p-(--space-5)">
       <p className="label">{label}</p>
       {figure ? (
         <p
@@ -217,12 +217,12 @@ function GenerationStat({
             {animated}
           </span>
           <span className="sr-only">{formatNumber(figure.value, figure.decimals)}</span>
-          <span className="mt-[--space-2] block text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+          <span className="mt-(--space-2) block text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
             {figure.rest}
           </span>
         </p>
       ) : (
-        <p className="font-mono text-mono-sm leading-relaxed tracking-[--tracking-mono] text-metal-100">
+        <p className="font-mono text-mono-sm leading-relaxed tracking-(--tracking-mono) text-metal-100">
           {value}
         </p>
       )}

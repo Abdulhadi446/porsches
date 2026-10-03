@@ -153,22 +153,22 @@ export default async function VariantPage({
 
       {/* ---- sources + data gaps ---- */}
       {v.sources && v.sources.length > 0 ? (
-        <section aria-labelledby="variant-sources" className="px-[--gutter] py-[--space-12]">
-          <div className="mx-auto w-full max-w-[--maxw]">
+        <section aria-labelledby="variant-sources" className="px-(--gutter) py-(--space-12)">
+          <div className="mx-auto w-full max-w-(--maxw)">
             <h2 id="variant-sources" className="label">
               Sources ({v.sources.length})
             </h2>
-            <ol className="mt-[--space-4] flex flex-col gap-[--space-2]">
+            <ol className="mt-(--space-4) flex flex-col gap-(--space-2)">
               {v.sources.map((source) => (
                 <li
                   key={source.url}
-                  className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500"
+                  className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500"
                 >
                   <a
                     href={source.url}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                    className="inline-flex min-h-6 items-center underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                   >
                     {source.title}
                     <span className="sr-only"> (opens in a new tab)</span>
@@ -193,10 +193,10 @@ export default async function VariantPage({
       {/* ---- close: keep the catalogue walkable ---- */}
       <nav
         aria-label={`More from the ${gen.code}`}
-        className="border-t border-ink-4 px-[--gutter] py-[--space-12]"
+        className="border-t border-ink-4 px-(--gutter) py-(--space-12)"
       >
-        <div className="mx-auto flex w-full max-w-[--maxw] flex-col gap-[--space-6]">
-          <p className="label flex flex-wrap items-center gap-x-[--space-3]">
+        <div className="mx-auto flex w-full max-w-(--maxw) flex-col gap-(--space-6)">
+          <p className="label flex flex-wrap items-center gap-x-(--space-3)">
             <span
               aria-hidden="true"
               className="inline-block h-px w-8"
@@ -205,17 +205,17 @@ export default async function VariantPage({
             More from the {gen.code} ·{" "}
             <Link
               href={`/911/${gen.id}`}
-              className="rounded-[--radius-sm] text-metal-100 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="inline-flex min-h-6 items-center rounded-(--radius-sm) text-metal-100 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               all {gen.variants.length} variants
             </Link>
           </p>
-          <ul className="flex flex-wrap gap-[--space-3]">
+          <ul className="flex flex-wrap gap-(--space-3)">
             {siblings.map((sibling) => (
               <li key={sibling.key}>
                 <Link
                   href={sibling.href}
-                  className="inline-flex items-center gap-[--space-2] rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="inline-flex min-h-6 items-center gap-(--space-2) rounded-(--radius-sm) border border-ink-4 px-4 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   {sibling.variant.name}
                   <span aria-hidden="true">→</span>
@@ -225,7 +225,7 @@ export default async function VariantPage({
             <li>
               <Link
                 href="/#timeline"
-                className="inline-flex items-center gap-[--space-2] rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="inline-flex min-h-6 items-center gap-(--space-2) rounded-(--radius-sm) border border-ink-4 px-4 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Back to the timeline
               </Link>

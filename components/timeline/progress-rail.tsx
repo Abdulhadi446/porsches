@@ -40,9 +40,9 @@ function ProgressRail({
       <nav
         aria-label="Timeline: jump to a generation"
         data-off={visible ? undefined : ""}
-        className="pointer-events-none fixed inset-y-0 right-0 z-[var(--z-nav)] hidden w-[--space-32] items-center justify-center pr-[--space-4] transition-opacity duration-[--dur-base] data-[off]:invisible data-[off]:opacity-0 [@media(max-height:560px)]:hidden lg:flex xl:w-[--space-24]"
+        className="pointer-events-none fixed inset-y-0 right-0 z-[var(--z-nav)] hidden w-(--space-32) items-center justify-center pr-(--space-4) transition-opacity duration-(--dur-base) data-[off]:invisible data-[off]:opacity-0 [@media(max-height:560px)]:hidden lg:flex xl:w-(--space-24)"
       >
-        <ol className="pointer-events-auto flex flex-col gap-[--space-2]">
+        <ol className="pointer-events-auto flex flex-col gap-(--space-2)">
           {generations.map((generation, index) => {
             const isActive = !swept && index === activeIndex;
             return (
@@ -52,11 +52,11 @@ function ProgressRail({
                   onClick={(event) => onJump(event, generation)}
                   aria-current={isActive ? "true" : undefined}
                   aria-label={`${generation.code}, ${yearLabel(generation.yearsStart, generation.yearsEnd)}`}
-                  className="group flex items-center gap-[--space-3] rounded-[--radius-sm] py-1 pl-[--space-2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="group flex items-center gap-(--space-3) rounded-(--radius-sm) py-1 pl-(--space-2) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   <span
                     aria-hidden="true"
-                    className={`font-mono text-mono-xs tracking-[--tracking-mono] transition-colors duration-[--dur-fast] ${
+                    className={`font-mono text-mono-xs tracking-(--tracking-mono) transition-colors duration-(--dur-fast) ${
                       isActive
                         ? "text-metal-100"
                         : "text-metal-700 group-hover:text-metal-300"
@@ -66,7 +66,7 @@ function ProgressRail({
                   </span>
                   <span
                     aria-hidden="true"
-                    className={`h-px transition-[width,background-color] duration-[--dur-base] group-hover:w-10 group-focus-visible:w-10 ${
+                    className={`h-px transition-[width,background-color] duration-(--dur-base) group-hover:w-10 group-focus-visible:w-10 ${
                       isActive ? "w-10" : "w-5"
                     }`}
                     style={{
@@ -77,7 +77,7 @@ function ProgressRail({
                   />
                   <span
                     aria-hidden="true"
-                    className={`w-14 text-right font-mono text-mono-xs uppercase tracking-[--tracking-mono] transition-[color,opacity] duration-[--dur-fast] ${
+                    className={`w-14 text-right font-mono text-mono-xs uppercase tracking-(--tracking-mono) transition-[color,opacity] duration-(--dur-fast) ${
                       isActive
                         ? "text-metal-100 opacity-100"
                         : "text-metal-500 opacity-60 group-hover:opacity-100"
@@ -96,10 +96,10 @@ function ProgressRail({
       <div
         aria-hidden="true"
         data-off={visible ? undefined : ""}
-        className="pointer-events-none fixed top-1/2 right-0 z-[var(--z-sticky)] h-[34dvh] w-px -translate-y-1/2 bg-ink-4 transition-opacity duration-[--dur-base] data-[off]:opacity-0 lg:hidden"
+        className="pointer-events-none fixed top-1/2 right-0 z-[var(--z-sticky)] h-[34dvh] w-px -translate-y-1/2 bg-ink-4 transition-opacity duration-(--dur-base) data-[off]:opacity-0 lg:hidden"
       >
         <span
-          className="absolute inset-x-0 top-0 bg-guards transition-[height] duration-[--dur-base]"
+          className="absolute inset-x-0 top-0 bg-guards transition-[height] duration-(--dur-base)"
           style={{ height: `${fill}%` }}
         />
       </div>

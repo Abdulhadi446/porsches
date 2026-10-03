@@ -167,7 +167,7 @@ export function CustomCursor() {
         }`}
       >
         <span
-          className={`scale-[0.34] whitespace-nowrap font-mono text-mono-xs uppercase leading-none tracking-[--tracking-label] text-metal-100 transition-opacity duration-[--dur-fast] ${
+          className={`scale-[0.34] whitespace-nowrap font-mono text-mono-xs uppercase leading-none tracking-(--tracking-label) text-metal-100 transition-opacity duration-(--dur-fast) ${
             label && (isCanvas || mode === "link") ? "opacity-100" : "opacity-0"
           }`}
         >

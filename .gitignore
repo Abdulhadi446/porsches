@@ -11,5 +11,9 @@ dist/
 public/images/**/*
 !public/images/_placeholder/
 !public/images/README.md
+# Generated turntable frames (~81 MB), same rationale as the images above:
+# reproducible with `npm run assets:turntables`.
+public/turntables/**/*
+!public/turntables/README.md
 # 3D models are small and are versioned so deploys do not depend on the fetch step
 .cache/

@@ -15,7 +15,13 @@
     "assets:models": "node scripts/fetch-models.ts",
     "prebuild": "node scripts/merge-assets.ts && node scripts/build-client-catalog.ts",
     "predev": "node scripts/merge-assets.ts && node scripts/build-client-catalog.ts",
-    "catalog": "node scripts/build-client-catalog.ts"
+    "catalog": "node scripts/build-client-catalog.ts",
+    "deploy:build": "node scripts/merge-assets.ts && node scripts/build-client-catalog.ts && next build",
+    "deploy:build:assets": "node scripts/fetch-images.ts --all && node scripts/convert-images.ts && node scripts/fetch-turntables.ts --all && node scripts/merge-assets.ts && node scripts/build-client-catalog.ts && next build",
+    "deploy:build:switch": "if [ \"${P911_FETCH_ASSETS:-0}\" = \"1\" ]; then npm run deploy:build:assets; else npm run deploy:build; fi",
+    "deploy:check": "node scripts/merge-assets.ts --check && tsc --noEmit && eslint .",
+    "ci:assets": "node scripts/fetch-images.ts --all && node scripts/convert-images.ts && node scripts/fetch-turntables.ts --all && node scripts/merge-assets.ts && node scripts/build-client-catalog.ts",
+    "assets:turntables": "node scripts/fetch-turntables.ts"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

@@ -109,29 +109,29 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
   );
 
   return (
-    <div className="px-[--gutter] pb-[--space-24] pt-[calc(var(--nav-h,64px)+var(--space-12))]">
-      <div className="mx-auto max-w-[--maxw]">
-        <header className="mb-[--space-8]">
-          <p className="label mb-[--space-2]">
+    <div className="px-(--gutter) pb-(--space-24) pt-[calc(var(--nav-h,64px)+var(--space-12))]">
+      <div className="mx-auto max-w-(--maxw)">
+        <header className="mb-(--space-8)">
+          <p className="label mb-(--space-2)">
             {GENERATION_INDEX.length} generations · {VARIANT_COUNT} variants indexed
           </p>
-          <h1 className="text-display-2 mb-[--space-4]">
+          <h1 className="text-display-2 mb-(--space-4)">
             All <span className="text-guards-text">variants</span>
           </h1>
-          <p className="max-w-[--maxw-prose] text-metal-500">
+          <p className="max-w-(--maxw-prose) text-metal-500">
             Every 911 in the dataset with its real specifications. Filter, sort
             and share the view — the address bar always holds the current state.
           </p>
         </header>
 
-        <div className="grid gap-[--space-8] lg:grid-cols-[17rem_1fr]">
+        <div className="grid gap-(--space-8) lg:grid-cols-[17rem_1fr]">
           <div className="lg:sticky lg:top-[calc(var(--nav-h,64px)+var(--space-6))] lg:self-start">
-            <div className="mb-[--space-4] flex items-center gap-[--space-3] lg:hidden">
+            <div className="mb-(--space-4) flex items-center gap-(--space-3) lg:hidden">
               <button
                 type="button"
                 onClick={() => setTray(true)}
                 aria-haspopup="dialog"
-                className="flex-1 rounded-[--radius-sm] border border-ink-4 bg-ink-2 px-[--space-4] py-[--space-3] text-left font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="flex-1 rounded-(--radius-sm) border border-ink-4 bg-ink-2 px-4 py-3 text-left font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Filters
                 {active > 0 && <span className="ml-2 text-guards-text">({active})</span>}
@@ -152,11 +152,11 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
           </div>
 
           <div ref={resultsRef} className="scroll-mt-[calc(var(--nav-h,64px)+var(--space-6))]">
-            <div className="mb-[--space-4] flex flex-wrap items-center gap-[--space-3]">
+            <div className="mb-(--space-4) flex flex-wrap items-center gap-(--space-3)">
               <p
                 role="status"
                 aria-live="polite"
-                className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500"
+                className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500"
               >
                 {results.length} result{results.length === 1 ? "" : "s"}
                 {active > 0 ? ` · ${active} filter${active === 1 ? "" : "s"}` : ""}
@@ -170,7 +170,7 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
               <button
                 type="button"
                 onClick={() => openCommandPalette(filters.q)}
-                className="ml-auto rounded-[--radius-pill] border border-ink-4 px-[--space-3] py-[--space-1] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="ml-auto inline-flex min-h-6 items-center rounded-(--radius-pill) border border-ink-4 px-3 py-1 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:border-guards hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 ⌘K — search
               </button>
@@ -187,26 +187,26 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
             )}
 
             {visible.length === 0 ? (
-              <div className="border border-ink-4 bg-ink-2 p-[--space-12] text-center">
+              <div className="border border-ink-4 bg-ink-2 p-(--space-12) text-center">
                 <p className="font-display text-2xl uppercase">
                   Nothing matches
                 </p>
-                <p className="mx-auto mt-[--space-3] max-w-[--maxw-prose] text-metal-500">
+                <p className="mx-auto mt-(--space-3) max-w-(--maxw-prose) text-metal-500">
                   No variant satisfies every filter at once. Try widening the
                   year range or removing a facet.
                 </p>
                 <button
                   type="button"
                   onClick={clearAll}
-                  className="mt-[--space-6] rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="mt-(--space-6) inline-flex min-h-6 items-center rounded-(--radius-sm) border border-guards px-4 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Clear all filters
                 </button>
               </div>
             ) : (
-              <ul className="grid gap-[--space-3] sm:grid-cols-2 xl:grid-cols-3">
+              <ul className="grid gap-(--space-3) sm:grid-cols-2 xl:grid-cols-3">
                 {visible.map((variant) => (
-                  <li key={variant.key}>
+                  <li key={variant.key} className="min-w-0">
                     <VariantCard variant={variant} />
                   </li>
                 ))}
@@ -237,20 +237,20 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
             role="dialog"
             aria-modal="true"
             aria-label="Filter variants"
-            className="relative flex max-h-[86dvh] w-full flex-col overflow-hidden rounded-t-[--radius-lg] border-t border-ink-4 bg-ink-2"
+            className="relative flex max-h-[86dvh] w-full flex-col overflow-hidden rounded-t-(--radius-lg) border-t border-ink-4 bg-ink-2"
           >
-            <div className="flex items-center justify-between border-b border-ink-4 px-[--gutter] py-[--space-4]">
+            <div className="flex items-center justify-between border-b border-ink-4 px-(--gutter) py-(--space-4)">
               <p className="font-display text-lg uppercase">Filters</p>
               <button
                 ref={trayCloseRef}
                 type="button"
                 onClick={() => setTray(false)}
-                className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="inline-flex min-h-6 items-center rounded-(--radius-sm) border border-ink-4 px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Close
               </button>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-[--gutter] py-[--space-4]">
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-(--gutter) py-(--space-4)">
               <FilterPanel
                 filters={filters}
                 onToggle={onToggle}
@@ -263,11 +263,11 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
                 active={active}
               />
             </div>
-            <div className="border-t border-ink-4 px-[--gutter] py-[--space-4]">
+            <div className="border-t border-ink-4 px-(--gutter) py-(--space-4)">
               <button
                 type="button"
                 onClick={() => setTray(false)}
-                className="w-full rounded-[--radius-sm] bg-guards px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-ink transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-(--radius-sm) bg-guards px-4 py-3 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-ink transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Show {results.length} result{results.length === 1 ? "" : "s"}
               </button>
@@ -308,11 +308,11 @@ function FilterPanel({
   const sortId = `${searchId}-sort`;
 
   return (
-    <div className="flex flex-col gap-[--space-6]">
+    <div className="flex flex-col gap-(--space-6)">
       <div>
         <label
           htmlFor={searchId}
-          className="label mb-[--space-2] block"
+          className="label mb-(--space-2) block"
         >
           Text search
         </label>
@@ -322,13 +322,13 @@ function FilterPanel({
           value={filters.q}
           onChange={(event) => onQuery(event.target.value)}
           placeholder="GT3 RS, targa, 1974…"
-          className="w-full rounded-[--radius-sm] border border-ink-4 bg-ink-2 px-[--space-3] py-[--space-2] font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
+          className="w-full rounded-(--radius-sm) border border-ink-4 bg-ink-2 px-3 py-2 font-mono text-mono-sm text-metal-100 outline-none placeholder:text-metal-700 focus-visible:border-guards"
         />
       </div>
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Generation</legend>
-        <div className="flex flex-wrap gap-[--space-2]">
+        <legend className="label mb-(--space-2)">Generation</legend>
+        <div className="flex flex-wrap gap-(--space-2)">
           {GENERATION_INDEX.map((generation) => {
             const on = filters.gens.includes(generation.id);
             return (
@@ -337,7 +337,7 @@ function FilterPanel({
                 type="button"
                 aria-pressed={on}
                 onClick={() => onToggle("gens", generation.id)}
-                className={`rounded-[--radius-sm] border px-[--space-2] py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
+                className={`inline-flex min-h-6 min-w-6 items-center justify-center rounded-(--radius-sm) border px-2 py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
                   on
                     ? "border-guards bg-guards/15 text-metal-100"
                     : "border-ink-4 text-metal-500 hover:border-metal-700 hover:text-metal-300"
@@ -352,8 +352,8 @@ function FilterPanel({
       </fieldset>
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Body style</legend>
-        <div className="flex flex-wrap gap-[--space-2]">
+        <legend className="label mb-(--space-2)">Body style</legend>
+        <div className="flex flex-wrap gap-(--space-2)">
           {BODY_FACETS.map((facet) => {
             const on = filters.bodies.includes(facet.id);
             return (
@@ -372,8 +372,8 @@ function FilterPanel({
       </fieldset>
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Engine family</legend>
-        <div className="flex flex-wrap gap-[--space-2]">
+        <legend className="label mb-(--space-2)">Engine family</legend>
+        <div className="flex flex-wrap gap-(--space-2)">
           {ENGINE_FACETS.map((facet) => {
             const on = filters.engines.includes(facet.id);
             return (
@@ -392,8 +392,8 @@ function FilterPanel({
       </fieldset>
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Drivetrain</legend>
-        <div className="flex flex-wrap gap-[--space-2]">
+        <legend className="label mb-(--space-2)">Drivetrain</legend>
+        <div className="flex flex-wrap gap-(--space-2)">
           {DRIVE_FACETS.map((facet) => {
             const on = filters.drives.includes(facet.id);
             return (
@@ -412,11 +412,11 @@ function FilterPanel({
       </fieldset>
 
       <fieldset>
-        <legend className="label mb-[--space-2]">Years</legend>
-        <p className="mb-[--space-2] font-mono text-mono-sm text-metal-100">
+        <legend className="label mb-(--space-2)">Years</legend>
+        <p className="mb-(--space-2) font-mono text-mono-sm text-metal-100">
           {filters.yearFrom} – {filters.yearTo}
         </p>
-        <div className="flex flex-col gap-[--space-2]">
+        <div className="flex flex-col gap-(--space-2)">
           <label htmlFor={fromId} className="sr-only">
             Earliest year
           </label>
@@ -430,7 +430,7 @@ function FilterPanel({
             onChange={(event) =>
               onYears(Number(event.target.value), Math.max(filters.yearTo, Number(event.target.value)))
             }
-            className="w-full accent-guards"
+            className="min-h-6 w-full accent-guards"
           />
           <label htmlFor={toId} className="sr-only">
             Latest year
@@ -445,13 +445,13 @@ function FilterPanel({
             onChange={(event) =>
               onYears(Math.min(filters.yearFrom, Number(event.target.value)), Number(event.target.value))
             }
-            className="w-full accent-guards"
+            className="min-h-6 w-full accent-guards"
           />
         </div>
       </fieldset>
 
       <div>
-        <label htmlFor={sortId} className="label mb-[--space-2] block">
+        <label htmlFor={sortId} className="label mb-(--space-2) block">
           Sort by
         </label>
         <select
@@ -460,7 +460,7 @@ function FilterPanel({
           onChange={(event) =>
             onSort(event.target.value as VariantFilters["sort"])
           }
-          className="w-full rounded-[--radius-sm] border border-ink-4 bg-ink-2 px-[--space-3] py-[--space-2] font-mono text-mono-sm text-metal-100 outline-none focus-visible:border-guards"
+          className="w-full rounded-(--radius-sm) border border-ink-4 bg-ink-2 px-3 py-2 font-mono text-mono-sm text-metal-100 outline-none focus-visible:border-guards"
         >
           {SORT_OPTIONS.map((option) => (
             <option key={option.id} value={option.id}>
@@ -474,7 +474,7 @@ function FilterPanel({
         <button
           type="button"
           onClick={onClear}
-          className="self-start rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="inline-flex min-h-6 self-start items-center rounded-(--radius-sm) border border-ink-4 px-3 py-2 font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Clear {active} filter{active === 1 ? "" : "s"}
         </button>
@@ -484,7 +484,7 @@ function FilterPanel({
 }
 
 function chipClass(on: boolean): string {
-  return `rounded-[--radius-sm] border px-[--space-2] py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
+  return `inline-flex min-h-6 min-w-6 items-center justify-center rounded-(--radius-sm) border px-2 py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${
     on
       ? "border-guards bg-guards/15 text-metal-100"
       : "border-ink-4 text-metal-500 hover:border-metal-700 hover:text-metal-300"
@@ -506,13 +506,13 @@ function ActiveChips({
   const yearsChanged =
     filters.yearFrom !== YEAR_MIN || filters.yearTo !== YEAR_MAX;
   const chip =
-    "flex items-center rounded-[--radius-pill] border border-ink-4 bg-ink-2 px-[--space-3] py-1 font-mono text-mono-xs text-metal-300 transition-colors hover:border-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards";
+    "inline-flex min-h-6 items-center rounded-(--radius-pill) border border-ink-4 bg-ink-2 px-3 py-1 font-mono text-mono-xs text-metal-300 transition-colors hover:border-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards";
   const body = (id: string) => BODY_FACETS.find((f) => f.id === id)?.label ?? id;
   const engine = (id: string) => ENGINE_FACETS.find((f) => f.id === id)?.label ?? id;
   const drive = (id: string) => DRIVE_FACETS.find((f) => f.id === id)?.label ?? id;
 
   return (
-    <ul className="mb-[--space-4] flex flex-wrap gap-[--space-2]">
+    <ul className="mb-(--space-4) flex flex-wrap gap-(--space-2)">
       {filters.q.trim() && (
         <li>
           <button type="button" onClick={() => onQuery("")} className={chip}>
@@ -601,7 +601,7 @@ function ActiveChips({
         <button
           type="button"
           onClick={onClear}
-          className="rounded-[--radius-pill] border border-ink-4 px-[--space-3] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="inline-flex min-h-6 items-center rounded-(--radius-pill) border border-ink-4 px-3 py-1 font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Clear all
         </button>
@@ -616,10 +616,10 @@ function ActiveChips({
 
 function VariantCard({ variant }: { variant: IndexedVariant }) {
   return (
-    <article className="group relative flex h-full flex-col border border-ink-4 bg-ink-2 p-[--space-4] transition-colors hover:border-guards">
+    <article className="group relative flex h-full min-w-0 flex-col border border-ink-4 bg-ink-2 p-(--space-4) transition-colors hover:border-guards">
       <span
         aria-hidden="true"
-        className="mb-[--space-3] block h-0.5 w-8"
+        className="mb-(--space-3) block h-0.5 w-8"
         style={{ backgroundColor: variant.genAccent }}
       />
       <h2 className="font-display text-xl leading-tight">
@@ -630,36 +630,36 @@ function VariantCard({ variant }: { variant: IndexedVariant }) {
           {variant.name}
         </Link>
       </h2>
-      <p className="mt-[--space-1] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500">
+      <p className="mt-(--space-1) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
         {variant.genCode} · {variant.years}
       </p>
-      <dl className="mt-[--space-3] flex flex-col gap-1 font-mono text-mono-xs text-metal-300">
-        <div className="flex gap-[--space-2]">
+      <dl className="mt-(--space-3) flex min-w-0 flex-col gap-1 font-mono text-mono-xs text-metal-300">
+        <div className="flex min-w-0 gap-(--space-2)">
           <dt className="shrink-0 text-metal-700">Engine</dt>
           <dd className="min-w-0 flex-1 truncate">{truncate(variant.engine, 58)}</dd>
         </div>
-        <div className="flex gap-[--space-2]">
+        <div className="flex min-w-0 gap-(--space-2)">
           <dt className="shrink-0 text-metal-700">Power</dt>
           <dd className="min-w-0 flex-1 truncate">
             {variant.powerPs ? `${variant.powerPs} PS` : truncate(variant.power, 40) || "—"}
           </dd>
         </div>
-        <div className="flex gap-[--space-2]">
+        <div className="flex min-w-0 gap-(--space-2)">
           <dt className="shrink-0 text-metal-700">Drive</dt>
           <dd className="min-w-0 flex-1 truncate">
             {variant.driveLabel} · {variant.bodyLabel || "—"}
           </dd>
         </div>
       </dl>
-      <div className="mt-auto flex items-center gap-[--space-3] pt-[--space-4]">
+      <div className="mt-auto flex items-center gap-(--space-3) pt-(--space-4)">
         {variant.special && (
-          <span className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-guards-text">
+          <span className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-guards-text">
             Limited
           </span>
         )}
         <Link
           href={`/compare?a=${variant.key}`}
-          className="relative z-content ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content ml-auto inline-flex min-h-6 items-center font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Compare →
         </Link>
@@ -668,8 +668,11 @@ function VariantCard({ variant }: { variant: IndexedVariant }) {
   );
 }
 
-function truncate(value: string, max: number): string {
-  const text = value.trim();
+function truncate(value: string | null | undefined, max: number): string {
+  // Some variants are deliberate placeholders (an announced car with no
+  // published specs yet) and carry null spec fields.
+  const text = (value ?? "").trim();
+  if (!text) return "";
   if (text.length <= max) return text;
   const cut = text.slice(0, max);
   const lastSpace = cut.lastIndexOf(" ");
@@ -691,7 +694,7 @@ function Pagination({
   return (
     <nav
       aria-label="Pagination"
-      className="mt-[--space-12] flex flex-wrap items-center gap-[--space-2]"
+      className="mt-(--space-12) flex flex-wrap items-center gap-(--space-2)"
     >
       <PageButton
         label="Previous page"
@@ -705,7 +708,7 @@ function Pagination({
           <span
             key={`gap-${index}`}
             aria-hidden="true"
-            className="px-[--space-1] font-mono text-mono-sm text-metal-700"
+            className="px-(--space-1) font-mono text-mono-sm text-metal-700"
           >
             …
           </span>
@@ -727,7 +730,7 @@ function Pagination({
       >
         →
       </PageButton>
-      <p className="ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700">
+      <p className="ml-auto font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700">
         {PAGE_SIZE} per page · {total} total
       </p>
     </nav>
@@ -754,7 +757,7 @@ function PageButton({
       disabled={disabled}
       aria-label={label}
       aria-current={current ? "page" : undefined}
-      className={`min-w-10 rounded-[--radius-sm] border px-[--space-2] py-[--space-1] font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards disabled:cursor-not-allowed disabled:opacity-30 ${
+      className={`inline-flex min-h-6 min-w-10 items-center justify-center rounded-(--radius-sm) border px-2 py-1 font-mono text-mono-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards disabled:cursor-not-allowed disabled:opacity-30 ${
         current
           ? "border-guards bg-guards/15 text-metal-100"
           : "border-ink-4 text-metal-500 hover:border-metal-700 hover:text-metal-300"

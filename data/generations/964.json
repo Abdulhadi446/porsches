@@ -36,20 +36,20 @@
     }
   ],
   "heroImage": {
-    "src": "/images/964/img-1994-porsche-964-speedster-in-maritime-blue-front-right-8a0e1fc3-1920.avif",
+    "src": "/images/964/img-1993-porsche-911-964-carrera-rs-0d50d9f2-1920.avif",
     "alt": "Third Generation 911 (964) — hero photograph",
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoABABoJbACdAEMyR3To5mgAPRLNbzGWpmhaOyA6EuV4rkxtvytKH5yP5YuKiFCMk3HKy/29WgtgV8e/8aeE+uDt6irpPsUpM5QR8JF532AAAA=",
-    "creditId": "img-1994-porsche-964-speedster-in-maritime-blue-front-right-8a0e1fc3",
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoABABoJZgCdAD2Pzo+rJ0AAPsXuf3qHP36dzFSpwbrloX5GeI69NGDTdqbqQjS7/KesGGTg+K4DFshlbPnomVTR04f39HugAAA",
+    "creditId": "img-1993-porsche-911-964-carrera-rs-0d50d9f2",
     "width": 1920,
-    "height": 1171
+    "height": 1208
   },
   "timelineImage": {
-    "src": "/images/964/img-porsche-911-carrera-964-stratstone-2-eb324a06-1920.avif",
+    "src": "/images/964/img-1991-porsche-911-964-carrera-rs-2-d8287ef9-1920.avif",
     "alt": "Third Generation 911 (964) — wide view for the timeline",
-    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAoABABoJZQAAuiwT0U6CQAA+6NNHSjrxLyzpFP3KjKqy0oebsWkCxx4arc+DSfeRnbvVgZTGRxVjMdWmzh0MSigVTQFYAA=",
-    "creditId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkABABoJYwCdAEfn7BoQ0AAyjjLVu4FnWrYZIeWPSfGLg5A6jzPxweTfnMFVfRAe575pnSOAZCmQwAAAA==",
+    "creditId": "img-1991-porsche-911-964-carrera-rs-2-d8287ef9",
     "width": 1920,
-    "height": 1152
+    "height": 1103
   },
   "model3d": {
     "embedUrl": "https://sketchfab.com/3d-models/1989-porsche-911-964-carrera-4-22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
@@ -182,7 +182,7 @@
           "url": "https://sketchfab.com/3d-models/1989-porsche-911-964-carrera-4-22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
           "license": "CC Attribution",
           "author": "007",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -951,7 +951,7 @@
           "url": "https://sketchfab.com/3d-models/1993-porsche-911-964-turbo-e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
           "license": "CC Attribution",
           "author": "tonielpro520",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1130,7 +1130,7 @@
           "url": "https://sketchfab.com/3d-models/1992-porsche-911-964-turbo-s-36-b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
           "license": "CC Attribution",
           "author": "Maroi Mister Let Me Think Official 3D Studio",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -3087,32 +3087,167 @@
           "height": 960
         }
       ]
+    },
+    {
+      "id": "carrera-rs-n-gt",
+      "name": "911 Carrera RS N/GT",
+      "generation": "964",
+      "years": "1992–1993",
+      "yearsStart": 1992,
+      "yearsEnd": 1993,
+      "engine": "3,596 cc (3.6 L) air-cooled flat-six, type M64/03 (individually selected RS units)",
+      "power": "260 hp (191 kW; 257 bhp) minimum (the Carrera RS detune of the 3.6-litre Carrera 2 engine)",
+      "powerPs": 260,
+      "powerKw": 191,
+      "torque": null,
+      "acceleration": null,
+      "topSpeed": null,
+      "weight": null,
+      "drivetrain": "Rear-wheel drive",
+      "transmission": "6-speed manual (G50/10 close-ratio gearbox, asymmetrical limited-slip differential)",
+      "bodyStyles": [
+        "coupe"
+      ],
+      "description": "The N/GT is the homologation version of the 964 Carrera RS, built in 1992 for the German, Belgian and Swiss N-GT championship (factory code M003). Where the standard RS is a road car with a roll cage in the luggage compartment, the N/GT is that car with everything road-oriented removed: the carpets and sound deadening gone, plywood footboards for the driver, a fully welded cage, FIA-specification buckets in Nomex harnesses, a long-range fuel tank, twin internal fire extinguishers, an internal dash-mounted engine cut-off and the DME relocated behind the driver so the six-point harness can be belted. Engines were individually selected M64/03 units of at least 260 hp with a lightweight flywheel, driving through the close-ratio G50/10 with an asymmetrical limited-slip differential. A documented survivor, chassis WPOZZZ96ZNS499208, was completed on 10 April 1992 by Official Porsche Centre Zurich, registered in Switzerland in May 1993 and sold at Salon Privé in 2017 — the only N/GT whose build history is documented anywhere the sources could reach. It is modelled here rather than folded into 964/rs-3.8 because it is a distinct factory designation with its own purpose, not a trim level of the later 3.8 RS.",
+      "special": true,
+      "production": null,
+      "sources": [
+        {
+          "title": "Porsche 911 (964) — Wikipédia (964 Carrera RS 3.6 versions: Light, Touring M002, N-GT M003 for the German/Belgian/Swiss N-GT championship, RS America; 260 ch Carrera RS engine)",
+          "url": "https://fr.wikipedia.org/wiki/Porsche_911_(964)"
+        },
+        {
+          "title": "Porsche 911 (964) Carrera RS N/GT sells for £194,625 at Salon Privé, results — racecar.com (chassis WPOZZZ96ZNS499208, completed 10 April 1992; RS M64/03 engines, G50/10, N/GT equipment)",
+          "url": "https://www.racecar.com/news/86930/market-and-auction/porsche-911-964-carrera-rs-ngt-sells-for-194625-at-salon-prive-results"
+        },
+        {
+          "title": "Porsche 911 (964) — Wikipedia (Carrera RS lineage and RS variants section)",
+          "url": "https://en.wikipedia.org/wiki/Porsche_911_(964)"
+        }
+      ],
+      "missing": [
+        "Production total unverified: the Salon Privé report states that 'a total of just 290 cars were made' without making clear whether that is the N/GT run or the whole 964 Carrera RS programme, and French Wikipedia gives no count at all. Porsche published none, so `production` stays null rather than repeating a number whose scope is unknown",
+        "Kerb weight, 0–100 km/h and top speed were never published for the N/GT and no Porsche Club, Porsche Classic or Stuttcars figure was found; the 964 file's other RS weights are not interchangeable with a caged, stripped car",
+        "Code M003 and the N-GT championship role (Germany, Belgium, Switzerland) rest on French Wikipedia alone — the English 964 article has no N/GT section, and Porsche's own documentation could not be reached for this designation"
+      ],
+      "heroImage": {
+        "src": "/images/964/img-1993-porsche-911-964-carrera-rs-0d50d9f2-1920.avif",
+        "alt": "911 Carrera RS N/GT",
+        "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoABABoJZgCdAD2Pzo+rJ0AAPsXuf3qHP36dzFSpwbrloX5GeI69NGDTdqbqQjS7/KesGGTg+K4DFshlbPnomVTR04f39HugAAA",
+        "creditId": "img-1993-porsche-911-964-carrera-rs-0d50d9f2",
+        "width": 1920,
+        "height": 1208
+      },
+      "gallery": [
+        {
+          "src": "/images/964/img-1991-porsche-911-964-carrera-rs-2-d8287ef9-1920.avif",
+          "alt": "911 Carrera RS N/GT — photo 2",
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkABABoJYwCdAEfn7BoQ0AAyjjLVu4FnWrYZIeWPSfGLg5A6jzPxweTfnMFVfRAe575pnSOAZCmQwAAAA==",
+          "creditId": "img-1991-porsche-911-964-carrera-rs-2-d8287ef9",
+          "width": 1920,
+          "height": 1103
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-1991-porsche-911-964-carrera-rs-c2e7397c-1920.avif",
+          "alt": "911 Carrera RS N/GT — photo 3",
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJZQAAugzlQ8SmDbQAPvkeH36/jvlWZD5yWUmFlAXBLsecPBpBb+kAhNxpu+UTTZDm6JEEkngOaRoAiJ9NxFAAAA=",
+          "creditId": "img-1991-porsche-911-964-carrera-rs-c2e7397c",
+          "width": 1920,
+          "height": 1117
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-1991-porsche-911-964-carrera-rs-coupe-rear-bf52e9be-1280.avif",
+          "alt": "911 Carrera RS N/GT — photo 4",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkABABoJYgCdAEefhEYjigAy0+sz2yqd3EeX1tAdKprcK2sPDNnSJiVE6QVitVMz7hJBXLntOjmYl768MfPRcqgZwoA",
+          "creditId": "img-1991-porsche-911-964-carrera-rs-coupe-rear-bf52e9be",
+          "width": 1280,
+          "height": 747
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-porsche-964-carrera-rs-20490489908-f9ca9172-1920.avif",
+          "alt": "911 Carrera RS N/GT — photo 5",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsABABoJQBOgBZ6eEvBcTwAAP7IcLzUWA+m8AKfzTwwxYKOOl3WdA/XUZHJ8qxenyjkgWnHloPqIvh7X7GAKZbx++NhdG0SZ2xnTDgAAA==",
+          "creditId": "img-porsche-964-carrera-rs-20490489908-f9ca9172",
+          "width": 1920,
+          "height": 1280
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-1991-porsche-911-964-carrera-rs-3-eac14e4a-1920.avif",
+          "alt": "911 Carrera RS N/GT — photo 6",
+          "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsABABoJZQCdAEeYJQfIaAA/NzyotZlNWDLCWbMpphRakNUtQ0HVRifsGNYs4Mc2DlkoAkjlkfbvPt/cAAA",
+          "creditId": "img-1991-porsche-911-964-carrera-rs-3-eac14e4a",
+          "width": 1920,
+          "height": 1369
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-1991-porsche-911-964-carrera-rs-5-d33da118-1920.avif",
+          "alt": "911 Carrera RS N/GT — photo 7",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsABABoJZQC7AYulnisV8rwcAD+P83oL09HumW+DfX8e0UjztGk2nRGGIh9h8hH1+VE7nGSGm6qVe9OVMzT+QjhtDhtqaLppsAA",
+          "creditId": "img-1991-porsche-911-964-carrera-rs-5-d33da118",
+          "width": 1920,
+          "height": 1305
+        },
+        {
+          "src": "/images/carrera-rs-n-gt/img-porsche-911-964-carrera-rs-95b8ca50-640.avif",
+          "alt": "911 Carrera RS N/GT — photo 8",
+          "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAoABABoJbACdAEDGHmnh0TAAAD0AHQUm4xbYxURV7Kx6WN1DMJyAeqt6sDgMNZNDAGh8iO0v1gztwRDFCe66RvZYq1SVyGXxBkKfIdAAA==",
+          "creditId": "img-porsche-911-964-carrera-rs-95b8ca50",
+          "width": 640,
+          "height": 389
+        }
+      ],
+      "credits": [
+        {
+          "assetId": "img-1993-porsche-911-964-carrera-rs-0d50d9f2",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1993_Porsche_911_964_Carrera_RS.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-03",
+          "sourceId": "File:1993_Porsche_911_964_Carrera_RS.jpg",
+          "localPath": "/images/964/img-1993-porsche-911-964-carrera-rs-0d50d9f2-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15028×9454px (18920 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        },
+        {
+          "assetId": "img-1991-porsche-911-964-carrera-rs-2-d8287ef9",
+          "kind": "image",
+          "source": "wikimedia",
+          "url": "https://commons.wikimedia.org/wiki/File%3A1991_Porsche_911_964_Carrera_RS_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Calreyn88",
+          "retrieved": "2026-10-03",
+          "sourceId": "File:1991_Porsche_911_964_Carrera_RS_2.jpg",
+          "localPath": "/images/964/img-1991-porsche-911-964-carrera-rs-2-d8287ef9-1920.avif",
+          "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×9372px (11916 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+        }
+      ]
     }
   ],
   "credits": [
     {
-      "assetId": "img-1994-porsche-964-speedster-in-maritime-blue-front-right-8a0e1fc3",
+      "assetId": "img-1993-porsche-911-964-carrera-rs-0d50d9f2",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_964_Speedster_in_Maritime_Blue%2C_front_right.jpg",
-      "license": "CC BY-SA 3.0",
-      "author": "Mr.choppers",
-      "retrieved": "2026-10-02",
-      "sourceId": "File:1994_Porsche_964_Speedster_in_Maritime_Blue,_front_right.jpg",
-      "localPath": "/images/964/img-1994-porsche-964-speedster-in-maritime-blue-front-right-8a0e1fc3-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5146×3138px (8026 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "url": "https://commons.wikimedia.org/wiki/File%3A1993_Porsche_911_964_Carrera_RS.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-03",
+      "sourceId": "File:1993_Porsche_911_964_Carrera_RS.jpg",
+      "localPath": "/images/964/img-1993-porsche-911-964-carrera-rs-0d50d9f2-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15028×9454px (18920 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
-      "assetId": "img-porsche-911-carrera-964-stratstone-2-eb324a06",
+      "assetId": "img-1991-porsche-911-964-carrera-rs-2-d8287ef9",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_Carrera_964_Stratstone_2.jpg",
-      "license": "CC BY 4.0",
-      "author": "多多123",
-      "retrieved": "2026-10-02",
-      "sourceId": "File:Porsche_911_Carrera_964_Stratstone_2.jpg",
-      "localPath": "/images/964/img-porsche-911-carrera-964-stratstone-2-eb324a06-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 5000×3000px (3139 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "url": "https://commons.wikimedia.org/wiki/File%3A1991_Porsche_911_964_Carrera_RS_2.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-03",
+      "sourceId": "File:1991_Porsche_911_964_Carrera_RS_2.jpg",
+      "localPath": "/images/964/img-1991-porsche-911-964-carrera-rs-2-d8287ef9-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×9372px (11916 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
       "assetId": "model-964",
@@ -3121,7 +3256,7 @@
       "url": "https://sketchfab.com/3d-models/1989-porsche-911-964-carrera-4-22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
       "license": "CC Attribution",
       "author": "007",
-      "retrieved": "2026-10-02",
+      "retrieved": "2026-10-03",
       "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -3188,6 +3323,7 @@
     "The 964 Turbo 3.6 S “Flachbau” total is variously given as 75, 76, 90 and 93 across sources; 76 is used because it itemises by market. See the turbo-s-3.6 entry.",
     "Porsche's consumer page “What is the Porsche 964?” states “a 30-strong run of 911 Jubilee models”, contradicting the 911 units quoted by Porsche Newsroom, Wikipedia, Stuttcars and jtcars. 911 is used; flagged for the lead.",
     "The brief's “glass Targa” description is incorrect for the 964: it retained the removable steel targa panel, the last 911 to do so until the 991. The fixed glass-roof Targa arrived with the 993. Verified against Wikipedia, Porsche Classic and Stuttcars.",
-    "Media fields (heroImage, timelineImage, model3d, videos, credits) are intentionally empty — they are owned by the ASSET-IMAGES, ASSET-3D and ASSET-VIDEO agents and merged by the lead's scripts/merge-assets.ts."
+    "Media fields (heroImage, timelineImage, model3d, videos, credits) are intentionally empty — they are owned by the ASSET-IMAGES, ASSET-3D and ASSET-VIDEO agents and merged by the lead's scripts/merge-assets.ts.",
+    "964 Carrera RS 'Lightweight' and 'Touring' (code M002) remain unmodelled: they are RS specification packages with no roster id, and no Porsche documentation for either was found (RS America is modelled separately as rs-america)"
   ]
 }

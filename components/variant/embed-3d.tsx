@@ -46,20 +46,20 @@ export function Embed3D({ embedUrl, poster, carName, accent }: Embed3DProps) {
                 "linear-gradient(to top, var(--color-ink) 5%, color-mix(in srgb, var(--color-ink) 40%, transparent) 60%, transparent 100%)",
             }}
           />
-          <div className="absolute inset-0 grid place-items-center p-[--space-6]">
-            <div className="flex max-w-[46ch] flex-col items-center gap-[--space-4] text-center">
+          <div className="absolute inset-0 grid place-items-center p-(--space-6)">
+            <div className="flex max-w-[46ch] flex-col items-center gap-(--space-4) text-center">
               <p className="label">Interactive model · Sketchfab</p>
               <button
                 type="button"
                 onClick={() => setLoaded(true)}
-                className="inline-flex items-center gap-[--space-3] rounded-[--radius-pill] border border-ink-4 bg-ink-2/90 px-[--space-6] py-[--space-3] font-mono text-mono-sm uppercase tracking-[--tracking-mono] text-metal-100 transition-colors hover:border-metal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="inline-flex min-h-11 items-center gap-(--space-3) rounded-(--radius-pill) border border-ink-4 bg-ink-2/90 px-6 py-3 font-mono text-mono-sm uppercase tracking-(--tracking-mono) text-metal-100 transition-colors hover:border-metal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 <span aria-hidden="true" style={{ color: accent }}>
                   ▶
                 </span>
                 Load the 3D viewer
               </button>
-              <p className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+              <p className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
                 Loads Sketchfab&apos;s viewer on demand — nothing is requested from a
                 third party until you press the button.
               </p>

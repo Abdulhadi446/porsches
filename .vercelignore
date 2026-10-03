@@ -1,0 +1,37 @@
+# .vercelignore — what the Vercel CLI must never upload as build source.
+#
+# Why this file exists: Vercel's documented source-upload limit is 100 MB on
+# Hobby / 1 GB on Pro (vercel.com/docs/limits). This working tree holds ~409 MB
+# of rendered images plus ~81 MB of turntable frames, so a plain `vercel` /
+# `vercel --prod` would fail before it ever started a build.
+#
+# The two media trees are generated artefacts. They are reproduced by the remote
+# build itself (vercel.json buildCommand with P911_FETCH_ASSETS=1) or omitted —
+# see docs/DEPLOY.md. Nothing here is authored by hand.
+#
+# NOTE: `.vercelignore` is only consulted by the Vercel CLI. A Git-integrated
+# deploy uploads whatever the repository contains, so `public/turntables/**`
+# being untracked is a .gitignore concern, not one this file can fix.
+
+# rendered images: everything except the committed silhouette placeholder that
+# lib/assets.ts falls back to (and the folder README).
+public/images/*
+!public/images/_placeholder
+
+# turntable frames (103 sequences)
+public/turntables
+
+# build/tooling noise
+.cache
+node_modules
+.next
+out
+dist
+*.log
+tsconfig.tsbuildinfo
+.DS_Store
+.env*.local
+.vercel
+
+# research docs are not part of the deployed site
+docs

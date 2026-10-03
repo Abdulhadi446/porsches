@@ -173,25 +173,25 @@ export function Lightbox({
             tabIndex={-1}
             className="absolute inset-0 z-10 flex flex-col outline-none"
           >
-            <div className="flex items-center justify-between gap-[--space-4] px-[--gutter] py-[--space-4]">
+            <div className="flex items-center justify-between gap-(--space-4) px-(--gutter) py-(--space-4)">
               <p className="label truncate">{current.alt}</p>
               <button
                 type="button"
                 onClick={onClose}
-                className="shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="shrink-0 rounded-(--radius-sm) border border-ink-4 px-(--space-4) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Close (Esc)
               </button>
             </div>
 
-            <div className="relative flex min-h-0 flex-1 items-center justify-center px-[--gutter] pb-[--space-4]">
+            <div className="relative flex min-h-0 flex-1 items-center justify-center px-(--gutter) pb-(--space-4)">
               {total > 1 ? (
                 <NavButton side="left" onClick={() => step(-1)} />
               ) : null}
 
               <motion.figure
                 layoutId={layoutId}
-                className="relative mx-[--space-8] max-h-full w-full max-w-[min(72rem,90vw)]"
+                className="relative mx-(--space-8) max-h-full w-full max-w-[min(72rem,90vw)]"
               >
                 <div className="relative aspect-[3/2] w-full border border-ink-4 bg-ink-2">
                   <SafeImage
@@ -209,10 +209,10 @@ export function Lightbox({
               ) : null}
             </div>
 
-            <div className="px-[--gutter] pb-[--space-6]">
+            <div className="px-(--gutter) pb-(--space-6)">
               <p
                 aria-live="polite"
-                className="font-mono text-mono-sm tracking-[--tracking-mono] text-metal-500"
+                className="font-mono text-mono-sm tracking-(--tracking-mono) text-metal-500"
               >
                 {index + 1} / {total}
                 <span className="sr-only">
@@ -242,7 +242,7 @@ function NavButton({
       onClick={onClick}
       aria-label={side === "left" ? "Previous image" : "Next image"}
       className={cx(
-        "absolute top-1/2 -translate-y-1/2 grid h-12 w-12 shrink-0 place-items-center rounded-[--radius-pill] border border-ink-4 bg-ink-2/90 font-mono text-metal-100 transition-colors hover:border-metal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards",
+        "absolute top-1/2 -translate-y-1/2 grid h-12 w-12 shrink-0 place-items-center rounded-(--radius-pill) border border-ink-4 bg-ink-2/90 font-mono text-metal-100 transition-colors hover:border-metal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards",
         side === "left" ? "left-0" : "right-0",
       )}
     >

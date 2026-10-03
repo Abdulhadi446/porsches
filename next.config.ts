@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
+    // Inline the route CSS instead of shipping a render-blocking stylesheet:
+    // measured FCP 2044 -> 1036 ms on /compare, 2356 -> 1032 ms on a variant
+    // page (docs/perf.md P2-3).
+    inlineCss: true,
     // Keeps framer-motion/gsap/three addons out of the shared chunk so the first
     // route only ships the pieces it actually renders (measured: -236 kB entry).
     optimizePackageImports: [

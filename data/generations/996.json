@@ -584,7 +584,7 @@
         {
           "src": "/images/carrera-4s/img-porsche-996-carrera-4s-2-f8a54c8a-1920.avif",
           "alt": "911 Carrera 4S — photo 8",
-          "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoABABoJQBYdsWCztOgds4BxwAA/uRJyi7nxCHbrFyV74suT0/EQCmET8GKm1oRwmraLYuTFadqbIZvlYOUGknLXHbG3ZPaUgvrvHesbYNMECfAAAAA",
+          "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAoABABoJQBYdsV4ztOgdpa/ggAA/uRJyi4pxCHbrFyV74stxk/EQCl0S8GKl4bUyTiiV0bamCxjsPSdvZqGsYar52NxOBBl6NYyDgqZehqLG4AAAA==",
           "creditId": "img-porsche-996-carrera-4s-2-f8a54c8a",
           "width": 1920,
           "height": 1180
@@ -905,7 +905,7 @@
           "url": "https://sketchfab.com/3d-models/porsche-911turbo-996-2000-0aca89de30b94126bc7020109b2f3ef0?embed=1",
           "license": "CC Attribution",
           "author": "i3bod",
-          "retrieved": "2026-10-02",
+          "retrieved": "2026-10-03",
           "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
           "localPath": null,
           "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -1364,7 +1364,7 @@
         {
           "src": "/images/gt2/img-2001-porsche-911-996-gt2-33570-5f725d27-1920.avif",
           "alt": "911 GT2 — photo 3",
-          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwABABoJbACdAYuRishQG2kAADiWV1hIZdI9o1zCYVLLk0AOCeTKjdSHSqPdOL7OG7en6YtoXU2oTiZwDdMj82xQxeSHyaS9zLWHRlKju7lhrzBxZ8IAAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwABABoJbACdAYulishQGpnAADiWV1hIarGbrRJbpXdaed+SFwbc4B/AigPmaYvs4b6WuSFpBSYwcZBmew3TpFlsUMWnWjZtJfdqLI2fNudm2hh9doM0AA=",
           "creditId": "img-2001-porsche-911-996-gt2-33570-5f725d27",
           "width": 1920,
           "height": 1433
@@ -1388,7 +1388,7 @@
         {
           "src": "/images/gt2/img-porsche-996-gt2-fd8c8017-640.avif",
           "alt": "911 GT2 — photo 6",
-          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZQAAu1xYMztwAD+7r4txmkOQg52aHECTBWQ5yWMcEVsP2mwAqaVIc7ve+X/yUpx6UUxHVPLfO3y6T7egkugKAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAwABABoJZQAAtzFYCwQAP7uklJg9ojTjqQShZxhFdGP56piKd8dHs7xurtsWA19of/koQiQ8S93VOgLmMGEVRcykjgA",
           "creditId": "img-porsche-996-gt2-fd8c8017",
           "width": 640,
           "height": 480
@@ -1404,7 +1404,7 @@
         {
           "src": "/images/gt2/img-techart-gt-street-based-on-porsche-996-gt2-92eaa17d-1280.avif",
           "alt": "911 GT2 — photo 8",
-          "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsABABoJYgCdAEMVckRnYUAAMs7ZrXmnLmwRay7bOKgDfZoU5cek6I+xZVILWrDgtglO28HIY9LDrVE9tDIFKQ+WTLFa5h1AJTAAAA=",
+          "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsABABoJYgCw7EMrWHCL6wwAMs7ZveAO7V70CNW+j51U3DqYfm1huYu6tIzG6QpsNzev9PFReBJRMpZQt0xNVUlFoXbRIhWHAAA",
           "creditId": "img-techart-gt-street-based-on-porsche-996-gt2-92eaa17d",
           "width": 1280,
           "height": 851
@@ -1925,7 +1925,7 @@
       "url": "https://sketchfab.com/3d-models/porsche-996-bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
       "license": "CC Attribution",
       "author": "MattDoesBlender",
-      "retrieved": "2026-10-02",
+      "retrieved": "2026-10-03",
       "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
       "localPath": null,
       "note": "Sketchfab embed — model streamed from Sketchfab CDN, never rehosted"
@@ -2044,6 +2044,10 @@
     "Carrera 4 (3.4 L) top speed conflict: Wikipedia EU-spec 274 km/h vs Excellence 174 mph / 280 km/h (Wikipedia used).",
     "GT2 MY2003–2005 (483 PS) performance not separately verified; quoted 4.0 s / 314 km/h figures are Excellence's 2002 (462 PS) car.",
     "40th Anniversary (appended variant): 0–100 km/h and top speed unverified and left null; kerb weight from a single source.",
-    "Millennium Edition kerb weight not found; only a 0–60 mph acceleration figure is published by the source consulted."
+    "Millennium Edition kerb weight not found; only a 0–60 mph acceleration figure is published by the source consulted.",
+    "There is no 996 '50th Anniversary' model: the 911 50th Anniversary Edition is a 991 of model year 2014 (modelled as 991/50th-anniversary), while the 996's anniversary edition is the '40 Jahre Porsche Sports Cars' of 2004, already modelled as 996/40th-anniversary",
+    "A '996 Carrera 4 Millennium Edition' appears as a marketplace listing on Elferspot, but no Porsche document lists a Millennium Edition for the Carrera 4 — the Millennium Edition is the 2000 996 Carrera alone (modelled as 996/millennium-edition), so no separate variant was added",
+    "911 GT3 Cup cars (including the 996-based GT3 Cup and the later 997 and 991 GT3 Cup) are customer racing cars for the Carrera Cup and Supercup series, not road-legal variants, and are deliberately not modelled as road variants here",
+    "996 Carrera Cabriolet (996.2, 1999–2004) is still unmodelled: a real road-legal body with no roster id — flagged for a future pass"
   ]
 }

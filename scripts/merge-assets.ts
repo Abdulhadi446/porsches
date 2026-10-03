@@ -43,6 +43,26 @@ const credits = new Map<string, Credit>(
   (creditsFile.credits ?? []).map((c) => [c.assetId, c]),
 );
 
+/**
+ * Secondary credit files. The turntable and 3D agents wrote their own so they
+ * would not collide with the images agent while running in parallel; fold them
+ * in here so /credits lists EVERY asset, not just the stills.
+ */
+const extraCreditFiles = ["data/turntable-credits.json", "data/model-credits.json"];
+for (const file of extraCreditFiles) {
+  try {
+    const parsed = read<{ credits?: Credit[] } | Credit[]>(file);
+    const list = Array.isArray(parsed) ? parsed : (parsed.credits ?? []);
+    for (const c of list) {
+      if (!c.assetId) continue;
+      credits.set(c.assetId, c);
+    }
+  } catch {
+    console.warn(`merge-assets: optional credit file missing: ${file}`);
+  }
+}
+
+
 /* ---------------------------------------------------------------- helpers */
 const imgs = images as {
   generations?: Record<string, { heroImage?: ImageRef | null; timelineImage?: ImageRef | null }>;

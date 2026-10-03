@@ -81,6 +81,15 @@ Every id verified live via `https://www.youtube.com/oembed?url=...&format=json`.
 
 ## Lint / build gates (run before you report done)
 ```
-npm run typecheck && npm run lint
+npx tsc --noEmit && npx eslint .
+node scripts/fix-tailwind-var-utilities.mjs --check   # no Tailwind v3 [var] utilities
+node scripts/test-licence-parse.mjs                  # licence-template parser
+node scripts/convert-images.ts --verify              # every referenced image exists on disk
 ```
 Only the lead runs `npm run build`.
+
+## Lead-owned scripts (do not edit)
+`scripts/merge-assets.ts` (folds images/videos/models/turntables into the generation JSONs and
+credits), `scripts/build-client-catalog.ts` (slim client artefact), `scripts/smoke.mjs`
+(179-route crawl), `scripts/verify-turntable-licences.ts`, `scripts/fix-turntable-licences.ts`,
+`scripts/fix-tailwind-var-utilities.mjs`, `scripts/test-licence-parse.mjs`.

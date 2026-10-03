@@ -1,0 +1,143 @@
+name: CI
+
+# Network-free verification of every push and PR.
+#
+# The media trees (public/images, public/turntables) are generated artefacts, so a
+# clean checkout has none of them and this workflow never asks Wikimedia for
+# anything: it synthesises 341-byte AVIF stubs at the paths data/images.json points
+# at, which is enough for the Next image optimiser, the /credits page and
+# scripts/smoke.mjs to be exercised exactly as they are in production. Without
+# them every eagerly-loaded hero image would request a path that does not exist,
+# and scripts/smoke.mjs records any same-origin response >= 400 as a failure.
+#
+# Regenerating the real media is a separate, opt-in workflow:
+# .github/workflows/assets.yml (workflow_dispatch + weekly cron).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  verify:
+    name: typecheck · lint · build · smoke
+    runs-on: ubuntu-latest
+    # The smoke crawl is 177 routes; 45 min is the same ceiling Vercel imposes on
+    # a build, and it leaves room to read the log when it fails.
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Vercel builds this project on 24.x (its default LTS). Keep CI on the
+          # same major so a green run means the same thing on both.
+          node-version: "24"
+          cache: npm
+
+      - name: install
+        run: npm ci
+
+      - name: chromium for scripts/smoke.mjs
+        run: npx playwright install --with-deps chromium
+
+      - name: asset manifests are merged into data/generations
+        run: |
+          node scripts/merge-assets.ts --check > /tmp/merge-assets.log
+          cat /tmp/merge-assets.log
+          if ! grep -qx "missing media: none" /tmp/merge-assets.log; then
+            echo "::error::data/generations is out of sync with the asset manifests — run 'npm run merge:assets' and commit the result"
+            exit 1
+          fi
+
+      - name: typecheck
+        run: npx tsc --noEmit
+
+      - name: lint
+        run: npx eslint .
+
+      - name: licence parser regression test
+        run: node scripts/test-licence-parse.mjs
+
+      - name: synthesise stub renders
+        # Written into the workspace (not $RUNNER_TEMP) so that `import sharp`
+        # resolves against the repo's node_modules, then deleted again.
+        run: |
+          cat > "$GITHUB_WORKSPACE/.ci-stub-assets.mjs" <<'EOF'
+          import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+          import { dirname, join } from "node:path";
+          import sharp from "sharp";
+
+          const ROOT = process.cwd();
+          const images = JSON.parse(readFileSync(join(ROOT, "data/images.json"), "utf8"));
+          const stubs = {
+            ".avif": await sharp({
+              create: {
+                width: 320,
+                height: 180,
+                channels: 3,
+                background: { r: 12, g: 12, b: 16 },
+              },
+            })
+              .avif({ quality: 40, effort: 0 })
+              .toBuffer(),
+          };
+
+          let written = 0;
+          let kept = 0;
+          const walk = (node) => {
+            if (!node || typeof node !== "object") return;
+            if (typeof node.src === "string" && typeof node.creditId === "string") {
+              const rel = node.src.replace(/^\//, "");
+              const file = join(ROOT, "public", rel);
+              if (existsSync(file)) {
+                kept += 1;
+                return;
+              }
+              const bytes = stubs[rel.slice(rel.lastIndexOf("."))];
+              if (!bytes) {
+                console.log(`  no stub for ${rel}`);
+                return;
+              }
+              mkdirSync(dirname(file), { recursive: true });
+              writeFileSync(file, bytes);
+              written += 1;
+            }
+            for (const value of Object.values(node)) walk(value);
+          };
+
+          walk(images.generations);
+          walk(images.variants);
+          console.log(`stub renders: ${written} written, ${kept} already present`);
+          EOF
+          node "$GITHUB_WORKSPACE/.ci-stub-assets.mjs"
+          rm -f "$GITHUB_WORKSPACE/.ci-stub-assets.mjs"
+
+      - name: build
+        # `npx next build` on purpose: it does not run the prebuild hook, so this
+        # gate proves the committed data/generations + data/client-catalog.json
+        # are enough to build. vercel.json runs deploy:build, which additionally
+        # regenerates both from the manifests before building.
+        run: npx next build
+
+      - name: smoke
+        run: |
+          npx next start --port 3111 &
+          for _ in $(seq 1 60); do
+            if curl -fsS -o /dev/null http://localhost:3111/; then break; fi
+            sleep 2
+          done
+          curl -fsS -o /dev/null http://localhost:3111/ || { echo "::error::server never came up"; exit 1; }
+          node scripts/smoke.mjs http://localhost:3111

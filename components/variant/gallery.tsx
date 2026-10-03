@@ -40,12 +40,12 @@ export function Gallery({ images, carName, accent, headingId }: GalleryProps) {
   return (
     <section
       aria-labelledby={headingId}
-      className="scroll-mt-[--space-16] px-[--gutter] py-[--space-16]"
+      className="scroll-mt-(--space-16) px-(--gutter) py-(--space-16)"
     >
-      <div className="mx-auto w-full max-w-[--maxw]">
-        <div className="flex flex-wrap items-end justify-between gap-[--space-4]">
+      <div className="mx-auto w-full max-w-(--maxw)">
+        <div className="flex flex-wrap items-end justify-between gap-(--space-4)">
           <div>
-            <p className="label flex items-center gap-[--space-3]">
+            <p className="label flex items-center gap-(--space-3)">
               <span
                 aria-hidden="true"
                 className="inline-block h-px w-8"
@@ -53,7 +53,7 @@ export function Gallery({ images, carName, accent, headingId }: GalleryProps) {
               />
               Gallery
             </p>
-            <h2 id={headingId} className="mt-[--space-3] text-display-3 text-metal-100">
+            <h2 id={headingId} className="mt-(--space-3) text-display-3 text-metal-100">
               {images.length > 1
                 ? `${images.length} views of the ${carName.replace(/^911\s*/i, "")}`
                 : "One frame so far"}
@@ -65,13 +65,13 @@ export function Gallery({ images, carName, accent, headingId }: GalleryProps) {
         </div>
 
         {allFallback ? (
-          <p className="mt-[--space-4] max-w-[--maxw-prose] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-500">
+          <p className="mt-(--space-4) max-w-(--maxw-prose) font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-500">
             Photography for this variant has not been cleared for licensing yet, so the
             placeholder silhouette is shown. It will never be a broken image.
           </p>
         ) : null}
 
-        <ul className="mt-[--space-8] grid grid-cols-2 gap-[--space-3] md:grid-cols-3">
+        <ul className="mt-(--space-8) grid grid-cols-2 gap-(--space-3) md:grid-cols-3">
           {images.map((image, position) => (
             <li key={`${image.src}-${position}`}>
               <motion.button
@@ -92,13 +92,13 @@ export function Gallery({ images, carName, accent, headingId }: GalleryProps) {
                     fill
                     sizes="(min-width: 768px) 33vw, 50vw"
                     className={cx(
-                      "object-cover transition-transform duration-[--dur-slow]",
+                      "object-cover transition-transform duration-(--dur-slow)",
                       "group-hover:scale-[1.03]",
                       image.fallback && "opacity-60 grayscale",
                     )}
                   />
                 </span>
-                <span className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-[--space-2] bg-ink/70 px-[--space-2] py-[--space-1] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500">
+                <span className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-(--space-2) bg-ink/70 px-(--space-2) py-(--space-1) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
                   <span className="truncate">
                     {String(position + 1).padStart(2, "0")} · {image.fallback ? "placeholder" : "archive"}
                   </span>

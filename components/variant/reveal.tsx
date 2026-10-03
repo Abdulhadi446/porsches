@@ -78,7 +78,7 @@ export function Eyebrow({
   accent?: string;
 }) {
   return (
-    <p className={cx("label flex items-center gap-[--space-3]", className)}>
+    <p className={cx("label flex items-center gap-(--space-3)", className)}>
       <span
         aria-hidden="true"
         className="inline-block h-px w-8"

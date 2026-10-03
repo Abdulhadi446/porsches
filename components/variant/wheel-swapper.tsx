@@ -34,10 +34,10 @@ export function WheelSwapper({ groups, value, onChange, unavailableReason }: Whe
       className="border-0 p-0"
       aria-describedby={enabled ? undefined : "viewer-wheel-note"}
     >
-      <legend className="label mb-[--space-2]">Wheels</legend>
+      <legend className="label mb-(--space-2)">Wheels</legend>
 
       {enabled ? (
-        <div className="flex flex-wrap items-center gap-[--space-2]">
+        <div className="flex flex-wrap items-center gap-(--space-2)">
           {groups!.map((group) => {
             const id = `wheel-${group.id}`;
             return (
@@ -55,7 +55,7 @@ export function WheelSwapper({ groups, value, onChange, unavailableReason }: Whe
                   htmlFor={id}
                   title={`${group.label} — ${group.nodes.length} named node${group.nodes.length === 1 ? "" : "s"} in the model`}
                   className={cx(
-                    "cursor-pointer rounded-[--radius-sm] border border-ink-4 bg-ink-3 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors",
+                    "cursor-pointer rounded-(--radius-sm) border border-ink-4 bg-ink-3 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors",
                     "hover:border-metal-500 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-guards",
                     "peer-checked:border-guards peer-checked:text-metal-100",
                   )}
@@ -67,13 +67,13 @@ export function WheelSwapper({ groups, value, onChange, unavailableReason }: Whe
           })}
         </div>
       ) : (
-        <div className="flex flex-wrap items-center gap-[--space-2]">
+        <div className="flex flex-wrap items-center gap-(--space-2)">
           {["Stock", "Sport", "Turbo"].map((label) => (
             <span
               key={label}
               title="Unavailable — this model exposes no named wheel nodes"
               aria-disabled="true"
-              className="cursor-not-allowed rounded-[--radius-sm] border border-ink-4 bg-ink-3 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 opacity-60"
+              className="cursor-not-allowed rounded-(--radius-sm) border border-ink-4 bg-ink-3 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-700 opacity-60"
             >
               {label}
             </span>
@@ -84,7 +84,7 @@ export function WheelSwapper({ groups, value, onChange, unavailableReason }: Whe
       {!enabled ? (
         <p
           id="viewer-wheel-note"
-          className="mt-[--space-2] max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-700"
+          className="mt-(--space-2) max-w-[46ch] font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-700"
         >
           {unavailableReason ??
             "This model exposes no named wheel nodes, so there is nothing to swap — the control stays disabled rather than pretending."}

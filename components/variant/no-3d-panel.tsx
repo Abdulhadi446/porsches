@@ -33,7 +33,7 @@ export function NoModelPanel({ accent, carName, poster }: NoModelPanelProps) {
         duration={34}
       />
 
-      <div className="relative z-content grid w-full max-w-[52rem] gap-[--space-6] p-[--space-6] md:grid-cols-[1.1fr_1fr] md:p-[--space-8]">
+      <div className="relative z-content grid w-full max-w-[52rem] gap-(--space-6) p-(--space-6) md:grid-cols-[1.1fr_1fr] md:p-(--space-8)">
         <div
           className="relative aspect-[4/3] w-full overflow-hidden border border-ink-4"
           aria-hidden="true"
@@ -54,8 +54,8 @@ export function NoModelPanel({ accent, carName, poster }: NoModelPanelProps) {
           />
         </div>
 
-        <div className="flex flex-col gap-[--space-3] self-center">
-          <p className="label flex items-center gap-[--space-3]">
+        <div className="flex flex-col gap-(--space-3) self-center">
+          <p className="label flex items-center gap-(--space-3)">
             <span
               aria-hidden="true"
               className="inline-block h-px w-8"
@@ -71,27 +71,27 @@ export function NoModelPanel({ accent, carName, poster }: NoModelPanelProps) {
             the 3D pipeline is deliberately conservative. When one lands for this
             variant you get, in priority order:
           </p>
-          <ol className="flex flex-col gap-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500">
+          <ol className="flex flex-col gap-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
             <li>
-              <span className="mr-[--space-2]" style={{ color: accent }}>
+              <span className="mr-(--space-2)" style={{ color: accent }}>
                 01
               </span>
               a licensed local model, rendered here with orbit + zoom
             </li>
             <li>
-              <span className="mr-[--space-2]" style={{ color: accent }}>
+              <span className="mr-(--space-2)" style={{ color: accent }}>
                 02
               </span>
               a Sketchfab embed, loaded only when you ask for it
             </li>
             <li>
-              <span className="mr-[--space-2]" style={{ color: accent }}>
+              <span className="mr-(--space-2)" style={{ color: accent }}>
                 03
               </span>
               an image-sequence turntable you can scrub
             </li>
           </ol>
-          <p className="font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-700">
+          <p className="font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-700">
             Sources and licences are listed on the credits page.
           </p>
         </div>

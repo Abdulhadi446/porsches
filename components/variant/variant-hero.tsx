@@ -171,24 +171,24 @@ export function VariantHero({
         <p
           aria-hidden="true"
           data-hero-title
-          className="pointer-events-none absolute inset-x-[--gutter] bottom-[18%] -z-10 select-none font-display text-[clamp(4.5rem,17vw,15rem)] leading-[0.78] tracking-[--tracking-display] text-transparent opacity-60"
+          className="pointer-events-none absolute inset-x-(--gutter) bottom-[18%] -z-10 select-none font-display text-[clamp(4.5rem,17vw,15rem)] leading-[0.78] tracking-(--tracking-display) text-transparent opacity-60"
           style={{ WebkitTextStroke: `1px ${accent}` }}
         >
           {yearRange(yearsStart, yearsEnd)}
         </p>
 
         {/* ---------------- content ---------------- */}
-        <div className="relative z-content mx-auto flex h-full w-full max-w-[--maxw] flex-col justify-end px-[--gutter] pb-[--space-12] md:pb-[--space-16]">
+        <div className="relative z-content mx-auto flex h-full w-full max-w-(--maxw) flex-col justify-end px-(--gutter) pb-(--space-12) md:pb-(--space-16)">
           <motion.nav
             aria-label="Breadcrumb"
             {...entrance}
             transition={{ ...transition, delay: reduced ? 0 : 0.05 }}
-            className="label mb-[--space-6] flex flex-wrap items-center gap-x-[--space-3] gap-y-1"
+            className="label mb-(--space-6) flex flex-wrap items-center gap-x-(--space-3) gap-y-1"
           >
             <Link
               href={`/911/${generation.id}`}
               className={cx(
-                "rounded-[--radius-sm] py-1 transition-colors hover:text-metal-100",
+                "inline-flex min-h-6 items-center rounded-(--radius-sm) py-1 transition-colors hover:text-metal-100",
                 FOCUS_RING,
               )}
               style={{ color: accent }}
@@ -214,9 +214,9 @@ export function VariantHero({
             data-hero-meta
             {...entrance}
             transition={{ ...transition, delay: reduced ? 0 : 0.2 }}
-            className="mt-[--space-6] flex flex-col gap-[--space-4]"
+            className="mt-(--space-6) flex flex-col gap-(--space-4)"
           >
-            <p className="spec-grid flex flex-wrap items-center gap-x-[--space-6] gap-y-[--space-2] text-mono-sm uppercase tracking-[--tracking-mono] text-metal-300">
+            <p className="spec-grid flex flex-wrap items-center gap-x-(--space-6) gap-y-(--space-2) text-mono-sm uppercase tracking-(--tracking-mono) text-metal-300">
               <span>{years}</span>
               {bodyStyles ? (
                 <>
@@ -237,16 +237,16 @@ export function VariantHero({
             </p>
 
             {description ? (
-              <p className="max-w-[--maxw-prose] text-body-2 leading-relaxed text-metal-300">
+              <p className="max-w-(--maxw-prose) text-body-2 leading-relaxed text-metal-300">
                 {description.split("\n\n")[0]}
               </p>
             ) : null}
 
-            <div className="flex flex-wrap items-center gap-x-[--space-6] gap-y-[--space-3] pt-[--space-2]">
+            <div className="flex flex-wrap items-center gap-x-(--space-6) gap-y-(--space-3) pt-(--space-2)">
               <a
                 href="#specs"
                 className={cx(
-                  "inline-flex items-center gap-[--space-3] rounded-[--radius-sm] border border-ink-4 bg-ink/60 px-[--space-4] py-[--space-3] font-mono text-mono-sm uppercase tracking-[--tracking-mono] transition-colors hover:border-metal-500 hover:bg-ink-2",
+                  "inline-flex min-h-11 items-center gap-(--space-3) rounded-(--radius-sm) border border-ink-4 bg-ink/60 px-4 py-3 font-mono text-mono-sm uppercase tracking-(--tracking-mono) transition-colors hover:border-metal-500 hover:bg-ink-2",
                   FOCUS_RING,
                 )}
               >

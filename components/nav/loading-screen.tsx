@@ -172,10 +172,10 @@ export function LoadingScreen({
   return (
     <div
       data-nav-loading={bucket}
-      className="fixed inset-0 z-loader flex flex-col items-center justify-center bg-ink px-[--gutter]"
+      className="fixed inset-0 z-loader flex flex-col items-center justify-center bg-ink px-(--gutter)"
     >
-      <div className="w-full max-w-[--space-32]">
-        <p aria-hidden="true" className="label mb-[--space-3] text-center">
+      <div className="w-full max-w-(--space-32)">
+        <p aria-hidden="true" className="label mb-(--space-3) text-center">
           {label} · {pct}%
         </p>
         <div
@@ -194,13 +194,13 @@ export function LoadingScreen({
         </div>
         <p
           aria-hidden="true"
-          className="mt-[--space-3] text-center font-display text-3xl uppercase"
+          className="mt-(--space-3) text-center font-display text-3xl uppercase"
         >
           911<span className="text-guards-text">.</span>SHOWCASE
         </p>
         <p
           aria-hidden="true"
-          className="mt-[--space-2] text-center font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-700"
+          className="mt-(--space-2) text-center font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-700"
         >
           {caption}
         </p>
@@ -213,7 +213,7 @@ export function LoadingScreen({
       <button
         type="button"
         onClick={dismiss}
-        className="absolute bottom-[--space-12] rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+        className="absolute bottom-(--space-12) rounded-(--radius-sm) border border-ink-4 px-(--space-4) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-label) text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
       >
         Skip intro
       </button>

@@ -14,17 +14,17 @@ performance/a11y audit.
 | Area | State |
 |---|---|
 | Generations | **9/9** chapters (901/F-body · G-series/930 · 964 · 993 · 996 · 997 · 991 · 992.1 · 992.2) |
-| Variants | **161** fully spec'd variant records, every one with a cited source set |
-| Routes | **179** prerendered pages (home, `/911`, 9 generations, 161 variants, `/credits`) + 3 dynamic (`/compare`, `/search`, `/variants`) |
+| Variants | **164** fully spec'd variant records, every one with a cited source set |
+| Routes | **179** prerendered pages (home, `/911`, 9 generations, 164 variants) + 4 dynamic (`/credits`, `/compare`, `/search`, `/variants`) |
 | Specs | Cited to Porsche Newsroom, Wikipedia, Porsche Classic, PCA, Stuttcars, Excellence, Hagerty etc. Unverifiable figures are `null` + a `missing[]` note, never estimated |
-| Images | **700** Wikimedia Commons files → **2 718** renders (AVIF 640/1280/1920 + WebP 1280), 16 px blur placeholders, **409 MB**. 162/161 variants have a hero **and** ≥5 gallery images; 9/9 generations have hero + timeline images |
+| Images | **716** Wikimedia Commons files → **2 779** renders (AVIF 640/1280/1920 + WebP 1280), 16 px blur placeholders, **430 MB**. Every variant has a hero **and** ≥5 gallery images except `991/turbo-gt` (see §4.5); 9/9 generations have hero + timeline images |
 | Video | **94** YouTube embeds, every ID verified live via oEmbed. Lazy poster facade, never downloaded |
-| 3D | **2** local GLBs (Draco+WebP, both under the 3 MB budget), **33** verified Sketchfab embeds, **103** image-sequence turntables |
+| 3D | **2** local GLBs (Draco+WebP, both under the 3 MB budget), **33** verified Sketchfab embeds, **103** image-sequence turntables (13 real orbits + 90 labelled parallax pans) |
 | Hero | Full-screen R3F scene: reflective floor, Lightformer studio lighting, Bloom + DoF + vignette, procedural extruded 911 fallback, pointer parallax, scroll-driven 360° orbit |
 | Timeline | Pinned GSAP ScrollTrigger sequence, 9 chapters, horizontal year scrub, outlined year numerals, per-generation accent wash, Lenis smooth scroll |
 | FX library | 7 drop-in effects (gradient mesh, speed lines, rain-on-glass, heat haze, grain, road tunnel, starfield), all with reduced-motion + low-power fallbacks |
 | Nav | Sticky mega-nav, ⌘K palette, faceted variant grid, compare-two page, custom cursor, loading screen |
-| Credits | **840** asset records → auto-generated `/credits` page |
+| Credits | **1 067** asset records → auto-generated, paginated `/credits` page |
 
 ## 2. Verification actually run
 
@@ -33,9 +33,9 @@ performance/a11y audit.
 | `npx tsc --noEmit` | clean |
 | `npx eslint .` | clean |
 | `npx next build` | clean, 179 static pages |
-| Playwright smoke (`scripts/smoke.mjs`) | **177/177 routes HTTP 200, 0 console errors, 0 page errors, 0 4xx assets, 0 broken images** |
-| Measured LCP (real slow-4G + 4× CPU throttle, Playwright) | `/` 1.13 s · `/credits` 1.73 s · `/variants` 1.02 s · `/compare` 0.92 s · `/911/901/911-2.0` 1.64 s · `/911/992-1/gt3-rs` 1.10 s — **all inside the 2.5 s budget** |
-| Lighthouse (mobile) | `/911/992-1/gt3-rs` perf 93 / a11y 97 · `/variants` 78 / 96 · `/911/901/911-2.0` 76 / 97 · `/compare` 75 / 96 · `/credits` 65 / 96 · `/` 71 / 96 (best-practices and SEO 100 everywhere) |
+| Playwright smoke (`scripts/smoke.mjs`) | **179/179 routes HTTP 200, 0 console errors, 0 page errors, 0 4xx assets, 0 broken images** |
+| Measured LCP (real slow-4G + 4× CPU throttle, Playwright CDP) | `/` **1.01 s** · `/credits` **0.76 s** (median of 3; was 2.51 s) · `/variants` **0.79 s** · `/compare` **0.76 s** · `/911/901/911-2.0` **1.36 s** · `/911/992-1/gt3-rs` **1.26 s** · `/911/993/gt1` **1.47 s** — **every route inside the 2.5 s budget** |
+| Lighthouse (mobile) | a11y **100** on `/` and `/credits` (was 87), best-practices **100**, SEO 100. Perf scores on this shared 8-core box swing 46–93 run to run (TBT 550 ms vs 3 660 ms on identical builds), so the deterministic CDP measurement above is the number we trust |
 | CLS | 0.000–0.001 on every route tested |
 | WebGL contexts | exactly 1 alive at a time; 0 leaked across hero → variant → compare → back |
 | Licence audit (lead) | 87 turntable credit licences corrected, 3 unverifiable sources dropped, parser bug fixed + regression test added |
@@ -50,7 +50,13 @@ performance/a11y audit.
 5. Reduced-motion/phones now skip the hero canvas entirely (was: phones still built a context).
 6. Contrast: `--color-metal-700` raised to AA, new `--color-guards-text` for small text; contrast passes.
 7. Lightbox: focus restore to the trigger + `#main` inert; focus-visible ring forced for form controls; named buttons and touch-target sizes in the nav; favicon added; `/credits` horizontal overflow fixed.
-8. Removed the invalid `992-1/turbo-gt` placeholder (there is no 911 Turbo GT in either 992 phase; the 991.2 Turbo GT is a separate gap, see §4).
+8. Removed the invalid `992-1/turbo-gt` placeholder (there is no 911 Turbo GT in either 992 phase).
+9. **P0 styling bug, site-wide:** 497 Tailwind v3 `[--token]` utilities were compiling to invalid CSS in v4 (literally `padding-inline:--gutter`), so every gutter, radius, tracking, max-width and duration in the built stylesheet was being dropped by the browser. Migrated 838 occurrences in 42 files to the v4 `(--token)` form; `node scripts/fix-tailwind-var-utilities.mjs --check` guards it in CI.
+10. `/credits` was a 2.2 MB document with 4.2 s TBT — 1 067 rows in one table. Now paginated (60/page, 18 pages): 338 kB, and Lighthouse a11y went 87 → 100.
+11. Enabled `experimental.inlineCss` (measured FCP 2044 → 1036 ms on `/compare`).
+12. Merged the turntable and 3D credit files into `data/credits.json` so `/credits` lists every asset (1 067 records), not just stills.
+13. Hardened the client catalog against null spec fields — `991/turbo-gt` (no published specs) was crashing `/variants` with a 500.
+14. New variants `993/gt1` and `964/carrera-rs-n-gt` fetched with licensed imagery (716 credits total); removed the stale bare-id image aliases that would have attached a 992 Turbo S Cabriolet photo to `991/turbo-gt` and 992.1 GT3 RS photos to the non-existent 992.2 GT3 RS.
 
 ## 4. Known gaps, placeholders and missing assets
 
@@ -106,8 +112,10 @@ Notable, all recorded in the data rather than guessed:
 - **992.2**: no DIN weights for Carrera Cabriolet/S Cabriolet/Carrera 4S/Targa 4S (US curb weights used); Targa 4S 0–100 conflicts (3.5 s porsche.com vs 3.3 s Wikipedia).
 - **The 992.2 GT3 RS does not exist as an announced model** — only camouflaged prototypes (latest spy shots 2026-09-23). Its roster entry is kept with `null` specs and a `missing[]` note.
 - **No base 992.2 Carrera 4** — Porsche states the standard Carrera is RWD-only.
+- **`991/turbo-gt`** was added as a variant but **every spec field is `null`**: Porsche never published a press release, model page or data sheet for the 2018 Turbo GT, there is no Wikipedia article in any language, and it was never sold in the US. The circulating 645 PS / 3.8 TT / 330 km/h figures are recorded as *unverified context*, not as data. It therefore has **no hero image and no gallery** — the only variant on the site in that state.
+- **The 992.2 GT3 RS does not exist as an announced model** and its page states so in the first line; the photo it inherits is a 992.1 GT3 RS stand-in, flagged in its `missing[]`.
 - **The 964 was never badged "Carrera 4S/2S"** (roster ids kept for URL stability, display names corrected to "Turbo-Look"); the 964 also kept the steel targa panel, not glass.
-- **991.2 Turbo GT** exists (645 PS) but has no roster id — a real gap, not yet modelled.
+- Added by this pass: `993/gt1` (road-legal GT1, 544 PS, 25 cars — flagged in `missing[]` as arguably not a "911"), `964/carrera-rs-n-gt` (M003), `991/turbo-gt` (no specs, see above). Rejected with reasons recorded: GT2 RS/GT3 RS "Weissach" and Manthey (options, not variants), 991.2 GT3 R / RSR / 911 Challenge (race-only), "GT3 RS Heritage" (never existed), 996 "50th Anniversary" (it's a 991), 2.7 RS Ducktail/Gulf (liveries).
 
 ### 4.6 Images: stand-ins
 74 variants share a hero photo with a sibling variant and 33 use a family stand-in, because
@@ -129,6 +137,9 @@ images agent also blacklisted 10 Commons files whose photo contradicted its capt
 npm install
 npm run assets:images      # fetch + convert 700 Commons images (~10 min, network)
 npm run assets:turntables  # 103 image sequences
+node scripts/fix-tailwind-var-utilities.mjs --check   # CSS token regression guard
+node scripts/test-licence-parse.mjs                  # licence parser regression test
+node scripts/convert-images.ts --verify              # every referenced image exists
 npm run merge:assets       # fold manifests into data/generations/*.json
 npm run catalog            # build the slim client catalogue
 npm run dev                # http://localhost:3000
@@ -138,7 +149,14 @@ node scripts/smoke.mjs http://localhost:3000   # 177-route crawl
 node scripts/test-licence-parse.mjs             # licence parser regression test
 ```
 
-## 6. If you want more 3D
+## 6. Deployment
+
+`vercel.json`, `.github/workflows/ci.yml` (typecheck → lint → licence test → build → 179-route smoke) and
+`docs/DEPLOY.md` are in place. Asset fetching is **off by default** in the build (`P911_FETCH_ASSETS=1`
+turns it on) because the fetch is network-bound, rate-limited and would blow Vercel's 45-minute build
+cap; `.github/workflows/assets.yml` regenerates media on demand or weekly.
+
+## 7. If you want more 3D
 
 Paste a Sketchfab API token (Account Settings → Applications). The pipeline that already
 found and licence-verified 33 models then downloads the GLBs, runs

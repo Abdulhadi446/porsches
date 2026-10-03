@@ -20,11 +20,11 @@ export function YearNumeral({
   return (
     <span
       aria-hidden="true"
-      className={`pointer-events-none absolute inset-x-[-3vw] bottom-[--space-4] select-none overflow-hidden md:inset-x-auto md:bottom-auto md:left-[--gutter] md:right-0 md:top-1/2 md:-translate-y-1/2 ${className}`}
+      className={`pointer-events-none absolute inset-x-[-3vw] bottom-(--space-4) select-none overflow-hidden md:inset-x-auto md:bottom-auto md:left-(--gutter) md:right-0 md:top-1/2 md:-translate-y-1/2 ${className}`}
     >
       <span
         data-ts-numeral
-        className="block text-right font-display leading-[0.78] tracking-[--tracking-display] text-transparent opacity-70 text-[clamp(6.5rem,27vw,25rem)]"
+        className="block text-right font-display leading-[0.78] tracking-(--tracking-display) text-transparent opacity-70 text-[clamp(6.5rem,27vw,25rem)]"
         style={
           {
             WebkitTextStroke: "1px var(--chapter-accent, currentColor)",

@@ -68,12 +68,12 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
   return (
     <section
       aria-labelledby={headingId}
-      className="scroll-mt-[--space-16] px-[--gutter] py-[--space-16]"
+      className="scroll-mt-(--space-16) px-(--gutter) py-(--space-16)"
     >
-      <div className="mx-auto w-full max-w-[--maxw]">
-        <div className="flex flex-wrap items-end justify-between gap-[--space-4]">
+      <div className="mx-auto w-full max-w-(--maxw)">
+        <div className="flex flex-wrap items-end justify-between gap-(--space-4)">
           <div>
-            <p className="label flex items-center gap-[--space-3]">
+            <p className="label flex items-center gap-(--space-3)">
               <span
                 aria-hidden="true"
                 className="inline-block h-px w-8"
@@ -81,7 +81,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
               />
               3D viewer
             </p>
-            <h2 id={headingId} className="mt-[--space-3] text-display-3 text-metal-100">
+            <h2 id={headingId} className="mt-(--space-3) text-display-3 text-metal-100">
               {isGlb ? "Spin it yourself" : "Look closer"}
             </h2>
           </div>
@@ -102,7 +102,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
 
         <div
           ref={ref}
-          className="relative mt-[--space-8] overflow-hidden border border-ink-4 bg-ink-2"
+          className="relative mt-(--space-8) overflow-hidden border border-ink-4 bg-ink-2"
         >
           {/* fixed aspect box → the canvas/iframe can never shift the page */}
           <div className="relative aspect-[16/10] w-full sm:aspect-[16/9]">
@@ -128,7 +128,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
             ) : model.kind === "turntable" && model.turntable ? (
               <>
                 {model.turntableSynthetic && (
-                  <p className="label mt-[--space-2]">
+                  <p className="label mt-(--space-2)">
                     Parallax pan of one photograph — no multi-angle 360° of this
                     car exists under a free licence
                   </p>
@@ -148,8 +148,8 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
           </div>
 
           {isGlb || model.author || model.license ? (
-            <div className="flex flex-wrap items-center justify-between gap-[--space-4] border-t border-ink-4 p-[--space-4]">
-              <p className="max-w-[52ch] font-mono text-mono-xs leading-relaxed tracking-[--tracking-mono] text-metal-700">
+            <div className="flex flex-wrap items-center justify-between gap-(--space-4) border-t border-ink-4 p-(--space-4)">
+              <p className="max-w-[52ch] font-mono text-mono-xs leading-relaxed tracking-(--tracking-mono) text-metal-700">
                 {model.author || model.license
                   ? [
                       model.author ?? "Author unrecorded",
@@ -169,7 +169,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                     setDismissed(true);
                     releaseCanvas("variant-viewer");
                   }}
-                  className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="rounded-(--radius-sm) border border-ink-4 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Release the 3D viewer
                 </button>
@@ -177,7 +177,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                 <button
                   type="button"
                   onClick={() => setDismissed(false)}
-                  className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="rounded-(--radius-sm) border border-ink-4 px-(--space-3) py-(--space-2) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-300 transition-colors hover:border-metal-500 hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Mount the viewer again
                 </button>
@@ -186,7 +186,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
           ) : null}
         </div>
 
-        <div className="mt-[--space-6] flex flex-col gap-[--space-6] md:flex-row md:items-start md:justify-between">
+        <div className="mt-(--space-6) flex flex-col gap-(--space-6) md:flex-row md:items-start md:justify-between">
           <ColorSwapper
             paints={PAINTS}
             value={paint.id}
@@ -307,8 +307,8 @@ function ViewerPoster({
             "linear-gradient(to top, var(--color-ink) 4%, color-mix(in srgb, var(--color-ink) 45%, transparent) 60%, transparent 100%)",
         }}
       />
-      <p className="absolute inset-x-0 bottom-0 p-[--space-6] text-center font-mono text-mono-sm tracking-[--tracking-mono] text-metal-300">
-        <span aria-hidden="true" className="mr-[--space-2]" style={{ color: accent }}>
+      <p className="absolute inset-x-0 bottom-0 p-(--space-6) text-center font-mono text-mono-sm tracking-(--tracking-mono) text-metal-300">
+        <span aria-hidden="true" className="mr-(--space-2)" style={{ color: accent }}>
           ◆
         </span>
         3D viewer mounts as {carName} scrolls into view
