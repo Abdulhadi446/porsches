@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:41:06.283Z",
+  "generatedAt": "2026-10-03T13:34:09.489Z",
   "credits": [
     {
       "assetId": "model-930-turbo-1975",
@@ -7,8 +7,8 @@
       "source": "other",
       "url": "https://github.com/UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
       "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
-      "author": "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)",
-      "retrieved": "2026-10-03T09:41:06.283Z",
+      "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
+      "retrieved": "2026-10-03T13:34:09.489Z",
       "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
       "localPath": "/models/930-turbo-1975/model.glb",
       "note": "glb 2206432 bytes (< 3000000 budget); repo UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model, car geometry uid 8568d9d14a994b9cae59499f0dbed21e"
@@ -20,7 +20,7 @@
       "url": "https://www.get3dmodels.com/vehicles/porsche-911-carrera-4s/",
       "license": "CC Attribution-ShareAlike 4.0 (adapted)",
       "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
-      "retrieved": "2026-10-03T09:41:06.283Z",
+      "retrieved": "2026-10-03T13:34:09.489Z",
       "sourceId": "d01b254483794de3819786d93e0e1ebf",
       "localPath": "/models/991-carrera-4s/model.glb",
       "note": "glb 905340 bytes (< 3000000 budget); Sketchfab uid d01b254483794de3819786d93e0e1ebf; downloaded anonymously from https://www.get3dmodels.com/download/free_porsche_911_carrera_4s.glb (Sketchfab export, licence re-checked against api.sketchfab.com); 991.1 vs 991.2 facelift not distinguishable from the source imagery"

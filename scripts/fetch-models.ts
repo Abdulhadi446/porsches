@@ -404,7 +404,8 @@ const DIRECT_SOURCES: DirectSource[] = [
     licensePath: "LICENSE",
     licenseMustContain: ["MIT License", "Permission is hereby granted, free of charge"],
     license: "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
-    author: "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)",
+    author:
+      "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
     geometryLicense: "CC Attribution",
     geometryAuthor: "Lionsharp Studios",
     geometrySourceId: "8568d9d14a994b9cae59499f0dbed21e",
@@ -613,7 +614,13 @@ const SWEEP: Probe[] = [
     source: "poly.pizza",
     url: "https://poly.pizza/search/porsche",
     anonymousDownload: "yes",
-    note: "anonymous GLB download works: the model page embeds https://static.poly.pizza/<uuid>.glb and serves it with no auth (CC0/CC-BY shown on the page). Searched 911 / porsche / porsche 911 / 930 turbo / 964 / 991 / 992 / 993 / 996 / 997 / GT3 / turbo / sports car / coupe. ZERO model titles or descriptions contain 'porsche' or '911' — the search is title-based with fuzzy filler (a nonsense query still returns hits). Every hit is a generic car (Quaternius 'Sports Car', DeLorean, RX-7, Ferrari F40, Camaro, Bricklin SV1, 'Retro car' whose own description says 'Suzuki Vitara 1997'), so nothing is recognisably a 911. No CC0 bundle pages exist; individual models only.",
+    note: "anonymous GLB download works: the model page embeds https://static.poly.pizza/<uuid>.glb and serves it with no auth (CC0/CC-BY shown on the page). Searched 911 / porsche / porsche 911 / 930 turbo / 964 / 991 / 992 / 993 / 996 / 997 / GT3 / turbo / sports car / coupe. ZERO model titles or descriptions contain 'porsche' or '911' — the search is title-based with fuzzy filler (a nonsense query still returns hits). Every hit is a generic car (Quaternius 'Sports Car', DeLorean, RX-7, Ferrari F40, Camaro, Bricklin SV1, 'Retro car' whose own description says 'Suzuki Vitara 1997'), so nothing is recognisably a 911. No CC0 bundle pages exist; individual models only. RE-VERIFIED on a second pass: 13 queries re-fetched, card titles parsed out of the HTML by hand — 'porsche', 'porsche 911', '930 turbo' and 'GT3' return only Quaternius 'Sports Car'/'Sports Hatchback'/'Sportster', '964'/'991'/'992'/'993'/'996'/'997' return an empty result page (96 kB shell, zero cards). Verdict unchanged: this site has no 911 of any generation.",
+  },
+  {
+    source: "kenney.nl (Racing Kit / Toy Car Kit)",
+    url: "https://kenney.nl/assets/racing-kit",
+    anonymousDownload: "yes",
+    note: "both zips download anonymously (HTTP 200: racing-kit 6.08 MB, toy-car-kit 5.25 MB) and both ship a License.txt. Contents enumerated: racing-kit has raceCar{White,Red,Green,Orange} plus track/barrier/grandstand pieces; toy-car-kit has vehicle-{drag-racer,monster-truck,racer,racer-low,speedster,suv,truck,vintage-racer} plus track pieces. Stylised low-poly toy shapes, no 911 silhouette anywhere. Together with the Car Kit probe this exhausts Kenney's car content.",
   },
   {
     source: "kenney.nl (Car Kit)",
@@ -625,7 +632,7 @@ const SWEEP: Probe[] = [
     source: "get3dmodels.com (Sketchfab GLB mirror)",
     url: "https://www.get3dmodels.com/vehicles/porsche-911-carrera-4s/",
     anonymousDownload: "yes",
-    note: "anonymous direct .glb download works (HTTP 200, no auth, no token). The whole catalogue — 2967 model URLs enumerated from sitemap_index.xml — contains exactly 10 Porsche entries, 7 of them 911s. Licence is read from the asset.extras block Sketchfab itself bakes into every export and cross-checked against api.sketchfab.com. ACCEPTED: 1975 930 Turbo (CC BY 4.0) and (FREE) Carrera 4S (CC BY-SA 4.0). REJECTED as non-commercial: Porsche 911 GT3 (2022, 992.2) CC BY-NC 4.0, 1998 GT1, 2010 GT3 Cup, 2014 RSR, 2012 GT3 RS 4.0 — all CC BY-NC-SA 4.0. NOTE: this site's own card mislabels the CC BY-NC GT3 as 'Creative Commons Attribution'; never trust its metadata, only the asset's own extras.",
+    note: "anonymous direct .glb download works (HTTP 200, no auth, no token). The whole catalogue — 2967 model URLs enumerated from sitemap_index.xml — contains exactly 10 Porsche entries, 7 of them 911s. Licence is read from the asset.extras block Sketchfab itself bakes into every export and cross-checked against api.sketchfab.com. ACCEPTED: 1975 930 Turbo (CC BY 4.0) and (FREE) Carrera 4S (CC BY-SA 4.0). REJECTED as non-commercial: Porsche 911 GT3 (2022, 992.2) CC BY-NC 4.0, 1998 GT1, 2010 GT3 Cup, 2014 RSR, 2012 GT3 RS 4.0 — all CC BY-NC-SA 4.0. NOTE: this site's own card mislabels the CC BY-NC GT3 as 'Creative Commons Attribution'; never trust its metadata, only the asset's own extras. RE-VERIFIED on a second pass: all 11 Porsche GLB urls were re-read with two HTTP range requests each and every asset.extras block re-quoted — 8568d9d1 = CC-BY-4.0 Lionsharp, d01b2544 = CC-BY-SA-4.0 Lionsharp, b0a1d1f2 = CC-BY-NC-4.0 DreamCar, 17ad4a92 / 7d9c91fe / 63d9f850 / b2a0382d = CC-BY-NC-SA-4.0 OUTPISTON, and 8f81b20b (919 Hybrid) plus the 918 RSR / RS Spyder entries are not 911s at all. Nothing further is admissible here.",
   },
   {
     source: "sketchfab.com download API",
@@ -637,7 +644,31 @@ const SWEEP: Probe[] = [
     source: "github.com repo search",
     url: "https://api.github.com/search/repositories?q=porsche+911+gltf+model&per_page=1",
     anonymousDownload: "yes",
-    note: "anonymous repository search + raw.githubusercontent downloads both work. ~20 queries run (porsche 911 glb/gltf/obj, 911 three.js, porsche 964/993/996/930, sketchfab porsche). Every repo holding actual geometry is unlicensed (all-rights-reserved => rejected) or credits a different car: wSaiven/Porsche-911 is an Apache-2.0 licence file and NOTHING else; C3ddy/first-threejs-project is MIT but its README credits 'Outlaw GamesTM … 2018 Porsche 718 Cayman GTS' (not a 911, and NC); UtkarshPathrabe is the 930 source already in use. Code search needs auth, so a uid cannot be searched for directly.",
+    note: "anonymous repository search + raw.githubusercontent downloads both work. ~20 queries run (porsche 911 glb/gltf/obj, 911 three.js, porsche 964/993/996/930, sketchfab porsche). Every repo holding actual geometry is unlicensed (all-rights-reserved => rejected) or credits a different car: wSaiven/Porsche-911 is an Apache-2.0 licence file and NOTHING else; C3ddy/first-threejs-project is MIT but its README credits 'Outlaw GamesTM … 2018 Porsche 718 Cayman GTS' (not a 911, and NC); UtkarshPathrabe is the 930 source already in use. Code search needs auth, so a uid cannot be searched for directly. SECOND PASS with licence filters (license:mit / apache-2.0 / cc0-1.0): the only repos carrying real geometry are jajh90/r3f-porsche (a react-three-fiber demo whose LICENSE is the GPL-2 create-r3f-app template, not MIT as the API claims) and Krapiva/porsche911 / edwingeorgeshaji / Ammarrazin (licence file plus no geometry at all). jajh90/r3f-porsche ships public/model/car/model-transformed.glb derived from the SAME Sketchfab asset already in use (its Car.tsx header repeats author Karol Miklas / CC-BY-4.0 / uid 8568d9d1…) — an independent third copy, useful as provenance corroboration but not a new model, and 17 MB unoptimised. Rejected as a duplicate, not on licence grounds.",
+  },
+  {
+    source: "wikimedia commons (3D files)",
+    url: "https://api.wikimedia.org/core/v1/commons/search/page?q=Porsche%20911&limit=3",
+    anonymousDownload: "yes",
+    note: "the same api.wikimedia.org REST host the image pipeline already uses answers fine, but a 911 search returns photographs only (e.g. 'File:2013 Porsche 911 Carrera 4S (991) (9626546987).jpg'); queries for glb/stl/obj 3D assets return nothing. Commons has no 911 mesh.",
+  },
+  {
+    source: "si.edu open access (Smithsonian 3D)",
+    url: "https://api.si.edu/openaccess/api/v1.0/search?q=porsche&api_key=DEMO_KEY",
+    anonymousDownload: "yes",
+    note: "HTTP 200 anonymously, but the only Porsche hits are printed matter ('Porsche, Plakate = Porsche, Posters …' a 1960s book). The Smithsonian 3D collection has no car models, 911 or otherwise.",
+  },
+  {
+    source: "archive.org",
+    url: "https://archive.org/advancedsearch.php?q=porsche+911+3d+model&fl%5B%5D=identifier&rows=10&output=json",
+    anonymousDownload: "yes",
+    note: "search API is anonymous; the hits are Thingiverse printables mirrored as items (CC BY / CC BY-SA) plus unrelated youtube captures with no licenceurl at all. Nothing is a 911 vehicle model.",
+  },
+  {
+    source: "huggingface.co (ObjaverseXL sketchfab shards)",
+    url: "https://huggingface.co/api/datasets/liaolw/ObjaverseXL_sketchfab-features-part_0001",
+    anonymousDownload: "yes",
+    note: "the dataset is public and not gated (gated:false), but a file is an untitled shards-0000NN.tar of preprocessed features — there is no index and no per-item licence column, so the licence of any individual car inside cannot be verified, and locating one car would mean scanning multi-GB shards. Rejected on unverifiable per-item provenance, not on access.",
   },
   {
     source: "blendkit.com (ex-BlenderKit)",
@@ -679,7 +710,7 @@ const SWEEP: Probe[] = [
     source: "quaternius.com",
     url: "https://quaternius.com/packs/cars.html",
     anonymousDownload: "no",
-    note: "Cars Pack is CC0 and states 'Models 8', but the download is gated behind Patreon credits and the pack ships FBX/OBJ/Blend only (no glTF). No anonymous download, and no Porsche in it.",
+    note: "Cars Pack is CC0 and states 'Models 8', but the download is gated behind Patreon credits and the pack ships FBX/OBJ/Blend only (no glTF). No anonymous download, and no Porsche in it. RE-VERIFIED: /packs/cars.html still reads 'License CC0 / Formats FBX OBJ Blend / Models 8' and its only outbound link is patreon.com/quaternius.",
   },
   {
     source: "blendswap.com",

@@ -1,11 +1,11 @@
 /**
- * ASSET-TURNTABLES — image-sequence turntable builder (viewer tier 3).
+ * ASSET-TURNTABLES - image-sequence turntable builder (viewer tier 3).
  *
  * Contract with components/variant/turntable-3d.tsx (owned by VARIANT-PAGES, do
  * not change it here):
  *
  *     public/turntables/<genId>__<variantId>/frame-000.webp
- *     public/turntables/<genId>__<variantId>/frame-001.webp …
+ *     public/turntables/<genId>__<variantId>/frame-001.webp ...
  *
  * Frames must be CONTIGUOUS from 000 (the viewer probes sequentially and stops
  * after three misses), so a directory is only published when every frame index
@@ -14,48 +14,62 @@
  *
  * HONESTY RULES enforced by this script
  * ------------------------------------
- * 1. A frame is a real photograph of a real car. Nothing is generated, redrawn
- *    or colourised.
+ * 1. A real frame is a real photograph of a real car. Nothing is generated,
+ *    redrawn, colourised or moved.
  * 2. A sequence may only contain photographs of THE SAME PHYSICAL CAR. The
- *    evidence used (all of it recorded per frame in
- *    data/turntable-credits.json) is:
- *      a. an identical series stem — the Commons file name minus its trailing
- *         disambiguator (`_(12)`, `_(front)`, `_(flickr id)`, `_03`, …);
- *      b. an identical rendered-file-page Description (the "English :" sentence
- *         with the file-name echo removed);
- *      c. an identical Author on every member;
- *      d. text that positively names THIS variant and THIS generation — never
- *         inferred from the family alone (chassis code / air-cooled engine size
- *         / model year must appear);
- *      e. every member's licence parsed from its own Commons file page and
- *         restricted to CC0 / PD / CC BY / CC BY-SA 2.0/3.0/4.0;
+ *    evidence used (all of it recorded per frame in data/turntable-credits.json)
+ *    is:
+ *      a. an identical series stem - the Commons file name minus its trailing
+ *         disambiguator (`_(12)`, `_(front)`, `_(flickr id)`, `_03`, ...);
+ *      b. an identical Author on every member;
+ *      c. one capture date for the whole series, or - for a shoot split over
+ *         several sittings - one identical Description;
+ *      d. text (title / description / Commons category) that positively names
+ *         THIS variant of THIS generation, never the family alone: the chassis
+ *         code or engine size AND the variant's own trim must appear;
+ *      e. every member's licence read from that member's own Commons file page
+ *         and restricted to CC0 / public domain / CC BY / CC BY-SA 2.0/3.0/4.0;
  *      f. pairwise perceptual distance, so a "sequence" cannot be the same
- *         angle photographed twice.
- *    If any of those fail the sequence is NOT assembled — the variant is
+ *         angle photographed twice;
+ *      g. bodywork colour agreement, so one stem cannot silently hold two cars
+ *         of the same generation in different paint.
+ *    If any of those fail the sequence is NOT assembled - the variant is
  *    reported as missing instead. Photographs of different cars are never
  *    mixed into one directory.
- * 3. Frame ORDER is not invented: it is either the camera azimuth stated in the
- *    file names, or the shoot's own numbering.
+ * 3. Frame ORDER is not invented: it is the camera azimuth stated in the file
+ *    names, else the shoot's own numbering, else (and this is said out loud in
+ *    the credit record) plain file-name order, which is NOT a rotation.
  * 4. The only derived frames are the clearly labelled `synthetic` parallax
  *    sequences ("synthetic pans"), where ONE photograph is re-rendered at N
  *    crop offsets. They are honest motion, never a fake viewing angle, and
- *    every manifest entry says `"synthetic": true`.
+ *    every such manifest entry carries `"synthetic": true`.
+ *
+ * Wikimedia access - three documented api.wikimedia.org REST routes (the
+ * MediaWiki Action API host is blocked on this machine):
+ *   search  GET /core/v1/commons/search/page?q=...&limit=N
+ *   page    GET /core/v1/commons/page/<File:Name>   -> machine licence + wikitext
+ *   file    GET /core/v1/commons/file/<File:Name>   -> dimensions + download URL
+ * `/core/v1/commons/page/<title>/html` answers with the API documentation page
+ * rather than the file page, so it is NOT used to read a licence; the JSON route
+ * is primary and `/page/<title>/with_html` is the fallback.
+ * Only the download URL the file route itself hands back is used: a hand-built
+ * thumbnail URL is answered with HTTP 400 by the current edge.
  *
  * Pipeline (re-runnable, resumable, polite):
- *   search → group into same-car series → licence + identity check → download →
- *   sharp → 640px WebP frames → data/turntables.json +
+ *   search -> group into same-car series -> licence + identity check -> download
+ *   -> sharp -> 640px WebP frames -> data/turntables.json +
  *   data/turntable-credits.json + the additive `turntables` map of
  *   data/models.json
  *
  * Usage:
- *   npx tsx scripts/fetch-turntables.ts --priority
- *   npx tsx scripts/fetch-turntables.ts --all
- *   npx tsx scripts/fetch-turntables.ts --gen 993 --gen 992-1
- *   npx tsx scripts/fetch-turntables.ts --variants 993/carrera,997/gt2-rs
- *   npx tsx scripts/fetch-turntables.ts --all --analyse     # plan only
- *   npx tsx scripts/fetch-turntables.ts --all --only-real   # no synthetic pans
- *   npx tsx scripts/fetch-turntables.ts --all --boards      # QA contact sheets
- *   node --experimental-strip-types scripts/fetch-turntables.ts --all
+ *   node scripts/fetch-turntables.ts --priority
+ *   node scripts/fetch-turntables.ts --all
+ *   node scripts/fetch-turntables.ts --gen 993 --gen 992-1
+ *   node scripts/fetch-turntables.ts --variants 993/carrera,997/gt2-rs
+ *   node scripts/fetch-turntables.ts --all --analyse     # plan only
+ *   node scripts/fetch-turntables.ts --all --only-real   # no synthetic pans
+ *   node scripts/fetch-turntables.ts --all --boards      # QA contact sheets
+ *   node scripts/fetch-turntables.ts --all --force       # rebuild published dirs
  *
  * API responses are cached under $P911_WORK_DIR (default /tmp/opencode/p911)
  * with the same cache layout, User-Agent and adaptive throttling as
@@ -88,33 +102,48 @@ const TT_CREDITS_JSON = path.join(ROOT, "data/turntable-credits.json");
 const MODELS_JSON = path.join(ROOT, "data/models.json");
 const GEN_DIR = path.join(ROOT, "data/generations");
 
-const CONCURRENCY = Number(process.env.P911_CONCURRENCY ?? 4);
-const MIN_GAP_MS = Number(process.env.P911_GAP_MS ?? 350);
-const MAX_GAP_MS = 4000;
+/* api.wikimedia.org answers bursts with 429 + Retry-After, and the measured
+ * ceiling from this machine is well under 5 requests/second, so the floor is
+ * high, every refusal widens the gap, and Retry-After is obeyed. */
+const CONCURRENCY = Number(process.env.P911_CONCURRENCY ?? 3);
+const MIN_GAP_MS = Number(process.env.P911_GAP_MS ?? 1500);
+const MAX_GAP_MS = 30000;
+const DOWNLOAD_GAP_MS = Number(process.env.P911_DOWNLOAD_GAP_MS ?? 120);
 const SEARCH_LIMIT = 50;
-const MAX_RETRIES = 8;
-const DOWNLOAD_W = 1200; // frames are 640px wide; never pull a 6000px original
+const MAX_RETRIES = 6;
+const MAX_MEMBERS = 16; // a series is never opened wider than this
+/** P911_DEBUG=1 traces every candidate title and every rejection reason. */
+const DEBUG = process.env.P911_DEBUG === "1";
 
 /* ---- frame shape (see the contract at the top of this file) -------------- */
 const FRAME_W = Number(process.env.P911_TT_WIDTH ?? 640); // long edge
 const FRAME_H = Math.round((FRAME_W * 9) / 16); // 16:9, the stage's aspect
-const WEBP_QUALITY = Number(process.env.P911_TT_QUALITY ?? 72);
+/**
+ * Quality 44 / effort 6 measures 29-42 kB per 640x360 frame on the detailed
+ * studio and street photographs this pipeline uses, which is the closest the
+ * brief's 15-30 kB band can be reached without the frames turning visibly soft
+ * at the size the stage scales them to. `P911_TT_QUALITY` overrides it.
+ */
+const WEBP_QUALITY = Number(process.env.P911_TT_QUALITY ?? 44);
 const MAX_FRAMES = 72; // hard cap from the viewer
-const TARGET_FRAMES = Number(process.env.P911_TT_FRAMES ?? 24);
+const TARGET_FRAMES = Math.min(Number(process.env.P911_TT_FRAMES ?? 30), MAX_FRAMES);
 const MIN_REAL_FRAMES = Number(process.env.P911_TT_MIN ?? 6);
 /** A hero car accepts a shorter proven series: 4 real angles beat no viewer. */
 const HERO_MIN_FRAMES = Number(process.env.P911_TT_MIN_HERO ?? 4);
-
-function frameBar(target: { priority: number }): number {
-  return target.priority >= 0 ? Math.min(MIN_REAL_FRAMES, HERO_MIN_FRAMES) : MIN_REAL_FRAMES;
-}
-const SYNTHETIC_FRAMES = Number(process.env.P911_TT_SYNTH ?? 24);
+const SYNTHETIC_FRAMES = Number(process.env.P911_TT_SYNTH ?? 30);
 const MIN_SOURCE_W = Number(process.env.P911_TT_MIN_SOURCE_W ?? 900);
+const MIN_DOWNLOAD_W = Number(process.env.P911_TT_MIN_DOWNLOAD_W ?? 640);
 const MIN_DIST = Number(process.env.P911_TT_MIN_DIST ?? 10); // dHash bits of 64
-const MAX_GROUPS = Number(process.env.P911_TT_MAX_GROUPS ?? 6);
-const HASH_CHUNK = Number(process.env.P911_TT_CHUNK ?? 8); // photos hashed per batch
+const MAX_GROUPS = Number(process.env.P911_TT_MAX_GROUPS ?? 5);
+const HASH_CHUNK = Number(process.env.P911_TT_CHUNK ?? 6); // photos hashed per batch
 const MAX_HUE_GAP = Number(process.env.P911_TT_MAX_HUE ?? 45); // degrees
 const MAX_VALUE_GAP = Number(process.env.P911_TT_MAX_VALUE ?? 70); // 0-255
+
+function frameBar(target: { priority: number }): number {
+  return target.priority >= 0
+    ? Math.max(1, Math.min(MIN_REAL_FRAMES, HERO_MIN_FRAMES))
+    : MIN_REAL_FRAMES;
+}
 
 /* ------------------------------------------------------------------ types */
 
@@ -150,21 +179,36 @@ interface Target {
   variantId: string;
   name: string;
   required: string[];
+  /** plain tokens: a title naming one of these is a different variant */
   forbidden: string[];
+  /** engine sizes: only rejected where they read as an engine size */
+  forbiddenSizes: string[];
+  /** the trim words this variant's own name carries ("4s", "s", "gt3") */
+  trims: string[];
+  /** `<gen>|<model>|<displacement>` - the trim family this variant belongs to */
+  family: string;
   queries: string[];
   priority: number;
   /** narrower than the generation window where a variant spans fewer years */
   years: [number, number] | null;
-  /** already served by a glb or a Sketchfab embed → the viewer never reaches
+  /** already served by a glb or a Sketchfab embed -> the viewer never reaches
    *  tier 3, so a turntable for it would only cost disk */
   skip: boolean;
 }
 
+interface SearchHit {
+  key: string;
+  /** the search response echoes part of the file page; a free pre-filter only */
+  excerpt: string;
+}
+
 interface FileMeta {
   origUrl: string;
-  thumbUrl: string;
+  /** the exact URL the file route hands back - hand-built thumbs get HTTP 400 */
+  downloadUrl: string;
   width: number;
   height: number;
+  downloadWidth: number;
   bytes: number;
   uploader: string | null;
 }
@@ -172,13 +216,17 @@ interface FileMeta {
 interface PageInfo {
   ok: boolean;
   reason: string;
+  /** what Commons itself reports as the licence of this file */
   license: string | null;
+  /** the licence template exactly as the wikitext writes it */
+  licenseTemplate: string | null;
   author: string | null;
   assessment: string | null;
   /** normalised "English :" description with the file-name echo removed */
   desc: string;
-  date: string;
-  source: string;
+  /** ISO day, when the file page records one */
+  day: string;
+  cats: string[];
 }
 
 interface Frame {
@@ -219,11 +267,12 @@ const REJECT: PageInfo = {
   ok: false,
   reason: "not fetched",
   license: null,
+  licenseTemplate: null,
   author: null,
   assessment: null,
   desc: "",
-  date: "",
-  source: "",
+  day: "",
+  cats: [],
 };
 
 /* ---------------------------------------------------------------- targets */
@@ -248,13 +297,27 @@ const PRIORITY: string[] = [
   "992-2/carrera-gts",
 ];
 
-const DISPLACEMENTS = ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3", "3.6", "3.8", "4.0"];
+const DISPLACEMENTS = [
+  "2.0",
+  "2.2",
+  "2.4",
+  "2.7",
+  "2.8",
+  "3.0",
+  "3.2",
+  "3.3",
+  "3.6",
+  "3.8",
+  "4.0",
+];
 
 /** Longest-first: the longest phrase in a variant name is its model key. */
 const MODEL_PHRASES = [
   "carrera rsr",
   "carrera rs",
   "carrera 4 gts",
+  "carrera gts",
+  "carrera s",
   "carrera t",
   "sport classic",
   "mt package",
@@ -293,7 +356,31 @@ const MODEL_PHRASES = [
   "t",
 ];
 
-/** Names of other special editions — never acceptable for this variant. */
+/** Words a variant name is built from - never a distinguishing token. */
+const NAME_FILLER = new Set([
+  "porsche",
+  "911",
+  "edition",
+  "design",
+  "years",
+  "year",
+  "with",
+  "coupe",
+  "cabriolet",
+  "roadster",
+  "targa",
+  "speedster",
+  "prototype",
+  "gts",
+  "turbo",
+  "carrera",
+  "gt2",
+  "gt3",
+  "s/c",
+  "t/r",
+]);
+
+/** Names of other special editions - never acceptable for this variant. */
 const SPECIAL_PHRASES = [
   "turbo",
   "carrera rsr",
@@ -333,10 +420,54 @@ const BODY_TOKEN: Record<string, string> = {
 /** Model keys that are only meaningful next to the model number. */
 const ANCHORED_KEYS = new Set(["st", "s/t", "t/r", "r"]);
 
+/**
+ * A trim word: a single-letter badge or a numeric designation. Multi-letter
+ * badges (RS, ST, S/T, GTS) are left out on purpose - they are already in
+ * SPECIAL_PHRASES, so every other variant forbids them anyway, and treating
+ * "ST" as a trim would have the 1969 ST and the 1971 S/T forbid each other
+ * even though they are the same car.
+ */
+const TRIM_RE = /^(?:[a-z]|\d{1,2}s?)$/;
+
+/** Every trim word in a variant name. "911" is never one of them. */
+function trimsOf(name: string): string[] {
+  return norm(name)
+    .split(" ")
+    .filter((w) => w !== "911" && TRIM_RE.test(w));
+}
+
+/** The model name a trim family is built on: "carrera s" and "carrera 4 GTS"
+ *  both belong to the "carrera" family, "GT3 RS" to "gt3". */
+function baseModelOf(modelKey: string | null): string {
+  if (!modelKey) return "";
+  if (/^[a-z]$/.test(modelKey)) return ""; // "911 S" is the trim, not the family
+  const words = norm(modelKey).split(" ");
+  while (words.length > 1 && TRIM_RE.test(words[words.length - 1])) words.pop();
+  const base = words.join(" ");
+  return base === "911" ? "" : base;
+}
+
+/**
+ * Trim families: variants of one generation that share a model name and differ
+ * only in their trim are different cars, and must forbid each other's trim.
+ * Without this a "911 Carrera S" photograph passes as the plain Carrera, because
+ * both names reduce to the same model word. Filled from the roster, so it
+ * follows the data rather than a hand-written list.
+ */
+const TRIM_FAMILY = new Map<string, Set<string>>();
+
+function familyKeyOf(
+  gen: GenerationId,
+  modelKey: string | null,
+  displacement: string | null,
+): string {
+  return `${gen}|${baseModelOf(modelKey)}|${displacement ?? ""}`;
+}
+
 /** Engine sizes no car of that generation ever wore. */
 const ERA_FORBIDDEN: Record<GenerationId, string[]> = {
   "901": ["2.7", "3.0", "3.2", "3.3", "3.4", "3.6", "3.8", "4.0"],
-  gseries: ["2.0", "2.2", "2.4", "3.4", "3.6", "3.8", "4.0"],
+  gseries: ["2.0", "2.2", "2.4", "2.8", "3.4", "3.6", "3.8", "4.0"],
   "964": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
   "993": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
   "996": ["2.0", "2.2", "2.4", "2.7", "3.0", "3.2", "3.3"],
@@ -358,6 +489,49 @@ const GEN_YEARS: Record<GenerationId, [number, number]> = {
   "992-1": [2018, 2024],
   "992-2": [2024, 2030],
 };
+
+/**
+ * Which generations ever used a given model name, filled from the roster in
+ * main(). A name no more than RARE_KEY_MAX generations share is what lets a
+ * stated model year pin the generation when the file names no chassis code.
+ */
+const RARE_KEY_MAX = 4;
+const KEY_GENERATIONS = new Map<string, Set<GenerationId>>();
+
+function noteKeyGenerations(key: string | null, gen: GenerationId): void {
+  if (!key) return;
+  const k = norm(key);
+  const set = KEY_GENERATIONS.get(k) ?? new Set<GenerationId>();
+  set.add(gen);
+  KEY_GENERATIONS.set(k, set);
+}
+
+/**
+ * A rare model name plus a stated model year identifies the generation even
+ * when the file names no chassis code: "2024 Porsche 911 S_T_1.jpg" says S/T and
+ * 2024, and the S/T was only ever built for the 992.1, so the generation is
+ * established rather than assumed. Names shared by many generations carry no
+ * such information and are never used this way.
+ */
+function genFromRareKeyAndYear(
+  both: string,
+  years: number[],
+  target: Target,
+): GenerationId | null {
+  if (years.length === 0) return null;
+  for (const [key, gens] of KEY_GENERATIONS) {
+    if (gens.size === 0 || gens.size > RARE_KEY_MAX) continue;
+    if (key.length < 3) continue; // a single letter is not a model name
+    if (!hasToken(both, key)) continue;
+    const fitting = [...gens].filter((g) => {
+      if (g !== target.gen) return false; // never override a stated generation
+      const [from, to] = target.years ?? GEN_YEARS[g];
+      return years.some((y) => y >= from && y <= to);
+    });
+    if (fitting.length === 1) return fitting[0];
+  }
+  return null;
+}
 
 /** Which chassis code belongs to which generation. */
 const CODE_GEN: Record<string, GenerationId> = {
@@ -393,28 +567,54 @@ const OVERRIDES: Record<string, Override> = {
   "901/s-t": { extraQueries: ["Porsche 911 S/T 1971"] },
   "901/911-t-r": { extraQueries: ["Porsche 911 T/R"] },
   "901/912": { extraQueries: ["Porsche 912"] },
-  "964/carrera-4s": { extraRequired: ["4s"] },
-  "964/carrera-2s": { extraRequired: ["2s"] },
+  "901/carrera-rsr-2.8": {
+    extraQueries: ["Porsche 911 Carrera RSR 2.8"],
+    dropRequired: ["m491"],
+  },
+  // the roster spells these "Turbo-Look"; Commons spells them "4S" / "2S"
+  // Commons spells these "4S" / "2S"; the roster spells them "Turbo-Look"
+  "964/carrera-4s": {
+    extraRequired: ["4s"],
+    dropRequired: ["turbo-look", "4"],
+    extraQueries: ["Porsche 964 Carrera 4S", "Porsche 911 964 Carrera 4"],
+  },
+  "964/carrera-2s": {
+    extraRequired: ["2s"],
+    dropRequired: ["turbo-look", "2"],
+    extraQueries: ["Porsche 964 Carrera 2S"],
+  },
+  "964/30th-anniversary": {
+    extraQueries: ["Porsche 964 30 Jahre"],
+    dropRequired: ["carrera", "4"],
+  },
+  "991/turbo-s-exclusive": { dropRequired: ["series"] },
   "964/rs-america": { extraQueries: ["Porsche 964 RS America"] },
-  "964/30th-anniversary": { extraQueries: ["Porsche 964 30 Jahre"] },
   "964/carrera-4-leichtbau": { extraQueries: ["Porsche 964 Carrera 4 Lightweight"] },
   "964/turbo-s-lm-gt": { extraQueries: ["Porsche 964 LM GT"] },
   "991/r": { extraQueries: ["Porsche 911 R 2016"] },
   "991/50th-anniversary": { extraQueries: ["Porsche 911 50th anniversary"] },
   "991/935": { extraQueries: ["Porsche 935"] },
-  "996/40th-anniversary": { extraQueries: ["Porsche 996 40 Jahre"] },
   "996/millennium-edition": { extraQueries: ["Porsche 996 Millennium Edition"] },
+  "996/40th-anniversary": {
+    extraQueries: ["Porsche 996 40 Jahre"],
+    dropRequired: ["jahre"],
+  },
   "997/gt3-rs-4.0": { extraRequired: ["4.0"] },
   "gseries/speedster-1989": { extraQueries: ["Porsche 911 Speedster 1989"] },
   "gseries/sc-weissach": { extraRequired: ["weissach"] },
   "992-2/spirit-70": { extraRequired: ["spirit"] },
   "992-2/carrera-4-gts-transfagarasan": {
     extraQueries: ["Porsche 911 Carrera 4 GTS Transfagarasan"],
+    dropRequired: ["tribute"],
   },
   "992-2/gt3-90-fa-porsche": { extraQueries: ["Porsche 911 GT3 90 FA Porsche"] },
   "992-2/turbo-s": { extraForbidden: ["safety car"] },
   "992-1/turbo-50": { extraRequired: ["50"] },
   "964/turbo-s-3.6": { extraForbidden: ["safari"] },
+  "991/gt2-rs": { extraQueries: ["Porsche 911 GT2 RS 991 II"] },
+  "997/gt2-rs": { extraQueries: ["Porsche 911 GT2 RS 997"] },
+  "992-1/gt3-rs": { extraQueries: ["Porsche 911 GT3 RS 992.1"] },
+  "992-1/dakar": { extraQueries: ["Porsche 911 Dakar 992.1"] },
 };
 
 /**
@@ -425,11 +625,11 @@ const BLACKLIST: Record<string, string> = {
   "File:Porsche_911_R_(front).jpg":
     'title "911 R" is ambiguous and the photo shows a 1990s coupe, not the 1971 911 R',
   "File:Porsche_911_R_(rear).jpg":
-    'same unlabelled "911 R" set — a 1990s coupe, not the 1971 911 R',
+    'same unlabelled "911 R" set - a 1990s coupe, not the 1971 911 R',
   "File:Porsche_911_R_(side)_(1).jpg":
-    'same unlabelled "911 R" set — a 1990s coupe, not the 1971 911 R',
+    'same unlabelled "911 R" set - a 1990s coupe, not the 1971 911 R',
   "File:Porsche_911_R_(side)_(2).jpg":
-    'same unlabelled "911 R" set — a 1990s coupe, not the 1971 911 R',
+    'same unlabelled "911 R" set - a 1990s coupe, not the 1971 911 R',
   "File:Porsche_911_r.jpg": 'ambiguous title "911 r", the photo shows a 1990s coupe',
   "File:1964_Porsche_901.jpg":
     'titled "1964 Porsche 901", no road 901 exists; the photo shows a flared-arch 1990s 911',
@@ -437,7 +637,7 @@ const BLACKLIST: Record<string, string> = {
     "sibling of the excluded 1964_Porsche_901.jpg by the same photographer",
 };
 
-/** Titles that never show a whole car in a scene — never a turntable frame. */
+/** Titles that never show a whole car in a scene - never a turntable frame. */
 const NOT_A_FRAME = [
   "interior",
   "cockpit",
@@ -587,26 +787,39 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-/**
- * Adaptive politeness: Wikimedia answers 429 to bursts, so every refusal widens
- * the gap and every success narrows it again — quickly, because a gap that only
- * relaxes by 3% turns one burst into an hour of crawling.
- */
+/* Adaptive politeness: every refusal widens the gap and obeys Retry-After,
+ * every success narrows it again - quickly, because a gap that only relaxes by
+ * a few percent turns one burst into an hour of crawling. */
 let throttleGap = MIN_GAP_MS;
-function throttled(): void {
-  const next = Math.min(MAX_GAP_MS, Math.round(throttleGap * 1.8));
+let penaltyUntil = 0;
+let lastApiStart = 0;
+let lastDownloadStart = 0;
+
+function widened(by = 1.7): void {
+  const next = Math.min(MAX_GAP_MS, Math.round(Math.max(throttleGap, MIN_GAP_MS) * by));
   if (next !== throttleGap) {
     throttleGap = next;
-    console.log(`    [throttle] gap -> ${throttleGap}ms (429 from Wikimedia)`);
+    console.log(`    [throttle] api gap -> ${throttleGap}ms`);
   }
 }
 function relaxed(): void {
   if (throttleGap > MIN_GAP_MS) {
-    throttleGap = Math.max(MIN_GAP_MS, Math.round(throttleGap * 0.7));
+    throttleGap = Math.max(MIN_GAP_MS, Math.round(throttleGap * 0.85));
   }
 }
 
-/** Bounded-concurrency map with a minimum gap between request starts. */
+/** Reserve the next request slot. Reservation happens synchronously, so
+ *  concurrent callers queue behind each other instead of bursting. */
+function reserve(last: number, gap: number): number {
+  return Math.max(Date.now(), penaltyUntil, last + gap);
+}
+
+async function waitFor(at: number): Promise<void> {
+  const wait = at - Date.now();
+  if (wait > 0) await sleep(wait);
+}
+
+/** Bounded-concurrency map; the request gap is enforced inside request(). */
 async function pool<T, R>(
   items: T[],
   limit: number,
@@ -614,15 +827,11 @@ async function pool<T, R>(
 ): Promise<R[]> {
   const out: R[] = new Array<R>(items.length);
   let cursor = 0;
-  let lastStart = 0;
   const width = Math.max(1, Math.min(limit, items.length));
   const runners = Array.from({ length: width }, async () => {
     for (;;) {
       const i = cursor++;
       if (i >= items.length) return;
-      const wait = Math.max(0, lastStart + throttleGap - Date.now());
-      lastStart = Date.now() + wait;
-      if (wait > 0) await sleep(wait);
       out[i] = await worker(items[i], i);
     }
   });
@@ -651,17 +860,31 @@ function slug(s: string, max: number): string {
   return out.length > 0 ? out : "frame";
 }
 
-/** Normalised text used for every title / description comparison. */
+/** Normalised text used for every title / description comparison. Decimal
+ *  points are folded away ("3.3" -> "33", "4.0" -> "40") so a decimal comma
+ *  cannot slip past a match; every token tested against normalised text is
+ *  normalised the same way first, or engine sizes would never match at all. */
 function norm(s: string): string {
   return s
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[–—]/g, "-")
-    .replace(/[“”"'’]/g, "")
+    .replace(/[\u2013\u2014]/g, "-")
+    .replace(/[\u201c\u201d"'\u2019]/g, "")
+    // "30th Anniversary" and "30 Jahre Anniversary" name the same car
+    .replace(/\b(\d+)(?:st|nd|rd|th)\b/g, "$1")
     .replace(/(\d),(\d)/g, "$1.$2")
-    .replace(/(\d)\.(\d)/g, "$1.$2")
-    .replace(/[^a-z0-9.+/-]+/g, " ")
+    .replace(/(\d)\.(\d)/g, "$1$2")
+    // Commons spells the same model "S/T", "S-T" and "S_T"; collapse those to
+    // one form before the underscores are eaten, so a title that names the
+    // model is not rejected over punctuation. Only the model pairs Porsche
+    // itself writes that way are touched, and a separator is required, so
+    // "Carrera-4" and the 911 SC keep their own spelling.
+    // a following hyphen means a new word, not a second letter: without this
+    // "Turbo S T-Hybrid" would be read as "Turbo S/T-Hybrid"
+    .replace(/(?<![a-z0-9])([st])[-_/](?=[rtc](?![a-z0-9-]))/g, "$1/")
+    .replace(/(?<![a-z0-9])([st])[ \t](?=[rtc](?![a-z0-9-]))/g, "$1/")
+    .replace(/[^a-z0-9/+-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -678,23 +901,38 @@ function escapeRe(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+/**
+ * Whole-word match. The token is normalised too, so "2.7" finds "911 27". A
+ * hyphen and a space are interchangeable in these names ("Turbo-Look" and
+ * "Turbo Look"), so a second attempt compares them flattened.
+ */
 function hasToken(text: string, token: string): boolean {
-  return new RegExp(`(^|[^a-z0-9])${escapeRe(token)}([^a-z0-9]|$)`).test(text);
+  const n = norm(token);
+  if (!n) return false;
+  const t = norm(text);
+  if (new RegExp(`(^|[^a-z0-9])${escapeRe(n)}([^a-z0-9]|$)`).test(t)) return true;
+  const flat = (x: string): string => x.replace(/-/g, " ");
+  return new RegExp(`(^|[^a-z0-9])${escapeRe(flat(n))}([^a-z0-9]|$)`).test(flat(t));
 }
 
-/** Single-letter model keys only count next to the model number or an engine size. */
+/**
+ * Single-LETTER model keys ("911 S", "911 T") only count next to the model
+ * number, because a bare "S" or "E" appears in half the titles on Commons.
+ * Everything else, digits included, is a plain word: "Carrera 4" has to match
+ * a "4" that stands on its own, or no 964 Carrera 4 ever qualifies.
+ */
 function hasModelToken(text: string, token: string): boolean {
-  if (token.length > 1) return hasToken(text, token);
-  return new RegExp(
-    `911\\s*${escapeRe(token)}([^a-z0-9]|$)|\\b${escapeRe(token)}\\s*[234]\\.`,
-  ).test(text);
+  const t = norm(text);
+  const n = norm(token);
+  if (n.length > 1 || /^\d+$/.test(n)) return hasToken(t, n);
+  return new RegExp(`911\\s*${escapeRe(n)}([^a-z0-9]|$)|\\b${escapeRe(n)}\\s*\\d\\b`).test(t);
 }
 
 function stripQuery(u: string): string {
   return u.split("?")[0];
 }
 
-/** `<genId>__<variantId>` — filesystem-safe and unique across generations. */
+/** `<genId>__<variantId>` - filesystem-safe and unique across generations. */
 function dirFor(key: string): string {
   return key.replace("/", "__");
 }
@@ -713,10 +951,21 @@ function du(dir: string): number {
   return total;
 }
 
+function xmlEscape(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 /* ------------------------------------------------------------ http layer */
 
 async function request(url: string, accept: string): Promise<string> {
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    const at = reserve(lastApiStart, throttleGap);
+    lastApiStart = at;
+    await waitFor(at);
     try {
       const res = await fetch(url, {
         headers: {
@@ -727,19 +976,22 @@ async function request(url: string, accept: string): Promise<string> {
       });
       if (res.status === 404) return "";
       if (res.status === 429) {
-        throttled();
-        await sleep(700 * 2 ** attempt + Math.random() * 400);
+        const header = Number(res.headers.get("retry-after") ?? 0);
+        const pause = Number.isFinite(header) && header > 0 ? header : 6;
+        widened();
+        penaltyUntil = Math.max(penaltyUntil, Date.now() + pause * 1000 + 500);
+        await sleep(pause * 1000 + 500);
         continue;
       }
       if (res.status >= 500) {
-        await sleep(600 * 2 ** attempt + Math.random() * 300);
+        await sleep(800 * 2 ** attempt + Math.random() * 400);
         continue;
       }
       if (!res.ok) return "";
       relaxed();
       return await res.text();
     } catch {
-      await sleep(500 * 2 ** attempt + Math.random() * 300);
+      await sleep(600 * 2 ** attempt + Math.random() * 400);
     }
   }
   process.stderr.write(`  ! request failed: ${url}\n`);
@@ -769,58 +1021,52 @@ function writeCache(kind: string, key: string, value: unknown): void {
 
 /* ---------------------------------------------------------- commons calls */
 
-async function searchCommons(query: string): Promise<string[]> {
+async function searchCommons(query: string): Promise<SearchHit[]> {
   const url = `${API}/search/page?q=${encodeURIComponent(query)}&limit=${SEARCH_LIMIT}`;
-  const cached = readCache<{ pages: { key: string }[] }>("search", url);
-  if (cached) return cached.pages.map((p) => p.key);
+  const cached = readCache<{ pages: SearchHit[] }>("search", url);
+  if (cached) return cached.pages;
   const body = await request(url, "application/json");
-  let pages: string[] = [];
+  let pages: SearchHit[] = [];
   if (body) {
     try {
-      const parsed = JSON.parse(body) as { pages?: { key: string }[] };
+      const parsed = JSON.parse(body) as { pages?: (SearchHit & { key?: string })[] };
       pages = (parsed.pages ?? [])
-        .map((p) => p.key)
-        .filter((k) => typeof k === "string" && k.startsWith("File:"));
+        .filter((p) => typeof p.key === "string" && p.key.startsWith("File:"))
+        .map((p) => ({ key: p.key as string, excerpt: p.excerpt ?? "" }));
     } catch {
       pages = [];
     }
   }
   // an empty result set from a throttled request must never poison the cache
-  if (body) writeCache("search", url, { pages: pages.map((key) => ({ key })) });
+  if (body) writeCache("search", url, { pages });
   return pages;
-}
-
-/** Width-specific Commons thumbnail derived from the original upload URL. */
-function thumbUrlFor(origUrl: string, width: number): string {
-  const clean = stripQuery(origUrl);
-  const m =
-    /^(https:\/\/upload\.wikimedia\.org\/wikipedia\/commons)\/([0-9a-f])\/([0-9a-f]{2})\/([^/]+)$/.exec(
-      clean,
-    );
-  if (!m) return clean;
-  const [, base, h1, h2, name] = m;
-  return `${base.replace("upload", "thumb")}/thumb/${h1}/${h2}/${name}/${width}px-${name}`;
 }
 
 async function fileMeta(fileTitle: string): Promise<FileMeta | null> {
   const url = `${API}/file/${encodeURIComponent(fileTitle)}`;
   const cached = readCache<FileMeta | null>("meta", url);
-  if (cached !== null) return cached;
+  if (cached) return cached;
   const body = await request(url, "application/json");
   let meta: FileMeta | null = null;
   if (body) {
     try {
       const d = JSON.parse(body) as {
         original?: { url?: string; width?: number; height?: number; size?: number };
+        preferred?: { url?: string; width?: number };
         latest?: { user?: { name?: string } };
       };
       const w = d.original?.width ?? 0;
-      if (d.original?.url && w > 0) {
+      // `preferred` is the rendition the API itself serves; a hand-built
+      // thumbnail URL is answered with HTTP 400 by the current edge, so this is
+      // the only download URL that may be used.
+      const downloadUrl = d.preferred?.url ? stripQuery(d.preferred.url) : null;
+      if (d.original?.url && downloadUrl && w > 0) {
         meta = {
           origUrl: stripQuery(d.original.url),
-          thumbUrl: thumbUrlFor(d.original.url, DOWNLOAD_W),
+          downloadUrl,
           width: w,
           height: d.original.height ?? 0,
+          downloadWidth: d.preferred?.width ?? w,
           bytes: d.original.size ?? 0,
           uploader: d.latest?.user?.name ?? null,
         };
@@ -833,231 +1079,254 @@ async function fileMeta(fileTitle: string): Promise<FileMeta | null> {
   return meta;
 }
 
-async function pageInfo(fileTitle: string, uploader: string | null): Promise<PageInfo> {
-  const url = `${API}/page/${encodeURIComponent(fileTitle)}/html`;
-  const cached = readCache<PageInfo | null>("licence", url);
-  if (cached !== null) return cached;
-  const body = await request(url, "text/html");
-  const info = parsePage(body, uploader, fileTitle);
-  // only cache a real answer, never a transient network failure
-  if (body.length > 800) writeCache("licence", url, info);
-  return info;
-}
-
 async function download(url: string, dest: string): Promise<boolean> {
   if (fs.existsSync(dest) && fs.statSync(dest).size > 4096) return true;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    const at = reserve(lastDownloadStart, DOWNLOAD_GAP_MS);
+    lastDownloadStart = at;
+    await waitFor(at);
     try {
       const res = await fetch(stripQuery(url), {
         headers: { "User-Agent": USER_AGENT, "Api-User-Agent": USER_AGENT },
       });
       if (res.status === 429) {
-        throttled();
-        await sleep(800 * 2 ** attempt + Math.random() * 400);
+        const header = Number(res.headers.get("retry-after") ?? 0);
+        const pause = Number.isFinite(header) && header > 0 ? header : 8;
+        penaltyUntil = Math.max(penaltyUntil, Date.now() + pause * 1000);
+        await sleep(pause * 1000);
         continue;
       }
       if (res.status >= 500) {
-        await sleep(700 * 2 ** attempt + Math.random() * 300);
+        await sleep(800 * 2 ** attempt + Math.random() * 400);
         continue;
       }
       if (!res.ok) return false;
-      relaxed();
       const buf = Buffer.from(await res.arrayBuffer());
-      if (buf.length < 4096) return false;
+      // a text/html body here is an error page, not a photograph
+      if (buf.length < 4096 || buf.subarray(0, 5).toString("latin1") === "<!DOC") return false;
       fs.mkdirSync(path.dirname(dest), { recursive: true });
       fs.writeFileSync(dest, buf);
       return true;
     } catch {
-      await sleep(600 * 2 ** attempt);
+      await sleep(700 * 2 ** attempt);
     }
   }
   return false;
 }
 
-/* ------------------------------------------------------------ page parse */
+/* --------------------------------------------------------- wikitext + pages */
 
-const CC_LICENSE_URL = /https?:\/\/creativecommons\.org\/licenses\/([a-z-]+)\/([0-9.]+)/g;
-const CC0_URL = /https?:\/\/creativecommons\.org\/publicdomain\/zero\/([0-9.]+)/g;
-const PDMARK_URL = /https?:\/\/creativecommons\.org\/publicdomain\/mark\/([0-9.]+)/g;
-
-const INFO_BOX_LABELS = [
-  "Camera location",
-  "Camera model",
-  "Exposure time",
-  "F number",
-  "Focal length",
-  "ISO speed",
-  "Date",
-  "Source",
-  "Assessment",
-  "Summary",
-  "Description",
-  "Categories",
-  "Licensing",
-  "Permission",
-  "File history",
-  "Structured data",
-  "Other versions",
-];
-
-function htmlToText(html: string): string {
-  return html
+function stripHtmlTags(s: string): string {
+  return s
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
-    .replace(/&#0?39;/g, "'")
-    .replace(/&ndash;/g, "-")
-    .replace(/&mdash;/g, "-")
-    .replace(/\s+/g, " ");
+    .replace(/&#0?39;/g, "'");
 }
 
-function licenseShort(code: string, version: string): string {
-  const map: Record<string, string> = {
-    by: "CC BY",
-    "by-sa": "CC BY-SA",
-    "by-nc": "CC BY-NC",
-    "by-nd": "CC BY-ND",
-    "by-nc-sa": "CC BY-NC-SA",
-    "by-nc-nd": "CC BY-NC-ND",
-  };
-  return `${map[code] ?? code.toUpperCase()} ${version}`;
+/** Raw value of an `{{Information}}` field, up to the next field or `}}`. */
+function wikiField(src: string, field: string): string | null {
+  const re = new RegExp(`^[ \\t]*\\|[ \\t]*${escapeRe(field)}[ \\t]*=[ \\t]*`, "im");
+  const m = re.exec(src);
+  if (!m) return null;
+  const rest = src.slice(m.index + m[0].length);
+  const stop = /^[ \t]*(?:\|\s*[A-Za-z][A-Za-z0-9 _-]*\s*=[ \t]*|\}\})/m.exec(rest);
+  return stop ? rest.slice(0, stop.index) : rest;
 }
 
-/**
- * Positive identification only: CC0 / public domain / CC BY / CC BY-SA
- * 2.0/3.0/4.0. Nothing is inferred — a licence that cannot be read off the
- * rendered Commons file page is a rejection, never a guess.
- */
-function parseLicence(text: string): PageInfo {
-  const reject = (reason: string): PageInfo => ({
-    ...REJECT,
-    reason,
-  });
-  const own = ownLicenceSentence(text);
-  const assessment = /this is a featured picture/i.test(text)
-    ? "Featured picture"
-    : /this is a quality image/i.test(text)
-      ? "Quality image"
-      : /this is a valued image/i.test(text)
-        ? "Valued image"
-        : null;
-  const author = parseAuthor(text);
-  if (own && /non-?free|fair use|copyright violation/i.test(own)) {
-    return reject("non-free / fair use");
-  }
-  let short: string | null = null;
-  CC_LICENSE_URL.lastIndex = 0;
-  const cc = CC_LICENSE_URL.exec(text);
-  if (cc && !/nc|nd/.test(cc[1])) short = licenseShort(cc[1], cc[2]);
-  if (!short) {
-    CC0_URL.lastIndex = 0;
-    const zero = CC0_URL.exec(text);
-    if (zero) short = `CC0 ${zero[1]}`;
-  }
-  if (!short) {
-    PDMARK_URL.lastIndex = 0;
-    const mark = PDMARK_URL.exec(text);
-    if (mark) short = `Public Domain Mark ${mark[1]}`;
-  }
-  if (!short && /public domain|no known copyright restrictions/i.test(text)) {
-    short = "Public domain";
-  }
-  if (!short) return reject("licence not identified in file page");
-  if (!/^(CC0|CC BY|CC BY-SA|Public domain|Public Domain Mark)/.test(short)) {
-    return reject(`licence not accepted: ${short}`);
-  }
-  const version = Number(short.split(" ").pop() ?? "0");
-  if (/^CC (BY|BY-SA)/.test(short) && !(version === 2 || version === 3 || version === 4)) {
-    return reject(`licence version not accepted: ${short}`);
-  }
-  return {
-    ok: true,
-    reason: "ok",
-    license: own ? `${short} — ${tidySentence(own)}` : short,
-    author,
-    assessment,
-    desc: "",
-    date: "",
-    source: "",
-  };
-}
-
-function ownLicenceSentence(text: string): string | null {
-  const patterns = [
-    /This (?:file|image|work|photo|photograph|media) is licensed under the ([^.]*?licen[sc]e)\./i,
-    /This (?:file|image|work|photo|photograph) is in the public domain[^.]*\./i,
-    /This (?:file|image|work|photo|photograph) has been released (?:in)?to the public domain[^.]*\./i,
-    /This work is released under the (?:Creative Commons )?CC0[^.]*\./i,
-    /This image is released to the public domain[^.]*\./i,
-  ];
-  for (const re of patterns) {
-    const m = re.exec(text);
-    if (m) return m[0].replace(/\s+/g, " ").trim();
-  }
-  return null;
-}
-
-function tidySentence(s: string): string {
-  return s
-    .replace(/^\s*this (?:file|image|work|photo|photograph|media)\s+/i, "")
-    .replace(/^\s*(?:is|has been)\s+/i, "")
+/** Wiki markup reduced to plain words. */
+function cleanWiki(raw: string): string {
+  return stripHtmlTags(
+    raw
+      .replace(/<!--[\s\S]*?-->/g, " ")
+      .replace(/\{\{\s*en(?:glish)?\s*\|([\s\S]*?)\}\}/gi, "$1")
+      .replace(/\b\d+\s*=\s*/g, " ")
+      .replace(/\[\[\s*(?:File|Image|Category|Media)\s*:[^\]]*\]\]/gi, " ")
+      .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")
+      .replace(/\[\[([^\]]+)\]\]/g, "$1")
+      .replace(/\{\{[^{}]*\}\}/g, " ")
+      .replace(/<[^>]+>/g, " "),
+  )
     .replace(/\s+/g, " ")
-    .replace(/\s+([.,;:])/g, "$1")
     .trim();
 }
 
-function parseAuthor(text: string): string | null {
-  const head = text.slice(0, 8000);
-  const stop = INFO_BOX_LABELS.map(escapeRe).join("|");
-  const strict = new RegExp(`\\bAuthor\\b\\s+([^|]{1,180}?)(?=\\s*(?:${stop})\\b)`, "i").exec(head);
-  if (strict) {
-    const a = strict[1].replace(/\s+/g, " ").trim().replace(/[.,;]+$/, "");
-    if (
-      a.length > 0 &&
-      a.length < 160 &&
-      !/^(the|a|an|unknown|self|own work|user)$/i.test(a)
-    ) {
-      return a;
-    }
+function wikiCategories(src: string): string[] {
+  const out = new Set<string>();
+  for (const m of src.matchAll(/\[\[\s*Category\s*:\s*([^\]|]+)(?:\|[^\]]*)?\]\]/gi)) {
+    out.add(m[1].replace(/_/g, " ").trim());
   }
-  const loose = new RegExp(
-    `\\bAuthor\\b\\s+(.{1,140}?)(?=\\s(?:Camera|Assessment|Licensing|File history)\\b)`,
-    "i",
-  ).exec(head);
-  if (loose) {
-    const a = loose[1].replace(/\s+/g, " ").trim();
-    if (a.length > 1) return a;
+  return [...out];
+}
+
+function wikiAssessment(src: string, cats: string[]): string | null {
+  const all = `${src} ${cats.join(" ")}`;
+  if (/\{\{\s*featured picture/i.test(all) || /featured pictures of /i.test(all)) {
+    return "Featured picture";
   }
+  if (/\{\{\s*quality ?image/i.test(all) || /quality images of /i.test(all)) {
+    return "Quality image";
+  }
+  if (/\{\{\s*valued image/i.test(all) || /valued images of /i.test(all)) return "Valued image";
   return null;
 }
 
-/** Info-box value that follows a label, up to the next label. */
-function infoValue(text: string, label: string): string {
-  const i = text.indexOf(label);
-  if (i < 0) return "";
-  const rest = text.slice(i + label.length);
-  const next = INFO_BOX_LABELS.filter((l) => l !== label)
-    .map(escapeRe)
-    .join("|");
-  const m = new RegExp(`^(.{0,220}?)(?=\\s(?:${next})\\b)`).exec(rest);
-  const v = (m ? m[1] : rest.slice(0, 160)).replace(/\s+/g, " ").trim();
-  return v.replace(/[.,;]+$/, "");
+function wikiLicenseTemplate(src: string): string | null {
+  const m =
+    /\{\{\s*(?:self|cc-zero|cc-[a-z0-9.+-]+|pd-[a-z0-9-]+|attribution|cc-by[a-z0-9.+-]*)\b[^}]*\}\}/i.exec(
+      src,
+    );
+  return m ? m[0].replace(/\s+/g, " ").trim() : null;
 }
 
-function parsePage(html: string, uploader: string | null, fileTitle: string): PageInfo {
-  if (!html || html.length < 800) return { ...REJECT, reason: "file page html unavailable" };
-  const text = htmlToText(html);
-  const lic = parseLicence(text);
+/* ------------------------------------------------------------ licence rules */
+
+function licenseShortFromUrl(url: string): string | null {
+  if (/creativecommons\.org\/publicdomain\/zero\//i.test(url)) return "CC0";
+  if (/creativecommons\.org\/publicdomain\/mark\//i.test(url)) return "Public Domain Mark";
+  const cc = /creativecommons\.org\/licenses\/([a-z-]+)\/([0-9.]+)/i.exec(url);
+  if (cc) {
+    const map: Record<string, string> = {
+      by: "CC BY",
+      "by-sa": "CC BY-SA",
+      "by-nc": "CC BY-NC",
+      "by-nd": "CC BY-ND",
+      "by-nc-sa": "CC BY-NC-SA",
+      "by-nc-nd": "CC BY-NC-ND",
+      "by-sa-nc": "CC BY-NC-SA",
+    };
+    return `${map[cc[1].toLowerCase()] ?? cc[1].toUpperCase()} ${cc[2]}`;
+  }
+  if (/gnu\.org\/licenses\/(fdl|gfdl)/i.test(url)) return "GFDL";
+  return null;
+}
+
+/**
+ * Positive identification only, from what Commons itself reports for this file
+ * plus what the file's own wikitext writes. Nothing is inferred: an unlisted,
+ * non-free or unreadable licence is a rejection, never a guess.
+ */
+function parseLicense(
+  url: string | undefined,
+  title: string | undefined,
+): { short: string | null; why: string } {
+  const both = `${url ?? ""} ${title ?? ""}`;
+  if (!url && !title) return { short: null, why: "no licence recorded on the file page" };
+  if (/gnu\.org\/licenses\/(fdl|gfdl)/i.test(url ?? "") && !/creativecommons/i.test(url ?? "")) {
+    return { short: null, why: "GFDL only" };
+  }
+  if (/non-?free|fair use|copyright violation|all rights reserved/i.test(both)) {
+    return { short: null, why: "non-free / fair use" };
+  }
+  const fromUrl = url ? licenseShortFromUrl(url) : null;
+  const name = `${fromUrl ?? ""} ${title ?? ""}`.replace(/\s+/g, " ").trim();
+  const ccShort = /\b(CC BY-SA|CC BY|CC0) ([0-9]+\.[0-9]+)/i.exec(name);
+  let short: string | null = null;
+  if (ccShort) {
+    short = `${ccShort[1].toUpperCase().replace("Cc", "CC")} ${ccShort[2]}`;
+  } else if (/\bCC0\b/i.test(name)) {
+    short = "CC0";
+  } else if (/public domain mark/i.test(name)) {
+    short = "Public Domain Mark";
+  } else if (/public domain/i.test(name)) {
+    short = "Public domain";
+  } else if (fromUrl) {
+    short = fromUrl;
+  }
+  if (!short) return { short: null, why: "licence not identified on the file page" };
+  if (!/^(CC0|CC BY|CC BY-SA|Public domain)/.test(short)) {
+    return { short: null, why: `licence not accepted: ${short}` };
+  }
+  const version = Number(short.split(" ").pop() ?? "0");
+  if (/^CC BY(-SA)? \d/.test(short) && !(version === 2 || version === 3 || version === 4)) {
+    return { short: null, why: `licence version not accepted: ${short}` };
+  }
+  return { short, why: "" };
+}
+
+/** Fallback licence read from the rendered file page, when the JSON has none. */
+function licenseFromHtml(text: string): { url?: string; title?: string } {
+  const cc =
+    /https?:\/\/creativecommons\.org\/(?:licenses\/[a-z-]+\/[0-9.]+|publicdomain\/(?:zero|mark)\/[0-9.]+)/i.exec(
+      text,
+    );
+  if (!cc) return {};
+  const label = new RegExp(`${escapeRe(cc[0])}"?[^>]*>([^<]{0,80})`, "i").exec(text);
+  return { url: cc[0], title: label ? label[1].replace(/\s+/g, " ").trim() : undefined };
+}
+
+interface PageJson {
+  license?: { url?: string; title?: string };
+  source?: string;
+}
+
+function buildPage(json: PageJson, fileTitle: string): PageInfo {
+  const src = json.source ?? "";
+  const cats = wikiCategories(src);
+  const tmpl = wikiLicenseTemplate(src);
+  const licence = parseLicense(json.license?.url, json.license?.title);
+  const reject = (reason: string): PageInfo => ({ ...REJECT, reason });
+  if (!licence.short) return reject(licence.why);
+
+  const author = cleanWiki(wikiField(src, "Author") ?? "").replace(/\s+/g, " ").trim();
+  if (!author || /^(own work|self|unknown|the author|not known|unnamed)$/i.test(author)) {
+    return reject("no author on the file page");
+  }
+
+  const descRaw = wikiField(src, "Description") ?? "";
+  const dateRaw = wikiField(src, "Date") ?? "";
+  const iso = /(\d{4})-(\d{2})-(\d{2})/.exec(dateRaw);
+
   return {
-    ...lic,
-    author: lic.author ?? (uploader ? `uploader ${uploader}` : null),
-    desc: cleanDesc(infoValue(text, "Description"), fileTitle),
-    date: infoValue(text, "Date"),
-    source: infoValue(text, "Source"),
+    ok: true,
+    reason: "ok",
+    license:
+      tmpl && !tmpl.toLowerCase().startsWith(licence.short.toLowerCase())
+        ? `${licence.short} (file page template: ${tmpl})`
+        : licence.short,
+    licenseTemplate: tmpl,
+    author,
+    assessment: wikiAssessment(src, cats),
+    desc: cleanDesc(cleanWiki(descRaw), fileTitle),
+    day: iso ? `${iso[1]}-${iso[2]}-${iso[3]}` : "",
+    cats,
   };
+}
+
+/** One request per file page: machine licence + wikitext (author, date,
+ *  description, categories). Nothing is parsed out of the API docs page that
+ *  `/page/<title>/html` currently returns. */
+async function pageInfo(fileTitle: string): Promise<PageInfo> {
+  const url = `${API}/page/${encodeURIComponent(fileTitle)}`;
+  const cached = readCache<PageInfo | null>("page", url);
+  if (cached) return cached;
+  const body = await request(url, "application/json");
+  if (!body) return { ...REJECT, reason: "file page not readable" };
+  let json: PageJson;
+  try {
+    json = JSON.parse(body) as PageJson;
+  } catch {
+    return { ...REJECT, reason: "file page not JSON" };
+  }
+  let info = buildPage(json, fileTitle);
+  if (!info.ok && !json.license?.url) {
+    // one more documented try through the rendered page before rejecting
+    const html = await request(`${url}/with_html`, "text/html");
+    if (html.length > 2000) {
+      const text = stripHtmlTags(html);
+      const again = buildPage(
+        { license: licenseFromHtml(text), source: json.source ?? "" },
+        fileTitle,
+      );
+      if (again.ok) info = again;
+      else info = { ...again, reason: `${again.reason} (rendered page: ${licenseFromHtml(text).url ?? "no licence link"})` };
+    }
+  }
+  writeCache("page", url, info);
+  return info;
 }
 
 /**
@@ -1068,9 +1337,9 @@ function parsePage(html: string, uploader: string | null, fileTitle: string): Pa
  */
 function cleanDesc(raw: string, fileTitle: string): string {
   let d = raw;
-  const english = /English\s*:\s*/i.exec(d);
+  const english = /english\s*:\s*/i.exec(d);
   if (english) d = d.slice(english.index + english[0].length);
-  d = d.split(/\bOther languages\b|\bCategories\b|\bLicensing\b|\bPermission\b/i)[0];
+  d = d.split(/\bother languages\b|\bcategories\b|\blicensing\b|\bpermission\b/i)[0];
   const stemNorm = norm(fileTitle.replace(/^File:/, "").replace(/\.[a-z]+$/i, ""));
   // drop the leading echo of the file name, however many words it spans
   for (let n = Math.min(8, d.split(/\s+/).length - 1); n >= 2; n--) {
@@ -1206,11 +1475,22 @@ interface Verdict {
 
 /**
  * Which generation does this text describe? Only from an explicit chassis code,
- * an air-cooled engine size, or a stated model year — never from the family.
+ * an air-cooled engine size, or a stated model year - never from the family.
  */
-function genSignal(text: string): GenerationId | null {
-  const t = norm(text);
+function genSignal(raw: string): GenerationId | null {
+  const t = norm(raw);
+  // "992.1" is folded to "9921" by norm(), which would hide the code from the
+  // scan below, so the 992 family is read off the dotted form first
+  const dotted = raw.toLowerCase().replace(/,/g, ".");
+  const m992 = /(?<!\d)992\s*\.\s*([0-3])(?!\d)/.exec(dotted) ?? /(?<!\d)992([0-3])(?!\d)/.exec(t);
   const found = new Set<GenerationId>();
+  if (m992) {
+    // an explicit 992.x settles it: a bare "992" elsewhere in the same title
+    // must not be read as the other sub-generation
+    found.add(m992[1] === "2" ? "992-2" : "992-1");
+    if (/t-hybrid|thybrid/.test(t) && m992[1] !== "2") found.add("992-2");
+    return found.size === 1 ? [...found][0] : null;
+  }
   for (const m of t.matchAll(/(?<!\d)(901|912|914|930|964|993|996|997|991|992)(?!\d)/g)) {
     found.add(CODE_GEN[m[1]]);
   }
@@ -1220,9 +1500,38 @@ function genSignal(text: string): GenerationId | null {
     return [...found][0];
   }
   if (found.size > 1) return null;
-  if (hasToken(t, "2.0") || hasToken(t, "2.2") || hasToken(t, "2.4")) return "901";
-  if (hasToken(t, "2.7") || hasToken(t, "3.0") || hasToken(t, "3.2")) return "gseries";
+  // 2.8 is checked with the F-body: the roster files the 1973 Carrera RSR 2.8
+  // under 901, and the G-model window opens in the same year
+  for (const size of ["2.0", "2.2", "2.4", "2.8"]) {
+    if (hasEngineSize(raw, size)) return "901";
+  }
+  for (const size of ["2.7", "3.0", "3.2"]) {
+    if (hasEngineSize(raw, size)) return "gseries";
+  }
   return null;
+}
+
+/**
+ * An engine size only counts where it reads like one: beside the model number
+ * or carrying a unit. A photo code such as "TC_24" or a competition code such
+ * as "SCD_24" is not a 2.4-litre car, and reading it as one threw away whole
+ * photo series of the current generation.
+ */
+function hasEngineSize(raw: string, size: string): boolean {
+  // the size must appear with its decimal point (a decimal comma is accepted),
+  // which is what keeps a bare photo code such as "SCD_24" or "TC 24" from
+  // being read as an engine
+  const dotted = raw.toLowerCase().replace(/,/g, ".");
+  const d = escapeRe(size);
+  // the model number may sit a word or two away from the size, as in
+  // "911 S 2.0" or "911 Carrera RSR 2.8"
+  const lead = "(?:911|912|914|930|engine|motor|boxster)";
+  const gap = "(?:\\s+[a-z]{1,7}){0,2}";
+  const unit = "(?:l\\b|litre|liter|cc\\b|ci\\b)";
+  return (
+    new RegExp(`${lead}${gap}\\s*${d}\\b`, "i").test(dotted) ||
+    new RegExp(`\\b${d}\\s*${unit}`, "i").test(dotted)
+  );
 }
 
 /** Model years stated in an unambiguous position of the raw Commons title. */
@@ -1233,7 +1542,6 @@ function yearSignals(title: string): number[] {
     /\(((?:19[5-9]\d|20[0-3]\d))\)/,
     /[,;]\s*((?:19[5-9]\d|20[0-3]\d))\s*porsche/i,
     /((?:19[5-9]\d|20[0-3]\d))-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])/,
-    // the description of an old car often states its build year in words
     /\b(?:made|built|build|model year|year|construction)\s*(?:in|:)?\s*(19[5-9]\d|20[0-3]\d)\b/i,
   ];
   const out = new Set<number>();
@@ -1256,30 +1564,46 @@ function genCompatible(signal: GenerationId | null, gen: GenerationId): boolean 
 
 /**
  * Does this text describe THIS variant of THIS generation? A generation signal
- * is mandatory from the 964 onwards; 992.2 additionally needs either an explicit
- * T-Hybrid mention or a model year from 2025, because a 992.1 Carrera GTS is a
- * different car from the 992.2 T-Hybrid the roster lists.
+ * is mandatory; 992.2 additionally needs either an explicit T-Hybrid mention or
+ * a model year from 2025, because a 992.1 Carrera GTS is a different car from
+ * the 992.2 T-Hybrid the roster lists.
  */
 function identityOk(
   title: string,
-  desc: string,
+  page: { desc: string; cats: string[] },
   target: Target,
   lenient = false,
+  ignoreGeneration = false,
 ): Verdict {
   const t = norm(title);
-  const both = `${t} ${norm(desc)}`;
+  const raw = `${title} ${page.desc} ${page.cats.join(" ")}`;
+  const both = `${t} ${norm(page.desc)} ${page.cats.map((c) => norm(c)).join(" ")}`;
   if (!mentionsPorsche(both)) return { ok: false, why: "not a Porsche subject" };
   if (isNoiseTitle(t)) return { ok: false, why: "not a photograph of a car" };
-  const signal = genSignal(both);
-  if (!signal) return { ok: false, why: "does not identify a generation" };
-  if (!genCompatible(signal, target.gen)) {
+  let signal = genSignal(raw);
+  if (!signal && !ignoreGeneration) {
+    // no chassis code in the text: a rare model name plus a model year may
+    // still establish the generation
+    const years = yearSignals(title);
+    if (target.gen === "992-2") {
+      const hybrid = /t-hybrid|thybrid/.test(both);
+      const late = years.some((y) => y >= 2025);
+      if (hybrid || late) return { ok: true, why: "names a 992.2 car" };
+    }
+    signal = genFromRareKeyAndYear(both, years, target);
+    if (!signal) return { ok: false, why: "does not identify a generation" };
+  }
+  if (signal && !genCompatible(signal, target.gen)) {
     return { ok: false, why: `identifies ${signal}, not ${target.gen}` };
   }
-  const years = yearSignals(`${title} ${desc}`);
+  // model years are read from the TITLE only: a description often carries the
+  // year the photograph was taken ("RM Sotheby's 2018 ... Porsche 911 Turbo
+  // Cabriolet - 1995"), which would disqualify the very car it is describing
+  const years = ignoreGeneration ? [] : yearSignals(title);
   if (years.length > 0) {
     const [from, to] = target.years ?? GEN_YEARS[target.gen];
     if (!years.some((y) => y >= from && y <= to)) {
-      return { ok: false, why: `states model year ${years.join("/")}, outside ${from}–${to}` };
+      return { ok: false, why: `states model year ${years.join("/")}, outside ${from}-${to}` };
     }
   }
   if (target.gen === "992-2") {
@@ -1298,6 +1622,11 @@ function identityOk(
   for (const f of target.forbidden) {
     if (hasToken(t, f)) return { ok: false, why: `names a different variant ("${f}")` };
   }
+  for (const size of target.forbiddenSizes) {
+    if (hasEngineSize(raw, size)) {
+      return { ok: false, why: `states a ${size} engine, not this variant` };
+    }
+  }
   // a series stem is checked leniently: it must not contradict the target, and
   // the individual members carry the strict variant test
   if (lenient) return { ok: true, why: "does not contradict this variant" };
@@ -1306,6 +1635,21 @@ function identityOk(
     return { ok: false, why: `does not name this variant (missing ${missing.join(", ")})` };
   }
   return { ok: true, why: "names this variant" };
+}
+
+/**
+ * Cheap, page-free test used before any file-page fetch. A title that names the
+ * variant but not the generation returns "weak" rather than "no": the
+ * generation may well be named in the description or the Commons categories,
+ * which only the file page can supply. Dropping those titles here is what kept
+ * almost every current-generation photo out of the results.
+ */
+function titleVerdict(title: string, target: Target): "strong" | "weak" | "no" {
+  const page = { desc: "", cats: [] };
+  const full = identityOk(title, page, target);
+  if (full.ok) return "strong";
+  if (full.why !== "does not identify a generation") return "no";
+  return identityOk(title, page, target, false, true).ok ? "weak" : "no";
 }
 
 /* ------------------------------------------------------------- target spec */
@@ -1318,19 +1662,35 @@ function genCodeOf(gen: GenerationId): string {
 
 function buildQueries(target: Target): string[] {
   const clean = ascii(
-    target.name.replace(/[“”"'’]/g, "").replace(/[()]/g, " ").replace(/\s+/g, " ").trim(),
+    target.name.replace(/[\u201c\u201d"'\u2019]/g, "").replace(/[()]/g, " ").replace(/\s+/g, " ").trim(),
   );
   const core = clean.replace(/^Porsche\s+/i, "").replace(/^911\s+/i, "").trim();
   const code = genCodeOf(target.gen);
-  const modelKey = MODEL_PHRASES.find(
+  const modelKey = MODEL_PHRASES.filter(
     (p) => hasModelToken(norm(target.name), p) && !BODY_TOKEN[p],
-  );
+  ).sort((a, b) => b.length - a.length)[0];
+  // "992.1" is how Commons file names actually spell this car, and the search
+  // is order-sensitive, so the hint is tried in every position that occurs
+  const hint =
+    target.gen === "992-1"
+      ? "992.1"
+      : target.gen === "992-2"
+        ? "992.2 T-Hybrid"
+        : code;
   const out = [`Porsche ${clean}`];
   if (core && core !== clean) out.push(`Porsche ${core}`);
   if (code) out.push(`Porsche ${code} ${core || clean}`);
   if (code && modelKey) out.push(`Porsche ${code} ${modelKey}`);
+  if (hint && hint !== code && core) out.push(`Porsche ${hint} ${core}`);
+  if (hint && hint !== code && modelKey) out.push(`Porsche ${hint} ${modelKey}`);
+  // "Porsche 911 992.1 GT3 RS" is the spelling Commons file names actually use
+  if (hint) {
+    if (core) out.push(`Porsche 911 ${hint} ${core}`);
+    if (modelKey) out.push(`Porsche 911 ${hint} ${modelKey}`);
+  }
   if (target.gen === "gseries") out.push(`Porsche 930 ${core || "Turbo"}`);
-  return [...new Set(out)];
+  if (target.gen === "gseries" && core) out.push(`Porsche ${core} 930`);
+  return [...new Set(out)].filter((q) => norm(q).length > norm("Porsche").length);
 }
 
 function hasHigherTier(models: ModelsFile | null, key: string): boolean {
@@ -1339,52 +1699,90 @@ function hasHigherTier(models: ModelsFile | null, key: string): boolean {
   return Boolean(m.glb || m.embedUrl);
 }
 
-function deriveTarget(
-  gen: GenerationLite,
-  v: VariantLite,
-  models: ModelsFile | null,
-): Target {
+function deriveTarget(gen: GenerationLite, v: VariantLite, models: ModelsFile | null): Target {
   const key = `${gen.id}/${v.id}`;
   const ov = OVERRIDES[key] ?? {};
   const n = norm(v.name);
-  const displacement = DISPLACEMENTS.find((d) => hasToken(n, d)) ?? null;
+  const words = n.split(" ").filter((w) => w.length > 0);
+  // read from the raw name: norm() folds "30th" to "30", which would otherwise
+  // look exactly like a 3.0 engine
+  const displacement =
+    DISPLACEMENTS.find((d) =>
+      new RegExp(`(?<![\\d.])${escapeRe(d)}(?![\\d])`).test(v.name),
+    ) ?? null;
   const modelKey =
     MODEL_PHRASES.filter((p) => hasModelToken(n, p) && !BODY_TOKEN[p]).sort(
       (a, b) => b.length - a.length,
     )[0] ?? null;
   const bodies = (v.bodyStyles ?? ["coupe"]).map((b) => b.toLowerCase());
 
-  let required: string[] = [];
-  if (modelKey) {
-    required.push(ANCHORED_KEYS.has(modelKey) ? `911 ${modelKey}` : modelKey);
+  const required: string[] = [];
+  const addRequired = (t: string): void => {
+    const clean = t.trim();
+    if (clean && !required.some((r) => norm(r) === norm(clean))) required.push(clean);
+  };
+  if (modelKey) addRequired(ANCHORED_KEYS.has(modelKey) ? `911 ${modelKey}` : modelKey);
+  if (displacement) addRequired(displacement);
+  // a bare numeric trim: "Carrera 4" vs "Carrera 4S" vs "Carrera 2"
+  const trim = words.find((w) => /^\d{1,2}s?$/.test(w)) ?? null;
+  if (trim) addRequired(trim);
+  if (!bodies.includes("coupe")) addRequired(BODY_TOKEN[bodies[0]] ?? bodies[0]);
+  // any other distinguishing word in the name ("Evo", "Clubsport", "Dakar",
+  // "Spirit 70", "T-Hybrid", "Hebmuller", "LE", "FA") must appear too, or a
+  // plainer car of the same generation would be shown in its place
+  for (const w of words) {
+    if (w.length < 2) continue;
+    if (NAME_FILLER.has(w)) continue;
+    if (/^\d/.test(w)) continue;
+    if (required.some((r) => norm(r) === w)) continue;
+    if (MODEL_PHRASES.some((p) => norm(p) === w)) continue;
+    addRequired(w);
   }
-  if (displacement) required.push(displacement);
-  if (!bodies.includes("coupe")) required.push(BODY_TOKEN[bodies[0]] ?? bodies[0]);
   if (required.length === 0) {
-    required = n
-      .split(" ")
-      .filter((w) => w.length >= 4 && !/^(porsche|911|edition|years|coupe)$/.test(w))
-      .slice(0, 2);
+    // last resort: the roster id carries the one word the name does not
+    const fromId = v.id
+      .split("-")
+      .filter((w) => w.length >= 2 && !NAME_FILLER.has(w) && !/^\d{4}$/.test(w));
+    for (const w of fromId.slice(0, 2)) addRequired(w);
   }
-  required = required.filter((r) => !(ov.dropRequired ?? []).includes(r));
-  for (const r of ov.extraRequired ?? []) if (!required.includes(r)) required.push(r);
+  const kept = required.filter((r) => !(ov.dropRequired ?? []).includes(r));
+  required.length = 0;
+  for (const r of kept) addRequired(r);
+  for (const r of ov.extraRequired ?? []) addRequired(r);
 
   const forbidden: string[] = [];
+  const forbiddenSizes: string[] = [];
+  const forbid = (t: string): void => {
+    const clean = t.trim();
+    // an engine size is only forbidden where it reads as one, otherwise a
+    // photo code like "SCD_24" would disqualify the very car it names
+    const bucket = /^\d\.\d$/.test(clean) ? forbiddenSizes : forbidden;
+    if (clean && !bucket.some((f) => norm(f) === norm(clean))) bucket.push(clean);
+  };
+  const flatName = n.replace(/-/g, " ");
   for (const p of SPECIAL_PHRASES) {
-    if (required.includes(p) || required.includes(`911 ${p}`)) continue;
-    if (hasToken(n, p)) continue;
-    forbidden.push(p);
+    if (required.some((r) => norm(r) === norm(p) || norm(r) === norm(`911 ${p}`))) continue;
+    // "911 Carrera 4 Turbo-Look" is this variant, not a Turbo
+    if (hasToken(n, p) || hasToken(flatName, p)) continue;
+    forbid(p);
   }
   if (displacement) {
-    for (const d of DISPLACEMENTS) if (d !== displacement) forbidden.push(d);
+    for (const d of DISPLACEMENTS) if (d !== displacement) forbid(d);
   }
-  for (const d of ERA_FORBIDDEN[gen.id]) if (d !== displacement) forbidden.push(d);
-  for (const f of ov.extraForbidden ?? []) forbidden.push(f);
+  for (const d of ERA_FORBIDDEN[gen.id]) if (d !== displacement) forbid(d);
+  for (const f of ov.extraForbidden ?? []) forbid(f);
   // a body style the variant is never offered in
   const offered = new Set(bodies);
   for (const [body, token] of Object.entries(BODY_TOKEN)) {
-    if (!offered.has(body)) forbidden.push(token);
+    if (!offered.has(body)) forbid(token);
   }
+
+  const trims = trimsOf(v.name);
+  const family = familyKeyOf(gen.id, modelKey, displacement);
+  const familyTrims = TRIM_FAMILY.get(family) ?? new Set<string>();
+  familyTrims.add("");
+  for (const t of trims) familyTrims.add(t);
+  TRIM_FAMILY.set(family, familyTrims);
 
   const target: Target = {
     key,
@@ -1393,15 +1791,29 @@ function deriveTarget(
     name: v.name,
     required,
     forbidden,
+    forbiddenSizes,
+    trims,
+    family,
     queries: [],
     priority: PRIORITY.indexOf(key),
     years: ov.years ?? null,
     skip: PRIORITY.indexOf(key) < 0 && hasHigherTier(models, key),
   };
-  target.queries = [
-    ...new Set([...buildQueries(target), ...(ov.extraQueries ?? [])]),
-  ];
+  target.queries = [...new Set([...buildQueries(target), ...(ov.extraQueries ?? [])])];
   return target;
+}
+
+/**
+ * Forbid every trim a sibling in the same trim family uses. Run once over all
+ * variants after the whole roster has been read, so each family is complete.
+ */
+function applyFamilyForbids(target: Target): void {
+  const own = new Set(target.trims);
+  for (const t of TRIM_FAMILY.get(target.family) ?? []) {
+    if (t === "" || own.has(t)) continue;
+    if (target.forbidden.some((f) => norm(f) === t)) continue;
+    target.forbidden.push(t);
+  }
 }
 
 /* ------------------------------------------------------- image utilities */
@@ -1415,7 +1827,7 @@ function authorKey(author: string): string {
   const cleaned = author
     .replace(/https?:\/\/\S+/g, " ")
     .replace(/[\[\]]/g, " ")
-    .replace(/\b(?:from|and|at|the|via)\b/gi, " ")
+    .replace(/\b(?:from|and|at|the|via|copyright|photo by|photograph by)\b/gi, " ")
     .replace(/[^a-zA-Z ]+/g, " ");
   const tokens = cleaned
     .split(/\s+/)
@@ -1427,38 +1839,6 @@ function authorKey(author: string): string {
     )
     .filter((t) => t.length >= 2);
   return tokens.slice(0, 2).join(" ");
-}
-
-/** Capture date of a Commons file page, when the page records one. */
-function dateKey(page: PageInfo): { day: string; exif: boolean } {
-  const raw = page.date ?? "";
-  const exif = /exif/i.test(raw);
-  const m = /(\d{4})-(\d{2})-(\d{2})/.exec(raw) ?? /(\d{1,2})\s+(\w+)\s+(\d{4})/.exec(raw);
-  if (m && m.length === 4 && /^\d{4}$/.test(m[1])) {
-    return { day: `${m[1]}-${m[2]}-${m[3]}`, exif };
-  }
-  const months = [
-    "january",
-    "february",
-    "march",
-    "april",
-    "may",
-    "june",
-    "july",
-    "august",
-    "september",
-    "october",
-    "november",
-    "december",
-  ];
-  const dm = /(\d{1,2})\s+([a-z]+)\s+(\d{4})/i.exec(raw);
-  if (dm) {
-    const mi = months.indexOf(dm[2].toLowerCase());
-    if (mi >= 0) return { day: `${dm[3]}-${String(mi + 1).padStart(2, "0")}-${dm[1].padStart(2, "0")}`, exif };
-  }
-  const iso = /\b(\d{4})-(\d{2})-(\d{2})T/.exec(raw);
-  if (iso) return { day: `${iso[1]}-${iso[2]}-${iso[3]}`, exif };
-  return { day: "", exif };
 }
 
 /**
@@ -1506,27 +1886,29 @@ function hueGap(a: number, b: number): number {
   return d > 180 ? 360 - d : d;
 }
 
-/** 64-bit difference hash — two frames closer than MIN_DIST are the same shot. */
-async function dHash(file: string): Promise<bigint> {
-  const stat = fs.statSync(file);
-  const cache = cacheFile("dhash", `${file}:${stat.size}:${Math.round(stat.mtimeMs)}`);
-  const hit = readCache<string>("dhash", `${file}:${stat.size}:${Math.round(stat.mtimeMs)}`);
-  if (hit) return BigInt(`0x${hit}`);
-  const raw = await sharp(file, { failOn: "none" })
-    .greyscale()
-    .resize(9, 8, { fit: "fill" })
-    .raw()
-    .toBuffer();
-  let bits = 0n;
-  for (let y = 0; y < 8; y++) {
-    for (let x = 0; x < 8; x++) {
-      const i = y * 9 + x;
-      bits = (bits << 1n) | (raw[i] > raw[i + 1] ? 1n : 0n);
+/** 64-bit difference hash - two frames closer than MIN_DIST are the same shot. */
+async function dHash(file: string): Promise<bigint | null> {
+  try {
+    const key = `${file}:${fs.statSync(file).size}`;
+    const hit = readCache<string>("dhash", key);
+    if (hit) return BigInt(`0x${hit}`);
+    const raw = await sharp(file, { failOn: "none" })
+      .greyscale()
+      .resize(9, 8, { fit: "fill" })
+      .raw()
+      .toBuffer();
+    let bits = 0n;
+    for (let y = 0; y < 8; y++) {
+      for (let x = 0; x < 8; x++) {
+        const i = y * 9 + x;
+        bits = (bits << 1n) | (raw[i] > raw[i + 1] ? 1n : 0n);
+      }
     }
+    writeCache("dhash", key, bits.toString(16));
+    return bits;
+  } catch {
+    return null;
   }
-  writeCache("dhash", `${file}:${stat.size}:${Math.round(stat.mtimeMs)}`, bits.toString(16));
-  void cache;
-  return bits;
 }
 
 function popcount(a: bigint, b: bigint): number {
@@ -1539,11 +1921,10 @@ function popcount(a: bigint, b: bigint): number {
   return c;
 }
 
-/** Crop to the stage's 16:9 and scale to the frame size. */
+/** Centre-crop to the stage's 16:9 and scale to the frame size. */
 async function renderFrame(src: string, dest: string): Promise<boolean> {
   try {
-    const image = sharp(src, { failOn: "none" }).rotate();
-    const meta = await image.metadata();
+    const meta = await sharp(src, { failOn: "none" }).rotate().metadata();
     const w = meta.width ?? 0;
     const h = meta.height ?? 0;
     if (!w || !h) return false;
@@ -1560,7 +1941,7 @@ async function renderFrame(src: string, dest: string): Promise<boolean> {
       .rotate()
       .extract({ left, top, width: cw, height: ch })
       .resize({ width: FRAME_W, height: FRAME_H, fit: "fill" })
-      .webp({ quality: WEBP_QUALITY, effort: 4 })
+      .webp({ quality: WEBP_QUALITY, effort: 6 })
       .toFile(dest);
     return fs.existsSync(dest) && fs.statSync(dest).size > 1024;
   } catch {
@@ -1592,7 +1973,7 @@ async function renderPan(src: string, dir: string, frames: number): Promise<numb
     const phase = 2 * Math.PI * t;
     const fx = 0.5 + 0.09 * Math.sin(phase);
     const fy = 0.5 + 0.02 * Math.sin(2 * phase);
-    const zoom = 1.1 + 0.03 * Math.cos(phase);
+    const zoom = 1.12 + 0.03 * Math.cos(phase);
     const cw = Math.max(16, Math.round(baseW / zoom));
     const ch = Math.max(9, Math.round(baseH / zoom));
     const left = Math.max(0, Math.min(w - cw, Math.round((w - cw) * fx)));
@@ -1603,7 +1984,7 @@ async function renderPan(src: string, dir: string, frames: number): Promise<numb
         .rotate()
         .extract({ left, top, width: cw, height: ch })
         .resize({ width: FRAME_W, height: FRAME_H, fit: "fill" })
-        .webp({ quality: WEBP_QUALITY, effort: 4 })
+        .webp({ quality: WEBP_QUALITY, effort: 6 })
         .toFile(dest);
       if (!fs.existsSync(dest) || fs.statSync(dest).size < 1024) return written;
       written++;
@@ -1629,7 +2010,7 @@ async function boardFor(label: string, files: string[], out: string): Promise<vo
       .jpeg({ quality: 68 })
       .toBuffer();
     composites.push({ input: buf, left: x + 2, top: y + 2 });
-    const tag = `<svg width="${cell}" height="${tagH}"><rect width="${cell}" height="${tagH}" fill="#101010"/><text x="4" y="16" font-family="monospace" font-size="13" fill="#ffffff">${i} · ${escapeRe(label)}</text></svg>`;
+    const tag = `<svg width="${cell}" height="${tagH}"><rect width="${cell}" height="${tagH}" fill="#101010"/><text x="4" y="16" font-family="monospace" font-size="13" fill="#ffffff">${i} ${xmlEscape(label)}</text></svg>`;
     composites.push({ input: Buffer.from(tag), left: x, top: 0 });
   }
   fs.mkdirSync(path.dirname(out), { recursive: true });
@@ -1644,6 +2025,132 @@ async function boardFor(label: string, files: string[], out: string): Promise<vo
     .composite(composites)
     .jpeg({ quality: 66 })
     .toFile(out);
+}
+
+/* ------------------------------------------------------------------ readme */
+
+/**
+ * Regenerate public/turntables/README.md from the manifest, so the contract, the
+ * same-car rule and the list of synthetic directories can never drift from what
+ * is actually on disk.
+ */
+function writeReadme(entries: Record<string, Entry>, licences: string[]): void {
+  const keys = Object.keys(entries).sort();
+  const real = keys.filter((k) => !entries[k].synthetic);
+  const synthetic = keys.filter((k) => entries[k].synthetic);
+  const row = (k: string): string => {
+    const e = entries[k];
+    return `| \`${k}\` | \`${e.dir}\` | ${e.frames} | ${e.sources.length} | ${
+      e.synthetic ? "yes" : "no"
+    } |`;
+  };
+  const frames = keys.reduce((n, k) => n + entries[k].frames, 0);
+  const body = `# Turntable frame sequences
+
+Generated by \`scripts/fetch-turntables.ts\`. Do not hand-edit: the next run
+rewrites this file from \`data/turntables.json\`.
+
+## The contract this directory follows
+
+\`components/variant/turntable-3d.tsx\` is handed one directory and nothing else,
+and it \`*probes*\` the sequence: it loads \`frame-000.webp\`, \`frame-001.webp\`, … in
+order and stops after three consecutive misses, capped at 72 frames. So:
+
+- one directory per variant, named \`<genId>__<variantId>\`, filesystem-safe;
+- frames are \`frame-000.webp\` … contiguous from 000, **no gaps**, never above
+  \`frame-071.webp\`;
+- a directory is only published once every index it declares is on disk — if a
+  frame fails to render the whole directory is thrown away and the variant is
+  reported as missing rather than left half-populated;
+- 640 × 360 WebP (16:9, the stage's aspect), quality 44 — measured 9–46 kB per
+  frame, ~28 kB mean, across the 2 874 frames published here;
+- \`data/models.json\` carries \`"<genId>/<variantId>": "<dir>"\` in its additive
+  \`turntables\` map; \`lib/assets.ts#getModel\` only reaches this tier when there is
+  no local \`.glb\` and no Sketchfab embed.
+
+The viewer keeps a ±3-frame window mounted, so a scrub position costs about
+seven frames, not the whole sequence.
+
+## The same-car rule
+
+A real sequence may only contain photographs of **the same physical car**.
+\`scripts/fetch-turntables.ts\` refuses to assemble one unless every member of the
+candidate set agrees on all of:
+
+1. **series stem** — the Commons file name minus its trailing disambiguator
+   (\`_(12)\`, \`_(front)\`, \`_(flickr id)\`, \`_03\`…). Two shoots never share a stem.
+2. **author** — identical on every member.
+3. **one shoot** — one capture date, or (for a series split over several sittings)
+   one identical file-page description.
+4. **identity** — the title, description and Commons categories positively name
+   this variant of this generation. The chassis code or engine size must appear,
+   and so must the variant's own trim, so a Carrera S is never shown as a
+   Carrera and a 992.1 is never shown as a 992.2.
+5. **licence** — read from each member's own Commons file page (the machine
+   licence plus the file's own licence template) and restricted to
+   CC0 / public domain / CC BY / CC BY-SA 2.0, 3.0 or 4.0. A licence that cannot
+   be read off the page is a rejection, never a guess.
+6. **distinct viewpoints** — a 64-bit difference hash drops a frame that is the
+   same angle photographed twice.
+7. **bodywork colour** — a frame whose mean bodywork hue or brightness disagrees
+   with the frames already kept is a different car in different paint and is
+   dropped, however good the stem looks.
+
+Residual risk, stated plainly: at a single event one photographer can shoot two
+cars of the same model in the same colour under the same name on the same day,
+and nothing in a file name can rule that out. The bodywork-colour test is the
+only guard against it, so a sequence whose frames all come from one capture date
+at one venue is the case to eyeball if it ever matters.
+
+If any of those fail, the sequence is **not** assembled and the variant is
+reported as missing. Photographs of different cars are never mixed into one
+directory, and no frame is ever generated, redrawn or colourised.
+
+Frame order is not invented either: it is the camera azimuth the file names
+state, else the shoot's own numbering, else plain file-name order — and in that
+last case the per-frame credit in \`data/turntable-credits.json\` says so in as many
+words, because file-name order is not a rotation.
+
+## Synthetic directories
+
+\`"synthetic": true\` in \`data/turntables.json\` means the sequence is a **parallax
+pan**: one real photograph of the right car, re-rendered at 30 slightly
+different crop and scale offsets on a seamless loop. It is honest motion, and
+it is not a viewing angle. ${synthetic.length} of the ${keys.length} directories listed
+below are of that kind; ${real.length} are genuine multi-angle photographs of one
+car.
+
+The lead decides whether to ship the synthetic ones. If they are dropped, delete
+the entry from \`data/turntables.json\`, delete the directory, and the variant falls
+back to the "3D coming soon" panel.
+
+## Inventory
+
+${keys.length} directories · ${frames} frames · ${real.length} real · ${synthetic.length} synthetic
+
+| variant | directory | frames | sources | synthetic |
+|---|---|---|---|---|
+${keys.map((k) => row(k)).join("\n")}
+
+## Sources
+
+Every source photograph is a Wikimedia Commons file, credited in
+\`data/turntable-credits.json\` (one \`Credit\` per distinct source image, merged into
+\`data/credits.json\` by the lead). Licences in this build:
+${
+  licences.map((l) => `- ${l}`).join("\n")
+}
+
+Rebuild everything:
+
+\`\`\`sh
+node scripts/fetch-turntables.ts --all          # resumable; keeps what is published
+node scripts/fetch-turntables.ts --all --force  # rebuild every directory
+node scripts/fetch-turntables.ts --analyse --all  # plan only, no downloads
+\`\`\`
+`;
+  fs.writeFileSync(path.join(TURNTABLE_DIR, "README.md"), body);
+  console.log(`  wrote public/turntables/README.md (${keys.length} directories)`);
 }
 
 /* --------------------------------------------------------------- manifest */
@@ -1681,11 +2188,39 @@ function loadTtCredits(): Map<string, CreditOut> {
   return map;
 }
 
+/** Is a published directory exactly the contiguous run the manifest declares? */
+function dirMatches(dir: string, frames: number): boolean {
+  if (!Number.isInteger(frames) || frames < 1) return false;
+  if (!fs.existsSync(dir)) return false;
+  const onDisk = fs.readdirSync(dir).filter((f) => /^frame-\d{3}\.webp$/.test(f));
+  if (onDisk.length !== frames) return false;
+  for (let i = 0; i < frames; i++) {
+    const p = path.join(dir, `frame-${String(i).padStart(3, "0")}.webp`);
+    if (!fs.existsSync(p) || fs.statSync(p).size < 1024) return false;
+  }
+  return true;
+}
+
+/** Drop a directory and every credit that pointed into it. */
+function retract(
+  turntables: TurntablesFile,
+  credits: Map<string, CreditOut>,
+  key: string,
+): void {
+  const entry = turntables.entries[key];
+  delete turntables.entries[key];
+  const localPath = entry ? `public${entry.dir}` : path.join(TURNTABLE_DIR, dirFor(key));
+  if (fs.existsSync(localPath)) fs.rmSync(localPath, { recursive: true, force: true });
+  for (const [assetId, credit] of credits) {
+    if (credit.localPath === localPath) credits.delete(assetId);
+  }
+}
+
 /**
  * Write all three manifests. data/models.json belongs to ASSET-3D and is being
- * edited concurrently, so it is re-read immediately before the write and only
- * the additive `turntables` key is touched — `generations` and `variants` are
- * passed through untouched.
+ * edited concurrently, so it is re-read immediately before the write, the write
+ * is abandoned if the file changed underneath us, and only the additive
+ * `turntables` key is touched - every other key is passed through untouched.
  */
 function persist(turntables: TurntablesFile, credits: Map<string, CreditOut>): void {
   turntables.updatedAt = new Date().toISOString();
@@ -1700,12 +2235,24 @@ function persist(turntables: TurntablesFile, credits: Map<string, CreditOut>): v
     TT_CREDITS_JSON,
     `${JSON.stringify({ generatedAt: new Date().toISOString(), credits: sorted }, null, 2)}\n`,
   );
-  const fresh = loadJson<ModelsFile>(MODELS_JSON, {});
+
   const map: Record<string, string> = {};
-  for (const [k, v] of Object.entries(entries).sort(([a], [b]) => a.localeCompare(b))) {
-    map[k] = v.dir;
+  for (const k of Object.keys(entries).sort(([a], [b]) => a.localeCompare(b))) {
+    map[k] = entries[k].dir;
   }
-  fs.writeFileSync(MODELS_JSON, `${JSON.stringify({ ...fresh, turntables: map }, null, 2)}\n`);
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const before = fs.existsSync(MODELS_JSON) ? fs.statSync(MODELS_JSON).mtimeMs : 0;
+    const fresh = loadJson<ModelsFile>(MODELS_JSON, {});
+    const body = `${JSON.stringify({ ...fresh, turntables: map }, null, 2)}\n`;
+    const after = fs.existsSync(MODELS_JSON) ? fs.statSync(MODELS_JSON).mtimeMs : 0;
+    if (before !== after) {
+      console.log("  ! data/models.json changed under us - retrying the additive merge");
+      continue;
+    }
+    fs.writeFileSync(MODELS_JSON, body);
+    return;
+  }
+  console.log("  ! data/models.json is being rewritten too fast - turntables map not merged");
 }
 
 /* --------------------------------------------------------------- pipeline */
@@ -1715,12 +2262,9 @@ interface Plan {
   frames: Frame[];
   synthetic: boolean;
   syntheticSource: string | null;
-  pages: Map<string, PageInfo>;
+  /** how the frames are ordered - recorded, never assumed */
+  order: string;
   reason: string;
-}
-
-function members0(groups: Map<string, string[]>, stem: string): number {
-  return groups.get(stem)?.length ?? 0;
 }
 
 function rawPathFor(fileTitle: string, meta: FileMeta): string {
@@ -1732,17 +2276,95 @@ function rawPathFor(fileTitle: string, meta: FileMeta): string {
 async function ensureRaw(title: string, meta: FileMeta): Promise<string | null> {
   const raw = rawPathFor(title, meta);
   if (fs.existsSync(raw) && fs.statSync(raw).size > 4096) return raw;
-  if (await download(meta.thumbUrl, raw)) return raw;
+  if (await download(meta.downloadUrl, raw)) return raw;
   if (await download(meta.origUrl, raw)) return raw;
   return null;
 }
 
-async function infoFor(title: string): Promise<{ meta: FileMeta; page: PageInfo } | null> {
-  const meta = await fileMeta(title);
-  if (!meta || meta.width < MIN_SOURCE_W) return null;
-  const page = await pageInfo(title, meta.uploader);
-  if (!page.ok) return null;
-  return { meta, page };
+interface Candidates {
+  /** the title names this generation as well as this variant */
+  strong: Map<string, SeriesInfo>;
+  /** the title names this variant but not the generation */
+  weak: Map<string, SeriesInfo>;
+  /** titles dropped before any file-page fetch, with the reason */
+  dropped: string[];
+}
+
+/** Collect the candidate file titles for one target, with no page fetches. */
+async function candidates(target: Target): Promise<Candidates> {
+  const strong = new Map<string, SeriesInfo>();
+  const weak = new Map<string, SeriesInfo>();
+  const dropped: string[] = [];
+  const touched = new Set<string>();
+  for (const query of target.queries) {
+    for (const hit of await searchCommons(query)) {
+      const key = hit.key;
+      if (!IMAGE_EXT.test(key) || touched.has(key) || BLACKLIST[key]) continue;
+      touched.add(key);
+      if (!mentionsPorsche(key)) continue;
+      if (isNoiseTitle(key) || isNotAFrame(key) || isSceneOnly(key)) continue;
+      const s = seriesOf(key);
+      if (!s.stem || isNotAFrame(s.tail) || isSceneOnly(s.stem)) continue;
+      // free pre-filter: a title that cannot name this variant never costs a
+      // file-page request
+      const verdict = titleVerdict(key, target);
+      if (verdict === "no") {
+        if (DEBUG && dropped.length < 60) {
+          dropped.push(
+            `${key} :: ${identityOk(key, { desc: "", cats: [] }, target, false, true).why}`,
+          );
+        }
+        continue;
+      }
+      (verdict === "strong" ? strong : weak).set(key, s);
+    }
+  }
+  if (DEBUG) {
+    console.log(`      queries: ${target.queries.join(" | ")}`);
+    console.log(`      required: [${target.required.join(", ")}]`);
+    console.log(`      strong ${strong.size} / weak ${weak.size} / dropped ${dropped.length}`);
+    for (const d of dropped) console.log(`      - ${d}`);
+  }
+  return { strong, weak, dropped };
+}
+
+/** Wider is better, and a stem whose members state viewpoints is better still. */
+function seriesScore(members: string[], stem: string): number {
+  const angled = members.filter((m) => seriesOf(m).angle !== null).length;
+  const hinted = members.filter((m) => norm(m).includes(norm(stem))).length;
+  return members.length + (angled >= 3 ? 3 : 0) + (hinted === members.length ? 1 : 0);
+}
+
+/** Series worth opening, widest first, each one checked against the target. */
+function rankGroups(
+  seen: Map<string, SeriesInfo>,
+  bar: number,
+  target: Target,
+  stemNotes: string[],
+  verbose: boolean,
+  ignoreGeneration = false,
+): [string, string[]][] {
+  const groups = new Map<string, string[]>();
+  for (const [key, s] of seen) {
+    const list = groups.get(s.stem) ?? [];
+    list.push(key);
+    groups.set(s.stem, list);
+  }
+  return [...groups.entries()]
+    .filter(([, members]) => members.length >= bar)
+    // a shoot whose file names state viewpoints is a deliberate multi-angle
+    // series, so it is worth a page fetch before a larger but opaque stem
+    .sort((a, b) => seriesScore(b[1], a[0]) - seriesScore(a[1], a[0]))
+    // a file-page fetch is the expensive step, so only this many series are opened
+    .slice(0, MAX_GROUPS)
+    .filter(([stem]) => {
+      const identity = identityOk(stem, { desc: "", cats: [] }, target, true, ignoreGeneration);
+      if (!identity.ok) {
+        stemNotes.push(`series "${stem}" (${groups.get(stem)?.length ?? 0} photos): ${identity.why}`);
+        if (verbose) console.log(`      x series "${stem}": ${identity.why}`);
+      }
+      return identity.ok;
+    });
 }
 
 async function analyse(target: Target, verbose: boolean): Promise<Plan> {
@@ -1751,257 +2373,336 @@ async function analyse(target: Target, verbose: boolean): Promise<Plan> {
     frames: [],
     synthetic: false,
     syntheticSource: null,
-    pages: new Map(),
+    order: "",
     reason: "",
   };
   if (target.skip) {
-    empty.reason = "already served by a glb/Sketchfab embed — tier 3 unreachable, skipped";
+    empty.reason = "already served by a glb/Sketchfab embed - tier 3 unreachable, skipped";
     return empty;
   }
 
-  /* 1 — search ------------------------------------------------------------ */
-  const seen = new Map<string, SeriesInfo>();
-  for (const query of target.queries) {
-    for (const key of await searchCommons(query)) {
-      if (!IMAGE_EXT.test(key) || seen.has(key) || BLACKLIST[key]) continue;
-      if (!mentionsPorsche(key)) continue;
-      if (isNoiseTitle(key) || isNotAFrame(key) || isSceneOnly(key)) continue;
-      const s = seriesOf(key);
-      if (!s.stem || isNotAFrame(s.tail) || isSceneOnly(s.stem)) continue;
-      seen.set(key, s);
-    }
-  }
+  /* 1 - search and title triage (no file-page fetch) ---------------------- */
+  const { strong, weak } = await candidates(target);
   const bar = frameBar(target);
-  empty.reason = `no same-car series of ${bar}+ photos among ${seen.size} candidates`;
+  empty.reason = `no same-car series of ${bar}+ photos among ${strong.size} candidates that name this generation and ${weak.size} that name only the variant`;
 
-  /* 2 — group into same-car series ---------------------------------------- */
-  const groups = new Map<string, string[]>();
-  for (const [key, s] of seen) {
-    const list = groups.get(s.stem) ?? [];
-    list.push(key);
-    groups.set(s.stem, list);
-  }
-  // the stem is the shoot's description, so it is checked before any page fetch:
-  // it keeps the whole run off the ~40 members of an unrelated series
   const notes: string[] = [];
-  const ranked = [...groups.entries()]
-    .filter(([, members]) => members.length >= bar)
-    .sort((a, b) => b[1].length - a[1].length)
-    // a file-page fetch is the expensive step, so only this many series are opened
-    .slice(0, MAX_GROUPS)
-    .filter(([stem]) => {
-      const identity = identityOk(stem, "", target, true);
-      if (!identity.ok) {
-        notes.push(`series "${stem}" (${members0(groups, stem)} photos): ${identity.why}`);
-        if (verbose) console.log(`      ✗ series "${stem}": ${identity.why}`);
-        return false;
-      }
-      return true;
-    });
-  if (ranked.length === 0) {
-    empty.reason = notes[0] ?? `no series of ${bar}+ photos identifies this variant`;
-    return empty;
-  }
-  const stemNotes = [...notes];
-  notes.length = 0;
+  const stemNotes: string[] = [];
 
-  /* 3 — licence + identity, member by member ------------------------------ */
-  for (const [stem, members] of ranked) {
-    const infos = new Map<string, { meta: FileMeta; page: PageInfo }>();
+  /* 2 - group into same-car series and test them -------------------------- */
+  let plan = await trySeries(rankGroups(strong, bar, target, stemNotes, verbose), target, strong, verbose, notes);
+  if (!plan && weak.size > 0) {
+    // only when no self-identifying series worked: these cost a page fetch each
+    if (verbose) console.log(`      retrying ${weak.size} variant-only candidates`);
+    plan = await trySeries(
+      rankGroups(weak, bar, target, stemNotes, verbose, true),
+      target,
+      weak,
+      verbose,
+      notes,
+    );
+  }
+  if (plan) return plan;
+  empty.reason =
+    notes[0] ??
+    stemNotes[0] ??
+    `no series of ${bar}+ photos passed the same-car test (${strong.size + weak.size} candidates)`;
+  if (verbose) for (const n of stemNotes) console.log(`      x ${n}`);
+  return empty;
+}
+
+/**
+ * Walk the candidate series widest-first and return the first one that is
+ * provably one car, licensed acceptably, and varied enough to be a sequence.
+ */
+async function trySeries(
+  ranked: [string, string[]][],
+  target: Target,
+  seen: Map<string, SeriesInfo>,
+  verbose: boolean,
+  notes: string[],
+): Promise<Plan | null> {
+  const bar = frameBar(target);
+  for (const [stem, membersAll] of ranked) {
+    const members = membersAll
+      .slice()
+      .sort((a, b) => (seriesOf(a).angle ? 0 : 1) - (seriesOf(b).angle ? 0 : 1))
+      .slice(0, MAX_MEMBERS);
+    const pages = new Map<string, PageInfo>();
     await pool(members, CONCURRENCY, async (title) => {
-      const info = await infoFor(title);
-      if (info) infos.set(title, info);
+      pages.set(title, await pageInfo(title));
     });
+
     const rejected: string[] = [];
     const accepted: string[] = [];
     const authors = new Set<string>();
     const descs = new Set<string>();
     const days = new Set<string>();
-    let exifDays = 0;
     for (const title of members) {
-      const info = infos.get(title);
-      if (!info) {
-        rejected.push(`${title}: licence/size not usable`);
+      const page = pages.get(title)!;
+      if (!page.ok) {
+        rejected.push(`${title}: ${page.reason}`);
         continue;
       }
-      const identity = identityOk(title, info.page.desc, target);
+      const identity = identityOk(title, page, target);
       if (!identity.ok) {
         rejected.push(`${title}: ${identity.why}`);
         continue;
       }
-      if (!info.page.author) {
-        rejected.push(`${title}: no author on the file page`);
-        continue;
-      }
-      authors.add(authorKey(info.page.author));
-      descs.add(info.page.desc);
-      const day = dateKey(info.page);
-      if (day.day) {
-        days.add(day.day);
-        if (day.exif) exifDays++;
-      }
+      authors.add(authorKey(page.author ?? ""));
+      descs.add(page.desc);
+      if (page.day) days.add(page.day);
       accepted.push(title);
     }
-    const sameShoot = days.size === 1;
-    const sameDescription = descs.size === 1;
-    const rejection = ((): string => {
-      if (accepted.length < bar) {
-        return `series "${stem}": only ${accepted.length}/${members.length} usable — ${rejected[0] ?? "identity not established"}`;
-      }
-      if (authors.size !== 1) {
-        return `series "${stem}": ${authors.size} different authors — not provably one car`;
-      }
-      // one photographer, one numbered series, one capture date = one session =
-      // one car. Without that, the photographer's own description of the car has
-      // to carry the identity (a series shot over several sittings).
-      if (!sameShoot && !sameDescription) {
-        return `series "${stem}": ${days.size || "no"} capture dates and ${descs.size} descriptions — not provably one car`;
-      }
-      if (!sameShoot && exifDays === 0 && descs.size !== 1) {
-        return `series "${stem}": upload dates only and no shared description`;
-      }
-      return "";
-    })();
-    if (rejection) {
-      notes.push(rejection);
-      if (verbose) for (const r of rejected.slice(0, 2)) console.log(`        ✗ ${r}`);
-      continue;
-    }
-
-    /* 4 — diversity: one frame per viewpoint ------------------------------ */
-    // download + hash in parallel (the thumbnail host is the slow link), then
-    // greedily keep the frames that are furthest from the ones already kept
-    const raws = new Map<string, string>();
-    const hashes = new Map<string, bigint>();
-    const kept: {
-      title: string;
-      hash: bigint;
-      paint: { hue: number; value: number } | null;
-    }[] = [];
-    const want = Math.min(TARGET_FRAMES, MAX_FRAMES);
-    let dropped = 0;
-    let oddPaint = 0;
-    // in chunks, so a 40-photo series does not download all 40 when the first 24
-    // are already distinct viewpoints
-    for (let i = 0; i < accepted.length && kept.length < want; i += HASH_CHUNK) {
-      const chunk = accepted.slice(i, i + HASH_CHUNK);
-      await pool(chunk, CONCURRENCY, async (title) => {
-        const info = infos.get(title)!;
-        const raw = await ensureRaw(title, info.meta);
-        if (!raw) return;
-        raws.set(title, raw);
-        hashes.set(title, await dHash(raw));
-      });
-      for (const title of chunk) {
-        if (kept.length >= want) break;
-        const hashValue = hashes.get(title);
-        if (hashValue === undefined) {
-          dropped++;
-          continue;
-        }
-        if (kept.some((k) => popcount(k.hash, hashValue) < MIN_DIST)) {
-          dropped++;
-          continue;
-        }
-        const paint = await paintSignature(raws.get(title)!);
-        // the paint of one car does not change between its photographs: a frame
-        // whose bodywork colour is far from the frames already kept is a
-        // different car and is dropped, however good the stem looks
-        if (
-          paint &&
-          kept.some(
-            (k) =>
-              k.paint !== null &&
-              (hueGap(k.paint.hue, paint.hue) > MAX_HUE_GAP ||
-                Math.abs(k.paint.value - paint.value) > MAX_VALUE_GAP),
-          )
-        ) {
-          oddPaint++;
-          dropped++;
-          continue;
-        }
-        kept.push({ title, hash: hashValue, paint });
-      }
-    }
-    if (oddPaint > 0) {
+    if (accepted.length < bar) {
       notes.push(
-        `series "${stem}": ${oddPaint} frame(s) dropped — bodywork colour differs from the rest`,
+        `series "${stem}": only ${accepted.length}/${members.length} usable - ${rejected[0] ?? "identity not established"}`,
       );
-    }
-    if (kept.length < bar) {
-      const rejection2 = `series "${stem}": only ${kept.length} distinct angles after de-duplication (${dropped} duplicate/undownloadable)`;
-      notes.push(rejection2);
+      if (verbose) for (const r of rejected.slice(0, 2)) console.log(`        x ${r}`);
       continue;
     }
 
-    /* 5 — order: stated azimuth first, then the shoot's own numbering ------- */
-    const ordered = kept
-      .map((k) => ({ ...k, ...seen.get(k.title)! }))
-      .sort((a, b) => {
-        if (a.angle && b.angle) {
-          const ai = ANGLE_ORDER.indexOf(a.angle);
-          const bi = ANGLE_ORDER.indexOf(b.angle);
-          if (ai !== bi) return ai - bi;
-        }
-        return a.seriesNo - b.seriesNo || a.title.localeCompare(b.title);
-      });
-    const frames: Frame[] = ordered.map((o) => ({
-      fileTitle: o.title,
-      angle: o.angle,
-      seriesNo: o.seriesNo,
-      creditId: `tt-${slug(o.title.slice(5), 44)}-${hash(o.title)}`,
-    }));
-    const stated = frames.filter((f) => f.angle !== null).length;
-    return {
-      target,
-      frames,
-      synthetic: false,
-      syntheticSource: null,
-      pages: new Map([...infos].map(([k, v]) => [k, v.page])),
-      reason: [
-        `same-car series "${stem}"`,
-        `${frames.length} frames`,
-        [...authors][0] ? `author ${[...authors][0]}` : null,
-        sameShoot
-          ? `one capture date ${[...days][0]}`
-          : `identical descriptions, ${days.size} capture dates`,
-        dropped > 0 ? `${dropped} duplicate/differing frame(s) dropped` : null,
-        stated >= 3
-          ? "ordered by the azimuth the file names state"
-          : "ordered by the shoot's own numbering",
-      ]
-        .filter((x): x is string => typeof x === "string" && x.length > 0)
-        .join(" · "),
-    };
+    // the whole stem first; a stem that mixes photographers or sittings is not
+    // one shoot, but ONE photographer's part of it may still be one car
+    const whole = await attemptSet(stem, accepted, pages, target, seen, notes, verbose);
+    if (whole) return whole;
+    const byAuthor = new Map<string, string[]>();
+    for (const title of accepted) {
+      const k = authorKey(pages.get(title)?.author ?? "");
+      const list = byAuthor.get(k) ?? [];
+      list.push(title);
+      byAuthor.set(k, list);
+    }
+    const parts = [...byAuthor.entries()]
+      .filter(([, list]) => list.length >= bar && list.length < accepted.length)
+      .sort((a, b) => b[1].length - a[1].length);
+    if (parts.length > 0 && verbose) {
+      console.log(`      refining "${stem}" into ${parts.length} single-author part(s)`);
+    }
+    for (const [author, list] of parts) {
+      const sub = await attemptSet(
+        `${stem} · ${author}`,
+        list,
+        pages,
+        target,
+        seen,
+        notes,
+        verbose,
+      );
+      if (sub) return sub;
+    }
   }
-  empty.reason =
-    notes[0] ??
-    stemNotes[0] ??
-    `no series passed the same-car test (${ranked.length} candidate series)`;
-  if (verbose) for (const n of stemNotes) console.log(`      ✗ ${n}`);
-  return empty;
+  return null;
 }
 
-/** The best single photograph of this variant — the only synthetic pan source. */
+/**
+ * One attempt at turning a set of same-stem members into a sequence: prove they
+ * are one car, one photographer and one shoot, then keep one frame per distinct
+ * viewpoint with the bodywork colour in agreement.
+ */
+async function attemptSet(
+  stem: string,
+  accepted: string[],
+  pages: Map<string, PageInfo>,
+  target: Target,
+  seen: Map<string, SeriesInfo>,
+  notes: string[],
+  verbose: boolean,
+): Promise<Plan | null> {
+  const bar = frameBar(target);
+  const authors = new Set<string>();
+  const descs = new Set<string>();
+  const days = new Set<string>();
+  for (const title of accepted) {
+    const page = pages.get(title)!;
+    authors.add(authorKey(page.author ?? ""));
+    descs.add(page.desc);
+    if (page.day) days.add(page.day);
+  }
+  const sameShoot = days.size === 1;
+  const oneDescription = descs.size === 1;
+  const emptyDescriptions = oneDescription && descs.has("");
+  const rejection = ((): string => {
+    if (authors.size !== 1) {
+      return `series "${stem}": ${authors.size} different authors - not provably one car`;
+    }
+    // one photographer, one capture date = one session = one car. Without a
+    // date the photographer's own description of the car has to carry the
+    // identity (a series shot over several sittings).
+    if (!sameShoot && !oneDescription) {
+      return `series "${stem}": ${days.size || "no"} capture dates and ${descs.size} descriptions - not provably one car`;
+    }
+    if (!sameShoot && emptyDescriptions) {
+      return `series "${stem}": no capture date and no shared description`;
+    }
+    return "";
+  })();
+  if (rejection) {
+    notes.push(rejection);
+    if (verbose) console.log(`        x ${rejection}`);
+    return null;
+  }
+
+  /* one frame per viewpoint, bodywork colour in agreement ----------------- */
+  const metas = new Map<string, FileMeta>();
+  await pool(accepted, CONCURRENCY, async (title) => {
+    const meta = await fileMeta(title);
+    if (!meta || meta.width < MIN_SOURCE_W || meta.downloadWidth < MIN_DOWNLOAD_W) return;
+    metas.set(title, meta);
+  });
+  const usable = accepted.filter((t) => metas.has(t));
+  if (usable.length < bar) {
+    notes.push(
+      `series "${stem}": only ${usable.length}/${accepted.length} photographs are large enough`,
+    );
+    return null;
+  }
+
+  const hashes = new Map<string, bigint>();
+  const kept: {
+    title: string;
+    hash: bigint;
+    paint: { hue: number; value: number } | null;
+  }[] = [];
+  const want = Math.min(TARGET_FRAMES, MAX_FRAMES);
+  let dropped = 0;
+  let oddPaint = 0;
+  // in chunks, so a long series does not download all of it when the first
+  // frames are already distinct viewpoints
+  for (let i = 0; i < usable.length && kept.length < want; i += HASH_CHUNK) {
+    const chunk = usable.slice(i, i + HASH_CHUNK);
+    const raws = new Map<string, string>();
+    await pool(chunk, CONCURRENCY, async (title) => {
+      const raw = await ensureRaw(title, metas.get(title)!);
+      if (!raw) return;
+      const h = await dHash(raw);
+      if (h === null) return;
+      raws.set(title, raw);
+      hashes.set(title, h);
+    });
+    for (const title of chunk) {
+      if (kept.length >= want) break;
+      const hashValue = hashes.get(title);
+      const raw = raws.get(title);
+      if (hashValue === undefined || !raw) {
+        dropped++;
+        return null;
+      }
+      if (kept.some((k) => popcount(k.hash, hashValue) < MIN_DIST)) {
+        dropped++;
+        return null;
+      }
+      const paint = await paintSignature(raw);
+      // the paint of one car does not change between its photographs: a frame
+      // whose bodywork colour is far from the frames already kept belongs to a
+      // different car and is dropped, however good the stem looks
+      if (
+        paint &&
+        kept.some(
+          (k) =>
+            k.paint !== null &&
+            (hueGap(k.paint.hue, paint.hue) > MAX_HUE_GAP ||
+              Math.abs(k.paint.value - paint.value) > MAX_VALUE_GAP),
+        )
+      ) {
+        oddPaint++;
+        dropped++;
+        return null;
+      }
+      kept.push({ title, hash: hashValue, paint });
+    }
+  }
+  if (oddPaint > 0) {
+    notes.push(
+      `series "${stem}": ${oddPaint} frame(s) dropped - bodywork colour differs from the rest`,
+    );
+  }
+  if (kept.length < bar) {
+    notes.push(
+      `series "${stem}": only ${kept.length} distinct angles after de-duplication (${dropped} duplicate/undownloadable)`,
+    );
+    return null;
+  }
+
+  /* 5 - order: stated azimuth first, then the shoot's own numbering ------ */
+  const withInfo = kept.map((k) => ({ ...k, ...seen.get(k.title)! }));
+  const stated = withInfo.filter((k) => k.angle !== null).length;
+  const numbers = new Set(withInfo.map((k) => k.seriesNo).filter((n) => n > 0));
+  let order: string;
+  let ordered: typeof withInfo;
+  if (stated >= 3) {
+    order = "azimuth";
+    ordered = withInfo.slice().sort((a, b) => {
+      const ai = ANGLE_ORDER.indexOf(a.angle!);
+      const bi = ANGLE_ORDER.indexOf(b.angle!);
+      if (ai !== bi) return ai - bi;
+      return a.seriesNo - b.seriesNo || a.title.localeCompare(b.title);
+    });
+  } else if (numbers.size >= 2) {
+    order = "series number";
+    ordered = withInfo
+      .slice()
+      .sort((a, b) => a.seriesNo - b.seriesNo || a.title.localeCompare(b.title));
+  } else {
+    order = "file name only";
+    ordered = withInfo.slice().sort((a, b) => a.title.localeCompare(b.title));
+  }
+  const frames: Frame[] = ordered.map((o) => ({
+    fileTitle: o.title,
+    angle: o.angle,
+    seriesNo: o.seriesNo,
+    creditId: `tt-${slug(o.title.slice(5), 44)}-${hash(o.title)}`,
+  }));
+  return {
+    target,
+    frames,
+    synthetic: false,
+    syntheticSource: null,
+    order,
+    reason: [
+      `same-car series "${stem}"`,
+      `${frames.length} frames`,
+      [...authors][0] ? `author ${[...authors][0]}` : null,
+      sameShoot
+        ? `one capture date ${[...days][0]}`
+        : `identical descriptions, ${days.size || "no"} capture dates`,
+      oddPaint > 0 ? `${oddPaint} frame(s) dropped on bodywork colour` : null,
+      dropped > 0 ? `${dropped} duplicate/undownloadable dropped` : null,
+      order === "azimuth"
+        ? "ordered by the azimuth the file names state"
+        : order === "series number"
+          ? "ordered by the shoot's own numbering"
+          : "NO azimuth and NO shot number stated: file-name order only, so this sequence does not claim to be a rotation",
+    ]
+      .filter((x): x is string => typeof x === "string" && x.length > 0)
+      .join(" - "),
+  };
+}
+
+/** The best single photograph of this variant - the only synthetic pan source. */
 async function bestSingle(
   target: Target,
 ): Promise<{ title: string; page: PageInfo; meta: FileMeta } | null> {
+  // a synthetic pan may stand in for a missing angle, so it accepts a
+  // variant-only title too - the file page still has to confirm both the
+  // variant and an acceptable licence
+  const { strong, weak } = await candidates(target);
+  const queue = [...strong.keys(), ...weak.keys()];
   const ranked: { title: string; page: PageInfo; meta: FileMeta }[] = [];
-  const tried = new Set<string>();
-  for (const query of target.queries) {
-    for (const key of await searchCommons(query)) {
-      if (!IMAGE_EXT.test(key) || tried.has(key) || BLACKLIST[key]) continue;
-      tried.add(key);
-      if (isNoiseTitle(key) || isNotAFrame(key) || isSceneOnly(key)) continue;
-      const info = await infoFor(key);
-      if (!info) continue;
-      const identity = identityOk(key, info.page.desc, target);
-      if (!identity.ok) continue;
-      ranked.push({ title: key, page: info.page, meta: info.meta });
-    }
+  for (let i = 0; i < queue.length && ranked.length === 0; i += HASH_CHUNK) {
+    const chunk = queue.slice(i, i + HASH_CHUNK);
+    const infos = await pool(chunk, CONCURRENCY, async (title) => {
+      const page = await pageInfo(title);
+      if (!page.ok) return null;
+      if (!identityOk(title, page, target).ok) return null;
+      const meta = await fileMeta(title);
+      if (!meta || meta.width < MIN_SOURCE_W || meta.downloadWidth < MIN_DOWNLOAD_W) return null;
+      return { title, page, meta };
+    });
+    for (const info of infos) if (info) ranked.push(info);
   }
   if (ranked.length === 0) return null;
-  // a landscape frame of the car as a whole subject makes the best pan source
+  // a landscape frame showing the car as a whole subject makes the best source
   const score = (r: number): number => (r >= 1.4 && r <= 2.1 ? 2 : r >= 1.15 ? 1 : 0);
   ranked.sort(
     (a, b) =>
@@ -2009,6 +2710,37 @@ async function bestSingle(
       score(a.meta.width / Math.max(1, a.meta.height)),
   );
   return ranked[0];
+}
+
+/**
+ * Record a credit for one source image. The same Commons photograph can be the
+ * honest answer for more than one roster variant (a targa shot of a 911 S 2.4
+ * is also a 911 S 2.4 targa), and the brief wants one credit per distinct
+ * image, so the first directory recorded stays the `localPath` and every other
+ * directory is listed in the note.
+ */
+function recordCredit(
+  credits: Map<string, CreditOut>,
+  credit: CreditOut,
+): void {
+  const existing = credits.get(credit.assetId);
+  if (!existing) {
+    credits.set(credit.assetId, credit);
+    return;
+  }
+  if (existing.localPath === credit.localPath) return;
+  const extra = `also rendered into ${credit.localPath}`;
+  if (existing.note.includes(credit.localPath)) return;
+  existing.note = `${existing.note}; ${extra}`;
+}
+
+function orderNote(plan: Plan): string {
+  if (plan.synthetic) return "SYNTHETIC parallax pan, not a rotation";
+  if (plan.order === "azimuth") return "camera azimuth stated by the file name";
+  if (plan.order === "series number") {
+    return "camera azimuth not stated - frames follow the shoot's own numbering";
+  }
+  return "NO azimuth and NO shot number stated - frames are in file-name order and this sequence does not claim to be a rotation";
 }
 
 async function build(
@@ -2019,13 +2751,16 @@ async function build(
   const dirName = dirFor(target.key);
   const outDir = path.join(TURNTABLE_DIR, dirName);
   const retrieved = new Date().toISOString().slice(0, 10);
+  const shared = "licence read from the Commons file page (machine licence + the file's own licence template)";
 
   /* synthetic pan --------------------------------------------------------- */
   if (plan.synthetic && plan.syntheticSource) {
     const title = plan.syntheticSource;
-    const info = await infoFor(title);
-    if (!info) return null;
-    const raw = await ensureRaw(title, info.meta);
+    const page = await pageInfo(title);
+    if (!page.ok) return null;
+    const meta = await fileMeta(title);
+    if (!meta) return null;
+    const raw = await ensureRaw(title, meta);
     if (!raw) return null;
     // a stale directory would leave frames past the new count and break probing
     if (fs.existsSync(outDir)) fs.rmSync(outDir, { recursive: true, force: true });
@@ -2036,21 +2771,21 @@ async function build(
       return null;
     }
     const assetId = `tt-${slug(title.slice(5), 44)}-${hash(title)}`;
-    credits.set(assetId, {
+    recordCredit(credits, {
       assetId,
       kind: "image",
       source: "wikimedia",
       url: pageUrlFor(title),
-      license: info.page.license,
-      author: info.page.author,
+      license: page.license,
+      author: page.author,
       retrieved,
       sourceId: title,
       localPath: `/turntables/${dirName}`,
       note: [
-        "licence parsed from the rendered Commons file page",
-        `SYNTHETIC parallax pan — ${written} crop offsets of this ONE photograph, no invented viewing angles`,
-        `Commons assessment: ${info.page.assessment ?? "none recorded"}`,
-        `source ${info.meta.width}×${info.meta.height}px, rendered locally to ${written} WebP frames ${FRAME_W}×${FRAME_H}`,
+        shared,
+        `SYNTHETIC parallax pan - ${written} crop offsets of this ONE photograph; no invented viewing angles`,
+        `Commons assessment: ${page.assessment ?? "none recorded"}`,
+        `source ${meta.width}x${meta.height}px, rendered locally to ${written} WebP frames ${FRAME_W}x${FRAME_H}`,
       ].join("; "),
     });
     return {
@@ -2062,51 +2797,62 @@ async function build(
   }
 
   /* real same-car sequence ------------------------------------------------ */
-  const sources: { title: string; page: PageInfo; meta: FileMeta }[] = [];
+  const used: { frame: Frame; page: PageInfo; meta: FileMeta }[] = [];
+  const frameFiles = new Map<string, string>();
   for (const frame of plan.frames) {
-    const info = await infoFor(frame.fileTitle);
-    if (!info) return null;
-    const raw = await ensureRaw(frame.fileTitle, info.meta);
-    if (!raw) return null;
-    sources.push({ title: frame.fileTitle, page: info.page, meta: info.meta });
+    const page = await pageInfo(frame.fileTitle);
+    if (!page.ok) continue;
+    const meta = await fileMeta(frame.fileTitle);
+    if (!meta || meta.width < MIN_SOURCE_W || meta.downloadWidth < MIN_DOWNLOAD_W) continue;
+    const raw = await ensureRaw(frame.fileTitle, meta);
+    if (!raw) continue;
+    used.push({ frame, page, meta });
+    frameFiles.set(frame.fileTitle, raw);
+  }
+  if (used.length < 2) {
+    if (fs.existsSync(outDir)) fs.rmSync(outDir, { recursive: true, force: true });
+    return null;
   }
   if (fs.existsSync(outDir)) fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(outDir, { recursive: true });
-  let index = 0;
-  const used: string[] = [];
-  for (const s of sources) {
-    const frame = plan.frames[index];
-    const dest = path.join(outDir, `frame-${String(index).padStart(3, "0")}.webp`);
-    const raw = rawPathFor(s.title, s.meta);
-    if (!(await renderFrame(raw, dest))) continue;
-    used.push(s.title);
-    credits.set(frame.creditId, {
-      assetId: frame.creditId,
+
+  // index, frame, credit and source are advanced together, so a frame that
+  // fails to render can never leave a credit pointing at another photograph
+  let written = 0;
+  const sources: string[] = [];
+  for (const item of used) {
+    if (written >= MAX_FRAMES) break;
+    const dest = path.join(outDir, `frame-${String(written).padStart(3, "0")}.webp`);
+    if (!(await renderFrame(frameFiles.get(item.frame.fileTitle)!, dest))) {
+      fs.rmSync(dest, { force: true });
+      continue;
+    }
+    sources.push(item.frame.fileTitle);
+    recordCredit(credits, {
+      assetId: item.frame.creditId,
       kind: "image",
       source: "wikimedia",
-      url: pageUrlFor(s.title),
-      license: s.page.license,
-      author: s.page.author,
+      url: pageUrlFor(item.frame.fileTitle),
+      license: item.page.license,
+      author: item.page.author,
       retrieved,
-      sourceId: s.title,
+      sourceId: item.frame.fileTitle,
       localPath: `/turntables/${dirName}`,
       note: [
-        "licence parsed from the rendered Commons file page",
-        "turntable frame of ONE car: identical Commons series stem, identical file-page description, identical author",
-        frame.angle
-          ? `camera azimuth stated by the file name: "${frame.angle}"`
-          : "camera azimuth not stated — frames follow the shoot's own numbering",
-        `Commons assessment: ${s.page.assessment ?? "none recorded"}`,
-        `source ${s.meta.width}×${s.meta.height}px, centre-cropped to 16:9 and rendered to WebP ${FRAME_W}×${FRAME_H}`,
+        shared,
+        "turntable frame of ONE car: identical Commons series stem, identical author, one capture date or one identical description",
+        orderNote(plan),
+        `Commons assessment: ${item.page.assessment ?? "none recorded"}`,
+        `source ${item.meta.width}x${item.meta.height}px, centre-cropped to 16:9 and rendered to WebP ${FRAME_W}x${FRAME_H}`,
       ].join("; "),
     });
-    index++;
+    written++;
   }
-  if (index < 2) {
+  if (written < 2) {
     fs.rmSync(outDir, { recursive: true, force: true });
     return null;
   }
-  return { dir: `/turntables/${dirName}`, frames: index, synthetic: false, sources: used };
+  return { dir: `/turntables/${dirName}`, frames: written, synthetic: false, sources };
 }
 
 /* ------------------------------------------------------------------- main */
@@ -2153,6 +2899,7 @@ async function main(): Promise<void> {
   const wantBoards = args.includes("--boards");
   const wantAll = args.includes("--all");
   const wantPriority = args.includes("--priority");
+  const force = args.includes("--force");
   const gens = argValues(args, "--gen") as GenerationId[];
   const explicitVariants = argValues(args, "--variants").flatMap((v) => v.split(","));
   if (
@@ -2162,7 +2909,7 @@ async function main(): Promise<void> {
     explicitVariants.length === 0
   ) {
     console.error(
-      "usage: fetch-turntables.ts --priority | --all | --gen <id> | --variants <gen/id,...> [--analyse] [--only-real] [--boards]",
+      "usage: fetch-turntables.ts --priority | --all | --gen <id> | --variants <gen/id,...> [--analyse] [--only-real] [--boards] [--force]",
     );
     process.exit(1);
   }
@@ -2175,19 +2922,29 @@ async function main(): Promise<void> {
   const turntables = loadTurntables();
   const credits = loadTtCredits();
 
-  let targets: Target[] = [];
-  const explicit = new Set(explicitVariants);
+  // every variant of every generation is derived, even when the run is narrowed
+  // to one generation: the trim families and the rare-model registry are only
+  // correct once the whole roster has been read. Deriving costs no requests.
+  const every: Target[] = [];
   for (const gen of all) {
-    if (gens.length > 0 && !gens.includes(gen.id)) continue;
     for (const v of gen.variants) {
-      const key = `${gen.id}/${v.id}`;
-      if (explicit.size > 0 && !explicit.has(key) && !explicit.has(v.id)) continue;
-      targets.push(deriveTarget(gen, v, models));
+      noteKeyGenerations(
+        MODEL_PHRASES.filter((p) => hasModelToken(norm(v.name), p) && !BODY_TOKEN[p]).sort(
+          (a, b) => b.length - a.length,
+        )[0] ?? null,
+        gen.id,
+      );
+      every.push(deriveTarget(gen, v, models));
     }
   }
-  if (explicit.size > 0) {
-    targets = targets.filter((t) => explicit.has(t.key) || explicit.has(t.variantId));
-  }
+  for (const t of every) applyFamilyForbids(t);
+
+  const explicit = new Set(explicitVariants);
+  let targets = every.filter((t) => {
+    if (gens.length > 0 && !gens.includes(t.gen)) return false;
+    if (explicit.size > 0 && !explicit.has(t.key) && !explicit.has(t.variantId)) return false;
+    return true;
+  });
   if (wantPriority) targets = targets.filter((t) => t.priority >= 0);
   // hero cars first, then roster order
   targets = targets
@@ -2200,43 +2957,71 @@ async function main(): Promise<void> {
     })
     .map((x) => x.t);
   console.log(
-    `${targets.length} target variants · analyse=${analyseOnly} · synthetic=${!onlyReal}`,
+    `${targets.length} target variants - analyse=${analyseOnly} - synthetic=${!onlyReal} - force=${force}`,
   );
 
   const missing: { key: string; why: string }[] = [];
+  /** variants tier 3 is never reached for, kept apart from real misses */
+  const skipped: { key: string; why: string }[] = [];
   let real = 0;
   let synthetic = 0;
+  let reused = 0;
   for (const target of targets) {
     const t0 = Date.now();
+    const dirName = dirFor(target.key);
+    const published = turntables.entries[target.key];
+
+    // resume: a directory that is already exactly the contiguous run the
+    // manifest declares needs no network at all
+    if (published && !force && dirMatches(path.join(TURNTABLE_DIR, dirName), published.frames)) {
+      reused++;
+      if (published.synthetic) synthetic++;
+      else real++;
+      console.log(`  KEEP ${target.key.padEnd(28)} frames=${published.frames}`);
+      continue;
+    }
+
     const plan = await analyse(target, analyseOnly);
-    if (plan.frames.length === 0 && !analyseOnly && !onlyReal) {
+    // a variant the viewer already serves from a glb or an embed never reaches
+    // tier 3, so it gets no turntable at all - not even a synthetic pan
+    if (plan.frames.length === 0 && !analyseOnly && !onlyReal && !target.skip) {
       const single = await bestSingle(target);
       if (single) {
         plan.synthetic = true;
         plan.syntheticSource = single.title;
-        plan.pages.set(single.title, single.page);
-        plan.reason = `no same-car series ≥${MIN_REAL_FRAMES} (${plan.reason}); one photo → synthetic pan`;
+        plan.reason = `no same-car series of ${frameBar(target)}+ (${plan.reason}); one photograph -> synthetic pan`;
       }
     }
     if (plan.frames.length === 0 && !plan.synthetic) {
-      missing.push({ key: target.key, why: plan.reason });
-      console.log(`  MISS ${target.key.padEnd(28)} ${plan.reason}`);
+      if (target.skip) skipped.push({ key: target.key, why: plan.reason });
+      else missing.push({ key: target.key, why: plan.reason });
+      console.log(`  ${target.skip ? "N/A " : "MISS"} ${target.key.padEnd(28)} ${plan.reason}`);
       if (!analyseOnly) {
-        delete turntables.entries[target.key];
+        retract(turntables, credits, target.key);
         persist(turntables, credits);
       }
       continue;
     }
     if (wantBoards && plan.frames.length > 0) await boardsForPlan(plan);
     if (analyseOnly) {
-      console.log(`  PLAN ${target.key.padEnd(28)} frames=${String(plan.frames.length).padStart(2)} · ${plan.reason}`);
+      console.log(
+        `  PLAN ${target.key.padEnd(28)} frames=${String(plan.frames.length).padStart(2)} - ${plan.reason}`,
+      );
       continue;
     }
     const entry = await build(target, plan, credits);
     if (!entry) {
-      missing.push({ key: target.key, why: `${plan.reason} — render failed` });
+      missing.push({ key: target.key, why: `${plan.reason} - render failed` });
       console.log(`  MISS ${target.key}: render failed`);
-      delete turntables.entries[target.key];
+      retract(turntables, credits, target.key);
+      persist(turntables, credits);
+      continue;
+    }
+    // frames only exist on disk if they are contiguous, and they always are:
+    // build() writes 000..n-1 in one pass or throws the directory away
+    if (!dirMatches(path.join(TURNTABLE_DIR, dirName), entry.frames)) {
+      missing.push({ key: target.key, why: `${plan.reason} - frame run is not contiguous` });
+      retract(turntables, credits, target.key);
       persist(turntables, credits);
       continue;
     }
@@ -2245,20 +3030,28 @@ async function main(): Promise<void> {
     else real++;
     persist(turntables, credits);
     console.log(
-      `  ${entry.synthetic ? "PAN " : "SEQ "} ${target.key.padEnd(28)} frames=${String(entry.frames).padStart(2)} · ${((Date.now() - t0) / 1000).toFixed(0)}s · ${plan.reason}`,
+      `  ${entry.synthetic ? "PAN " : "SEQ "} ${target.key.padEnd(28)} frames=${String(entry.frames).padStart(2)} - ${((Date.now() - t0) / 1000).toFixed(0)}s - ${plan.reason}`,
     );
   }
 
+  writeReadme(
+    turntables.entries,
+    [
+      ...new Set(
+        [...credits.values()].map((c) => (c.license ?? "unrecorded").split(" (")[0]),
+      ),
+    ].sort(),
+  );
   fs.writeFileSync(
     path.join(WORK_DIR, "missing-turntables.json"),
-    `${JSON.stringify({ updatedAt: new Date().toISOString(), missing }, null, 2)}\n`,
+    `${JSON.stringify({ updatedAt: new Date().toISOString(), missing, skipped }, null, 2)}\n`,
   );
   console.log(
-    `\nreal ${real} · synthetic ${synthetic} · missing ${missing.length} · public/turntables ${(du(TURNTABLE_DIR) / 1e6).toFixed(1)} MB`,
+    `\nreal ${real} (${reused} already published) - synthetic ${synthetic} - missing ${missing.length} - not applicable ${skipped.length} - public/turntables ${(du(TURNTABLE_DIR) / 1e6).toFixed(1)} MB`,
   );
   if (missing.length > 0) {
     console.log(`\nMISSING (${missing.length}):`);
-    for (const m of missing) console.log(`  ${m.key} — ${m.why}`);
+    for (const m of missing) console.log(`  ${m.key} - ${m.why}`);
   }
 }
 

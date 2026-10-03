@@ -510,9 +510,30 @@ function parseLicence(html: string, uploader: string | null): LicenceInfo {
   if (own && /non-?free|fair use|copyright violation/i.test(own)) return reject("non-free / fair use");
 
   let short: string | null = null;
-  CC_LICENSE_URL.lastIndex = 0;
-  const cc = CC_LICENSE_URL.exec(text);
-  if (cc && !/nc|nd/.test(cc[1])) short = licenseShort(cc[1], cc[2]);
+
+  // LEAD FIX: the file's OWN licence template is the authoritative signal.
+  // Scanning the page for the first creativecommons.org URL used to pick up a
+  // footer link, so a CC BY 2.0 file was recorded as CC BY-SA 4.0 — over-strict,
+  // but a false statement on the public credits page. Prefer the template.
+  const tmpl = /\b(?:self\|)?(cc-zero|cc-by(?:-sa)?(?:-[a-z]{2})?-[0-9.]+|cc-by(?:-sa)?)\b/i.exec(
+    (/\{\{\s*(?:self\|)?([a-z0-9|._-]+)\s*\}\}/i.exec(text)?.[1] ?? ""),
+  );
+  if (tmpl && !/nc|nd/.test(tmpl[1])) {
+    const tag = tmpl[1].toLowerCase();
+    if (tag === "cc-zero") short = "CC0 1.0";
+    else {
+      const version = (/-([0-9.]+)$/.exec(tag)?.[1] ?? "4.0").replace(/\.0$/, "");
+      short = /-sa/.test(tag)
+        ? `CC BY-SA ${version}.0`
+        : `CC BY ${version}.0`;
+    }
+  }
+
+  if (!short) {
+    CC_LICENSE_URL.lastIndex = 0;
+    const cc = CC_LICENSE_URL.exec(text);
+    if (cc && !/nc|nd/.test(cc[1])) short = licenseShort(cc[1], cc[2]);
+  }
   if (!short) {
     CC0_URL.lastIndex = 0;
     const zero = CC0_URL.exec(text);

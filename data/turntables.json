@@ -1,0 +1,930 @@
+{
+  "updatedAt": "2026-10-03T13:00:01.189Z",
+  "entries": {
+    "901/911-2.0": {
+      "dir": "/turntables/901__911-2.0",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_2,0_1965,_Tour_Auto_2015,_Toulouse.jpg"
+      ]
+    },
+    "901/911-2.2": {
+      "dir": "/turntables/901__911-2.2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1969_Porsche_911_2.2_C_Series.jpg"
+      ]
+    },
+    "901/911-2.4": {
+      "dir": "/turntables/901__911-2.4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911S_(901)_Targa_2.4_(37400870662).jpg"
+      ]
+    },
+    "901/911-e-2.2": {
+      "dir": "/turntables/901__911-e-2.2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911E_2.2_(1970).jpg"
+      ]
+    },
+    "901/911-e-2.4": {
+      "dir": "/turntables/901__911-e-2.4",
+      "frames": 6,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_E_2.4_Targa_01.jpg",
+        "File:Porsche_911_E_2.4_Targa_02.jpg",
+        "File:Porsche_911_E_2.4_Targa_03.jpg",
+        "File:Porsche_911_E_2.4_Targa_04.jpg",
+        "File:Porsche_911_E_2.4_Targa_05.jpg",
+        "File:Porsche_911_E_2.4_Targa_06.jpg"
+      ]
+    },
+    "901/911-s-2.0": {
+      "dir": "/turntables/901__911-s-2.0",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_S_2.0_1968_(12276987206).jpg"
+      ]
+    },
+    "901/911-s-2.2": {
+      "dir": "/turntables/901__911-s-2.2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_S_2.2_Targa_(3335771437).jpg"
+      ]
+    },
+    "901/911-s-2.4": {
+      "dir": "/turntables/901__911-s-2.4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911S_(901)_Targa_2.4_(37400870662).jpg"
+      ]
+    },
+    "901/911-t-2.2": {
+      "dir": "/turntables/901__911-t-2.2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911T_2.2,_1969_-_AX32911_-_DSC_0048_Balancer_(26175554669).jpg"
+      ]
+    },
+    "901/911-t-2.4": {
+      "dir": "/turntables/901__911-t-2.4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1972_Porsche_911_T_2.4_1.jpg"
+      ]
+    },
+    "901/912": {
+      "dir": "/turntables/901__912",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_912,_Bj._1966_(2015-09-12_3713_b).JPG"
+      ]
+    },
+    "901/carrera-rs-2.7": {
+      "dir": "/turntables/901__carrera-rs-2.7",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1973_Porsche_911_Carrera_RS_2.7_(68456).jpg"
+      ]
+    },
+    "901/carrera-rsr-2.8": {
+      "dir": "/turntables/901__carrera-rsr-2.8",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1973_Porsche_911_Carrera_RSR_2.8_Black.jpg"
+      ]
+    },
+    "901/porsche-901": {
+      "dir": "/turntables/901__porsche-901",
+      "frames": 5,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_901_911S_(No.57)_(23101509280).jpg",
+        "File:Porsche_901_911S_(No.57)_(23101509281).jpg",
+        "File:Porsche_901_911S_(No.57)_(23101509282).jpg",
+        "File:Porsche_901_911S_(No.57)_(23101510000).jpg",
+        "File:Porsche_901_911S_(No.57)_(23101510001).jpg"
+      ]
+    },
+    "901/s-t": {
+      "dir": "/turntables/901__s-t",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1972_Porsche_911_S-T.jpg"
+      ]
+    },
+    "964/30th-anniversary": {
+      "dir": "/turntables/964__30th-anniversary",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_-_30th_anniversary_edition_(47980142111).jpg"
+      ]
+    },
+    "964/america-roadster": {
+      "dir": "/turntables/964__america-roadster",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1992-93_Porsche_911_America_Roadster_(964)_(7074293831).jpg"
+      ]
+    },
+    "964/cabriolet": {
+      "dir": "/turntables/964__cabriolet",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1993_Porsche_911_(964)_Carrera_Cabriolet_ALEX_12.27.jpg"
+      ]
+    },
+    "964/carrera-2": {
+      "dir": "/turntables/964__carrera-2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_964_Carrera_2.jpg"
+      ]
+    },
+    "964/carrera-4": {
+      "dir": "/turntables/964__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1991_Porsche_911_964_Carrera_4.jpg"
+      ]
+    },
+    "964/cup": {
+      "dir": "/turntables/964__cup",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1992_Porsche_911_Carrera_(964).jpg"
+      ]
+    },
+    "964/rs-3.8": {
+      "dir": "/turntables/964__rs-3.8",
+      "frames": 10,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52573993642).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52573993657).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574462231).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574737794).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574737864).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574737889).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574909885).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574989248).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574989298).jpg",
+        "File:Porsche_911_Carrera_RS_3.8_(964,_1993)_(52574989413).jpg"
+      ]
+    },
+    "964/rs-america": {
+      "dir": "/turntables/964__rs-america",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_RS_America_(964)_(26406589001).jpg"
+      ]
+    },
+    "964/rsr-3.8": {
+      "dir": "/turntables/964__rsr-3.8",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1993_Porsche_911_Carrera_RSR_3.8_Strassenversion_SCD26.jpg"
+      ]
+    },
+    "964/speedster": {
+      "dir": "/turntables/964__speedster",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Speedster_(964,_1994)_(52873226612).jpg"
+      ]
+    },
+    "964/targa": {
+      "dir": "/turntables/964__targa",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1992_Porsche_911_964_Carrera_4_Targa_Backdate.jpg"
+      ]
+    },
+    "964/turbo-s-3.3": {
+      "dir": "/turntables/964__turbo-s-3.3",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Turbo_S_3.3_Leichtbau_(1992)_in_the_Porsche-Museum_(2009)_IMG_2771.jpg"
+      ]
+    },
+    "991/50th-anniversary": {
+      "dir": "/turntables/991__50th-anniversary",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_50th_Anniversary_Edition_Coupe_2013_(19892930585).jpg"
+      ]
+    },
+    "991/carrera": {
+      "dir": "/turntables/991__carrera",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2012_Porsche_911_991_Carrera.jpg"
+      ]
+    },
+    "991/carrera-4": {
+      "dir": "/turntables/991__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_991_Carrera_4_(38921293164).jpg"
+      ]
+    },
+    "991/carrera-t": {
+      "dir": "/turntables/991__carrera-t",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_991_Carrera_T.jpg"
+      ]
+    },
+    "991/gt2-rs": {
+      "dir": "/turntables/991__gt2-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Red_Porsche_911_(991)_GT2_RS_next_to_Vendôme_Place,_Paris_(3).jpg"
+      ]
+    },
+    "991/gt3": {
+      "dir": "/turntables/991__gt3",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2017_Porsche_911_991_GT3_ducktail.jpg"
+      ]
+    },
+    "991/gt3-touring": {
+      "dir": "/turntables/991__gt3-touring",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_991_GT3_Touring.jpg"
+      ]
+    },
+    "991/gts": {
+      "dir": "/turntables/991__gts",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_991_Carrera_GTS.jpg"
+      ]
+    },
+    "991/r": {
+      "dir": "/turntables/991__r",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2016_Porsche_911_R_991.jpg"
+      ]
+    },
+    "991/speedster": {
+      "dir": "/turntables/991__speedster",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_991_Speedster.jpg"
+      ]
+    },
+    "991/targa-4": {
+      "dir": "/turntables/991__targa-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_ABA-991J1_911_Targa_4_(23052110471).jpg"
+      ]
+    },
+    "991/targa-4s": {
+      "dir": "/turntables/991__targa-4s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Targa_4S_(991)_(26380557922).jpg"
+      ]
+    },
+    "991/turbo": {
+      "dir": "/turntables/991__turbo",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_991_Turbo_(19892).jpg"
+      ]
+    },
+    "991/turbo-s-exclusive": {
+      "dir": "/turntables/991__turbo-s-exclusive",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Turbo_S_Exclusive_Series_(991)_Greater_Toronto_Area,_Canada.jpg"
+      ]
+    },
+    "992-1/carrera": {
+      "dir": "/turntables/992-1__carrera",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_992_Carrera_at_IAA_2019_IMG_0264.jpg"
+      ]
+    },
+    "992-1/carrera-4": {
+      "dir": "/turntables/992-1__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2020_Porsche_911_Carrera_4_992_White_rear.jpg"
+      ]
+    },
+    "992-1/carrera-4-gts": {
+      "dir": "/turntables/992-1__carrera-4-gts",
+      "frames": 13,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(1).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(4).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(5).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(6).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(7).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(10).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(11).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(12).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(15).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(17).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(18).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(19).jpg",
+        "File:Porsche_992_911_Carrera_4_GTS_Convertible_Crayon_(20).jpg"
+      ]
+    },
+    "992-1/carrera-s": {
+      "dir": "/turntables/992-1__carrera-s",
+      "frames": 10,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_992_911_Carrera_S_White_(2).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(3).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(5).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(7).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(11).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(12).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(14).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(19).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(23).jpg",
+        "File:Porsche_992_911_Carrera_S_White_(24).jpg"
+      ]
+    },
+    "992-1/carrera-t": {
+      "dir": "/turntables/992-1__carrera-t",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2024_Porsche_911_992_Carrera_T.jpg"
+      ]
+    },
+    "992-1/dakar": {
+      "dir": "/turntables/992-1__dakar",
+      "frames": 5,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_Dakar_(992,_2023)_(53618560657).jpg",
+        "File:Porsche_911_Dakar_(992,_2023)_(53626003377).jpg",
+        "File:Porsche_911_Dakar_(992,_2023)_(53627096738).jpg",
+        "File:Porsche_911_Dakar_(992,_2023)_(53627227959).jpg",
+        "File:Porsche_911_Dakar_(992,_2023)_(53627228004).jpg"
+      ]
+    },
+    "992-1/gt3-touring": {
+      "dir": "/turntables/992-1__gt3-touring",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_992_GT3_Touring_(73261).jpg"
+      ]
+    },
+    "992-1/s-t": {
+      "dir": "/turntables/992-1__s-t",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2024_Porsche_911_S_T_1.jpg"
+      ]
+    },
+    "992-1/targa-4": {
+      "dir": "/turntables/992-1__targa-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Targa_4_(992)_(front_three-quarter_view)_in_Osaka.jpg"
+      ]
+    },
+    "992-1/targa-4-gts": {
+      "dir": "/turntables/992-1__targa-4-gts",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_992_Targa_4_GTS.jpg"
+      ]
+    },
+    "992-1/turbo": {
+      "dir": "/turntables/992-1__turbo",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_992_Turbo.jpg"
+      ]
+    },
+    "992-2/carrera": {
+      "dir": "/turntables/992-2__carrera",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2025_Porsche_992_Carrera_convertible_DSC_7026_(cropped).jpg"
+      ]
+    },
+    "992-2/carrera-4s": {
+      "dir": "/turntables/992-2__carrera-4s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Moscow,_Porsche_911_Carrera_4S,_Aug_2025_01.jpg"
+      ]
+    },
+    "992-2/carrera-s": {
+      "dir": "/turntables/992-2__carrera-s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2025_Porsche_911_Carrera_S_rear.jpg"
+      ]
+    },
+    "992-2/gt3-touring": {
+      "dir": "/turntables/992-2__gt3-touring",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2025_Porsche_992_GT3_with_touring_package_DSC_2717.jpg"
+      ]
+    },
+    "993/cabriolet": {
+      "dir": "/turntables/993__cabriolet",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1994_Porsche_911_993_Carrera_Cabriolet_Auto.jpg"
+      ]
+    },
+    "993/carrera": {
+      "dir": "/turntables/993__carrera",
+      "frames": 11,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(1).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(3).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(6).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(8).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(39).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(40).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(41).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(42).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(44).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(48).jpg",
+        "File:Porsche_993_911_Carrera_Amethyst_Metallic_(49).jpg"
+      ]
+    },
+    "993/carrera-4": {
+      "dir": "/turntables/993__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1996_Porsche_911_993_Carrera_4.jpg"
+      ]
+    },
+    "993/carrera-rs": {
+      "dir": "/turntables/993__carrera-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_993_Carrera_RS_(80978).jpg"
+      ]
+    },
+    "993/carrera-s": {
+      "dir": "/turntables/993__carrera-s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1997_Porsche_911_993_Carrera_S_(80592).jpg"
+      ]
+    },
+    "993/club-sport": {
+      "dir": "/turntables/993__club-sport",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_1996_Carrera_RS_3.8_Clubsport_LSide_PorscheM_9June2013_(14825964170).jpg"
+      ]
+    },
+    "993/gt2": {
+      "dir": "/turntables/993__gt2",
+      "frames": 12,
+      "synthetic": false,
+      "sources": [
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy.jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(1).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(2).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(4).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(7).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(10).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(11).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(13).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(14).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(17).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(18).jpg",
+        "File:1996_Porsche_911_993_GT2_-_Flickr_-_The_Car_Spy_(19).jpg"
+      ]
+    },
+    "993/gt2-evo": {
+      "dir": "/turntables/993__gt2-evo",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_993_GT2_Evo_(19263421922).jpg"
+      ]
+    },
+    "993/speedster": {
+      "dir": "/turntables/993__speedster",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Gunther_Werks_Porsche_993_Speedster_in_White,_rear_right.jpg"
+      ]
+    },
+    "993/targa": {
+      "dir": "/turntables/993__targa",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_993_Targa.jpg"
+      ]
+    },
+    "993/turbo": {
+      "dir": "/turntables/993__turbo",
+      "frames": 4,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_993_Turbo_(17898).jpg",
+        "File:Porsche_911_993_Turbo_(29187).jpg",
+        "File:Porsche_911_993_Turbo_(53277).jpg",
+        "File:Porsche_911_993_Turbo.jpg"
+      ]
+    },
+    "993/turbo-cabriolet": {
+      "dir": "/turntables/993__turbo-cabriolet",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_993_Turbo_Cabriolet_(52681126279).jpg"
+      ]
+    },
+    "993/turbo-s": {
+      "dir": "/turntables/993__turbo-s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_993_Turbo_S_(36630436405).jpg"
+      ]
+    },
+    "996/carrera": {
+      "dir": "/turntables/996__carrera",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_996_Carrera,_Pau_2015.jpg"
+      ]
+    },
+    "996/carrera-4": {
+      "dir": "/turntables/996__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1999_Porsche_911_996_Carrera_4.jpg"
+      ]
+    },
+    "996/carrera-4s": {
+      "dir": "/turntables/996__carrera-4s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:PORSCHE_911_CARRERA_4S_(996)_China.jpg"
+      ]
+    },
+    "996/gt2": {
+      "dir": "/turntables/996__gt2",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2001_Porsche_911_GT2_Clubsport_F1M.jpg"
+      ]
+    },
+    "996/gt3": {
+      "dir": "/turntables/996__gt3",
+      "frames": 4,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_(996)_GT3_(10044117725).jpg",
+        "File:Porsche_911_(996)_GT3_(10044117935).jpg",
+        "File:Porsche_911_(996)_GT3_(8210216308).jpg",
+        "File:Porsche_911_(996)_GT3_(8210216348).jpg"
+      ]
+    },
+    "996/gt3-rs": {
+      "dir": "/turntables/996__gt3-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_996_GT3_RS.jpg"
+      ]
+    },
+    "996/millennium-edition": {
+      "dir": "/turntables/996__millennium-edition",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_996_Carrera_4_Millennium_Edition_(52742880473).jpg"
+      ]
+    },
+    "996/targa": {
+      "dir": "/turntables/996__targa",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2002_Porsche_911_996_Carrera_S_Targa_Tiptronic.jpg"
+      ]
+    },
+    "996/turbo-s": {
+      "dir": "/turntables/996__turbo-s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_996_Turbo_S_Cabrio_(52175327992).jpg"
+      ]
+    },
+    "997/carrera": {
+      "dir": "/turntables/997__carrera",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2005_Porsche_911_997_Carrera.jpg"
+      ]
+    },
+    "997/carrera-4": {
+      "dir": "/turntables/997__carrera-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_997_Carrera_4_Cabrio.JPG"
+      ]
+    },
+    "997/carrera-4s": {
+      "dir": "/turntables/997__carrera-4s",
+      "frames": 6,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_911_(997)_Carrera_4S_(13696933263).jpg",
+        "File:Porsche_911_(997)_Carrera_4S_(8084156750).jpg",
+        "File:Porsche_911_(997)_Carrera_4S_(8084156806).jpg",
+        "File:Porsche_911_(997)_Carrera_4S_(8210249050).jpg",
+        "File:Porsche_911_(997)_Carrera_4S_(8210249086).jpg",
+        "File:Porsche_911_(997)_Carrera_4S_(8215557770).jpg"
+      ]
+    },
+    "997/carrera-s": {
+      "dir": "/turntables/997__carrera-s",
+      "frames": 16,
+      "synthetic": false,
+      "sources": [
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(1).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(2).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(3).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(6).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(7).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(8).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(9).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(10).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(11).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(12).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(13).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(14).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(15).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(16).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(17).jpg",
+        "File:Porsche_997.1_911_Carrera_S_GT_Silver_Metallic_(18).jpg"
+      ]
+    },
+    "997/gt2-rs": {
+      "dir": "/turntables/997__gt2-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_GT2_RS_(997).jpg"
+      ]
+    },
+    "997/gt3": {
+      "dir": "/turntables/997__gt3",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_997_GT3.jpg"
+      ]
+    },
+    "997/gt3-rs": {
+      "dir": "/turntables/997__gt3-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_997_GT3_RS_(68893).jpg"
+      ]
+    },
+    "997/gts": {
+      "dir": "/turntables/997__gts",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2011_Porsche_911_Carrera_GTS_997.2_FOS22.jpg"
+      ]
+    },
+    "997/speedster": {
+      "dir": "/turntables/997__speedster",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_997_Speedster_(52681114369).jpg"
+      ]
+    },
+    "997/sport-classic": {
+      "dir": "/turntables/997__sport-classic",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:2010_Porsche_911_Sport_Classic_3.8_Front.jpg"
+      ]
+    },
+    "997/targa-4": {
+      "dir": "/turntables/997__targa-4",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_997_Targa_4,_right_view_(cropped).jpg"
+      ]
+    },
+    "997/targa-4s": {
+      "dir": "/turntables/997__targa-4s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_Targa_4S_(997)_(25870002183).jpg"
+      ]
+    },
+    "997/turbo": {
+      "dir": "/turntables/997__turbo",
+      "frames": 12,
+      "synthetic": false,
+      "sources": [
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy.jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(4).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(10).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(11).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(16).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(17).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(18).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(19).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(20).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(21).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(22).jpg",
+        "File:2006_Porsche_911_(997)_Turbo_-_Flickr_-_The_Car_Spy_(23).jpg"
+      ]
+    },
+    "997/turbo-s": {
+      "dir": "/turntables/997__turbo-s",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_997_Turbo_S_-_Flickr_-_Alexandre_Prévot.jpg"
+      ]
+    },
+    "gseries/911-2.7": {
+      "dir": "/turntables/gseries__911-2.7",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1976_Porsche_911_Carrera_2.7.jpg"
+      ]
+    },
+    "gseries/911-s-2.7": {
+      "dir": "/turntables/gseries__911-s-2.7",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911S_1977_2.7_Coupè_LSide_PorscheM_9June2013_(15009539551).jpg"
+      ]
+    },
+    "gseries/carrera-2.7": {
+      "dir": "/turntables/gseries__carrera-2.7",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1976_Porsche_911_Carrera_2.7.jpg"
+      ]
+    },
+    "gseries/carrera-3.0": {
+      "dir": "/turntables/gseries__carrera-3.0",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1977_Porsche_911_Carrera_3.0_(68246).jpg"
+      ]
+    },
+    "gseries/carrera-rs-3.0": {
+      "dir": "/turntables/gseries__carrera-rs-3.0",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1974_Porsche_911_Carrera_RS_3.0.jpg"
+      ]
+    },
+    "gseries/carrera-rsr-3.0": {
+      "dir": "/turntables/gseries__carrera-rsr-3.0",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1977_Porsche_911_Carrera_RSR_3.0_LC24.jpg"
+      ]
+    },
+    "gseries/sc-rs": {
+      "dir": "/turntables/gseries__sc-rs",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1984_Porsche_911_SC_RS_Goodwood,_2009_(01).jpg"
+      ]
+    },
+    "gseries/speedster-1989": {
+      "dir": "/turntables/gseries__speedster-1989",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_E-930_911_Carrera_3.2_Speedster_(No.39)_(22052910032).jpg"
+      ]
+    },
+    "gseries/turbo-3.3-930": {
+      "dir": "/turntables/gseries__turbo-3.3-930",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:1981_Porsche_930_Turbo_3.3_BS_O24.jpg"
+      ]
+    },
+    "gseries/turbo-le-1989": {
+      "dir": "/turntables/gseries__turbo-le-1989",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_930_Turbo_LE.jpg"
+      ]
+    },
+    "gseries/turbo-s-3.3": {
+      "dir": "/turntables/gseries__turbo-s-3.3",
+      "frames": 30,
+      "synthetic": true,
+      "sources": [
+        "File:Porsche_911_1989_Turbo_S_3.3_Coupè_LRear_PorscheM_9June2013_(15012275742).jpg"
+      ]
+    }
+  }
+}
