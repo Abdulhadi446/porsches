@@ -12,7 +12,8 @@
   --color-ink-3: #131317; /* cards */
   --color-ink-4: #1c1c22; /* borders / rails */
 
-  --color-guards: #d5001c; /* Guards Red — primary accent */
+  --color-guards: #d5001c; /* Guards Red — fills, borders, large type */
+  --color-guards-text: #ff5c6b; /* AA-safe Guards Red for small text on ink */
   --color-guards-deep: #8f0014;
   --color-guards-glow: #ff2036;
 
@@ -24,7 +25,7 @@
   --color-metal-100: #f4f4f5; /* brushed metal, lightest */
   --color-metal-300: #c9c9cf;
   --color-metal-500: #8b8b95;
-  --color-metal-700: #55555e;
+  --color-metal-700: #8d8d97; /* raised to meet AA on ink for small text */
   --color-metal-900: #26262d;
 
   --color-signal: #ffd400; /* warning/indicator yellow */

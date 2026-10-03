@@ -260,21 +260,21 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
         <button
           type="button"
           onClick={swap}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Swap A ⇄ B
         </button>
         <button
           type="button"
           onClick={randomise}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Surprise me
         </button>
         <button
           type="button"
           onClick={share}
-          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           {copied ? "Link copied" : "Copy shareable link"}
         </button>
@@ -348,7 +348,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                       />
                       <Link
                         href={slot.variant?.href ?? "#"}
-                        className="font-display text-lg uppercase hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                        className="font-display text-lg uppercase hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                       >
                         {slot.variant?.name ?? "—"}
                       </Link>
@@ -374,7 +374,7 @@ export function CompareTable({ initialSlots }: CompareTableProps) {
                       <th
                         scope="row"
                         className={`sticky left-0 z-content bg-ink-2 px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-label] ${
-                          differs ? "text-guards" : "text-metal-700"
+                          differs ? "text-guards-text" : "text-metal-700"
                         }`}
                       >
                         {differs && (
@@ -458,7 +458,7 @@ function SlotCard({
           <button
             type="button"
             onClick={() => onClear(slotKey)}
-            className="ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Clear
           </button>
@@ -482,7 +482,7 @@ function SlotCard({
             </p>
             <Link
               href={slot.variant.href}
-              className="mt-[--space-2] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="mt-[--space-2] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               Open variant page →
             </Link>
@@ -494,7 +494,7 @@ function SlotCard({
               setQuery("");
               requestAnimationFrame(() => inputRef.current?.focus());
             }}
-            className="ml-auto shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-2] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="ml-auto shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-2] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Change
           </button>

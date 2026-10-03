@@ -40,7 +40,7 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
         <dl className="spec-grid mt-[--space-10] grid grid-cols-2 gap-x-[--space-8] gap-y-[--space-4] sm:grid-cols-4">
           <div>
             <dt className="label">Generations</dt>
-            <dd data-spec className="text-display-3 text-guards">
+            <dd data-spec className="text-display-3 text-guards-text">
               {generations.length}
             </dd>
           </div>

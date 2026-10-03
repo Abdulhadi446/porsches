@@ -1,30 +1,21 @@
 # 3D assets — provenance, licences, optimisation
 
 Owner: **ASSET-3D**. Produced by `scripts/fetch-models.ts` (re-runnable:
-`node scripts/fetch-models.ts`). Machine-readable index: `data/models.json`.
+`node scripts/fetch-models.ts`). Machine-readable index: `data/models.json`;
+per-model credits in `data/model-credits.json`.
 
-**Coverage:** 9/9 generation heroes · 34/136 roster variant entries ·
-43 shortlist targets re-verified live against the Sketchfab API in the run that
-wrote this file (`data/models.json` → `verifiedAt`).
+**Coverage:** 9/9 generation heroes · 35/136 roster variant entries ·
+2 committed local GLBs · 13 sources probed on every run
+(`data/models.json` → `verifiedAt`, `sourceAudit`).
+
+> **`.gitignore` is fixed.** The previous run of this file reported that
+> `public/models/**/*` was untracked. `.gitignore` no longer contains that line
+> and `git check-ignore -v public/models/*/model.glb` returns nothing, so both
+> GLBs and this README are tracked normally.
 
 ---
 
-## ⚠️ Gitignore blocker (needs the LEAD)
-
-`.gitignore` line 12 contains `public/models/**/*`, so **neither the GLB below
-nor this README is tracked by git** (`git check-ignore -v` confirms it). The
-lead (owner of `.gitignore`) needs one of:
-
-```
-!public/models/*/
-!public/models/*/model.glb
-!public/models/README.md
-```
-
-or an explicit `git add -f public/models/`. Until then the GLB exists on disk
-only. `public/decoders/{draco,basis}` is **not** ignored and is already tracked.
-
-## ⚠️ Sketchfab GLB downloads are impossible here
+## ⚠️ Sketchfab GLB downloads are still impossible — but that is no longer the whole story
 
 `GET https://api.sketchfab.com/v3/models/<uid>/download` returns **401
 Unauthorized** without an OAuth access token. No Sketchfab token is available
@@ -35,13 +26,104 @@ to this project and none is requested. Therefore:
   `https://sketchfab.com/3d-models/<slug>-<uid>?embed=1`, always derived from
   the `viewerUrl` that `GET /v3/models/<uid>` returns — no uid, slug, licence or
   author is ever hand-written;
-- the only local `.glb` in this repo comes from a repository that is directly
-  downloadable without auth **and** carries an open licence file.
+- the **public metadata** API (`GET /v3/models/<uid>`, `GET /v3/search`) needs
+  no token at all. Every licence/author claim in this repo is verified through
+  it, every run.
 
-### Licence allow-list
+The earlier conclusion "no open-licence GLB exists" was **under-scoped**: it
+only looked at sketchfab.com's own download endpoint. Anonymous direct `.glb`
+downloads of the *same* Sketchfab assets exist elsewhere, and the sweep below
+found two.
 
-Only these three `license.label` values are accepted (exact match, read verbatim
-from the API):
+### Two kinds of local-GLB source, both re-verified on every run
+
+| | `DIRECT_SOURCES` | `MIRROR_SOURCES` |
+|---|---|---|
+| what | a GitHub repo | a host that re-serves Sketchfab's own GLB export |
+| licence evidence | a `LICENSE` file in the repo, text re-read and asserted | the `asset.extras` block Sketchfab's exporter writes into every GLB |
+| independent check | — | the same uid re-fetched from `GET /v3/models/<uid>` |
+| current entries | `930-turbo-1975` | `991-carrera-4s` |
+
+Sketchfab bakes its own attribution into each export:
+
+```json
+"asset": { "generator": "Sketchfab-12.65.0", "extras": {
+  "author":  "Lionsharp Studios (https://sketchfab.com/lionsharp)",
+  "license": "CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)",
+  "source":  "https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf",
+  "title":   "(FREE) Porsche 911 Carrera 4S" } }
+```
+
+`fetch-models.ts` reads that block with **two HTTP range requests** (24 bytes
+for the chunk header, then exactly the JSON chunk), asserts the `source` uid and
+the licence string, and then re-fetches the uid from the public Sketchfab API.
+A mirror that disagreed with the API **aborts the run** — which matters, because
+one does disagree (see the audit table).
+
+---
+
+## Source audit — every source probed, this run
+
+Machine-readable copy in `data/models.json` → `sourceAudit`
+(`{source, anonymousDownload, probedAt, status, note}`).
+
+| source | anon. download? | what is actually there |
+|---|---|---|
+| **poly.pizza** | **yes** | Anonymous `.glb` over `https://static.poly.pizza/<uuid>.glb` (the model page embeds the URL). 14 queries: 911 / porsche / porsche 911 / 930 turbo / 964 / 991 / 992 / 993 / 996 / 997 / GT3 / turbo / sports car / coupe. **Zero titles or descriptions contain "porsche" or "911"** — the search is title-based with fuzzy filler (a nonsense query still returns hits), so nothing on this site is a 911. All hits are generic cars: Quaternius *Sports Car* (CC0, verified against the thumbnail — an Audi-A4-ish sedan), DeLorean, RX-7, Ferrari F40, Camaro, Bricklin SV1, *Retro car* whose own description says "Suzuki Vitara 1997". No CC0 bundle pages exist, individual models only. |
+| **kenney.nl** (Car Kit) | **yes** | Direct zip, HTTP 200, 4.81 MB, `License.txt` = "Creative Commons Zero, CC0". 45 models: ambulance, box, cone, debris-*, delivery, firetruck, garbage-truck, hatchback-sports, kart-oo*, police, race*, sedan*, suv*, taxi, tractor, truck, van, wheel-*. No 911, and nothing recognisable as a Porsche. |
+| **get3dmodels.com** | **yes** | Anonymous direct `.glb`, HTTP 200, no auth. The whole catalogue — 2 967 model URLs, enumerated from `sitemap_index.xml` — has exactly 10 Porsche entries, 7 of them 911s. **Accepted 2, rejected 5** — see below. This site's own cards mislabel licences; only `asset.extras` is trustworthy. |
+| **sketchfab.com** download API | **no** | 401 without an OAuth token. Metadata API is public and is what every licence check uses. |
+| **github.com** | **yes** | Anonymous repo search + `raw.githubusercontent` downloads both work. ~20 queries. Every repo holding real geometry is unlicensed (⇒ rejected) or a different car — details below. Code search needs auth, so a Sketchfab uid cannot be searched for directly. |
+| **blendkit.com** (ex-BlenderKit) | **no** | Search API is anonymous and returns 146 Porsche 911 assets, but `/api/v1/downloads/<uuid>/` answers **401 "Unauthorized access. Please log in."** Licence is BlenderKit's own *royalty-free*, not Creative Commons — out of scope twice over. |
+| **free3d.com** | **no** | HTTP 403 (Cloudflare). |
+| **cgtrader.com** free tier | **no** | HTTP 202, zero-byte body (bot mitigation). |
+| **turbosquid.com** free | **no** | HTTP 403. |
+| **3dsky.org** | **no** | HTTP 200 but results are client-rendered and downloads sit behind "Sign in". |
+| **opengameart.org** | **yes** | Downloads work, but the only Porsche submission is *Car - Porsche 911 Carrera 1998* by TituroFox (CC0, 441.9 KB zip) — filed as **2D Art**, a top-down sprite, not a model. |
+| **quaternius.com** | **no** | Cars Pack is CC0 but the download is gated behind Patreon credits, and it ships FBX/OBJ/Blend only. No Porsche in it. |
+| **blendswap.com** | **no** | `/search/*` is 404; nothing probeable anonymously. |
+
+### get3dmodels.com — accepted vs rejected
+
+Licence is read from `asset.extras` and cross-checked against
+`api.sketchfab.com`, never from the mirror's own card.
+
+| model | `asset.extras.license` | API `license.label` | verdict |
+|---|---|---|---|
+| FREE 1975 Porsche 911 (930) Turbo | CC-BY-4.0 | CC Attribution | **accepted** — already the committed `930-turbo-1975` |
+| (FREE) Porsche 911 Carrera 4S | CC-BY-SA-4.0 | CC Attribution-ShareAlike | **accepted** — new, committed as `991-carrera-4s` |
+| Porsche 911 GT3™ (2022 = 992.2) | CC-BY-NC-**4.0** | — | **rejected: non-commercial.** The mirror's card calls it "Creative Commons Attribution", which is simply wrong |
+| 1998 Porsche 911 GT1 Straßenversion | CC-BY-NC-SA-4.0 | — | rejected: non-commercial (and a race car) |
+| 2010 Porsche 911 GT3 Cup | CC-BY-NC-SA-4.0 | — | rejected: non-commercial |
+| 2014 Porsche 911 RSR | CC-BY-NC-SA-4.0 | — | rejected: non-commercial |
+| 2012 Porsche 911 GT3 RS 4.0 | CC-BY-NC-SA-4.0 | — | rejected: non-commercial |
+| 2014 / 2015 Porsche 919 Hybrid, 2010 918 RSR, 2009 RS Spyder | CC-BY-NC-SA-4.0 | — | rejected: non-commercial **and** not a 911 |
+
+### GitHub — what was looked at and why it failed
+
+- `wSaiven/Porsche-911` — `LICENSE` is genuine Apache-2.0, and the repo contains
+  **that file and nothing else**. Rejected: no geometry.
+- `C3ddy/first-threejs-project` — MIT `LICENSE`, but the README credits
+  *"Outlaw GamesTM on Sketchfab … 2018 Porsche 718 Cayman GTS"*. Rejected: wrong
+  car (a 718 Cayman, not a 911) and an NC-licensed re-upload.
+- `mohanadalsa296-cloud/Porche911.glb`, `Dhe-Engine/1967-porsche-911`,
+  `Dhe-Engine/porsche-911`, `Kom1sh/911-gt3`, `VaheHayrapetyan1/car-3d-viewer`,
+  `volkanongun/threejs-import-sketchfab-porsche911`, `ASouthernCat/Porsche911-carshow-threejs`,
+  `NH1500/Porsche-964`, `Maniwar/porsche996turbo`, `mohanadalsa296-cloud` — **all
+  rejected: no LICENSE file ⇒ treated as all-rights-reserved**, per the lead's rule.
+- `yuenkev/911Turbo` — no OSI licence, but it ships the upstream Sketchfab
+  attribution block (`license.txt`), so it was used as **licence evidence** for
+  the 930, see below. Not used as a byte source.
+- `Hanckewk/3D-Carrera-911-model-` and `adriannadev/porsche-model` — both
+  redistribute the same Carrera 4S; `adriannadev` carries the CC BY-SA block at
+  repo root. Superseded by the direct mirror download.
+
+---
+
+## Licence allow-list
+
+Only these three Sketchfab `license.label` values are accepted (exact match, read
+verbatim from the API):
 
 | Sketchfab `license.label` | accepted |
 |---|---|
@@ -53,80 +135,182 @@ from the API):
 
 The strict match matters: `"CC Attribution-NonCommercial"` *contains* the string
 `"CC Attribution"`, so a loose `includes()` test would silently admit
-non-commercial uploads (this is how most `Ddiaz Design`, `OUTPISTON`, `vecarz`,
-`MattDoesBlender` and `Outlaw Games` uploads are excluded). `fetch-models.ts`
-**aborts** if a pinned uid ever 404s or changes to a non-allowed label, so
-`data/models.json` can never drift into an unusable embed.
+non-commercial uploads. `fetch-models.ts` **aborts** if a pinned uid ever 404s or
+changes to a non-allowed label, so `data/models.json` can never drift into an
+unusable embed.
 
 No **CC0** 911 model exists on Sketchfab: across ~190 name-filtered searches,
 every allowed-licensed hit was `CC Attribution` or `CC Attribution-ShareAlike`.
 
 ---
 
-## Audited this run (STEP 1) — 33 pre-existing entries re-fetched
+## Committed local GLBs
 
-Every uid that the previous run had written was re-fetched with
-`GET /v3/models/<uid>` and checked for (a) 200/existence, (b) `license.label`
-inside the allow-list, (c) `author` equality, (d) `embedUrl === viewerUrl + "?embed=1"`.
+### `930-turbo-1975/model.glb`
 
-**Result: all 33 Sketchfab entries (32 unique uids) passed all four checks — no licence, author or
-slug in the old file was wrong.** Two structural defects were found and fixed,
-and three entries were rejected on provenance grounds:
+| | |
+|---|---|
+| Path | `public/models/930-turbo-1975/model.glb` |
+| Size | **2,206,432 bytes** (2.21 MB) — under the 3 MB budget in `docs/CONTRACTS.md` |
+| Used for | generation hero `gseries`, variant `gseries/turbo-3.0-930` (and the bare alias `turbo-3.0-930`) |
+| Subject | 1975 Porsche 911 Turbo (930), exterior + interior |
+| Byte source | <https://github.com/UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model> — `LICENSE` re-fetched and asserted on every pipeline run: "MIT License … Permission is hereby granted, free of charge" |
+| Repo author | Utkarsh Pathrabe — <https://github.com/UtkarshPathrabe> |
+| Car geometry | **VERIFIED** — see below (was "inferred" in the previous run) |
+| Car geometry source | Sketchfab uid [`8568d9d14a994b9cae59499f0dbed21e`](https://sketchfab.com/3d-models/free-1975-porsche-911-930-turbo-8568d9d14a994b9cae59499f0dbed21e) — *"FREE 1975 Porsche 911 (930) Turbo"*, author **Lionsharp Studios** (@lionsharp), **CC Attribution** (CC BY 4.0) |
+| Triangles / verts | 150,040 triangles · 450,120 render vertices · 14 meshes / 14 materials · 26 WebP images · no animation, no rig |
+| Bounding box | 3.12 × 1.87 × 6.23 m (includes the source's floor decal), origin at ground level |
 
-| Was | Problem found on re-fetch | Now |
-|---|---|---|
-| `964` generation **and** `964/carrera-4` = `(FREE) Porsche 911 Carrera 4S` (`d01b2544…`, CC BY-SA) | uploader's description only says "part of a prototype car configurator" and names no model year — it cannot be verified as a **964** rather than a 997/992-era Carrera 4S. Shipping it would put a modern car on the 964 chapter hero. | **rejected**; `964` + `964/carrera-4` = `22edb81d…` *"1989 Porsche 911 (964) Carrera 4"* (CC BY, 176,928 verts, description names the car exactly) |
-| `964/carrera-4` = `cae36664…` *"Porsche 911 (964)"* | description: *"Shout out to @tonielpro520 for the original car [1993 964 **Turbo**] … I'm making my own **wide body** 911"* — i.e. it is the 964 **Turbo** geometry, wide-bodied, not a Carrera 4 | replaced by `22edb81d…` |
-| `996/gt2` = `2f39754f…` *"Porsche 911 GT2 **RS** (996)"* | the 2004 GT2 RS is a **different car** from the 2000–2005 GT2 the variant documents (the API description even says "Years: 2002, Price: $99,990", which is GT2-spec data on a GT2 RS body) | **`null`** + note |
-| `991/gt3-rs` = `c08b312e…` *"Porsche 911 GT3 RS (991.1) '16"* | description claims a *"5.6L naturally aspirated flat-6"* — the 991.1 GT3 RS has a 4.0-litre engine, so the uploader's metadata is unreliable | swapped for `2b02e300…` *"Porsche 911 991.1 GT3 RS"* (CC BY, 137,519 verts vs 19,621) |
-| `gseries` + `gseries/turbo-3.0-930` | entry carried `license: "MIT"` **and** a Sketchfab `embedUrl` of somebody else's CC BY model — a false attribution in `/credits` | embed **cleared** (`embedUrl: null`) when the local GLB is attached, so the record names only the asset that actually renders |
+#### Geometry provenance is now VERIFIED, not inferred
 
-Also dropped from `variants`: the old flat keys collided across generations
-(`turbo`, `gt3`, `carrera`, `gts`, `targa-4s`, `s-t`, `carrera-4s`, `gt2-rs`… each
-exist in 2–6 chapters), so `993/turbo`, `996/gt2`, `997/gt2-rs`, `991/gt3-rs` and
-`991/turbo-s` had been silently **overwritten** in the previous output even though
-their pinned uids verified fine. See "Key shape" below.
+The previous run of this file said the geometry attribution was *inferred*
+because the optimised scene is named `Sketchfab_Scene` and the repo credits no
+3D source. Three independent pieces of evidence now close that gap, and
+`fetch-models.ts` re-checks (1) and (2) on **every** run:
 
-### Added this run (all re-fetched and licence-verified)
+1. **`asset.extras` of Sketchfab's own export**, read from the get3dmodels
+   mirror with two range requests:
+   `"author": "Lionsharp Studios (https://sketchfab.com/lionsharp)"`,
+   `"license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)"`,
+   `"source": "…-8568d9d14a994b9cae59499f0dbed21e"`.
+2. **`GET api.sketchfab.com/v3/models/8568d9d14a994b9cae59499f0dbed21e`**
+   (no token): author **Lionsharp Studios**, `license.label` = **CC
+   Attribution**, `license.url` = <http://creativecommons.org/licenses/by/4.0/>.
+3. **Two independent third-party redistributions** ship Sketchfab's CC BY 4.0
+   text for that exact uid: `briankusuma/3D-porche-911` and `yuenkev/911Turbo`.
+   (Their attribution block names *Karol Miklas* rather than *Lionsharp
+   Studios* — see the note under `991-carrera-4s`; the API record for the uid is
+   the authority, and it says Lionsharp Studios.)
 
-| Target | uid | model name | author | licence | verts |
-|---|---|---|---|---|---|
-| `964/carrera-4` + `964` hero | `22edb81d9ccf46c09a1add7a9ebda2c0` | 1989 Porsche 911 (964) Carrera 4 | 007 | CC Attribution | 176,928 |
-| `993/turbo` | `72f2943569434e4e93ab63f403c6aa1c` | Porsche 911 993 Turbo Low-poly | Nieve5677 | CC Attribution | 69,157 |
-| `993/carrera-4s` | `5d90416b06854a369e566d3fa286c692` | 1996 Porsche 993 Carrera 4s | _shobh19 | CC Attribution | 3,954 |
-| `991/gt3-rs` | `2b02e300bb094a2293f4b714e2ae7ddf` | Porsche 911 991.1 GT3 RS | Casacade Models | CC Attribution | 137,519 |
-| `991/carrera-s` | `e8e06ddd8d3f4419a5252d187f6f217e` | Porsche 911 Carrera S (991.2) | Mona x Supercars | CC Attribution | 14,893 |
-| `997/gt2-rs` | `41419345868e406eaec8a271e33de3c1` | Porsche 911 GT2 RS With Angle Eyes | COOL601 | CC Attribution | 148,999 |
-| `992-1/carrera-4s` | `e2be40c215e34812af7dfb933bc7967a` | 2019 Porsche 911 Carrera 4S 992 | Maroi Mister Let Me Think Official 3D Studio | CC Attribution | 33,542 |
+`data/models.json` therefore now states
+`license: "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)"`,
+`author: "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)"` — the word
+*inferred* is gone because the evidence no longer is.
 
-### Confirmed MISSING (no allowed-licensed model exists)
+#### Optimisation chain
 
-Every one of these was searched by name (not by like-count ranking) with the
-licence allow-list applied; the reasons are printed by
-`node scripts/fetch-models.ts` and stored as the target `note` in the script.
+All via `npx @gltf-transform/cli@4.5.1`:
 
-`901/carrera-rs-2.7` · `gseries/turbo-s-3.3` · `gseries/turbo-le-1989` ·
-`gseries/carrera-rs-3.0` · `gseries/carrera-rsr-3.0` ·
-`gseries/carrera-club-sport` · `gseries/speedster-1989` · `964/carrera-4s` ·
-`964/rs-3.8` · `964/rsr-3.8` · `964/speedster` · `964/cup` · `993/carrera-rs` ·
-`993/turbo-s` · `993/gt2` · `993/gt2-evo` · `993/speedster` · `993/club-sport` ·
-`996/gt3` · `996/gt3-rs` · `996/gt2` · `996/turbo-s` · `997/carrera` ·
-`997/gt3` · `997/turbo` · `997/turbo-s` · `997/gts` · `997/sport-classic` ·
-`991/carrera-t` · `991/speedster` · `992-1/turbo` · `992-2/turbo-s` ·
-`992-2/carrera-gts` · `992-2/gt3` · `992-2/gt3-s-c` · `992-2/spirit-70`
-(+ every other roster id with no target in the script: plain 2.0/2.2/2.4 F-cars,
-996/997 specials, etc.)
+```
+scene.gltf + scene.bin (8.82 MB) + 27 PNG textures (62.4 MB)   = 74.21 MB
+  optimize --compress draco --texture-compress webp                     4,690,588 B   ← over budget
+  optimize --compress draco --texture-compress webp --texture-size 1024 2,206,432 B   ← shipped
+```
 
-Notable near-misses that were **not** used because they are a different car:
+Passes applied: `dedup`, `instance`, `palette`, `flatten`, `join`, `weld`,
+`simplify`, `resample`, `prune`, `sparse`, `textureCompress`, `draco`.
+26 WebP images, `KHR_materials_clearcoat` (paint) and
+`KHR_materials_transmission` (glass).
 
-- `996/gt3` → only *"1996 Porsche 911 GT1"* (race car) and *"2007 Porsche 996
-  GT300 Yunker Power Taisan"* (JDM build) exist under an allowed licence.
-- `997/gt3` → only the 997 **GT3 RS 4.0** exists.
-- `992-2/gt3` → only *"992.2 GT3 RS Manthey Kit"* uploads exist.
-- `992-2/gt3-s-c` → only a 992 **Carrera S Cabriolet** (2019) exists.
-- `992-2/carrera-gts` → only the **Targa** 4 GTS shell exists (already used for
-  `992-2/targa-4-gts`; the roster's `carrera-gts` is a coupe).
-- `993/turbo` → the 69k-vertex "low-poly" 993 Turbo is the only exact match.
+#### Known cosmetic artefact
+
+The source scene bakes a floor decal reading "1975 PORSCHE 911 turbo" into the
+ground texture. Inherited from the upstream asset, not added here; only visible
+when framed from above.
+
+---
+
+### `991-carrera-4s/model.glb` — NEW
+
+| | |
+|---|---|
+| Path | `public/models/991-carrera-4s/model.glb` |
+| Size | **905,340 bytes** (884 KB) — under the 3 MB budget |
+| Used for | variant `991/carrera-4s` |
+| Subject | Porsche 911 **Carrera 4S (991)**, coupe, silver, Fuchs-style wheels, yellow calipers |
+| Licence | **CC Attribution-ShareAlike 4.0, adapted** |
+| Author | **Lionsharp Studios** (Sketchfab uploader @lionsharp) |
+| Byte source | `https://www.get3dmodels.com/download/free_porsche_911_carrera_4s.glb` — HTTP 200, 21,076,404 B, no auth, no token |
+| Credit page | <https://www.get3dmodels.com/vehicles/porsche-911-carrera-4s/> |
+| Sketchfab uid | [`d01b254483794de3819786d93e0e1ebf`](https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf) — *"(FREE) Porsche 911 Carrera 4S"*, `license.label` = **CC Attribution-ShareAlike** |
+| Triangles | **192,592** · 577,776 render vertices · 126,584 uploaded · 12 meshes / 12 materials · 8 WebP images · no animation, no rig |
+| Bounding box | **1.981 × 1.259 × 4.382 m** (x −0.99041…0.99050, y 0…1.25853, z −2.19106…2.19090) — origin on the ground at the centre of the car |
+
+#### Why this is a 911, and which one
+
+The uploader's own text names **no model year** — the description only says
+"Model of a Porsche 911 that was a part of a prototype car configurator running
+on WebGL". Three checks were used instead, and all three agree:
+
+1. **The source imagery.** The 1920×1080 Sketchfab thumbnail shows a 911 with the
+   991 roofline, the 991 C-pillar/shoulder, and the 991's slim horizontal rear
+   light — *not* the 992's full-width light bar, and not a 964/993's upright
+   lamp. The "Carrera 4S" rocker decal is legible.
+2. **Measured dimensions.** 1.98 m wide over the mirrors, 1.26 m tall, 4.38 m
+   long. A 991 is 1.852 × 1.303 × 4.491 m; a 964 is 1.736 × 1.280 × 4.250 m.
+   Height and length match the 991; width matches once mirrors are included.
+3. **Same uploader as the committed 930**, whose generation is not in doubt.
+
+**Residual uncertainty, stated plainly:** 991.1 vs 991.2 facelift is **not**
+distinguishable from the side-on source imagery, and the GLB carries no badge
+close-up. It is recorded as a 991 `Carrera 4S` and nothing more specific. The
+roster's `991/carrera-4s` variant is exactly this car, so the mapping is
+1:1.
+
+This is also why the same model stays **off** `964/carrera-4` and
+`964/carrera-4s` — the previous run rejected it there for exactly the same
+reason it was unusable before (unnameable year), and finding it *is* a 991 makes
+it a 964 with certainty no, not with more confidence.
+
+#### Author-name caveat
+
+Sketchfab's own CC attribution block for this uid reads
+`"author": "Karol Miklas (https://sketchfab.com/karolmiklas)"`, while
+`GET /v3/models/<uid>` reports the uploader as **Lionsharp Studios**
+(`@lionsharp`) — the same account that uploaded the 930. The API record is the
+authority for "who uploaded it"; the boilerplate is quoted verbatim rather than
+silently normalised. Both names are in
+`data/models.json` → `variants["991/carrera-4s"].author`.
+
+#### ShareAlike obligation
+
+CC BY-SA 4.0 requires derivatives to carry the same licence. The optimisation
+below (stray-mesh removal, pivot move, Draco, WebP) is an adaptation, so this
+GLB and any further derivative must stay **CC BY-SA 4.0** with attribution. This
+is recorded as `"license": "CC Attribution-ShareAlike 4.0 (adapted)"`.
+
+#### Optimisation chain
+
+```
+free_porsche_911_carrera_4s.glb        21,076,404 B   652,660 tris · 45 meshes · 10 PNG
+  strip ^Plane / ^Cube meshes             21,075,760 B   (graph edited; orphans pruned later)
+  center --pivot below                    21,071,332 B
+  optimize --compress draco
+          --texture-compress webp
+          --texture-size 1024               905,340 B   ← shipped, first try
+```
+
+The chain is **byte-reproducible**: re-running it today produced a file with the
+same MD5 (`c786e6c9125f826b743f6f787f3294c2`) as the committed one.
+
+`--texture-compress webp` **is** available in gltf-transform 4.5.1, so no
+fallback to Draco-only was needed. The result is 4.3 % of the 3 MB budget with
+no `--simplify` pass.
+
+**What the strip step removed** (9 nodes, 57,565 triangles): the Sketchfab
+showroom `Plane_0` ground quad, a thin `Plane.005_0` strip, and — the reason it
+matters — `Plane.002_0`, a 57,549-triangle plane whose stored vertices run to
+**±143 m in x and ±285 m in z**. Left in, that single mesh blows the scene
+bounding box up to 207 × 172 × 288 m and any automatic framing would show a speck.
+The step only detaches nodes from the graph and rewrites the GLB header; no
+vertex is touched, and `optimize`'s `prune` pass then deletes the orphaned
+meshes and accessors outright.
+
+#### Consumer requirements (for 3D-HERO / VARIANT-PAGES)
+
+`extensionsRequired: ["EXT_texture_webp", "KHR_draco_mesh_compression"]` — the
+same as the 930, so both models load through one code path:
+
+- it will **not** load without a Draco decoder. Use
+  `useGLTF("/models/991-carrera-4s/model.glb", true)` (drei) or a
+  `DRACOLoader` pointed at the self-hosted copy:
+  `new DRACOLoader().setDecoderPath("/decoders/draco/")`
+  (drei's boolean shortcut uses a **gstatic.com** decoder by default — the
+  local decoders at `public/decoders/draco/` exist to avoid that);
+- `EXT_texture_webp` needs **WebGL2**. On WebGL1 the whole GLB throws rather than
+  degrading;
+- `/decoders/basis/` is present for any future KTX2 asset but is **not** used by
+  either file (no `KHR_texture_basisu` in either GLB).
 
 ---
 
@@ -139,7 +323,8 @@ Notable near-misses that were **not** used because they are a different car:
   "variants": {
     "<genId>/<variantId>": Model3D|null,                  // 136 keys — AUTHORITATIVE
     "<variantId>":             Model3D|null               // 78 bare aliases
-  }
+  },
+  "sourceAudit": [{ source, anonymousDownload, probedAt, status, note }]  // 13 entries
 }
 ```
 
@@ -155,14 +340,20 @@ styles are therefore written:
 - the bare ids are a compatibility alias resolved to the **newest generation
   that actually has a model** (`turbo` → 996, `gt3` → 992.1, `carrera-4s` →
   992.1). Reading a bare id therefore gives the *latest* car with that name, not
-  the car of the chapter being merged — drop the aliases if you only need one
-  form, but keep in mind `Object.keys(variants).length` is then 214, not 136.
+  the car of the chapter being merged — note that bare `carrera-4s` still resolves
+  to the 992.1 embed, **not** to the new 991 GLB, by design. Drop the aliases if
+  you only need one form, but keep in mind `Object.keys(variants).length` is then
+  214, not 136.
+
+When a local GLB wins, the `embedUrl` is set to `null` on purpose: keeping it
+would pair one record's licence with an `<iframe>` of somebody else's model,
+which is a false attribution in `/credits`.
 
 ---
 
 ## Known provenance caveats (recorded, not hidden)
 
-- **Re-uploads.** Several winners (`007`, `Mona x Supercars`, `DisneyCars`,
+- **Re-uploads.** Several embed winners (`007`, `Mona x Supercars`, `DisneyCars`,
   `Dave Love SketchFab`, `Galaxy Car Showroom`, `HiQ3D`, `Casacade Models`,
   `Samydepapelo3`) are re-uploads of geometry that originated elsewhere. The
   licence label recorded in `data/models.json` is the one the API reports *for
@@ -189,100 +380,35 @@ styles are therefore written:
   better than `null`. Swap them out if a better source appears.
 - **Generation heroes** are the single most iconic licensed car of the era:
   901 = 1964 911 · G-series = 1975 930 Turbo (local GLB) · 964 = Carrera 4 ·
-  993 = 1995 Carrera · 996 = 996 · 997 = GT3 RS (997.2) · 991 = Carrera S ·
-  992.1 = Carrera S · 992.2 = Targa 4 GTS (992.2).
-
----
-
-## Committed local GLB
-
-### `930-turbo-1975/model.glb`
-
-| | |
-|---|---|
-| Path | `public/models/930-turbo-1975/model.glb` |
-| Size | **2,206,432 bytes** (2.21 MB) — under the 3 MB budget in `docs/CONTRACTS.md` |
-| Used for | generation hero `gseries`, variant `gseries/turbo-3.0-930` |
-| Subject | 1975 Porsche 911 Turbo (930), exterior + interior |
-| Repo licence | **MIT** — `LICENSE` re-fetched and asserted on every pipeline run |
-| Repo | <https://github.com/UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model> |
-| Repo author | Utkarsh Pathrabe — <https://github.com/UtkarshPathrabe> |
-| Car geometry | **INFERRED** — see below |
-| Fallback | Sketchfab CC BY embed `8568d9d14a994b9cae59499f0dbed21e` (*"FREE 1975 Porsche 911 (930) Turbo"*, Lionsharp Studios) |
-
-#### ⚠️ Geometry provenance is inferred, not verified
-
-The repository's `LICENSE` is MIT and covers the author's own work, but:
-
-1. the optimised glTF's scene is literally named **`Sketchfab_Scene`**, so the
-   car geometry came from a Sketchfab download;
-2. the repository's README **credits no 3D source at all**;
-3. an independent redistribution of the same asset
-   (<https://github.com/briankusuma/3D-porche-911>) credits *"FREE 1975 Porsche
-   911 (930) Turbo"*, and its `skfb.ly/6WZyV` short link resolves (HTTP 301) to
-   uid `8568d9d14a994b9cae59499f0dbed21e` — whose API record says author
-   **Lionsharp Studios**, licence **CC Attribution**, and whose description says
-   *"Please give a credit to Lionsharp Studios for the 3D model."*
-
-So the honest record is **two licences**: MIT for the repo/scene, CC BY 4.0
-(attribution required) for the car geometry. `data/models.json` states exactly
-that — `license: "MIT (repo) + CC Attribution (geometry, inferred)"`,
-`author: "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)"` —
-and the word *inferred* is deliberate. If the lead wants zero inference, delete
-`public/models/930-turbo-1975/` and re-run `node scripts/fetch-models.ts`; both
-targets then fall back to the CC BY Sketchfab embed automatically.
-
-#### Optimisation chain
-
-All via `npx @gltf-transform/cli@latest` (glTF-Transform v4.5.1):
-
-```
-scene.gltf + scene.bin (8.82 MB) + 27 PNG textures (62.4 MB)   = 74.21 MB
-  optimize --compress draco --texture-compress webp                     4,690,588 B   ← over budget
-  optimize --compress draco --texture-compress webp --texture-size 1024 2,206,432 B   ← shipped
-```
-
-Passes applied: `dedup`, `instance`, `palette`, `flatten`, `join`, `weld`,
-`simplify`, `resample`, `prune`, `sparse`, `textureCompress`, `draco`.
-Result: 450,120 render vertices, bounding box 3.12 × 1.87 × 6.23 m (car-sized,
-origin at ground level), 14 meshes / 14 materials with
-`KHR_materials_clearcoat` (paint) and `KHR_materials_transmission` (glass),
-26 WebP images, no animations, no rig.
-
-#### Consumer requirements (for 3D-HERO)
-
-`extensionsRequired: ["EXT_texture_webp", "KHR_draco_mesh_compression"]`:
-
-- it will **not** load without a Draco decoder — use
-  `useGLTF("/models/930-turbo-1975/model.glb", true)` (drei) or a
-  `DRACOLoader` pointed at the local copy:
-  `new DRACOLoader().setDecoderPath("/decoders/draco/")`
-  (drei's boolean shortcut uses a **gstatic.com** decoder by default — the
-  self-hosted decoders at `public/decoders/draco/` exist to avoid that);
-- `EXT_texture_webp` needs **WebGL2**. If the renderer is WebGL1 the whole GLB
-  throws rather than degrading;
-- `/decoders/basis/` is present for any future KTX2 asset but is **not** used by
-  this file (no `KHR_texture_basisu` in the GLB).
-
-**Known cosmetic artefact.** The source scene bakes a floor decal reading
-"1975 PORSCHE 911 turbo" into the ground texture. Inherited from the upstream
-asset, not added here; only visible when framed from above.
+  993 = 1995 Carrera · 996 = 996 · 997 = GT3 RS (997.2) · 991 = Carrera S
+  (embed — the local 991 GLB is a Carrera **4S** and is deliberately not
+  promoted to the chapter hero, which the previous run documented as the
+  Carrera S) · 992.1 = Carrera S · 992.2 = Targa 4 GTS (992.2).
+- **`991/carrera-4s` is the only variant where a local GLB outranks nothing** —
+  the target had no model at all before. It is not used as a fallback for any
+  other key, so deleting `public/models/991-carrera-4s/` and re-running simply
+  returns that one target to `null`.
 
 ---
 
 ## Reproducing
 
 ```bash
-node scripts/fetch-models.ts             # re-verify licences, rewrite data/models.json (GLB re-used)
+node scripts/fetch-models.ts             # re-verify licences, re-attempt the sweep, rewrite both JSONs
 node scripts/fetch-models.ts --refresh   # + print live runners-up per target
 node scripts/fetch-models.ts --offline   # no network; keep last verified records
-node scripts/fetch-models.ts --no-glb    # skip the direct-licence GLB step entirely
-node scripts/fetch-models.ts --rebuild-glb   # force the 74 MB download + re-optimise
+node scripts/fetch-models.ts --no-glb    # skip both GLB build steps
+node scripts/fetch-models.ts --no-sweep  # keep the previous sourceAudit untouched
+node scripts/fetch-models.ts --rebuild-glb   # force the 74 MB / 21 MB re-download + re-optimise
 ```
 
-The script is idempotent: normal re-runs re-verify every pinned target against the live
-API (a few seconds) and rewrite the same file with a fresh `updatedAt`. The GLB
-is only re-downloaded when missing or `--rebuild-glb` is passed.
+The script is idempotent: two consecutive runs produce byte-identical
+`data/models.json` apart from `updatedAt`/`verifiedAt`/`probedAt`. A normal
+re-run re-verifies all 44 pinned uids against the live API, re-reads the repo
+`LICENSE` and both `asset.extras` licence blocks (2 range requests each),
+re-checks that the committed `991` GLB still carries its uid, and re-probes all
+13 sources — about 20 seconds. The GLBs are only rebuilt when missing or
+`--rebuild-glb` is passed.
 
 `tsx` is **not** in `package.json` (and must not be added), so the script is
 written as Node-native TypeScript and runs on plain `node` via Node's built-in

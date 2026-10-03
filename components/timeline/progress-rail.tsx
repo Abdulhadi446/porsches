@@ -1,7 +1,7 @@
 "use client";
 
 import { memo, type MouseEvent } from "react";
-import type { Generation } from "#data/schema";
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
 import { chapterAnnouncement, yearLabel } from "./format";
 
 /**

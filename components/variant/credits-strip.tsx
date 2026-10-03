@@ -76,7 +76,7 @@ export function CreditsStrip({ rows, attribution, headingId, accent }: CreditsSt
                   href={row.credit.url}
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  className="mt-[--space-2] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="mt-[--space-2] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-300 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Source
                   <span className="sr-only"> (opens in a new tab)</span>

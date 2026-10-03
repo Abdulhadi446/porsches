@@ -53,7 +53,7 @@ function YearScrub({ start, end, chapters }: YearScrubProps) {
               }`}
             >
               {tick.decade ? (
-                <span className="font-mono text-mono-xs tracking-[--tracking-mono] text-guards uppercase">
+                <span className="font-mono text-mono-xs tracking-[--tracking-mono] text-guards-text uppercase">
                   {tick.caption}
                 </span>
               ) : null}
@@ -79,7 +79,7 @@ function YearScrub({ start, end, chapters }: YearScrubProps) {
           <span className="label">Readout</span>
           <span
             data-ts-readout
-            className="font-mono text-mono-md text-guards tabular-nums"
+            className="font-mono text-mono-md text-guards-text tabular-nums"
           >
             {start}
           </span>

@@ -168,7 +168,7 @@ export default async function VariantPage({
                     href={source.url}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                    className="underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                   >
                     {source.title}
                     <span className="sr-only"> (opens in a new tab)</span>
@@ -205,7 +205,7 @@ export default async function VariantPage({
             More from the {gen.code} ·{" "}
             <Link
               href={`/911/${gen.id}`}
-              className="rounded-[--radius-sm] text-metal-100 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="rounded-[--radius-sm] text-metal-100 underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               all {gen.variants.length} variants
             </Link>

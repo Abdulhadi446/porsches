@@ -68,8 +68,25 @@ export function Hero3D() {
    */
   useEffect(() => {
     if (!active) return;
-    const frame = window.requestAnimationFrame(() => setEverNear(true));
-    return () => window.cancelAnimationFrame(frame);
+    let idle = 0;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const frame = window.requestAnimationFrame(() => {
+      // The hero's <h1> is the LCP element and three.js is the main-thread
+      // budget's biggest item: never compete with first paint. Wait for load +
+      // an idle slot (or ~1.2 s, whichever is first) before grabbing a context.
+      const start = () => setEverNear(true);
+      const ric = window.requestIdleCallback?.bind(window);
+      if (ric) {
+        idle = ric(start, { timeout: 1200 });
+      } else {
+        timer = setTimeout(start, 1200);
+      }
+    });
+    return () => {
+      window.cancelAnimationFrame(frame);
+      if (idle) window.cancelIdleCallback?.(idle);
+      if (timer) clearTimeout(timer);
+    };
   }, [active]);
 
   /** scroll scrubbing needs a measured machine *and* a motion preference */

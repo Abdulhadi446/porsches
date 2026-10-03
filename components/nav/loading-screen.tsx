@@ -196,7 +196,7 @@ export function LoadingScreen({
           aria-hidden="true"
           className="mt-[--space-3] text-center font-display text-3xl uppercase"
         >
-          911<span className="text-guards">.</span>SHOWCASE
+          911<span className="text-guards-text">.</span>SHOWCASE
         </p>
         <p
           aria-hidden="true"
@@ -213,7 +213,7 @@ export function LoadingScreen({
       <button
         type="button"
         onClick={dismiss}
-        className="absolute bottom-[--space-12] rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+        className="absolute bottom-[--space-12] rounded-[--radius-sm] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
       >
         Skip intro
       </button>

@@ -1,6 +1,22 @@
-import { GENERATIONS, allVariants } from "#lib/generations";
+import {
+  CLIENT_GENERATIONS,
+  clientVariants,
+  type ClientGeneration,
+  type ClientVariant,
+} from "#lib/client-catalog";
 import { fieldScore, normaliseQuery } from "./fuzzy";
-import type { BodyStyle, Generation, GenerationId, Variant } from "#data/schema";
+import type { BodyStyle, GenerationId } from "#data/schema";
+
+/**
+ * Reads the SLIM client catalogue (`#lib/client-catalog`), not the raw
+ * generation JSON: importing `#lib/generations` here shipped ~2 MB of initial
+ * JS (gallery blur placeholders, credits and source URLs) to every route.
+ * Server components still use `#lib/generations` for full-fidelity data.
+ */
+const GENERATIONS = CLIENT_GENERATIONS;
+/** Local aliases so the helper signatures read the same as the full schema. */
+type Variant = ClientVariant;
+type Generation = ClientGeneration;
 
 /**
  * NAV-UX CATALOGUE — owned by NAV-UX.
@@ -288,8 +304,8 @@ export const GENERATION_INDEX: IndexedGeneration[] = GENERATIONS.map(
 ).sort((a, b) => a.index - b.index);
 
 function buildVariant(
-  generation: Generation,
-  variant: Variant,
+  generation: ClientGeneration,
+  variant: ClientVariant,
 ): IndexedVariant {
   const yearStart = variant.yearsStart ?? generation.yearsStart;
   const yearEnd = variant.yearsEnd ?? generation.yearsEnd ?? CURRENT_YEAR;
@@ -368,8 +384,13 @@ function buildVariant(
   };
 }
 
-export const VARIANT_INDEX: IndexedVariant[] = allVariants()
-  .map(({ generation, variant }) => buildVariant(generation, variant))
+export const VARIANT_INDEX: IndexedVariant[] = clientVariants()
+  .map(({ generationId, ...variant }) =>
+    buildVariant(
+      CLIENT_GENERATIONS.find((g) => g.id === generationId) as ClientGeneration,
+      variant as ClientVariant,
+    ),
+  )
   .sort((a, b) => a.genIndex - b.genIndex || a.yearStart - b.yearStart || a.name.localeCompare(b.name));
 
 export const VARIANT_BY_KEY: ReadonlyMap<string, IndexedVariant> = new Map(

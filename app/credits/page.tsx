@@ -14,10 +14,10 @@ export default function CreditsPage() {
   const credits = data.credits ?? [];
   return (
     <div className="px-[--gutter] pb-[--space-32] pt-[--space-32]">
-      <div className="mx-auto max-w-[--maxw]">
+      <div className="mx-auto w-full min-w-0 max-w-[--maxw]">
         <p className="label mb-4">Auto-generated from /data/credits.json</p>
         <h1 className="text-display-2 mb-8">
-          Credits <span className="text-guards">&amp;</span> licenses
+          Credits <span className="text-guards-text">&amp;</span> licenses
         </h1>
         <p className="mb-12 max-w-[--maxw-prose] text-metal-500">
           This is an unofficial fan project. All media below is used under the
@@ -28,9 +28,9 @@ export default function CreditsPage() {
         {credits.length === 0 ? (
           <p className="label">No credits recorded yet (asset agents pending).</p>
         ) : (
-          <ul className="divide-y divide-ink-4 border-y border-ink-4">
+          <ul className="min-w-0 divide-y divide-ink-4 border-y border-ink-4">
             {credits.map((c) => (
-              <li key={c.assetId} className="grid gap-2 py-5 md:grid-cols-12">
+              <li key={c.assetId} className="grid min-w-0 gap-2 py-5 md:grid-cols-12">
                 <span className="font-mono text-mono-xs text-metal-500 md:col-span-2">
                   {c.kind}
                 </span>
@@ -39,7 +39,7 @@ export default function CreditsPage() {
                     href={c.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-guards"
+                    className="hover:text-guards-text"
                   >
                     {c.sourceId ?? c.assetId}
                   </a>

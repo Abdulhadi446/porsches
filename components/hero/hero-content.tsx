@@ -52,6 +52,25 @@ function enter(delay: number, reduced: boolean) {
   };
 }
 
+/**
+ * Paint-safe entrance: the <h1> is the LCP element, so it must be painted
+ * immediately. It animates position only — opacity stays 1 from the start.
+ */
+function enterPaintSafe(delay: number, reduced: boolean) {
+  if (reduced) {
+    return {
+      initial: false as const,
+      animate: { y: 0 },
+      transition: { duration: 0 },
+    };
+  }
+  return {
+    initial: { y: 18 },
+    animate: { y: 0 },
+    transition: { duration: 0.7, delay, ease: EASE },
+  };
+}
+
 export function HeroContent({
   specs,
   reducedMotion,
@@ -86,13 +105,13 @@ export function HeroContent({
       {/* ---- headline block ---- */}
       <div className="max-w-[--maxw]">
         <motion.h1
-          {...enter(0.45, reducedMotion)}
+          {...enterPaintSafe(0.05, reducedMotion)}
           data-hero-title=""
           className="font-display text-display-1 text-metal-100"
         >
           {HERO_TITLE_LEAD}
           <br />
-          <span className="text-guards">{HERO_TITLE_ACCENT}</span>
+          <span className="text-guards-text">{HERO_TITLE_ACCENT}</span>
         </motion.h1>
         <motion.p
           {...enter(0.6, reducedMotion)}

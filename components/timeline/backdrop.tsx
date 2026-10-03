@@ -1,4 +1,4 @@
-import type { Generation } from "#data/schema";
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
 import { withAlpha } from "./format";
 
 /**

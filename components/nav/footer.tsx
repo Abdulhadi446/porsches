@@ -20,7 +20,7 @@ export function Footer() {
         <div className="grid gap-[--space-12] lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <p className="font-display text-2xl uppercase tracking-[--tracking-label]">
-              911<span className="text-guards">.</span>SHOWCASE
+              911<span className="text-guards-text">.</span>SHOWCASE
             </p>
             <p className="mt-[--space-3] max-w-[--maxw-prose] text-body-2 leading-relaxed text-metal-500">
               Six decades of the Porsche 911, from the 1963 901 to the 992.2
@@ -69,7 +69,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-mono text-mono-sm text-metal-500 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                    className="inline-flex min-h-11 items-center font-mono text-mono-sm text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                   >
                     {link.label}
                   </Link>
@@ -99,7 +99,10 @@ export function Footer() {
             <p>
               All images, 3D models and videos are used under the licences
               recorded for each asset in{" "}
-              <Link href="/credits" className="text-guards hover:underline">
+              <Link
+                href="/credits"
+                className="text-guards-text underline decoration-1 underline-offset-2 hover:decoration-2"
+              >
                 Credits &amp; licences
               </Link>
               . Specifications are compiled from the sources cited on each

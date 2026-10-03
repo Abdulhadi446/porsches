@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { memo, type CSSProperties } from "react";
-import type { Generation } from "#data/schema";
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
 import { getImage } from "#lib/assets";
 import { YearNumeral } from "./year-numeral";
 import {
@@ -68,21 +69,19 @@ function Chapter({ generation, index, total }: ChapterProps) {
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
       >
         <div className="absolute inset-0 md:inset-y-[9%] md:left-auto md:right-[--gutter] md:top-1/2 md:w-[min(44vw,44rem)] md:-translate-y-1/2 md:rotate-[-1.6deg] md:border md:border-ink-4 md:bg-ink-2 md:shadow-[0_2rem_6rem_-2rem_var(--color-ink)]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             data-ts-drift-img
             src={image.src}
             alt=""
             width={image.width ?? 1600}
             height={image.height ?? 900}
+            sizes="(min-width: 768px) 44vw, 100vw"
+            priority={false}
             loading={index < 2 ? "eager" : "lazy"}
-            decoding="async"
+            quality={70}
+            placeholder={image.blurDataURL ? "blur" : "empty"}
+            blurDataURL={image.blurDataURL ?? undefined}
             className="h-full w-full object-cover opacity-25 grayscale md:opacity-85"
-            style={
-              image.blurDataURL
-                ? { backgroundImage: `url(${image.blurDataURL})` }
-                : undefined
-            }
           />
           <div
             aria-hidden="true"

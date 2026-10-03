@@ -67,7 +67,7 @@ export default async function ComparePage({
         <header className="mb-[--space-8] max-w-[--maxw-prose]">
           <p className="label mb-[--space-2]">Compare</p>
           <h1 className="text-display-2 mb-[--space-4]">
-            Two 911s, <span className="text-guards">spec for spec</span>
+            Two 911s, <span className="text-guards-text">spec for spec</span>
           </h1>
           <p className="text-metal-500">
             Every figure below comes from the dataset — the same numbers the

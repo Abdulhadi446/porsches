@@ -64,11 +64,11 @@ export default async function SearchPage({
           <h1 className="text-display-2 mb-[--space-4]">
             {query ? (
               <>
-                Results for <span className="text-guards">“{query}”</span>
+                Results for <span className="text-guards-text">“{query}”</span>
               </>
             ) : (
               <>
-                Every <span className="text-guards">911</span>
+                Every <span className="text-guards-text">911</span>
               </>
             )}
           </h1>
@@ -110,7 +110,7 @@ export default async function SearchPage({
             <Facets filters={filters} />
             <Link
               href={filtersHref("/variants", filters)}
-              className="mt-[--space-6] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 underline-offset-4 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              className="mt-[--space-6] inline-block font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               Open in the filterable grid →
             </Link>
@@ -137,7 +137,7 @@ export default async function SearchPage({
                 </p>
                 <Link
                   href="/search"
-                  className="mt-[--space-6] inline-block rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="mt-[--space-6] inline-block rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Reset the search
                 </Link>
@@ -253,7 +253,7 @@ function Facets({ filters }: { filters: VariantFilters }) {
                   yearTo: YEAR_MAX,
                   page: 1,
                 })}
-                className="text-guards underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                className="text-guards-text underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 reset years
               </Link>
@@ -317,13 +317,13 @@ function ResultRow({ variant }: { variant: IndexedVariant }) {
       <p className="mt-[--space-3] flex gap-[--space-4]">
         <Link
           href={`/compare?a=${variant.key}`}
-          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Compare this →
         </Link>
         <Link
           href={`/variants?gen=${variant.generation}`}
-          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           All {variant.genCode} variants →
         </Link>

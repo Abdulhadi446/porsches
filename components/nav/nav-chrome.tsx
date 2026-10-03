@@ -154,11 +154,11 @@ export function NavChrome({ generations }: { generations: NavGeneration[] }) {
         <div className="mx-auto flex h-16 max-w-[--maxw] items-center gap-[--space-3] px-[--gutter]">
           <Link
             href="/"
-            aria-label="911 Showcase — home"
+            aria-label="911 Showcase"
             aria-current={isActive("/") ? "page" : undefined}
-            className="mr-auto shrink-0 font-display text-lg uppercase tracking-[--tracking-label] transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-guards"
+            className="mr-auto shrink-0 font-display text-lg uppercase tracking-[--tracking-label] transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-guards"
           >
-            911<span className="text-guards">.</span>SHOWCASE
+            911<span className="text-guards-text">.</span>SHOWCASE
           </Link>
 
           <nav aria-label="Primary" className="flex items-center gap-[--space-1]">
@@ -189,7 +189,7 @@ export function NavChrome({ generations }: { generations: NavGeneration[] }) {
                 href={link.href}
                 aria-current={isActive(link.href) ? "page" : undefined}
                 className={`hidden rounded-[--radius-sm] px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards lg:inline-flex ${
-                  isActive(link.href) ? "text-guards" : "text-metal-500 hover:text-metal-100"
+                  isActive(link.href) ? "text-guards-text" : "text-metal-500 hover:text-metal-100"
                 }`}
               >
                 {link.label}
@@ -201,7 +201,8 @@ export function NavChrome({ generations }: { generations: NavGeneration[] }) {
               onClick={() => openPalette()}
               aria-haspopup="dialog"
               aria-expanded={paletteOpen}
-              className="inline-flex items-center gap-[--space-2] rounded-[--radius-pill] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              aria-label="Search all generations and variants (command palette)"
+              className="inline-flex items-center gap-[--space-2] rounded-[--radius-pill] border border-ink-4 min-h-11 px-[--space-4] py-[--space-3] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
             >
               <span aria-hidden="true">⌕</span>
               <span className="hidden sm:inline">Search</span>
@@ -214,6 +215,7 @@ export function NavChrome({ generations }: { generations: NavGeneration[] }) {
               ref={sheetTriggerRef}
               type="button"
               onClick={() => setPanel((value) => (value === "sheet" ? "none" : "sheet"))}
+              aria-label={sheetOpen ? "Close menu" : "Open menu"}
               aria-expanded={sheetOpen}
               aria-controls={`${megaId}-sheet`}
               className="inline-flex h-10 w-10 items-center justify-center rounded-[--radius-sm] border border-ink-4 font-mono text-mono-sm text-metal-300 transition-colors hover:border-guards hover:text-metal-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards lg:hidden"
@@ -378,7 +380,7 @@ export function NavChrome({ generations }: { generations: NavGeneration[] }) {
                             {generation.years} · {generation.variantCount} variants
                           </span>
                         </span>
-                        {active && <span className="label text-guards">Current</span>}
+                        {active && <span className="label text-guards-text">Current</span>}
                       </Link>
                     </li>
                   );

@@ -28,7 +28,7 @@ export default async function GenerationNotFound({
     position > 0 ? GENERATIONS[position - 1] : null,
     gen,
     position >= 0 && position < GENERATIONS.length - 1 ? GENERATIONS[position + 1] : null,
-  ].filter((entry): entry is NonNullable<typeof entry> => entry !== null);
+  ].filter((entry): entry is NonNullable<typeof entry> => entry != null);
 
   const suggestions = neighbours.length > 0 ? neighbours : GENERATIONS.slice(0, 4);
 
@@ -77,7 +77,7 @@ export default async function GenerationNotFound({
         <p className="mt-[--space-8] text-body-2 text-metal-500">
           <Link
             href="/911"
-            className="rounded-[--radius-sm] underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="rounded-[--radius-sm] underline decoration-ink-4 underline-offset-4 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             All nine generations
           </Link>

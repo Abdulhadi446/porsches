@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { memo } from "react";
-import type { Generation } from "#data/schema";
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
 import { chapterOrdinal, yearLabel } from "./format";
 
 /**

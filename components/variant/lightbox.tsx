@@ -122,17 +122,25 @@ export function Lightbox({
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [onClose, onIndexChange, open, step, total]);
 
-  /* scroll lock + focus handoff */
+  /* scroll lock + focus handoff (restore to the trigger, per a11y) */
   useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
+    const main = document.getElementById("main");
+    const previouslyInert = main?.inert ?? false;
     document.body.style.overflow = "hidden";
+    main?.setAttribute("inert", "");
     lenis?.stop();
+    const trigger =
+      document.activeElement instanceof HTMLElement ? document.activeElement : null;
     dialogRef.current?.focus();
 
     return () => {
       document.body.style.overflow = previousOverflow;
+      if (previouslyInert) main?.setAttribute("inert", "");
+      else main?.removeAttribute("inert");
       lenis?.start();
+      trigger?.focus();
     };
   }, [lenis, open]);
 

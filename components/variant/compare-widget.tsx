@@ -115,7 +115,7 @@ export function CompareWidget({
                     {column.href ? (
                       <Link
                         href={column.href}
-                        className="font-display text-mono-sm uppercase tracking-[--tracking-display] text-metal-100 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                        className="font-display text-mono-sm uppercase tracking-[--tracking-display] text-metal-100 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                       >
                         {column.name}
                       </Link>

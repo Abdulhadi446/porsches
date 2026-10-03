@@ -10,7 +10,9 @@
  */
 
 import { getImage, getModel, type ImageResult, type ModelResult } from "#lib/assets";
-import { GENERATIONS } from "#lib/generations";
+import { CLIENT_GENERATIONS } from "#lib/client-catalog";
+
+const GENERATIONS = CLIENT_GENERATIONS;
 
 /** Mono kicker above the headline. */
 export const HERO_KICKER = "1963 → 2026 · Unofficial fan project";

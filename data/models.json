@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:05:45.237Z",
+  "updatedAt": "2026-10-03T09:41:06.283Z",
   "generations": {
     "901": {
       "embedUrl": "https://sketchfab.com/3d-models/1964-porsche-911-ab60b9e064e645ab96aeabe7772e4d49?embed=1",
@@ -59,8 +59,8 @@
       "glb": "/models/930-turbo-1975/model.glb",
       "embedUrl": null,
       "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
-      "license": "MIT (repo) + CC Attribution (geometry, inferred)",
-      "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+      "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
+      "author": "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)",
       "turntable": null,
       "bytes": 2206432
     },
@@ -175,7 +175,15 @@
       "bytes": null
     },
     "991/carrera-4": null,
-    "991/carrera-4s": null,
+    "991/carrera-4s": {
+      "glb": "/models/991-carrera-4s/model.glb",
+      "embedUrl": null,
+      "sourceId": "d01b254483794de3819786d93e0e1ebf",
+      "license": "CC Attribution-ShareAlike 4.0 (adapted)",
+      "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
+      "turntable": null,
+      "bytes": 905340
+    },
     "991/carrera-t": null,
     "991/targa-4": null,
     "991/targa-4s": null,
@@ -326,8 +334,8 @@
       "glb": "/models/930-turbo-1975/model.glb",
       "embedUrl": null,
       "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
-      "license": "MIT (repo) + CC Attribution (geometry, inferred)",
-      "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+      "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
+      "author": "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)",
       "turntable": null,
       "bytes": 2206432
     },
@@ -722,8 +730,8 @@
       "glb": "/models/930-turbo-1975/model.glb",
       "embedUrl": null,
       "sourceId": "UtkarshPathrabe/Porche-911-930-Turbo-1975-3D-Model",
-      "license": "MIT (repo) + CC Attribution (geometry, inferred)",
-      "author": "Utkarsh Pathrabe (repo) + Lionsharp Studios (geometry, inferred)",
+      "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
+      "author": "Lionsharp Studios (car geometry) + Utkarsh Pathrabe (repo)",
       "turntable": null,
       "bytes": 2206432
     },
@@ -803,5 +811,98 @@
     "gt3-s-c": null,
     "spirit-70": null
   },
-  "verifiedAt": "2026-10-02T17:05:45.237Z"
+  "verifiedAt": "2026-10-03T09:41:06.283Z",
+  "sourceAudit": [
+    {
+      "source": "poly.pizza",
+      "anonymousDownload": "yes",
+      "note": "anonymous GLB download works: the model page embeds https://static.poly.pizza/<uuid>.glb and serves it with no auth (CC0/CC-BY shown on the page). Searched 911 / porsche / porsche 911 / 930 turbo / 964 / 991 / 992 / 993 / 996 / 997 / GT3 / turbo / sports car / coupe. ZERO model titles or descriptions contain 'porsche' or '911' — the search is title-based with fuzzy filler (a nonsense query still returns hits). Every hit is a generic car (Quaternius 'Sports Car', DeLorean, RX-7, Ferrari F40, Camaro, Bricklin SV1, 'Retro car' whose own description says 'Suzuki Vitara 1997'), so nothing is recognisably a 911. No CC0 bundle pages exist; individual models only.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 200
+    },
+    {
+      "source": "kenney.nl (Car Kit)",
+      "anonymousDownload": "yes",
+      "note": "anonymous direct zip download works (HTTP 200, 4.81 MB) and License.txt says 'License: (Creative Commons Zero, CC0)'. The 45 models are ambulance/box/cone/debris-*/delivery/firetruck/garbage-truck/hatchback-sports/kart-oo*/police/race*/sedan*/suv*/taxi/tractor/truck/van/wheel-* — no 911, and none is recognisably a Porsche of any generation.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 200
+    },
+    {
+      "source": "get3dmodels.com (Sketchfab GLB mirror)",
+      "anonymousDownload": "yes",
+      "note": "anonymous direct .glb download works (HTTP 200, no auth, no token). The whole catalogue — 2967 model URLs enumerated from sitemap_index.xml — contains exactly 10 Porsche entries, 7 of them 911s. Licence is read from the asset.extras block Sketchfab itself bakes into every export and cross-checked against api.sketchfab.com. ACCEPTED: 1975 930 Turbo (CC BY 4.0) and (FREE) Carrera 4S (CC BY-SA 4.0). REJECTED as non-commercial: Porsche 911 GT3 (2022, 992.2) CC BY-NC 4.0, 1998 GT1, 2010 GT3 Cup, 2014 RSR, 2012 GT3 RS 4.0 — all CC BY-NC-SA 4.0. NOTE: this site's own card mislabels the CC BY-NC GT3 as 'Creative Commons Attribution'; never trust its metadata, only the asset's own extras.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 206
+    },
+    {
+      "source": "sketchfab.com download API",
+      "anonymousDownload": "no",
+      "note": "GET /v3/models/<uid>/download returns 401 without an OAuth token. No Sketchfab token is available and none is requested, so every Sketchfab-backed entry stays an official ?embed=1 iframe. The public metadata API (GET /v3/models/<uid>, /v3/search) needs no token and is what every licence check uses.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 401
+    },
+    {
+      "source": "github.com repo search",
+      "anonymousDownload": "yes",
+      "note": "anonymous repository search + raw.githubusercontent downloads both work. ~20 queries run (porsche 911 glb/gltf/obj, 911 three.js, porsche 964/993/996/930, sketchfab porsche). Every repo holding actual geometry is unlicensed (all-rights-reserved => rejected) or credits a different car: wSaiven/Porsche-911 is an Apache-2.0 licence file and NOTHING else; C3ddy/first-threejs-project is MIT but its README credits 'Outlaw GamesTM … 2018 Porsche 718 Cayman GTS' (not a 911, and NC); UtkarshPathrabe is the 930 source already in use. Code search needs auth, so a uid cannot be searched for directly.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 206
+    },
+    {
+      "source": "blendkit.com (ex-BlenderKit)",
+      "anonymousDownload": "no",
+      "note": "search API is anonymous and returns 146 Porsche 911 assets ('royalty_free'), but /api/v1/downloads/<uuid>/ answers HTTP 401 'Unauthorized access. Please log in.' Licence is BlenderKit's own royalty-free, not a Creative Commons licence, so it is out of scope twice over.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 200
+    },
+    {
+      "source": "free3d.com",
+      "anonymousDownload": "no",
+      "note": "HTTP 403 (Cloudflare) to anonymous requests; downloads sit behind an account. No probe possible.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 403
+    },
+    {
+      "source": "cgtrader.com free tier",
+      "anonymousDownload": "no",
+      "note": "HTTP 202 with a zero-byte body (bot mitigation); free downloads require a CGTrader account. No probe possible.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 202
+    },
+    {
+      "source": "turbosquid.com free",
+      "anonymousDownload": "no",
+      "note": "HTTP 403 to anonymous requests; free downloads require a Turbosquid account. No probe possible.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 403
+    },
+    {
+      "source": "3dsky.org",
+      "anonymousDownload": "no",
+      "note": "HTTP 200 but the result list is rendered client-side and the nav shows 'Sign in' for downloads; no model URL is reachable without an account.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 200
+    },
+    {
+      "source": "opengameart.org",
+      "anonymousDownload": "yes",
+      "note": "anonymous download works, but the ONLY porsche submission is 'Car - Porsche 911 Carrera 1998' by TituroFox (CC0, 441.9 KB zip) and it is filed as 2D Art — a top-down sprite, not a 3D model. Its 3D-art car packs are Kenney's toon kits, not 911s.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 200
+    },
+    {
+      "source": "quaternius.com",
+      "anonymousDownload": "no",
+      "note": "Cars Pack is CC0 and states 'Models 8', but the download is gated behind Patreon credits and the pack ships FBX/OBJ/Blend only (no glTF). No anonymous download, and no Porsche in it.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 206
+    },
+    {
+      "source": "blendswap.com",
+      "anonymousDownload": "no",
+      "note": "HTTP 404 — /search/* no longer exists and the 3D-model browse page needs a live session. Nothing probeable.",
+      "probedAt": "2026-10-03T09:40:41.395Z",
+      "status": 404
+    }
+  ]
 }

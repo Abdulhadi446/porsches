@@ -55,7 +55,7 @@ const mods = models as {
 const vids = videos as { entries?: Record<string, VideoRef[]> };
 
 /** creditId → Credit, synthesising one if the images agent missed it. */
-function ensureCredit(ref: ImageRef | null | undefined, kind: "hero" | "gallery"): Credit | null {
+function ensureCredit(ref: ImageRef | null | undefined): Credit | null {
   if (!ref?.src) return null;
   if (ref.creditId && credits.has(ref.creditId)) return credits.get(ref.creditId)!;
   return null;
@@ -84,7 +84,7 @@ function modelCredit(m: Model3D | null | undefined, key: string): Credit | null 
   return credit;
 }
 
-function videoCredit(v: VideoRef, key: string): Credit {
+function videoCredit(v: VideoRef): Credit {
   const assetId = `video-${v.id}`;
   const existing = credits.get(assetId);
   if (existing) return existing;
@@ -159,10 +159,10 @@ for (const f of files) {
   if (gm) g.model3d = gm;
   if (gv.length) {
     g.videos = gv;
-    gv.forEach((v) => void videoCredit(v, `${genId}`));
+    gv.forEach((v) => void videoCredit(v));
   }
   const gCredits = [gi?.heroImage, gi?.timelineImage]
-    .map((r) => ensureCredit(r, "hero"))
+    .map((r) => ensureCredit(r))
     .filter((c): c is Credit => c !== null);
   if (gm) {
     const mc = modelCredit(gm, genId);
@@ -183,14 +183,14 @@ for (const f of files) {
     if (vm) v.model3d = vm;
     if (vv.length) {
       v.videos = vv;
-      vv.forEach((x) => void videoCredit(x, key));
+      vv.forEach((x) => void videoCredit(x));
     }
 
     const vCredits: Credit[] = [];
-    const hc = ensureCredit(vi?.heroImage, "hero");
+    const hc = ensureCredit(vi?.heroImage);
     if (hc) vCredits.push(hc);
     for (const gref of (vi?.gallery ?? []).slice(0, 1)) {
-      const gc = ensureCredit(gref, "gallery");
+      const gc = ensureCredit(gref);
       if (gc && gc.assetId !== hc?.assetId) vCredits.push(gc);
     }
     const mc = modelCredit(vm, key);

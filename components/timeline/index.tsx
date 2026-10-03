@@ -1,8 +1,22 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from "react";
-import { GENERATIONS, timelineRange } from "#lib/generations";
-import type { Generation } from "#data/schema";
+import {
+  CLIENT_GENERATIONS,
+  type ClientGeneration,
+} from "#lib/client-catalog";
+
+const GENERATIONS = CLIENT_GENERATIONS;
+
+/** 1963 → today, derived from the catalogue itself. */
+function timelineRange(gens: ClientGeneration[] = GENERATIONS): [number, number] {
+  const start = Math.min(...gens.map((g) => g.yearsStart));
+  const end = Math.max(
+    ...gens.map((g) => g.yearsEnd ?? new Date().getFullYear()),
+  );
+  return [start, end];
+}
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
 import { useSmoothScroll } from "./lenis-provider";
 import { StageBackdrop } from "./backdrop";
 import { TimelineChapter } from "./chapter";

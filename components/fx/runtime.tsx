@@ -14,6 +14,7 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
   type CSSProperties,
   type RefObject,
 } from "react";
@@ -206,6 +207,8 @@ const MOBILE_RE =
   /android|iphone|ipod|iemobile|blackberry|windows phone|opera mini|mobile safari/i;
 
 let capabilityOverride: boolean | null = null;
+/** Bumped whenever the override changes so mounted effects re-measure. */
+const capabilityListeners = new Set<() => void>();
 
 /**
  * Escape hatch for the low-power / no-WebGL static fallback. Call it once
@@ -213,30 +216,57 @@ let capabilityOverride: boolean | null = null;
  * force or forbid animation. Pass `null` to restore auto-detection.
  */
 export function setFxCapabilityOverride(allow: boolean | null): void {
+  if (capabilityOverride === allow) return;
   capabilityOverride = allow;
+  cachedCapability = null;
+  for (const listener of capabilityListeners) listener();
 }
 
-/** Measure the device once, after mount. Starts in the safe (static) state. */
+/**
+ * Measure the device once, AFTER mount. The first render (server and client)
+ * always returns the safe static capability so hydration can never mismatch —
+ * probing WebGL during render was the source of React #418 on desktop.
+ */
+let cachedCapability: FxCapability | null = null;
+
+/** Server + first client render: the safe static capability (no mismatch). */
+const UNKNOWN_SNAPSHOT = UNKNOWN_CAPABILITY;
+
+function getCapabilitySnapshot(): FxCapability {
+  if (cachedCapability) return cachedCapability;
+  if (typeof window === "undefined" || typeof navigator === "undefined") {
+    return UNKNOWN_SNAPSHOT;
+  }
+  const cores =
+    typeof navigator.hardwareConcurrency === "number"
+      ? navigator.hardwareConcurrency
+      : 0;
+  const mobile = MOBILE_RE.test(navigator.userAgent || "");
+  const webgl = detectWebgl();
+  const detected = (cores > 0 && cores < 4) || mobile || !webgl;
+  cachedCapability = {
+    cores,
+    mobile,
+    webgl,
+    lowPower: capabilityOverride ?? detected,
+    ready: true,
+  };
+  return cachedCapability;
+}
+
+const subscribeToCapability = (onChange: () => void) => {
+  capabilityListeners.add(onChange);
+  return () => {
+    capabilityListeners.delete(onChange);
+  };
+};
+
 export function useFxCapability(): FxCapability {
-  return useMemo<FxCapability>(() => {
-    if (typeof window === "undefined" || typeof navigator === "undefined") {
-      return UNKNOWN_CAPABILITY;
-    }
-    const cores =
-      typeof navigator.hardwareConcurrency === "number"
-        ? navigator.hardwareConcurrency
-        : 0;
-    const mobile = MOBILE_RE.test(navigator.userAgent || "");
-    const webgl = detectWebgl();
-    const detected = (cores > 0 && cores < 4) || mobile || !webgl;
-    return {
-      cores,
-      mobile,
-      webgl,
-      lowPower: capabilityOverride ?? detected,
-      ready: true,
-    };
-  }, []);
+  return useSyncExternalStore(
+    subscribeToCapability,
+    getCapabilitySnapshot,
+    () => UNKNOWN_SNAPSHOT,
+  );
 }
 
 /**

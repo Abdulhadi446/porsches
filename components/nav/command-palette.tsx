@@ -373,7 +373,7 @@ function PalettePanel({
         <div className="flex items-center gap-[--space-3] border-b border-ink-4 px-[--space-4] py-[--space-3]">
           <span
             aria-hidden="true"
-            className="shrink-0 font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards"
+            className="shrink-0 font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards-text"
           >
             Search
           </span>
@@ -490,7 +490,7 @@ function PalettePanel({
           <button
             type="button"
             onClick={onClose}
-            className="ml-auto shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-2] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+            className="ml-auto shrink-0 rounded-[--radius-sm] border border-ink-4 px-[--space-2] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
           >
             Close
           </button>
@@ -588,7 +588,7 @@ function Highlight({ text, query }: { text: string; query: string }) {
         positions.has(index) ? (
           <mark
             key={index}
-            className="bg-transparent font-bold text-guards"
+            className="bg-transparent font-bold text-guards-text"
             style={{ textShadow: "0 0 12px var(--color-guards)" }}
           >
             {char}
@@ -619,7 +619,7 @@ export function PaletteLauncher({
     <button
       type="button"
       onClick={() => openCommandPalette(seed)}
-      className={`rounded-[--radius-pill] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${className}`}
+      className={`rounded-[--radius-pill] border border-ink-4 px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards ${className}`}
     >
       {label}
       <span aria-hidden="true" className="ml-2 text-metal-700">

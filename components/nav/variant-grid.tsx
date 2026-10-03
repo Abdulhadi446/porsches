@@ -116,7 +116,7 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
             {GENERATION_INDEX.length} generations · {VARIANT_COUNT} variants indexed
           </p>
           <h1 className="text-display-2 mb-[--space-4]">
-            All <span className="text-guards">variants</span>
+            All <span className="text-guards-text">variants</span>
           </h1>
           <p className="max-w-[--maxw-prose] text-metal-500">
             Every 911 in the dataset with its real specifications. Filter, sort
@@ -134,7 +134,7 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
                 className="flex-1 rounded-[--radius-sm] border border-ink-4 bg-ink-2 px-[--space-4] py-[--space-3] text-left font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
               >
                 Filters
-                {active > 0 && <span className="ml-2 text-guards">({active})</span>}
+                {active > 0 && <span className="ml-2 text-guards-text">({active})</span>}
               </button>
             </div>
 
@@ -198,7 +198,7 @@ export function VariantGrid({ initialFilters }: VariantGridProps) {
                 <button
                   type="button"
                   onClick={clearAll}
-                  className="mt-[--space-6] rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+                  className="mt-[--space-6] rounded-[--radius-sm] border border-guards px-[--space-4] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-guards-text transition-colors hover:bg-guards hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
                 >
                   Clear all filters
                 </button>
@@ -474,7 +474,7 @@ function FilterPanel({
         <button
           type="button"
           onClick={onClear}
-          className="self-start rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="self-start rounded-[--radius-sm] border border-ink-4 px-[--space-3] py-[--space-2] font-mono text-mono-xs uppercase tracking-[--tracking-label] text-metal-500 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Clear {active} filter{active === 1 ? "" : "s"}
         </button>
@@ -601,7 +601,7 @@ function ActiveChips({
         <button
           type="button"
           onClick={onClear}
-          className="rounded-[--radius-pill] border border-ink-4 px-[--space-3] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:border-guards hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="rounded-[--radius-pill] border border-ink-4 px-[--space-3] py-1 font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-700 transition-colors hover:border-guards hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Clear all
         </button>
@@ -653,13 +653,13 @@ function VariantCard({ variant }: { variant: IndexedVariant }) {
       </dl>
       <div className="mt-auto flex items-center gap-[--space-3] pt-[--space-4]">
         {variant.special && (
-          <span className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-guards">
+          <span className="font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-guards-text">
             Limited
           </span>
         )}
         <Link
           href={`/compare?a=${variant.key}`}
-          className="relative z-content ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          className="relative z-content ml-auto font-mono text-mono-xs uppercase tracking-[--tracking-mono] text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
         >
           Compare →
         </Link>
