@@ -15,18 +15,18 @@ sequences, 3D and a credits page that names every author and licence.
 
 ## Stack
 
-| Layer | Choice |
-|---|---|
-| Framework | Next.js 16 (App Router, React 19, TypeScript strict) |
-| Build | `next build` (Turbopack is Next 16's default bundler; `--webpack` still available), 179 static + 3 dynamic routes |
-| Styling | Tailwind CSS v4 (`@tailwindcss/postcss`), CSS custom-property design tokens |
-| 3D | three.js 0.186 · @react-three/fiber · drei · postprocessing (Bloom, DoF, vignette) |
-| Animation | GSAP + ScrollTrigger, Lenis smooth scroll, framer-motion (route-local only) |
-| Images | `next/image` over pre-converted AVIF/WebP produced locally by sharp |
-| Data | JSON in `data/`, validated by `data/schema.ts`; slim client catalogue built at build time |
-| Type/format | TypeScript 6 (`strict`), ESLint 9 + `eslint-config-next` |
-| CI | GitHub Actions (`.github/workflows/ci.yml`) |
-| Deploy | Vercel — see [docs/DEPLOY.md](docs/DEPLOY.md) |
+| Layer       | Choice                                                                                                            |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| Framework   | Next.js 16 (App Router, React 19, TypeScript strict)                                                              |
+| Build       | `next build` (Turbopack is Next 16's default bundler; `--webpack` still available), 179 static + 3 dynamic routes |
+| Styling     | Tailwind CSS v4 (`@tailwindcss/postcss`), CSS custom-property design tokens                                       |
+| 3D          | three.js 0.186 · @react-three/fiber · drei · postprocessing (Bloom, DoF, vignette)                                |
+| Animation   | GSAP + ScrollTrigger, Lenis smooth scroll, framer-motion (route-local only)                                       |
+| Images      | `next/image` over pre-converted AVIF/WebP produced locally by sharp                                               |
+| Data        | JSON in `data/`, validated by `data/schema.ts`; slim client catalogue built at build time                         |
+| Type/format | TypeScript 6 (`strict`), ESLint 9 + `eslint-config-next`                                                          |
+| CI          | GitHub Actions (`.github/workflows/ci.yml`)                                                                       |
+| Run mode    | Local Next.js server                                                                                              |
 
 ## Run it
 
@@ -44,15 +44,14 @@ bug. (As of this commit `.gitignore` covers `public/images/**/*` but **not**
 `public/turntables/**`; see [docs/DEPLOY.md](docs/DEPLOY.md) §10.)
 
 ```bash
-npm run deploy:check   # merge-assets --check + tsc --noEmit + eslint
+npm run check          # merge-assets --check + tsc --noEmit + eslint
 npm run build && npm start
 node scripts/smoke.mjs http://localhost:3111   # 177-route crawl, needs Playwright chromium
 node scripts/test-licence-parse.mjs             # licence parser regression test
 ```
 
-Node 24 LTS is what CI and Vercel use (Vercel offers 20/22/24; 20 is deprecated
-from 2026-10-01). The scripts also run unflagged on Node 26 via native type
-stripping, which is what the development machine uses.
+Node 24 LTS is used by CI. The scripts also run unflagged on Node 26 via native
+type stripping, which is what the development machine uses.
 
 ## Regenerating the assets
 
@@ -87,25 +86,25 @@ committed for a deploy to see it.
 
 ## Licence and attribution
 
-* **Images — Wikimedia Commons only.** 700 files, each licence read from that
+- **Images — Wikimedia Commons only.** 700 files, each licence read from that
   file's own licence template and recorded with its author: 366 × CC BY-SA 4.0,
   121 × CC BY 2.0, 113 × CC BY-SA 2.0, 38 × CC0, 36 × CC BY-SA 3.0, 17 × CC BY 4.0,
   7 × CC BY 3.0, 2 × public domain. Nothing is hotlinked; originals are
   downloaded and re-rendered locally. CC BY-SA renders inherit share-alike.
-* **Turntable frames — Wikimedia Commons only.** 210 credit records in
+- **Turntable frames — Wikimedia Commons only.** 210 credit records in
   `data/turntable-credits.json`. Three sources whose licence could not be
   positively verified were deleted along with their frames.
-* **3D** — Sketchfab **embeds** (streamed from Sketchfab, never rehosted) plus two
+- **3D** — Sketchfab **embeds** (streamed from Sketchfab, never rehosted) plus two
   local GLBs under the 3 MB budget, both with recorded authorship. Sketchfab's
   download API is OAuth-gated, so an embed is the only token-free route.
-* **Video** — YouTube embeds only, never downloaded, every id verified live
+- **Video** — YouTube embeds only, never downloaded, every id verified live
   through oEmbed.
-* **Porsche Newsroom is never used for imagery.** Its terms restrict content to
+- **Porsche Newsroom is never used for imagery.** Its terms restrict content to
   journalists' own reporting and forbid passing images to third parties, so it is
   cited as a text source only.
-* **Fonts** — Anton, Inter and JetBrains Mono via `next/font/google`, self-hosted
+- **Fonts** — Anton, Inter and JetBrains Mono via `next/font/google`, self-hosted
   at build time (SIL Open Font License 1.1).
-* **No analytics, no cookies, no tracking, no ads.**
+- **No analytics, no cookies, no tracking, no ads.**
 
 Every record is rendered on [`/credits`](app/credits/page.tsx) — 840 entries
 (700 images, 46 models, 94 videos). Turntable frame credits live in
@@ -120,12 +119,11 @@ turntable is a disclosed parallax pan of a single photograph — flagged
 
 ## Documentation
 
-| Doc | What is in it |
-|---|---|
-| [TODO.md](TODO.md) | **What is left to do**, measured and prioritised (P0 integrity → P3 deploy gaps) |
-| [docs/STATUS.md](docs/STATUS.md) | What is built, what was verified, known gaps and placeholders, deliberate omissions |
-| [docs/DEPLOY.md](docs/DEPLOY.md) | Step-by-step deploy, env vars, the asset step and its cost, post-deploy smoke checklist |
-| [docs/research.md](docs/research.md) | Sourcing and licence research per generation and per provider; environment constraints |
-| [docs/perf.md](docs/perf.md) | Performance and accessibility audit, measured numbers, open proposals |
-| [docs/CONTRACTS.md](docs/CONTRACTS.md) | File-ownership map and the data interchange contracts |
-| `/credits` | Runtime credits page — every image, model and video with author and licence |
+| Doc                                    | What is in it                                                                          |
+| -------------------------------------- | -------------------------------------------------------------------------------------- |
+| [TODO.md](TODO.md)                     | **What is left to do**, measured and prioritised (P0 integrity → P3 deploy gaps)       |
+| [docs/STATUS.md](docs/STATUS.md)       | What is built, what was verified, known gaps and placeholders, deliberate omissions    |
+| [docs/research.md](docs/research.md)   | Sourcing and licence research per generation and per provider; environment constraints |
+| [docs/perf.md](docs/perf.md)           | Performance and accessibility audit, measured numbers, open proposals                  |
+| [docs/CONTRACTS.md](docs/CONTRACTS.md) | File-ownership map and the data interchange contracts                                  |
+| `/credits`                             | Runtime credits page — every image, model and video with author and licence            |

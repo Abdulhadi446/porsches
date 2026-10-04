@@ -52,13 +52,13 @@
     "height": 1098
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-9922-b668f8a336b54954b04fa0dade507300?embed=1",
+    "glb": "/models/sketchfab-b668f8a3/model.glb",
+    "embedUrl": null,
     "sourceId": "b668f8a336b54954b04fa0dade507300",
-    "license": "CC Attribution",
+    "license": "CC Attribution 4.0",
     "author": "BMW'S Lost Proxy",
-    "glb": null,
     "turntable": null,
-    "bytes": null
+    "bytes": 1274400
   },
   "videos": [
     {
@@ -1212,13 +1212,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
+        "embedUrl": null,
         "sourceId": "214a61d759e942e2887290b6e4e50d49",
         "license": "CC Attribution",
         "author": "007",
-        "glb": null,
+        "glb": "/models/sketchfab-214a61d7/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1752012
       },
       "credits": [
         {

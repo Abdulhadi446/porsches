@@ -44,10 +44,15 @@ function currentGeneration() {
 }
 
 /** Use the newest local model so the homepage never falls back to the low-poly body. */
-function localModelGeneration() {
-  return [...GENERATIONS]
-    .reverse()
-    .find((generation) => generation.model3d?.glb);
+function localModel() {
+  for (const generation of [...GENERATIONS].reverse()) {
+    if (generation.model3d?.glb) return generation.model3d;
+    const variantModel = generation.variants.find(
+      (variant) => variant.model3d?.glb,
+    );
+    if (variantModel?.model3d) return variantModel.model3d;
+  }
+  return undefined;
 }
 
 /** Prefer the generation image, then any variant image. */
@@ -73,7 +78,7 @@ export function heroPosterImage(): ImageResult {
  * than the low-poly procedural fallback until a newer local model exists.
  */
 export function heroModel(): ModelResult {
-  return getModel(localModelGeneration()?.model3d);
+  return getModel(localModel());
 }
 
 export interface EraSpec {

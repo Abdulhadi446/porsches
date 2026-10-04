@@ -1561,13 +1561,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt3-rs-4-0-997-95226a73526b46e680b091f1caf6191f?embed=1",
+        "embedUrl": null,
         "sourceId": "95226a73526b46e680b091f1caf6191f",
         "license": "CC Attribution",
         "author": "Antonis_zks",
-        "glb": null,
+        "glb": "/models/sketchfab-95226a73/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 762492
       },
       "credits": [
         {
@@ -1710,13 +1710,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt2-9971-c48298e703c44f2187d5562ef64f4dcf?embed=1",
+        "embedUrl": null,
         "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
         "license": "CC Attribution",
         "author": "Mona x Supercars",
-        "glb": null,
+        "glb": "/models/sketchfab-c48298e7/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 260040
       },
       "credits": [
         {
@@ -1880,13 +1880,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-gt2-rs-with-angle-eyes-41419345868e406eaec8a271e33de3c1?embed=1",
+        "embedUrl": null,
         "sourceId": "41419345868e406eaec8a271e33de3c1",
         "license": "CC Attribution",
         "author": "COOL601",
-        "glb": null,
+        "glb": "/models/sketchfab-41419345/model.glb",
         "turntable": "/turntables/997__gt2-rs",
-        "bytes": null,
+        "bytes": 1939436,
         "turntableSynthetic": true
       },
       "credits": [

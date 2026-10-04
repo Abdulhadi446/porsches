@@ -13,11 +13,12 @@
  *   node scripts/build-client-catalog.ts
  *   (wired to `npm run prebuild` + `npm run predev`)
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ROOT = new URL("..", import.meta.url).pathname;
-const read = <T,>(p: string): T => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
+const read = <T>(p: string): T =>
+  JSON.parse(readFileSync(join(ROOT, p), "utf8"));
 const write = (p: string, v: unknown) =>
   writeFileSync(join(ROOT, p), JSON.stringify(v) + "\n");
 
@@ -64,6 +65,7 @@ interface RawVariant {
   description: string;
   heroImage?: RawImage | null;
   videos?: RawVideo[];
+  model3d?: RawModel | null;
 }
 interface RawGeneration {
   id: string;
@@ -161,6 +163,9 @@ const slim = generations.map((g) => ({
     special: v.special === true,
     production: v.production ?? null,
     heroImage: slimImage(v.heroImage),
+    model3d: v.model3d
+      ? { embedUrl: v.model3d.embedUrl ?? null, glb: v.model3d.glb ?? null }
+      : null,
     videos: (v.videos ?? []).map((x: RawVideo) => ({
       id: x.id,
       title: x.title,

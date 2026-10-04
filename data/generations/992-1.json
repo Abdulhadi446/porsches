@@ -52,13 +52,13 @@
     "height": 1161
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/porsche-911-992-carrera-s-318cfb7279a94e8f96095ec0236f02ad?embed=1",
+    "embedUrl": null,
     "sourceId": "318cfb7279a94e8f96095ec0236f02ad",
     "license": "CC Attribution",
     "author": "Nieve5677",
-    "glb": null,
+    "glb": "/models/sketchfab-318cfb72/model.glb",
     "turntable": null,
-    "bytes": null
+    "bytes": 743976
   },
   "videos": [
     {
@@ -595,13 +595,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2019-porsche-911-carrera-4s-992-e2be40c215e34812af7dfb933bc7967a?embed=1",
+        "embedUrl": null,
         "sourceId": "e2be40c215e34812af7dfb933bc7967a",
         "license": "CC Attribution",
         "author": "Maroi Mister Let Me Think Official 3D Studio",
-        "glb": null,
+        "glb": "/models/sketchfab-e2be40c2/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 471504
       },
       "credits": [
         {
@@ -748,13 +748,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-616ebc4356c74a3b8554c396eb3bd34c?embed=1",
+        "embedUrl": null,
         "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
         "license": "CC Attribution",
         "author": "DisneyCars",
-        "glb": null,
+        "glb": "/models/sketchfab-616ebc43/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 686356
       },
       "credits": [
         {
@@ -904,13 +904,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2018-porsche-911-carrera-gts-4e98dd91d11d4809bb80102edfbde42b?embed=1",
+        "embedUrl": null,
         "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
         "license": "CC Attribution",
         "author": "Maroi Mister Let Me Think Official 3D Studio",
-        "glb": null,
+        "glb": "/models/sketchfab-4e98dd91/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 662700
       },
       "credits": [
         {
@@ -1195,13 +1195,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-s-992-wip-b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
+        "embedUrl": null,
         "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
         "license": "CC Attribution",
         "author": "let's not care abt it",
-        "glb": null,
+        "glb": "/models/sketchfab-b0a77bb9/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1212296
       },
       "credits": [
         {
@@ -1348,13 +1348,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2022-porsche-911-gt3-992-a23f04a665a84177ac97551ce0c720eb?embed=1",
+        "embedUrl": null,
         "sourceId": "a23f04a665a84177ac97551ce0c720eb",
         "license": "CC Attribution",
         "author": "007",
-        "glb": null,
+        "glb": "/models/sketchfab-a23f04a6/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1451652
       },
       "credits": [
         {
@@ -1666,13 +1666,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2023-porsche-911-gt3-rs-992-bbb0f6181a52416bb776713cfd4987dd?embed=1",
+        "embedUrl": null,
         "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
         "license": "CC Attribution",
         "author": "DisneyCars",
-        "glb": null,
+        "glb": "/models/sketchfab-bbb0f618/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1618920
       },
       "credits": [
         {
@@ -1837,13 +1837,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2024-porsche-911-st-f39f7c539a3440428c22a3da2f52af43?embed=1",
+        "embedUrl": null,
         "sourceId": "f39f7c539a3440428c22a3da2f52af43",
         "license": "CC Attribution",
         "author": "Ddiaz Design",
-        "glb": null,
+        "glb": "/models/sketchfab-f39f7c53/model.glb",
         "turntable": "/turntables/992-1__s-t",
-        "bytes": null,
+        "bytes": 1674716,
         "turntableSynthetic": true
       },
       "credits": [
@@ -2012,13 +2012,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2023--porsche-911--dakar--rallye--package-remix-326e90718d164f018e9a673849a3161b?embed=1",
+        "embedUrl": null,
         "sourceId": "326e90718d164f018e9a673849a3161b",
         "license": "CC Attribution",
         "author": "HiQ3D",
-        "glb": null,
+        "glb": "/models/sketchfab-326e9071/model.glb",
         "turntable": "/turntables/992-1__dakar",
-        "bytes": null
+        "bytes": 1895812
       },
       "credits": [
         {
@@ -2180,13 +2180,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-sport-classic-2023-38903fc72658408287a5972285494bd6?embed=1",
+        "embedUrl": null,
         "sourceId": "38903fc72658408287a5972285494bd6",
         "license": "CC Attribution",
         "author": "Nieve5677",
-        "glb": null,
+        "glb": "/models/sketchfab-38903fc7/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1138744
       },
       "credits": [
         {
@@ -2352,13 +2352,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2021-porsche-911-targa-4s-heritage-design-992-c9af184fba65488db9138d9cffcea832?embed=1",
+        "embedUrl": null,
         "sourceId": "c9af184fba65488db9138d9cffcea832",
         "license": "CC Attribution",
         "author": "007",
-        "glb": null,
+        "glb": "/models/sketchfab-c9af184f/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1379500
       },
       "credits": [
         {
@@ -2899,13 +2899,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/2025-porsche-911-targa-4-gts-214a61d759e942e2887290b6e4e50d49?embed=1",
+        "embedUrl": null,
         "sourceId": "214a61d759e942e2887290b6e4e50d49",
         "license": "CC Attribution",
         "author": "007",
-        "glb": null,
+        "glb": "/models/sketchfab-214a61d7/model.glb",
         "turntable": "/turntables/992-1__targa-4-gts",
-        "bytes": null,
+        "bytes": 1752012,
         "turntableSynthetic": true
       },
       "credits": [

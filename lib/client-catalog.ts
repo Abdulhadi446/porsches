@@ -48,6 +48,7 @@ export interface ClientVariant {
   production: string | null;
   /** Full prose lives in the server-only data files; never shipped to the client. */
   heroImage: ClientImage | null;
+  model3d: { embedUrl: string | null; glb: string | null } | null;
   videos: ClientVideo[];
 }
 
@@ -80,7 +81,9 @@ export function clientGeneration(id: string): ClientGeneration | undefined {
 
 export function clientVariants(
   generationId?: string,
-): Array<ClientVariant & { generationId: GenerationId; generationCode: string }> {
+): Array<
+  ClientVariant & { generationId: GenerationId; generationCode: string }
+> {
   const list = generationId
     ? CLIENT_GENERATIONS.filter((g) => g.id === generationId)
     : CLIENT_GENERATIONS;

@@ -52,13 +52,13 @@
     "height": 1103
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/1989-porsche-911-964-carrera-4-22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
+    "embedUrl": null,
     "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
     "license": "CC Attribution",
     "author": "007",
-    "glb": null,
+    "glb": "/models/sketchfab-22edb81d/model.glb",
     "turntable": null,
-    "bytes": null
+    "bytes": 2139024
   },
   "videos": [
     {
@@ -141,13 +141,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/1989-porsche-911-964-carrera-4-22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
+        "embedUrl": null,
         "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
         "license": "CC Attribution",
         "author": "007",
-        "glb": null,
+        "glb": "/models/sketchfab-22edb81d/model.glb",
         "turntable": "/turntables/964__carrera-4",
-        "bytes": null,
+        "bytes": 2139024,
         "turntableSynthetic": true
       },
       "credits": [
@@ -911,13 +911,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/1993-porsche-911-964-turbo-e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
+        "embedUrl": null,
         "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
         "license": "CC Attribution",
         "author": "tonielpro520",
-        "glb": null,
+        "glb": "/models/sketchfab-e0dd6206/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1750228
       },
       "credits": [
         {
@@ -1090,13 +1090,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/1992-porsche-911-964-turbo-s-36-b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
+        "embedUrl": null,
         "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
         "license": "CC Attribution",
         "author": "Maroi Mister Let Me Think Official 3D Studio",
-        "glb": null,
+        "glb": "/models/sketchfab-b868c588/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 627412
       },
       "credits": [
         {

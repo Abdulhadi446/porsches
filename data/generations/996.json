@@ -52,13 +52,13 @@
     "height": 1188
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/porsche-996-bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
+    "embedUrl": null,
     "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
     "license": "CC Attribution",
     "author": "MattDoesBlender",
-    "glb": null,
+    "glb": "/models/sketchfab-bf3bcbc1/model.glb",
     "turntable": null,
-    "bytes": null
+    "bytes": 1274124
   },
   "videos": [
     {
@@ -865,13 +865,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911turbo-996-2000-0aca89de30b94126bc7020109b2f3ef0?embed=1",
+        "embedUrl": null,
         "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
         "license": "CC Attribution",
         "author": "i3bod",
-        "glb": null,
+        "glb": "/models/sketchfab-0aca89de/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 1001444
       },
       "credits": [
         {

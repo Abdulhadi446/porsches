@@ -52,13 +52,13 @@
     "height": 1250
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+    "embedUrl": null,
     "sourceId": "b711966542e143e2829a21e0230fa30e",
     "license": "CC Attribution",
     "author": "Ai 3D Designs",
-    "glb": null,
+    "glb": "/models/sketchfab-b7119665/model.glb",
     "turntable": null,
-    "bytes": null
+    "bytes": 1227632
   },
   "videos": [
     {
@@ -124,13 +124,13 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
+        "embedUrl": null,
         "sourceId": "b711966542e143e2829a21e0230fa30e",
         "license": "CC Attribution",
         "author": "Ai 3D Designs",
-        "glb": null,
+        "glb": "/models/sketchfab-b7119665/model.glb",
         "turntable": "/turntables/993__carrera",
-        "bytes": null
+        "bytes": 1227632
       },
       "credits": [
         {
@@ -432,13 +432,13 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/1996-porsche-993-carrera-4s-5d90416b06854a369e566d3fa286c692?embed=1",
+        "embedUrl": null,
         "sourceId": "5d90416b06854a369e566d3fa286c692",
         "license": "CC Attribution",
         "author": "_shobh19",
-        "glb": null,
+        "glb": "/models/sketchfab-5d90416b/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 175772
       },
       "credits": [
         {
@@ -593,13 +593,13 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
+        "embedUrl": null,
         "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
         "license": "CC Attribution",
         "author": "Mona x Supercars",
-        "glb": null,
+        "glb": "/models/sketchfab-e8e06ddd/model.glb",
         "turntable": "/turntables/993__carrera-s",
-        "bytes": null,
+        "bytes": 351052,
         "turntableSynthetic": true
       },
       "credits": [
@@ -1046,13 +1046,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-993-turbo-low-poly-72f2943569434e4e93ab63f403c6aa1c?embed=1",
+        "embedUrl": null,
         "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
         "license": "CC Attribution",
         "author": "Nieve5677",
-        "glb": null,
+        "glb": "/models/sketchfab-72f29435/model.glb",
         "turntable": "/turntables/993__turbo",
-        "bytes": null
+        "bytes": 256348
       },
       "credits": [
         {

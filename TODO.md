@@ -21,21 +21,19 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
 - [ ] **Delete 71 leftover bare-id image directories (403 MB of duplicates).** Earlier fetch runs
       wrote `/public/images/carrera/`, `/public/images/turbo-s/`, … alongside the canonical
       `/public/images/964/carrera-4s/` style paths. Both exist; the manifest now uses only the
-      gen-scoped ones. Safe to delete the bare-id dirs *after* confirming with
+      gen-scoped ones. Safe to delete the bare-id dirs _after_ confirming with
       `node scripts/convert-images.ts --verify` that nothing references them.
 
 ## P1 — content gaps
 
 ### 3D
+
 - [ ] **36 variants have no 3D at all** (no GLB, no embed, no turntable). They render the composed
-      "3D coming soon" panel. Per generation:
-      - `992-2` (12): `carrera-t`, `targa-4s`, `carrera-gts`, `carrera-4-gts`, `turbo-s`, `gt3`,
-        `gt3-rs`, `gt3-s-c`, `spirit-70`, `carrera-s-mt-package`, `carrera-4-gts-transfagarasan`,
-        `gt3-90-fa-porsche` — no Commons file names a T-Hybrid car or dates one to 2025+, so no
-        sequence can be built even from photos that exist
-      - `901` (6): `911-t-2.0`, `911-l-2.0`, `911-e-2.0`, `cabriolet-hebmuller`, `911-r`, `911-t-r`
-      - `964` (7), `gseries` (4), `996` (3), `991` (2: `935`, `turbo-gt`), `993` (1: `gt1`),
-        `992-1` (1: `turbo-50`)
+      "3D coming soon" panel. Per generation: - `992-2` (12): `carrera-t`, `targa-4s`, `carrera-gts`, `carrera-4-gts`, `turbo-s`, `gt3`,
+      `gt3-rs`, `gt3-s-c`, `spirit-70`, `carrera-s-mt-package`, `carrera-4-gts-transfagarasan`,
+      `gt3-90-fa-porsche` — no Commons file names a T-Hybrid car or dates one to 2025+, so no
+      sequence can be built even from photos that exist - `901` (6): `911-t-2.0`, `911-l-2.0`, `911-e-2.0`, `cabriolet-hebmuller`, `911-r`, `911-t-r` - `964` (7), `gseries` (4), `996` (3), `991` (2: `935`, `turbo-gt`), `993` (1: `gt1`),
+      `992-1` (1: `turbo-50`)
 - [ ] **90 of 103 turntables are parallax pans of a single photo, not real orbits.** Labelled
       `turntableSynthetic: true` in the data and disclosed in the viewer. Only 13 are genuine
       multi-angle same-car sequences. **Highest-value human task: one photographer walking one car
@@ -52,6 +50,7 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
       under the 3 MB budget, and wires them into the viewer. Nothing else needs to change.
 
 ### Imagery
+
 - [ ] **`991/turbo-gt` has no hero image and no gallery** — the only variant on the site in that
       state. Cause: Porsche never published anything about the 2018 Turbo GT, so the search returns
       nothing era-accurate. Either drop the variant (it has no specs either) or find one photo with
@@ -63,24 +62,21 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
       are not referenced anywhere in `data/images.json`.
 
 ### Video
+
 - [ ] **10 variants have no dedicated video** and fall back to their generation's films:
       `901/cabriolet-hebmuller`, `901/911-s-2.4`, `gseries/carrera-2.7`, `gseries/turbo-s-3.3`,
       `996/carrera-4s`, `997/gts`, `992-1/turbo-s`, `992-2/carrera-4-gts`, `992-2/targa-4-gts`,
       `992-2/gt3-touring`. For each, search for a newly published film.
 
 ### Data honesty (no code needed, research only)
+
 - [ ] **76 generation-level + 284 variant-level `missing[]` notes** are recorded rather than guessed.
-      The notable unresolved ones:
-      - `901` **Hebmüller Cabriolet production count** — unverifiable; the widely quoted "130" is
-        flagged do-not-publish
-      - Conflicting production totals: Carrera RS 2.7 (1 580 / 1 590), 964 (63 762 / 62 172 /
-        66 571), 993 (68 881 / 68 029 / 67 535), 997 (213 004 / 215 092), 991 (217 930 / 233 540),
-        964 Turbo S Flachbau (75/76/90/93), 993 Turbo S (345/336/435)
-      - **901-era 0–100 km/h and kerb weights** — Porsche never published them; only magazine
-        0–60 figures exist
-      - **992.2 DIN weights** for Carrera Cabriolet / Carrera S Cabriolet / Carrera 4S / Targa 4S
-        (US curb weights are used instead)
-      - **991.2 Turbo GT** has every spec `null` on purpose — Porsche published nothing
+      The notable unresolved ones: - `901` **Hebmüller Cabriolet production count** — unverifiable; the widely quoted "130" is
+      flagged do-not-publish - Conflicting production totals: Carrera RS 2.7 (1 580 / 1 590), 964 (63 762 / 62 172 /
+      66 571), 993 (68 881 / 68 029 / 67 535), 997 (213 004 / 215 092), 991 (217 930 / 233 540),
+      964 Turbo S Flachbau (75/76/90/93), 993 Turbo S (345/336/435) - **901-era 0–100 km/h and kerb weights** — Porsche never published them; only magazine
+      0–60 figures exist - **992.2 DIN weights** for Carrera Cabriolet / Carrera S Cabriolet / Carrera 4S / Targa 4S
+      (US curb weights are used instead) - **991.2 Turbo GT** has every spec `null` on purpose — Porsche published nothing
 - [ ] **`993/gt1`** is included with a `missing[]` caveat that it is arguably not a "911" (mid-engined
       GT1). Decide whether it stays.
 
@@ -98,18 +94,8 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
 - [ ] **INP not measured** (only TBT). Lighthouse run-to-run variance on this shared 8-core box is
       46–93 perf for identical builds, so use the CDP-throttled methodology in `docs/perf.md §8`.
 
-## P3 — deployment & verification gaps
+## P3 — local verification gaps
 
-- [ ] **No Vercel deploy has ever been run.** `vercel.json`, `.github/workflows/ci.yml` and
-      `docs/DEPLOY.md` exist and the CI chain is written, but it has never executed end to end.
-      Set Node 24.x in the dashboard (vercel.json cannot express it).
-- [ ] **`.vercelignore` negation untested** against a real upload.
-- [ ] **Cloudflare Pages marked "not verified"** — needs an adapter plus a custom image loader, and
-      the 3 dynamic routes exceed the 128 MB Worker memory limit.
-- [ ] **Decide where the generated media lives.** 416 MB of images and 81 MB of turntable frames are
-      gitignored, so a plain Vercel deploy ships **no images at all** (placeholders only). Options:
-      object storage + `remotePatterns` (recommended, documented in `docs/DEPLOY.md`), or
-      `P911_FETCH_ASSETS=1` per build (slow, rate-limited).
 - [ ] **No screenshot/visual regression baseline.** A future agent found two content bugs (blurry
       heroes, a chapter hero clobbered by an unrelated fetch) that every automated check passed.
       Worth a Playwright screenshot job over the 9 generation pages + a few variants.

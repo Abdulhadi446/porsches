@@ -52,13 +52,13 @@
     "height": 1145
   },
   "model3d": {
-    "embedUrl": "https://sketchfab.com/3d-models/porsche-911-carrera-s-991-97785983d3a949cf87e9ee6bf49f4032?embed=1",
+    "embedUrl": null,
     "sourceId": "97785983d3a949cf87e9ee6bf49f4032",
     "license": "CC Attribution",
     "author": "Mona x Supercars",
-    "glb": null,
+    "glb": "/models/sketchfab-97785983/model.glb",
     "turntable": null,
-    "bytes": null
+    "bytes": 541348
   },
   "videos": [
     {
@@ -312,13 +312,13 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-carrera-s-9912-e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
+        "embedUrl": null,
         "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
         "license": "CC Attribution",
         "author": "Mona x Supercars",
-        "glb": null,
+        "glb": "/models/sketchfab-e8e06ddd/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 351052
       },
       "credits": [
         {
@@ -1869,13 +1869,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-9911-gt3-rs-2b02e300bb094a2293f4b714e2ae7ddf?embed=1",
+        "embedUrl": null,
         "sourceId": "2b02e300bb094a2293f4b714e2ae7ddf",
         "license": "CC Attribution",
         "author": "Casacade Models",
-        "glb": null,
+        "glb": "/models/sketchfab-2b02e300/model.glb",
         "turntable": null,
-        "bytes": null
+        "bytes": 551888
       },
       "credits": [
         {
@@ -2039,13 +2039,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-991-gt2-rs-cs-evo-wwwvecarzcom-98767072b9f94f8eb6c4512b7be891c4?embed=1",
+        "embedUrl": null,
         "sourceId": "98767072b9f94f8eb6c4512b7be891c4",
         "license": "CC Attribution",
         "author": "vecarz",
-        "glb": null,
+        "glb": "/models/sketchfab-98767072/model.glb",
         "turntable": "/turntables/991__gt2-rs",
-        "bytes": null,
+        "bytes": 2830616,
         "turntableSynthetic": true
       },
       "credits": [
@@ -2208,13 +2208,13 @@
         }
       ],
       "model3d": {
-        "embedUrl": "https://sketchfab.com/3d-models/porsche-911-r-2017-a8f40dc2180142c0887d251199d74077?embed=1",
+        "embedUrl": null,
         "sourceId": "a8f40dc2180142c0887d251199d74077",
         "license": "CC Attribution",
         "author": "Ulix21",
-        "glb": null,
+        "glb": "/models/sketchfab-a8f40dc2/model.glb",
         "turntable": "/turntables/991__r",
-        "bytes": null,
+        "bytes": 58704,
         "turntableSynthetic": true
       },
       "credits": [

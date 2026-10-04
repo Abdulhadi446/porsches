@@ -1,30 +1,35 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState, type MouseEvent } from "react";
+import type { ClientGeneration as Generation } from "#lib/client-catalog";
+import { CLIENT_GENERATIONS, type ClientGeneration } from "#lib/client-catalog";
 import {
-  CLIENT_GENERATIONS,
-  type ClientGeneration,
-} from "#lib/client-catalog";
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type MouseEvent,
+} from "react";
+import { StageBackdrop } from "./backdrop";
+import { TimelineChapter } from "./chapter";
+import { TimelineHandoff, TimelineLeadIn } from "./handoff";
+import { useSmoothScroll } from "./lenis-provider";
+import { TimelineProgressRail } from "./progress-rail";
+import { TimelineScrollHint } from "./scroll-hint";
+import { TimelineGenerationIndex } from "./timeline-index";
+import { TimelineYearScrub } from "./year-scrub";
 
 const GENERATIONS = CLIENT_GENERATIONS;
 
 /** 1963 → today, derived from the catalogue itself. */
-function timelineRange(gens: ClientGeneration[] = GENERATIONS): [number, number] {
+function timelineRange(
+  gens: ClientGeneration[] = GENERATIONS,
+): [number, number] {
   const start = Math.min(...gens.map((g) => g.yearsStart));
   const end = Math.max(
     ...gens.map((g) => g.yearsEnd ?? new Date().getFullYear()),
   );
   return [start, end];
 }
-import type { ClientGeneration as Generation } from "#lib/client-catalog";
-import { useSmoothScroll } from "./lenis-provider";
-import { StageBackdrop } from "./backdrop";
-import { TimelineChapter } from "./chapter";
-import { TimelineHandoff, TimelineLeadIn } from "./handoff";
-import { TimelineProgressRail } from "./progress-rail";
-import { TimelineScrollHint } from "./scroll-hint";
-import { TimelineGenerationIndex } from "./timeline-index";
-import { TimelineYearScrub } from "./year-scrub";
 
 /* ------------------------------------------------------------------ *
  * Tunables — all lengths are expressed in viewport heights so the
@@ -120,14 +125,13 @@ export function Timeline() {
           root.dataset.motion = "on";
 
           const stage = root.querySelector<HTMLElement>("[data-ts-stage]");
-          const scroller = root.querySelector<HTMLElement>("[data-ts-scroller]");
+          const scroller =
+            root.querySelector<HTMLElement>("[data-ts-scroller]");
           const scrub = root.querySelector<HTMLElement>("[data-ts-scrub]");
           const track = root.querySelector<HTMLElement>(
             "[data-ts-scrub-track]",
           );
-          const readout = root.querySelector<HTMLElement>(
-            "[data-ts-readout]",
-          );
+          const readout = root.querySelector<HTMLElement>("[data-ts-readout]");
           const chapters = q("[data-ts-chapter]");
           const stops = q("[data-ts-stop]");
           const numerals = q("[data-ts-numeral]");
@@ -138,6 +142,17 @@ export function Timeline() {
           if (!stage || !scroller || !scrub || !track || !chapters.length) {
             return;
           }
+
+          // Tailwind data variants are element-scoped. Mirror the root motion
+          // state onto every timeline node whose layout changes when pinned.
+          const motionNodes = [
+            stage,
+            scroller,
+            scrub,
+            root.querySelector<HTMLElement>("[data-ts-backdrop]"),
+            ...chapters,
+          ].filter((node): node is HTMLElement => node !== null);
+          for (const node of motionNodes) node.dataset.motion = "on";
 
           const isTight = () => window.innerWidth < 768;
           /** px of scroll per chapter, frozen at build time so the pin
@@ -301,7 +316,10 @@ export function Timeline() {
               const next =
                 time >= sweepStart
                   ? SWEEPING
-                  : Math.min(chapters.length - 1, Math.max(0, Math.floor(time)));
+                  : Math.min(
+                      chapters.length - 1,
+                      Math.max(0, Math.floor(time)),
+                    );
               if (next !== mirror.current.index) {
                 mirror.current.index = next;
                 setActiveIndex(next);
@@ -337,6 +355,9 @@ export function Timeline() {
       disposed = true;
       mm?.revert();
       context?.revert();
+      root
+        .querySelectorAll<HTMLElement>("[data-motion]")
+        .forEach((node) => (node.dataset.motion = "off"));
       root.dataset.motion = "off";
     };
   }, [range]);
