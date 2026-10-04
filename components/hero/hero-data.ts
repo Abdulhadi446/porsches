@@ -9,7 +9,12 @@
  * This module is pure and safe on both the server and the client.
  */
 
-import { getImage, getModel, type ImageResult, type ModelResult } from "#lib/assets";
+import {
+  getImage,
+  getModel,
+  type ImageResult,
+  type ModelResult,
+} from "#lib/assets";
 import { CLIENT_GENERATIONS } from "#lib/client-catalog";
 
 const GENERATIONS = CLIENT_GENERATIONS;
@@ -33,9 +38,16 @@ export const HERO_SCROLL_VH = 260;
 
 export const HERO_SCROLL_HINT = "Scroll · 360°";
 
-/** The generation the hero represents: the newest one. */
+/** The generation the copy and poster represent: the newest one. */
 function currentGeneration() {
   return GENERATIONS[GENERATIONS.length - 1] ?? GENERATIONS[0];
+}
+
+/** Use the newest local model so the homepage never falls back to the low-poly body. */
+function localModelGeneration() {
+  return [...GENERATIONS]
+    .reverse()
+    .find((generation) => generation.model3d?.glb);
 }
 
 /** Prefer the generation image, then any variant image. */
@@ -46,22 +58,22 @@ export function heroPosterImage(): ImageResult {
   const direct = getImage(generation.heroImage, { alt });
   if (!direct.fallback) return direct;
   for (const variant of generation.variants) {
-    const image = getImage(variant.heroImage, { alt: `${variant.name} — ${alt}` });
+    const image = getImage(variant.heroImage, {
+      alt: `${variant.name} — ${alt}`,
+    });
     if (!image.fallback) return image;
   }
   return getImage(generation.timelineImage, { alt });
 }
 
 /**
- * The hero car. `getModel` already implements the documented preference order
- * (local `.glb` → Sketchfab embed → turntable images), so the moment ASSET-3D
- * records a licensed local GLB for the newest generation, `<Car />` picks it up
- * and the procedural silhouette steps aside. Sketchfab embeds cannot be drawn
- * inside this canvas, so `embed` / `turntable` / `none` all keep the procedural
- * body (see README.md).
+ * The hero car. The newest generation currently has only a Sketchfab embed,
+ * which cannot be drawn inside this R3F canvas. Select the newest generation
+ * with a licensed local GLB instead, so the homepage uses real geometry rather
+ * than the low-poly procedural fallback until a newer local model exists.
  */
 export function heroModel(): ModelResult {
-  return getModel(currentGeneration()?.model3d);
+  return getModel(localModelGeneration()?.model3d);
 }
 
 export interface EraSpec {
@@ -103,7 +115,8 @@ export function heroEraSpecs(): EraSpec[] {
       .sort(
         (a, b) =>
           (a.yearsStart ?? Number.MAX_SAFE_INTEGER) -
-            (b.yearsStart ?? Number.MAX_SAFE_INTEGER) || a.id.localeCompare(b.id),
+            (b.yearsStart ?? Number.MAX_SAFE_INTEGER) ||
+          a.id.localeCompare(b.id),
       );
     const variant = candidates[0];
     const power = variant?.powerPs != null ? `${variant.powerPs} PS` : "—";
@@ -112,7 +125,9 @@ export function heroEraSpecs(): EraSpec[] {
       year: generation.yearsStart,
       power,
       name: variant?.name ?? generation.name,
-      years: variant?.years ?? `${generation.yearsStart}–${generation.yearsEnd ?? "today"}`,
+      years:
+        variant?.years ??
+        `${generation.yearsStart}–${generation.yearsEnd ?? "today"}`,
       accent: generation.accent,
       tagline: generation.tagline,
       index,

@@ -92,6 +92,51 @@
   }
 }
 
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-enter-paint {
+  from {
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-hint-line {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+.hero-enter {
+  animation: hero-enter 1.1s var(--ease-out-expo) var(--hero-delay, 0s) both;
+}
+
+.hero-enter-paint {
+  animation: hero-enter-paint 0.7s var(--ease-out-expo) var(--hero-delay, 0s)
+    both;
+}
+
+.hero-hint-line {
+  animation: hero-hint-line 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
