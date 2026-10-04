@@ -57,20 +57,20 @@
     },
     "993": {
       "heroImage": {
-        "src": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
-        "alt": "Last Air-Cooled (993) — hero photograph",
-        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgABABoJZgCdH8AFW1xyXRAAP7b5/ZyrND1h/EtnVYX7Mg/jpuyjFri7/cFzjb+610vzKZB0cz8giTJbhtAivyAApe70gAAAA==",
-        "creditId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
+        "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+        "alt": "993 Carrera Coupé — generation hero photograph",
+        "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+        "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
         "width": 1920,
-        "height": 996
+        "height": 1254
       },
       "timelineImage": {
-        "src": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
-        "alt": "Last Air-Cooled (993) — wide view for the timeline",
-        "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJYwC7AYtpm+oqL0AAP5IvveapjrU2qjhbvSZkQMiLt7TVbcv66CjGZDgspjAF7VhMOaCW4jnpCfg4eABmHEAAAA=",
-        "creditId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
+        "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+        "alt": "993 Carrera S — generation timeline photograph",
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+        "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
         "width": 1920,
-        "height": 1140
+        "height": 1250
       }
     },
     "996": {
@@ -6556,7 +6556,7 @@
     "993/carrera": {
       "heroImage": {
         "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
-        "alt": "911 Carrera",
+        "alt": "993 Carrera Coupé — generation hero photograph",
         "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
         "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
         "width": 1920,
@@ -6760,7 +6760,7 @@
     "993/carrera-s": {
       "heroImage": {
         "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
-        "alt": "911 Carrera S",
+        "alt": "993 Carrera S — generation timeline photograph",
         "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
         "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
         "width": 1920,

@@ -84,10 +84,18 @@ interface RawGeneration {
   variants?: RawVariant[];
 }
 
-/** Keep the smallest usable rendition for client thumbnails (640px AVIF). */
+/**
+ * Store the LARGEST available rendition, not a thumbnail.
+ *
+ * next/image chooses the delivered width from the `sizes` attribute and runs
+ * the request through the optimizer, so a full-bleed hero asking for w=1600
+ * gets a sharp 1920 source. Handing it the 640px file instead (as this script
+ * used to) makes the optimizer upscale a small file — measurably soft heroes on
+ * large displays, and `w=2560` requests against 640px files in the timeline.
+ */
 function thumb(src: string | undefined | null): string | undefined {
   if (!src) return undefined;
-  return src.replace(/-1920\.(avif|webp)$/, "-640.$1");
+  return src;
 }
 
 function slimImage(

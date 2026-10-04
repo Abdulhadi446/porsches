@@ -36,20 +36,20 @@
     }
   ],
   "heroImage": {
-    "src": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
-    "alt": "Last Air-Cooled (993) — hero photograph",
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgABABoJZgCdH8AFW1xyXRAAP7b5/ZyrND1h/EtnVYX7Mg/jpuyjFri7/cFzjb+610vzKZB0cz8giTJbhtAivyAApe70gAAAA==",
-    "creditId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
+    "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+    "alt": "993 Carrera Coupé — generation hero photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
+    "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
     "width": 1920,
-    "height": 996
+    "height": 1254
   },
   "timelineImage": {
-    "src": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
-    "alt": "Last Air-Cooled (993) — wide view for the timeline",
-    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkABABoJYwC7AYtpm+oqL0AAP5IvveapjrU2qjhbvSZkQMiLt7TVbcv66CjGZDgspjAF7VhMOaCW4jnpCfg4eABmHEAAAA=",
-    "creditId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
+    "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+    "alt": "993 Carrera S — generation timeline photograph",
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
+    "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
     "width": 1920,
-    "height": 1140
+    "height": 1250
   },
   "model3d": {
     "embedUrl": "https://sketchfab.com/3d-models/3d-porsche-911-carrera-1995-b711966542e143e2829a21e0230fa30e?embed=1",
@@ -116,7 +116,7 @@
       "production": "23,127 coupés (14,541 at 272 PS + 8,586 at 285 PS)",
       "heroImage": {
         "src": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
-        "alt": "911 Carrera",
+        "alt": "993 Carrera Coupé — generation hero photograph",
         "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoABABoJaACsADM0LJx4AAA/jRru5GcDxUoHJkLu01LQ6/wWdjKuYBqfPXZT3rH9PK94mg5HiDtGmDd4LxLzEr+CDYt9zGgAA==",
         "creditId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
         "width": 1920,
@@ -585,7 +585,7 @@
       "production": "3,714 worldwide (1,752 of them North American, per Wikipedia)",
       "heroImage": {
         "src": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
-        "alt": "911 Carrera S",
+        "alt": "993 Carrera S — generation timeline photograph",
         "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoABABoJYgC7AEXf6L86AAA/tvh3UUh9yT3bVgBp25z3ej5QEgJmH9Q1VYieUG0PLUG3Eh43gKuWN/xDcZCsoMRMkAA",
         "creditId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
         "width": 1920,
@@ -2341,28 +2341,28 @@
   ],
   "credits": [
     {
-      "assetId": "img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2",
+      "assetId": "img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3ARohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
-      "license": "CC BY-SA 2.0",
-      "author": "Bill Abbott",
-      "retrieved": "2026-10-03",
-      "sourceId": "File:Rohr_1996_993_911_GT1_passenger_seat_(6305874567).jpg",
-      "localPath": "/images/993/img-rohr-1996-993-911-gt1-passenger-seat-6305874567-749e66d2-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 2794×1450px (375 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "url": "https://commons.wikimedia.org/wiki/File%3A1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1994_Porsche_911_993_Carrera_Auto_Widebody_(38066).jpg",
+      "localPath": "/images/carrera/img-1994-porsche-911-993-carrera-auto-widebody-38066-cb493b2a-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 15712×10264px (18179 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
-      "assetId": "img-porsche-911-gt1-993-scd-24-9c2f598b",
+      "assetId": "img-1997-porsche-911-993-carrera-s-80592-b6bf16ce",
       "kind": "image",
       "source": "wikimedia",
-      "url": "https://commons.wikimedia.org/wiki/File%3APorsche_911_GT1_993_SCD_24.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3A1997_Porsche_911_993_Carrera_S_(80592).jpg",
       "license": "CC BY-SA 4.0",
-      "author": "MrWalkr",
-      "retrieved": "2026-10-03",
-      "sourceId": "File:Porsche_911_GT1_993_SCD_24.jpg",
-      "localPath": "/images/993/img-porsche-911-gt1-993-scd-24-9c2f598b-1920.avif",
-      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 9616×5711px (6446 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
+      "author": "Calreyn88",
+      "retrieved": "2026-10-02",
+      "sourceId": "File:1997_Porsche_911_993_Carrera_S_(80592).jpg",
+      "localPath": "/images/993/img-1997-porsche-911-993-carrera-s-80592-b6bf16ce-1920.avif",
+      "note": "licence parsed from the rendered Commons file page; Commons assessment: none recorded; source 16320×10628px (16292 kB original), rendered locally to AVIF 640/1280/1920 + WebP 1280"
     },
     {
       "assetId": "model-993",
