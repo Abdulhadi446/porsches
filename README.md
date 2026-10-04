@@ -122,7 +122,8 @@ turntable is a disclosed parallax pan of a single photograph — flagged
 
 | Doc | What is in it |
 |---|---|
-| [TODO.md (what is left) · docs/STATUS.md](docs/STATUS.md) | What is built, what was verified, known gaps and placeholders, deliberate omissions |
+| [TODO.md](TODO.md) | **What is left to do**, measured and prioritised (P0 integrity → P3 deploy gaps) |
+| [docs/STATUS.md](docs/STATUS.md) | What is built, what was verified, known gaps and placeholders, deliberate omissions |
 | [docs/DEPLOY.md](docs/DEPLOY.md) | Step-by-step deploy, env vars, the asset step and its cost, post-deploy smoke checklist |
 | [docs/research.md](docs/research.md) | Sourcing and licence research per generation and per provider; environment constraints |
 | [docs/perf.md](docs/perf.md) | Performance and accessibility audit, measured numbers, open proposals |
