@@ -41,6 +41,9 @@ export const PLACEHOLDER_IMAGE: ImageResult = {
  * Draco/Basis decoders stay committed under `/public`, so this only rewrites
  * the two media prefixes.
  *
+ * R2 object keys mirror the on-disk layout under `public/`, so the site's
+ * `/images/...` becomes `<host>/public/images/...` on the bucket.
+ *
  * With no `NEXT_PUBLIC_MEDIA_HOST` set (a plain clone, or a Vercel deploy that
  * never uploaded media) the path is returned unchanged and the site keeps
  * serving the committed silhouette placeholder exactly as before. Paths that
@@ -52,7 +55,7 @@ const MEDIA_HOST = process.env.NEXT_PUBLIC_MEDIA_HOST ?? "";
 export function mediaSrc(src: string): string {
   if (!MEDIA_HOST || !src.startsWith("/")) return src;
   if (!MEDIA_PREFIXES.some((p) => src.startsWith(p))) return src;
-  return `${MEDIA_HOST.replace(/\/$/, "")}${src}`;
+  return `${MEDIA_HOST.replace(/\/$/, "")}/public${src}`;
 }
 
 /** Resolve a hero/gallery image with a guaranteed fallback. */
