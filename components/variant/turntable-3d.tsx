@@ -19,6 +19,10 @@ import { cx } from "./lib/format";
  * three consecutive misses, capped at 72 frames (one 360° at 5° steps).
  * If nothing resolves, the poster stays and the section says so.
  *
+ * The frames render through `SafeImage` with `plain` — they are already final
+ * 640px AVIF/WebP, so the next/image optimizer has nothing to gain and would
+ * only proxy-fetch them off the R2 media host (see `mediaSrc` in #lib/assets).
+ *
  * Interaction:
  *  - pointer drag (and a plain click position) scrubs horizontally;
  *  - the stage is a real `role="slider"`: ←/→ one frame, ↑/↓ five, Home/End to
@@ -217,6 +221,7 @@ export function Turntable3D({
                 image={{ src: frameUrl(base, frame), alt: "", width: 1600, height: 900 }}
                 decorative
                 fill
+                plain
                 sizes="(min-width: 1024px) 100vw, 100vw"
                 className="object-cover"
               />

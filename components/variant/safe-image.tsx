@@ -38,6 +38,8 @@ export interface SafeImageProps {
   style?: CSSProperties;
   /** forwarded to the DOM node (GSAP targets, test hooks) */
   "data-hero-media"?: string;
+  /** render as a plain <img>, bypassing the next/image optimizer */
+  plain?: boolean;
 }
 
 const FILL = "absolute inset-0 h-full w-full";
@@ -54,14 +56,15 @@ export function SafeImage({
   className,
   style,
   "data-hero-media": heroMedia,
+  plain = false,
 }: SafeImageProps) {
   const src = image.src;
   const resolvedAlt = decorative ? "" : (alt ?? image.alt ?? "");
   const blurDataURL = image.blurDataURL ?? undefined;
 
-  if (/\.svg($|\?)/i.test(src)) {
+  if (plain || /\.svg($|\?)/i.test(src)) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element -- SVG placeholders cannot pass through the Next optimizer (see note above)
+      // eslint-disable-next-line @next/next/no-img-element -- SVG placeholders and `plain` assets (turntable frames) bypass the Next optimizer; see note above
       <img
         src={src}
         alt={resolvedAlt}

@@ -31,6 +31,30 @@ export const PLACEHOLDER_IMAGE: ImageResult = {
   fallback: true,
 };
 
+/**
+ * Resolve a `/public` media path against the CDN that serves it.
+ *
+ * The two large generated media trees — `/images/**` (AVIF/WebP renders) and
+ * `/turntables/**` (frame sequences) — are too big to ship in git, so they are
+ * uploaded to Cloudflare R2 and served from a custom domain. `NEXT_PUBLIC_MEDIA_HOST`
+ * is that origin (e.g. `https://media.example.com`). Models, sounds and the
+ * Draco/Basis decoders stay committed under `/public`, so this only rewrites
+ * the two media prefixes.
+ *
+ * With no `NEXT_PUBLIC_MEDIA_HOST` set (a plain clone, or a Vercel deploy that
+ * never uploaded media) the path is returned unchanged and the site keeps
+ * serving the committed silhouette placeholder exactly as before. Paths that
+ * are already absolute (https://) or protocol-relative (//) pass through.
+ */
+const MEDIA_PREFIXES = ["/images/", "/turntables/"] as const;
+const MEDIA_HOST = process.env.NEXT_PUBLIC_MEDIA_HOST ?? "";
+
+export function mediaSrc(src: string): string {
+  if (!MEDIA_HOST || !src.startsWith("/")) return src;
+  if (!MEDIA_PREFIXES.some((p) => src.startsWith(p))) return src;
+  return `${MEDIA_HOST.replace(/\/$/, "")}${src}`;
+}
+
 /** Resolve a hero/gallery image with a guaranteed fallback. */
 export function getImage(
   ref: ImageRef | null | undefined,
@@ -41,6 +65,7 @@ export function getImage(
   }
   return {
     ...ref,
+    src: mediaSrc(ref.src),
     alt: ref.alt || opts.alt || PLACEHOLDER_IMAGE.alt,
     fallback: false,
   };
@@ -93,7 +118,7 @@ export function getModel(
   if (model.turntable) {
     return {
       kind: "turntable",
-      turntable: model.turntable,
+      turntable: mediaSrc(model.turntable),
       turntableSynthetic: model.turntableSynthetic === true,
       license: model.license,
       author: model.author,
