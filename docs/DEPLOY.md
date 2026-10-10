@@ -360,11 +360,27 @@ R2_ACCOUNT_ID=… R2_ACCESS_KEY_ID=… R2_SECRET_ACCESS_KEY=… R2_BUCKET=… \
 ```
 
 The script (`scripts/upload-r2.ts`) PUTs over R2's S3-compatible API with SigV4
-signed by hand — no AWS SDK, no new dependency. It **never deletes**, skips
-unchanged files (same size, via a signed HEAD) unless `--force`, and always
-skips `public/images/_placeholder/**` so the committed local fallback stays a
-deploy fallback rather than a bucket object. Re-running after a partial upload
-is safe.
+signed by hand — no AWS SDK, no new dependency. It **never deletes** (except the
+explicit `--delete-only <keys>` mode), skips unchanged files (same size, via a
+signed HEAD) unless `--force`, and always skips `public/images/_placeholder/**`
+so the committed local fallback stays a deploy fallback rather than a bucket
+object. It loads the `R2_*` vars from `.env` when present, retries transient
+network errors (`ETIMEDOUT`/`ENETUNREACH`/`ECONNRESET`) with a small concurrency
+pool, and reports per-file progress. Re-running after a partial upload is safe.
+
+**Bucket shape (the gotcha that breaks the first URL attempt).** The object keys
+mirror the on-disk layout under `public/`, so they are `public/images/…` and
+`public/turntables/…`. The custom domain serves keys **without** the bucket
+prefix: `https://<domain>/public/images/…` returns 200, while
+`https://<domain>/<bucket>/public/images…` returns 404. `mediaSrc()` in
+`lib/assets.ts` already inserts the `/public` segment, so the two must stay in
+lockstep — if you ever change the key layout, change `mediaSrc()` too.
+
+**Working reference values (this project).** account id
+`3849f17a9bbe8ad4f0af846f269c30a9`, bucket `porsches`, custom domain
+`content.thetrillioniar.me`, public dev URL
+`https://pub-6fdfd945b83248eaa377046c982aab48.r2.dev`. The last upload wrote
+5 595 objects (484.7 MB) with 1 skipped (the placeholder) and 0 failed.
 
 **Point the site at the bucket**
 
@@ -411,9 +427,11 @@ Stated plainly so nobody mistakes an estimate for a measurement:
   properties (`framework`, `installCommand`, `devCommand`, `buildCommand`,
   `headers`) and every npm script it invokes was run locally, but the first real
   deploy has not happened.
-* **`npx next build` was not run from here** (out of scope for this pass), so the
-  build wall-clock, the peak memory and whether a Vercel build container OOMs are
-  unmeasured. §5 lists what was measured.
+* **`npx next build` was run locally** with `NEXT_PUBLIC_MEDIA_HOST` set (it
+  completes, writes a fresh `BUILD_ID`, and the prerendered HTML carries the
+  R2 custom-domain rewrite), and the 179-route smoke crawl passed against that
+  build — so the build wall-clock and the R2 image path are measured. Whether a
+  Vercel build container OOMs is still unmeasured (§5 lists what was measured).
 * **The CI workflows have never executed end to end.** Both files parse as YAML
   and every command in them was run locally where it does not need a build
   (`merge-assets --check`, `tsc`, `eslint`, the licence test, the stub generator,
