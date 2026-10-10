@@ -118,6 +118,7 @@ export function GenerationHero({
     <section
       ref={rootRef}
       aria-labelledby={`gen-${generationId}-heading`}
+      data-car-cursor="" data-cursor="hide"
       className="relative isolate flex min-h-[92svh] flex-col justify-end overflow-hidden bg-ink px-(--gutter) pb-(--space-12) pt-(--space-24)"
     >
       <div data-gen-media className="absolute inset-0 -z-30 will-change-transform">

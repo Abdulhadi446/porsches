@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GENERATIONS, getVariant } from "#lib/generations";
 import { getGallery, getImage, getModel } from "#lib/assets";
+import { getEngineSound } from "#lib/sounds";
 import { VariantHero } from "#components/variant/variant-hero";
 import { SpecCounters } from "#components/variant/spec-counters";
 import { Viewer3D } from "#components/variant/viewer-3d";
@@ -14,7 +15,7 @@ import { DataNotes } from "#components/variant/data-notes";
 import { buildSpecRows } from "#components/variant/lib/specs";
 import { pickSiblings } from "#components/variant/lib/siblings";
 import { variantVideos } from "#components/variant/lib/videos";
-import { creditsForVariant, modelAttribution } from "#components/variant/lib/credits";
+import { creditsForVariant, lookupCredit, modelAttribution } from "#components/variant/lib/credits";
 import { bodyStyleList, yearRange } from "#components/variant/lib/format";
 
 /**
@@ -89,6 +90,15 @@ export default async function VariantPage({
   const creditRows = creditsForVariant(v, renderedImages);
   const attribution = modelAttribution(v.model3d);
 
+  // the generation's engine recording, if the data has one for it
+  const engineSound = getEngineSound(gen.id);
+  if (engineSound) {
+    const soundCredit = lookupCredit(engineSound.creditId);
+    if (soundCredit && !creditRows.some((row) => row.credit.assetId === soundCredit.assetId)) {
+      creditRows.push({ context: "Engine recording", credit: soundCredit });
+    }
+  }
+
   return (
     <article data-owner="variant-pages" aria-labelledby={headlineId}>
       {/* ---- (a) full-bleed hero ---- */}
@@ -103,6 +113,7 @@ export default async function VariantPage({
         yearsStart={v.yearsStart ?? gen.yearsStart}
         yearsEnd={v.yearsEnd ?? gen.yearsEnd}
         accent={gen.accent}
+        engineSound={engineSound}
       />
 
       {/* ---- (b) animated spec counters ---- */}

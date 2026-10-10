@@ -3,17 +3,16 @@
 /**
  * Optional glTF decoders — wired, but never required.
  *
- * `data/models.json` does not exist yet, so no `.glb` resolves today. When
- * ASSET-3D lands one, this module has to be ready:
+ * Every local `.glb` we ship is Draco-compressed, so the loaders that parse
+ * them must attach a DRACOLoader *before* useGLTF runs:
  *
  *  - **Meshopt** — decoder ships inside `three` (`three/addons/libs/…`), so it
  *    is always wired up, no extra files in `/public`.
- *  - **Draco** — needs `draco_decoder.js|wasm` on our own origin. We point at
- *    `/decoders/draco/`, which does not exist yet; the wiring is attempted in
- *    a try/catch and a *missing* decoder only breaks Draco-compressed assets,
- *    never an uncompressed `.glb`.
- *  - **KTX2/Basis** — same story: `/decoders/basis/`, and `detectSupport()`
- *    needs a live renderer, so it is created inside the R3F tree.
+ *  - **Draco** — `draco_decoder.js|wasm` live on our own origin under
+ *    `/decoders/draco/`; `warmDecoders()` resolves before any component calls
+ *    `useGLTF`, and `attachDecoders()` hands the loader the instance.
+ *  - **KTX2/Basis** — `/decoders/basis/`, and `detectSupport()` needs a live
+ *    renderer, so it is created inside the R3F tree.
  *
  * Everything is dynamic-imported so none of it lands in the initial bundle,
  * and every failure is swallowed into `null` (see `decoderReport`).

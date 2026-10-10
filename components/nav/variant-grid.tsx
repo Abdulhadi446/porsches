@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { openCommandPalette } from "./command-palette";
@@ -615,54 +616,80 @@ function ActiveChips({
  * ------------------------------------------------------------------ */
 
 function VariantCard({ variant }: { variant: IndexedVariant }) {
+  const { image } = variant;
   return (
-    <article className="group relative flex h-full min-w-0 flex-col border border-ink-4 bg-ink-2 p-(--space-4) transition-colors hover:border-guards">
-      <span
-        aria-hidden="true"
-        className="mb-(--space-3) block h-0.5 w-8"
-        style={{ backgroundColor: variant.genAccent }}
-      />
-      <h2 className="font-display text-xl leading-tight">
-        <Link
-          href={variant.href}
-          className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-guards"
-        >
-          {variant.name}
-        </Link>
-      </h2>
-      <p className="mt-(--space-1) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
-        {variant.genCode} · {variant.years}
-      </p>
-      <dl className="mt-(--space-3) flex min-w-0 flex-col gap-1 font-mono text-mono-xs text-metal-300">
-        <div className="flex min-w-0 gap-(--space-2)">
-          <dt className="shrink-0 text-metal-700">Engine</dt>
-          <dd className="min-w-0 flex-1 truncate">{truncate(variant.engine, 58)}</dd>
+    <article className="group relative flex h-full min-w-0 flex-col overflow-hidden border border-ink-4 bg-ink-2 transition-colors hover:border-guards">
+      {image ? (
+        <div className="relative block aspect-[16/10] w-full overflow-hidden bg-ink-3">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={image.width ?? 1600}
+            height={image.height ?? 1000}
+            sizes="(min-width: 1024px) 30rem, 100vw"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-90 transition-[transform,filter] duration-500 ease-out group-hover:scale-[1.04] group-hover:brightness-100 motion-reduce:transition-none"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-t from-ink-2 via-ink-2/10 to-transparent"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute left-4 top-4 block h-0.5 w-8"
+            style={{ backgroundColor: variant.genAccent }}
+          />
         </div>
-        <div className="flex min-w-0 gap-(--space-2)">
-          <dt className="shrink-0 text-metal-700">Power</dt>
-          <dd className="min-w-0 flex-1 truncate">
-            {variant.powerPs ? `${variant.powerPs} PS` : truncate(variant.power, 40) || "—"}
-          </dd>
+      ) : (
+        <span
+          aria-hidden="true"
+          className="mb-(--space-3) block h-0.5 w-8"
+          style={{ backgroundColor: variant.genAccent }}
+        />
+      )}
+      <div className="flex min-w-0 flex-1 flex-col p-(--space-4)">
+        <h2 className="font-display text-xl leading-tight">
+          <Link
+            href={variant.href}
+            data-car-cursor="" data-cursor="hide"
+            className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-guards"
+          >
+            {variant.name}
+          </Link>
+        </h2>
+        <p className="mt-(--space-1) font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500">
+          {variant.genCode} · {variant.years}
+        </p>
+        <dl className="mt-(--space-3) flex min-w-0 flex-col gap-1 font-mono text-mono-xs text-metal-300">
+          <div className="flex min-w-0 gap-(--space-2)">
+            <dt className="shrink-0 text-metal-700">Engine</dt>
+            <dd className="min-w-0 flex-1 truncate">{truncate(variant.engine, 58)}</dd>
+          </div>
+          <div className="flex min-w-0 gap-(--space-2)">
+            <dt className="shrink-0 text-metal-700">Power</dt>
+            <dd className="min-w-0 flex-1 truncate">
+              {variant.powerPs ? `${variant.powerPs} PS` : truncate(variant.power, 40) || "—"}
+            </dd>
+          </div>
+          <div className="flex min-w-0 gap-(--space-2)">
+            <dt className="shrink-0 text-metal-700">Drive</dt>
+            <dd className="min-w-0 flex-1 truncate">
+              {variant.driveLabel} · {variant.bodyLabel || "—"}
+            </dd>
+          </div>
+        </dl>
+        <div className="mt-auto flex items-center gap-(--space-3) pt-(--space-4)">
+          {variant.special && (
+            <span className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-guards-text">
+              Limited
+            </span>
+          )}
+          <Link
+            href={`/compare?a=${variant.key}`}
+            className="relative z-content ml-auto inline-flex min-h-6 items-center font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+          >
+            Compare →
+          </Link>
         </div>
-        <div className="flex min-w-0 gap-(--space-2)">
-          <dt className="shrink-0 text-metal-700">Drive</dt>
-          <dd className="min-w-0 flex-1 truncate">
-            {variant.driveLabel} · {variant.bodyLabel || "—"}
-          </dd>
-        </div>
-      </dl>
-      <div className="mt-auto flex items-center gap-(--space-3) pt-(--space-4)">
-        {variant.special && (
-          <span className="font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-guards-text">
-            Limited
-          </span>
-        )}
-        <Link
-          href={`/compare?a=${variant.key}`}
-          className="relative z-content ml-auto inline-flex min-h-6 items-center font-mono text-mono-xs uppercase tracking-(--tracking-mono) text-metal-500 transition-colors hover:text-guards-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
-        >
-          Compare →
-        </Link>
       </div>
     </article>
   );

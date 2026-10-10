@@ -58,7 +58,8 @@
     "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
     "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
     "turntable": null,
-    "bytes": 2206432
+    "bytes": 2206432,
+    "verified": true
   },
   "videos": [
     {
@@ -858,7 +859,8 @@
         "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
         "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
         "turntable": null,
-        "bytes": 2206432
+        "bytes": 2206432,
+        "verified": true
       },
       "credits": [
         {
@@ -1209,13 +1211,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/16e4693a8f4144e4a071685289869dd6?embed=1",
         "sourceId": "16e4693a8f4144e4a071685289869dd6",
-        "license": "CC Attribution",
-        "author": "LowPolyGarage",
+        "license": "CC Attribution 4.0",
+        "author": "LowPolyGarage (LowPolyGarage)",
         "glb": "/models/sketchfab-16e4693a/model.glb",
         "turntable": null,
-        "bytes": 66076
+        "bytes": 66076,
+        "verified": true
       },
       "credits": [
         {
@@ -1809,13 +1812,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
         "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
-        "license": "CC Attribution",
-        "author": "amogusstrikesback2",
+        "license": "CC Attribution 4.0",
+        "author": "amogusstrikesback2 (amogusstrikesback2)",
         "glb": "/models/sketchfab-1986766b/model.glb",
         "turntable": null,
-        "bytes": 565096
+        "bytes": 565096,
+        "verified": true
       },
       "credits": [
         {
@@ -2130,13 +2134,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/26953936409c4ee7b9de11caa37e52f1?embed=1",
         "sourceId": "26953936409c4ee7b9de11caa37e52f1",
-        "license": "CC Attribution",
-        "author": "cepela",
+        "license": "CC Attribution 4.0",
+        "author": "cepela (cepela)",
         "glb": "/models/sketchfab-26953936/model.glb",
         "turntable": null,
-        "bytes": 683984
+        "bytes": 683984,
+        "verified": true
       },
       "credits": [
         {

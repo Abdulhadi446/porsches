@@ -4,7 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import type { ImageResult } from "#lib/assets";
+import type { EngineSound } from "#lib/sounds";
 import { SafeImage } from "./safe-image";
+import { EngineStart } from "./engine-start";
 import { FOCUS_RING } from "./reveal";
 import { useReducedMotion } from "./lib/hooks";
 import { cx, yearRange } from "./lib/format";
@@ -34,6 +36,8 @@ export interface VariantHeroProps {
   yearsStart: number;
   yearsEnd: number | null;
   accent: string;
+  /** the generation's engine recording — resolved server-side, plain props */
+  engineSound?: EngineSound | null;
 }
 
 export function VariantHero({
@@ -47,6 +51,7 @@ export function VariantHero({
   yearsStart,
   yearsEnd,
   accent,
+  engineSound,
 }: VariantHeroProps) {
   const rootRef = useRef<HTMLElement | null>(null);
   const reduced = useReducedMotion();
@@ -128,6 +133,7 @@ export function VariantHero({
       ref={rootRef}
       aria-labelledby={headlineId}
       data-owner="variant-pages"
+      data-car-cursor="" data-cursor="hide"
       className="relative h-svh [@media(prefers-reduced-motion:no-preference)]:h-[178svh]"
     >
       <div className="sticky top-0 isolate h-svh overflow-hidden bg-ink">
@@ -253,6 +259,7 @@ export function VariantHero({
                 Specifications
                 <span aria-hidden="true">↓</span>
               </a>
+              {engineSound ? <EngineStart sound={engineSound} accent={accent} /> : null}
               <p className="label">Unofficial fan showcase · media licensed per asset</p>
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 import { Footer } from "#components/nav/footer";
 import { PageTransition } from "#components/nav/page-transition";
 import { SiteNav } from "#components/nav/site-nav";
+import { CarCursor } from "#components/fx";
 import type { Metadata, Viewport } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -61,6 +62,7 @@ export default function RootLayout({
           <main id="main">{children}</main>
           <Footer />
         </PageTransition>
+        <CarCursor />
       </body>
     </html>
   );

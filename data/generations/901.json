@@ -52,13 +52,14 @@
     "height": 1152
   },
   "model3d": {
-    "embedUrl": null,
+    "embedUrl": "https://sketchfab.com/3d-models/ab60b9e064e645ab96aeabe7772e4d49?embed=1",
     "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
-    "license": "CC Attribution",
-    "author": "tonielpro520",
+    "license": "CC Attribution 4.0",
+    "author": "tonielpro520 (tonielpro520)",
     "glb": "/models/sketchfab-ab60b9e0/model.glb",
     "turntable": null,
-    "bytes": 1019896
+    "bytes": 1019896,
+    "verified": true
   },
   "videos": [
     {
@@ -191,13 +192,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/ab60b9e064e645ab96aeabe7772e4d49?embed=1",
         "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
-        "license": "CC Attribution",
-        "author": "tonielpro520",
+        "license": "CC Attribution 4.0",
+        "author": "tonielpro520 (tonielpro520)",
         "glb": "/models/sketchfab-ab60b9e0/model.glb",
         "turntable": "/turntables/901__911-2.0",
         "bytes": 1019896,
+        "verified": true,
         "turntableSynthetic": true
       },
       "credits": [
@@ -2062,13 +2064,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/7e2018a0bccf48d6b26cd2285d544f19?embed=1",
         "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
-        "license": "CC Attribution",
-        "author": "GhostMan",
+        "license": "CC Attribution 4.0",
+        "author": "GhostMan (nns25)",
         "glb": "/models/sketchfab-7e2018a0/model.glb",
         "turntable": null,
-        "bytes": 63476
+        "bytes": 63476,
+        "verified": true
       },
       "credits": [
         {
@@ -2360,13 +2363,14 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
         "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
-        "license": "CC Attribution",
-        "author": "CriMoreScum",
+        "license": "CC Attribution 4.0",
+        "author": "CriMoreScum (CriMoreScum)",
         "glb": "/models/sketchfab-1fce7028/model.glb",
         "turntable": null,
-        "bytes": 1156936
+        "bytes": 1156936,
+        "verified": true
       },
       "credits": [
         {

@@ -51,7 +51,7 @@ export function SpecCounters({ rows, accent, headingId, lede }: SpecCountersProp
         ) : null}
 
         <div ref={ref}>
-          <dl className="mt-(--space-8) grid grid-cols-1 gap-px border border-ink-4 bg-ink-4 sm:grid-cols-2 lg:grid-cols-3">
+          <dl className="mt-(--space-8) grid grid-flow-row-dense grid-cols-1 gap-px border border-ink-4 bg-ink-4 sm:grid-cols-2 lg:grid-cols-3">
             {rows.map((row) => (
               <SpecCell
                 key={row.key}

@@ -22,7 +22,7 @@ export type BodyStyle =
   | "roadster"
   | "other";
 
-export type AssetKind = "image" | "model" | "video" | "font" | "other";
+export type AssetKind = "image" | "model" | "video" | "font" | "sound" | "other";
 
 export type AssetSource = "wikimedia" | "sketchfab" | "youtube" | "other";
 
@@ -85,6 +85,15 @@ export interface Model3D {
   turntableSynthetic?: boolean;
   /** glb size in bytes (perf budget: < 3_000_000) */
   bytes?: number | null;
+  /**
+   * `true` ONLY when the licence and the model itself were checked by hand
+   * against the source (see `data/model-credits.json` for the provenance
+   * note). ABSENT means unverified — e.g. a bulk Sketchfab import whose only
+   * evidence is the generic licence label from the search API. Unverified
+   * models may still be offered to the visitor, but nothing automated may
+   * feature one: the hero picks its car by this flag.
+   */
+  verified?: boolean;
 }
 
 export interface Source {
@@ -166,4 +175,32 @@ export interface VideosFile {
   updatedAt: string;
   /** key: GenerationId or variant id */
   entries: Record<string, VideoRef[]>;
+}
+
+/**
+ * One licence-clean recording served from /public/sounds. Audio follows the
+ * same sourcing rule as stills: Wikimedia Commons only, licence read from the
+ * file's own description page, credited in `data/sound-credits.json`.
+ */
+export interface SoundRef {
+  /** stable slug, e.g. "engine-start-aircooled" */
+  id: string;
+  kind: "engine-start";
+  /** the car that was actually recorded (never the car on the page) */
+  subject: string;
+  /** what the recording is, in words — shown next to the control */
+  moment: string;
+  /** path under /public */
+  src: string;
+  /** seconds, measured from the source file */
+  duration: number;
+  /** points into data/credits.json */
+  creditId: string;
+}
+
+export interface SoundsFile {
+  updatedAt: string;
+  /** GenerationId → SoundRef.id */
+  map: Record<GenerationId, string>;
+  sounds: SoundRef[];
 }

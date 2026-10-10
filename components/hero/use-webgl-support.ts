@@ -132,9 +132,11 @@ export function useWebglSupport(): HeroSupport {
         reducedMotion,
         lowPower,
         // Reduced motion is an explicit "no canvas" — the poster is still composed.
-        // Low-power devices (mobile / few cores / little memory / software GL) also
-        // stay on the poster: a 15 s TBT on a phone is a worse hero than a still one.
-        canRender: probe.webgl && !reducedMotion && !lowPower,
+        // Anything with a WebGL context gets a scene: weak hardware (mobile, few
+        // cores, little memory, software rasterisers) takes the lite profile —
+        // half-res DOF off, reflector off, smaller dpr — rather than degrading to
+        // a flat photograph. Only "no WebGL at all" means poster.
+        canRender: probe.webgl && !reducedMotion,
         tier: lowPower ? "lite" : "full",
         quality: lowPower ? QUALITY_LITE : QUALITY_FULL,
       });

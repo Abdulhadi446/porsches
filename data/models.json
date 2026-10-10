@@ -1,47 +1,51 @@
 {
-  "updatedAt": "2026-10-04T12:31:50.497Z",
+  "updatedAt": "2026-10-09T18:24:33.722Z",
   "generations": {
     "901": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/ab60b9e064e645ab96aeabe7772e4d49?embed=1",
       "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
-      "license": "CC Attribution",
-      "author": "tonielpro520",
+      "license": "CC Attribution 4.0",
+      "author": "tonielpro520 (tonielpro520)",
       "glb": "/models/sketchfab-ab60b9e0/model.glb",
       "turntable": null,
-      "bytes": 1019896
+      "bytes": 1019896,
+      "verified": true
     },
     "964": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
       "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-22edb81d/model.glb",
       "turntable": null,
-      "bytes": 2139024
+      "bytes": 2139024,
+      "verified": true
     },
     "991": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/97785983d3a949cf87e9ee6bf49f4032?embed=1",
       "sourceId": "97785983d3a949cf87e9ee6bf49f4032",
-      "license": "CC Attribution",
-      "author": "Mona x Supercars",
+      "license": "CC Attribution 4.0",
+      "author": "Mona x Supercars (Car2022)",
       "glb": "/models/sketchfab-97785983/model.glb",
       "turntable": null,
-      "bytes": 541348
+      "bytes": 541348,
+      "verified": true
     },
     "993": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b711966542e143e2829a21e0230fa30e?embed=1",
       "sourceId": "b711966542e143e2829a21e0230fa30e",
-      "license": "CC Attribution",
-      "author": "Ai 3D Designs",
+      "license": "CC Attribution 4.0",
+      "author": "Ai 3D Designs (AiDesigner1)",
       "glb": "/models/sketchfab-b7119665/model.glb",
       "turntable": null,
-      "bytes": 1227632
+      "bytes": 1227632,
+      "verified": true
     },
     "996": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
       "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
-      "license": "CC Attribution",
-      "author": "MattDoesBlender",
+      "license": "CC Attribution 4.0",
+      "author": "MattDoesBlender (MattDoesBlender)",
       "glb": "/models/sketchfab-bf3bcbc1/model.glb",
       "turntable": null,
       "bytes": 1274124
@@ -62,36 +66,38 @@
       "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
       "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
       "turntable": null,
-      "bytes": 2206432
+      "bytes": 2206432,
+      "verified": true
     },
     "992-1": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/318cfb7279a94e8f96095ec0236f02ad?embed=1",
       "sourceId": "318cfb7279a94e8f96095ec0236f02ad",
-      "license": "CC Attribution",
-      "author": "Nieve5677",
+      "license": "CC Attribution 4.0",
+      "author": "Nieve5677 (niev)",
       "glb": "/models/sketchfab-318cfb72/model.glb",
       "turntable": null,
       "bytes": 743976
     },
     "992-2": {
       "glb": "/models/sketchfab-b668f8a3/model.glb",
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b668f8a336b54954b04fa0dade507300?embed=1",
       "sourceId": "b668f8a336b54954b04fa0dade507300",
       "license": "CC Attribution 4.0",
-      "author": "BMW'S Lost Proxy",
+      "author": "BMW'S Lost Proxy (Bmws_Lost_Proxy)",
       "turntable": null,
       "bytes": 1274400
     }
   },
   "variants": {
     "901/911-2.0": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/ab60b9e064e645ab96aeabe7772e4d49?embed=1",
       "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
-      "license": "CC Attribution",
-      "author": "tonielpro520",
+      "license": "CC Attribution 4.0",
+      "author": "tonielpro520 (tonielpro520)",
       "glb": "/models/sketchfab-ab60b9e0/model.glb",
       "turntable": null,
-      "bytes": 1019896
+      "bytes": 1019896,
+      "verified": true
     },
     "901/911-t-2.0": null,
     "901/911-l-2.0": null,
@@ -106,56 +112,61 @@
     "901/911-t-2.4": null,
     "901/911-s-2.4": null,
     "901/targa": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/7e2018a0bccf48d6b26cd2285d544f19?embed=1",
       "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
-      "license": "CC Attribution",
-      "author": "GhostMan",
+      "license": "CC Attribution 4.0",
+      "author": "GhostMan (nns25)",
       "glb": "/models/sketchfab-7e2018a0/model.glb",
       "turntable": null,
-      "bytes": 63476
+      "bytes": 63476,
+      "verified": true
     },
     "901/cabriolet-hebmuller": null,
     "901/st": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
       "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
-      "license": "CC Attribution",
-      "author": "CriMoreScum",
+      "license": "CC Attribution 4.0",
+      "author": "CriMoreScum (CriMoreScum)",
       "glb": "/models/sketchfab-1fce7028/model.glb",
       "turntable": null,
-      "bytes": 1156936
+      "bytes": 1156936,
+      "verified": true
     },
     "901/carrera-rs-2.7": null,
     "901/s-t": null,
     "964/carrera-4": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
       "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-22edb81d/model.glb",
       "turntable": null,
-      "bytes": 2139024
+      "bytes": 2139024,
+      "verified": true
     },
     "964/carrera-2": null,
     "964/carrera-4s": null,
     "964/carrera-2s": null,
     "964/turbo-3.3": null,
     "964/turbo-3.6": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
       "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
-      "license": "CC Attribution",
-      "author": "tonielpro520",
+      "license": "CC Attribution 4.0",
+      "author": "tonielpro520 (tonielpro520)",
       "glb": "/models/sketchfab-e0dd6206/model.glb",
       "turntable": null,
-      "bytes": 1750228
+      "bytes": 1750228,
+      "verified": true
     },
     "964/turbo-s-3.6": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
       "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-b868c588/model.glb",
       "turntable": null,
-      "bytes": 627412
+      "bytes": 627412,
+      "verified": true
     },
     "964/rs-3.8": null,
     "964/rsr-3.8": null,
@@ -166,23 +177,25 @@
     "964/cup": null,
     "991/carrera": null,
     "991/carrera-s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
       "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
-      "license": "CC Attribution",
-      "author": "Mona x Supercars",
+      "license": "CC Attribution 4.0",
+      "author": "Mona x Supercars (Car2022)",
       "glb": "/models/sketchfab-e8e06ddd/model.glb",
       "turntable": null,
-      "bytes": 351052
+      "bytes": 351052,
+      "verified": true
     },
     "991/carrera-4": null,
     "991/carrera-4s": {
       "glb": "/models/991-carrera-4s/model.glb",
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/d01b254483794de3819786d93e0e1ebf?embed=1",
       "sourceId": "d01b254483794de3819786d93e0e1ebf",
       "license": "CC Attribution-ShareAlike 4.0 (adapted)",
       "author": "Lionsharp Studios (Sketchfab uploader; CC attribution block in the asset names Karol Miklas)",
       "turntable": null,
-      "bytes": 905340
+      "bytes": 905340,
+      "verified": true
     },
     "991/carrera-t": null,
     "991/targa-4": null,
@@ -201,63 +214,68 @@
     "991/gt3": null,
     "991/gt3-touring": null,
     "991/gt3-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/2b02e300bb094a2293f4b714e2ae7ddf?embed=1",
       "sourceId": "2b02e300bb094a2293f4b714e2ae7ddf",
-      "license": "CC Attribution",
-      "author": "Casacade Models",
+      "license": "CC Attribution 4.0",
+      "author": "Casacade Models (CasacadeOperations)",
       "glb": "/models/sketchfab-2b02e300/model.glb",
       "turntable": null,
-      "bytes": 551888
+      "bytes": 551888,
+      "verified": true
     },
     "991/gt2-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/98767072b9f94f8eb6c4512b7be891c4?embed=1",
       "sourceId": "98767072b9f94f8eb6c4512b7be891c4",
-      "license": "CC Attribution",
-      "author": "vecarz",
+      "license": "CC Attribution 4.0",
+      "author": "vecarz (heynic)",
       "glb": "/models/sketchfab-98767072/model.glb",
       "turntable": null,
       "bytes": 2830616
     },
     "991/r": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/a8f40dc2180142c0887d251199d74077?embed=1",
       "sourceId": "a8f40dc2180142c0887d251199d74077",
-      "license": "CC Attribution",
-      "author": "Ulix21",
+      "license": "CC Attribution 4.0",
+      "author": "Ulix21 (Ulix21)",
       "glb": "/models/sketchfab-a8f40dc2/model.glb",
       "turntable": null,
-      "bytes": 58704
+      "bytes": 58704,
+      "verified": true
     },
     "991/speedster": null,
     "991/50th-anniversary": null,
     "993/carrera": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b711966542e143e2829a21e0230fa30e?embed=1",
       "sourceId": "b711966542e143e2829a21e0230fa30e",
-      "license": "CC Attribution",
-      "author": "Ai 3D Designs",
+      "license": "CC Attribution 4.0",
+      "author": "Ai 3D Designs (AiDesigner1)",
       "glb": "/models/sketchfab-b7119665/model.glb",
       "turntable": null,
-      "bytes": 1227632
+      "bytes": 1227632,
+      "verified": true
     },
     "993/carrera-4": null,
     "993/carrera-4s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/5d90416b06854a369e566d3fa286c692?embed=1",
       "sourceId": "5d90416b06854a369e566d3fa286c692",
-      "license": "CC Attribution",
-      "author": "_shobh19",
+      "license": "CC Attribution 4.0",
+      "author": "_shobh19 (s0h1o9b)",
       "glb": "/models/sketchfab-5d90416b/model.glb",
       "turntable": null,
-      "bytes": 175772
+      "bytes": 175772,
+      "verified": true
     },
     "993/targa": null,
     "993/cabriolet": null,
     "993/turbo": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/72f2943569434e4e93ab63f403c6aa1c?embed=1",
       "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
-      "license": "CC Attribution",
-      "author": "Nieve5677",
+      "license": "CC Attribution 4.0",
+      "author": "Nieve5677 (niev)",
       "glb": "/models/sketchfab-72f29435/model.glb",
       "turntable": null,
-      "bytes": 256348
+      "bytes": 256348,
+      "verified": true
     },
     "993/turbo-s": null,
     "993/carrera-rs": null,
@@ -271,10 +289,10 @@
     "996/carrera-4s": null,
     "996/targa": null,
     "996/turbo": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/0aca89de30b94126bc7020109b2f3ef0?embed=1",
       "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
-      "license": "CC Attribution",
-      "author": "i3bod",
+      "license": "CC Attribution 4.0",
+      "author": "i3bod (i3bod)",
       "glb": "/models/sketchfab-0aca89de/model.glb",
       "turntable": null,
       "bytes": 1001444
@@ -296,31 +314,34 @@
     "997/gt3": null,
     "997/gt3-rs": null,
     "997/gt3-rs-4.0": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/95226a73526b46e680b091f1caf6191f?embed=1",
       "sourceId": "95226a73526b46e680b091f1caf6191f",
-      "license": "CC Attribution",
-      "author": "Antonis_zks",
+      "license": "CC Attribution 4.0",
+      "author": "Antonis_zks (Antonis_zks)",
       "glb": "/models/sketchfab-95226a73/model.glb",
       "turntable": null,
-      "bytes": 762492
+      "bytes": 762492,
+      "verified": true
     },
     "997/gt2": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/c48298e703c44f2187d5562ef64f4dcf?embed=1",
       "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
-      "license": "CC Attribution",
-      "author": "Mona x Supercars",
+      "license": "CC Attribution 4.0",
+      "author": "Mona x Supercars (Car2022)",
       "glb": "/models/sketchfab-c48298e7/model.glb",
       "turntable": null,
-      "bytes": 260040
+      "bytes": 260040,
+      "verified": true
     },
     "997/gt2-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/41419345868e406eaec8a271e33de3c1?embed=1",
       "sourceId": "41419345868e406eaec8a271e33de3c1",
-      "license": "CC Attribution",
-      "author": "COOL601",
+      "license": "CC Attribution 4.0",
+      "author": "COOL601 (COOL601)",
       "glb": "/models/sketchfab-41419345/model.glb",
       "turntable": null,
-      "bytes": 1939436
+      "bytes": 1939436,
+      "verified": true
     },
     "997/gts": null,
     "997/speedster": null,
@@ -337,7 +358,8 @@
       "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
       "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
       "turntable": null,
-      "bytes": 2206432
+      "bytes": 2206432,
+      "verified": true
     },
     "gseries/turbo-3.3-930": {
       "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-1980-d792213008744efa9253a9147523ca2d?embed=1",
@@ -349,35 +371,38 @@
       "bytes": null
     },
     "gseries/turbo-flachbau": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/16e4693a8f4144e4a071685289869dd6?embed=1",
       "sourceId": "16e4693a8f4144e4a071685289869dd6",
-      "license": "CC Attribution",
-      "author": "LowPolyGarage",
+      "license": "CC Attribution 4.0",
+      "author": "LowPolyGarage (LowPolyGarage)",
       "glb": "/models/sketchfab-16e4693a/model.glb",
       "turntable": null,
-      "bytes": 66076
+      "bytes": 66076,
+      "verified": true
     },
     "gseries/turbo-s-3.3": null,
     "gseries/turbo-le-1989": null,
     "gseries/carrera-3.0": null,
     "gseries/sc": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
       "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
-      "license": "CC Attribution",
-      "author": "amogusstrikesback2",
+      "license": "CC Attribution 4.0",
+      "author": "amogusstrikesback2 (amogusstrikesback2)",
       "glb": "/models/sketchfab-1986766b/model.glb",
       "turntable": null,
-      "bytes": 565096
+      "bytes": 565096,
+      "verified": true
     },
     "gseries/sc-rs": null,
     "gseries/carrera-3.2": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/26953936409c4ee7b9de11caa37e52f1?embed=1",
       "sourceId": "26953936409c4ee7b9de11caa37e52f1",
-      "license": "CC Attribution",
-      "author": "cepela",
+      "license": "CC Attribution 4.0",
+      "author": "cepela (cepela)",
       "glb": "/models/sketchfab-26953936/model.glb",
       "turntable": null,
-      "bytes": 683984
+      "bytes": 683984,
+      "verified": true
     },
     "gseries/carrera-3.2-turbo-look": null,
     "gseries/carrera-club-sport": null,
@@ -386,97 +411,106 @@
     "992-1/carrera-s": null,
     "992-1/carrera-4": null,
     "992-1/carrera-4s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e2be40c215e34812af7dfb933bc7967a?embed=1",
       "sourceId": "e2be40c215e34812af7dfb933bc7967a",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-e2be40c2/model.glb",
       "turntable": null,
-      "bytes": 471504
+      "bytes": 471504,
+      "verified": true
     },
     "992-1/targa-4s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/616ebc4356c74a3b8554c396eb3bd34c?embed=1",
       "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
-      "license": "CC Attribution",
-      "author": "DisneyCars",
+      "license": "CC Attribution 4.0",
+      "author": "DisneyCars (supercarmodels)",
       "glb": "/models/sketchfab-616ebc43/model.glb",
       "turntable": null,
-      "bytes": 686356
+      "bytes": 686356,
+      "verified": true
     },
     "992-1/gts": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/4e98dd91d11d4809bb80102edfbde42b?embed=1",
       "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-4e98dd91/model.glb",
       "turntable": null,
-      "bytes": 662700
+      "bytes": 662700,
+      "verified": true
     },
     "992-1/turbo": null,
     "992-1/turbo-s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
       "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
-      "license": "CC Attribution",
-      "author": "let's not care abt it",
+      "license": "CC Attribution 4.0",
+      "author": "let's not care abt it (Pie-The-destroyer-of-the-World)",
       "glb": "/models/sketchfab-b0a77bb9/model.glb",
       "turntable": null,
-      "bytes": 1212296
+      "bytes": 1212296,
+      "verified": true
     },
     "992-1/turbo-gt": null,
     "992-1/gt3": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/a23f04a665a84177ac97551ce0c720eb?embed=1",
       "sourceId": "a23f04a665a84177ac97551ce0c720eb",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-a23f04a6/model.glb",
       "turntable": null,
-      "bytes": 1451652
+      "bytes": 1451652,
+      "verified": true
     },
     "992-1/gt3-touring": null,
     "992-1/gt3-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/bbb0f6181a52416bb776713cfd4987dd?embed=1",
       "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
-      "license": "CC Attribution",
-      "author": "DisneyCars",
+      "license": "CC Attribution 4.0",
+      "author": "DisneyCars (supercarmodels)",
       "glb": "/models/sketchfab-bbb0f618/model.glb",
       "turntable": null,
-      "bytes": 1618920
+      "bytes": 1618920,
+      "verified": true
     },
     "992-1/s-t": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/f39f7c539a3440428c22a3da2f52af43?embed=1",
       "sourceId": "f39f7c539a3440428c22a3da2f52af43",
-      "license": "CC Attribution",
-      "author": "Ddiaz Design",
+      "license": "CC Attribution 4.0",
+      "author": "Ddiaz Design (ddiaz-design)",
       "glb": "/models/sketchfab-f39f7c53/model.glb",
       "turntable": null,
       "bytes": 1674716
     },
     "992-1/dakar": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/326e90718d164f018e9a673849a3161b?embed=1",
       "sourceId": "326e90718d164f018e9a673849a3161b",
-      "license": "CC Attribution",
-      "author": "HiQ3D",
+      "license": "CC Attribution 4.0",
+      "author": "HiQ3D (HiQ3D)",
       "glb": "/models/sketchfab-326e9071/model.glb",
       "turntable": null,
-      "bytes": 1895812
+      "bytes": 1895812,
+      "verified": true
     },
     "992-1/sport-classic": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/38903fc72658408287a5972285494bd6?embed=1",
       "sourceId": "38903fc72658408287a5972285494bd6",
-      "license": "CC Attribution",
-      "author": "Nieve5677",
+      "license": "CC Attribution 4.0",
+      "author": "Nieve5677 (niev)",
       "glb": "/models/sketchfab-38903fc7/model.glb",
       "turntable": null,
-      "bytes": 1138744
+      "bytes": 1138744,
+      "verified": true
     },
     "992-1/targa-4s-heritage": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/c9af184fba65488db9138d9cffcea832?embed=1",
       "sourceId": "c9af184fba65488db9138d9cffcea832",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-c9af184f/model.glb",
       "turntable": null,
-      "bytes": 1379500
+      "bytes": 1379500,
+      "verified": true
     },
     "992-2/carrera": null,
     "992-2/carrera-t": null,
@@ -486,13 +520,14 @@
     "992-2/carrera-gts": null,
     "992-2/carrera-4-gts": null,
     "992-2/targa-4-gts": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/214a61d759e942e2887290b6e4e50d49?embed=1",
       "sourceId": "214a61d759e942e2887290b6e4e50d49",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-214a61d7/model.glb",
       "turntable": null,
-      "bytes": 1752012
+      "bytes": 1752012,
+      "verified": true
     },
     "992-2/turbo-s": null,
     "992-2/gt3": null,
@@ -501,13 +536,14 @@
     "992-2/gt3-s-c": null,
     "992-2/spirit-70": null,
     "911-2.0": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/ab60b9e064e645ab96aeabe7772e4d49?embed=1",
       "sourceId": "ab60b9e064e645ab96aeabe7772e4d49",
-      "license": "CC Attribution",
-      "author": "tonielpro520",
+      "license": "CC Attribution 4.0",
+      "author": "tonielpro520 (tonielpro520)",
       "glb": "/models/sketchfab-ab60b9e0/model.glb",
       "turntable": null,
-      "bytes": 1019896
+      "bytes": 1019896,
+      "verified": true
     },
     "911-t-2.0": null,
     "911-l-2.0": null,
@@ -522,72 +558,78 @@
     "911-t-2.4": null,
     "911-s-2.4": null,
     "targa": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/7e2018a0bccf48d6b26cd2285d544f19?embed=1",
       "sourceId": "7e2018a0bccf48d6b26cd2285d544f19",
-      "license": "CC Attribution",
-      "author": "GhostMan",
+      "license": "CC Attribution 4.0",
+      "author": "GhostMan (nns25)",
       "glb": "/models/sketchfab-7e2018a0/model.glb",
       "turntable": null,
-      "bytes": 63476
+      "bytes": 63476,
+      "verified": true
     },
     "cabriolet-hebmuller": null,
     "st": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/1fce7028d0d34ddc801905dadd1d0ce6?embed=1",
       "sourceId": "1fce7028d0d34ddc801905dadd1d0ce6",
-      "license": "CC Attribution",
-      "author": "CriMoreScum",
+      "license": "CC Attribution 4.0",
+      "author": "CriMoreScum (CriMoreScum)",
       "glb": "/models/sketchfab-1fce7028/model.glb",
       "turntable": null,
-      "bytes": 1156936
+      "bytes": 1156936,
+      "verified": true
     },
     "carrera-rs-2.7": null,
     "s-t": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/f39f7c539a3440428c22a3da2f52af43?embed=1",
       "sourceId": "f39f7c539a3440428c22a3da2f52af43",
-      "license": "CC Attribution",
-      "author": "Ddiaz Design",
+      "license": "CC Attribution 4.0",
+      "author": "Ddiaz Design (ddiaz-design)",
       "glb": "/models/sketchfab-f39f7c53/model.glb",
       "turntable": null,
       "bytes": 1674716
     },
     "carrera-4": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
       "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-22edb81d/model.glb",
       "turntable": null,
-      "bytes": 2139024
+      "bytes": 2139024,
+      "verified": true
     },
     "carrera-2": null,
     "carrera-4s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e2be40c215e34812af7dfb933bc7967a?embed=1",
       "sourceId": "e2be40c215e34812af7dfb933bc7967a",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-e2be40c2/model.glb",
       "turntable": null,
-      "bytes": 471504
+      "bytes": 471504,
+      "verified": true
     },
     "carrera-2s": null,
     "turbo-3.3": null,
     "turbo-3.6": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
       "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
-      "license": "CC Attribution",
-      "author": "tonielpro520",
+      "license": "CC Attribution 4.0",
+      "author": "tonielpro520 (tonielpro520)",
       "glb": "/models/sketchfab-e0dd6206/model.glb",
       "turntable": null,
-      "bytes": 1750228
+      "bytes": 1750228,
+      "verified": true
     },
     "turbo-s-3.6": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
       "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-b868c588/model.glb",
       "turntable": null,
-      "bytes": 627412
+      "bytes": 627412,
+      "verified": true
     },
     "rs-3.8": null,
     "rsr-3.8": null,
@@ -596,130 +638,141 @@
     "30th-anniversary": null,
     "cup": null,
     "carrera": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b711966542e143e2829a21e0230fa30e?embed=1",
       "sourceId": "b711966542e143e2829a21e0230fa30e",
-      "license": "CC Attribution",
-      "author": "Ai 3D Designs",
+      "license": "CC Attribution 4.0",
+      "author": "Ai 3D Designs (AiDesigner1)",
       "glb": "/models/sketchfab-b7119665/model.glb",
       "turntable": null,
-      "bytes": 1227632
+      "bytes": 1227632,
+      "verified": true
     },
     "carrera-s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
       "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
-      "license": "CC Attribution",
-      "author": "Mona x Supercars",
+      "license": "CC Attribution 4.0",
+      "author": "Mona x Supercars (Car2022)",
       "glb": "/models/sketchfab-e8e06ddd/model.glb",
       "turntable": null,
-      "bytes": 351052
+      "bytes": 351052,
+      "verified": true
     },
     "carrera-t": null,
     "targa-4": null,
     "targa-4s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/616ebc4356c74a3b8554c396eb3bd34c?embed=1",
       "sourceId": "616ebc4356c74a3b8554c396eb3bd34c",
-      "license": "CC Attribution",
-      "author": "DisneyCars",
+      "license": "CC Attribution 4.0",
+      "author": "DisneyCars (supercarmodels)",
       "glb": "/models/sketchfab-616ebc43/model.glb",
       "turntable": null,
-      "bytes": 686356
+      "bytes": 686356,
+      "verified": true
     },
     "gts": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/4e98dd91d11d4809bb80102edfbde42b?embed=1",
       "sourceId": "4e98dd91d11d4809bb80102edfbde42b",
-      "license": "CC Attribution",
-      "author": "Maroi Mister Let Me Think Official 3D Studio",
+      "license": "CC Attribution 4.0",
+      "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
       "glb": "/models/sketchfab-4e98dd91/model.glb",
       "turntable": null,
-      "bytes": 662700
+      "bytes": 662700,
+      "verified": true
     },
     "turbo": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/0aca89de30b94126bc7020109b2f3ef0?embed=1",
       "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
-      "license": "CC Attribution",
-      "author": "i3bod",
+      "license": "CC Attribution 4.0",
+      "author": "i3bod (i3bod)",
       "glb": "/models/sketchfab-0aca89de/model.glb",
       "turntable": null,
       "bytes": 1001444
     },
     "turbo-s": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/b0a77bb9395548aabcfe51b2ca476b8b?embed=1",
       "sourceId": "b0a77bb9395548aabcfe51b2ca476b8b",
-      "license": "CC Attribution",
-      "author": "let's not care abt it",
+      "license": "CC Attribution 4.0",
+      "author": "let's not care abt it (Pie-The-destroyer-of-the-World)",
       "glb": "/models/sketchfab-b0a77bb9/model.glb",
       "turntable": null,
-      "bytes": 1212296
+      "bytes": 1212296,
+      "verified": true
     },
     "gt3": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/a23f04a665a84177ac97551ce0c720eb?embed=1",
       "sourceId": "a23f04a665a84177ac97551ce0c720eb",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-a23f04a6/model.glb",
       "turntable": null,
-      "bytes": 1451652
+      "bytes": 1451652,
+      "verified": true
     },
     "gt3-touring": null,
     "gt3-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/bbb0f6181a52416bb776713cfd4987dd?embed=1",
       "sourceId": "bbb0f6181a52416bb776713cfd4987dd",
-      "license": "CC Attribution",
-      "author": "DisneyCars",
+      "license": "CC Attribution 4.0",
+      "author": "DisneyCars (supercarmodels)",
       "glb": "/models/sketchfab-bbb0f618/model.glb",
       "turntable": null,
-      "bytes": 1618920
+      "bytes": 1618920,
+      "verified": true
     },
     "gt2-rs": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/98767072b9f94f8eb6c4512b7be891c4?embed=1",
       "sourceId": "98767072b9f94f8eb6c4512b7be891c4",
-      "license": "CC Attribution",
-      "author": "vecarz",
+      "license": "CC Attribution 4.0",
+      "author": "vecarz (heynic)",
       "glb": "/models/sketchfab-98767072/model.glb",
       "turntable": null,
       "bytes": 2830616
     },
     "r": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/a8f40dc2180142c0887d251199d74077?embed=1",
       "sourceId": "a8f40dc2180142c0887d251199d74077",
-      "license": "CC Attribution",
-      "author": "Ulix21",
+      "license": "CC Attribution 4.0",
+      "author": "Ulix21 (Ulix21)",
       "glb": "/models/sketchfab-a8f40dc2/model.glb",
       "turntable": null,
-      "bytes": 58704
+      "bytes": 58704,
+      "verified": true
     },
     "50th-anniversary": null,
     "cabriolet": null,
     "carrera-rs": null,
     "gt2": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/c48298e703c44f2187d5562ef64f4dcf?embed=1",
       "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
-      "license": "CC Attribution",
-      "author": "Mona x Supercars",
+      "license": "CC Attribution 4.0",
+      "author": "Mona x Supercars (Car2022)",
       "glb": "/models/sketchfab-c48298e7/model.glb",
       "turntable": null,
-      "bytes": 260040
+      "bytes": 260040,
+      "verified": true
     },
     "gt2-evo": null,
     "club-sport": null,
     "millennium-edition": null,
     "gt3-rs-4.0": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/95226a73526b46e680b091f1caf6191f?embed=1",
       "sourceId": "95226a73526b46e680b091f1caf6191f",
-      "license": "CC Attribution",
-      "author": "Antonis_zks",
+      "license": "CC Attribution 4.0",
+      "author": "Antonis_zks (Antonis_zks)",
       "glb": "/models/sketchfab-95226a73/model.glb",
       "turntable": null,
-      "bytes": 762492
+      "bytes": 762492,
+      "verified": true
     },
     "sport-classic": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/38903fc72658408287a5972285494bd6?embed=1",
       "sourceId": "38903fc72658408287a5972285494bd6",
-      "license": "CC Attribution",
-      "author": "Nieve5677",
+      "license": "CC Attribution 4.0",
+      "author": "Nieve5677 (niev)",
       "glb": "/models/sketchfab-38903fc7/model.glb",
       "turntable": null,
-      "bytes": 1138744
+      "bytes": 1138744,
+      "verified": true
     },
     "911-2.7": null,
     "911-s-2.7": null,
@@ -733,7 +786,8 @@
       "license": "CC Attribution 4.0 (car geometry) + MIT (repo scene assembly)",
       "author": "Lionsharp Studios (car geometry; the Sketchfab export's own attribution block names Karol Miklas) + Utkarsh Pathrabe (repo)",
       "turntable": null,
-      "bytes": 2206432
+      "bytes": 2206432,
+      "verified": true
     },
     "turbo-3.3-930": {
       "embedUrl": "https://sketchfab.com/3d-models/porsche-911-turbo-1980-d792213008744efa9253a9147523ca2d?embed=1",
@@ -745,73 +799,79 @@
       "bytes": null
     },
     "turbo-flachbau": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/16e4693a8f4144e4a071685289869dd6?embed=1",
       "sourceId": "16e4693a8f4144e4a071685289869dd6",
-      "license": "CC Attribution",
-      "author": "LowPolyGarage",
+      "license": "CC Attribution 4.0",
+      "author": "LowPolyGarage (LowPolyGarage)",
       "glb": "/models/sketchfab-16e4693a/model.glb",
       "turntable": null,
-      "bytes": 66076
+      "bytes": 66076,
+      "verified": true
     },
     "turbo-s-3.3": null,
     "turbo-le-1989": null,
     "carrera-3.0": null,
     "sc": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/1986766bfeb845f2ad2aa898e4be0cdf?embed=1",
       "sourceId": "1986766bfeb845f2ad2aa898e4be0cdf",
-      "license": "CC Attribution",
-      "author": "amogusstrikesback2",
+      "license": "CC Attribution 4.0",
+      "author": "amogusstrikesback2 (amogusstrikesback2)",
       "glb": "/models/sketchfab-1986766b/model.glb",
       "turntable": null,
-      "bytes": 565096
+      "bytes": 565096,
+      "verified": true
     },
     "sc-rs": null,
     "carrera-3.2": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/26953936409c4ee7b9de11caa37e52f1?embed=1",
       "sourceId": "26953936409c4ee7b9de11caa37e52f1",
-      "license": "CC Attribution",
-      "author": "cepela",
+      "license": "CC Attribution 4.0",
+      "author": "cepela (cepela)",
       "glb": "/models/sketchfab-26953936/model.glb",
       "turntable": null,
-      "bytes": 683984
+      "bytes": 683984,
+      "verified": true
     },
     "carrera-3.2-turbo-look": null,
     "carrera-club-sport": null,
     "speedster-1989": null,
     "turbo-gt": null,
     "dakar": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/326e90718d164f018e9a673849a3161b?embed=1",
       "sourceId": "326e90718d164f018e9a673849a3161b",
-      "license": "CC Attribution",
-      "author": "HiQ3D",
+      "license": "CC Attribution 4.0",
+      "author": "HiQ3D (HiQ3D)",
       "glb": "/models/sketchfab-326e9071/model.glb",
       "turntable": null,
-      "bytes": 1895812
+      "bytes": 1895812,
+      "verified": true
     },
     "targa-4s-heritage": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/c9af184fba65488db9138d9cffcea832?embed=1",
       "sourceId": "c9af184fba65488db9138d9cffcea832",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-c9af184f/model.glb",
       "turntable": null,
-      "bytes": 1379500
+      "bytes": 1379500,
+      "verified": true
     },
     "carrera-gts": null,
     "carrera-4-gts": null,
     "targa-4-gts": {
-      "embedUrl": null,
+      "embedUrl": "https://sketchfab.com/3d-models/214a61d759e942e2887290b6e4e50d49?embed=1",
       "sourceId": "214a61d759e942e2887290b6e4e50d49",
-      "license": "CC Attribution",
-      "author": "007",
+      "license": "CC Attribution 4.0",
+      "author": "007 (tangwang920)",
       "glb": "/models/sketchfab-214a61d7/model.glb",
       "turntable": null,
-      "bytes": 1752012
+      "bytes": 1752012,
+      "verified": true
     },
     "gt3-s-c": null,
     "spirit-70": null
   },
-  "verifiedAt": "2026-10-03T13:34:09.489Z",
+  "verifiedAt": "2026-10-09T18:24:33.722Z",
   "sourceAudit": [
     {
       "source": "poly.pizza",

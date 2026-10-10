@@ -52,13 +52,14 @@
     "height": 1250
   },
   "model3d": {
-    "embedUrl": null,
+    "embedUrl": "https://sketchfab.com/3d-models/b711966542e143e2829a21e0230fa30e?embed=1",
     "sourceId": "b711966542e143e2829a21e0230fa30e",
-    "license": "CC Attribution",
-    "author": "Ai 3D Designs",
+    "license": "CC Attribution 4.0",
+    "author": "Ai 3D Designs (AiDesigner1)",
     "glb": "/models/sketchfab-b7119665/model.glb",
     "turntable": null,
-    "bytes": 1227632
+    "bytes": 1227632,
+    "verified": true
   },
   "videos": [
     {
@@ -124,13 +125,14 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/b711966542e143e2829a21e0230fa30e?embed=1",
         "sourceId": "b711966542e143e2829a21e0230fa30e",
-        "license": "CC Attribution",
-        "author": "Ai 3D Designs",
+        "license": "CC Attribution 4.0",
+        "author": "Ai 3D Designs (AiDesigner1)",
         "glb": "/models/sketchfab-b7119665/model.glb",
         "turntable": "/turntables/993__carrera",
-        "bytes": 1227632
+        "bytes": 1227632,
+        "verified": true
       },
       "credits": [
         {
@@ -432,13 +434,14 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/5d90416b06854a369e566d3fa286c692?embed=1",
         "sourceId": "5d90416b06854a369e566d3fa286c692",
-        "license": "CC Attribution",
-        "author": "_shobh19",
+        "license": "CC Attribution 4.0",
+        "author": "_shobh19 (s0h1o9b)",
         "glb": "/models/sketchfab-5d90416b/model.glb",
         "turntable": null,
-        "bytes": 175772
+        "bytes": 175772,
+        "verified": true
       },
       "credits": [
         {
@@ -593,13 +596,14 @@
       },
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/e8e06ddd8d3f4419a5252d187f6f217e?embed=1",
         "sourceId": "e8e06ddd8d3f4419a5252d187f6f217e",
-        "license": "CC Attribution",
-        "author": "Mona x Supercars",
+        "license": "CC Attribution 4.0",
+        "author": "Mona x Supercars (Car2022)",
         "glb": "/models/sketchfab-e8e06ddd/model.glb",
         "turntable": "/turntables/993__carrera-s",
         "bytes": 351052,
+        "verified": true,
         "turntableSynthetic": true
       },
       "credits": [
@@ -1046,13 +1050,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/72f2943569434e4e93ab63f403c6aa1c?embed=1",
         "sourceId": "72f2943569434e4e93ab63f403c6aa1c",
-        "license": "CC Attribution",
-        "author": "Nieve5677",
+        "license": "CC Attribution 4.0",
+        "author": "Nieve5677 (niev)",
         "glb": "/models/sketchfab-72f29435/model.glb",
         "turntable": "/turntables/993__turbo",
-        "bytes": 256348
+        "bytes": 256348,
+        "verified": true
       },
       "credits": [
         {

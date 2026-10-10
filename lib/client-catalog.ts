@@ -28,6 +28,16 @@ export interface ClientVideo {
   note?: string;
 }
 
+/**
+ * Only what the client needs to decide *whether* to draw a model. `verified`
+ * gates the hero's car choice — see `components/hero/hero-data.ts`.
+ */
+export interface ClientModel3D {
+  embedUrl: string | null;
+  glb: string | null;
+  verified: boolean;
+}
+
 export interface ClientVariant {
   id: string;
   name: string;
@@ -48,7 +58,7 @@ export interface ClientVariant {
   production: string | null;
   /** Full prose lives in the server-only data files; never shipped to the client. */
   heroImage: ClientImage | null;
-  model3d: { embedUrl: string | null; glb: string | null } | null;
+  model3d: ClientModel3D | null;
   videos: ClientVideo[];
 }
 
@@ -67,7 +77,7 @@ export interface ClientGeneration {
   stats: { label: string; value: string }[];
   heroImage: ClientImage | null;
   timelineImage: ClientImage | null;
-  model3d: { embedUrl: string | null; glb: string | null } | null;
+  model3d: ClientModel3D | null;
   videos: ClientVideo[];
   variants: ClientVariant[];
 }

@@ -70,14 +70,10 @@ export function HeroLighting({ quality, colors }: HeroLightingProps) {
         decay={2}
         color={colors.metal100}
       />
-      {/* low Guards Red kicker behind the rear haunch */}
-      <pointLight
-        position={[-1.2, 0.5, -4.4]}
-        intensity={7}
-        distance={9}
-        decay={2}
-        color={colors.guardsGlow}
-      />
+      {/* No floor-level Guards Red point light: at any intensity it smears
+          across the glossy floor at grazing angles. The red lives only in the
+          high environment ring below, whose mirrored image lands near the
+          fogged horizon instead. */}
 
       <Environment resolution={quality.envResolution} frames={1}>
         {/* key ring, high and behind — draws the roof highlight */}
@@ -99,12 +95,15 @@ export function HeroLighting({ quality, colors }: HeroLightingProps) {
           target={[0, 0.4, 0]}
         />
         {/* warm rim from the right rear — the classic 911 three-quarter sweep */}
+        {/* warm rim from the right rear — the classic 911 three-quarter sweep.
+            Kept high: on the glossy floor its mirrored image lands near the
+            fogged horizon instead of smearing a red carpet across the frame. */}
         <Lightformer
           form="ring"
-          intensity={2}
+          intensity={0.45}
           color={colors.guardsGlow}
-          scale={5}
-          position={[7.4, 1.8, -2.4]}
+          scale={3}
+          position={[7.4, 4.4, -2.4]}
           target={[0, 0.5, 0]}
         />
         {/* overhead softbox, keeps the bonnet from going flat */}

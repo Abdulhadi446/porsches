@@ -52,10 +52,10 @@
     "height": 1188
   },
   "model3d": {
-    "embedUrl": null,
+    "embedUrl": "https://sketchfab.com/3d-models/bf3bcbc17f274bc792b0aca30ce1a0d7?embed=1",
     "sourceId": "bf3bcbc17f274bc792b0aca30ce1a0d7",
-    "license": "CC Attribution",
-    "author": "MattDoesBlender",
+    "license": "CC Attribution 4.0",
+    "author": "MattDoesBlender (MattDoesBlender)",
     "glb": "/models/sketchfab-bf3bcbc1/model.glb",
     "turntable": null,
     "bytes": 1274124
@@ -865,10 +865,10 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/0aca89de30b94126bc7020109b2f3ef0?embed=1",
         "sourceId": "0aca89de30b94126bc7020109b2f3ef0",
-        "license": "CC Attribution",
-        "author": "i3bod",
+        "license": "CC Attribution 4.0",
+        "author": "i3bod (i3bod)",
         "glb": "/models/sketchfab-0aca89de/model.glb",
         "turntable": null,
         "bytes": 1001444

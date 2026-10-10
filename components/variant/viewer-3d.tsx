@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { ImageResult, ModelResult } from "#lib/assets";
 import { SafeImage } from "./safe-image";
 import { ColorSwapper } from "./color-swapper";
@@ -25,8 +25,8 @@ import type { GlbInspection } from "./viewer-glb";
  *   embed     → Sketchfab iframe behind a poster + click-to-load facade, so a
  *               page never has more than one live iframe in this section.
  *   turntable → image-sequence scrubber driven by pointer *and* keyboard.
- *   none      → a composed "3D coming soon" panel (today: every variant, since
- *               data/models.json does not exist yet).
+ *   none      → a full-bleed archive photograph with one honest sentence
+ *               (the variants no free-licensed 3D capture of exists).
  *
  * Colour/wheel swapping is only offered where the data can honour it:
  * glb → driven by real material + node inspection; embed/turntable/none →
@@ -63,7 +63,9 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
   const [inspection, setInspection] = useState<GlbInspection | null>(null);
 
   const isGlb = model.kind === "glb" && Boolean(model.glb);
-  const live = isGlb && inView && !dismissed;
+  // Reduced motion = no WebGL canvas at all (site contract): the poster stays,
+  // the turntable still scrubs under explicit pointer/keyboard control.
+  const live = isGlb && inView && !dismissed && !reduced;
 
   return (
     <section
@@ -91,12 +93,16 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                 ? "WebGL context live · one per page"
                 : dismissed
                   ? "Viewer released"
-                  : "Viewer mounts when in view"
+                  : reduced
+                    ? "Reduced motion — still frame shown"
+                    : "Viewer mounts when in view"
               : model.kind === "embed"
                 ? "Sketchfab embed · click to load"
-                : model.kind === "turntable"
-                  ? "Image sequence scrubber"
-                  : "No model on file yet"}
+              : model.kind === "turntable"
+                ? model.turntableSynthetic
+                  ? "Parallax pan of one photograph · no multi-angle 360° exists under a free licence"
+                  : "Image sequence scrubber"
+                : "No model on file yet"}
           </p>
         </div>
 
@@ -105,7 +111,7 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
           className="relative mt-(--space-8) overflow-hidden border border-ink-4 bg-ink-2"
         >
           {/* fixed aspect box → the canvas/iframe can never shift the page */}
-          <div className="relative aspect-[16/10] w-full sm:aspect-[16/9]">
+          <div data-car-cursor="" data-cursor="hide" className="relative aspect-[16/10] w-full sm:aspect-[16/9]">
             {isGlb && model.glb ? (
               live ? (
                 <GlbHost
@@ -116,7 +122,17 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                   onInspect={setInspection}
                 />
               ) : (
-                <ViewerPoster poster={poster} carName={carName} accent={accent} />
+                <ViewerPoster
+                  poster={poster}
+                  accent={accent}
+                  note={
+                    reduced
+                      ? "Reduced motion is on — a still frame stands in for the live viewer"
+                      : dismissed
+                        ? "The live viewer was released — this still frame stands in"
+                        : `3D viewer mounts as ${carName} scrolls into view`
+                  }
+                />
               )
             ) : model.kind === "embed" && model.embedUrl ? (
               <Embed3D
@@ -126,22 +142,14 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
                 accent={accent}
               />
             ) : model.kind === "turntable" && model.turntable ? (
-              <>
-                {model.turntableSynthetic && (
-                  <p className="label mt-(--space-2)">
-                    Parallax pan of one photograph — no multi-angle 360° of this
-                    car exists under a free licence
-                  </p>
-                )}
-                <Turntable3D
-                  base={model.turntable}
-                  poster={poster}
-                  carName={carName}
-                  accent={accent}
-                  autoPlay={!reduced}
-                  enabled={inView}
-                />
-              </>
+              <Turntable3D
+                base={model.turntable}
+                poster={poster}
+                carName={carName}
+                accent={accent}
+                autoPlay={!reduced}
+                enabled={inView}
+              />
             ) : (
               <NoModelPanel accent={accent} carName={carName} poster={poster} />
             )}
@@ -246,9 +254,12 @@ function GlbHost({
   accent: string;
   onInspect: (report: GlbInspection) => void;
 }) {
-  const hostRef = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState(false);
-  const { inView } = useInView<HTMLDivElement>({ rootMargin: "120px", ignoreVisibility: true });
+  // The ref returned here MUST be the one attached to the stage div — the
+  // observer never fires otherwise and the canvas would stay on frameloop
+  // "never" forever (it once did exactly that: the host attached its own
+  // ref, so inView was permanently false and the viewer drew nothing).
+  const { ref, inView } = useInView<HTMLDivElement>({ rootMargin: "120px", ignoreVisibility: true });
 
   const inspect = useCallback((report: GlbInspection) => onInspect(report), [onInspect]);
 
@@ -266,7 +277,7 @@ function GlbHost({
   }, [inView]);
 
   return (
-    <div ref={hostRef} className="absolute inset-0">
+    <div ref={ref} className="absolute inset-0">
       <GlbStage
         url={url}
         paint={paint}
@@ -282,12 +293,12 @@ function GlbHost({
 /** Facade shown before the canvas is mounted: hero frame + honest status. */
 function ViewerPoster({
   poster,
-  carName,
   accent,
+  note,
 }: {
   poster: ImageResult;
-  carName: string;
   accent: string;
+  note: string;
 }) {
   return (
     <div className="absolute inset-0">
@@ -297,21 +308,21 @@ function ViewerPoster({
         decorative
         fill
         sizes="(min-width: 1024px) 100vw, 100vw"
-        className="object-cover opacity-60"
+        className="object-cover opacity-80"
       />
       <div
         aria-hidden="true"
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(to top, var(--color-ink) 4%, color-mix(in srgb, var(--color-ink) 45%, transparent) 60%, transparent 100%)",
+            "linear-gradient(to top, var(--color-ink) 10%, color-mix(in srgb, var(--color-ink) 55%, transparent) 55%, transparent 100%)",
         }}
       />
-      <p className="absolute inset-x-0 bottom-0 p-(--space-6) text-center font-mono text-mono-sm tracking-(--tracking-mono) text-metal-300">
+      <p className="absolute inset-x-0 bottom-0 p-(--space-6) text-center font-mono text-mono-sm tracking-(--tracking-mono) text-metal-200">
         <span aria-hidden="true" className="mr-(--space-2)" style={{ color: accent }}>
           ◆
         </span>
-        3D viewer mounts as {carName} scrolls into view
+        {note}
       </p>
     </div>
   );

@@ -43,12 +43,24 @@ function currentGeneration() {
   return GENERATIONS[GENERATIONS.length - 1] ?? GENERATIONS[0];
 }
 
-/** Use the newest local model so the homepage never falls back to the low-poly body. */
+/**
+ * The hero car: the newest generation that owns a **verified** local GLB —
+ * a file whose licence and provenance were checked by hand (see
+ * `data/model-credits.json`). Newest-first, generation-level model first, then
+ * that generation's variants.
+ *
+ * Unverified models are deliberately skipped. A bulk Sketchfab import records
+ * only the generic licence label from the search API, so "newest GLB wins"
+ * put an unvetted generic car on the homepage. Falling through to the
+ * procedural 901 is always correct: it is a real, licence-clean 911 silhouette.
+ */
 function localModel() {
   for (const generation of [...GENERATIONS].reverse()) {
-    if (generation.model3d?.glb) return generation.model3d;
+    if (generation.model3d?.verified && generation.model3d.glb) {
+      return generation.model3d;
+    }
     const variantModel = generation.variants.find(
-      (variant) => variant.model3d?.glb,
+      (variant) => variant.model3d?.verified && variant.model3d.glb,
     );
     if (variantModel?.model3d) return variantModel.model3d;
   }

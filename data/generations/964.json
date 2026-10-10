@@ -52,13 +52,14 @@
     "height": 1103
   },
   "model3d": {
-    "embedUrl": null,
+    "embedUrl": "https://sketchfab.com/3d-models/22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
     "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
-    "license": "CC Attribution",
-    "author": "007",
+    "license": "CC Attribution 4.0",
+    "author": "007 (tangwang920)",
     "glb": "/models/sketchfab-22edb81d/model.glb",
     "turntable": null,
-    "bytes": 2139024
+    "bytes": 2139024,
+    "verified": true
   },
   "videos": [
     {
@@ -141,13 +142,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/22edb81d9ccf46c09a1add7a9ebda2c0?embed=1",
         "sourceId": "22edb81d9ccf46c09a1add7a9ebda2c0",
-        "license": "CC Attribution",
-        "author": "007",
+        "license": "CC Attribution 4.0",
+        "author": "007 (tangwang920)",
         "glb": "/models/sketchfab-22edb81d/model.glb",
         "turntable": "/turntables/964__carrera-4",
         "bytes": 2139024,
+        "verified": true,
         "turntableSynthetic": true
       },
       "credits": [
@@ -911,13 +913,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/e0dd6206dcc74f37a833b47c2a1d7572?embed=1",
         "sourceId": "e0dd6206dcc74f37a833b47c2a1d7572",
-        "license": "CC Attribution",
-        "author": "tonielpro520",
+        "license": "CC Attribution 4.0",
+        "author": "tonielpro520 (tonielpro520)",
         "glb": "/models/sketchfab-e0dd6206/model.glb",
         "turntable": null,
-        "bytes": 1750228
+        "bytes": 1750228,
+        "verified": true
       },
       "credits": [
         {
@@ -1090,13 +1093,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/b868c5883b9c4ff889bc7f439e01cd7e?embed=1",
         "sourceId": "b868c5883b9c4ff889bc7f439e01cd7e",
-        "license": "CC Attribution",
-        "author": "Maroi Mister Let Me Think Official 3D Studio",
+        "license": "CC Attribution 4.0",
+        "author": "Maroi Mister Let Me Think Official 3D Studio (homicivan53)",
         "glb": "/models/sketchfab-b868c588/model.glb",
         "turntable": null,
-        "bytes": 627412
+        "bytes": 627412,
+        "verified": true
       },
       "credits": [
         {

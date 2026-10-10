@@ -76,6 +76,7 @@ export function Gallery({ images, carName, accent, headingId }: GalleryProps) {
             <li key={`${image.src}-${position}`}>
               <motion.button
                 type="button"
+                data-car-cursor="" data-cursor="hide"
                 onClick={() => setIndex(position)}
                 aria-label={`Open image ${position + 1} of ${images.length}: ${image.alt}`}
                 /* the layoutId is handed over to the lightbox when this frame is

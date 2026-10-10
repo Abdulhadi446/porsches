@@ -61,6 +61,7 @@ export function VariantGrid({ generation, accent, headingId }: VariantGridProps)
                 <li key={variant.id}>
                   <Link
                     href={`/911/${generation.id}/${variant.id}`}
+                    data-car-cursor="" data-cursor="hide"
                     className={cx(
                       "group flex h-full flex-col overflow-hidden border border-ink-4 bg-ink-2 transition-colors hover:border-metal-500",
                       "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards",

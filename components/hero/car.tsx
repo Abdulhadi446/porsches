@@ -4,29 +4,28 @@
  * `<Car />` — the hero vehicle.
  *
  * Resolution order (documented in README.md):
- *   1. `model.kind === "glb"` → drei `useGLTF`, wrapped in Suspense + an error
- *      boundary so a missing / corrupt file can never take the hero down.
+ *   1. `model.kind === "glb"` → drei `useGLTF` with the local Draco/Meshopt
+ *      decoders, wrapped in Suspense + an error boundary so a missing /
+ *      corrupt file can never take the hero down.
  *   2. anything else (Sketchfab embed, turntable images, nothing at all) →
- *      the procedural side-profile 911 from `procedural-911.ts`. This is the
- *      expected path today: ASSET-3D is delivering Sketchfab embeds, which are
- *      iframes and cannot be composited into this canvas.
+ *      the procedural side-profile 911 from `procedural-911.ts`, which also
+ *      stands in while the decoders warm up and while the GLB parses.
  *
  * Every geometry and material this component creates is owned by it and disposed
  * on unmount. The GLB branch shares drei's loader cache, so it opts out of
  * R3F's disposal and relies on the context teardown instead.
  */
 
-import { Suspense, useEffect, useMemo } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import {
-  Box3,
   Color,
   DoubleSide,
-  Group,
   MeshPhysicalMaterial,
-  Vector3,
 } from "three";
 import { useGLTF } from "@react-three/drei";
 import type { ModelResult } from "#lib/assets";
+import { attachDecoders, warmDecoders } from "#components/variant/lib/decoders";
+import { fitModelToLength } from "#components/variant/lib/fit";
 import { ErrorBoundary } from "./error-boundary";
 import type { QualityProfile } from "./quality";
 import {
@@ -186,23 +185,11 @@ export function Procedural911({
  * Local GLB branch
  * ------------------------------------------------------------------ */
 
-/** Centre + scale a loaded scene so it sits on the floor at a 4.19 m length. */
-function fitScene(scene: Group): Group {
-  const clone = scene.clone(true);
-  const box = new Box3().setFromObject(clone);
-  const size = new Vector3();
-  const center = new Vector3();
-  box.getSize(size);
-  box.getCenter(center);
-  const scale = CAR.length / (Math.max(size.x, size.z) || 1);
-  clone.scale.setScalar(scale);
-  clone.position.set(-center.x * scale, -box.min.y * scale, -center.z * scale);
-  return clone;
-}
-
 function LoadedCar({ url }: { url: string }) {
-  const gltf = useGLTF(url);
-  const object = useMemo(() => fitScene(gltf.scene), [gltf.scene]);
+  const gltf = useGLTF(url, false, false, (loader) =>
+    attachDecoders(loader as unknown as Parameters<typeof attachDecoders>[0]),
+  );
+  const object = useMemo(() => fitModelToLength(gltf.scene), [gltf.scene]);
   useEffect(() => {
     return () => {
       // shared with drei's loader cache — drop the references and let the
@@ -219,11 +206,28 @@ function LoadedCar({ url }: { url: string }) {
 
 export function Car({ model, quality, colors }: CarProps) {
   const procedural = <Procedural911 quality={quality} colors={colors} />;
-  if (model.kind !== "glb" || !model.glb) return procedural;
+  const url = model.kind === "glb" && model.glb ? model.glb : null;
+
+  // The featured GLB is Draco-compressed: useGLTF throws unless a DRACOLoader
+  // is attached, and the decoder resolves asynchronously. Show the procedural
+  // 911 (the Suspense fallback anyway) until the decoders are warm.
+  const [decodersReady, setDecodersReady] = useState(false);
+  useEffect(() => {
+    if (!url) return;
+    let alive = true;
+    void warmDecoders().then(() => {
+      if (alive) setDecodersReady(true);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [url]);
+
+  if (!url || !decodersReady) return procedural;
   return (
     <ErrorBoundary fallback={procedural}>
       <Suspense fallback={procedural}>
-        <LoadedCar url={model.glb} />
+        <LoadedCar url={url} />
       </Suspense>
     </ErrorBoundary>
   );

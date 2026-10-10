@@ -20,6 +20,8 @@ export { RoadTunnel, type RoadTunnelProps } from "./road-tunnel";
 
 export { Starfield, type StarfieldProps } from "./starfield";
 
+export { CarCursor, type CarCursorProps } from "./car-cursor";
+
 export {
   FX_TOKEN_COLORS,
   FX_DPR_CEILING,

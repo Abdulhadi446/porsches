@@ -237,6 +237,13 @@ export interface IndexedVariant {
   familyLabel: string;
   special: boolean;
   production: string | null;
+  /** hero still for the card — the 640 rendition keeps the grid light */
+  image: {
+    src: string;
+    alt: string;
+    width: number | null;
+    height: number | null;
+  } | null;
   /** lowercased haystacks, grouped by field weight */
   f: {
     name: string;
@@ -303,6 +310,21 @@ export const GENERATION_INDEX: IndexedGeneration[] = GENERATIONS.map(
   }),
 ).sort((a, b) => a.index - b.index);
 
+/** Card thumbnail: the 640 rendition of the variant's hero still. */
+function cardImage(variant: ClientVariant): IndexedVariant["image"] {
+  const hero = variant.heroImage;
+  if (!hero?.src) return null;
+  const src = hero.src.includes("-1920.avif")
+    ? hero.src.replace("-1920.avif", "-640.avif")
+    : hero.src;
+  return {
+    src,
+    alt: hero.alt || variant.name,
+    width: hero.width ?? null,
+    height: hero.height ?? null,
+  };
+}
+
 function buildVariant(
   generation: ClientGeneration,
   variant: ClientVariant,
@@ -354,6 +376,7 @@ function buildVariant(
     familyLabel: familyLabel(families),
     special: variant.special === true,
     production: variant.production ?? null,
+    image: cardImage(variant),
     f: {
       name: (variant.name ?? "").toLowerCase(),
       alias: `${variant.id.replace(/[-_]+/g, " ")} ${variant.id} ${generation.code}`.toLowerCase(),

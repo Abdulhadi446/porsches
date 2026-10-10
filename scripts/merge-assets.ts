@@ -48,7 +48,11 @@ const credits = new Map<string, Credit>(
  * would not collide with the images agent while running in parallel; fold them
  * in here so /credits lists EVERY asset, not just the stills.
  */
-const extraCreditFiles = ["data/turntable-credits.json", "data/model-credits.json"];
+const extraCreditFiles = [
+  "data/turntable-credits.json",
+  "data/model-credits.json",
+  "data/sound-credits.json",
+];
 for (const file of extraCreditFiles) {
   try {
     const parsed = read<{ credits?: Credit[] } | Credit[]>(file);

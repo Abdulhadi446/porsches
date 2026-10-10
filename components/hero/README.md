@@ -75,7 +75,9 @@ Nothing to wire up — the contract is already in place:
 1. ASSET-3D records a licensed local file, e.g.
    `data/generations/992-2.json → model3d.glb = "/models/911-992-2.glb"` (that
    field must be the *local* path; `getModel()` already prefers `glb` over
-   `embedUrl`).
+   `embedUrl`) **and marks it `"verified": true`** once the licence and the model
+   itself have been checked against the source — see `Model3D.verified` in
+   `data/schema.ts` and the provenance notes in `data/model-credits.json`.
 2. `heroModel()` returns `{ kind: "glb", glb }`, `<Car />` switches to
    `<LoadedCar />`, and the model is centred, scaled to a 4.19 m length and
    dropped onto `y = 0` by `fitScene()`.
@@ -85,6 +87,18 @@ Nothing to wire up — the contract is already in place:
 
 If the GLB arrives with its own scale/axis conventions, `fitScene()` is the one
 place to adjust.
+
+### Why `verified` is a gate and not a comment
+
+`localModel()` (`hero-data.ts`) walks the generations newest-first and takes the
+first model whose `verified` flag is set; **absent means unverified**. That gate
+exists because "newest GLB wins" is unsafe: a bulk Sketchfab import left 35 GLBs
+in `data/models.json` carrying only the generic `"CC Attribution"` label from the
+search API, and the newest of them (attributed to _BMW'S Lost Proxy_, 108 generic
+meshes) became the homepage car. Unverified models may still be offered to a
+visitor on their own variant page, where they are labelled — they just may not be
+*featured*. If you add a model, expect a draw-call budget too: the hero targets
+≤ 30, and the procedural body is 16 meshes.
 
 ## Scroll: 360° orbit and the Lenis hand-off
 

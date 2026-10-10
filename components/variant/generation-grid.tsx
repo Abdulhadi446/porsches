@@ -90,6 +90,7 @@ export function GenerationGrid({ generations, totals, videoCounts }: GenerationG
               <li key={generation.id} className={span}>
                 <Link
                   href={`/911/${generation.id}`}
+                  data-car-cursor="" data-cursor="hide"
                   className={cx(
                     "group relative isolate flex h-full flex-col justify-end overflow-hidden border border-ink-4 bg-ink-2 transition-colors hover:border-metal-500",
                     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards",

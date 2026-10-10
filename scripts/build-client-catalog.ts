@@ -39,6 +39,7 @@ interface RawVideo {
 interface RawModel {
   embedUrl?: string | null;
   glb?: string | null;
+  verified?: boolean;
 }
 interface RawStat {
   label: string;
@@ -115,6 +116,23 @@ function slimImage(
   return out;
 }
 
+/**
+ * `verified` is carried through, not recomputed: the hero picks its car by it
+ * (`components/hero/hero-data.ts`), so dropping it here would silently send
+ * every model back to the procedural body. Absent in the data means
+ * unverified — see `Model3D.verified` in data/schema.ts.
+ */
+function slimModel(
+  model: RawModel | null | undefined,
+): { embedUrl: string | null; glb: string | null; verified: boolean } | null {
+  if (!model) return null;
+  return {
+    embedUrl: model.embedUrl ?? null,
+    glb: model.glb ?? null,
+    verified: model.verified === true,
+  };
+}
+
 const generations = readdirSync(join(ROOT, "data/generations"))
   .filter((f) => f.endsWith(".json"))
   .map((f) => read<RawGeneration>(`data/generations/${f}`))
@@ -135,9 +153,7 @@ const slim = generations.map((g) => ({
   stats: (g.stats ?? []).slice(0, 6),
   heroImage: slimImage(g.heroImage),
   timelineImage: slimImage(g.timelineImage),
-  model3d: g.model3d
-    ? { embedUrl: g.model3d.embedUrl ?? null, glb: g.model3d.glb ?? null }
-    : null,
+  model3d: slimModel(g.model3d),
   videos: (g.videos ?? []).map((v: RawVideo) => ({
     id: v.id,
     title: v.title,
@@ -163,9 +179,7 @@ const slim = generations.map((g) => ({
     special: v.special === true,
     production: v.production ?? null,
     heroImage: slimImage(v.heroImage),
-    model3d: v.model3d
-      ? { embedUrl: v.model3d.embedUrl ?? null, glb: v.model3d.glb ?? null }
-      : null,
+    model3d: slimModel(v.model3d),
     videos: (v.videos ?? []).map((x: RawVideo) => ({
       id: x.id,
       title: x.title,

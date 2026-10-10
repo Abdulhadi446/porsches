@@ -1,11 +1,12 @@
 # components/fx — background effects library
 
-Seven drop-in, decorative background layers for the 911 showcase. Every component is a
-client component, renders inside a positioned parent, never intercepts pointer events, and
-degrades to a static CSS gradient instead of failing.
+Eight drop-in, decorative layers for the 911 showcase. Seven are background layers; the
+eighth (`CarCursor`) is a pointer-following overlay. Every component is a client
+component, never intercepts pointer events, and degrades to a static CSS gradient (or to
+the native cursor) instead of failing.
 
 ```tsx
-import { GradientMesh, Starfield, GrainOverlay } from "#components/fx";
+import { GradientMesh, Starfield, GrainOverlay, CarCursor } from "#components/fx";
 ```
 
 No runtime asset fetches: colours come from `styles/tokens.css` (resolved with
@@ -230,6 +231,33 @@ scroll state, and it does so without a listener.
 <Starfield count={160} intensity={0.9} parallax={0.25} />
 ```
 
+### 8. `<CarCursor />` — `car-cursor.tsx`
+
+A 911 silhouette that replaces the native cursor while the pointer is over a car — the
+variant/generation cards, gallery frames, the hero stage and the 3D viewer. Mounted once in
+`app/layout.tsx`; the effect is **opt-in per element** via the `data-car-cursor` attribute.
+
+Deviations from the shared contract (deliberate, all of them):
+
+| Aspect | Behaviour |
+| --- | --- |
+| Parent | none — `position: fixed`, follows the pointer |
+| Pointer events | the layer itself is `pointer-events: none`; it only *reads* the pointer |
+| `intensity`/`position`/`zIndex` props | not accepted (fixed by nature, `var(--z-overlay)`) |
+| Reduced motion / touch / no-JS | the component stays inert **and** never hides the native cursor — `cursor: none` is applied only after JS arms `<html data-cursor-armed>` on a fine pointer with `prefers-reduced-motion: no-preference` |
+
+Perf: no rAF loop at rest — frames run only while the pointer moves or the bank angle is
+still settling, then park. `scroll`, `blur`, `visibilitychange` and `pointerout` all
+force-hide; all writes are `transform`/`opacity` on the DOM node (the component never
+re-renders). Nested controls inside a car zone (`a`/`button`/form widgets that are not the
+zone element itself) restore the native pointer, so hero CTAs keep their affordance.
+
+```tsx
+<CarCursor />
+// anywhere that is a car:
+<Link href={href} data-car-cursor=""> … </Link>
+```
+
 ---
 
 ## Copy-paste: layering a section
@@ -265,11 +293,11 @@ Notes for integrators:
 ```ts
 export {
   GradientMesh, SpeedLines, RainOnGlass, HeatHaze,
-  GrainOverlay, RoadTunnel, Starfield,
+  GrainOverlay, RoadTunnel, Starfield, CarCursor,
   GRADIENT_MESH_PALETTE,
   type GradientMeshProps, type SpeedLinesProps, type SpeedLinesOrigin,
   type RainOnGlassProps, type HeatHazeProps, type GrainOverlayProps,
-  type RoadTunnelProps, type StarfieldProps,
+  type RoadTunnelProps, type StarfieldProps, type CarCursorProps,
   FX_TOKEN_COLORS, FX_DPR_CEILING, FX_MAX_PARTICLES, fxVar,
   setFxCapabilityOverride,
   type FxColor, type FxPosition, type FxToken,

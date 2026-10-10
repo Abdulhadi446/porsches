@@ -120,6 +120,7 @@ export function Hero3D() {
     >
       <div
         data-hero-stage=""
+        data-car-cursor="" data-cursor="hide"
         className="sticky top-0 h-dvh w-full overflow-hidden bg-ink"
       >
         {/* bottom layer: fx gradient, only while there is no canvas above it */}

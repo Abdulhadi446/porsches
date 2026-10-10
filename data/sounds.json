@@ -1,0 +1,34 @@
+{
+  "updatedAt": "2026-10-10",
+  "map": {
+    "901": "engine-start-aircooled",
+    "gseries": "engine-start-aircooled",
+    "964": "engine-start-aircooled",
+    "993": "engine-start-aircooled",
+    "996": "engine-start-watercooled",
+    "997": "engine-start-watercooled",
+    "991": "engine-start-watercooled",
+    "992-1": "engine-start-watercooled",
+    "992-2": "engine-start-watercooled"
+  },
+  "sounds": [
+    {
+      "id": "engine-start-aircooled",
+      "kind": "engine-start",
+      "subject": "Porsche 911 R (1967)",
+      "moment": "pulling away at the start of the Goodwood Festival of Speed hillclimb, 2009",
+      "src": "/sounds/porsche-911r-1967.ogg",
+      "duration": 21.9,
+      "creditId": "snd-engine-start-aircooled"
+    },
+    {
+      "id": "engine-start-watercooled",
+      "kind": "engine-start",
+      "subject": "Porsche 997 GT3 RS",
+      "moment": "pulling away at the start of the Goodwood Festival of Speed hillclimb, 2010",
+      "src": "/sounds/porsche-997-gt3rs.ogg",
+      "duration": 10.7,
+      "creditId": "snd-engine-start-watercooled"
+    }
+  ]
+}

@@ -13,8 +13,9 @@ import {
 } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Bounds, ContactShadows, OrbitControls, useGLTF } from "@react-three/drei";
-import type { Group, Mesh, MeshStandardMaterial, Object3D } from "three";
+import type { Mesh, MeshStandardMaterial, Object3D } from "three";
 import { attachDecoders, ensureKTX2, warmDecoders } from "./lib/decoders";
+import { fitModelToLength } from "./lib/fit";
 import { VIEWER_DPR_CEILING } from "./lib/webgl";
 import type { Paint, WheelOption } from "./lib/palette";
 
@@ -57,14 +58,28 @@ export function GlbStage({ url, paint, wheel, active, onInspect, accent }: GlbSt
   const cameraApiRef = useRef<((action: "in" | "out" | "reset") => void) | null>(null);
   const [spinning, setSpinning] = useState(false);
 
-  // Warm the decoders before anything is parsed, so the first load already has
-  // Meshopt (and Draco, once `/decoders` exists) wired into the loader.
+  // The GLBs we ship are Draco-compressed: useGLTF throws "No DRACOLoader
+  // instance provided" unless the decoder is already attached to the loader.
+  // Decoders load asynchronously, so the scene may only mount after they
+  // resolve — otherwise every cold load hits the error boundary.
+  const [decodersReady, setDecodersReady] = useState(false);
   useEffect(() => {
-    void warmDecoders();
+    let alive = true;
+    void warmDecoders().then(() => {
+      if (alive) setDecodersReady(true);
+    });
+    return () => {
+      alive = false;
+    };
   }, []);
 
   return (
-    <div className="relative h-full w-full">
+    <div
+      className="relative h-full w-full"
+      style={{
+        backgroundImage: `radial-gradient(ellipse 60% 42% at 50% 62%, color-mix(in srgb, ${accent} 12%, transparent), transparent 70%)`,
+      }}
+    >
       <Boundary label="3D model">
         <Canvas
           dpr={[1, VIEWER_DPR_CEILING]}
@@ -82,15 +97,17 @@ export function GlbStage({ url, paint, wheel, active, onInspect, accent }: GlbSt
           style={{ touchAction: "pan-y" }}
         >
           <Suspense fallback={null}>
-            <Scene
-              url={url}
-              paint={paint}
-              wheel={wheel}
-              controlsRef={controlsRef}
-              cameraApiRef={cameraApiRef}
-              onInspect={onInspect}
-              accent={accent}
-            />
+            {decodersReady ? (
+              <Scene
+                url={url}
+                paint={paint}
+                wheel={wheel}
+                controlsRef={controlsRef}
+                cameraApiRef={cameraApiRef}
+                onInspect={onInspect}
+                accent={accent}
+              />
+            ) : null}
           </Suspense>
         </Canvas>
       </Boundary>
@@ -195,9 +212,14 @@ function Scene({
     attachDecoders(loader as unknown as Parameters<typeof attachDecoders>[0]),
   );
 
-  /** Clone the cached scene so materials are per instance and undoable. */
+  /**
+   * Clone + normalise to real-world size, then mark meshes for shadows.
+   * The normalisation is mandatory: some Sketchfab GLBs are authored at
+   * centimetre scale, which defeats <Bounds> + OrbitControls minDistance
+   * (the car renders as a speck). See lib/fit.ts.
+   */
   const model = useMemo(() => {
-    const clone = gltf.scene.clone(true) as Group;
+    const clone = fitModelToLength(gltf.scene);
     clone.traverse((node) => {
       const mesh = node as Mesh;
       if (!mesh.isMesh) return;
@@ -252,7 +274,7 @@ function Scene({
       <directionalLight position={[4, 6, 3]} intensity={1.6} castShadow />
       <directionalLight position={[-5, 2, -4]} intensity={0.55} color={accent} />
 
-      <Bounds fit clip observe margin={1.25}>
+      <Bounds fit clip observe margin={0.65}>
         <primitive object={model} />
       </Bounds>
 

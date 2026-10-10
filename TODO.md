@@ -28,6 +28,16 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
 
 ### 3D
 
+- [x] **Verify or drop the 35 GLBs from the 2026-10-04 Sketchfab import.** Done 2026-10-10: every
+      uid re-fetched from `api.sketchfab.com/v3/models/{uid}` (licence, author, title, mesh counts);
+      verdicts written into `data/models.json`, 35 provenance credits appended to
+      `data/model-credits.json` (now 37 entries). 60 of 69 registry references are now
+      `verified: true`; 9 stay held from the hero (over the ≤30 draw-call budget or low-poly):
+      gen models `996`, `992-1`, `992-2` + variants `991/gt2-rs`, `996/turbo`, `992-1/s-t`.
+      The hero resolves to `992-2/targa-4-gts` (2025 Targa 4 GTS).
+- [x] **Restore the 33 lost Sketchfab `embedUrl` records.** Done 2026-10-09: restored in the uid URL
+      form `https://sketchfab.com/3d-models/{uid}?embed=1` (66 records) — Sketchfab 301-redirects uid
+      URLs to the canonical slug, so the slug table was never needed.
 - [ ] **36 variants have no 3D at all** (no GLB, no embed, no turntable). They render the composed
       "3D coming soon" panel. Per generation: - `992-2` (12): `carrera-t`, `targa-4s`, `carrera-gts`, `carrera-4-gts`, `turbo-s`, `gt3`,
       `gt3-rs`, `gt3-s-c`, `spirit-70`, `carrera-s-mt-package`, `carrera-4-gts-transfagarasan`,
@@ -44,10 +54,17 @@ licence rules), `docs/DEPLOY.md` (deploy), `docs/CONTRACTS.md` (ownership).
       `964/carrera-4`, `997/gt2-rs`, `991/r`, `997/sport-classic`, `gseries/turbo-3.3-930`,
       `901/911-2.0`, `992-1/s-t`.
 - [ ] **Optional highest-leverage upgrade: a Sketchfab API token.** Downloads are OAuth-gated
-      (401 without a token), which is why only 2 real 911 GLBs exist under an open licence despite
-      an 18-source sweep. With a token, the existing pipeline downloads the models it has already
-      licence-verified, runs `gltf-transform optimize --compress draco --texture-compress webp`
-      under the 3 MB budget, and wires them into the viewer. Nothing else needs to change.
+      (401 without a token), which is why the pool of open-licence 911 GLBs is capped at what
+      embeds can show. A 2026-10-10 CC-BY search already found ~12 further stock-looking
+      candidates waiting for a token (uid · title · uploader): `de1ffd344c41481892511f7fd332c136`
+      930 Turbo 1975 (Lexyc16) · `4cef7c1e22ab40fd937507eae9a62cd8` 991 Carrera S 2015 mid-poly
+      (chiwei2333) · `ee69c474a1cc4085944cde4cb7ae87db` 992 C4S 2020 Aerokit (JK3Dstudio) ·
+      `b76c9b2ae2d548c3869426eac4ab8a19` 992 GT3 R 2024 (Tyler_Dave) · `41419345868e406eaec8a271e33de3c1`
+      GT2 RS Angle Eyes (COOL601) · `e5d5f35870344bd4a005ef5599a63313` 911 low-poly (WoTiger) ·
+      `877b1bc1739f4a2bb65d62fd7ffd9f75` 911 with interior (n.brizitskaya) · `b142254332b14f38ba61f44fcec8d54a`
+      911 (RxARSLON) · `39df8be273464c6980171f5758bfde97` GT3 2022 + `3b84f8732064467ea3a07b8cf70eef31`
+      992 GT3R (sohyalebret, high-poly — likely embed-only). With a token the existing pipeline
+      downloads, optimises under the 3 MB budget and wires them into the viewer.
 
 ### Imagery
 

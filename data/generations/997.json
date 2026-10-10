@@ -1561,13 +1561,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/95226a73526b46e680b091f1caf6191f?embed=1",
         "sourceId": "95226a73526b46e680b091f1caf6191f",
-        "license": "CC Attribution",
-        "author": "Antonis_zks",
+        "license": "CC Attribution 4.0",
+        "author": "Antonis_zks (Antonis_zks)",
         "glb": "/models/sketchfab-95226a73/model.glb",
         "turntable": null,
-        "bytes": 762492
+        "bytes": 762492,
+        "verified": true
       },
       "credits": [
         {
@@ -1710,13 +1711,14 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/c48298e703c44f2187d5562ef64f4dcf?embed=1",
         "sourceId": "c48298e703c44f2187d5562ef64f4dcf",
-        "license": "CC Attribution",
-        "author": "Mona x Supercars",
+        "license": "CC Attribution 4.0",
+        "author": "Mona x Supercars (Car2022)",
         "glb": "/models/sketchfab-c48298e7/model.glb",
         "turntable": null,
-        "bytes": 260040
+        "bytes": 260040,
+        "verified": true
       },
       "credits": [
         {
@@ -1880,13 +1882,14 @@
         }
       ],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/41419345868e406eaec8a271e33de3c1?embed=1",
         "sourceId": "41419345868e406eaec8a271e33de3c1",
-        "license": "CC Attribution",
-        "author": "COOL601",
+        "license": "CC Attribution 4.0",
+        "author": "COOL601 (COOL601)",
         "glb": "/models/sketchfab-41419345/model.glb",
         "turntable": "/turntables/997__gt2-rs",
         "bytes": 1939436,
+        "verified": true,
         "turntableSynthetic": true
       },
       "credits": [

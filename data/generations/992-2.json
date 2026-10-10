@@ -53,10 +53,10 @@
   },
   "model3d": {
     "glb": "/models/sketchfab-b668f8a3/model.glb",
-    "embedUrl": null,
+    "embedUrl": "https://sketchfab.com/3d-models/b668f8a336b54954b04fa0dade507300?embed=1",
     "sourceId": "b668f8a336b54954b04fa0dade507300",
     "license": "CC Attribution 4.0",
-    "author": "BMW'S Lost Proxy",
+    "author": "BMW'S Lost Proxy (Bmws_Lost_Proxy)",
     "turntable": null,
     "bytes": 1274400
   },
@@ -1212,13 +1212,14 @@
       ],
       "videos": [],
       "model3d": {
-        "embedUrl": null,
+        "embedUrl": "https://sketchfab.com/3d-models/214a61d759e942e2887290b6e4e50d49?embed=1",
         "sourceId": "214a61d759e942e2887290b6e4e50d49",
-        "license": "CC Attribution",
-        "author": "007",
+        "license": "CC Attribution 4.0",
+        "author": "007 (tangwang920)",
         "glb": "/models/sketchfab-214a61d7/model.glb",
         "turntable": null,
-        "bytes": 1752012
+        "bytes": 1752012,
+        "verified": true
       },
       "credits": [
         {

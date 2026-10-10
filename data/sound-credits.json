@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-10-10T00:08:00.000Z",
+  "credits": [
+    {
+      "assetId": "snd-engine-start-aircooled",
+      "kind": "sound",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File:Porsche_911R_(1967).ogg",
+      "license": "CC BY-SA 3.0",
+      "author": "Edvvc",
+      "retrieved": "2026-10-10",
+      "sourceId": "File:Porsche 911R (1967).ogg",
+      "localPath": "/sounds/porsche-911r-1967.ogg",
+      "note": "21.9 s Ogg Vorbis (236291 bytes, original upload). 1967 Porsche 911 R pulling away at the start of the Goodwood Festival of Speed hillclimb, 3 July 2009. Used as the representative engine recording for the air-cooled generations — it is this car's sound, not the car on the page."
+    },
+    {
+      "assetId": "snd-engine-start-watercooled",
+      "kind": "sound",
+      "source": "wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/File:Porsche_997_GT3_RS.ogg",
+      "license": "CC BY-SA 3.0",
+      "author": "Edvvc",
+      "retrieved": "2026-10-10",
+      "sourceId": "File:Porsche 997 GT3 RS.ogg",
+      "localPath": "/sounds/porsche-997-gt3rs.ogg",
+      "note": "10.7 s Ogg Vorbis (262220 bytes, original upload; also dual-licensed GFDL by the author). 2009 Porsche 997 GT3 RS pulling away at the start of the Goodwood Festival of Speed hillclimb, 3 July 2010. Used as the representative engine recording for the water-cooled generations — it is this car's sound, not the car on the page."
+    }
+  ]
+}
