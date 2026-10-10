@@ -24,6 +24,7 @@ sequences, 3D and a credits page that names every author and licence.
 | Animation   | GSAP + ScrollTrigger, Lenis smooth scroll, framer-motion (route-local only)                                       |
 | Images      | `next/image` over pre-converted AVIF/WebP produced locally by sharp                                               |
 | Data        | JSON in `data/`, validated by `data/schema.ts`; slim client catalogue built at build time                         |
+| Media       | Cloudflare R2 (public bucket + custom domain) serves the two render trees; committed models/sounds stay local     |
 | Type/format | TypeScript 6 (`strict`), ESLint 9 + `eslint-config-next`                                                          |
 | CI          | GitHub Actions (`.github/workflows/ci.yml`)                                                                       |
 | Run mode    | Local Next.js server                                                                                              |
@@ -84,6 +85,57 @@ commits and never deploys.
 committed; the render trees are not. Anything that writes into `data/` has to be
 committed for a deploy to see it.
 
+## Serving media from Cloudflare R2
+
+The two render trees are too large for git (~485 MB across 5 595 files), so they
+live in a **public R2 bucket** behind a custom domain. `mediaSrc()` in
+`lib/assets.ts` rewrites `/images/**` and `/turntables/**` to that origin at
+build time via `NEXT_PUBLIC_MEDIA_HOST`; `next.config.ts` derives the matching
+`images.remotePatterns` entry from the same variable so the two cannot disagree.
+Models, sounds and the Draco/Basis decoders stay committed — R2 only carries the
+two generated trees.
+
+```bash
+R2_ACCOUNT_ID=… R2_ACCESS_KEY_ID=… R2_SECRET_ACCESS_KEY=… R2_BUCKET=… \
+  npm run assets:upload-r2            # both trees (loads .env when present)
+node scripts/upload-r2.ts --dry-run   # preview, no writes
+```
+
+Set `NEXT_PUBLIC_MEDIA_HOST=https://content.thetrillioniar.me` on the Vercel
+project (build-time). Left unset, the paths are returned unchanged and the site
+serves the committed silhouette placeholder — the env var is a pure upgrade.
+
+**CORS is required, not optional.** R2 only returns `Access-Control-Allow-Origin`
+when the bucket has a CORS policy allowing the site's origins. Without it the
+browser blocks every image: turntable frames render as raw `<img>` straight from
+R2, and the Next optimizer path crawls or times out on Vercel. Paste this into
+Cloudflare → R2 → bucket → Settings → CORS policy:
+
+```json
+[
+  {
+    "AllowedOrigins": [
+      "https://content.thetrillioniar.me",
+      "https://porsches.vercel.app",
+      "https://*.vercel.app",
+      "http://localhost:3000",
+      "http://localhost:3111"
+    ],
+    "AllowedMethods": ["GET", "HEAD"],
+    "AllowedHeaders": ["*"],
+    "ExposeHeaders": ["Content-Length", "Content-Type", "ETag", "Cache-Control"],
+    "MaxAgeSeconds": 86400
+  }
+]
+```
+
+Verify with `curl -H "Origin: https://porsches.vercel.app" -I <asset-url>` — the
+response must include `access-control-allow-origin`. Object keys mirror the
+on-disk `public/` layout, so the custom domain serves keys **without** the bucket
+prefix: `https://<domain>/public/images/…` is a 200, `https://<domain>/<bucket>/public/…`
+is a 404. Full walkthrough, reference values and troubleshooting are in
+[docs/DEPLOY.md](docs/DEPLOY.md) §10a.
+
 ## Licence and attribution
 
 - **Images — Wikimedia Commons only.** 700 files, each licence read from that
@@ -93,7 +145,8 @@ committed for a deploy to see it.
   downloaded and re-rendered locally. CC BY-SA renders inherit share-alike.
 - **Turntable frames — Wikimedia Commons only.** 210 credit records in
   `data/turntable-credits.json`. Three sources whose licence could not be
-  positively verified were deleted along with their frames.
+  positively verified were deleted along with their frames. The frames are served
+  from R2 (see above), not hotlinked.
 - **3D** — Sketchfab **embeds** (streamed from Sketchfab, never rehosted) plus two
   local GLBs under the 3 MB budget, both with recorded authorship. Sketchfab's
   download API is OAuth-gated, so an embed is the only token-free route.
