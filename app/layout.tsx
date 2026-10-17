@@ -4,6 +4,7 @@ import { SiteNav } from "#components/nav/site-nav";
 import { CarCursor } from "#components/fx";
 import type { Metadata, Viewport } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const anton = Anton({
@@ -63,6 +64,7 @@ export default function RootLayout({
           <Footer />
         </PageTransition>
         <CarCursor />
+        <Analytics />
       </body>
     </html>
   );
