@@ -171,6 +171,53 @@ export interface CreditsFile {
   credits: Credit[];
 }
 
+/**
+ * One attribution record for a turntable image sequence, i.e. the Commons
+ * photograph a synthetic pan was rendered FROM. The frames themselves are not
+ * separate assets — 30 crop offsets of one photo share one record, which is
+ * why this is keyed by `localPath` (the sequence directory) rather than by
+ * frame.
+ *
+ * `license` and `author` are non-null here on purpose: every record was
+ * checked against the file's own Commons licence template (see `note`), and
+ * the three that could not be verified were dropped along with their frames.
+ * That guarantee is weaker for `Credit`, which still allows null.
+ */
+export interface TurntableCredit {
+  /** stable slug, e.g. "tt-1969-porsche-911-2-2-c-series-1278e56f" */
+  assetId: string;
+  /** always "image" today — the sequence is photographs, not a model */
+  kind: AssetKind;
+  source: AssetSource;
+  /** Commons file page, not the raw upload URL */
+  url: string;
+  license: string;
+  author: string;
+  /** ISO date the source was retrieved */
+  retrieved: string;
+  /** Wikimedia File: title */
+  sourceId: string;
+  /** sequence directory under /public, e.g. "/turntables/901__911-2.0" */
+  localPath: string;
+  note: string;
+  /** where the licence string came from, e.g. "commons file page licence template" */
+  licenseSource: string;
+}
+
+export interface TurntableCreditsFile {
+  /** ISO date the licences were re-verified against the Commons pages */
+  verifiedAt: string;
+  /** provenance of the licence derivation — shown as a footnote on /credits */
+  note: string;
+  /** records whose licence the last pass corrected */
+  corrected: number;
+  /** records the last pass confirmed unchanged */
+  alreadyCorrect: number;
+  /** sources dropped for an unverifiable licence (frames deleted with them) */
+  unusable: number;
+  credits: TurntableCredit[];
+}
+
 export interface VideosFile {
   updatedAt: string;
   /** key: GenerationId or variant id */

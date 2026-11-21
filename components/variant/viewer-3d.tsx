@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import type { ImageResult, ModelResult } from "#lib/assets";
 import { SafeImage } from "./safe-image";
 import { ColorSwapper } from "./color-swapper";
@@ -75,14 +76,23 @@ export function Viewer3D({ model, carName, poster, accent, headingId }: Viewer3D
       <div className="mx-auto w-full max-w-(--maxw)">
         <div className="flex flex-wrap items-end justify-between gap-(--space-4)">
           <div>
-            <p className="label flex items-center gap-(--space-3)">
+          <p className="label flex items-center gap-(--space-3)">
+            {model.kind === "turntable" ? (
+              <Link
+                href="/credits#turntable-heading"
+                className="underline decoration-ink-4 underline-offset-4 transition-colors hover:text-metal-100 hover:decoration-metal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-guards"
+              >
+                Credits
+              </Link>
+            ) : (
               <span
                 aria-hidden="true"
                 className="inline-block h-px w-8"
                 style={{ backgroundColor: accent }}
               />
-              3D viewer
-            </p>
+            )}
+            3D viewer
+          </p>
             <h2 id={headingId} className="mt-(--space-3) text-display-3 text-metal-100">
               {isGlb ? "Spin it yourself" : "Look closer"}
             </h2>

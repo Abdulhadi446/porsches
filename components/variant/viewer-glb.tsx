@@ -428,7 +428,7 @@ class Boundary extends Component<BoundaryProps, BoundaryState> {
   }
 
   componentDidCatch(error: unknown) {
-    if (process.env.NODE_ENV !== "production") {
+    if (import.meta.env.PROD !== "production") {
       console.warn("[viewer] 3D model failed to load:", error);
     }
   }
