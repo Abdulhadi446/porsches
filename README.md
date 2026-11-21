@@ -75,6 +75,80 @@ node scripts/upload-r2.ts --dry-run   # preview, no writes
 
 Set `NEXT_PUBLIC_MEDIA_HOST=https://content.thetrillioniar.me` on the Vercel project (build-time). Left unset, the paths are returned unchanged and the site keeps serving the committed placeholder — so the env var is a pure upgrade. Full walkthrough, reference values and troubleshooting are in [docs/DEPLOY.md](docs/DEPLOY.md) §10a.
 
+## Deploy to Cloudflare Workers with vinext
+
+This project is configured for deployment to Cloudflare Workers using [`vinext`](https://vinext.dev), which reimplements the Next.js API surface on Vite. Vinext targets 94%+ of the Next.js 16 API and produces a Cloudflare Workers Build Output.
+
+### Prerequisites
+
+1.  **Cloudflare account** with access to create Workers and Bindings.
+2.  API token with **Zone > Analytics > Read** and **Zone > Zone > Read** for traffic-aware cache warming.
+3.  Install [`cf`](https://github.com/cloudflare/cloudflare-cli) (the init command already added it as a dev dependency).
+
+### Setup (one-time)
+
+```bash
+# Initialize vinext for Cloudflare (already done by npx vinext init)
+npx vinext init --platform=cloudflare --cdn-cache=response-store --response-store-mode=service-binding --data-cache=kv --image-optimization=cloudflare-images
+
+# Authenticate cf
+cf auth login
+
+# Set account ID in cloudflare.config.ts (or CLOUDFLARE_ACCOUNT_ID env var)
+# The worker name defaults to "porsche-911-showcase" from package.json
+```
+
+### Development
+
+```bash
+npm run dev:vinext    # Start vinext dev server on port 3001
+```
+
+### Build & Deploy
+
+```bash
+# Production build
+npm run build:vinext
+
+# Deploy to Cloudflare Workers
+npm run deploy:vinext
+```
+
+### Cache options
+
+Vinext supports several Cloudflare cache configurations. The init command selected **response-store** (`service-binding` mode) which provides both response and data caching through a separate cache Worker.
+
+### Traffic-aware cache warming
+
+Optionally warm routes covering ~90% of traffic before full promotion:
+
+```bash
+npm run deploy:vinext -- --traffic-aware-warm-cache
+```
+
+Requires a custom domain (zone analytics unavailable on `*.workers.dev`).
+
+### Media handling with vinext
+
+Vinext's native `@vinext/cloudflare images` optimizer backs `next/image` transformations with a Cloudflare Images binding. Configure in `cloudflare.config.ts`:
+
+```ts
+import { bindings } from "cf/config";
+
+env: {
+  // ...existing bindings
+  IMAGES: bindings.images(),
+},
+```
+
+Vinext init auto-generated this binding and added the `imagesOptimizer()` to the vite.config.
+
+### Revert to pure Next.js
+
+Your original Next.js setup continues to work alongside vinext. To revert, simply run `next dev` / `next build` and remove the vinext scripts from `package.json`.
+
+Full walkthrough, reference values and troubleshooting are in [docs/DEPLOY.md](docs/DEPLOY.md) §10a.
+
 ## Asset summary
 
 | Category | Count | Notes |
